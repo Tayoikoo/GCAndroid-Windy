@@ -224,7 +224,7 @@ public final class HttpServer {
                     </head>
                     <body>
                         <div class='content'>
-                            <h1>%s</h1>
+                            <h1>Welcome to GCAndroid-Windy!</h1>
                             <p>Windy is great software that executes packet to send lua and get winded.</p>
                             <br>
                             <span>%s</span>
@@ -240,10 +240,9 @@ public final class HttpServer {
                     </body>
                     </html>
                     """.formatted(
-                        translate("messages.status.welcome"),
                         translate("messages.status.game_version_html",GameConstants.VERSION),
                         translate("messages.status.version_html",BuildConfig.VERSION,BuildConfig.GIT_HASH),
-                        device
+                        translate(device)
                         ));
                 } else {
                     var filePath = file.getPath();
