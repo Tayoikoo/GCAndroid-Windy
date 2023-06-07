@@ -71,10 +71,11 @@ public class WindyCommand implements CommandHandler
                 }
                 break;
             default:
-                String luafile1 = termux + "lua_scripts/errDialog.lua";
-                String luacfile1 = termux + "lua_scripts/out/errDialog.luac";
-                String luac_path1 = termux + "lua_scripts/luac";
-                String path_lua1 = termux + "lua_scripts/";                
+                String termux1 = "/data/data/com.termux/files/home/";
+                String luafile1 = termux1 + "lua_scripts/errDialog.lua";
+                String luacfile1 = termux1 + "lua_scripts/out/errDialog.luac";
+                String luac_path1 = termux1 + "lua_scripts/luac";
+                String path_lua1 = termux1 + "lua_scripts/";                
                 String path_file = "/sdcard/Windy/" + custom + ".luac";
                 String errDialog = """
                     CS.EFCINKAHAJK.IHGDAKEIPBB(""" + "\"" + custom + ".luac not found" + "\"" + ",\"Error while reading Luac!\")" + 
