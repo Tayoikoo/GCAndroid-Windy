@@ -1,5 +1,6 @@
 package emu.grasscutter.server.http;
 
+import emu.grasscutter.GameConstants;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.Grasscutter.ServerDebugMode;
 import emu.grasscutter.utils.FileUtils;
@@ -234,7 +235,7 @@ public final class HttpServer {
                         <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous'></script>
                     </body>
                     </html>
-                    """.formatted(translate("messages.status.game_version_html")));
+                    """.formatted(translate("messages.status.game_version_html", GameConstants.VERSION)));
                 } else {
                     var filePath = file.getPath();
                     ContentType fromExtension = ContentType.getContentTypeByExtension(filePath.substring(filePath.lastIndexOf(".") + 1));
