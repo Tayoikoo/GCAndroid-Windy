@@ -240,7 +240,8 @@ public final class HttpServer {
                     """.formatted(
                         translate("messages.status.welcome"),
                         String.format(
-                            translate("messages.status.game_version_html")
+                            translate("messages.status.game_version_html"),
+                            VERSION
                         ),
                         String.format(
                             translate("messages.status.version_html")
