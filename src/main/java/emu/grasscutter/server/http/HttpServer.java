@@ -229,7 +229,7 @@ public final class HttpServer {
                             <br>
                             <span>%s</span>
                             <br>
-                            <span>%s</span>
+                            <span>%s-%s</span>
                             <br>
                             <p>Running on: %s</p>
                         </div>
@@ -241,15 +241,8 @@ public final class HttpServer {
                     </html>
                     """.formatted(
                         translate("messages.status.welcome"),
-                        String.format(
-                            translate("messages.status.game_version_html"),
-                            GameConstants.VERSION
-                        ),
-                        String.format(
-                            translate("messages.status.version_html"),
-                            BuildConfig.VERSION,
-                            BuildConfig.GIT_HASH
-                        ),
+                        translate("messages.status.game_version_html",GameConstants.VERSION),
+                        translate("messages.status.version_html",BuildConfig.VERSION,BuildConfig.GIT_HASH),
                         device
                         ));
                 } else {

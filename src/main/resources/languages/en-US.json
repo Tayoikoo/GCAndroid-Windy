@@ -60,8 +60,8 @@
       "create_resources": "Creating resources folder...",
       "resources_error": "Place a copy of 'BinOutput' and 'ExcelBinOutput' in the resources folder.",
       "version": "GCAndroid-Windy version: \u001B[1m\u001B[33m%s-%s\u001B[0m",
-      "version_html": "GCAndroid-Windy version: %s-%s",
       "game_version": "Game version: \u001B[1m\u001B[33m%s\u001B[0m",
+      "version_html": "GCAndroid-Windy version: %s-%s",
       "game_version_html": "Game version: %s",
       "resources": {
         "loading": "Loading virus resources...",
