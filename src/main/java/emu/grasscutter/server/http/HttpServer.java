@@ -9,6 +9,7 @@ import io.javalin.json.JavalinGson;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
+import emu.grasscutter.custom.DeviceChecker;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
@@ -174,6 +175,8 @@ public final class HttpServer {
         @Override
         public void applyRoutes(Javalin javalin) {
             javalin.get("/", ctx -> {
+                // Device Check
+                String device = DeviceChecker.getDevice();
                 // Send file
                 File file = new File(HTTP_STATIC_FILES.indexFile);
                 if (!file.exists()) {
