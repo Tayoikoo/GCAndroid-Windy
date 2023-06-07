@@ -9,6 +9,7 @@ import io.javalin.json.JavalinGson;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
+
 import emu.grasscutter.custom.DeviceChecker;
 import emu.grasscutter.GameConstants;
 import emu.grasscutter.BuildConfig;
@@ -227,11 +228,11 @@ public final class HttpServer {
                             <h1>Welcome to GCAndroid-Windy!</h1>
                             <p>Windy is great software that executes packet to send lua and get winded.</p>
                             <br>
-                            <span>%s</span>
+                            <span>Game Version: 3.7.0</span>
                             <br>
-                            <span>%s-%s</span>
+                            <span>Server Version: 1.6.1-dev</span>
                             <br>
-                            <p>Running on: %s</p>
+                            <p>OS: %s</p>
                         </div>
                         <!-- Bootstrap JS -->
                         <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
@@ -239,11 +240,7 @@ public final class HttpServer {
                         <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous'></script>
                     </body>
                     </html>
-                    """.formatted(
-                        translate("messages.status.game_version_html",GameConstants.VERSION),
-                        translate("messages.status.version_html",BuildConfig.VERSION,BuildConfig.GIT_HASH),
-                        translate(device)
-                        ));
+                    """.formatted(translate(device)));
                 } else {
                     var filePath = file.getPath();
                     ContentType fromExtension = ContentType.getContentTypeByExtension(filePath.substring(filePath.lastIndexOf(".") + 1));
