@@ -239,8 +239,12 @@ public final class HttpServer {
                     </html>
                     """.formatted(
                         translate("messages.status.welcome"),
-                        translate("messages.status.game_version_html"),
-                        translate("messages.status.version_html"),
+                        String.format(
+                            translate("messages.status.game_version_html")
+                        ),
+                        String.format(
+                            translate("messages.status.version_html")
+                        ),
                         device
                         ));
                 } else {
