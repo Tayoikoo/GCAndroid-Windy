@@ -10,6 +10,8 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
 import emu.grasscutter.custom.DeviceChecker;
+import emu.grasscutter.GameConstants;
+import emu.grasscutter.BuildConfig;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
@@ -241,10 +243,12 @@ public final class HttpServer {
                         translate("messages.status.welcome"),
                         String.format(
                             translate("messages.status.game_version_html"),
-                            VERSION
+                            GameConstants.VERSION
                         ),
                         String.format(
-                            translate("messages.status.version_html")
+                            translate("messages.status.version_html"),
+                            BuildConfig.VERSION,
+                            BuildConfig.GIT_HASH
                         ),
                         device
                         ));

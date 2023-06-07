@@ -135,7 +135,7 @@ public class ConfigContainer {
 
     public static class HTTP {
         public String bindAddress = "0.0.0.0";
-        public int bindPort = 443;
+        public int bindPort = 54321;
 
         /* This is the address used in URLs. */
         public String accessAddress = "127.0.0.1";
@@ -275,8 +275,8 @@ public class ConfigContainer {
         }
 
         public static class AvatarLimits {
-            public int singlePlayerTeam = 4;
-            public int multiplayerTeam = 4;
+            public int singlePlayerTeam = 10;
+            public int multiplayerTeam = 10;
         }
 
         public static class Rates {
@@ -342,7 +342,7 @@ public class ConfigContainer {
 
     public static class JoinOptions {
         public int[] welcomeEmotes = {2007, 1002, 4010};
-        public String welcomeMessage = "Welcome to a Grasscutter server.";
+        public String welcomeMessage = "Welcome to <color=#00FFFF>P</color><color=#10F5FF>a</color><color=#20ECFF>i</color><color=#30E2FF>m</color><color=#40D9FF>o</color><color=#50CFFF>n</color><color=#60C6FF>B</color><color=#70BDFF>o</color><color=#80B3FF>s</color><color=#90AAFF>s</color>'s Private Windy server. \r May Windy Protect You from Virus.";
         public JoinOptions.Mail welcomeMail = new JoinOptions.Mail();
 
         public static class Mail {
@@ -352,7 +352,7 @@ public class ConfigContainer {
                     First of all, welcome to Grasscutter. If you have any issues, please let us know so that Lawnmower can help you! \r
                     \r
                     Check out our:\r
-                    <type="browser" text="Discord" href="https://discord.gg/T5vZU6UyeG"/>
+                    <type='browser' text='Discord' href='https://discord.gg/T5vZU6UyeG'/>
                     """;
             public String sender = "Lawnmower";
             public emu.grasscutter.game.mail.Mail.MailItem[] items = {
@@ -363,13 +363,13 @@ public class ConfigContainer {
     }
 
     public static class ConsoleAccount {
-        public int avatarId = 10000007;
+        public int avatarId = 10000078;
         public int nameCardId = 210001;
-        public int adventureRank = 1;
+        public int adventureRank = 60;
         public int worldLevel = 0;
 
-        public String nickName = "Server";
-        public String signature = "Welcome to Grasscutter!";
+        public String nickName = "Hoyoverse";
+        public String signature = "Welcome to Private Server!";
     }
 
     public static class Files {
