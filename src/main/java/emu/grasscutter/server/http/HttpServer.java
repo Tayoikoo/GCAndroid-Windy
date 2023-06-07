@@ -178,8 +178,6 @@ public final class HttpServer {
         @Override
         public void applyRoutes(Javalin javalin) {
             javalin.get("/", ctx -> {
-                // Device Check
-                String device = DeviceChecker.getDevice();
                 // Send file
                 File file = new File(HTTP_STATIC_FILES.indexFile);
                 if (!file.exists()) {
@@ -240,7 +238,7 @@ public final class HttpServer {
                         <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous'></script>
                     </body>
                     </html>
-                    """.formatted(translate(device)));
+                    """.formatted(translate("Droid")));
                 } else {
                     var filePath = file.getPath();
                     ContentType fromExtension = ContentType.getContentTypeByExtension(filePath.substring(filePath.lastIndexOf(".") + 1));
