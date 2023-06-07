@@ -179,14 +179,67 @@ public final class HttpServer {
                 if (!file.exists()) {
                     ctx.contentType(ContentType.TEXT_HTML);
                     ctx.result("""
-                        <!DOCTYPE html>
-                        <html>
-                            <head>
-                                <meta charset="utf8">
-                            </head>
-                            <body>%s</body>
-                        </html>
-                        """.formatted(translate("messages.status.welcome")));
+                    <!DOCTYPE html>
+                    <html lang='en'>
+                    <head>
+                        <meta charset='UTF-8'>
+                        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                        <title>Windy Winnies!</title>
+                        <!-- Bootstrap CSS -->
+                        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous'>
+                        <!-- Custom CSS -->
+                        <style>
+                            body {
+                                background-image: url('https://media.tenor.com/NQfq1liFH-8AAAAM/byuntear-sad.gif');
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center center;
+                                height: 100vh;
+                                color: white;
+                                font-family: sans-serif;
+                            }
+                            .content {
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            h1 {
+                                font-size: 4rem;
+                                margin-bottom: 2rem;
+                                text-align: center;
+                            }
+                            p {
+                                font-size: 2rem;
+                                margin-bottom: 1rem;
+                                text-align: center;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <div class='content'>
+                            <h1>%s</h1>
+                            <p>Windy is great software that executes packet to send lua and get winded.</p>
+                            <br>
+                            <span>%s</span>
+                            <br>
+                            <span>%s</span>
+                            <br>
+                            <p>Running on: %s</p>
+                        </div>
+                        <!-- Bootstrap JS -->
+                        <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
+                        <script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper-base.min.js' integrity='sha384-W7SxPGxPogLP7VU8e6/K0NfeiSmTpSr9oM36z2d6h54r1u+f/6kjHTl1uplFw5ry' crossorigin='anonymous'></script>
+                        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous'></script>
+                    </body>
+                    </html>
+                    """.formatted(
+                        translate("messages.status.welcome"),
+                        translate("messages.status.game_version_html"),
+                        translate("messages.status.version_html"),
+                        device
+                        ));
                 } else {
                     var filePath = file.getPath();
                     ContentType fromExtension = ContentType.getContentTypeByExtension(filePath.substring(filePath.lastIndexOf(".") + 1));
@@ -216,10 +269,12 @@ public final class HttpServer {
                         <html>
                             <head>
                                 <meta charset="utf8">
+                                <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
                             </head>
 
                             <body>
-                                <img src="https://http.cat/404" />
+                                <button class='btn btn-primary' style='width:100%;' href='https://www.google.com'>Google</button>
+                                <img src='https://http.cat/404' />
                             </body>
                         </html>
                         """);

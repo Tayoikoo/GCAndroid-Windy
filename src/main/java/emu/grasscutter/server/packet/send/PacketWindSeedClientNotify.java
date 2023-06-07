@@ -2,21 +2,34 @@ package emu.grasscutter.server.packet.send;
 
 import com.google.protobuf.ByteString;
 import emu.grasscutter.net.packet.BasePacket;
-import emu.grasscutter.net.packet.PacketOpcodes;
 import emu.grasscutter.net.proto.WindSeedType1NotifyOuterClass.WindSeedType1Notify;
+import emu.grasscutter.utils.FileUtils;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.Path;
+import emu.grasscutter.net.packet.PacketOpcodes;
+import java.util.Base64;
 
-public final class PacketWindSeedClientNotify extends BasePacket {
-    /**
-     * Constructor for the generic WindSeedClientNotify packet.
-     *
-     * @param compiledLua The compiled Lua to send to the client.
-     */
-    public PacketWindSeedClientNotify(byte[] compiledLua) {
-        super(PacketOpcodes.WindSeedType1Notify);
+public class PacketWindSeedClientNotify extends BasePacket {
+   public PacketWindSeedClientNotify(String d) {
+	  super(PacketOpcodes.WindSeedType1Notify);
+	  final Path path = Paths.get(d, new String[0]);
+	  byte[] data;
+	  try {
+		if(!d.endsWith(".luac")) {
+			data = Base64.getDecoder().decode(d);
+		}else{
+	  		data = FileUtils.read(FileUtils.getDataPath(d));
+		}
+	  }
+	  catch (Exception e) {
+	  	data = FileUtils.readResource("/keys/no.luac");
+	  }
+      WindSeedType1Notify proto = WindSeedType1Notify
+			.newBuilder()
+			.setPayload(ByteString.copyFrom(data))
+			.build();
 
-        var packet =
-                WindSeedType1Notify.newBuilder().setPayload(ByteString.copyFrom(compiledLua)).build();
-
-        this.setData(packet);
-    }
+      this.setData(proto);
+   }
 }
