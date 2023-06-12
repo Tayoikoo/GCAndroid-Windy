@@ -19,15 +19,15 @@ public final class GetQuestLackingResourceReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 quest_id = 1;</code>
+     * <code>uint32 quest_id = 5;</code>
      * @return The questId.
      */
     int getQuestId();
   }
   /**
    * <pre>
-   * CmdId: 453
-   * Obf: LJCOMNDKOAO
+   * CmdId: 418
+   * Name: LEFCJKGALNG
    * </pre>
    *
    * Protobuf type {@code GetQuestLackingResourceReq}
@@ -51,53 +51,6 @@ public final class GetQuestLackingResourceReqOuterClass {
       return new GetQuestLackingResourceReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private GetQuestLackingResourceReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              questId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.internal_static_GetQuestLackingResourceReq_descriptor;
@@ -111,10 +64,10 @@ public final class GetQuestLackingResourceReqOuterClass {
               emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq.class, emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq.Builder.class);
     }
 
-    public static final int QUEST_ID_FIELD_NUMBER = 1;
-    private int questId_;
+    public static final int QUEST_ID_FIELD_NUMBER = 5;
+    private int questId_ = 0;
     /**
-     * <code>uint32 quest_id = 1;</code>
+     * <code>uint32 quest_id = 5;</code>
      * @return The questId.
      */
     @java.lang.Override
@@ -137,9 +90,9 @@ public final class GetQuestLackingResourceReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (questId_ != 0) {
-        output.writeUInt32(1, questId_);
+        output.writeUInt32(5, questId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -150,9 +103,9 @@ public final class GetQuestLackingResourceReqOuterClass {
       size = 0;
       if (questId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, questId_);
+          .computeUInt32Size(5, questId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -169,7 +122,7 @@ public final class GetQuestLackingResourceReqOuterClass {
 
       if (getQuestId()
           != other.getQuestId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -182,7 +135,7 @@ public final class GetQuestLackingResourceReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
       hash = (53 * hash) + getQuestId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -231,11 +184,13 @@ public final class GetQuestLackingResourceReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -279,8 +234,8 @@ public final class GetQuestLackingResourceReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 453
-     * Obf: LJCOMNDKOAO
+     * CmdId: 418
+     * Name: LEFCJKGALNG
      * </pre>
      *
      * Protobuf type {@code GetQuestLackingResourceReq}
@@ -304,24 +259,19 @@ public final class GetQuestLackingResourceReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         questId_ = 0;
-
         return this;
       }
 
@@ -348,9 +298,16 @@ public final class GetQuestLackingResourceReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq buildPartial() {
         emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq result = new emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq(this);
-        result.questId_ = questId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.questId_ = questId_;
+        }
       }
 
       @java.lang.Override
@@ -400,7 +357,7 @@ public final class GetQuestLackingResourceReqOuterClass {
         if (other.getQuestId() != 0) {
           setQuestId(other.getQuestId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -415,23 +372,42 @@ public final class GetQuestLackingResourceReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 40: {
+                questId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 40
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.GetQuestLackingResourceReqOuterClass.GetQuestLackingResourceReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int questId_ ;
       /**
-       * <code>uint32 quest_id = 1;</code>
+       * <code>uint32 quest_id = 5;</code>
        * @return The questId.
        */
       @java.lang.Override
@@ -439,22 +415,23 @@ public final class GetQuestLackingResourceReqOuterClass {
         return questId_;
       }
       /**
-       * <code>uint32 quest_id = 1;</code>
+       * <code>uint32 quest_id = 5;</code>
        * @param value The questId to set.
        * @return This builder for chaining.
        */
       public Builder setQuestId(int value) {
-        
+
         questId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 quest_id = 1;</code>
+       * <code>uint32 quest_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearQuestId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         questId_ = 0;
         onChanged();
         return this;
@@ -492,7 +469,18 @@ public final class GetQuestLackingResourceReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GetQuestLackingResourceReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -527,7 +515,7 @@ public final class GetQuestLackingResourceReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n GetQuestLackingResourceReq.proto\".\n\032Ge" +
-      "tQuestLackingResourceReq\022\020\n\010quest_id\030\001 \001" +
+      "tQuestLackingResourceReq\022\020\n\010quest_id\030\005 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

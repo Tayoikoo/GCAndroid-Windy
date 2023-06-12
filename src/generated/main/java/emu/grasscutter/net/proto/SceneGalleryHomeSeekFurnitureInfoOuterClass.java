@@ -19,11 +19,17 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+     * <code>uint32 NJHPFPPGMHP = 4;</code>
+     * @return The nJHPFPPGMHP.
+     */
+    int getNJHPFPPGMHP();
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
      */
     int getPlayerScoreMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
      */
     boolean containsPlayerScoreMap(
         int key);
@@ -34,45 +40,37 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getPlayerScoreMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getPlayerScoreMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
      */
-
     int getPlayerScoreMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
      */
-
     int getPlayerScoreMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 DMDKDGHPDJF = 13;</code>
-     * @return The dMDKDGHPDJF.
+     * <code>uint32 FOLBDGFAJHK = 14;</code>
+     * @return The fOLBDGFAJHK.
      */
-    int getDMDKDGHPDJF();
+    int getFOLBDGFAJHK();
 
     /**
-     * <code>uint32 AOPDCFLABGK = 6;</code>
-     * @return The aOPDCFLABGK.
+     * <code>uint32 GPJDOAEHFGN = 8;</code>
+     * @return The gPJDOAEHFGN.
      */
-    int getAOPDCFLABGK();
-
-    /**
-     * <code>uint32 KLNLKCAEJKM = 7;</code>
-     * @return The kLNLKCAEJKM.
-     */
-    int getKLNLKCAEJKM();
+    int getGPJDOAEHFGN();
   }
   /**
    * <pre>
-   * Obf: EBBPJONKNOI
+   * Name: GFDMALDLDJM
    * </pre>
    *
    * Protobuf type {@code SceneGalleryHomeSeekFurnitureInfo}
@@ -96,77 +94,6 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
       return new SceneGalleryHomeSeekFurnitureInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private SceneGalleryHomeSeekFurnitureInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 48: {
-
-              aOPDCFLABGK_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              kLNLKCAEJKM_ = input.readUInt32();
-              break;
-            }
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                playerScoreMap_ = com.google.protobuf.MapField.newMapField(
-                    PlayerScoreMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              playerScoreMap__ = input.readMessage(
-                  PlayerScoreMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              playerScoreMap_.getMutableMap().put(
-                  playerScoreMap__.getKey(), playerScoreMap__.getValue());
-              break;
-            }
-            case 104: {
-
-              dMDKDGHPDJF_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.internal_static_SceneGalleryHomeSeekFurnitureInfo_descriptor;
@@ -177,7 +104,7 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 12:
+        case 15:
           return internalGetPlayerScoreMap();
         default:
           throw new RuntimeException(
@@ -192,7 +119,18 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo.class, emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo.Builder.class);
     }
 
-    public static final int PLAYER_SCORE_MAP_FIELD_NUMBER = 12;
+    public static final int NJHPFPPGMHP_FIELD_NUMBER = 4;
+    private int nJHPFPPGMHP_ = 0;
+    /**
+     * <code>uint32 NJHPFPPGMHP = 4;</code>
+     * @return The nJHPFPPGMHP.
+     */
+    @java.lang.Override
+    public int getNJHPFPPGMHP() {
+      return nJHPFPPGMHP_;
+    }
+
+    public static final int PLAYER_SCORE_MAP_FIELD_NUMBER = 15;
     private static final class PlayerScoreMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -204,6 +142,7 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
+    @SuppressWarnings("serial")
     private com.google.protobuf.MapField<
         java.lang.Integer, java.lang.Integer> playerScoreMap_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -214,18 +153,16 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
       }
       return playerScoreMap_;
     }
-
     public int getPlayerScoreMapCount() {
       return internalGetPlayerScoreMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
      */
-
     @java.lang.Override
     public boolean containsPlayerScoreMap(
         int key) {
-      
+
       return internalGetPlayerScoreMap().getMap().containsKey(key);
     }
     /**
@@ -237,34 +174,31 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
       return getPlayerScoreMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
      */
     @java.lang.Override
-
     public java.util.Map<java.lang.Integer, java.lang.Integer> getPlayerScoreMapMap() {
       return internalGetPlayerScoreMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
      */
     @java.lang.Override
-
     public int getPlayerScoreMapOrDefault(
         int key,
         int defaultValue) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
           internalGetPlayerScoreMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
      */
     @java.lang.Override
-
     public int getPlayerScoreMapOrThrow(
         int key) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
           internalGetPlayerScoreMap().getMap();
       if (!map.containsKey(key)) {
@@ -273,37 +207,26 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int DMDKDGHPDJF_FIELD_NUMBER = 13;
-    private int dMDKDGHPDJF_;
+    public static final int FOLBDGFAJHK_FIELD_NUMBER = 14;
+    private int fOLBDGFAJHK_ = 0;
     /**
-     * <code>uint32 DMDKDGHPDJF = 13;</code>
-     * @return The dMDKDGHPDJF.
+     * <code>uint32 FOLBDGFAJHK = 14;</code>
+     * @return The fOLBDGFAJHK.
      */
     @java.lang.Override
-    public int getDMDKDGHPDJF() {
-      return dMDKDGHPDJF_;
+    public int getFOLBDGFAJHK() {
+      return fOLBDGFAJHK_;
     }
 
-    public static final int AOPDCFLABGK_FIELD_NUMBER = 6;
-    private int aOPDCFLABGK_;
+    public static final int GPJDOAEHFGN_FIELD_NUMBER = 8;
+    private int gPJDOAEHFGN_ = 0;
     /**
-     * <code>uint32 AOPDCFLABGK = 6;</code>
-     * @return The aOPDCFLABGK.
+     * <code>uint32 GPJDOAEHFGN = 8;</code>
+     * @return The gPJDOAEHFGN.
      */
     @java.lang.Override
-    public int getAOPDCFLABGK() {
-      return aOPDCFLABGK_;
-    }
-
-    public static final int KLNLKCAEJKM_FIELD_NUMBER = 7;
-    private int kLNLKCAEJKM_;
-    /**
-     * <code>uint32 KLNLKCAEJKM = 7;</code>
-     * @return The kLNLKCAEJKM.
-     */
-    @java.lang.Override
-    public int getKLNLKCAEJKM() {
-      return kLNLKCAEJKM_;
+    public int getGPJDOAEHFGN() {
+      return gPJDOAEHFGN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -320,22 +243,22 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (aOPDCFLABGK_ != 0) {
-        output.writeUInt32(6, aOPDCFLABGK_);
+      if (nJHPFPPGMHP_ != 0) {
+        output.writeUInt32(4, nJHPFPPGMHP_);
       }
-      if (kLNLKCAEJKM_ != 0) {
-        output.writeUInt32(7, kLNLKCAEJKM_);
+      if (gPJDOAEHFGN_ != 0) {
+        output.writeUInt32(8, gPJDOAEHFGN_);
+      }
+      if (fOLBDGFAJHK_ != 0) {
+        output.writeUInt32(14, fOLBDGFAJHK_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetPlayerScoreMap(),
           PlayerScoreMapDefaultEntryHolder.defaultEntry,
-          12);
-      if (dMDKDGHPDJF_ != 0) {
-        output.writeUInt32(13, dMDKDGHPDJF_);
-      }
-      unknownFields.writeTo(output);
+          15);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -344,13 +267,17 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aOPDCFLABGK_ != 0) {
+      if (nJHPFPPGMHP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, aOPDCFLABGK_);
+          .computeUInt32Size(4, nJHPFPPGMHP_);
       }
-      if (kLNLKCAEJKM_ != 0) {
+      if (gPJDOAEHFGN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, kLNLKCAEJKM_);
+          .computeUInt32Size(8, gPJDOAEHFGN_);
+      }
+      if (fOLBDGFAJHK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, fOLBDGFAJHK_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetPlayerScoreMap().getMap().entrySet()) {
@@ -360,13 +287,9 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(12, playerScoreMap__);
+            .computeMessageSize(15, playerScoreMap__);
       }
-      if (dMDKDGHPDJF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, dMDKDGHPDJF_);
-      }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -381,15 +304,15 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo other = (emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo) obj;
 
+      if (getNJHPFPPGMHP()
+          != other.getNJHPFPPGMHP()) return false;
       if (!internalGetPlayerScoreMap().equals(
           other.internalGetPlayerScoreMap())) return false;
-      if (getDMDKDGHPDJF()
-          != other.getDMDKDGHPDJF()) return false;
-      if (getAOPDCFLABGK()
-          != other.getAOPDCFLABGK()) return false;
-      if (getKLNLKCAEJKM()
-          != other.getKLNLKCAEJKM()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getFOLBDGFAJHK()
+          != other.getFOLBDGFAJHK()) return false;
+      if (getGPJDOAEHFGN()
+          != other.getGPJDOAEHFGN()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -400,17 +323,17 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + NJHPFPPGMHP_FIELD_NUMBER;
+      hash = (53 * hash) + getNJHPFPPGMHP();
       if (!internalGetPlayerScoreMap().getMap().isEmpty()) {
         hash = (37 * hash) + PLAYER_SCORE_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetPlayerScoreMap().hashCode();
       }
-      hash = (37 * hash) + DMDKDGHPDJF_FIELD_NUMBER;
-      hash = (53 * hash) + getDMDKDGHPDJF();
-      hash = (37 * hash) + AOPDCFLABGK_FIELD_NUMBER;
-      hash = (53 * hash) + getAOPDCFLABGK();
-      hash = (37 * hash) + KLNLKCAEJKM_FIELD_NUMBER;
-      hash = (53 * hash) + getKLNLKCAEJKM();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + FOLBDGFAJHK_FIELD_NUMBER;
+      hash = (53 * hash) + getFOLBDGFAJHK();
+      hash = (37 * hash) + GPJDOAEHFGN_FIELD_NUMBER;
+      hash = (53 * hash) + getGPJDOAEHFGN();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -459,11 +382,13 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -507,7 +432,7 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: EBBPJONKNOI
+     * Name: GFDMALDLDJM
      * </pre>
      *
      * Protobuf type {@code SceneGalleryHomeSeekFurnitureInfo}
@@ -525,7 +450,7 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 12:
+          case 15:
             return internalGetPlayerScoreMap();
           default:
             throw new RuntimeException(
@@ -536,7 +461,7 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 12:
+          case 15:
             return internalGetMutablePlayerScoreMap();
           default:
             throw new RuntimeException(
@@ -553,29 +478,22 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
+        nJHPFPPGMHP_ = 0;
         internalGetMutablePlayerScoreMap().clear();
-        dMDKDGHPDJF_ = 0;
-
-        aOPDCFLABGK_ = 0;
-
-        kLNLKCAEJKM_ = 0;
-
+        fOLBDGFAJHK_ = 0;
+        gPJDOAEHFGN_ = 0;
         return this;
       }
 
@@ -602,14 +520,26 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo result = new emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo(this);
-        int from_bitField0_ = bitField0_;
-        result.playerScoreMap_ = internalGetPlayerScoreMap();
-        result.playerScoreMap_.makeImmutable();
-        result.dMDKDGHPDJF_ = dMDKDGHPDJF_;
-        result.aOPDCFLABGK_ = aOPDCFLABGK_;
-        result.kLNLKCAEJKM_ = kLNLKCAEJKM_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.nJHPFPPGMHP_ = nJHPFPPGMHP_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.playerScoreMap_ = internalGetPlayerScoreMap();
+          result.playerScoreMap_.makeImmutable();
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.fOLBDGFAJHK_ = fOLBDGFAJHK_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.gPJDOAEHFGN_ = gPJDOAEHFGN_;
+        }
       }
 
       @java.lang.Override
@@ -656,18 +586,19 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo.getDefaultInstance()) return this;
+        if (other.getNJHPFPPGMHP() != 0) {
+          setNJHPFPPGMHP(other.getNJHPFPPGMHP());
+        }
         internalGetMutablePlayerScoreMap().mergeFrom(
             other.internalGetPlayerScoreMap());
-        if (other.getDMDKDGHPDJF() != 0) {
-          setDMDKDGHPDJF(other.getDMDKDGHPDJF());
+        bitField0_ |= 0x00000002;
+        if (other.getFOLBDGFAJHK() != 0) {
+          setFOLBDGFAJHK(other.getFOLBDGFAJHK());
         }
-        if (other.getAOPDCFLABGK() != 0) {
-          setAOPDCFLABGK(other.getAOPDCFLABGK());
+        if (other.getGPJDOAEHFGN() != 0) {
+          setGPJDOAEHFGN(other.getGPJDOAEHFGN());
         }
-        if (other.getKLNLKCAEJKM() != 0) {
-          setKLNLKCAEJKM(other.getKLNLKCAEJKM());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -682,25 +613,94 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 32: {
+                nJHPFPPGMHP_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 32
+              case 64: {
+                gPJDOAEHFGN_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 64
+              case 112: {
+                fOLBDGFAJHK_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 112
+              case 122: {
+                com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+                playerScoreMap__ = input.readMessage(
+                    PlayerScoreMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+                internalGetMutablePlayerScoreMap().getMutableMap().put(
+                    playerScoreMap__.getKey(), playerScoreMap__.getValue());
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 122
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.SceneGalleryHomeSeekFurnitureInfoOuterClass.SceneGalleryHomeSeekFurnitureInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
 
+      private int nJHPFPPGMHP_ ;
+      /**
+       * <code>uint32 NJHPFPPGMHP = 4;</code>
+       * @return The nJHPFPPGMHP.
+       */
+      @java.lang.Override
+      public int getNJHPFPPGMHP() {
+        return nJHPFPPGMHP_;
+      }
+      /**
+       * <code>uint32 NJHPFPPGMHP = 4;</code>
+       * @param value The nJHPFPPGMHP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNJHPFPPGMHP(int value) {
+
+        nJHPFPPGMHP_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NJHPFPPGMHP = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNJHPFPPGMHP() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        nJHPFPPGMHP_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> playerScoreMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetPlayerScoreMap() {
+          internalGetPlayerScoreMap() {
         if (playerScoreMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
               PlayerScoreMapDefaultEntryHolder.defaultEntry);
@@ -708,8 +708,7 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
         return playerScoreMap_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutablePlayerScoreMap() {
-        onChanged();;
+          internalGetMutablePlayerScoreMap() {
         if (playerScoreMap_ == null) {
           playerScoreMap_ = com.google.protobuf.MapField.newMapField(
               PlayerScoreMapDefaultEntryHolder.defaultEntry);
@@ -717,20 +716,20 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
         if (!playerScoreMap_.isMutable()) {
           playerScoreMap_ = playerScoreMap_.copy();
         }
+        bitField0_ |= 0x00000002;
+        onChanged();
         return playerScoreMap_;
       }
-
       public int getPlayerScoreMapCount() {
         return internalGetPlayerScoreMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
        */
-
       @java.lang.Override
       public boolean containsPlayerScoreMap(
           int key) {
-        
+
         return internalGetPlayerScoreMap().getMap().containsKey(key);
       }
       /**
@@ -742,34 +741,31 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
         return getPlayerScoreMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
        */
       @java.lang.Override
-
       public java.util.Map<java.lang.Integer, java.lang.Integer> getPlayerScoreMapMap() {
         return internalGetPlayerScoreMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
        */
       @java.lang.Override
-
       public int getPlayerScoreMapOrDefault(
           int key,
           int defaultValue) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
             internalGetPlayerScoreMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
        */
       @java.lang.Override
-
       public int getPlayerScoreMapOrThrow(
           int key) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
             internalGetPlayerScoreMap().getMap();
         if (!map.containsKey(key)) {
@@ -777,19 +773,18 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
         }
         return map.get(key);
       }
-
       public Builder clearPlayerScoreMap() {
+        bitField0_ = (bitField0_ & ~0x00000002);
         internalGetMutablePlayerScoreMap().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
        */
-
       public Builder removePlayerScoreMap(
           int key) {
-        
+
         internalGetMutablePlayerScoreMap().getMutableMap()
             .remove(key);
         return this;
@@ -799,121 +794,94 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutablePlayerScoreMap() {
+          getMutablePlayerScoreMap() {
+        bitField0_ |= 0x00000002;
         return internalGetMutablePlayerScoreMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
        */
       public Builder putPlayerScoreMap(
           int key,
           int value) {
-        
-        
+
+
         internalGetMutablePlayerScoreMap().getMutableMap()
             .put(key, value);
+        bitField0_ |= 0x00000002;
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; player_score_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; player_score_map = 15;</code>
        */
-
       public Builder putAllPlayerScoreMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutablePlayerScoreMap().getMutableMap()
             .putAll(values);
+        bitField0_ |= 0x00000002;
         return this;
       }
 
-      private int dMDKDGHPDJF_ ;
+      private int fOLBDGFAJHK_ ;
       /**
-       * <code>uint32 DMDKDGHPDJF = 13;</code>
-       * @return The dMDKDGHPDJF.
+       * <code>uint32 FOLBDGFAJHK = 14;</code>
+       * @return The fOLBDGFAJHK.
        */
       @java.lang.Override
-      public int getDMDKDGHPDJF() {
-        return dMDKDGHPDJF_;
+      public int getFOLBDGFAJHK() {
+        return fOLBDGFAJHK_;
       }
       /**
-       * <code>uint32 DMDKDGHPDJF = 13;</code>
-       * @param value The dMDKDGHPDJF to set.
+       * <code>uint32 FOLBDGFAJHK = 14;</code>
+       * @param value The fOLBDGFAJHK to set.
        * @return This builder for chaining.
        */
-      public Builder setDMDKDGHPDJF(int value) {
-        
-        dMDKDGHPDJF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DMDKDGHPDJF = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDMDKDGHPDJF() {
-        
-        dMDKDGHPDJF_ = 0;
-        onChanged();
-        return this;
-      }
+      public Builder setFOLBDGFAJHK(int value) {
 
-      private int aOPDCFLABGK_ ;
-      /**
-       * <code>uint32 AOPDCFLABGK = 6;</code>
-       * @return The aOPDCFLABGK.
-       */
-      @java.lang.Override
-      public int getAOPDCFLABGK() {
-        return aOPDCFLABGK_;
-      }
-      /**
-       * <code>uint32 AOPDCFLABGK = 6;</code>
-       * @param value The aOPDCFLABGK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAOPDCFLABGK(int value) {
-        
-        aOPDCFLABGK_ = value;
+        fOLBDGFAJHK_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 AOPDCFLABGK = 6;</code>
+       * <code>uint32 FOLBDGFAJHK = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAOPDCFLABGK() {
-        
-        aOPDCFLABGK_ = 0;
+      public Builder clearFOLBDGFAJHK() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        fOLBDGFAJHK_ = 0;
         onChanged();
         return this;
       }
 
-      private int kLNLKCAEJKM_ ;
+      private int gPJDOAEHFGN_ ;
       /**
-       * <code>uint32 KLNLKCAEJKM = 7;</code>
-       * @return The kLNLKCAEJKM.
+       * <code>uint32 GPJDOAEHFGN = 8;</code>
+       * @return The gPJDOAEHFGN.
        */
       @java.lang.Override
-      public int getKLNLKCAEJKM() {
-        return kLNLKCAEJKM_;
+      public int getGPJDOAEHFGN() {
+        return gPJDOAEHFGN_;
       }
       /**
-       * <code>uint32 KLNLKCAEJKM = 7;</code>
-       * @param value The kLNLKCAEJKM to set.
+       * <code>uint32 GPJDOAEHFGN = 8;</code>
+       * @param value The gPJDOAEHFGN to set.
        * @return This builder for chaining.
        */
-      public Builder setKLNLKCAEJKM(int value) {
-        
-        kLNLKCAEJKM_ = value;
+      public Builder setGPJDOAEHFGN(int value) {
+
+        gPJDOAEHFGN_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 KLNLKCAEJKM = 7;</code>
+       * <code>uint32 GPJDOAEHFGN = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKLNLKCAEJKM() {
-        
-        kLNLKCAEJKM_ = 0;
+      public Builder clearGPJDOAEHFGN() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        gPJDOAEHFGN_ = 0;
         onChanged();
         return this;
       }
@@ -950,7 +918,18 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SceneGalleryHomeSeekFurnitureInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -991,10 +970,10 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'SceneGalleryHomeSeekFurnitureInfo.prot" +
       "o\"\353\001\n!SceneGalleryHomeSeekFurnitureInfo\022" +
-      "P\n\020player_score_map\030\014 \003(\01326.SceneGallery" +
-      "HomeSeekFurnitureInfo.PlayerScoreMapEntr" +
-      "y\022\023\n\013DMDKDGHPDJF\030\r \001(\r\022\023\n\013AOPDCFLABGK\030\006 " +
-      "\001(\r\022\023\n\013KLNLKCAEJKM\030\007 \001(\r\0325\n\023PlayerScoreM" +
+      "\023\n\013NJHPFPPGMHP\030\004 \001(\r\022P\n\020player_score_map" +
+      "\030\017 \003(\01326.SceneGalleryHomeSeekFurnitureIn" +
+      "fo.PlayerScoreMapEntry\022\023\n\013FOLBDGFAJHK\030\016 " +
+      "\001(\r\022\023\n\013GPJDOAEHFGN\030\010 \001(\r\0325\n\023PlayerScoreM" +
       "apEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
@@ -1007,7 +986,7 @@ public final class SceneGalleryHomeSeekFurnitureInfoOuterClass {
     internal_static_SceneGalleryHomeSeekFurnitureInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryHomeSeekFurnitureInfo_descriptor,
-        new java.lang.String[] { "PlayerScoreMap", "DMDKDGHPDJF", "AOPDCFLABGK", "KLNLKCAEJKM", });
+        new java.lang.String[] { "NJHPFPPGMHP", "PlayerScoreMap", "FOLBDGFAJHK", "GPJDOAEHFGN", });
     internal_static_SceneGalleryHomeSeekFurnitureInfo_PlayerScoreMapEntry_descriptor =
       internal_static_SceneGalleryHomeSeekFurnitureInfo_descriptor.getNestedTypes().get(0);
     internal_static_SceneGalleryHomeSeekFurnitureInfo_PlayerScoreMapEntry_fieldAccessorTable = new

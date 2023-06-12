@@ -19,21 +19,21 @@ public final class HomeSceneJumpRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_enter_room_scene = 14;</code>
-     * @return The isEnterRoomScene.
-     */
-    boolean getIsEnterRoomScene();
-
-    /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>bool is_enter_room_scene = 4;</code>
+     * @return The isEnterRoomScene.
+     */
+    boolean getIsEnterRoomScene();
   }
   /**
    * <pre>
-   * CmdId: 4544
-   * Obf: HBDFALCPCIA
+   * CmdId: 4518
+   * Name: KFFGIGOAKJA
    * </pre>
    *
    * Protobuf type {@code HomeSceneJumpRsp}
@@ -57,58 +57,6 @@ public final class HomeSceneJumpRspOuterClass {
       return new HomeSceneJumpRsp();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private HomeSceneJumpRsp(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 104: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 112: {
-
-              isEnterRoomScene_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.internal_static_HomeSceneJumpRsp_descriptor;
@@ -122,26 +70,26 @@ public final class HomeSceneJumpRspOuterClass {
               emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp.class, emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp.Builder.class);
     }
 
-    public static final int IS_ENTER_ROOM_SCENE_FIELD_NUMBER = 14;
-    private boolean isEnterRoomScene_;
+    public static final int RETCODE_FIELD_NUMBER = 1;
+    private int retcode_ = 0;
     /**
-     * <code>bool is_enter_room_scene = 14;</code>
-     * @return The isEnterRoomScene.
-     */
-    @java.lang.Override
-    public boolean getIsEnterRoomScene() {
-      return isEnterRoomScene_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 13;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int IS_ENTER_ROOM_SCENE_FIELD_NUMBER = 4;
+    private boolean isEnterRoomScene_ = false;
+    /**
+     * <code>bool is_enter_room_scene = 4;</code>
+     * @return The isEnterRoomScene.
+     */
+    @java.lang.Override
+    public boolean getIsEnterRoomScene() {
+      return isEnterRoomScene_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,12 +107,12 @@ public final class HomeSceneJumpRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (isEnterRoomScene_ != false) {
-        output.writeBool(14, isEnterRoomScene_);
+        output.writeBool(4, isEnterRoomScene_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -175,13 +123,13 @@ public final class HomeSceneJumpRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (isEnterRoomScene_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isEnterRoomScene_);
+          .computeBoolSize(4, isEnterRoomScene_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -196,11 +144,11 @@ public final class HomeSceneJumpRspOuterClass {
       }
       emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp other = (emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp) obj;
 
-      if (getIsEnterRoomScene()
-          != other.getIsEnterRoomScene()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getIsEnterRoomScene()
+          != other.getIsEnterRoomScene()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -211,12 +159,12 @@ public final class HomeSceneJumpRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_ENTER_ROOM_SCENE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsEnterRoomScene());
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -265,11 +213,13 @@ public final class HomeSceneJumpRspOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -313,8 +263,8 @@ public final class HomeSceneJumpRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4544
-     * Obf: HBDFALCPCIA
+     * CmdId: 4518
+     * Name: KFFGIGOAKJA
      * </pre>
      *
      * Protobuf type {@code HomeSceneJumpRsp}
@@ -338,26 +288,20 @@ public final class HomeSceneJumpRspOuterClass {
 
       // Construct using emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isEnterRoomScene_ = false;
-
+        bitField0_ = 0;
         retcode_ = 0;
-
+        isEnterRoomScene_ = false;
         return this;
       }
 
@@ -384,10 +328,19 @@ public final class HomeSceneJumpRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp buildPartial() {
         emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp result = new emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp(this);
-        result.isEnterRoomScene_ = isEnterRoomScene_;
-        result.retcode_ = retcode_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.retcode_ = retcode_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.isEnterRoomScene_ = isEnterRoomScene_;
+        }
       }
 
       @java.lang.Override
@@ -434,13 +387,13 @@ public final class HomeSceneJumpRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp other) {
         if (other == emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp.getDefaultInstance()) return this;
-        if (other.getIsEnterRoomScene() != false) {
-          setIsEnterRoomScene(other.getIsEnterRoomScene());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getIsEnterRoomScene() != false) {
+          setIsEnterRoomScene(other.getIsEnterRoomScene());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -455,54 +408,47 @@ public final class HomeSceneJumpRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 32: {
+                isEnterRoomScene_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 32
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private boolean isEnterRoomScene_ ;
-      /**
-       * <code>bool is_enter_room_scene = 14;</code>
-       * @return The isEnterRoomScene.
-       */
-      @java.lang.Override
-      public boolean getIsEnterRoomScene() {
-        return isEnterRoomScene_;
-      }
-      /**
-       * <code>bool is_enter_room_scene = 14;</code>
-       * @param value The isEnterRoomScene to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsEnterRoomScene(boolean value) {
-        
-        isEnterRoomScene_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_enter_room_scene = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsEnterRoomScene() {
-        
-        isEnterRoomScene_ = false;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -510,23 +456,56 @@ public final class HomeSceneJumpRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
       public Builder setRetcode(int value) {
-        
+
         retcode_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isEnterRoomScene_ ;
+      /**
+       * <code>bool is_enter_room_scene = 4;</code>
+       * @return The isEnterRoomScene.
+       */
+      @java.lang.Override
+      public boolean getIsEnterRoomScene() {
+        return isEnterRoomScene_;
+      }
+      /**
+       * <code>bool is_enter_room_scene = 4;</code>
+       * @param value The isEnterRoomScene to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsEnterRoomScene(boolean value) {
+
+        isEnterRoomScene_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_enter_room_scene = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsEnterRoomScene() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        isEnterRoomScene_ = false;
         onChanged();
         return this;
       }
@@ -563,7 +542,18 @@ public final class HomeSceneJumpRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HomeSceneJumpRsp(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -598,8 +588,8 @@ public final class HomeSceneJumpRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026HomeSceneJumpRsp.proto\"@\n\020HomeSceneJum" +
-      "pRsp\022\033\n\023is_enter_room_scene\030\016 \001(\010\022\017\n\007ret" +
-      "code\030\r \001(\005B\033\n\031emu.grasscutter.net.protob" +
+      "pRsp\022\017\n\007retcode\030\001 \001(\005\022\033\n\023is_enter_room_s" +
+      "cene\030\004 \001(\010B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -611,7 +601,7 @@ public final class HomeSceneJumpRspOuterClass {
     internal_static_HomeSceneJumpRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeSceneJumpRsp_descriptor,
-        new java.lang.String[] { "IsEnterRoomScene", "Retcode", });
+        new java.lang.String[] { "Retcode", "IsEnterRoomScene", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

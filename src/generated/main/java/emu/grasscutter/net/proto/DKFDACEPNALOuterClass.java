@@ -92,107 +92,6 @@ public final class DKFDACEPNALOuterClass {
       return new DKFDACEPNAL();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private DKFDACEPNAL(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 40: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                pJIFOALHIHM_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              pJIFOALHIHM_.addInt(input.readUInt32());
-              break;
-            }
-            case 66: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                pJIFOALHIHM_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                pJIFOALHIHM_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 112: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                pLPFFBIBHPB_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              pLPFFBIBHPB_.addInt(input.readUInt32());
-              break;
-            }
-            case 114: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                pLPFFBIBHPB_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                pLPFFBIBHPB_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 120: {
-
-              fKPECBDMBFD_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          pJIFOALHIHM_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          pLPFFBIBHPB_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.DKFDACEPNALOuterClass.internal_static_DKFDACEPNAL_descriptor;
@@ -207,6 +106,7 @@ public final class DKFDACEPNALOuterClass {
     }
 
     public static final int PJIFOALHIHM_FIELD_NUMBER = 8;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList pJIFOALHIHM_;
     /**
      * <code>repeated uint32 PJIFOALHIHM = 8;</code>
@@ -235,7 +135,7 @@ public final class DKFDACEPNALOuterClass {
     private int pJIFOALHIHMMemoizedSerializedSize = -1;
 
     public static final int LEVEL_ID_FIELD_NUMBER = 5;
-    private int levelId_;
+    private int levelId_ = 0;
     /**
      * <code>uint32 level_id = 5;</code>
      * @return The levelId.
@@ -246,7 +146,7 @@ public final class DKFDACEPNALOuterClass {
     }
 
     public static final int FKPECBDMBFD_FIELD_NUMBER = 15;
-    private int fKPECBDMBFD_;
+    private int fKPECBDMBFD_ = 0;
     /**
      * <code>uint32 FKPECBDMBFD = 15;</code>
      * @return The fKPECBDMBFD.
@@ -257,6 +157,7 @@ public final class DKFDACEPNALOuterClass {
     }
 
     public static final int PLPFFBIBHPB_FIELD_NUMBER = 14;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList pLPFFBIBHPB_;
     /**
      * <code>repeated uint32 PLPFFBIBHPB = 14;</code>
@@ -319,7 +220,7 @@ public final class DKFDACEPNALOuterClass {
       if (fKPECBDMBFD_ != 0) {
         output.writeUInt32(15, fKPECBDMBFD_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -364,7 +265,7 @@ public final class DKFDACEPNALOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, fKPECBDMBFD_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -387,7 +288,7 @@ public final class DKFDACEPNALOuterClass {
           != other.getFKPECBDMBFD()) return false;
       if (!getPLPFFBIBHPBList()
           .equals(other.getPLPFFBIBHPBList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -410,7 +311,7 @@ public final class DKFDACEPNALOuterClass {
         hash = (37 * hash) + PLPFFBIBHPB_FIELD_NUMBER;
         hash = (53 * hash) + getPLPFFBIBHPBList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -459,11 +360,13 @@ public final class DKFDACEPNALOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.DKFDACEPNALOuterClass.DKFDACEPNAL parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.DKFDACEPNALOuterClass.DKFDACEPNAL parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -531,30 +434,22 @@ public final class DKFDACEPNALOuterClass {
 
       // Construct using emu.grasscutter.net.proto.DKFDACEPNALOuterClass.DKFDACEPNAL.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         pJIFOALHIHM_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         levelId_ = 0;
-
         fKPECBDMBFD_ = 0;
-
         pLPFFBIBHPB_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -581,21 +476,33 @@ public final class DKFDACEPNALOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DKFDACEPNALOuterClass.DKFDACEPNAL buildPartial() {
         emu.grasscutter.net.proto.DKFDACEPNALOuterClass.DKFDACEPNAL result = new emu.grasscutter.net.proto.DKFDACEPNALOuterClass.DKFDACEPNAL(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.DKFDACEPNALOuterClass.DKFDACEPNAL result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           pJIFOALHIHM_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.pJIFOALHIHM_ = pJIFOALHIHM_;
-        result.levelId_ = levelId_;
-        result.fKPECBDMBFD_ = fKPECBDMBFD_;
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00000008) != 0)) {
           pLPFFBIBHPB_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000008);
         }
         result.pLPFFBIBHPB_ = pLPFFBIBHPB_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.DKFDACEPNALOuterClass.DKFDACEPNAL result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.levelId_ = levelId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.fKPECBDMBFD_ = fKPECBDMBFD_;
+        }
       }
 
       @java.lang.Override
@@ -661,14 +568,14 @@ public final class DKFDACEPNALOuterClass {
         if (!other.pLPFFBIBHPB_.isEmpty()) {
           if (pLPFFBIBHPB_.isEmpty()) {
             pLPFFBIBHPB_ = other.pLPFFBIBHPB_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000008);
           } else {
             ensurePLPFFBIBHPBIsMutable();
             pLPFFBIBHPB_.addAll(other.pLPFFBIBHPB_);
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -683,17 +590,72 @@ public final class DKFDACEPNALOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.DKFDACEPNALOuterClass.DKFDACEPNAL parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 40: {
+                levelId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 40
+              case 64: {
+                int v = input.readUInt32();
+                ensurePJIFOALHIHMIsMutable();
+                pJIFOALHIHM_.addInt(v);
+                break;
+              } // case 64
+              case 66: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensurePJIFOALHIHMIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  pJIFOALHIHM_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 66
+              case 112: {
+                int v = input.readUInt32();
+                ensurePLPFFBIBHPBIsMutable();
+                pLPFFBIBHPB_.addInt(v);
+                break;
+              } // case 112
+              case 114: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensurePLPFFBIBHPBIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  pLPFFBIBHPB_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 114
+              case 120: {
+                fKPECBDMBFD_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.DKFDACEPNALOuterClass.DKFDACEPNAL) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -703,7 +665,7 @@ public final class DKFDACEPNALOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           pJIFOALHIHM_ = mutableCopy(pJIFOALHIHM_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
        * <code>repeated uint32 PJIFOALHIHM = 8;</code>
@@ -737,6 +699,7 @@ public final class DKFDACEPNALOuterClass {
        */
       public Builder setPJIFOALHIHM(
           int index, int value) {
+
         ensurePJIFOALHIHMIsMutable();
         pJIFOALHIHM_.setInt(index, value);
         onChanged();
@@ -748,6 +711,7 @@ public final class DKFDACEPNALOuterClass {
        * @return This builder for chaining.
        */
       public Builder addPJIFOALHIHM(int value) {
+
         ensurePJIFOALHIHMIsMutable();
         pJIFOALHIHM_.addInt(value);
         onChanged();
@@ -792,8 +756,9 @@ public final class DKFDACEPNALOuterClass {
        * @return This builder for chaining.
        */
       public Builder setLevelId(int value) {
-        
+
         levelId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -802,7 +767,7 @@ public final class DKFDACEPNALOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         levelId_ = 0;
         onChanged();
         return this;
@@ -823,8 +788,9 @@ public final class DKFDACEPNALOuterClass {
        * @return This builder for chaining.
        */
       public Builder setFKPECBDMBFD(int value) {
-        
+
         fKPECBDMBFD_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -833,7 +799,7 @@ public final class DKFDACEPNALOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearFKPECBDMBFD() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         fKPECBDMBFD_ = 0;
         onChanged();
         return this;
@@ -841,10 +807,10 @@ public final class DKFDACEPNALOuterClass {
 
       private com.google.protobuf.Internal.IntList pLPFFBIBHPB_ = emptyIntList();
       private void ensurePLPFFBIBHPBIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000008) != 0)) {
           pLPFFBIBHPB_ = mutableCopy(pLPFFBIBHPB_);
-          bitField0_ |= 0x00000002;
-         }
+          bitField0_ |= 0x00000008;
+        }
       }
       /**
        * <code>repeated uint32 PLPFFBIBHPB = 14;</code>
@@ -852,7 +818,7 @@ public final class DKFDACEPNALOuterClass {
        */
       public java.util.List<java.lang.Integer>
           getPLPFFBIBHPBList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000008) != 0) ?
                  java.util.Collections.unmodifiableList(pLPFFBIBHPB_) : pLPFFBIBHPB_;
       }
       /**
@@ -878,6 +844,7 @@ public final class DKFDACEPNALOuterClass {
        */
       public Builder setPLPFFBIBHPB(
           int index, int value) {
+
         ensurePLPFFBIBHPBIsMutable();
         pLPFFBIBHPB_.setInt(index, value);
         onChanged();
@@ -889,6 +856,7 @@ public final class DKFDACEPNALOuterClass {
        * @return This builder for chaining.
        */
       public Builder addPLPFFBIBHPB(int value) {
+
         ensurePLPFFBIBHPBIsMutable();
         pLPFFBIBHPB_.addInt(value);
         onChanged();
@@ -913,7 +881,7 @@ public final class DKFDACEPNALOuterClass {
        */
       public Builder clearPLPFFBIBHPB() {
         pLPFFBIBHPB_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
       }
@@ -950,7 +918,18 @@ public final class DKFDACEPNALOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new DKFDACEPNAL(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -986,8 +965,8 @@ public final class DKFDACEPNALOuterClass {
     java.lang.String[] descriptorData = {
       "\n\021DKFDACEPNAL.proto\"^\n\013DKFDACEPNAL\022\023\n\013PJ" +
       "IFOALHIHM\030\010 \003(\r\022\020\n\010level_id\030\005 \001(\r\022\023\n\013FKP" +
-      "ECBDMBFD\030\017 \001(\r\022\023\n\013PLPFFBIBHPB\030\016 \003(\rB!\n\031e" +
-      "mu.grasscutter.net.protoZ\004/genb\006proto3"
+      "ECBDMBFD\030\017 \001(\r\022\023\n\013PLPFFBIBHPB\030\016 \003(\rB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

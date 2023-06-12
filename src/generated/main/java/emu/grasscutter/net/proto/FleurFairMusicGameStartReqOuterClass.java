@@ -19,15 +19,15 @@ public final class FleurFairMusicGameStartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 music_basic_id = 11;</code>
+     * <code>uint32 music_basic_id = 8;</code>
      * @return The musicBasicId.
      */
     int getMusicBasicId();
   }
   /**
    * <pre>
-   * CmdId: 2113
-   * Obf: KGOCNOHNNNE
+   * CmdId: 2054
+   * Name: NCGCAEBOIGG
    * </pre>
    *
    * Protobuf type {@code FleurFairMusicGameStartReq}
@@ -51,53 +51,6 @@ public final class FleurFairMusicGameStartReqOuterClass {
       return new FleurFairMusicGameStartReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private FleurFairMusicGameStartReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 88: {
-
-              musicBasicId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.FleurFairMusicGameStartReqOuterClass.internal_static_FleurFairMusicGameStartReq_descriptor;
@@ -111,10 +64,10 @@ public final class FleurFairMusicGameStartReqOuterClass {
               emu.grasscutter.net.proto.FleurFairMusicGameStartReqOuterClass.FleurFairMusicGameStartReq.class, emu.grasscutter.net.proto.FleurFairMusicGameStartReqOuterClass.FleurFairMusicGameStartReq.Builder.class);
     }
 
-    public static final int MUSIC_BASIC_ID_FIELD_NUMBER = 11;
-    private int musicBasicId_;
+    public static final int MUSIC_BASIC_ID_FIELD_NUMBER = 8;
+    private int musicBasicId_ = 0;
     /**
-     * <code>uint32 music_basic_id = 11;</code>
+     * <code>uint32 music_basic_id = 8;</code>
      * @return The musicBasicId.
      */
     @java.lang.Override
@@ -137,9 +90,9 @@ public final class FleurFairMusicGameStartReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (musicBasicId_ != 0) {
-        output.writeUInt32(11, musicBasicId_);
+        output.writeUInt32(8, musicBasicId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -150,9 +103,9 @@ public final class FleurFairMusicGameStartReqOuterClass {
       size = 0;
       if (musicBasicId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, musicBasicId_);
+          .computeUInt32Size(8, musicBasicId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -169,7 +122,7 @@ public final class FleurFairMusicGameStartReqOuterClass {
 
       if (getMusicBasicId()
           != other.getMusicBasicId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -182,7 +135,7 @@ public final class FleurFairMusicGameStartReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + MUSIC_BASIC_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMusicBasicId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -231,11 +184,13 @@ public final class FleurFairMusicGameStartReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.FleurFairMusicGameStartReqOuterClass.FleurFairMusicGameStartReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.FleurFairMusicGameStartReqOuterClass.FleurFairMusicGameStartReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -279,8 +234,8 @@ public final class FleurFairMusicGameStartReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2113
-     * Obf: KGOCNOHNNNE
+     * CmdId: 2054
+     * Name: NCGCAEBOIGG
      * </pre>
      *
      * Protobuf type {@code FleurFairMusicGameStartReq}
@@ -304,24 +259,19 @@ public final class FleurFairMusicGameStartReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.FleurFairMusicGameStartReqOuterClass.FleurFairMusicGameStartReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         musicBasicId_ = 0;
-
         return this;
       }
 
@@ -348,9 +298,16 @@ public final class FleurFairMusicGameStartReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FleurFairMusicGameStartReqOuterClass.FleurFairMusicGameStartReq buildPartial() {
         emu.grasscutter.net.proto.FleurFairMusicGameStartReqOuterClass.FleurFairMusicGameStartReq result = new emu.grasscutter.net.proto.FleurFairMusicGameStartReqOuterClass.FleurFairMusicGameStartReq(this);
-        result.musicBasicId_ = musicBasicId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.FleurFairMusicGameStartReqOuterClass.FleurFairMusicGameStartReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.musicBasicId_ = musicBasicId_;
+        }
       }
 
       @java.lang.Override
@@ -400,7 +357,7 @@ public final class FleurFairMusicGameStartReqOuterClass {
         if (other.getMusicBasicId() != 0) {
           setMusicBasicId(other.getMusicBasicId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -415,23 +372,42 @@ public final class FleurFairMusicGameStartReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.FleurFairMusicGameStartReqOuterClass.FleurFairMusicGameStartReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 64: {
+                musicBasicId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 64
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.FleurFairMusicGameStartReqOuterClass.FleurFairMusicGameStartReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int musicBasicId_ ;
       /**
-       * <code>uint32 music_basic_id = 11;</code>
+       * <code>uint32 music_basic_id = 8;</code>
        * @return The musicBasicId.
        */
       @java.lang.Override
@@ -439,22 +415,23 @@ public final class FleurFairMusicGameStartReqOuterClass {
         return musicBasicId_;
       }
       /**
-       * <code>uint32 music_basic_id = 11;</code>
+       * <code>uint32 music_basic_id = 8;</code>
        * @param value The musicBasicId to set.
        * @return This builder for chaining.
        */
       public Builder setMusicBasicId(int value) {
-        
+
         musicBasicId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 music_basic_id = 11;</code>
+       * <code>uint32 music_basic_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMusicBasicId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         musicBasicId_ = 0;
         onChanged();
         return this;
@@ -492,7 +469,18 @@ public final class FleurFairMusicGameStartReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new FleurFairMusicGameStartReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -528,7 +516,7 @@ public final class FleurFairMusicGameStartReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n FleurFairMusicGameStartReq.proto\"4\n\032Fl" +
       "eurFairMusicGameStartReq\022\026\n\016music_basic_" +
-      "id\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "id\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

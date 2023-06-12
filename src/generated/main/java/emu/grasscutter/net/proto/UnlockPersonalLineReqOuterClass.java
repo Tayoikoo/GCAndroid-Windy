@@ -19,15 +19,15 @@ public final class UnlockPersonalLineReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 personal_line_id = 5;</code>
+     * <code>uint32 personal_line_id = 15;</code>
      * @return The personalLineId.
      */
     int getPersonalLineId();
   }
   /**
    * <pre>
-   * CmdId: 493
-   * Obf: LDPHCGEKALF
+   * CmdId: 429
+   * Name: PFFEILDHDMB
    * </pre>
    *
    * Protobuf type {@code UnlockPersonalLineReq}
@@ -51,53 +51,6 @@ public final class UnlockPersonalLineReqOuterClass {
       return new UnlockPersonalLineReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private UnlockPersonalLineReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 40: {
-
-              personalLineId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.internal_static_UnlockPersonalLineReq_descriptor;
@@ -111,10 +64,10 @@ public final class UnlockPersonalLineReqOuterClass {
               emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq.class, emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq.Builder.class);
     }
 
-    public static final int PERSONAL_LINE_ID_FIELD_NUMBER = 5;
-    private int personalLineId_;
+    public static final int PERSONAL_LINE_ID_FIELD_NUMBER = 15;
+    private int personalLineId_ = 0;
     /**
-     * <code>uint32 personal_line_id = 5;</code>
+     * <code>uint32 personal_line_id = 15;</code>
      * @return The personalLineId.
      */
     @java.lang.Override
@@ -137,9 +90,9 @@ public final class UnlockPersonalLineReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (personalLineId_ != 0) {
-        output.writeUInt32(5, personalLineId_);
+        output.writeUInt32(15, personalLineId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -150,9 +103,9 @@ public final class UnlockPersonalLineReqOuterClass {
       size = 0;
       if (personalLineId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, personalLineId_);
+          .computeUInt32Size(15, personalLineId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -169,7 +122,7 @@ public final class UnlockPersonalLineReqOuterClass {
 
       if (getPersonalLineId()
           != other.getPersonalLineId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -182,7 +135,7 @@ public final class UnlockPersonalLineReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + PERSONAL_LINE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPersonalLineId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -231,11 +184,13 @@ public final class UnlockPersonalLineReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -279,8 +234,8 @@ public final class UnlockPersonalLineReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 493
-     * Obf: LDPHCGEKALF
+     * CmdId: 429
+     * Name: PFFEILDHDMB
      * </pre>
      *
      * Protobuf type {@code UnlockPersonalLineReq}
@@ -304,24 +259,19 @@ public final class UnlockPersonalLineReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         personalLineId_ = 0;
-
         return this;
       }
 
@@ -348,9 +298,16 @@ public final class UnlockPersonalLineReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq buildPartial() {
         emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq result = new emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq(this);
-        result.personalLineId_ = personalLineId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.personalLineId_ = personalLineId_;
+        }
       }
 
       @java.lang.Override
@@ -400,7 +357,7 @@ public final class UnlockPersonalLineReqOuterClass {
         if (other.getPersonalLineId() != 0) {
           setPersonalLineId(other.getPersonalLineId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -415,23 +372,42 @@ public final class UnlockPersonalLineReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 120: {
+                personalLineId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int personalLineId_ ;
       /**
-       * <code>uint32 personal_line_id = 5;</code>
+       * <code>uint32 personal_line_id = 15;</code>
        * @return The personalLineId.
        */
       @java.lang.Override
@@ -439,22 +415,23 @@ public final class UnlockPersonalLineReqOuterClass {
         return personalLineId_;
       }
       /**
-       * <code>uint32 personal_line_id = 5;</code>
+       * <code>uint32 personal_line_id = 15;</code>
        * @param value The personalLineId to set.
        * @return This builder for chaining.
        */
       public Builder setPersonalLineId(int value) {
-        
+
         personalLineId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 personal_line_id = 5;</code>
+       * <code>uint32 personal_line_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearPersonalLineId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         personalLineId_ = 0;
         onChanged();
         return this;
@@ -492,7 +469,18 @@ public final class UnlockPersonalLineReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new UnlockPersonalLineReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -527,7 +515,7 @@ public final class UnlockPersonalLineReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033UnlockPersonalLineReq.proto\"1\n\025UnlockP" +
-      "ersonalLineReq\022\030\n\020personal_line_id\030\005 \001(\r" +
+      "ersonalLineReq\022\030\n\020personal_line_id\030\017 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

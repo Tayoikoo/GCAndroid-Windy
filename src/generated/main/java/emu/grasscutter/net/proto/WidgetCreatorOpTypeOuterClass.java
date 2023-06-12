@@ -16,7 +16,7 @@ public final class WidgetCreatorOpTypeOuterClass {
   }
   /**
    * <pre>
-   * Obf: LACENMJJAHB
+   * Name: HFCKLPODICN
    * </pre>
    *
    * Protobuf enum {@code WidgetCreatorOpType}

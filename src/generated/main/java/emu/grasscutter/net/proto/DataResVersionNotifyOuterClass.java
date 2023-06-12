@@ -19,101 +19,101 @@ public final class DataResVersionNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string client_md5 = 3;</code>
+     * <code>string client_md5 = 8;</code>
      * @return The clientMd5.
      */
     java.lang.String getClientMd5();
     /**
-     * <code>string client_md5 = 3;</code>
+     * <code>string client_md5 = 8;</code>
      * @return The bytes for clientMd5.
      */
     com.google.protobuf.ByteString
         getClientMd5Bytes();
 
     /**
-     * <code>bool is_data_need_relogin = 11;</code>
-     * @return The isDataNeedRelogin.
+     * <code>uint32 client_silence_data_version = 6;</code>
+     * @return The clientSilenceDataVersion.
      */
-    boolean getIsDataNeedRelogin();
+    int getClientSilenceDataVersion();
 
     /**
-     * <code>uint32 client_data_version = 12;</code>
-     * @return The clientDataVersion.
-     */
-    int getClientDataVersion();
-
-    /**
-     * <code>string client_silence_version_suffix = 6;</code>
+     * <code>string client_silence_version_suffix = 9;</code>
      * @return The clientSilenceVersionSuffix.
      */
     java.lang.String getClientSilenceVersionSuffix();
     /**
-     * <code>string client_silence_version_suffix = 6;</code>
+     * <code>string client_silence_version_suffix = 9;</code>
      * @return The bytes for clientSilenceVersionSuffix.
      */
     com.google.protobuf.ByteString
         getClientSilenceVersionSuffixBytes();
 
     /**
-     * <code>.DataResVersionNotify.DataResVersionOpType op_type = 14;</code>
-     * @return The enum numeric value on the wire for opType.
+     * <code>.ResVersionConfig res_version_config = 7;</code>
+     * @return Whether the resVersionConfig field is set.
      */
-    int getOpTypeValue();
+    boolean hasResVersionConfig();
     /**
-     * <code>.DataResVersionNotify.DataResVersionOpType op_type = 14;</code>
-     * @return The opType.
+     * <code>.ResVersionConfig res_version_config = 7;</code>
+     * @return The resVersionConfig.
      */
-    emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType getOpType();
+    emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig();
+    /**
+     * <code>.ResVersionConfig res_version_config = 7;</code>
+     */
+    emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder();
 
     /**
-     * <code>string client_version_suffix = 5;</code>
-     * @return The clientVersionSuffix.
+     * <code>bool is_data_need_relogin = 3;</code>
+     * @return The isDataNeedRelogin.
      */
-    java.lang.String getClientVersionSuffix();
-    /**
-     * <code>string client_version_suffix = 5;</code>
-     * @return The bytes for clientVersionSuffix.
-     */
-    com.google.protobuf.ByteString
-        getClientVersionSuffixBytes();
+    boolean getIsDataNeedRelogin();
 
     /**
-     * <code>string client_silence_md5 = 7;</code>
+     * <code>string client_silence_md5 = 5;</code>
      * @return The clientSilenceMd5.
      */
     java.lang.String getClientSilenceMd5();
     /**
-     * <code>string client_silence_md5 = 7;</code>
+     * <code>string client_silence_md5 = 5;</code>
      * @return The bytes for clientSilenceMd5.
      */
     com.google.protobuf.ByteString
         getClientSilenceMd5Bytes();
 
     /**
-     * <code>uint32 client_silence_data_version = 4;</code>
-     * @return The clientSilenceDataVersion.
+     * <code>.DataResVersionNotify.DataResVersionOpType op_type = 1;</code>
+     * @return The enum numeric value on the wire for opType.
      */
-    int getClientSilenceDataVersion();
+    int getOpTypeValue();
+    /**
+     * <code>.DataResVersionNotify.DataResVersionOpType op_type = 1;</code>
+     * @return The opType.
+     */
+    emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType getOpType();
 
     /**
-     * <code>.ResVersionConfig res_version_config = 1;</code>
-     * @return Whether the resVersionConfig field is set.
+     * <code>uint32 client_data_version = 2;</code>
+     * @return The clientDataVersion.
      */
-    boolean hasResVersionConfig();
+    int getClientDataVersion();
+
     /**
-     * <code>.ResVersionConfig res_version_config = 1;</code>
-     * @return The resVersionConfig.
+     * <code>string client_version_suffix = 14;</code>
+     * @return The clientVersionSuffix.
      */
-    emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig();
+    java.lang.String getClientVersionSuffix();
     /**
-     * <code>.ResVersionConfig res_version_config = 1;</code>
+     * <code>string client_version_suffix = 14;</code>
+     * @return The bytes for clientVersionSuffix.
      */
-    emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder();
+    com.google.protobuf.ByteString
+        getClientVersionSuffixBytes();
   }
   /**
    * <pre>
-   * CmdId: 153
-   * Obf: FBFJPHHEKEN
+   * CmdId: 118
+   * Name: AKGLNBEFBAE
    * </pre>
    *
    * Protobuf type {@code DataResVersionNotify}
@@ -130,9 +130,9 @@ public final class DataResVersionNotifyOuterClass {
     private DataResVersionNotify() {
       clientMd5_ = "";
       clientSilenceVersionSuffix_ = "";
+      clientSilenceMd5_ = "";
       opType_ = 0;
       clientVersionSuffix_ = "";
-      clientSilenceMd5_ = "";
     }
 
     @java.lang.Override
@@ -142,106 +142,6 @@ public final class DataResVersionNotifyOuterClass {
       return new DataResVersionNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private DataResVersionNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder subBuilder = null;
-              if (resVersionConfig_ != null) {
-                subBuilder = resVersionConfig_.toBuilder();
-              }
-              resVersionConfig_ = input.readMessage(emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(resVersionConfig_);
-                resVersionConfig_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              clientMd5_ = s;
-              break;
-            }
-            case 32: {
-
-              clientSilenceDataVersion_ = input.readUInt32();
-              break;
-            }
-            case 42: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              clientVersionSuffix_ = s;
-              break;
-            }
-            case 50: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              clientSilenceVersionSuffix_ = s;
-              break;
-            }
-            case 58: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              clientSilenceMd5_ = s;
-              break;
-            }
-            case 88: {
-
-              isDataNeedRelogin_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              clientDataVersion_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-              int rawValue = input.readEnum();
-
-              opType_ = rawValue;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.internal_static_DataResVersionNotify_descriptor;
@@ -257,7 +157,7 @@ public final class DataResVersionNotifyOuterClass {
 
     /**
      * <pre>
-     * Obf: CDFDALCLADK
+     * Name: NIAIEPJFONE
      * </pre>
      *
      * Protobuf enum {@code DataResVersionNotify.DataResVersionOpType}
@@ -376,10 +276,11 @@ public final class DataResVersionNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:DataResVersionNotify.DataResVersionOpType)
     }
 
-    public static final int CLIENT_MD5_FIELD_NUMBER = 3;
-    private volatile java.lang.Object clientMd5_;
+    public static final int CLIENT_MD5_FIELD_NUMBER = 8;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object clientMd5_ = "";
     /**
-     * <code>string client_md5 = 3;</code>
+     * <code>string client_md5 = 8;</code>
      * @return The clientMd5.
      */
     @java.lang.Override
@@ -396,7 +297,7 @@ public final class DataResVersionNotifyOuterClass {
       }
     }
     /**
-     * <code>string client_md5 = 3;</code>
+     * <code>string client_md5 = 8;</code>
      * @return The bytes for clientMd5.
      */
     @java.lang.Override
@@ -414,32 +315,22 @@ public final class DataResVersionNotifyOuterClass {
       }
     }
 
-    public static final int IS_DATA_NEED_RELOGIN_FIELD_NUMBER = 11;
-    private boolean isDataNeedRelogin_;
+    public static final int CLIENT_SILENCE_DATA_VERSION_FIELD_NUMBER = 6;
+    private int clientSilenceDataVersion_ = 0;
     /**
-     * <code>bool is_data_need_relogin = 11;</code>
-     * @return The isDataNeedRelogin.
+     * <code>uint32 client_silence_data_version = 6;</code>
+     * @return The clientSilenceDataVersion.
      */
     @java.lang.Override
-    public boolean getIsDataNeedRelogin() {
-      return isDataNeedRelogin_;
+    public int getClientSilenceDataVersion() {
+      return clientSilenceDataVersion_;
     }
 
-    public static final int CLIENT_DATA_VERSION_FIELD_NUMBER = 12;
-    private int clientDataVersion_;
+    public static final int CLIENT_SILENCE_VERSION_SUFFIX_FIELD_NUMBER = 9;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object clientSilenceVersionSuffix_ = "";
     /**
-     * <code>uint32 client_data_version = 12;</code>
-     * @return The clientDataVersion.
-     */
-    @java.lang.Override
-    public int getClientDataVersion() {
-      return clientDataVersion_;
-    }
-
-    public static final int CLIENT_SILENCE_VERSION_SUFFIX_FIELD_NUMBER = 6;
-    private volatile java.lang.Object clientSilenceVersionSuffix_;
-    /**
-     * <code>string client_silence_version_suffix = 6;</code>
+     * <code>string client_silence_version_suffix = 9;</code>
      * @return The clientSilenceVersionSuffix.
      */
     @java.lang.Override
@@ -456,7 +347,7 @@ public final class DataResVersionNotifyOuterClass {
       }
     }
     /**
-     * <code>string client_silence_version_suffix = 6;</code>
+     * <code>string client_silence_version_suffix = 9;</code>
      * @return The bytes for clientSilenceVersionSuffix.
      */
     @java.lang.Override
@@ -474,67 +365,48 @@ public final class DataResVersionNotifyOuterClass {
       }
     }
 
-    public static final int OP_TYPE_FIELD_NUMBER = 14;
-    private int opType_;
+    public static final int RES_VERSION_CONFIG_FIELD_NUMBER = 7;
+    private emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig resVersionConfig_;
     /**
-     * <code>.DataResVersionNotify.DataResVersionOpType op_type = 14;</code>
-     * @return The enum numeric value on the wire for opType.
-     */
-    @java.lang.Override public int getOpTypeValue() {
-      return opType_;
-    }
-    /**
-     * <code>.DataResVersionNotify.DataResVersionOpType op_type = 14;</code>
-     * @return The opType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType getOpType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType result = emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType.valueOf(opType_);
-      return result == null ? emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType.UNRECOGNIZED : result;
-    }
-
-    public static final int CLIENT_VERSION_SUFFIX_FIELD_NUMBER = 5;
-    private volatile java.lang.Object clientVersionSuffix_;
-    /**
-     * <code>string client_version_suffix = 5;</code>
-     * @return The clientVersionSuffix.
+     * <code>.ResVersionConfig res_version_config = 7;</code>
+     * @return Whether the resVersionConfig field is set.
      */
     @java.lang.Override
-    public java.lang.String getClientVersionSuffix() {
-      java.lang.Object ref = clientVersionSuffix_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        clientVersionSuffix_ = s;
-        return s;
-      }
+    public boolean hasResVersionConfig() {
+      return resVersionConfig_ != null;
     }
     /**
-     * <code>string client_version_suffix = 5;</code>
-     * @return The bytes for clientVersionSuffix.
+     * <code>.ResVersionConfig res_version_config = 7;</code>
+     * @return The resVersionConfig.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString
-        getClientVersionSuffixBytes() {
-      java.lang.Object ref = clientVersionSuffix_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        clientVersionSuffix_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig() {
+      return resVersionConfig_ == null ? emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
+    }
+    /**
+     * <code>.ResVersionConfig res_version_config = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder() {
+      return resVersionConfig_ == null ? emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
     }
 
-    public static final int CLIENT_SILENCE_MD5_FIELD_NUMBER = 7;
-    private volatile java.lang.Object clientSilenceMd5_;
+    public static final int IS_DATA_NEED_RELOGIN_FIELD_NUMBER = 3;
+    private boolean isDataNeedRelogin_ = false;
     /**
-     * <code>string client_silence_md5 = 7;</code>
+     * <code>bool is_data_need_relogin = 3;</code>
+     * @return The isDataNeedRelogin.
+     */
+    @java.lang.Override
+    public boolean getIsDataNeedRelogin() {
+      return isDataNeedRelogin_;
+    }
+
+    public static final int CLIENT_SILENCE_MD5_FIELD_NUMBER = 5;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object clientSilenceMd5_ = "";
+    /**
+     * <code>string client_silence_md5 = 5;</code>
      * @return The clientSilenceMd5.
      */
     @java.lang.Override
@@ -551,7 +423,7 @@ public final class DataResVersionNotifyOuterClass {
       }
     }
     /**
-     * <code>string client_silence_md5 = 7;</code>
+     * <code>string client_silence_md5 = 5;</code>
      * @return The bytes for clientSilenceMd5.
      */
     @java.lang.Override
@@ -569,41 +441,72 @@ public final class DataResVersionNotifyOuterClass {
       }
     }
 
-    public static final int CLIENT_SILENCE_DATA_VERSION_FIELD_NUMBER = 4;
-    private int clientSilenceDataVersion_;
+    public static final int OP_TYPE_FIELD_NUMBER = 1;
+    private int opType_ = 0;
     /**
-     * <code>uint32 client_silence_data_version = 4;</code>
-     * @return The clientSilenceDataVersion.
+     * <code>.DataResVersionNotify.DataResVersionOpType op_type = 1;</code>
+     * @return The enum numeric value on the wire for opType.
      */
-    @java.lang.Override
-    public int getClientSilenceDataVersion() {
-      return clientSilenceDataVersion_;
+    @java.lang.Override public int getOpTypeValue() {
+      return opType_;
+    }
+    /**
+     * <code>.DataResVersionNotify.DataResVersionOpType op_type = 1;</code>
+     * @return The opType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType getOpType() {
+      emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType result = emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType.forNumber(opType_);
+      return result == null ? emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType.UNRECOGNIZED : result;
     }
 
-    public static final int RES_VERSION_CONFIG_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig resVersionConfig_;
+    public static final int CLIENT_DATA_VERSION_FIELD_NUMBER = 2;
+    private int clientDataVersion_ = 0;
     /**
-     * <code>.ResVersionConfig res_version_config = 1;</code>
-     * @return Whether the resVersionConfig field is set.
+     * <code>uint32 client_data_version = 2;</code>
+     * @return The clientDataVersion.
      */
     @java.lang.Override
-    public boolean hasResVersionConfig() {
-      return resVersionConfig_ != null;
+    public int getClientDataVersion() {
+      return clientDataVersion_;
+    }
+
+    public static final int CLIENT_VERSION_SUFFIX_FIELD_NUMBER = 14;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object clientVersionSuffix_ = "";
+    /**
+     * <code>string client_version_suffix = 14;</code>
+     * @return The clientVersionSuffix.
+     */
+    @java.lang.Override
+    public java.lang.String getClientVersionSuffix() {
+      java.lang.Object ref = clientVersionSuffix_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clientVersionSuffix_ = s;
+        return s;
+      }
     }
     /**
-     * <code>.ResVersionConfig res_version_config = 1;</code>
-     * @return The resVersionConfig.
+     * <code>string client_version_suffix = 14;</code>
+     * @return The bytes for clientVersionSuffix.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig() {
-      return resVersionConfig_ == null ? emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
-    }
-    /**
-     * <code>.ResVersionConfig res_version_config = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder() {
-      return getResVersionConfig();
+    public com.google.protobuf.ByteString
+        getClientVersionSuffixBytes() {
+      java.lang.Object ref = clientVersionSuffix_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clientVersionSuffix_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     private byte memoizedIsInitialized = -1;
@@ -620,34 +523,34 @@ public final class DataResVersionNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (resVersionConfig_ != null) {
-        output.writeMessage(1, getResVersionConfig());
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientMd5_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, clientMd5_);
-      }
-      if (clientSilenceDataVersion_ != 0) {
-        output.writeUInt32(4, clientSilenceDataVersion_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientVersionSuffix_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, clientVersionSuffix_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientSilenceVersionSuffix_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, clientSilenceVersionSuffix_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientSilenceMd5_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, clientSilenceMd5_);
-      }
-      if (isDataNeedRelogin_ != false) {
-        output.writeBool(11, isDataNeedRelogin_);
+      if (opType_ != emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType.OP_TYPE_NONE.getNumber()) {
+        output.writeEnum(1, opType_);
       }
       if (clientDataVersion_ != 0) {
-        output.writeUInt32(12, clientDataVersion_);
+        output.writeUInt32(2, clientDataVersion_);
       }
-      if (opType_ != emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType.OP_TYPE_NONE.getNumber()) {
-        output.writeEnum(14, opType_);
+      if (isDataNeedRelogin_ != false) {
+        output.writeBool(3, isDataNeedRelogin_);
       }
-      unknownFields.writeTo(output);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientSilenceMd5_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, clientSilenceMd5_);
+      }
+      if (clientSilenceDataVersion_ != 0) {
+        output.writeUInt32(6, clientSilenceDataVersion_);
+      }
+      if (resVersionConfig_ != null) {
+        output.writeMessage(7, getResVersionConfig());
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientMd5_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, clientMd5_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientSilenceVersionSuffix_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, clientSilenceVersionSuffix_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientVersionSuffix_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, clientVersionSuffix_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -656,39 +559,39 @@ public final class DataResVersionNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (resVersionConfig_ != null) {
+      if (opType_ != emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType.OP_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getResVersionConfig());
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientMd5_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, clientMd5_);
-      }
-      if (clientSilenceDataVersion_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, clientSilenceDataVersion_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientVersionSuffix_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, clientVersionSuffix_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientSilenceVersionSuffix_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, clientSilenceVersionSuffix_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientSilenceMd5_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, clientSilenceMd5_);
-      }
-      if (isDataNeedRelogin_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isDataNeedRelogin_);
+          .computeEnumSize(1, opType_);
       }
       if (clientDataVersion_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, clientDataVersion_);
+          .computeUInt32Size(2, clientDataVersion_);
       }
-      if (opType_ != emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType.OP_TYPE_NONE.getNumber()) {
+      if (isDataNeedRelogin_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, opType_);
+          .computeBoolSize(3, isDataNeedRelogin_);
       }
-      size += unknownFields.getSerializedSize();
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientSilenceMd5_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, clientSilenceMd5_);
+      }
+      if (clientSilenceDataVersion_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, clientSilenceDataVersion_);
+      }
+      if (resVersionConfig_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, getResVersionConfig());
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientMd5_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, clientMd5_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientSilenceVersionSuffix_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, clientSilenceVersionSuffix_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientVersionSuffix_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, clientVersionSuffix_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -705,25 +608,25 @@ public final class DataResVersionNotifyOuterClass {
 
       if (!getClientMd5()
           .equals(other.getClientMd5())) return false;
-      if (getIsDataNeedRelogin()
-          != other.getIsDataNeedRelogin()) return false;
-      if (getClientDataVersion()
-          != other.getClientDataVersion()) return false;
-      if (!getClientSilenceVersionSuffix()
-          .equals(other.getClientSilenceVersionSuffix())) return false;
-      if (opType_ != other.opType_) return false;
-      if (!getClientVersionSuffix()
-          .equals(other.getClientVersionSuffix())) return false;
-      if (!getClientSilenceMd5()
-          .equals(other.getClientSilenceMd5())) return false;
       if (getClientSilenceDataVersion()
           != other.getClientSilenceDataVersion()) return false;
+      if (!getClientSilenceVersionSuffix()
+          .equals(other.getClientSilenceVersionSuffix())) return false;
       if (hasResVersionConfig() != other.hasResVersionConfig()) return false;
       if (hasResVersionConfig()) {
         if (!getResVersionConfig()
             .equals(other.getResVersionConfig())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getIsDataNeedRelogin()
+          != other.getIsDataNeedRelogin()) return false;
+      if (!getClientSilenceMd5()
+          .equals(other.getClientSilenceMd5())) return false;
+      if (opType_ != other.opType_) return false;
+      if (getClientDataVersion()
+          != other.getClientDataVersion()) return false;
+      if (!getClientVersionSuffix()
+          .equals(other.getClientVersionSuffix())) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -736,26 +639,26 @@ public final class DataResVersionNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CLIENT_MD5_FIELD_NUMBER;
       hash = (53 * hash) + getClientMd5().hashCode();
-      hash = (37 * hash) + IS_DATA_NEED_RELOGIN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsDataNeedRelogin());
-      hash = (37 * hash) + CLIENT_DATA_VERSION_FIELD_NUMBER;
-      hash = (53 * hash) + getClientDataVersion();
-      hash = (37 * hash) + CLIENT_SILENCE_VERSION_SUFFIX_FIELD_NUMBER;
-      hash = (53 * hash) + getClientSilenceVersionSuffix().hashCode();
-      hash = (37 * hash) + OP_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + opType_;
-      hash = (37 * hash) + CLIENT_VERSION_SUFFIX_FIELD_NUMBER;
-      hash = (53 * hash) + getClientVersionSuffix().hashCode();
-      hash = (37 * hash) + CLIENT_SILENCE_MD5_FIELD_NUMBER;
-      hash = (53 * hash) + getClientSilenceMd5().hashCode();
       hash = (37 * hash) + CLIENT_SILENCE_DATA_VERSION_FIELD_NUMBER;
       hash = (53 * hash) + getClientSilenceDataVersion();
+      hash = (37 * hash) + CLIENT_SILENCE_VERSION_SUFFIX_FIELD_NUMBER;
+      hash = (53 * hash) + getClientSilenceVersionSuffix().hashCode();
       if (hasResVersionConfig()) {
         hash = (37 * hash) + RES_VERSION_CONFIG_FIELD_NUMBER;
         hash = (53 * hash) + getResVersionConfig().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + IS_DATA_NEED_RELOGIN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsDataNeedRelogin());
+      hash = (37 * hash) + CLIENT_SILENCE_MD5_FIELD_NUMBER;
+      hash = (53 * hash) + getClientSilenceMd5().hashCode();
+      hash = (37 * hash) + OP_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + opType_;
+      hash = (37 * hash) + CLIENT_DATA_VERSION_FIELD_NUMBER;
+      hash = (53 * hash) + getClientDataVersion();
+      hash = (37 * hash) + CLIENT_VERSION_SUFFIX_FIELD_NUMBER;
+      hash = (53 * hash) + getClientVersionSuffix().hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -804,11 +707,13 @@ public final class DataResVersionNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -852,8 +757,8 @@ public final class DataResVersionNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 153
-     * Obf: FBFJPHHEKEN
+     * CmdId: 118
+     * Name: AKGLNBEFBAE
      * </pre>
      *
      * Protobuf type {@code DataResVersionNotify}
@@ -877,44 +782,31 @@ public final class DataResVersionNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         clientMd5_ = "";
-
-        isDataNeedRelogin_ = false;
-
-        clientDataVersion_ = 0;
-
-        clientSilenceVersionSuffix_ = "";
-
-        opType_ = 0;
-
-        clientVersionSuffix_ = "";
-
-        clientSilenceMd5_ = "";
-
         clientSilenceDataVersion_ = 0;
-
-        if (resVersionConfigBuilder_ == null) {
-          resVersionConfig_ = null;
-        } else {
-          resVersionConfig_ = null;
+        clientSilenceVersionSuffix_ = "";
+        resVersionConfig_ = null;
+        if (resVersionConfigBuilder_ != null) {
+          resVersionConfigBuilder_.dispose();
           resVersionConfigBuilder_ = null;
         }
+        isDataNeedRelogin_ = false;
+        clientSilenceMd5_ = "";
+        opType_ = 0;
+        clientDataVersion_ = 0;
+        clientVersionSuffix_ = "";
         return this;
       }
 
@@ -941,21 +833,42 @@ public final class DataResVersionNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify buildPartial() {
         emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify result = new emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify(this);
-        result.clientMd5_ = clientMd5_;
-        result.isDataNeedRelogin_ = isDataNeedRelogin_;
-        result.clientDataVersion_ = clientDataVersion_;
-        result.clientSilenceVersionSuffix_ = clientSilenceVersionSuffix_;
-        result.opType_ = opType_;
-        result.clientVersionSuffix_ = clientVersionSuffix_;
-        result.clientSilenceMd5_ = clientSilenceMd5_;
-        result.clientSilenceDataVersion_ = clientSilenceDataVersion_;
-        if (resVersionConfigBuilder_ == null) {
-          result.resVersionConfig_ = resVersionConfig_;
-        } else {
-          result.resVersionConfig_ = resVersionConfigBuilder_.build();
-        }
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.clientMd5_ = clientMd5_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.clientSilenceDataVersion_ = clientSilenceDataVersion_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.clientSilenceVersionSuffix_ = clientSilenceVersionSuffix_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.resVersionConfig_ = resVersionConfigBuilder_ == null
+              ? resVersionConfig_
+              : resVersionConfigBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.isDataNeedRelogin_ = isDataNeedRelogin_;
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
+          result.clientSilenceMd5_ = clientSilenceMd5_;
+        }
+        if (((from_bitField0_ & 0x00000040) != 0)) {
+          result.opType_ = opType_;
+        }
+        if (((from_bitField0_ & 0x00000080) != 0)) {
+          result.clientDataVersion_ = clientDataVersion_;
+        }
+        if (((from_bitField0_ & 0x00000100) != 0)) {
+          result.clientVersionSuffix_ = clientVersionSuffix_;
+        }
       }
 
       @java.lang.Override
@@ -1004,36 +917,40 @@ public final class DataResVersionNotifyOuterClass {
         if (other == emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.getDefaultInstance()) return this;
         if (!other.getClientMd5().isEmpty()) {
           clientMd5_ = other.clientMd5_;
-          onChanged();
-        }
-        if (other.getIsDataNeedRelogin() != false) {
-          setIsDataNeedRelogin(other.getIsDataNeedRelogin());
-        }
-        if (other.getClientDataVersion() != 0) {
-          setClientDataVersion(other.getClientDataVersion());
-        }
-        if (!other.getClientSilenceVersionSuffix().isEmpty()) {
-          clientSilenceVersionSuffix_ = other.clientSilenceVersionSuffix_;
-          onChanged();
-        }
-        if (other.opType_ != 0) {
-          setOpTypeValue(other.getOpTypeValue());
-        }
-        if (!other.getClientVersionSuffix().isEmpty()) {
-          clientVersionSuffix_ = other.clientVersionSuffix_;
-          onChanged();
-        }
-        if (!other.getClientSilenceMd5().isEmpty()) {
-          clientSilenceMd5_ = other.clientSilenceMd5_;
+          bitField0_ |= 0x00000001;
           onChanged();
         }
         if (other.getClientSilenceDataVersion() != 0) {
           setClientSilenceDataVersion(other.getClientSilenceDataVersion());
         }
+        if (!other.getClientSilenceVersionSuffix().isEmpty()) {
+          clientSilenceVersionSuffix_ = other.clientSilenceVersionSuffix_;
+          bitField0_ |= 0x00000004;
+          onChanged();
+        }
         if (other.hasResVersionConfig()) {
           mergeResVersionConfig(other.getResVersionConfig());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getIsDataNeedRelogin() != false) {
+          setIsDataNeedRelogin(other.getIsDataNeedRelogin());
+        }
+        if (!other.getClientSilenceMd5().isEmpty()) {
+          clientSilenceMd5_ = other.clientSilenceMd5_;
+          bitField0_ |= 0x00000020;
+          onChanged();
+        }
+        if (other.opType_ != 0) {
+          setOpTypeValue(other.getOpTypeValue());
+        }
+        if (other.getClientDataVersion() != 0) {
+          setClientDataVersion(other.getClientDataVersion());
+        }
+        if (!other.getClientVersionSuffix().isEmpty()) {
+          clientVersionSuffix_ = other.clientVersionSuffix_;
+          bitField0_ |= 0x00000100;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -1048,23 +965,84 @@ public final class DataResVersionNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                opType_ = input.readEnum();
+                bitField0_ |= 0x00000040;
+                break;
+              } // case 8
+              case 16: {
+                clientDataVersion_ = input.readUInt32();
+                bitField0_ |= 0x00000080;
+                break;
+              } // case 16
+              case 24: {
+                isDataNeedRelogin_ = input.readBool();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 24
+              case 42: {
+                clientSilenceMd5_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000020;
+                break;
+              } // case 42
+              case 48: {
+                clientSilenceDataVersion_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 48
+              case 58: {
+                input.readMessage(
+                    getResVersionConfigFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 58
+              case 66: {
+                clientMd5_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 66
+              case 74: {
+                clientSilenceVersionSuffix_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 74
+              case 114: {
+                clientVersionSuffix_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000100;
+                break;
+              } // case 114
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private java.lang.Object clientMd5_ = "";
       /**
-       * <code>string client_md5 = 3;</code>
+       * <code>string client_md5 = 8;</code>
        * @return The clientMd5.
        */
       public java.lang.String getClientMd5() {
@@ -1080,7 +1058,7 @@ public final class DataResVersionNotifyOuterClass {
         }
       }
       /**
-       * <code>string client_md5 = 3;</code>
+       * <code>string client_md5 = 8;</code>
        * @return The bytes for clientMd5.
        */
       public com.google.protobuf.ByteString
@@ -1097,112 +1075,78 @@ public final class DataResVersionNotifyOuterClass {
         }
       }
       /**
-       * <code>string client_md5 = 3;</code>
+       * <code>string client_md5 = 8;</code>
        * @param value The clientMd5 to set.
        * @return This builder for chaining.
        */
       public Builder setClientMd5(
           java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        if (value == null) { throw new NullPointerException(); }
         clientMd5_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>string client_md5 = 3;</code>
+       * <code>string client_md5 = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientMd5() {
-        
         clientMd5_ = getDefaultInstance().getClientMd5();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
       /**
-       * <code>string client_md5 = 3;</code>
+       * <code>string client_md5 = 8;</code>
        * @param value The bytes for clientMd5 to set.
        * @return This builder for chaining.
        */
       public Builder setClientMd5Bytes(
           com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
         clientMd5_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
 
-      private boolean isDataNeedRelogin_ ;
+      private int clientSilenceDataVersion_ ;
       /**
-       * <code>bool is_data_need_relogin = 11;</code>
-       * @return The isDataNeedRelogin.
+       * <code>uint32 client_silence_data_version = 6;</code>
+       * @return The clientSilenceDataVersion.
        */
       @java.lang.Override
-      public boolean getIsDataNeedRelogin() {
-        return isDataNeedRelogin_;
+      public int getClientSilenceDataVersion() {
+        return clientSilenceDataVersion_;
       }
       /**
-       * <code>bool is_data_need_relogin = 11;</code>
-       * @param value The isDataNeedRelogin to set.
+       * <code>uint32 client_silence_data_version = 6;</code>
+       * @param value The clientSilenceDataVersion to set.
        * @return This builder for chaining.
        */
-      public Builder setIsDataNeedRelogin(boolean value) {
-        
-        isDataNeedRelogin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_data_need_relogin = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsDataNeedRelogin() {
-        
-        isDataNeedRelogin_ = false;
-        onChanged();
-        return this;
-      }
+      public Builder setClientSilenceDataVersion(int value) {
 
-      private int clientDataVersion_ ;
-      /**
-       * <code>uint32 client_data_version = 12;</code>
-       * @return The clientDataVersion.
-       */
-      @java.lang.Override
-      public int getClientDataVersion() {
-        return clientDataVersion_;
-      }
-      /**
-       * <code>uint32 client_data_version = 12;</code>
-       * @param value The clientDataVersion to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientDataVersion(int value) {
-        
-        clientDataVersion_ = value;
+        clientSilenceDataVersion_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 client_data_version = 12;</code>
+       * <code>uint32 client_silence_data_version = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearClientDataVersion() {
-        
-        clientDataVersion_ = 0;
+      public Builder clearClientSilenceDataVersion() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        clientSilenceDataVersion_ = 0;
         onChanged();
         return this;
       }
 
       private java.lang.Object clientSilenceVersionSuffix_ = "";
       /**
-       * <code>string client_silence_version_suffix = 6;</code>
+       * <code>string client_silence_version_suffix = 9;</code>
        * @return The clientSilenceVersionSuffix.
        */
       public java.lang.String getClientSilenceVersionSuffix() {
@@ -1218,7 +1162,7 @@ public final class DataResVersionNotifyOuterClass {
         }
       }
       /**
-       * <code>string client_silence_version_suffix = 6;</code>
+       * <code>string client_silence_version_suffix = 9;</code>
        * @return The bytes for clientSilenceVersionSuffix.
        */
       public com.google.protobuf.ByteString
@@ -1235,180 +1179,197 @@ public final class DataResVersionNotifyOuterClass {
         }
       }
       /**
-       * <code>string client_silence_version_suffix = 6;</code>
+       * <code>string client_silence_version_suffix = 9;</code>
        * @param value The clientSilenceVersionSuffix to set.
        * @return This builder for chaining.
        */
       public Builder setClientSilenceVersionSuffix(
           java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        if (value == null) { throw new NullPointerException(); }
         clientSilenceVersionSuffix_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>string client_silence_version_suffix = 6;</code>
+       * <code>string client_silence_version_suffix = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientSilenceVersionSuffix() {
-        
         clientSilenceVersionSuffix_ = getDefaultInstance().getClientSilenceVersionSuffix();
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
       /**
-       * <code>string client_silence_version_suffix = 6;</code>
+       * <code>string client_silence_version_suffix = 9;</code>
        * @param value The bytes for clientSilenceVersionSuffix to set.
        * @return This builder for chaining.
        */
       public Builder setClientSilenceVersionSuffixBytes(
           com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
         clientSilenceVersionSuffix_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
 
-      private int opType_ = 0;
+      private emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig resVersionConfig_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> resVersionConfigBuilder_;
       /**
-       * <code>.DataResVersionNotify.DataResVersionOpType op_type = 14;</code>
-       * @return The enum numeric value on the wire for opType.
+       * <code>.ResVersionConfig res_version_config = 7;</code>
+       * @return Whether the resVersionConfig field is set.
        */
-      @java.lang.Override public int getOpTypeValue() {
-        return opType_;
+      public boolean hasResVersionConfig() {
+        return ((bitField0_ & 0x00000008) != 0);
       }
       /**
-       * <code>.DataResVersionNotify.DataResVersionOpType op_type = 14;</code>
-       * @param value The enum numeric value on the wire for opType to set.
-       * @return This builder for chaining.
+       * <code>.ResVersionConfig res_version_config = 7;</code>
+       * @return The resVersionConfig.
        */
-      public Builder setOpTypeValue(int value) {
-        
-        opType_ = value;
+      public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig() {
+        if (resVersionConfigBuilder_ == null) {
+          return resVersionConfig_ == null ? emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
+        } else {
+          return resVersionConfigBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.ResVersionConfig res_version_config = 7;</code>
+       */
+      public Builder setResVersionConfig(emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
+        if (resVersionConfigBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          resVersionConfig_ = value;
+        } else {
+          resVersionConfigBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>.DataResVersionNotify.DataResVersionOpType op_type = 14;</code>
-       * @return The opType.
+       * <code>.ResVersionConfig res_version_config = 7;</code>
+       */
+      public Builder setResVersionConfig(
+          emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder builderForValue) {
+        if (resVersionConfigBuilder_ == null) {
+          resVersionConfig_ = builderForValue.build();
+        } else {
+          resVersionConfigBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ResVersionConfig res_version_config = 7;</code>
+       */
+      public Builder mergeResVersionConfig(emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
+        if (resVersionConfigBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) != 0) &&
+            resVersionConfig_ != null &&
+            resVersionConfig_ != emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance()) {
+            getResVersionConfigBuilder().mergeFrom(value);
+          } else {
+            resVersionConfig_ = value;
+          }
+        } else {
+          resVersionConfigBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ResVersionConfig res_version_config = 7;</code>
+       */
+      public Builder clearResVersionConfig() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        resVersionConfig_ = null;
+        if (resVersionConfigBuilder_ != null) {
+          resVersionConfigBuilder_.dispose();
+          resVersionConfigBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ResVersionConfig res_version_config = 7;</code>
+       */
+      public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder getResVersionConfigBuilder() {
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return getResVersionConfigFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.ResVersionConfig res_version_config = 7;</code>
+       */
+      public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder() {
+        if (resVersionConfigBuilder_ != null) {
+          return resVersionConfigBuilder_.getMessageOrBuilder();
+        } else {
+          return resVersionConfig_ == null ?
+              emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
+        }
+      }
+      /**
+       * <code>.ResVersionConfig res_version_config = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> 
+          getResVersionConfigFieldBuilder() {
+        if (resVersionConfigBuilder_ == null) {
+          resVersionConfigBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder>(
+                  getResVersionConfig(),
+                  getParentForChildren(),
+                  isClean());
+          resVersionConfig_ = null;
+        }
+        return resVersionConfigBuilder_;
+      }
+
+      private boolean isDataNeedRelogin_ ;
+      /**
+       * <code>bool is_data_need_relogin = 3;</code>
+       * @return The isDataNeedRelogin.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType getOpType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType result = emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType.valueOf(opType_);
-        return result == null ? emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType.UNRECOGNIZED : result;
+      public boolean getIsDataNeedRelogin() {
+        return isDataNeedRelogin_;
       }
       /**
-       * <code>.DataResVersionNotify.DataResVersionOpType op_type = 14;</code>
-       * @param value The opType to set.
+       * <code>bool is_data_need_relogin = 3;</code>
+       * @param value The isDataNeedRelogin to set.
        * @return This builder for chaining.
        */
-      public Builder setOpType(emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        opType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.DataResVersionNotify.DataResVersionOpType op_type = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOpType() {
-        
-        opType_ = 0;
-        onChanged();
-        return this;
-      }
+      public Builder setIsDataNeedRelogin(boolean value) {
 
-      private java.lang.Object clientVersionSuffix_ = "";
-      /**
-       * <code>string client_version_suffix = 5;</code>
-       * @return The clientVersionSuffix.
-       */
-      public java.lang.String getClientVersionSuffix() {
-        java.lang.Object ref = clientVersionSuffix_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          clientVersionSuffix_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string client_version_suffix = 5;</code>
-       * @return The bytes for clientVersionSuffix.
-       */
-      public com.google.protobuf.ByteString
-          getClientVersionSuffixBytes() {
-        java.lang.Object ref = clientVersionSuffix_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          clientVersionSuffix_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string client_version_suffix = 5;</code>
-       * @param value The clientVersionSuffix to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientVersionSuffix(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        clientVersionSuffix_ = value;
+        isDataNeedRelogin_ = value;
+        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
       /**
-       * <code>string client_version_suffix = 5;</code>
+       * <code>bool is_data_need_relogin = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearClientVersionSuffix() {
-        
-        clientVersionSuffix_ = getDefaultInstance().getClientVersionSuffix();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string client_version_suffix = 5;</code>
-       * @param value The bytes for clientVersionSuffix to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientVersionSuffixBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        clientVersionSuffix_ = value;
+      public Builder clearIsDataNeedRelogin() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        isDataNeedRelogin_ = false;
         onChanged();
         return this;
       }
 
       private java.lang.Object clientSilenceMd5_ = "";
       /**
-       * <code>string client_silence_md5 = 7;</code>
+       * <code>string client_silence_md5 = 5;</code>
        * @return The clientSilenceMd5.
        */
       public java.lang.String getClientSilenceMd5() {
@@ -1424,7 +1385,7 @@ public final class DataResVersionNotifyOuterClass {
         }
       }
       /**
-       * <code>string client_silence_md5 = 7;</code>
+       * <code>string client_silence_md5 = 5;</code>
        * @return The bytes for clientSilenceMd5.
        */
       public com.google.protobuf.ByteString
@@ -1441,195 +1402,198 @@ public final class DataResVersionNotifyOuterClass {
         }
       }
       /**
-       * <code>string client_silence_md5 = 7;</code>
+       * <code>string client_silence_md5 = 5;</code>
        * @param value The clientSilenceMd5 to set.
        * @return This builder for chaining.
        */
       public Builder setClientSilenceMd5(
           java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        if (value == null) { throw new NullPointerException(); }
         clientSilenceMd5_ = value;
+        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
       /**
-       * <code>string client_silence_md5 = 7;</code>
+       * <code>string client_silence_md5 = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientSilenceMd5() {
-        
         clientSilenceMd5_ = getDefaultInstance().getClientSilenceMd5();
+        bitField0_ = (bitField0_ & ~0x00000020);
         onChanged();
         return this;
       }
       /**
-       * <code>string client_silence_md5 = 7;</code>
+       * <code>string client_silence_md5 = 5;</code>
        * @param value The bytes for clientSilenceMd5 to set.
        * @return This builder for chaining.
        */
       public Builder setClientSilenceMd5Bytes(
           com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
         clientSilenceMd5_ = value;
+        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
 
-      private int clientSilenceDataVersion_ ;
+      private int opType_ = 0;
       /**
-       * <code>uint32 client_silence_data_version = 4;</code>
-       * @return The clientSilenceDataVersion.
+       * <code>.DataResVersionNotify.DataResVersionOpType op_type = 1;</code>
+       * @return The enum numeric value on the wire for opType.
+       */
+      @java.lang.Override public int getOpTypeValue() {
+        return opType_;
+      }
+      /**
+       * <code>.DataResVersionNotify.DataResVersionOpType op_type = 1;</code>
+       * @param value The enum numeric value on the wire for opType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOpTypeValue(int value) {
+        opType_ = value;
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.DataResVersionNotify.DataResVersionOpType op_type = 1;</code>
+       * @return The opType.
        */
       @java.lang.Override
-      public int getClientSilenceDataVersion() {
-        return clientSilenceDataVersion_;
+      public emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType getOpType() {
+        emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType result = emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType.forNumber(opType_);
+        return result == null ? emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType.UNRECOGNIZED : result;
       }
       /**
-       * <code>uint32 client_silence_data_version = 4;</code>
-       * @param value The clientSilenceDataVersion to set.
+       * <code>.DataResVersionNotify.DataResVersionOpType op_type = 1;</code>
+       * @param value The opType to set.
        * @return This builder for chaining.
        */
-      public Builder setClientSilenceDataVersion(int value) {
-        
-        clientSilenceDataVersion_ = value;
+      public Builder setOpType(emu.grasscutter.net.proto.DataResVersionNotifyOuterClass.DataResVersionNotify.DataResVersionOpType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000040;
+        opType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 client_silence_data_version = 4;</code>
+       * <code>.DataResVersionNotify.DataResVersionOpType op_type = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearClientSilenceDataVersion() {
-        
-        clientSilenceDataVersion_ = 0;
+      public Builder clearOpType() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        opType_ = 0;
         onChanged();
         return this;
       }
 
-      private emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig resVersionConfig_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> resVersionConfigBuilder_;
+      private int clientDataVersion_ ;
       /**
-       * <code>.ResVersionConfig res_version_config = 1;</code>
-       * @return Whether the resVersionConfig field is set.
+       * <code>uint32 client_data_version = 2;</code>
+       * @return The clientDataVersion.
        */
-      public boolean hasResVersionConfig() {
-        return resVersionConfigBuilder_ != null || resVersionConfig_ != null;
+      @java.lang.Override
+      public int getClientDataVersion() {
+        return clientDataVersion_;
       }
       /**
-       * <code>.ResVersionConfig res_version_config = 1;</code>
-       * @return The resVersionConfig.
+       * <code>uint32 client_data_version = 2;</code>
+       * @param value The clientDataVersion to set.
+       * @return This builder for chaining.
        */
-      public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig getResVersionConfig() {
-        if (resVersionConfigBuilder_ == null) {
-          return resVersionConfig_ == null ? emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
-        } else {
-          return resVersionConfigBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.ResVersionConfig res_version_config = 1;</code>
-       */
-      public Builder setResVersionConfig(emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
-        if (resVersionConfigBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          resVersionConfig_ = value;
-          onChanged();
-        } else {
-          resVersionConfigBuilder_.setMessage(value);
-        }
+      public Builder setClientDataVersion(int value) {
 
-        return this;
-      }
-      /**
-       * <code>.ResVersionConfig res_version_config = 1;</code>
-       */
-      public Builder setResVersionConfig(
-          emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder builderForValue) {
-        if (resVersionConfigBuilder_ == null) {
-          resVersionConfig_ = builderForValue.build();
-          onChanged();
-        } else {
-          resVersionConfigBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ResVersionConfig res_version_config = 1;</code>
-       */
-      public Builder mergeResVersionConfig(emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig value) {
-        if (resVersionConfigBuilder_ == null) {
-          if (resVersionConfig_ != null) {
-            resVersionConfig_ =
-              emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.newBuilder(resVersionConfig_).mergeFrom(value).buildPartial();
-          } else {
-            resVersionConfig_ = value;
-          }
-          onChanged();
-        } else {
-          resVersionConfigBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ResVersionConfig res_version_config = 1;</code>
-       */
-      public Builder clearResVersionConfig() {
-        if (resVersionConfigBuilder_ == null) {
-          resVersionConfig_ = null;
-          onChanged();
-        } else {
-          resVersionConfig_ = null;
-          resVersionConfigBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ResVersionConfig res_version_config = 1;</code>
-       */
-      public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder getResVersionConfigBuilder() {
-        
+        clientDataVersion_ = value;
+        bitField0_ |= 0x00000080;
         onChanged();
-        return getResVersionConfigFieldBuilder().getBuilder();
+        return this;
       }
       /**
-       * <code>.ResVersionConfig res_version_config = 1;</code>
+       * <code>uint32 client_data_version = 2;</code>
+       * @return This builder for chaining.
        */
-      public emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder() {
-        if (resVersionConfigBuilder_ != null) {
-          return resVersionConfigBuilder_.getMessageOrBuilder();
+      public Builder clearClientDataVersion() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        clientDataVersion_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object clientVersionSuffix_ = "";
+      /**
+       * <code>string client_version_suffix = 14;</code>
+       * @return The clientVersionSuffix.
+       */
+      public java.lang.String getClientVersionSuffix() {
+        java.lang.Object ref = clientVersionSuffix_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          clientVersionSuffix_ = s;
+          return s;
         } else {
-          return resVersionConfig_ == null ?
-              emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.getDefaultInstance() : resVersionConfig_;
+          return (java.lang.String) ref;
         }
       }
       /**
-       * <code>.ResVersionConfig res_version_config = 1;</code>
+       * <code>string client_version_suffix = 14;</code>
+       * @return The bytes for clientVersionSuffix.
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder> 
-          getResVersionConfigFieldBuilder() {
-        if (resVersionConfigBuilder_ == null) {
-          resVersionConfigBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig.Builder, emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder>(
-                  getResVersionConfig(),
-                  getParentForChildren(),
-                  isClean());
-          resVersionConfig_ = null;
+      public com.google.protobuf.ByteString
+          getClientVersionSuffixBytes() {
+        java.lang.Object ref = clientVersionSuffix_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          clientVersionSuffix_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
         }
-        return resVersionConfigBuilder_;
+      }
+      /**
+       * <code>string client_version_suffix = 14;</code>
+       * @param value The clientVersionSuffix to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientVersionSuffix(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        clientVersionSuffix_ = value;
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string client_version_suffix = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearClientVersionSuffix() {
+        clientVersionSuffix_ = getDefaultInstance().getClientVersionSuffix();
+        bitField0_ = (bitField0_ & ~0x00000100);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string client_version_suffix = 14;</code>
+       * @param value The bytes for clientVersionSuffix to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientVersionSuffixBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        clientVersionSuffix_ = value;
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1664,7 +1628,18 @@ public final class DataResVersionNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new DataResVersionNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1700,14 +1675,14 @@ public final class DataResVersionNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032DataResVersionNotify.proto\032\026ResVersion" +
       "Config.proto\"\257\003\n\024DataResVersionNotify\022\022\n" +
-      "\nclient_md5\030\003 \001(\t\022\034\n\024is_data_need_relogi" +
-      "n\030\013 \001(\010\022\033\n\023client_data_version\030\014 \001(\r\022%\n\035" +
-      "client_silence_version_suffix\030\006 \001(\t\022;\n\007o" +
-      "p_type\030\016 \001(\0162*.DataResVersionNotify.Data" +
-      "ResVersionOpType\022\035\n\025client_version_suffi" +
-      "x\030\005 \001(\t\022\032\n\022client_silence_md5\030\007 \001(\t\022#\n\033c" +
-      "lient_silence_data_version\030\004 \001(\r\022-\n\022res_" +
-      "version_config\030\001 \001(\0132\021.ResVersionConfig\"" +
+      "\nclient_md5\030\010 \001(\t\022#\n\033client_silence_data" +
+      "_version\030\006 \001(\r\022%\n\035client_silence_version" +
+      "_suffix\030\t \001(\t\022-\n\022res_version_config\030\007 \001(" +
+      "\0132\021.ResVersionConfig\022\034\n\024is_data_need_rel" +
+      "ogin\030\003 \001(\010\022\032\n\022client_silence_md5\030\005 \001(\t\022;" +
+      "\n\007op_type\030\001 \001(\0162*.DataResVersionNotify.D" +
+      "ataResVersionOpType\022\033\n\023client_data_versi" +
+      "on\030\002 \001(\r\022\035\n\025client_version_suffix\030\016 \001(\t\"" +
       "U\n\024DataResVersionOpType\022\020\n\014OP_TYPE_NONE\020" +
       "\000\022\023\n\017OP_TYPE_RELOGIN\020\001\022\026\n\022OP_TYPE_MP_REL" +
       "OGIN\020\002B\033\n\031emu.grasscutter.net.protob\006pro" +
@@ -1723,7 +1698,7 @@ public final class DataResVersionNotifyOuterClass {
     internal_static_DataResVersionNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DataResVersionNotify_descriptor,
-        new java.lang.String[] { "ClientMd5", "IsDataNeedRelogin", "ClientDataVersion", "ClientSilenceVersionSuffix", "OpType", "ClientVersionSuffix", "ClientSilenceMd5", "ClientSilenceDataVersion", "ResVersionConfig", });
+        new java.lang.String[] { "ClientMd5", "ClientSilenceDataVersion", "ClientSilenceVersionSuffix", "ResVersionConfig", "IsDataNeedRelogin", "ClientSilenceMd5", "OpType", "ClientDataVersion", "ClientVersionSuffix", });
     emu.grasscutter.net.proto.ResVersionConfigOuterClass.getDescriptor();
   }
 

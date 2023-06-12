@@ -13,4 +13,5 @@ public class HandlerPlayerCompoundMaterialReq extends PacketHandler {
         var req = PlayerCompoundMaterialReqOuterClass.PlayerCompoundMaterialReq.parseFrom(payload);
         session.getPlayer().getCookingCompoundManager().handlePlayerCompoundMaterialReq(req);
     }
+
 }

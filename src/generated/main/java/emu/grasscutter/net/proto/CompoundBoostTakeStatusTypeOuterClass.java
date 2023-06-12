@@ -16,7 +16,7 @@ public final class CompoundBoostTakeStatusTypeOuterClass {
   }
   /**
    * <pre>
-   * Obf: KBJDBGIEOHI
+   * Name: BCHLHMNBPCI
    * </pre>
    *
    * Protobuf enum {@code CompoundBoostTakeStatusType}

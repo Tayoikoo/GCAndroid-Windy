@@ -189,8 +189,7 @@ public final class FEEHAOJCNCGOuterClass {
       "AN_DUNGEON_STOP_CANCEL\020\004\0223\n/FEEHAOJCNCG_" +
       "PACMAN_DUNGEON_STOP_ACTIVITY_CLOSED\020\005\022(\n" +
       "$FEEHAOJCNCG_PACMAN_DUNGEON_STOP_FAIL\020\006B" +
-      "!\n\031emu.grasscutter.net.protoZ\004/genb\006prot" +
-      "o3"
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

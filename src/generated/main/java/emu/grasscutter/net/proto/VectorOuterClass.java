@@ -38,7 +38,7 @@ public final class VectorOuterClass {
   }
   /**
    * <pre>
-   * Obf: PBDDPMHLPJG
+   * Name: KKFEDHALJFH
    * </pre>
    *
    * Protobuf type {@code Vector}
@@ -62,63 +62,6 @@ public final class VectorOuterClass {
       return new Vector();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private Vector(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 13: {
-
-              x_ = input.readFloat();
-              break;
-            }
-            case 21: {
-
-              y_ = input.readFloat();
-              break;
-            }
-            case 29: {
-
-              z_ = input.readFloat();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.VectorOuterClass.internal_static_Vector_descriptor;
@@ -133,7 +76,7 @@ public final class VectorOuterClass {
     }
 
     public static final int X_FIELD_NUMBER = 1;
-    private float x_;
+    private float x_ = 0F;
     /**
      * <code>float x = 1;</code>
      * @return The x.
@@ -144,7 +87,7 @@ public final class VectorOuterClass {
     }
 
     public static final int Y_FIELD_NUMBER = 2;
-    private float y_;
+    private float y_ = 0F;
     /**
      * <code>float y = 2;</code>
      * @return The y.
@@ -155,7 +98,7 @@ public final class VectorOuterClass {
     }
 
     public static final int Z_FIELD_NUMBER = 3;
-    private float z_;
+    private float z_ = 0F;
     /**
      * <code>float z = 3;</code>
      * @return The z.
@@ -179,16 +122,16 @@ public final class VectorOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (x_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(x_) != 0) {
         output.writeFloat(1, x_);
       }
-      if (y_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(y_) != 0) {
         output.writeFloat(2, y_);
       }
-      if (z_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(z_) != 0) {
         output.writeFloat(3, z_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -197,19 +140,19 @@ public final class VectorOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (x_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(x_) != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(1, x_);
       }
-      if (y_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(y_) != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(2, y_);
       }
-      if (z_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(z_) != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(3, z_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -233,7 +176,7 @@ public final class VectorOuterClass {
       if (java.lang.Float.floatToIntBits(getZ())
           != java.lang.Float.floatToIntBits(
               other.getZ())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -253,7 +196,7 @@ public final class VectorOuterClass {
       hash = (37 * hash) + Z_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getZ());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -302,11 +245,13 @@ public final class VectorOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.VectorOuterClass.Vector parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.VectorOuterClass.Vector parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -350,7 +295,7 @@ public final class VectorOuterClass {
     }
     /**
      * <pre>
-     * Obf: PBDDPMHLPJG
+     * Name: KKFEDHALJFH
      * </pre>
      *
      * Protobuf type {@code Vector}
@@ -374,28 +319,21 @@ public final class VectorOuterClass {
 
       // Construct using emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         x_ = 0F;
-
         y_ = 0F;
-
         z_ = 0F;
-
         return this;
       }
 
@@ -422,11 +360,22 @@ public final class VectorOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VectorOuterClass.Vector buildPartial() {
         emu.grasscutter.net.proto.VectorOuterClass.Vector result = new emu.grasscutter.net.proto.VectorOuterClass.Vector(this);
-        result.x_ = x_;
-        result.y_ = y_;
-        result.z_ = z_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.VectorOuterClass.Vector result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.x_ = x_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.y_ = y_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.z_ = z_;
+        }
       }
 
       @java.lang.Override
@@ -482,7 +431,7 @@ public final class VectorOuterClass {
         if (other.getZ() != 0F) {
           setZ(other.getZ());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -497,19 +446,48 @@ public final class VectorOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.VectorOuterClass.Vector parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 13: {
+                x_ = input.readFloat();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 13
+              case 21: {
+                y_ = input.readFloat();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 21
+              case 29: {
+                z_ = input.readFloat();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 29
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.VectorOuterClass.Vector) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private float x_ ;
       /**
@@ -526,8 +504,9 @@ public final class VectorOuterClass {
        * @return This builder for chaining.
        */
       public Builder setX(float value) {
-        
+
         x_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -536,7 +515,7 @@ public final class VectorOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearX() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         x_ = 0F;
         onChanged();
         return this;
@@ -557,8 +536,9 @@ public final class VectorOuterClass {
        * @return This builder for chaining.
        */
       public Builder setY(float value) {
-        
+
         y_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -567,7 +547,7 @@ public final class VectorOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearY() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         y_ = 0F;
         onChanged();
         return this;
@@ -588,8 +568,9 @@ public final class VectorOuterClass {
        * @return This builder for chaining.
        */
       public Builder setZ(float value) {
-        
+
         z_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -598,7 +579,7 @@ public final class VectorOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearZ() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         z_ = 0F;
         onChanged();
         return this;
@@ -636,7 +617,18 @@ public final class VectorOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Vector(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

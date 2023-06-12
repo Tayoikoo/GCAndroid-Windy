@@ -19,27 +19,27 @@ public final class CombineReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 combine_count = 9;</code>
+     * <code>uint32 combine_id = 14;</code>
+     * @return The combineId.
+     */
+    int getCombineId();
+
+    /**
+     * <code>uint32 combine_count = 4;</code>
      * @return The combineCount.
      */
     int getCombineCount();
 
     /**
-     * <code>uint64 avatar_guid = 12;</code>
+     * <code>uint64 avatar_guid = 11;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
-
-    /**
-     * <code>uint32 combine_id = 11;</code>
-     * @return The combineId.
-     */
-    int getCombineId();
   }
   /**
    * <pre>
-   * CmdId: 607
-   * Obf: FPPKDCOOBKP
+   * CmdId: 683
+   * Name: BJKEDKMONBM
    * </pre>
    *
    * Protobuf type {@code CombineReq}
@@ -63,63 +63,6 @@ public final class CombineReqOuterClass {
       return new CombineReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private CombineReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 72: {
-
-              combineCount_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              combineId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              avatarGuid_ = input.readUInt64();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.CombineReqOuterClass.internal_static_CombineReq_descriptor;
@@ -133,10 +76,21 @@ public final class CombineReqOuterClass {
               emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq.class, emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq.Builder.class);
     }
 
-    public static final int COMBINE_COUNT_FIELD_NUMBER = 9;
-    private int combineCount_;
+    public static final int COMBINE_ID_FIELD_NUMBER = 14;
+    private int combineId_ = 0;
     /**
-     * <code>uint32 combine_count = 9;</code>
+     * <code>uint32 combine_id = 14;</code>
+     * @return The combineId.
+     */
+    @java.lang.Override
+    public int getCombineId() {
+      return combineId_;
+    }
+
+    public static final int COMBINE_COUNT_FIELD_NUMBER = 4;
+    private int combineCount_ = 0;
+    /**
+     * <code>uint32 combine_count = 4;</code>
      * @return The combineCount.
      */
     @java.lang.Override
@@ -144,26 +98,15 @@ public final class CombineReqOuterClass {
       return combineCount_;
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 12;
-    private long avatarGuid_;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 11;
+    private long avatarGuid_ = 0L;
     /**
-     * <code>uint64 avatar_guid = 12;</code>
+     * <code>uint64 avatar_guid = 11;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
     public long getAvatarGuid() {
       return avatarGuid_;
-    }
-
-    public static final int COMBINE_ID_FIELD_NUMBER = 11;
-    private int combineId_;
-    /**
-     * <code>uint32 combine_id = 11;</code>
-     * @return The combineId.
-     */
-    @java.lang.Override
-    public int getCombineId() {
-      return combineId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,15 +124,15 @@ public final class CombineReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (combineCount_ != 0) {
-        output.writeUInt32(9, combineCount_);
-      }
-      if (combineId_ != 0) {
-        output.writeUInt32(11, combineId_);
+        output.writeUInt32(4, combineCount_);
       }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(12, avatarGuid_);
+        output.writeUInt64(11, avatarGuid_);
       }
-      unknownFields.writeTo(output);
+      if (combineId_ != 0) {
+        output.writeUInt32(14, combineId_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -200,17 +143,17 @@ public final class CombineReqOuterClass {
       size = 0;
       if (combineCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, combineCount_);
-      }
-      if (combineId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, combineId_);
+          .computeUInt32Size(4, combineCount_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, avatarGuid_);
+          .computeUInt64Size(11, avatarGuid_);
       }
-      size += unknownFields.getSerializedSize();
+      if (combineId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, combineId_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -225,13 +168,13 @@ public final class CombineReqOuterClass {
       }
       emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq other = (emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq) obj;
 
+      if (getCombineId()
+          != other.getCombineId()) return false;
       if (getCombineCount()
           != other.getCombineCount()) return false;
       if (getAvatarGuid()
           != other.getAvatarGuid()) return false;
-      if (getCombineId()
-          != other.getCombineId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -242,14 +185,14 @@ public final class CombineReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + COMBINE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCombineId();
       hash = (37 * hash) + COMBINE_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getCombineCount();
       hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarGuid());
-      hash = (37 * hash) + COMBINE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCombineId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -298,11 +241,13 @@ public final class CombineReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -346,8 +291,8 @@ public final class CombineReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 607
-     * Obf: FPPKDCOOBKP
+     * CmdId: 683
+     * Name: BJKEDKMONBM
      * </pre>
      *
      * Protobuf type {@code CombineReq}
@@ -371,28 +316,21 @@ public final class CombineReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        combineCount_ = 0;
-
-        avatarGuid_ = 0L;
-
+        bitField0_ = 0;
         combineId_ = 0;
-
+        combineCount_ = 0;
+        avatarGuid_ = 0L;
         return this;
       }
 
@@ -419,11 +357,22 @@ public final class CombineReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq buildPartial() {
         emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq result = new emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq(this);
-        result.combineCount_ = combineCount_;
-        result.avatarGuid_ = avatarGuid_;
-        result.combineId_ = combineId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.combineId_ = combineId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.combineCount_ = combineCount_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.avatarGuid_ = avatarGuid_;
+        }
       }
 
       @java.lang.Override
@@ -470,16 +419,16 @@ public final class CombineReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq other) {
         if (other == emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq.getDefaultInstance()) return this;
+        if (other.getCombineId() != 0) {
+          setCombineId(other.getCombineId());
+        }
         if (other.getCombineCount() != 0) {
           setCombineCount(other.getCombineCount());
         }
         if (other.getAvatarGuid() != 0L) {
           setAvatarGuid(other.getAvatarGuid());
         }
-        if (other.getCombineId() != 0) {
-          setCombineId(other.getCombineId());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -494,85 +443,52 @@ public final class CombineReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 32: {
+                combineCount_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 32
+              case 88: {
+                avatarGuid_ = input.readUInt64();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 88
+              case 112: {
+                combineId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 112
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int combineCount_ ;
-      /**
-       * <code>uint32 combine_count = 9;</code>
-       * @return The combineCount.
-       */
-      @java.lang.Override
-      public int getCombineCount() {
-        return combineCount_;
-      }
-      /**
-       * <code>uint32 combine_count = 9;</code>
-       * @param value The combineCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCombineCount(int value) {
-        
-        combineCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 combine_count = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCombineCount() {
-        
-        combineCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long avatarGuid_ ;
-      /**
-       * <code>uint64 avatar_guid = 12;</code>
-       * @return The avatarGuid.
-       */
-      @java.lang.Override
-      public long getAvatarGuid() {
-        return avatarGuid_;
-      }
-      /**
-       * <code>uint64 avatar_guid = 12;</code>
-       * @param value The avatarGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarGuid(long value) {
-        
-        avatarGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 avatar_guid = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarGuid() {
-        
-        avatarGuid_ = 0L;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int combineId_ ;
       /**
-       * <code>uint32 combine_id = 11;</code>
+       * <code>uint32 combine_id = 14;</code>
        * @return The combineId.
        */
       @java.lang.Override
@@ -580,23 +496,88 @@ public final class CombineReqOuterClass {
         return combineId_;
       }
       /**
-       * <code>uint32 combine_id = 11;</code>
+       * <code>uint32 combine_id = 14;</code>
        * @param value The combineId to set.
        * @return This builder for chaining.
        */
       public Builder setCombineId(int value) {
-        
+
         combineId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 combine_id = 11;</code>
+       * <code>uint32 combine_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCombineId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         combineId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int combineCount_ ;
+      /**
+       * <code>uint32 combine_count = 4;</code>
+       * @return The combineCount.
+       */
+      @java.lang.Override
+      public int getCombineCount() {
+        return combineCount_;
+      }
+      /**
+       * <code>uint32 combine_count = 4;</code>
+       * @param value The combineCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCombineCount(int value) {
+
+        combineCount_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 combine_count = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCombineCount() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        combineCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long avatarGuid_ ;
+      /**
+       * <code>uint64 avatar_guid = 11;</code>
+       * @return The avatarGuid.
+       */
+      @java.lang.Override
+      public long getAvatarGuid() {
+        return avatarGuid_;
+      }
+      /**
+       * <code>uint64 avatar_guid = 11;</code>
+       * @param value The avatarGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarGuid(long value) {
+
+        avatarGuid_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 avatar_guid = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarGuid() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        avatarGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -633,7 +614,18 @@ public final class CombineReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CombineReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -667,9 +659,9 @@ public final class CombineReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020CombineReq.proto\"L\n\nCombineReq\022\025\n\rcomb" +
-      "ine_count\030\t \001(\r\022\023\n\013avatar_guid\030\014 \001(\004\022\022\n\n" +
-      "combine_id\030\013 \001(\rB\033\n\031emu.grasscutter.net." +
+      "\n\020CombineReq.proto\"L\n\nCombineReq\022\022\n\ncomb" +
+      "ine_id\030\016 \001(\r\022\025\n\rcombine_count\030\004 \001(\r\022\023\n\013a" +
+      "vatar_guid\030\013 \001(\004B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +673,7 @@ public final class CombineReqOuterClass {
     internal_static_CombineReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CombineReq_descriptor,
-        new java.lang.String[] { "CombineCount", "AvatarGuid", "CombineId", });
+        new java.lang.String[] { "CombineId", "CombineCount", "AvatarGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

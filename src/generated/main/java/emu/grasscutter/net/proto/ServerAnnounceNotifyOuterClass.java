@@ -19,33 +19,33 @@ public final class ServerAnnounceNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .AnnounceData announce_data_list = 1;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> 
         getAnnounceDataListList();
     /**
-     * <code>repeated .AnnounceData announce_data_list = 1;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData getAnnounceDataList(int index);
     /**
-     * <code>repeated .AnnounceData announce_data_list = 1;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     int getAnnounceDataListCount();
     /**
-     * <code>repeated .AnnounceData announce_data_list = 1;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder> 
         getAnnounceDataListOrBuilderList();
     /**
-     * <code>repeated .AnnounceData announce_data_list = 1;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder getAnnounceDataListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 2050
-   * Obf: HDJBPCNBOFB
+   * CmdId: 2097
+   * Name: EIEMLGGBNAI
    * </pre>
    *
    * Protobuf type {@code ServerAnnounceNotify}
@@ -70,61 +70,6 @@ public final class ServerAnnounceNotifyOuterClass {
       return new ServerAnnounceNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ServerAnnounceNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                announceDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              announceDataList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          announceDataList_ = java.util.Collections.unmodifiableList(announceDataList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.internal_static_ServerAnnounceNotify_descriptor;
@@ -138,17 +83,18 @@ public final class ServerAnnounceNotifyOuterClass {
               emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify.class, emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify.Builder.class);
     }
 
-    public static final int ANNOUNCE_DATA_LIST_FIELD_NUMBER = 1;
+    public static final int ANNOUNCE_DATA_LIST_FIELD_NUMBER = 2;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> announceDataList_;
     /**
-     * <code>repeated .AnnounceData announce_data_list = 1;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> getAnnounceDataListList() {
       return announceDataList_;
     }
     /**
-     * <code>repeated .AnnounceData announce_data_list = 1;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder> 
@@ -156,21 +102,21 @@ public final class ServerAnnounceNotifyOuterClass {
       return announceDataList_;
     }
     /**
-     * <code>repeated .AnnounceData announce_data_list = 1;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     @java.lang.Override
     public int getAnnounceDataListCount() {
       return announceDataList_.size();
     }
     /**
-     * <code>repeated .AnnounceData announce_data_list = 1;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData getAnnounceDataList(int index) {
       return announceDataList_.get(index);
     }
     /**
-     * <code>repeated .AnnounceData announce_data_list = 1;</code>
+     * <code>repeated .AnnounceData announce_data_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder getAnnounceDataListOrBuilder(
@@ -193,9 +139,9 @@ public final class ServerAnnounceNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < announceDataList_.size(); i++) {
-        output.writeMessage(1, announceDataList_.get(i));
+        output.writeMessage(2, announceDataList_.get(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -206,9 +152,9 @@ public final class ServerAnnounceNotifyOuterClass {
       size = 0;
       for (int i = 0; i < announceDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, announceDataList_.get(i));
+          .computeMessageSize(2, announceDataList_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -225,7 +171,7 @@ public final class ServerAnnounceNotifyOuterClass {
 
       if (!getAnnounceDataListList()
           .equals(other.getAnnounceDataListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -240,7 +186,7 @@ public final class ServerAnnounceNotifyOuterClass {
         hash = (37 * hash) + ANNOUNCE_DATA_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAnnounceDataListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -289,11 +235,13 @@ public final class ServerAnnounceNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -337,8 +285,8 @@ public final class ServerAnnounceNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2050
-     * Obf: HDJBPCNBOFB
+     * CmdId: 2097
+     * Name: EIEMLGGBNAI
      * </pre>
      *
      * Protobuf type {@code ServerAnnounceNotify}
@@ -362,29 +310,25 @@ public final class ServerAnnounceNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getAnnounceDataListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         if (announceDataListBuilder_ == null) {
           announceDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          announceDataList_ = null;
           announceDataListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -411,7 +355,13 @@ public final class ServerAnnounceNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify buildPartial() {
         emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify result = new emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify result) {
         if (announceDataListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             announceDataList_ = java.util.Collections.unmodifiableList(announceDataList_);
@@ -421,8 +371,10 @@ public final class ServerAnnounceNotifyOuterClass {
         } else {
           result.announceDataList_ = announceDataListBuilder_.build();
         }
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -495,7 +447,7 @@ public final class ServerAnnounceNotifyOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -510,17 +462,43 @@ public final class ServerAnnounceNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 18: {
+                emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.parser(),
+                        extensionRegistry);
+                if (announceDataListBuilder_ == null) {
+                  ensureAnnounceDataListIsMutable();
+                  announceDataList_.add(m);
+                } else {
+                  announceDataListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 18
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ServerAnnounceNotifyOuterClass.ServerAnnounceNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -538,7 +516,7 @@ public final class ServerAnnounceNotifyOuterClass {
           emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder> announceDataListBuilder_;
 
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> getAnnounceDataListList() {
         if (announceDataListBuilder_ == null) {
@@ -548,7 +526,7 @@ public final class ServerAnnounceNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public int getAnnounceDataListCount() {
         if (announceDataListBuilder_ == null) {
@@ -558,7 +536,7 @@ public final class ServerAnnounceNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData getAnnounceDataList(int index) {
         if (announceDataListBuilder_ == null) {
@@ -568,7 +546,7 @@ public final class ServerAnnounceNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public Builder setAnnounceDataList(
           int index, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData value) {
@@ -585,7 +563,7 @@ public final class ServerAnnounceNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public Builder setAnnounceDataList(
           int index, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder builderForValue) {
@@ -599,7 +577,7 @@ public final class ServerAnnounceNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public Builder addAnnounceDataList(emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData value) {
         if (announceDataListBuilder_ == null) {
@@ -615,7 +593,7 @@ public final class ServerAnnounceNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public Builder addAnnounceDataList(
           int index, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData value) {
@@ -632,7 +610,7 @@ public final class ServerAnnounceNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public Builder addAnnounceDataList(
           emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder builderForValue) {
@@ -646,7 +624,7 @@ public final class ServerAnnounceNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public Builder addAnnounceDataList(
           int index, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder builderForValue) {
@@ -660,7 +638,7 @@ public final class ServerAnnounceNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public Builder addAllAnnounceDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData> values) {
@@ -675,7 +653,7 @@ public final class ServerAnnounceNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public Builder clearAnnounceDataList() {
         if (announceDataListBuilder_ == null) {
@@ -688,7 +666,7 @@ public final class ServerAnnounceNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public Builder removeAnnounceDataList(int index) {
         if (announceDataListBuilder_ == null) {
@@ -701,14 +679,14 @@ public final class ServerAnnounceNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder getAnnounceDataListBuilder(
           int index) {
         return getAnnounceDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder getAnnounceDataListOrBuilder(
           int index) {
@@ -718,7 +696,7 @@ public final class ServerAnnounceNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceDataOrBuilder> 
            getAnnounceDataListOrBuilderList() {
@@ -729,14 +707,14 @@ public final class ServerAnnounceNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder addAnnounceDataListBuilder() {
         return getAnnounceDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.getDefaultInstance());
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder addAnnounceDataListBuilder(
           int index) {
@@ -744,7 +722,7 @@ public final class ServerAnnounceNotifyOuterClass {
             index, emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.getDefaultInstance());
       }
       /**
-       * <code>repeated .AnnounceData announce_data_list = 1;</code>
+       * <code>repeated .AnnounceData announce_data_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AnnounceDataOuterClass.AnnounceData.Builder> 
            getAnnounceDataListBuilderList() {
@@ -797,7 +775,18 @@ public final class ServerAnnounceNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ServerAnnounceNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -833,7 +822,7 @@ public final class ServerAnnounceNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032ServerAnnounceNotify.proto\032\022AnnounceDa" +
       "ta.proto\"A\n\024ServerAnnounceNotify\022)\n\022anno" +
-      "unce_data_list\030\001 \003(\0132\r.AnnounceDataB\033\n\031e" +
+      "unce_data_list\030\002 \003(\0132\r.AnnounceDataB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,20 +19,20 @@ public final class CrystalLinkBuffInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 DBKGEODHPNC = 7;</code>
-     * @return The dBKGEODHPNC.
+     * <code>uint32 OGJBCOGMBLB = 5;</code>
+     * @return The oGJBCOGMBLB.
      */
-    int getDBKGEODHPNC();
+    int getOGJBCOGMBLB();
 
     /**
-     * <code>uint32 OECGHFDFIII = 2;</code>
-     * @return The oECGHFDFIII.
+     * <code>uint32 HOKBNFIGGLF = 11;</code>
+     * @return The hOKBNFIGGLF.
      */
-    int getOECGHFDFIII();
+    int getHOKBNFIGGLF();
   }
   /**
    * <pre>
-   * Obf: PHGJADJONIC
+   * Name: CGGMBIMICNH
    * </pre>
    *
    * Protobuf type {@code CrystalLinkBuffInfo}
@@ -56,58 +56,6 @@ public final class CrystalLinkBuffInfoOuterClass {
       return new CrystalLinkBuffInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private CrystalLinkBuffInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 16: {
-
-              oECGHFDFIII_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              dBKGEODHPNC_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.internal_static_CrystalLinkBuffInfo_descriptor;
@@ -121,26 +69,26 @@ public final class CrystalLinkBuffInfoOuterClass {
               emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.class, emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.Builder.class);
     }
 
-    public static final int DBKGEODHPNC_FIELD_NUMBER = 7;
-    private int dBKGEODHPNC_;
+    public static final int OGJBCOGMBLB_FIELD_NUMBER = 5;
+    private int oGJBCOGMBLB_ = 0;
     /**
-     * <code>uint32 DBKGEODHPNC = 7;</code>
-     * @return The dBKGEODHPNC.
+     * <code>uint32 OGJBCOGMBLB = 5;</code>
+     * @return The oGJBCOGMBLB.
      */
     @java.lang.Override
-    public int getDBKGEODHPNC() {
-      return dBKGEODHPNC_;
+    public int getOGJBCOGMBLB() {
+      return oGJBCOGMBLB_;
     }
 
-    public static final int OECGHFDFIII_FIELD_NUMBER = 2;
-    private int oECGHFDFIII_;
+    public static final int HOKBNFIGGLF_FIELD_NUMBER = 11;
+    private int hOKBNFIGGLF_ = 0;
     /**
-     * <code>uint32 OECGHFDFIII = 2;</code>
-     * @return The oECGHFDFIII.
+     * <code>uint32 HOKBNFIGGLF = 11;</code>
+     * @return The hOKBNFIGGLF.
      */
     @java.lang.Override
-    public int getOECGHFDFIII() {
-      return oECGHFDFIII_;
+    public int getHOKBNFIGGLF() {
+      return hOKBNFIGGLF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,13 +105,13 @@ public final class CrystalLinkBuffInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (oECGHFDFIII_ != 0) {
-        output.writeUInt32(2, oECGHFDFIII_);
+      if (oGJBCOGMBLB_ != 0) {
+        output.writeUInt32(5, oGJBCOGMBLB_);
       }
-      if (dBKGEODHPNC_ != 0) {
-        output.writeUInt32(7, dBKGEODHPNC_);
+      if (hOKBNFIGGLF_ != 0) {
+        output.writeUInt32(11, hOKBNFIGGLF_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -172,15 +120,15 @@ public final class CrystalLinkBuffInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (oECGHFDFIII_ != 0) {
+      if (oGJBCOGMBLB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, oECGHFDFIII_);
+          .computeUInt32Size(5, oGJBCOGMBLB_);
       }
-      if (dBKGEODHPNC_ != 0) {
+      if (hOKBNFIGGLF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, dBKGEODHPNC_);
+          .computeUInt32Size(11, hOKBNFIGGLF_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -195,11 +143,11 @@ public final class CrystalLinkBuffInfoOuterClass {
       }
       emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo other = (emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo) obj;
 
-      if (getDBKGEODHPNC()
-          != other.getDBKGEODHPNC()) return false;
-      if (getOECGHFDFIII()
-          != other.getOECGHFDFIII()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getOGJBCOGMBLB()
+          != other.getOGJBCOGMBLB()) return false;
+      if (getHOKBNFIGGLF()
+          != other.getHOKBNFIGGLF()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -210,11 +158,11 @@ public final class CrystalLinkBuffInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DBKGEODHPNC_FIELD_NUMBER;
-      hash = (53 * hash) + getDBKGEODHPNC();
-      hash = (37 * hash) + OECGHFDFIII_FIELD_NUMBER;
-      hash = (53 * hash) + getOECGHFDFIII();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + OGJBCOGMBLB_FIELD_NUMBER;
+      hash = (53 * hash) + getOGJBCOGMBLB();
+      hash = (37 * hash) + HOKBNFIGGLF_FIELD_NUMBER;
+      hash = (53 * hash) + getHOKBNFIGGLF();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -263,11 +211,13 @@ public final class CrystalLinkBuffInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -311,7 +261,7 @@ public final class CrystalLinkBuffInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: PHGJADJONIC
+     * Name: CGGMBIMICNH
      * </pre>
      *
      * Protobuf type {@code CrystalLinkBuffInfo}
@@ -335,26 +285,20 @@ public final class CrystalLinkBuffInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dBKGEODHPNC_ = 0;
-
-        oECGHFDFIII_ = 0;
-
+        bitField0_ = 0;
+        oGJBCOGMBLB_ = 0;
+        hOKBNFIGGLF_ = 0;
         return this;
       }
 
@@ -381,10 +325,19 @@ public final class CrystalLinkBuffInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo buildPartial() {
         emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo result = new emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo(this);
-        result.dBKGEODHPNC_ = dBKGEODHPNC_;
-        result.oECGHFDFIII_ = oECGHFDFIII_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.oGJBCOGMBLB_ = oGJBCOGMBLB_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.hOKBNFIGGLF_ = hOKBNFIGGLF_;
+        }
       }
 
       @java.lang.Override
@@ -431,13 +384,13 @@ public final class CrystalLinkBuffInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo other) {
         if (other == emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo.getDefaultInstance()) return this;
-        if (other.getDBKGEODHPNC() != 0) {
-          setDBKGEODHPNC(other.getDBKGEODHPNC());
+        if (other.getOGJBCOGMBLB() != 0) {
+          setOGJBCOGMBLB(other.getOGJBCOGMBLB());
         }
-        if (other.getOECGHFDFIII() != 0) {
-          setOECGHFDFIII(other.getOECGHFDFIII());
+        if (other.getHOKBNFIGGLF() != 0) {
+          setHOKBNFIGGLF(other.getHOKBNFIGGLF());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -452,78 +405,104 @@ public final class CrystalLinkBuffInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 40: {
+                oGJBCOGMBLB_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 40
+              case 88: {
+                hOKBNFIGGLF_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 88
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.CrystalLinkBuffInfoOuterClass.CrystalLinkBuffInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private int oGJBCOGMBLB_ ;
+      /**
+       * <code>uint32 OGJBCOGMBLB = 5;</code>
+       * @return The oGJBCOGMBLB.
+       */
+      @java.lang.Override
+      public int getOGJBCOGMBLB() {
+        return oGJBCOGMBLB_;
+      }
+      /**
+       * <code>uint32 OGJBCOGMBLB = 5;</code>
+       * @param value The oGJBCOGMBLB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOGJBCOGMBLB(int value) {
+
+        oGJBCOGMBLB_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 OGJBCOGMBLB = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOGJBCOGMBLB() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        oGJBCOGMBLB_ = 0;
+        onChanged();
         return this;
       }
 
-      private int dBKGEODHPNC_ ;
+      private int hOKBNFIGGLF_ ;
       /**
-       * <code>uint32 DBKGEODHPNC = 7;</code>
-       * @return The dBKGEODHPNC.
+       * <code>uint32 HOKBNFIGGLF = 11;</code>
+       * @return The hOKBNFIGGLF.
        */
       @java.lang.Override
-      public int getDBKGEODHPNC() {
-        return dBKGEODHPNC_;
+      public int getHOKBNFIGGLF() {
+        return hOKBNFIGGLF_;
       }
       /**
-       * <code>uint32 DBKGEODHPNC = 7;</code>
-       * @param value The dBKGEODHPNC to set.
+       * <code>uint32 HOKBNFIGGLF = 11;</code>
+       * @param value The hOKBNFIGGLF to set.
        * @return This builder for chaining.
        */
-      public Builder setDBKGEODHPNC(int value) {
-        
-        dBKGEODHPNC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DBKGEODHPNC = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDBKGEODHPNC() {
-        
-        dBKGEODHPNC_ = 0;
-        onChanged();
-        return this;
-      }
+      public Builder setHOKBNFIGGLF(int value) {
 
-      private int oECGHFDFIII_ ;
-      /**
-       * <code>uint32 OECGHFDFIII = 2;</code>
-       * @return The oECGHFDFIII.
-       */
-      @java.lang.Override
-      public int getOECGHFDFIII() {
-        return oECGHFDFIII_;
-      }
-      /**
-       * <code>uint32 OECGHFDFIII = 2;</code>
-       * @param value The oECGHFDFIII to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOECGHFDFIII(int value) {
-        
-        oECGHFDFIII_ = value;
+        hOKBNFIGGLF_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OECGHFDFIII = 2;</code>
+       * <code>uint32 HOKBNFIGGLF = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOECGHFDFIII() {
-        
-        oECGHFDFIII_ = 0;
+      public Builder clearHOKBNFIGGLF() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        hOKBNFIGGLF_ = 0;
         onChanged();
         return this;
       }
@@ -560,7 +539,18 @@ public final class CrystalLinkBuffInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CrystalLinkBuffInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -595,8 +585,8 @@ public final class CrystalLinkBuffInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031CrystalLinkBuffInfo.proto\"?\n\023CrystalLi" +
-      "nkBuffInfo\022\023\n\013DBKGEODHPNC\030\007 \001(\r\022\023\n\013OECGH" +
-      "FDFIII\030\002 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "nkBuffInfo\022\023\n\013OGJBCOGMBLB\030\005 \001(\r\022\023\n\013HOKBN" +
+      "FIGGLF\030\013 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +598,7 @@ public final class CrystalLinkBuffInfoOuterClass {
     internal_static_CrystalLinkBuffInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CrystalLinkBuffInfo_descriptor,
-        new java.lang.String[] { "DBKGEODHPNC", "OECGHFDFIII", });
+        new java.lang.String[] { "OGJBCOGMBLB", "HOKBNFIGGLF", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

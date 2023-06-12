@@ -19,17 +19,17 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 level_list = 9;</code>
+     * <code>repeated uint32 level_list = 13;</code>
      * @return A list containing the levelList.
      */
     java.util.List<java.lang.Integer> getLevelListList();
     /**
-     * <code>repeated uint32 level_list = 9;</code>
+     * <code>repeated uint32 level_list = 13;</code>
      * @return The count of levelList.
      */
     int getLevelListCount();
     /**
-     * <code>repeated uint32 level_list = 9;</code>
+     * <code>repeated uint32 level_list = 13;</code>
      * @param index The index of the element to return.
      * @return The levelList at the given index.
      */
@@ -37,8 +37,8 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 109
-   * Obf: JNNKIPADMND
+   * CmdId: 157
+   * Name: PCPAPFOEBPO
    * </pre>
    *
    * Protobuf type {@code PlayerLevelRewardUpdateNotify}
@@ -63,73 +63,6 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
       return new PlayerLevelRewardUpdateNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private PlayerLevelRewardUpdateNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 72: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              levelList_.addInt(input.readUInt32());
-              break;
-            }
-            case 74: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                levelList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                levelList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          levelList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.internal_static_PlayerLevelRewardUpdateNotify_descriptor;
@@ -143,10 +76,11 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify.class, emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify.Builder.class);
     }
 
-    public static final int LEVEL_LIST_FIELD_NUMBER = 9;
+    public static final int LEVEL_LIST_FIELD_NUMBER = 13;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList levelList_;
     /**
-     * <code>repeated uint32 level_list = 9;</code>
+     * <code>repeated uint32 level_list = 13;</code>
      * @return A list containing the levelList.
      */
     @java.lang.Override
@@ -155,14 +89,14 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
       return levelList_;
     }
     /**
-     * <code>repeated uint32 level_list = 9;</code>
+     * <code>repeated uint32 level_list = 13;</code>
      * @return The count of levelList.
      */
     public int getLevelListCount() {
       return levelList_.size();
     }
     /**
-     * <code>repeated uint32 level_list = 9;</code>
+     * <code>repeated uint32 level_list = 13;</code>
      * @param index The index of the element to return.
      * @return The levelList at the given index.
      */
@@ -187,13 +121,13 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getLevelListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(levelListMemoizedSerializedSize);
       }
       for (int i = 0; i < levelList_.size(); i++) {
         output.writeUInt32NoTag(levelList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -216,7 +150,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
         }
         levelListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -233,7 +167,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
 
       if (!getLevelListList()
           .equals(other.getLevelListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -248,7 +182,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
         hash = (37 * hash) + LEVEL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getLevelListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +231,13 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,8 +281,8 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 109
-     * Obf: JNNKIPADMND
+     * CmdId: 157
+     * Name: PCPAPFOEBPO
      * </pre>
      *
      * Protobuf type {@code PlayerLevelRewardUpdateNotify}
@@ -370,24 +306,19 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         levelList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -414,14 +345,22 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify result = new emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           levelList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.levelList_ = levelList_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -478,7 +417,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -493,17 +432,46 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 104: {
+                int v = input.readUInt32();
+                ensureLevelListIsMutable();
+                levelList_.addInt(v);
+                break;
+              } // case 104
+              case 106: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureLevelListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  levelList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 106
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PlayerLevelRewardUpdateNotifyOuterClass.PlayerLevelRewardUpdateNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -513,10 +481,10 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           levelList_ = mutableCopy(levelList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
-       * <code>repeated uint32 level_list = 9;</code>
+       * <code>repeated uint32 level_list = 13;</code>
        * @return A list containing the levelList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +493,14 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
                  java.util.Collections.unmodifiableList(levelList_) : levelList_;
       }
       /**
-       * <code>repeated uint32 level_list = 9;</code>
+       * <code>repeated uint32 level_list = 13;</code>
        * @return The count of levelList.
        */
       public int getLevelListCount() {
         return levelList_.size();
       }
       /**
-       * <code>repeated uint32 level_list = 9;</code>
+       * <code>repeated uint32 level_list = 13;</code>
        * @param index The index of the element to return.
        * @return The levelList at the given index.
        */
@@ -540,31 +508,33 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
         return levelList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 level_list = 9;</code>
+       * <code>repeated uint32 level_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The levelList to set.
        * @return This builder for chaining.
        */
       public Builder setLevelList(
           int index, int value) {
+
         ensureLevelListIsMutable();
         levelList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 level_list = 9;</code>
+       * <code>repeated uint32 level_list = 13;</code>
        * @param value The levelList to add.
        * @return This builder for chaining.
        */
       public Builder addLevelList(int value) {
+
         ensureLevelListIsMutable();
         levelList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 level_list = 9;</code>
+       * <code>repeated uint32 level_list = 13;</code>
        * @param values The levelList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +547,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 level_list = 9;</code>
+       * <code>repeated uint32 level_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelList() {
@@ -619,7 +589,18 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PlayerLevelRewardUpdateNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -655,7 +636,7 @@ public final class PlayerLevelRewardUpdateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#PlayerLevelRewardUpdateNotify.proto\"3\n" +
       "\035PlayerLevelRewardUpdateNotify\022\022\n\nlevel_" +
-      "list\030\t \003(\rB\033\n\031emu.grasscutter.net.protob" +
+      "list\030\r \003(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

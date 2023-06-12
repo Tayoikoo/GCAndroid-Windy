@@ -71,66 +71,6 @@ public final class MusicBeatmapOuterClass {
       return new MusicBeatmap();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private MusicBeatmap(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              musicId_ = input.readUInt32();
-              break;
-            }
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                beatmapItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MusicBeatmapListOuterClass.MusicBeatmapList>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              beatmapItemList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.MusicBeatmapListOuterClass.MusicBeatmapList.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          beatmapItemList_ = java.util.Collections.unmodifiableList(beatmapItemList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.MusicBeatmapOuterClass.internal_static_MusicBeatmap_descriptor;
@@ -145,7 +85,7 @@ public final class MusicBeatmapOuterClass {
     }
 
     public static final int MUSIC_ID_FIELD_NUMBER = 1;
-    private int musicId_;
+    private int musicId_ = 0;
     /**
      * <code>uint32 music_id = 1;</code>
      * @return The musicId.
@@ -156,6 +96,7 @@ public final class MusicBeatmapOuterClass {
     }
 
     public static final int BEATMAP_ITEM_LIST_FIELD_NUMBER = 2;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.MusicBeatmapListOuterClass.MusicBeatmapList> beatmapItemList_;
     /**
      * <code>repeated .MusicBeatmapList beatmap_item_list = 2;</code>
@@ -215,7 +156,7 @@ public final class MusicBeatmapOuterClass {
       for (int i = 0; i < beatmapItemList_.size(); i++) {
         output.writeMessage(2, beatmapItemList_.get(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -232,7 +173,7 @@ public final class MusicBeatmapOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, beatmapItemList_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -251,7 +192,7 @@ public final class MusicBeatmapOuterClass {
           != other.getMusicId()) return false;
       if (!getBeatmapItemListList()
           .equals(other.getBeatmapItemListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -268,7 +209,7 @@ public final class MusicBeatmapOuterClass {
         hash = (37 * hash) + BEATMAP_ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBeatmapItemListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -317,11 +258,13 @@ public final class MusicBeatmapOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.MusicBeatmapOuterClass.MusicBeatmap parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.MusicBeatmapOuterClass.MusicBeatmap parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -385,31 +328,26 @@ public final class MusicBeatmapOuterClass {
 
       // Construct using emu.grasscutter.net.proto.MusicBeatmapOuterClass.MusicBeatmap.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getBeatmapItemListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         musicId_ = 0;
-
         if (beatmapItemListBuilder_ == null) {
           beatmapItemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          beatmapItemList_ = null;
           beatmapItemListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -436,19 +374,29 @@ public final class MusicBeatmapOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MusicBeatmapOuterClass.MusicBeatmap buildPartial() {
         emu.grasscutter.net.proto.MusicBeatmapOuterClass.MusicBeatmap result = new emu.grasscutter.net.proto.MusicBeatmapOuterClass.MusicBeatmap(this);
-        int from_bitField0_ = bitField0_;
-        result.musicId_ = musicId_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.MusicBeatmapOuterClass.MusicBeatmap result) {
         if (beatmapItemListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             beatmapItemList_ = java.util.Collections.unmodifiableList(beatmapItemList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.beatmapItemList_ = beatmapItemList_;
         } else {
           result.beatmapItemList_ = beatmapItemListBuilder_.build();
         }
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.MusicBeatmapOuterClass.MusicBeatmap result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.musicId_ = musicId_;
+        }
       }
 
       @java.lang.Override
@@ -502,7 +450,7 @@ public final class MusicBeatmapOuterClass {
           if (!other.beatmapItemList_.isEmpty()) {
             if (beatmapItemList_.isEmpty()) {
               beatmapItemList_ = other.beatmapItemList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureBeatmapItemListIsMutable();
               beatmapItemList_.addAll(other.beatmapItemList_);
@@ -515,7 +463,7 @@ public final class MusicBeatmapOuterClass {
               beatmapItemListBuilder_.dispose();
               beatmapItemListBuilder_ = null;
               beatmapItemList_ = other.beatmapItemList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               beatmapItemListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getBeatmapItemListFieldBuilder() : null;
@@ -524,7 +472,7 @@ public final class MusicBeatmapOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -539,17 +487,48 @@ public final class MusicBeatmapOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.MusicBeatmapOuterClass.MusicBeatmap parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                musicId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 18: {
+                emu.grasscutter.net.proto.MusicBeatmapListOuterClass.MusicBeatmapList m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.MusicBeatmapListOuterClass.MusicBeatmapList.parser(),
+                        extensionRegistry);
+                if (beatmapItemListBuilder_ == null) {
+                  ensureBeatmapItemListIsMutable();
+                  beatmapItemList_.add(m);
+                } else {
+                  beatmapItemListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 18
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.MusicBeatmapOuterClass.MusicBeatmap) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -569,8 +548,9 @@ public final class MusicBeatmapOuterClass {
        * @return This builder for chaining.
        */
       public Builder setMusicId(int value) {
-        
+
         musicId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -579,7 +559,7 @@ public final class MusicBeatmapOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearMusicId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         musicId_ = 0;
         onChanged();
         return this;
@@ -588,9 +568,9 @@ public final class MusicBeatmapOuterClass {
       private java.util.List<emu.grasscutter.net.proto.MusicBeatmapListOuterClass.MusicBeatmapList> beatmapItemList_ =
         java.util.Collections.emptyList();
       private void ensureBeatmapItemListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           beatmapItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MusicBeatmapListOuterClass.MusicBeatmapList>(beatmapItemList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -740,7 +720,7 @@ public final class MusicBeatmapOuterClass {
       public Builder clearBeatmapItemList() {
         if (beatmapItemListBuilder_ == null) {
           beatmapItemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           beatmapItemListBuilder_.clear();
@@ -817,7 +797,7 @@ public final class MusicBeatmapOuterClass {
           beatmapItemListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.MusicBeatmapListOuterClass.MusicBeatmapList, emu.grasscutter.net.proto.MusicBeatmapListOuterClass.MusicBeatmapList.Builder, emu.grasscutter.net.proto.MusicBeatmapListOuterClass.MusicBeatmapListOrBuilder>(
                   beatmapItemList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           beatmapItemList_ = null;
@@ -857,7 +837,18 @@ public final class MusicBeatmapOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MusicBeatmap(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

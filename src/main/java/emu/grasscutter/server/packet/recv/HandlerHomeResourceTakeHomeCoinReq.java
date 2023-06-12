@@ -8,10 +8,11 @@ import emu.grasscutter.server.packet.send.PacketHomeResourceTakeHomeCoinRsp;
 
 @Opcodes(PacketOpcodes.HomeResourceTakeHomeCoinReq)
 public class HandlerHomeResourceTakeHomeCoinReq extends PacketHandler {
+	
+	@Override
+	public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
 
-    @Override
-    public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
+		session.send(new PacketHomeResourceTakeHomeCoinRsp(session.getPlayer()));
+	}
 
-        session.send(new PacketHomeResourceTakeHomeCoinRsp(session.getPlayer()));
-    }
 }

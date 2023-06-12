@@ -19,17 +19,17 @@ public final class EquipRoguelikeRuneReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 rune_list = 11;</code>
+     * <code>repeated uint32 rune_list = 10;</code>
      * @return A list containing the runeList.
      */
     java.util.List<java.lang.Integer> getRuneListList();
     /**
-     * <code>repeated uint32 rune_list = 11;</code>
+     * <code>repeated uint32 rune_list = 10;</code>
      * @return The count of runeList.
      */
     int getRuneListCount();
     /**
-     * <code>repeated uint32 rune_list = 11;</code>
+     * <code>repeated uint32 rune_list = 10;</code>
      * @param index The index of the element to return.
      * @return The runeList at the given index.
      */
@@ -37,8 +37,8 @@ public final class EquipRoguelikeRuneReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8154
-   * Obf: BCFCGEFCINP
+   * CmdId: 8546
+   * Name: FJJAIHHLNMC
    * </pre>
    *
    * Protobuf type {@code EquipRoguelikeRuneReq}
@@ -63,73 +63,6 @@ public final class EquipRoguelikeRuneReqOuterClass {
       return new EquipRoguelikeRuneReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private EquipRoguelikeRuneReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 88: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                runeList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              runeList_.addInt(input.readUInt32());
-              break;
-            }
-            case 90: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                runeList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                runeList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          runeList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.internal_static_EquipRoguelikeRuneReq_descriptor;
@@ -143,10 +76,11 @@ public final class EquipRoguelikeRuneReqOuterClass {
               emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.EquipRoguelikeRuneReq.class, emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.EquipRoguelikeRuneReq.Builder.class);
     }
 
-    public static final int RUNE_LIST_FIELD_NUMBER = 11;
+    public static final int RUNE_LIST_FIELD_NUMBER = 10;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList runeList_;
     /**
-     * <code>repeated uint32 rune_list = 11;</code>
+     * <code>repeated uint32 rune_list = 10;</code>
      * @return A list containing the runeList.
      */
     @java.lang.Override
@@ -155,14 +89,14 @@ public final class EquipRoguelikeRuneReqOuterClass {
       return runeList_;
     }
     /**
-     * <code>repeated uint32 rune_list = 11;</code>
+     * <code>repeated uint32 rune_list = 10;</code>
      * @return The count of runeList.
      */
     public int getRuneListCount() {
       return runeList_.size();
     }
     /**
-     * <code>repeated uint32 rune_list = 11;</code>
+     * <code>repeated uint32 rune_list = 10;</code>
      * @param index The index of the element to return.
      * @return The runeList at the given index.
      */
@@ -187,13 +121,13 @@ public final class EquipRoguelikeRuneReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getRuneListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(runeListMemoizedSerializedSize);
       }
       for (int i = 0; i < runeList_.size(); i++) {
         output.writeUInt32NoTag(runeList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -216,7 +150,7 @@ public final class EquipRoguelikeRuneReqOuterClass {
         }
         runeListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -233,7 +167,7 @@ public final class EquipRoguelikeRuneReqOuterClass {
 
       if (!getRuneListList()
           .equals(other.getRuneListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -248,7 +182,7 @@ public final class EquipRoguelikeRuneReqOuterClass {
         hash = (37 * hash) + RUNE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRuneListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +231,13 @@ public final class EquipRoguelikeRuneReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.EquipRoguelikeRuneReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.EquipRoguelikeRuneReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,8 +281,8 @@ public final class EquipRoguelikeRuneReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8154
-     * Obf: BCFCGEFCINP
+     * CmdId: 8546
+     * Name: FJJAIHHLNMC
      * </pre>
      *
      * Protobuf type {@code EquipRoguelikeRuneReq}
@@ -370,24 +306,19 @@ public final class EquipRoguelikeRuneReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.EquipRoguelikeRuneReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         runeList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -414,14 +345,22 @@ public final class EquipRoguelikeRuneReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.EquipRoguelikeRuneReq buildPartial() {
         emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.EquipRoguelikeRuneReq result = new emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.EquipRoguelikeRuneReq(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.EquipRoguelikeRuneReq result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           runeList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.runeList_ = runeList_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.EquipRoguelikeRuneReq result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -478,7 +417,7 @@ public final class EquipRoguelikeRuneReqOuterClass {
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -493,17 +432,46 @@ public final class EquipRoguelikeRuneReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.EquipRoguelikeRuneReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 80: {
+                int v = input.readUInt32();
+                ensureRuneListIsMutable();
+                runeList_.addInt(v);
+                break;
+              } // case 80
+              case 82: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureRuneListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  runeList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 82
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.EquipRoguelikeRuneReqOuterClass.EquipRoguelikeRuneReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -513,10 +481,10 @@ public final class EquipRoguelikeRuneReqOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           runeList_ = mutableCopy(runeList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
-       * <code>repeated uint32 rune_list = 11;</code>
+       * <code>repeated uint32 rune_list = 10;</code>
        * @return A list containing the runeList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +493,14 @@ public final class EquipRoguelikeRuneReqOuterClass {
                  java.util.Collections.unmodifiableList(runeList_) : runeList_;
       }
       /**
-       * <code>repeated uint32 rune_list = 11;</code>
+       * <code>repeated uint32 rune_list = 10;</code>
        * @return The count of runeList.
        */
       public int getRuneListCount() {
         return runeList_.size();
       }
       /**
-       * <code>repeated uint32 rune_list = 11;</code>
+       * <code>repeated uint32 rune_list = 10;</code>
        * @param index The index of the element to return.
        * @return The runeList at the given index.
        */
@@ -540,31 +508,33 @@ public final class EquipRoguelikeRuneReqOuterClass {
         return runeList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 rune_list = 11;</code>
+       * <code>repeated uint32 rune_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The runeList to set.
        * @return This builder for chaining.
        */
       public Builder setRuneList(
           int index, int value) {
+
         ensureRuneListIsMutable();
         runeList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 rune_list = 11;</code>
+       * <code>repeated uint32 rune_list = 10;</code>
        * @param value The runeList to add.
        * @return This builder for chaining.
        */
       public Builder addRuneList(int value) {
+
         ensureRuneListIsMutable();
         runeList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 rune_list = 11;</code>
+       * <code>repeated uint32 rune_list = 10;</code>
        * @param values The runeList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +547,7 @@ public final class EquipRoguelikeRuneReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 rune_list = 11;</code>
+       * <code>repeated uint32 rune_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRuneList() {
@@ -619,7 +589,18 @@ public final class EquipRoguelikeRuneReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new EquipRoguelikeRuneReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -654,7 +635,7 @@ public final class EquipRoguelikeRuneReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033EquipRoguelikeRuneReq.proto\"*\n\025EquipRo" +
-      "guelikeRuneReq\022\021\n\trune_list\030\013 \003(\rB\033\n\031emu" +
+      "guelikeRuneReq\022\021\n\trune_list\030\n \003(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

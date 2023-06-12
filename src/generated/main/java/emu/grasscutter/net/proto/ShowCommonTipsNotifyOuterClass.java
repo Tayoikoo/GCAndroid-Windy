@@ -19,39 +19,39 @@ public final class ShowCommonTipsNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 close_time = 14;</code>
-     * @return The closeTime.
+     * <code>string content = 1;</code>
+     * @return The content.
      */
-    int getCloseTime();
+    java.lang.String getContent();
+    /**
+     * <code>string content = 1;</code>
+     * @return The bytes for content.
+     */
+    com.google.protobuf.ByteString
+        getContentBytes();
 
     /**
-     * <code>string title = 15;</code>
+     * <code>string title = 4;</code>
      * @return The title.
      */
     java.lang.String getTitle();
     /**
-     * <code>string title = 15;</code>
+     * <code>string title = 4;</code>
      * @return The bytes for title.
      */
     com.google.protobuf.ByteString
         getTitleBytes();
 
     /**
-     * <code>string content = 12;</code>
-     * @return The content.
+     * <code>uint32 close_time = 5;</code>
+     * @return The closeTime.
      */
-    java.lang.String getContent();
-    /**
-     * <code>string content = 12;</code>
-     * @return The bytes for content.
-     */
-    com.google.protobuf.ByteString
-        getContentBytes();
+    int getCloseTime();
   }
   /**
    * <pre>
-   * CmdId: 3479
-   * Obf: OFPCCAELGHL
+   * CmdId: 3128
+   * Name: DPNNLLEHHCK
    * </pre>
    *
    * Protobuf type {@code ShowCommonTipsNotify}
@@ -66,8 +66,8 @@ public final class ShowCommonTipsNotifyOuterClass {
       super(builder);
     }
     private ShowCommonTipsNotify() {
-      title_ = "";
       content_ = "";
+      title_ = "";
     }
 
     @java.lang.Override
@@ -77,65 +77,6 @@ public final class ShowCommonTipsNotifyOuterClass {
       return new ShowCommonTipsNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ShowCommonTipsNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 98: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              content_ = s;
-              break;
-            }
-            case 112: {
-
-              closeTime_ = input.readUInt32();
-              break;
-            }
-            case 122: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              title_ = s;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.internal_static_ShowCommonTipsNotify_descriptor;
@@ -149,59 +90,11 @@ public final class ShowCommonTipsNotifyOuterClass {
               emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify.class, emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify.Builder.class);
     }
 
-    public static final int CLOSE_TIME_FIELD_NUMBER = 14;
-    private int closeTime_;
+    public static final int CONTENT_FIELD_NUMBER = 1;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object content_ = "";
     /**
-     * <code>uint32 close_time = 14;</code>
-     * @return The closeTime.
-     */
-    @java.lang.Override
-    public int getCloseTime() {
-      return closeTime_;
-    }
-
-    public static final int TITLE_FIELD_NUMBER = 15;
-    private volatile java.lang.Object title_;
-    /**
-     * <code>string title = 15;</code>
-     * @return The title.
-     */
-    @java.lang.Override
-    public java.lang.String getTitle() {
-      java.lang.Object ref = title_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        title_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string title = 15;</code>
-     * @return The bytes for title.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getTitleBytes() {
-      java.lang.Object ref = title_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        title_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int CONTENT_FIELD_NUMBER = 12;
-    private volatile java.lang.Object content_;
-    /**
-     * <code>string content = 12;</code>
+     * <code>string content = 1;</code>
      * @return The content.
      */
     @java.lang.Override
@@ -218,7 +111,7 @@ public final class ShowCommonTipsNotifyOuterClass {
       }
     }
     /**
-     * <code>string content = 12;</code>
+     * <code>string content = 1;</code>
      * @return The bytes for content.
      */
     @java.lang.Override
@@ -236,6 +129,56 @@ public final class ShowCommonTipsNotifyOuterClass {
       }
     }
 
+    public static final int TITLE_FIELD_NUMBER = 4;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object title_ = "";
+    /**
+     * <code>string title = 4;</code>
+     * @return The title.
+     */
+    @java.lang.Override
+    public java.lang.String getTitle() {
+      java.lang.Object ref = title_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        title_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string title = 4;</code>
+     * @return The bytes for title.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getTitleBytes() {
+      java.lang.Object ref = title_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        title_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CLOSE_TIME_FIELD_NUMBER = 5;
+    private int closeTime_ = 0;
+    /**
+     * <code>uint32 close_time = 5;</code>
+     * @return The closeTime.
+     */
+    @java.lang.Override
+    public int getCloseTime() {
+      return closeTime_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -251,15 +194,15 @@ public final class ShowCommonTipsNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, content_);
-      }
-      if (closeTime_ != 0) {
-        output.writeUInt32(14, closeTime_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, content_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, title_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, title_);
       }
-      unknownFields.writeTo(output);
+      if (closeTime_ != 0) {
+        output.writeUInt32(5, closeTime_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -269,16 +212,16 @@ public final class ShowCommonTipsNotifyOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, content_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, content_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, title_);
       }
       if (closeTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, closeTime_);
+          .computeUInt32Size(5, closeTime_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, title_);
-      }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -293,13 +236,13 @@ public final class ShowCommonTipsNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify other = (emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify) obj;
 
-      if (getCloseTime()
-          != other.getCloseTime()) return false;
-      if (!getTitle()
-          .equals(other.getTitle())) return false;
       if (!getContent()
           .equals(other.getContent())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getTitle()
+          .equals(other.getTitle())) return false;
+      if (getCloseTime()
+          != other.getCloseTime()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -310,13 +253,13 @@ public final class ShowCommonTipsNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CLOSE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCloseTime();
-      hash = (37 * hash) + TITLE_FIELD_NUMBER;
-      hash = (53 * hash) + getTitle().hashCode();
       hash = (37 * hash) + CONTENT_FIELD_NUMBER;
       hash = (53 * hash) + getContent().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + TITLE_FIELD_NUMBER;
+      hash = (53 * hash) + getTitle().hashCode();
+      hash = (37 * hash) + CLOSE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getCloseTime();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -365,11 +308,13 @@ public final class ShowCommonTipsNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -413,8 +358,8 @@ public final class ShowCommonTipsNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3479
-     * Obf: OFPCCAELGHL
+     * CmdId: 3128
+     * Name: DPNNLLEHHCK
      * </pre>
      *
      * Protobuf type {@code ShowCommonTipsNotify}
@@ -438,28 +383,21 @@ public final class ShowCommonTipsNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        closeTime_ = 0;
-
-        title_ = "";
-
+        bitField0_ = 0;
         content_ = "";
-
+        title_ = "";
+        closeTime_ = 0;
         return this;
       }
 
@@ -486,11 +424,22 @@ public final class ShowCommonTipsNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify buildPartial() {
         emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify result = new emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify(this);
-        result.closeTime_ = closeTime_;
-        result.title_ = title_;
-        result.content_ = content_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.content_ = content_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.title_ = title_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.closeTime_ = closeTime_;
+        }
       }
 
       @java.lang.Override
@@ -537,18 +486,20 @@ public final class ShowCommonTipsNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify other) {
         if (other == emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify.getDefaultInstance()) return this;
-        if (other.getCloseTime() != 0) {
-          setCloseTime(other.getCloseTime());
+        if (!other.getContent().isEmpty()) {
+          content_ = other.content_;
+          bitField0_ |= 0x00000001;
+          onChanged();
         }
         if (!other.getTitle().isEmpty()) {
           title_ = other.title_;
+          bitField0_ |= 0x00000002;
           onChanged();
         }
-        if (!other.getContent().isEmpty()) {
-          content_ = other.content_;
-          onChanged();
+        if (other.getCloseTime() != 0) {
+          setCloseTime(other.getCloseTime());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -563,130 +514,52 @@ public final class ShowCommonTipsNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                content_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 34: {
+                title_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 34
+              case 40: {
+                closeTime_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 40
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int closeTime_ ;
-      /**
-       * <code>uint32 close_time = 14;</code>
-       * @return The closeTime.
-       */
-      @java.lang.Override
-      public int getCloseTime() {
-        return closeTime_;
-      }
-      /**
-       * <code>uint32 close_time = 14;</code>
-       * @param value The closeTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCloseTime(int value) {
-        
-        closeTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 close_time = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCloseTime() {
-        
-        closeTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object title_ = "";
-      /**
-       * <code>string title = 15;</code>
-       * @return The title.
-       */
-      public java.lang.String getTitle() {
-        java.lang.Object ref = title_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          title_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string title = 15;</code>
-       * @return The bytes for title.
-       */
-      public com.google.protobuf.ByteString
-          getTitleBytes() {
-        java.lang.Object ref = title_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          title_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string title = 15;</code>
-       * @param value The title to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTitle(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        title_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string title = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTitle() {
-        
-        title_ = getDefaultInstance().getTitle();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string title = 15;</code>
-       * @param value The bytes for title to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTitleBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        title_ = value;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private java.lang.Object content_ = "";
       /**
-       * <code>string content = 12;</code>
+       * <code>string content = 1;</code>
        * @return The content.
        */
       public java.lang.String getContent() {
@@ -702,7 +575,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         }
       }
       /**
-       * <code>string content = 12;</code>
+       * <code>string content = 1;</code>
        * @return The bytes for content.
        */
       public com.google.protobuf.ByteString
@@ -719,43 +592,143 @@ public final class ShowCommonTipsNotifyOuterClass {
         }
       }
       /**
-       * <code>string content = 12;</code>
+       * <code>string content = 1;</code>
        * @param value The content to set.
        * @return This builder for chaining.
        */
       public Builder setContent(
           java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        if (value == null) { throw new NullPointerException(); }
         content_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>string content = 12;</code>
+       * <code>string content = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearContent() {
-        
         content_ = getDefaultInstance().getContent();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
       /**
-       * <code>string content = 12;</code>
+       * <code>string content = 1;</code>
        * @param value The bytes for content to set.
        * @return This builder for chaining.
        */
       public Builder setContentBytes(
           com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
         content_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object title_ = "";
+      /**
+       * <code>string title = 4;</code>
+       * @return The title.
+       */
+      public java.lang.String getTitle() {
+        java.lang.Object ref = title_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          title_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string title = 4;</code>
+       * @return The bytes for title.
+       */
+      public com.google.protobuf.ByteString
+          getTitleBytes() {
+        java.lang.Object ref = title_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          title_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string title = 4;</code>
+       * @param value The title to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTitle(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        title_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string title = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTitle() {
+        title_ = getDefaultInstance().getTitle();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string title = 4;</code>
+       * @param value The bytes for title to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTitleBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        title_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+
+      private int closeTime_ ;
+      /**
+       * <code>uint32 close_time = 5;</code>
+       * @return The closeTime.
+       */
+      @java.lang.Override
+      public int getCloseTime() {
+        return closeTime_;
+      }
+      /**
+       * <code>uint32 close_time = 5;</code>
+       * @param value The closeTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCloseTime(int value) {
+
+        closeTime_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 close_time = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCloseTime() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        closeTime_ = 0;
         onChanged();
         return this;
       }
@@ -792,7 +765,18 @@ public final class ShowCommonTipsNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ShowCommonTipsNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -827,8 +811,8 @@ public final class ShowCommonTipsNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ShowCommonTipsNotify.proto\"J\n\024ShowComm" +
-      "onTipsNotify\022\022\n\nclose_time\030\016 \001(\r\022\r\n\005titl" +
-      "e\030\017 \001(\t\022\017\n\007content\030\014 \001(\tB\033\n\031emu.grasscut" +
+      "onTipsNotify\022\017\n\007content\030\001 \001(\t\022\r\n\005title\030\004" +
+      " \001(\t\022\022\n\nclose_time\030\005 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -840,7 +824,7 @@ public final class ShowCommonTipsNotifyOuterClass {
     internal_static_ShowCommonTipsNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ShowCommonTipsNotify_descriptor,
-        new java.lang.String[] { "CloseTime", "Title", "Content", });
+        new java.lang.String[] { "Content", "Title", "CloseTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

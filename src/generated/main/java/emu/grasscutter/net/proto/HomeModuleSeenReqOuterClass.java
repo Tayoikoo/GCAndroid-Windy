@@ -19,17 +19,17 @@ public final class HomeModuleSeenReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 seen_module_id_list = 13;</code>
+     * <code>repeated uint32 seen_module_id_list = 11;</code>
      * @return A list containing the seenModuleIdList.
      */
     java.util.List<java.lang.Integer> getSeenModuleIdListList();
     /**
-     * <code>repeated uint32 seen_module_id_list = 13;</code>
+     * <code>repeated uint32 seen_module_id_list = 11;</code>
      * @return The count of seenModuleIdList.
      */
     int getSeenModuleIdListCount();
     /**
-     * <code>repeated uint32 seen_module_id_list = 13;</code>
+     * <code>repeated uint32 seen_module_id_list = 11;</code>
      * @param index The index of the element to return.
      * @return The seenModuleIdList at the given index.
      */
@@ -37,8 +37,8 @@ public final class HomeModuleSeenReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4826
-   * Obf: OJHBOIHODLL
+   * CmdId: 4896
+   * Name: BFJMCDIOHJH
    * </pre>
    *
    * Protobuf type {@code HomeModuleSeenReq}
@@ -63,73 +63,6 @@ public final class HomeModuleSeenReqOuterClass {
       return new HomeModuleSeenReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private HomeModuleSeenReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 104: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                seenModuleIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              seenModuleIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 106: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                seenModuleIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                seenModuleIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          seenModuleIdList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.internal_static_HomeModuleSeenReq_descriptor;
@@ -143,10 +76,11 @@ public final class HomeModuleSeenReqOuterClass {
               emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.HomeModuleSeenReq.class, emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.HomeModuleSeenReq.Builder.class);
     }
 
-    public static final int SEEN_MODULE_ID_LIST_FIELD_NUMBER = 13;
+    public static final int SEEN_MODULE_ID_LIST_FIELD_NUMBER = 11;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList seenModuleIdList_;
     /**
-     * <code>repeated uint32 seen_module_id_list = 13;</code>
+     * <code>repeated uint32 seen_module_id_list = 11;</code>
      * @return A list containing the seenModuleIdList.
      */
     @java.lang.Override
@@ -155,14 +89,14 @@ public final class HomeModuleSeenReqOuterClass {
       return seenModuleIdList_;
     }
     /**
-     * <code>repeated uint32 seen_module_id_list = 13;</code>
+     * <code>repeated uint32 seen_module_id_list = 11;</code>
      * @return The count of seenModuleIdList.
      */
     public int getSeenModuleIdListCount() {
       return seenModuleIdList_.size();
     }
     /**
-     * <code>repeated uint32 seen_module_id_list = 13;</code>
+     * <code>repeated uint32 seen_module_id_list = 11;</code>
      * @param index The index of the element to return.
      * @return The seenModuleIdList at the given index.
      */
@@ -187,13 +121,13 @@ public final class HomeModuleSeenReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getSeenModuleIdListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(90);
         output.writeUInt32NoTag(seenModuleIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < seenModuleIdList_.size(); i++) {
         output.writeUInt32NoTag(seenModuleIdList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -216,7 +150,7 @@ public final class HomeModuleSeenReqOuterClass {
         }
         seenModuleIdListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -233,7 +167,7 @@ public final class HomeModuleSeenReqOuterClass {
 
       if (!getSeenModuleIdListList()
           .equals(other.getSeenModuleIdListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -248,7 +182,7 @@ public final class HomeModuleSeenReqOuterClass {
         hash = (37 * hash) + SEEN_MODULE_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSeenModuleIdListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +231,13 @@ public final class HomeModuleSeenReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.HomeModuleSeenReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.HomeModuleSeenReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,8 +281,8 @@ public final class HomeModuleSeenReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4826
-     * Obf: OJHBOIHODLL
+     * CmdId: 4896
+     * Name: BFJMCDIOHJH
      * </pre>
      *
      * Protobuf type {@code HomeModuleSeenReq}
@@ -370,24 +306,19 @@ public final class HomeModuleSeenReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.HomeModuleSeenReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         seenModuleIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -414,14 +345,22 @@ public final class HomeModuleSeenReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.HomeModuleSeenReq buildPartial() {
         emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.HomeModuleSeenReq result = new emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.HomeModuleSeenReq(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.HomeModuleSeenReq result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           seenModuleIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.seenModuleIdList_ = seenModuleIdList_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.HomeModuleSeenReq result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -478,7 +417,7 @@ public final class HomeModuleSeenReqOuterClass {
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -493,17 +432,46 @@ public final class HomeModuleSeenReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.HomeModuleSeenReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 88: {
+                int v = input.readUInt32();
+                ensureSeenModuleIdListIsMutable();
+                seenModuleIdList_.addInt(v);
+                break;
+              } // case 88
+              case 90: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureSeenModuleIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  seenModuleIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 90
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.HomeModuleSeenReqOuterClass.HomeModuleSeenReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -513,10 +481,10 @@ public final class HomeModuleSeenReqOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           seenModuleIdList_ = mutableCopy(seenModuleIdList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
-       * <code>repeated uint32 seen_module_id_list = 13;</code>
+       * <code>repeated uint32 seen_module_id_list = 11;</code>
        * @return A list containing the seenModuleIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +493,14 @@ public final class HomeModuleSeenReqOuterClass {
                  java.util.Collections.unmodifiableList(seenModuleIdList_) : seenModuleIdList_;
       }
       /**
-       * <code>repeated uint32 seen_module_id_list = 13;</code>
+       * <code>repeated uint32 seen_module_id_list = 11;</code>
        * @return The count of seenModuleIdList.
        */
       public int getSeenModuleIdListCount() {
         return seenModuleIdList_.size();
       }
       /**
-       * <code>repeated uint32 seen_module_id_list = 13;</code>
+       * <code>repeated uint32 seen_module_id_list = 11;</code>
        * @param index The index of the element to return.
        * @return The seenModuleIdList at the given index.
        */
@@ -540,31 +508,33 @@ public final class HomeModuleSeenReqOuterClass {
         return seenModuleIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 seen_module_id_list = 13;</code>
+       * <code>repeated uint32 seen_module_id_list = 11;</code>
        * @param index The index to set the value at.
        * @param value The seenModuleIdList to set.
        * @return This builder for chaining.
        */
       public Builder setSeenModuleIdList(
           int index, int value) {
+
         ensureSeenModuleIdListIsMutable();
         seenModuleIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 seen_module_id_list = 13;</code>
+       * <code>repeated uint32 seen_module_id_list = 11;</code>
        * @param value The seenModuleIdList to add.
        * @return This builder for chaining.
        */
       public Builder addSeenModuleIdList(int value) {
+
         ensureSeenModuleIdListIsMutable();
         seenModuleIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 seen_module_id_list = 13;</code>
+       * <code>repeated uint32 seen_module_id_list = 11;</code>
        * @param values The seenModuleIdList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +547,7 @@ public final class HomeModuleSeenReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 seen_module_id_list = 13;</code>
+       * <code>repeated uint32 seen_module_id_list = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearSeenModuleIdList() {
@@ -619,7 +589,18 @@ public final class HomeModuleSeenReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HomeModuleSeenReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -654,7 +635,7 @@ public final class HomeModuleSeenReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027HomeModuleSeenReq.proto\"0\n\021HomeModuleS" +
-      "eenReq\022\033\n\023seen_module_id_list\030\r \003(\rB\033\n\031e" +
+      "eenReq\022\033\n\023seen_module_id_list\030\013 \003(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

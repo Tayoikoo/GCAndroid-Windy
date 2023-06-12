@@ -74,7 +74,7 @@ public final class ShopConcertProductOuterClass {
   }
   /**
    * <pre>
-   * Obf: CKIBKCAKBNI
+   * Name: JAJEHOIAKLD
    * </pre>
    *
    * Protobuf type {@code ShopConcertProduct}
@@ -100,85 +100,6 @@ public final class ShopConcertProductOuterClass {
       return new ShopConcertProduct();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ShopConcertProduct(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              productId_ = s;
-              break;
-            }
-            case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              priceTier_ = s;
-              break;
-            }
-            case 24: {
-
-              obtainCount_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              obtainLimit_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              beginTime_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              endTime_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              buyTimes_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ShopConcertProductOuterClass.internal_static_ShopConcertProduct_descriptor;
@@ -193,7 +114,8 @@ public final class ShopConcertProductOuterClass {
     }
 
     public static final int PRODUCT_ID_FIELD_NUMBER = 1;
-    private volatile java.lang.Object productId_;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object productId_ = "";
     /**
      * <code>string product_id = 1;</code>
      * @return The productId.
@@ -231,7 +153,8 @@ public final class ShopConcertProductOuterClass {
     }
 
     public static final int PRICE_TIER_FIELD_NUMBER = 2;
-    private volatile java.lang.Object priceTier_;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object priceTier_ = "";
     /**
      * <code>string price_tier = 2;</code>
      * @return The priceTier.
@@ -269,7 +192,7 @@ public final class ShopConcertProductOuterClass {
     }
 
     public static final int OBTAIN_COUNT_FIELD_NUMBER = 3;
-    private int obtainCount_;
+    private int obtainCount_ = 0;
     /**
      * <code>uint32 obtain_count = 3;</code>
      * @return The obtainCount.
@@ -280,7 +203,7 @@ public final class ShopConcertProductOuterClass {
     }
 
     public static final int OBTAIN_LIMIT_FIELD_NUMBER = 4;
-    private int obtainLimit_;
+    private int obtainLimit_ = 0;
     /**
      * <code>uint32 obtain_limit = 4;</code>
      * @return The obtainLimit.
@@ -291,7 +214,7 @@ public final class ShopConcertProductOuterClass {
     }
 
     public static final int BEGIN_TIME_FIELD_NUMBER = 5;
-    private int beginTime_;
+    private int beginTime_ = 0;
     /**
      * <code>uint32 begin_time = 5;</code>
      * @return The beginTime.
@@ -302,7 +225,7 @@ public final class ShopConcertProductOuterClass {
     }
 
     public static final int END_TIME_FIELD_NUMBER = 6;
-    private int endTime_;
+    private int endTime_ = 0;
     /**
      * <code>uint32 end_time = 6;</code>
      * @return The endTime.
@@ -313,7 +236,7 @@ public final class ShopConcertProductOuterClass {
     }
 
     public static final int BUY_TIMES_FIELD_NUMBER = 7;
-    private int buyTimes_;
+    private int buyTimes_ = 0;
     /**
      * <code>uint32 buy_times = 7;</code>
      * @return The buyTimes.
@@ -358,7 +281,7 @@ public final class ShopConcertProductOuterClass {
       if (buyTimes_ != 0) {
         output.writeUInt32(7, buyTimes_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -393,7 +316,7 @@ public final class ShopConcertProductOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, buyTimes_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -422,7 +345,7 @@ public final class ShopConcertProductOuterClass {
           != other.getEndTime()) return false;
       if (getBuyTimes()
           != other.getBuyTimes()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -447,7 +370,7 @@ public final class ShopConcertProductOuterClass {
       hash = (53 * hash) + getEndTime();
       hash = (37 * hash) + BUY_TIMES_FIELD_NUMBER;
       hash = (53 * hash) + getBuyTimes();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -496,11 +419,13 @@ public final class ShopConcertProductOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -544,7 +469,7 @@ public final class ShopConcertProductOuterClass {
     }
     /**
      * <pre>
-     * Obf: CKIBKCAKBNI
+     * Name: JAJEHOIAKLD
      * </pre>
      *
      * Protobuf type {@code ShopConcertProduct}
@@ -568,36 +493,25 @@ public final class ShopConcertProductOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         productId_ = "";
-
         priceTier_ = "";
-
         obtainCount_ = 0;
-
         obtainLimit_ = 0;
-
         beginTime_ = 0;
-
         endTime_ = 0;
-
         buyTimes_ = 0;
-
         return this;
       }
 
@@ -624,15 +538,34 @@ public final class ShopConcertProductOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct buildPartial() {
         emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct result = new emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct(this);
-        result.productId_ = productId_;
-        result.priceTier_ = priceTier_;
-        result.obtainCount_ = obtainCount_;
-        result.obtainLimit_ = obtainLimit_;
-        result.beginTime_ = beginTime_;
-        result.endTime_ = endTime_;
-        result.buyTimes_ = buyTimes_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.productId_ = productId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.priceTier_ = priceTier_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.obtainCount_ = obtainCount_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.obtainLimit_ = obtainLimit_;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.beginTime_ = beginTime_;
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
+          result.endTime_ = endTime_;
+        }
+        if (((from_bitField0_ & 0x00000040) != 0)) {
+          result.buyTimes_ = buyTimes_;
+        }
       }
 
       @java.lang.Override
@@ -681,10 +614,12 @@ public final class ShopConcertProductOuterClass {
         if (other == emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct.getDefaultInstance()) return this;
         if (!other.getProductId().isEmpty()) {
           productId_ = other.productId_;
+          bitField0_ |= 0x00000001;
           onChanged();
         }
         if (!other.getPriceTier().isEmpty()) {
           priceTier_ = other.priceTier_;
+          bitField0_ |= 0x00000002;
           onChanged();
         }
         if (other.getObtainCount() != 0) {
@@ -702,7 +637,7 @@ public final class ShopConcertProductOuterClass {
         if (other.getBuyTimes() != 0) {
           setBuyTimes(other.getBuyTimes());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -717,19 +652,68 @@ public final class ShopConcertProductOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                productId_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              case 18: {
+                priceTier_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 18
+              case 24: {
+                obtainCount_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 32: {
+                obtainLimit_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 32
+              case 40: {
+                beginTime_ = input.readUInt32();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 40
+              case 48: {
+                endTime_ = input.readUInt32();
+                bitField0_ |= 0x00000020;
+                break;
+              } // case 48
+              case 56: {
+                buyTimes_ = input.readUInt32();
+                bitField0_ |= 0x00000040;
+                break;
+              } // case 56
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private java.lang.Object productId_ = "";
       /**
@@ -772,11 +756,9 @@ public final class ShopConcertProductOuterClass {
        */
       public Builder setProductId(
           java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        if (value == null) { throw new NullPointerException(); }
         productId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -785,8 +767,8 @@ public final class ShopConcertProductOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearProductId() {
-        
         productId_ = getDefaultInstance().getProductId();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
@@ -797,12 +779,10 @@ public final class ShopConcertProductOuterClass {
        */
       public Builder setProductIdBytes(
           com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
         productId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -848,11 +828,9 @@ public final class ShopConcertProductOuterClass {
        */
       public Builder setPriceTier(
           java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        if (value == null) { throw new NullPointerException(); }
         priceTier_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -861,8 +839,8 @@ public final class ShopConcertProductOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearPriceTier() {
-        
         priceTier_ = getDefaultInstance().getPriceTier();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -873,12 +851,10 @@ public final class ShopConcertProductOuterClass {
        */
       public Builder setPriceTierBytes(
           com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
         priceTier_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -898,8 +874,9 @@ public final class ShopConcertProductOuterClass {
        * @return This builder for chaining.
        */
       public Builder setObtainCount(int value) {
-        
+
         obtainCount_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -908,7 +885,7 @@ public final class ShopConcertProductOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearObtainCount() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         obtainCount_ = 0;
         onChanged();
         return this;
@@ -929,8 +906,9 @@ public final class ShopConcertProductOuterClass {
        * @return This builder for chaining.
        */
       public Builder setObtainLimit(int value) {
-        
+
         obtainLimit_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -939,7 +917,7 @@ public final class ShopConcertProductOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearObtainLimit() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         obtainLimit_ = 0;
         onChanged();
         return this;
@@ -960,8 +938,9 @@ public final class ShopConcertProductOuterClass {
        * @return This builder for chaining.
        */
       public Builder setBeginTime(int value) {
-        
+
         beginTime_ = value;
+        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
@@ -970,7 +949,7 @@ public final class ShopConcertProductOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearBeginTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000010);
         beginTime_ = 0;
         onChanged();
         return this;
@@ -991,8 +970,9 @@ public final class ShopConcertProductOuterClass {
        * @return This builder for chaining.
        */
       public Builder setEndTime(int value) {
-        
+
         endTime_ = value;
+        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
@@ -1001,7 +981,7 @@ public final class ShopConcertProductOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000020);
         endTime_ = 0;
         onChanged();
         return this;
@@ -1022,8 +1002,9 @@ public final class ShopConcertProductOuterClass {
        * @return This builder for chaining.
        */
       public Builder setBuyTimes(int value) {
-        
+
         buyTimes_ = value;
+        bitField0_ |= 0x00000040;
         onChanged();
         return this;
       }
@@ -1032,7 +1013,7 @@ public final class ShopConcertProductOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearBuyTimes() {
-        
+        bitField0_ = (bitField0_ & ~0x00000040);
         buyTimes_ = 0;
         onChanged();
         return this;
@@ -1070,7 +1051,18 @@ public final class ShopConcertProductOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ShopConcertProduct(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

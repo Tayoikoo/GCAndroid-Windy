@@ -16,4 +16,6 @@ public class HandlerEvtAvatarSitDownNotify extends PacketHandler {
 
         session.getPlayer().getScene().broadcastPacket(new PacketEvtAvatarSitDownNotify(notify));
     }
+
 }
+

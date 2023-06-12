@@ -68,68 +68,6 @@ public final class CFFFGFFKINKOuterClass {
       return new CFFFGFFKINK();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private CFFFGFFKINK(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 56: {
-
-              minFinishTime_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 120: {
-
-              eLKJELLMMAD_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.CFFFGFFKINKOuterClass.internal_static_CFFFGFFKINK_descriptor;
@@ -144,7 +82,7 @@ public final class CFFFGFFKINKOuterClass {
     }
 
     public static final int ELKJELLMMAD_FIELD_NUMBER = 15;
-    private int eLKJELLMMAD_;
+    private int eLKJELLMMAD_ = 0;
     /**
      * <code>uint32 ELKJELLMMAD = 15;</code>
      * @return The eLKJELLMMAD.
@@ -155,7 +93,7 @@ public final class CFFFGFFKINKOuterClass {
     }
 
     public static final int LEVEL_ID_FIELD_NUMBER = 13;
-    private int levelId_;
+    private int levelId_ = 0;
     /**
      * <code>uint32 level_id = 13;</code>
      * @return The levelId.
@@ -166,7 +104,7 @@ public final class CFFFGFFKINKOuterClass {
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 14;
-    private boolean isOpen_;
+    private boolean isOpen_ = false;
     /**
      * <code>bool is_open = 14;</code>
      * @return The isOpen.
@@ -177,7 +115,7 @@ public final class CFFFGFFKINKOuterClass {
     }
 
     public static final int MIN_FINISH_TIME_FIELD_NUMBER = 7;
-    private int minFinishTime_;
+    private int minFinishTime_ = 0;
     /**
      * <code>uint32 min_finish_time = 7;</code>
      * @return The minFinishTime.
@@ -213,7 +151,7 @@ public final class CFFFGFFKINKOuterClass {
       if (eLKJELLMMAD_ != 0) {
         output.writeUInt32(15, eLKJELLMMAD_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -238,7 +176,7 @@ public final class CFFFGFFKINKOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, eLKJELLMMAD_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -261,7 +199,7 @@ public final class CFFFGFFKINKOuterClass {
           != other.getIsOpen()) return false;
       if (getMinFinishTime()
           != other.getMinFinishTime()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -281,7 +219,7 @@ public final class CFFFGFFKINKOuterClass {
           getIsOpen());
       hash = (37 * hash) + MIN_FINISH_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getMinFinishTime();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -330,11 +268,13 @@ public final class CFFFGFFKINKOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.CFFFGFFKINKOuterClass.CFFFGFFKINK parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.CFFFGFFKINKOuterClass.CFFFGFFKINK parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -402,30 +342,22 @@ public final class CFFFGFFKINKOuterClass {
 
       // Construct using emu.grasscutter.net.proto.CFFFGFFKINKOuterClass.CFFFGFFKINK.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         eLKJELLMMAD_ = 0;
-
         levelId_ = 0;
-
         isOpen_ = false;
-
         minFinishTime_ = 0;
-
         return this;
       }
 
@@ -452,12 +384,25 @@ public final class CFFFGFFKINKOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CFFFGFFKINKOuterClass.CFFFGFFKINK buildPartial() {
         emu.grasscutter.net.proto.CFFFGFFKINKOuterClass.CFFFGFFKINK result = new emu.grasscutter.net.proto.CFFFGFFKINKOuterClass.CFFFGFFKINK(this);
-        result.eLKJELLMMAD_ = eLKJELLMMAD_;
-        result.levelId_ = levelId_;
-        result.isOpen_ = isOpen_;
-        result.minFinishTime_ = minFinishTime_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.CFFFGFFKINKOuterClass.CFFFGFFKINK result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.eLKJELLMMAD_ = eLKJELLMMAD_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.levelId_ = levelId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.isOpen_ = isOpen_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.minFinishTime_ = minFinishTime_;
+        }
       }
 
       @java.lang.Override
@@ -516,7 +461,7 @@ public final class CFFFGFFKINKOuterClass {
         if (other.getMinFinishTime() != 0) {
           setMinFinishTime(other.getMinFinishTime());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -531,19 +476,53 @@ public final class CFFFGFFKINKOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.CFFFGFFKINKOuterClass.CFFFGFFKINK parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 56: {
+                minFinishTime_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 56
+              case 104: {
+                levelId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 104
+              case 112: {
+                isOpen_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 112
+              case 120: {
+                eLKJELLMMAD_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.CFFFGFFKINKOuterClass.CFFFGFFKINK) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int eLKJELLMMAD_ ;
       /**
@@ -560,8 +539,9 @@ public final class CFFFGFFKINKOuterClass {
        * @return This builder for chaining.
        */
       public Builder setELKJELLMMAD(int value) {
-        
+
         eLKJELLMMAD_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -570,7 +550,7 @@ public final class CFFFGFFKINKOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearELKJELLMMAD() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         eLKJELLMMAD_ = 0;
         onChanged();
         return this;
@@ -591,8 +571,9 @@ public final class CFFFGFFKINKOuterClass {
        * @return This builder for chaining.
        */
       public Builder setLevelId(int value) {
-        
+
         levelId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -601,7 +582,7 @@ public final class CFFFGFFKINKOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         levelId_ = 0;
         onChanged();
         return this;
@@ -622,8 +603,9 @@ public final class CFFFGFFKINKOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIsOpen(boolean value) {
-        
+
         isOpen_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -632,7 +614,7 @@ public final class CFFFGFFKINKOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         isOpen_ = false;
         onChanged();
         return this;
@@ -653,8 +635,9 @@ public final class CFFFGFFKINKOuterClass {
        * @return This builder for chaining.
        */
       public Builder setMinFinishTime(int value) {
-        
+
         minFinishTime_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -663,7 +646,7 @@ public final class CFFFGFFKINKOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearMinFinishTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         minFinishTime_ = 0;
         onChanged();
         return this;
@@ -701,7 +684,18 @@ public final class CFFFGFFKINKOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CFFFGFFKINK(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -737,8 +731,8 @@ public final class CFFFGFFKINKOuterClass {
     java.lang.String[] descriptorData = {
       "\n\021CFFFGFFKINK.proto\"^\n\013CFFFGFFKINK\022\023\n\013EL" +
       "KJELLMMAD\030\017 \001(\r\022\020\n\010level_id\030\r \001(\r\022\017\n\007is_" +
-      "open\030\016 \001(\010\022\027\n\017min_finish_time\030\007 \001(\rB!\n\031e" +
-      "mu.grasscutter.net.protoZ\004/genb\006proto3"
+      "open\030\016 \001(\010\022\027\n\017min_finish_time\030\007 \001(\rB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

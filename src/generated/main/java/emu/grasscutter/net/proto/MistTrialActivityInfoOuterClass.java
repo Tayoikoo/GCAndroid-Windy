@@ -65,61 +65,6 @@ public final class MistTrialActivityInfoOuterClass {
       return new MistTrialActivityInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private MistTrialActivityInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 58: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                trialLevelDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              trialLevelDataList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          trialLevelDataList_ = java.util.Collections.unmodifiableList(trialLevelDataList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.MistTrialActivityInfoOuterClass.internal_static_MistTrialActivityInfo_descriptor;
@@ -134,6 +79,7 @@ public final class MistTrialActivityInfoOuterClass {
     }
 
     public static final int TRIALLEVELDATALIST_FIELD_NUMBER = 7;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData> trialLevelDataList_;
     /**
      * <code>repeated .MistTrialLevelData trialLevelDataList = 7;</code>
@@ -190,7 +136,7 @@ public final class MistTrialActivityInfoOuterClass {
       for (int i = 0; i < trialLevelDataList_.size(); i++) {
         output.writeMessage(7, trialLevelDataList_.get(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -203,7 +149,7 @@ public final class MistTrialActivityInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, trialLevelDataList_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -220,7 +166,7 @@ public final class MistTrialActivityInfoOuterClass {
 
       if (!getTrialLevelDataListList()
           .equals(other.getTrialLevelDataListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -235,7 +181,7 @@ public final class MistTrialActivityInfoOuterClass {
         hash = (37 * hash) + TRIALLEVELDATALIST_FIELD_NUMBER;
         hash = (53 * hash) + getTrialLevelDataListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -284,11 +230,13 @@ public final class MistTrialActivityInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.MistTrialActivityInfoOuterClass.MistTrialActivityInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.MistTrialActivityInfoOuterClass.MistTrialActivityInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -352,29 +300,25 @@ public final class MistTrialActivityInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.MistTrialActivityInfoOuterClass.MistTrialActivityInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getTrialLevelDataListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         if (trialLevelDataListBuilder_ == null) {
           trialLevelDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          trialLevelDataList_ = null;
           trialLevelDataListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -401,7 +345,13 @@ public final class MistTrialActivityInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MistTrialActivityInfoOuterClass.MistTrialActivityInfo buildPartial() {
         emu.grasscutter.net.proto.MistTrialActivityInfoOuterClass.MistTrialActivityInfo result = new emu.grasscutter.net.proto.MistTrialActivityInfoOuterClass.MistTrialActivityInfo(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.MistTrialActivityInfoOuterClass.MistTrialActivityInfo result) {
         if (trialLevelDataListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             trialLevelDataList_ = java.util.Collections.unmodifiableList(trialLevelDataList_);
@@ -411,8 +361,10 @@ public final class MistTrialActivityInfoOuterClass {
         } else {
           result.trialLevelDataList_ = trialLevelDataListBuilder_.build();
         }
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.MistTrialActivityInfoOuterClass.MistTrialActivityInfo result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -485,7 +437,7 @@ public final class MistTrialActivityInfoOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -500,17 +452,43 @@ public final class MistTrialActivityInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.MistTrialActivityInfoOuterClass.MistTrialActivityInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 58: {
+                emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.MistTrialLevelDataOuterClass.MistTrialLevelData.parser(),
+                        extensionRegistry);
+                if (trialLevelDataListBuilder_ == null) {
+                  ensureTrialLevelDataListIsMutable();
+                  trialLevelDataList_.add(m);
+                } else {
+                  trialLevelDataListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 58
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.MistTrialActivityInfoOuterClass.MistTrialActivityInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -787,7 +765,18 @@ public final class MistTrialActivityInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MistTrialActivityInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -824,8 +813,8 @@ public final class MistTrialActivityInfoOuterClass {
       "\n\033MistTrialActivityInfo.proto\032\030MistTrial" +
       "LevelData.proto\"H\n\025MistTrialActivityInfo" +
       "\022/\n\022trialLevelDataList\030\007 \003(\0132\023.MistTrial" +
-      "LevelDataB!\n\031emu.grasscutter.net.protoZ\004" +
-      "/genb\006proto3"
+      "LevelDataB\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

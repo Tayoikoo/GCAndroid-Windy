@@ -9,11 +9,10 @@ public class PacketSkipPlayerGameTimeRsp extends BasePacket {
     public PacketSkipPlayerGameTimeRsp(SkipPlayerGameTimeReqOuterClass.SkipPlayerGameTimeReq req) {
         super(PacketOpcodes.SkipPlayerGameTimeRsp);
 
-        var proto =
-                SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp.newBuilder()
-                        .setClientGameTime(req.getClientGameTime())
-                        .setGameTime(req.getGameTime())
-                        .build();
+        var proto = SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp.newBuilder()
+            .setClientGameTime(req.getClientGameTime())
+            .setGameTime(req.getGameTime())
+            .build();
 
         this.setData(proto);
     }

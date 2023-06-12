@@ -52,11 +52,11 @@ public final class PropValueOuterClass {
      */
     float getFval();
 
-    public emu.grasscutter.net.proto.PropValueOuterClass.PropValue.ValueCase getValueCase();
+    emu.grasscutter.net.proto.PropValueOuterClass.PropValue.ValueCase getValueCase();
   }
   /**
    * <pre>
-   * Obf: PFAKCFKJKIC
+   * Name: PAPLIDJPGCN
    * </pre>
    *
    * Protobuf type {@code PropValue}
@@ -80,68 +80,6 @@ public final class PropValueOuterClass {
       return new PropValue();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private PropValue(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              type_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-              valueCase_ = 2;
-              value_ = input.readInt64();
-              break;
-            }
-            case 29: {
-              valueCase_ = 3;
-              value_ = input.readFloat();
-              break;
-            }
-            case 32: {
-
-              val_ = input.readInt64();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PropValueOuterClass.internal_static_PropValue_descriptor;
@@ -156,6 +94,7 @@ public final class PropValueOuterClass {
     }
 
     private int valueCase_ = 0;
+    @SuppressWarnings("serial")
     private java.lang.Object value_;
     public enum ValueCase
         implements com.google.protobuf.Internal.EnumLite,
@@ -197,7 +136,7 @@ public final class PropValueOuterClass {
     }
 
     public static final int TYPE_FIELD_NUMBER = 1;
-    private int type_;
+    private int type_ = 0;
     /**
      * <code>uint32 type = 1;</code>
      * @return The type.
@@ -208,7 +147,7 @@ public final class PropValueOuterClass {
     }
 
     public static final int VAL_FIELD_NUMBER = 4;
-    private long val_;
+    private long val_ = 0L;
     /**
      * <code>int64 val = 4;</code>
      * @return The val.
@@ -288,7 +227,7 @@ public final class PropValueOuterClass {
       if (val_ != 0L) {
         output.writeInt64(4, val_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -315,7 +254,7 @@ public final class PropValueOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(4, val_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -348,7 +287,7 @@ public final class PropValueOuterClass {
         case 0:
         default:
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -378,7 +317,7 @@ public final class PropValueOuterClass {
         case 0:
         default:
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -427,11 +366,13 @@ public final class PropValueOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.PropValueOuterClass.PropValue parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.PropValueOuterClass.PropValue parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -475,7 +416,7 @@ public final class PropValueOuterClass {
     }
     /**
      * <pre>
-     * Obf: PFAKCFKJKIC
+     * Name: PAPLIDJPGCN
      * </pre>
      *
      * Protobuf type {@code PropValue}
@@ -499,26 +440,20 @@ public final class PropValueOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PropValueOuterClass.PropValue.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         type_ = 0;
-
         val_ = 0L;
-
         valueCase_ = 0;
         value_ = null;
         return this;
@@ -547,17 +482,25 @@ public final class PropValueOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PropValueOuterClass.PropValue buildPartial() {
         emu.grasscutter.net.proto.PropValueOuterClass.PropValue result = new emu.grasscutter.net.proto.PropValueOuterClass.PropValue(this);
-        result.type_ = type_;
-        result.val_ = val_;
-        if (valueCase_ == 2) {
-          result.value_ = value_;
-        }
-        if (valueCase_ == 3) {
-          result.value_ = value_;
-        }
-        result.valueCase_ = valueCase_;
+        if (bitField0_ != 0) { buildPartial0(result); }
+        buildPartialOneofs(result);
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PropValueOuterClass.PropValue result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.type_ = type_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.val_ = val_;
+        }
+      }
+
+      private void buildPartialOneofs(emu.grasscutter.net.proto.PropValueOuterClass.PropValue result) {
+        result.valueCase_ = valueCase_;
+        result.value_ = this.value_;
       }
 
       @java.lang.Override
@@ -623,7 +566,7 @@ public final class PropValueOuterClass {
             break;
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -638,17 +581,50 @@ public final class PropValueOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PropValueOuterClass.PropValue parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                type_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                value_ = input.readInt64();
+                valueCase_ = 2;
+                break;
+              } // case 16
+              case 29: {
+                value_ = input.readFloat();
+                valueCase_ = 3;
+                break;
+              } // case 29
+              case 32: {
+                val_ = input.readInt64();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 32
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PropValueOuterClass.PropValue) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int valueCase_ = 0;
@@ -666,6 +642,7 @@ public final class PropValueOuterClass {
         return this;
       }
 
+      private int bitField0_;
 
       private int type_ ;
       /**
@@ -682,8 +659,9 @@ public final class PropValueOuterClass {
        * @return This builder for chaining.
        */
       public Builder setType(int value) {
-        
+
         type_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -692,7 +670,7 @@ public final class PropValueOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         type_ = 0;
         onChanged();
         return this;
@@ -713,8 +691,9 @@ public final class PropValueOuterClass {
        * @return This builder for chaining.
        */
       public Builder setVal(long value) {
-        
+
         val_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -723,7 +702,7 @@ public final class PropValueOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearVal() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         val_ = 0L;
         onChanged();
         return this;
@@ -752,6 +731,7 @@ public final class PropValueOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIval(long value) {
+
         valueCase_ = 2;
         value_ = value;
         onChanged();
@@ -793,6 +773,7 @@ public final class PropValueOuterClass {
        * @return This builder for chaining.
        */
       public Builder setFval(float value) {
+
         valueCase_ = 3;
         value_ = value;
         onChanged();
@@ -843,7 +824,18 @@ public final class PropValueOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PropValue(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

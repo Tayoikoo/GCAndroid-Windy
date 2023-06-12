@@ -51,53 +51,6 @@ public final class GetQuestTalkHistoryReqOuterClass {
       return new GetQuestTalkHistoryReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private GetQuestTalkHistoryReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 88: {
-
-              parentQuestId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.GetQuestTalkHistoryReqOuterClass.internal_static_GetQuestTalkHistoryReq_descriptor;
@@ -112,7 +65,7 @@ public final class GetQuestTalkHistoryReqOuterClass {
     }
 
     public static final int PARENT_QUEST_ID_FIELD_NUMBER = 11;
-    private int parentQuestId_;
+    private int parentQuestId_ = 0;
     /**
      * <code>uint32 parent_quest_id = 11;</code>
      * @return The parentQuestId.
@@ -139,7 +92,7 @@ public final class GetQuestTalkHistoryReqOuterClass {
       if (parentQuestId_ != 0) {
         output.writeUInt32(11, parentQuestId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -152,7 +105,7 @@ public final class GetQuestTalkHistoryReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, parentQuestId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -169,7 +122,7 @@ public final class GetQuestTalkHistoryReqOuterClass {
 
       if (getParentQuestId()
           != other.getParentQuestId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -182,7 +135,7 @@ public final class GetQuestTalkHistoryReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + PARENT_QUEST_ID_FIELD_NUMBER;
       hash = (53 * hash) + getParentQuestId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -231,11 +184,13 @@ public final class GetQuestTalkHistoryReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.GetQuestTalkHistoryReqOuterClass.GetQuestTalkHistoryReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.GetQuestTalkHistoryReqOuterClass.GetQuestTalkHistoryReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -304,24 +259,19 @@ public final class GetQuestTalkHistoryReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.GetQuestTalkHistoryReqOuterClass.GetQuestTalkHistoryReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         parentQuestId_ = 0;
-
         return this;
       }
 
@@ -348,9 +298,16 @@ public final class GetQuestTalkHistoryReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetQuestTalkHistoryReqOuterClass.GetQuestTalkHistoryReq buildPartial() {
         emu.grasscutter.net.proto.GetQuestTalkHistoryReqOuterClass.GetQuestTalkHistoryReq result = new emu.grasscutter.net.proto.GetQuestTalkHistoryReqOuterClass.GetQuestTalkHistoryReq(this);
-        result.parentQuestId_ = parentQuestId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.GetQuestTalkHistoryReqOuterClass.GetQuestTalkHistoryReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.parentQuestId_ = parentQuestId_;
+        }
       }
 
       @java.lang.Override
@@ -400,7 +357,7 @@ public final class GetQuestTalkHistoryReqOuterClass {
         if (other.getParentQuestId() != 0) {
           setParentQuestId(other.getParentQuestId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -415,19 +372,38 @@ public final class GetQuestTalkHistoryReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.GetQuestTalkHistoryReqOuterClass.GetQuestTalkHistoryReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 88: {
+                parentQuestId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 88
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.GetQuestTalkHistoryReqOuterClass.GetQuestTalkHistoryReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int parentQuestId_ ;
       /**
@@ -444,8 +420,9 @@ public final class GetQuestTalkHistoryReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder setParentQuestId(int value) {
-        
+
         parentQuestId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -454,7 +431,7 @@ public final class GetQuestTalkHistoryReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearParentQuestId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         parentQuestId_ = 0;
         onChanged();
         return this;
@@ -492,7 +469,18 @@ public final class GetQuestTalkHistoryReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GetQuestTalkHistoryReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -528,8 +516,7 @@ public final class GetQuestTalkHistoryReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034GetQuestTalkHistoryReq.proto\"1\n\026GetQue" +
       "stTalkHistoryReq\022\027\n\017parent_quest_id\030\013 \001(" +
-      "\rB!\n\031emu.grasscutter.net.protoZ\004/genb\006pr" +
-      "oto3"
+      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

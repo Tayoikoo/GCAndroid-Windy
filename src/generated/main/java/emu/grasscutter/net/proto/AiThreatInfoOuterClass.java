@@ -19,11 +19,11 @@ public final class AiThreatInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
      */
     int getAiThreatMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
      */
     boolean containsAiThreatMap(
         int key);
@@ -34,27 +34,25 @@ public final class AiThreatInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getAiThreatMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getAiThreatMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
      */
-
     int getAiThreatMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
      */
-
     int getAiThreatMapOrThrow(
         int key);
   }
   /**
    * <pre>
-   * Obf: IDODLGIKFOA
+   * Name: BABEOKMLGED
    * </pre>
    *
    * Protobuf type {@code AiThreatInfo}
@@ -78,62 +76,6 @@ public final class AiThreatInfoOuterClass {
       return new AiThreatInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private AiThreatInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 34: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                aiThreatMap_ = com.google.protobuf.MapField.newMapField(
-                    AiThreatMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              aiThreatMap__ = input.readMessage(
-                  AiThreatMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              aiThreatMap_.getMutableMap().put(
-                  aiThreatMap__.getKey(), aiThreatMap__.getValue());
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AiThreatInfoOuterClass.internal_static_AiThreatInfo_descriptor;
@@ -144,7 +86,7 @@ public final class AiThreatInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 4:
+        case 3:
           return internalGetAiThreatMap();
         default:
           throw new RuntimeException(
@@ -159,7 +101,7 @@ public final class AiThreatInfoOuterClass {
               emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo.class, emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo.Builder.class);
     }
 
-    public static final int AI_THREAT_MAP_FIELD_NUMBER = 4;
+    public static final int AI_THREAT_MAP_FIELD_NUMBER = 3;
     private static final class AiThreatMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -171,6 +113,7 @@ public final class AiThreatInfoOuterClass {
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
+    @SuppressWarnings("serial")
     private com.google.protobuf.MapField<
         java.lang.Integer, java.lang.Integer> aiThreatMap_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -181,18 +124,16 @@ public final class AiThreatInfoOuterClass {
       }
       return aiThreatMap_;
     }
-
     public int getAiThreatMapCount() {
       return internalGetAiThreatMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
      */
-
     @java.lang.Override
     public boolean containsAiThreatMap(
         int key) {
-      
+
       return internalGetAiThreatMap().getMap().containsKey(key);
     }
     /**
@@ -204,34 +145,31 @@ public final class AiThreatInfoOuterClass {
       return getAiThreatMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
      */
     @java.lang.Override
-
     public java.util.Map<java.lang.Integer, java.lang.Integer> getAiThreatMapMap() {
       return internalGetAiThreatMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
      */
     @java.lang.Override
-
     public int getAiThreatMapOrDefault(
         int key,
         int defaultValue) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
           internalGetAiThreatMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
      */
     @java.lang.Override
-
     public int getAiThreatMapOrThrow(
         int key) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
           internalGetAiThreatMap().getMap();
       if (!map.containsKey(key)) {
@@ -259,8 +197,8 @@ public final class AiThreatInfoOuterClass {
           output,
           internalGetAiThreatMap(),
           AiThreatMapDefaultEntryHolder.defaultEntry,
-          4);
-      unknownFields.writeTo(output);
+          3);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -277,9 +215,9 @@ public final class AiThreatInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(4, aiThreatMap__);
+            .computeMessageSize(3, aiThreatMap__);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -296,7 +234,7 @@ public final class AiThreatInfoOuterClass {
 
       if (!internalGetAiThreatMap().equals(
           other.internalGetAiThreatMap())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -311,7 +249,7 @@ public final class AiThreatInfoOuterClass {
         hash = (37 * hash) + AI_THREAT_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetAiThreatMap().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -360,11 +298,13 @@ public final class AiThreatInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -408,7 +348,7 @@ public final class AiThreatInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: IDODLGIKFOA
+     * Name: BABEOKMLGED
      * </pre>
      *
      * Protobuf type {@code AiThreatInfo}
@@ -426,7 +366,7 @@ public final class AiThreatInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 4:
+          case 3:
             return internalGetAiThreatMap();
           default:
             throw new RuntimeException(
@@ -437,7 +377,7 @@ public final class AiThreatInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 4:
+          case 3:
             return internalGetMutableAiThreatMap();
           default:
             throw new RuntimeException(
@@ -454,22 +394,18 @@ public final class AiThreatInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         internalGetMutableAiThreatMap().clear();
         return this;
       }
@@ -497,11 +433,17 @@ public final class AiThreatInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo buildPartial() {
         emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo result = new emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo(this);
-        int from_bitField0_ = bitField0_;
-        result.aiThreatMap_ = internalGetAiThreatMap();
-        result.aiThreatMap_.makeImmutable();
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.aiThreatMap_ = internalGetAiThreatMap();
+          result.aiThreatMap_.makeImmutable();
+        }
       }
 
       @java.lang.Override
@@ -550,7 +492,8 @@ public final class AiThreatInfoOuterClass {
         if (other == emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo.getDefaultInstance()) return this;
         internalGetMutableAiThreatMap().mergeFrom(
             other.internalGetAiThreatMap());
-        this.mergeUnknownFields(other.unknownFields);
+        bitField0_ |= 0x00000001;
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -565,17 +508,39 @@ public final class AiThreatInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 26: {
+                com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+                aiThreatMap__ = input.readMessage(
+                    AiThreatMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+                internalGetMutableAiThreatMap().getMutableMap().put(
+                    aiThreatMap__.getKey(), aiThreatMap__.getValue());
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 26
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AiThreatInfoOuterClass.AiThreatInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -583,7 +548,7 @@ public final class AiThreatInfoOuterClass {
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> aiThreatMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetAiThreatMap() {
+          internalGetAiThreatMap() {
         if (aiThreatMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
               AiThreatMapDefaultEntryHolder.defaultEntry);
@@ -591,8 +556,7 @@ public final class AiThreatInfoOuterClass {
         return aiThreatMap_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableAiThreatMap() {
-        onChanged();;
+          internalGetMutableAiThreatMap() {
         if (aiThreatMap_ == null) {
           aiThreatMap_ = com.google.protobuf.MapField.newMapField(
               AiThreatMapDefaultEntryHolder.defaultEntry);
@@ -600,20 +564,20 @@ public final class AiThreatInfoOuterClass {
         if (!aiThreatMap_.isMutable()) {
           aiThreatMap_ = aiThreatMap_.copy();
         }
+        bitField0_ |= 0x00000001;
+        onChanged();
         return aiThreatMap_;
       }
-
       public int getAiThreatMapCount() {
         return internalGetAiThreatMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
        */
-
       @java.lang.Override
       public boolean containsAiThreatMap(
           int key) {
-        
+
         return internalGetAiThreatMap().getMap().containsKey(key);
       }
       /**
@@ -625,34 +589,31 @@ public final class AiThreatInfoOuterClass {
         return getAiThreatMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
        */
       @java.lang.Override
-
       public java.util.Map<java.lang.Integer, java.lang.Integer> getAiThreatMapMap() {
         return internalGetAiThreatMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
        */
       @java.lang.Override
-
       public int getAiThreatMapOrDefault(
           int key,
           int defaultValue) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
             internalGetAiThreatMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
        */
       @java.lang.Override
-
       public int getAiThreatMapOrThrow(
           int key) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
             internalGetAiThreatMap().getMap();
         if (!map.containsKey(key)) {
@@ -660,19 +621,18 @@ public final class AiThreatInfoOuterClass {
         }
         return map.get(key);
       }
-
       public Builder clearAiThreatMap() {
+        bitField0_ = (bitField0_ & ~0x00000001);
         internalGetMutableAiThreatMap().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
        */
-
       public Builder removeAiThreatMap(
           int key) {
-        
+
         internalGetMutableAiThreatMap().getMutableMap()
             .remove(key);
         return this;
@@ -682,29 +642,31 @@ public final class AiThreatInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableAiThreatMap() {
+          getMutableAiThreatMap() {
+        bitField0_ |= 0x00000001;
         return internalGetMutableAiThreatMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
        */
       public Builder putAiThreatMap(
           int key,
           int value) {
-        
-        
+
+
         internalGetMutableAiThreatMap().getMutableMap()
             .put(key, value);
+        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 3;</code>
        */
-
       public Builder putAllAiThreatMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutableAiThreatMap().getMutableMap()
             .putAll(values);
+        bitField0_ |= 0x00000001;
         return this;
       }
       @java.lang.Override
@@ -740,7 +702,18 @@ public final class AiThreatInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AiThreatInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -780,7 +753,7 @@ public final class AiThreatInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022AiThreatInfo.proto\"y\n\014AiThreatInfo\0225\n\r" +
-      "ai_threat_map\030\004 \003(\0132\036.AiThreatInfo.AiThr" +
+      "ai_threat_map\030\003 \003(\0132\036.AiThreatInfo.AiThr" +
       "eatMapEntry\0322\n\020AiThreatMapEntry\022\013\n\003key\030\001" +
       " \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"

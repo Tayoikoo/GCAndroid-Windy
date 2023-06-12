@@ -9,13 +9,12 @@ public class PacketEvtAvatarStandUpNotify extends BasePacket {
     public PacketEvtAvatarStandUpNotify(EvtAvatarStandUpNotify notify) {
         super(PacketOpcodes.EvtAvatarStandUpNotify);
 
-        EvtAvatarStandUpNotify proto =
-                EvtAvatarStandUpNotify.newBuilder()
-                        .setEntityId(notify.getEntityId())
-                        .setDirection(notify.getDirection())
-                        .setPerformId(notify.getPerformId())
-                        .setChairId(notify.getChairId())
-                        .build();
+        EvtAvatarStandUpNotify proto = EvtAvatarStandUpNotify.newBuilder()
+                .setEntityId(notify.getEntityId())
+                .setDirection(notify.getDirection())
+                .setPerformId(notify.getPerformId())
+                .setChairId(notify.getChairId())
+                .build();
 
         this.setData(proto);
     }

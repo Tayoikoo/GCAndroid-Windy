@@ -19,39 +19,39 @@ public final class PullRecentChatRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>repeated .ChatInfo chat_info = 14;</code>
+     * <code>repeated .ChatInfo chat_info = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo> 
         getChatInfoList();
     /**
-     * <code>repeated .ChatInfo chat_info = 14;</code>
+     * <code>repeated .ChatInfo chat_info = 5;</code>
      */
     emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo getChatInfo(int index);
     /**
-     * <code>repeated .ChatInfo chat_info = 14;</code>
+     * <code>repeated .ChatInfo chat_info = 5;</code>
      */
     int getChatInfoCount();
     /**
-     * <code>repeated .ChatInfo chat_info = 14;</code>
+     * <code>repeated .ChatInfo chat_info = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfoOrBuilder> 
         getChatInfoOrBuilderList();
     /**
-     * <code>repeated .ChatInfo chat_info = 14;</code>
+     * <code>repeated .ChatInfo chat_info = 5;</code>
      */
     emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfoOrBuilder getChatInfoOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 5037
-   * Obf: COBHBCIEBCF
+   * CmdId: 5042
+   * Name: IGDEALHCKMC
    * </pre>
    *
    * Protobuf type {@code PullRecentChatRsp}
@@ -76,66 +76,6 @@ public final class PullRecentChatRspOuterClass {
       return new PullRecentChatRsp();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private PullRecentChatRsp(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 80: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 114: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                chatInfo_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              chatInfo_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          chatInfo_ = java.util.Collections.unmodifiableList(chatInfo_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PullRecentChatRspOuterClass.internal_static_PullRecentChatRsp_descriptor;
@@ -149,10 +89,10 @@ public final class PullRecentChatRspOuterClass {
               emu.grasscutter.net.proto.PullRecentChatRspOuterClass.PullRecentChatRsp.class, emu.grasscutter.net.proto.PullRecentChatRspOuterClass.PullRecentChatRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
-    private int retcode_;
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -160,17 +100,18 @@ public final class PullRecentChatRspOuterClass {
       return retcode_;
     }
 
-    public static final int CHAT_INFO_FIELD_NUMBER = 14;
+    public static final int CHAT_INFO_FIELD_NUMBER = 5;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo> chatInfo_;
     /**
-     * <code>repeated .ChatInfo chat_info = 14;</code>
+     * <code>repeated .ChatInfo chat_info = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo> getChatInfoList() {
       return chatInfo_;
     }
     /**
-     * <code>repeated .ChatInfo chat_info = 14;</code>
+     * <code>repeated .ChatInfo chat_info = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfoOrBuilder> 
@@ -178,21 +119,21 @@ public final class PullRecentChatRspOuterClass {
       return chatInfo_;
     }
     /**
-     * <code>repeated .ChatInfo chat_info = 14;</code>
+     * <code>repeated .ChatInfo chat_info = 5;</code>
      */
     @java.lang.Override
     public int getChatInfoCount() {
       return chatInfo_.size();
     }
     /**
-     * <code>repeated .ChatInfo chat_info = 14;</code>
+     * <code>repeated .ChatInfo chat_info = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo getChatInfo(int index) {
       return chatInfo_.get(index);
     }
     /**
-     * <code>repeated .ChatInfo chat_info = 14;</code>
+     * <code>repeated .ChatInfo chat_info = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfoOrBuilder getChatInfoOrBuilder(
@@ -214,13 +155,13 @@ public final class PullRecentChatRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
-      }
       for (int i = 0; i < chatInfo_.size(); i++) {
-        output.writeMessage(14, chatInfo_.get(i));
+        output.writeMessage(5, chatInfo_.get(i));
       }
-      unknownFields.writeTo(output);
+      if (retcode_ != 0) {
+        output.writeInt32(13, retcode_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -229,15 +170,15 @@ public final class PullRecentChatRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
-      }
       for (int i = 0; i < chatInfo_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, chatInfo_.get(i));
+          .computeMessageSize(5, chatInfo_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, retcode_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -256,7 +197,7 @@ public final class PullRecentChatRspOuterClass {
           != other.getRetcode()) return false;
       if (!getChatInfoList()
           .equals(other.getChatInfoList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -273,7 +214,7 @@ public final class PullRecentChatRspOuterClass {
         hash = (37 * hash) + CHAT_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getChatInfoList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -322,11 +263,13 @@ public final class PullRecentChatRspOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.PullRecentChatRspOuterClass.PullRecentChatRsp parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.PullRecentChatRspOuterClass.PullRecentChatRsp parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -370,8 +313,8 @@ public final class PullRecentChatRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5037
-     * Obf: COBHBCIEBCF
+     * CmdId: 5042
+     * Name: IGDEALHCKMC
      * </pre>
      *
      * Protobuf type {@code PullRecentChatRsp}
@@ -395,31 +338,26 @@ public final class PullRecentChatRspOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PullRecentChatRspOuterClass.PullRecentChatRsp.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getChatInfoFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         retcode_ = 0;
-
         if (chatInfoBuilder_ == null) {
           chatInfo_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          chatInfo_ = null;
           chatInfoBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -446,19 +384,29 @@ public final class PullRecentChatRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PullRecentChatRspOuterClass.PullRecentChatRsp buildPartial() {
         emu.grasscutter.net.proto.PullRecentChatRspOuterClass.PullRecentChatRsp result = new emu.grasscutter.net.proto.PullRecentChatRspOuterClass.PullRecentChatRsp(this);
-        int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.PullRecentChatRspOuterClass.PullRecentChatRsp result) {
         if (chatInfoBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             chatInfo_ = java.util.Collections.unmodifiableList(chatInfo_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.chatInfo_ = chatInfo_;
         } else {
           result.chatInfo_ = chatInfoBuilder_.build();
         }
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PullRecentChatRspOuterClass.PullRecentChatRsp result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.retcode_ = retcode_;
+        }
       }
 
       @java.lang.Override
@@ -512,7 +460,7 @@ public final class PullRecentChatRspOuterClass {
           if (!other.chatInfo_.isEmpty()) {
             if (chatInfo_.isEmpty()) {
               chatInfo_ = other.chatInfo_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureChatInfoIsMutable();
               chatInfo_.addAll(other.chatInfo_);
@@ -525,7 +473,7 @@ public final class PullRecentChatRspOuterClass {
               chatInfoBuilder_.dispose();
               chatInfoBuilder_ = null;
               chatInfo_ = other.chatInfo_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               chatInfoBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getChatInfoFieldBuilder() : null;
@@ -534,7 +482,7 @@ public final class PullRecentChatRspOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -549,24 +497,55 @@ public final class PullRecentChatRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PullRecentChatRspOuterClass.PullRecentChatRsp parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 42: {
+                emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.parser(),
+                        extensionRegistry);
+                if (chatInfoBuilder_ == null) {
+                  ensureChatInfoIsMutable();
+                  chatInfo_.add(m);
+                } else {
+                  chatInfoBuilder_.addMessage(m);
+                }
+                break;
+              } // case 42
+              case 104: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 104
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PullRecentChatRspOuterClass.PullRecentChatRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -574,22 +553,23 @@ public final class PullRecentChatRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
       public Builder setRetcode(int value) {
-        
+
         retcode_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
         onChanged();
         return this;
@@ -598,9 +578,9 @@ public final class PullRecentChatRspOuterClass {
       private java.util.List<emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo> chatInfo_ =
         java.util.Collections.emptyList();
       private void ensureChatInfoIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           chatInfo_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo>(chatInfo_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -608,7 +588,7 @@ public final class PullRecentChatRspOuterClass {
           emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo, emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.Builder, emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfoOrBuilder> chatInfoBuilder_;
 
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo> getChatInfoList() {
         if (chatInfoBuilder_ == null) {
@@ -618,7 +598,7 @@ public final class PullRecentChatRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public int getChatInfoCount() {
         if (chatInfoBuilder_ == null) {
@@ -628,7 +608,7 @@ public final class PullRecentChatRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo getChatInfo(int index) {
         if (chatInfoBuilder_ == null) {
@@ -638,7 +618,7 @@ public final class PullRecentChatRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public Builder setChatInfo(
           int index, emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo value) {
@@ -655,7 +635,7 @@ public final class PullRecentChatRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public Builder setChatInfo(
           int index, emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.Builder builderForValue) {
@@ -669,7 +649,7 @@ public final class PullRecentChatRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public Builder addChatInfo(emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo value) {
         if (chatInfoBuilder_ == null) {
@@ -685,7 +665,7 @@ public final class PullRecentChatRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public Builder addChatInfo(
           int index, emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo value) {
@@ -702,7 +682,7 @@ public final class PullRecentChatRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public Builder addChatInfo(
           emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.Builder builderForValue) {
@@ -716,7 +696,7 @@ public final class PullRecentChatRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public Builder addChatInfo(
           int index, emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.Builder builderForValue) {
@@ -730,7 +710,7 @@ public final class PullRecentChatRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public Builder addAllChatInfo(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo> values) {
@@ -745,12 +725,12 @@ public final class PullRecentChatRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public Builder clearChatInfo() {
         if (chatInfoBuilder_ == null) {
           chatInfo_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           chatInfoBuilder_.clear();
@@ -758,7 +738,7 @@ public final class PullRecentChatRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public Builder removeChatInfo(int index) {
         if (chatInfoBuilder_ == null) {
@@ -771,14 +751,14 @@ public final class PullRecentChatRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.Builder getChatInfoBuilder(
           int index) {
         return getChatInfoFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfoOrBuilder getChatInfoOrBuilder(
           int index) {
@@ -788,7 +768,7 @@ public final class PullRecentChatRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfoOrBuilder> 
            getChatInfoOrBuilderList() {
@@ -799,14 +779,14 @@ public final class PullRecentChatRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.Builder addChatInfoBuilder() {
         return getChatInfoFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.Builder addChatInfoBuilder(
           int index) {
@@ -814,7 +794,7 @@ public final class PullRecentChatRspOuterClass {
             index, emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChatInfo chat_info = 14;</code>
+       * <code>repeated .ChatInfo chat_info = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.Builder> 
            getChatInfoBuilderList() {
@@ -827,7 +807,7 @@ public final class PullRecentChatRspOuterClass {
           chatInfoBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo, emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.Builder, emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfoOrBuilder>(
                   chatInfo_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           chatInfo_ = null;
@@ -867,7 +847,18 @@ public final class PullRecentChatRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PullRecentChatRsp(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -902,8 +893,8 @@ public final class PullRecentChatRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027PullRecentChatRsp.proto\032\016ChatInfo.prot" +
-      "o\"B\n\021PullRecentChatRsp\022\017\n\007retcode\030\n \001(\005\022" +
-      "\034\n\tchat_info\030\016 \003(\0132\t.ChatInfoB\033\n\031emu.gra" +
+      "o\"B\n\021PullRecentChatRsp\022\017\n\007retcode\030\r \001(\005\022" +
+      "\034\n\tchat_info\030\005 \003(\0132\t.ChatInfoB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

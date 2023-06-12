@@ -19,20 +19,20 @@ public final class MoonfinTrialLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 open_time = 3;</code>
-     * @return The openTime.
-     */
-    int getOpenTime();
-
-    /**
-     * <code>uint32 best_record = 14;</code>
+     * <code>uint32 best_record = 12;</code>
      * @return The bestRecord.
      */
     int getBestRecord();
+
+    /**
+     * <code>uint32 open_time = 7;</code>
+     * @return The openTime.
+     */
+    int getOpenTime();
   }
   /**
    * <pre>
-   * Obf: ANHIGENPEPA
+   * Name: CLELFIEDKDC
    * </pre>
    *
    * Protobuf type {@code MoonfinTrialLevelInfo}
@@ -56,58 +56,6 @@ public final class MoonfinTrialLevelInfoOuterClass {
       return new MoonfinTrialLevelInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private MoonfinTrialLevelInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 24: {
-
-              openTime_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              bestRecord_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.internal_static_MoonfinTrialLevelInfo_descriptor;
@@ -121,26 +69,26 @@ public final class MoonfinTrialLevelInfoOuterClass {
               emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo.class, emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo.Builder.class);
     }
 
-    public static final int OPEN_TIME_FIELD_NUMBER = 3;
-    private int openTime_;
+    public static final int BEST_RECORD_FIELD_NUMBER = 12;
+    private int bestRecord_ = 0;
     /**
-     * <code>uint32 open_time = 3;</code>
-     * @return The openTime.
-     */
-    @java.lang.Override
-    public int getOpenTime() {
-      return openTime_;
-    }
-
-    public static final int BEST_RECORD_FIELD_NUMBER = 14;
-    private int bestRecord_;
-    /**
-     * <code>uint32 best_record = 14;</code>
+     * <code>uint32 best_record = 12;</code>
      * @return The bestRecord.
      */
     @java.lang.Override
     public int getBestRecord() {
       return bestRecord_;
+    }
+
+    public static final int OPEN_TIME_FIELD_NUMBER = 7;
+    private int openTime_ = 0;
+    /**
+     * <code>uint32 open_time = 7;</code>
+     * @return The openTime.
+     */
+    @java.lang.Override
+    public int getOpenTime() {
+      return openTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,12 +106,12 @@ public final class MoonfinTrialLevelInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (openTime_ != 0) {
-        output.writeUInt32(3, openTime_);
+        output.writeUInt32(7, openTime_);
       }
       if (bestRecord_ != 0) {
-        output.writeUInt32(14, bestRecord_);
+        output.writeUInt32(12, bestRecord_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -174,13 +122,13 @@ public final class MoonfinTrialLevelInfoOuterClass {
       size = 0;
       if (openTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, openTime_);
+          .computeUInt32Size(7, openTime_);
       }
       if (bestRecord_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, bestRecord_);
+          .computeUInt32Size(12, bestRecord_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -195,11 +143,11 @@ public final class MoonfinTrialLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo other = (emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo) obj;
 
-      if (getOpenTime()
-          != other.getOpenTime()) return false;
       if (getBestRecord()
           != other.getBestRecord()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getOpenTime()
+          != other.getOpenTime()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -210,11 +158,11 @@ public final class MoonfinTrialLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getOpenTime();
       hash = (37 * hash) + BEST_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + getBestRecord();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getOpenTime();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -263,11 +211,13 @@ public final class MoonfinTrialLevelInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -311,7 +261,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: ANHIGENPEPA
+     * Name: CLELFIEDKDC
      * </pre>
      *
      * Protobuf type {@code MoonfinTrialLevelInfo}
@@ -335,26 +285,20 @@ public final class MoonfinTrialLevelInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        openTime_ = 0;
-
+        bitField0_ = 0;
         bestRecord_ = 0;
-
+        openTime_ = 0;
         return this;
       }
 
@@ -381,10 +325,19 @@ public final class MoonfinTrialLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo buildPartial() {
         emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo result = new emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo(this);
-        result.openTime_ = openTime_;
-        result.bestRecord_ = bestRecord_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.bestRecord_ = bestRecord_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.openTime_ = openTime_;
+        }
       }
 
       @java.lang.Override
@@ -431,13 +384,13 @@ public final class MoonfinTrialLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo other) {
         if (other == emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo.getDefaultInstance()) return this;
-        if (other.getOpenTime() != 0) {
-          setOpenTime(other.getOpenTime());
-        }
         if (other.getBestRecord() != 0) {
           setBestRecord(other.getBestRecord());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getOpenTime() != 0) {
+          setOpenTime(other.getOpenTime());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -452,54 +405,47 @@ public final class MoonfinTrialLevelInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 56: {
+                openTime_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 56
+              case 96: {
+                bestRecord_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 96
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.MoonfinTrialLevelInfoOuterClass.MoonfinTrialLevelInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int openTime_ ;
-      /**
-       * <code>uint32 open_time = 3;</code>
-       * @return The openTime.
-       */
-      @java.lang.Override
-      public int getOpenTime() {
-        return openTime_;
-      }
-      /**
-       * <code>uint32 open_time = 3;</code>
-       * @param value The openTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOpenTime(int value) {
-        
-        openTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 open_time = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOpenTime() {
-        
-        openTime_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int bestRecord_ ;
       /**
-       * <code>uint32 best_record = 14;</code>
+       * <code>uint32 best_record = 12;</code>
        * @return The bestRecord.
        */
       @java.lang.Override
@@ -507,23 +453,56 @@ public final class MoonfinTrialLevelInfoOuterClass {
         return bestRecord_;
       }
       /**
-       * <code>uint32 best_record = 14;</code>
+       * <code>uint32 best_record = 12;</code>
        * @param value The bestRecord to set.
        * @return This builder for chaining.
        */
       public Builder setBestRecord(int value) {
-        
+
         bestRecord_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 best_record = 14;</code>
+       * <code>uint32 best_record = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestRecord() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         bestRecord_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int openTime_ ;
+      /**
+       * <code>uint32 open_time = 7;</code>
+       * @return The openTime.
+       */
+      @java.lang.Override
+      public int getOpenTime() {
+        return openTime_;
+      }
+      /**
+       * <code>uint32 open_time = 7;</code>
+       * @param value The openTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOpenTime(int value) {
+
+        openTime_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 open_time = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOpenTime() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        openTime_ = 0;
         onChanged();
         return this;
       }
@@ -560,7 +539,18 @@ public final class MoonfinTrialLevelInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MoonfinTrialLevelInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -595,8 +585,8 @@ public final class MoonfinTrialLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033MoonfinTrialLevelInfo.proto\"?\n\025Moonfin" +
-      "TrialLevelInfo\022\021\n\topen_time\030\003 \001(\r\022\023\n\013bes" +
-      "t_record\030\016 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "TrialLevelInfo\022\023\n\013best_record\030\014 \001(\r\022\021\n\to" +
+      "pen_time\030\007 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +598,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
     internal_static_MoonfinTrialLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MoonfinTrialLevelInfo_descriptor,
-        new java.lang.String[] { "OpenTime", "BestRecord", });
+        new java.lang.String[] { "BestRecord", "OpenTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

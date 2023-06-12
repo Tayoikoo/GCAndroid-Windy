@@ -19,15 +19,15 @@ public final class HomeModuleUnlockNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 module_id = 10;</code>
+     * <code>uint32 module_id = 2;</code>
      * @return The moduleId.
      */
     int getModuleId();
   }
   /**
    * <pre>
-   * CmdId: 4682
-   * Obf: MNAPLAHGPJO
+   * CmdId: 4660
+   * Name: NHKAPMNLCOF
    * </pre>
    *
    * Protobuf type {@code HomeModuleUnlockNotify}
@@ -51,53 +51,6 @@ public final class HomeModuleUnlockNotifyOuterClass {
       return new HomeModuleUnlockNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private HomeModuleUnlockNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 80: {
-
-              moduleId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.HomeModuleUnlockNotifyOuterClass.internal_static_HomeModuleUnlockNotify_descriptor;
@@ -111,10 +64,10 @@ public final class HomeModuleUnlockNotifyOuterClass {
               emu.grasscutter.net.proto.HomeModuleUnlockNotifyOuterClass.HomeModuleUnlockNotify.class, emu.grasscutter.net.proto.HomeModuleUnlockNotifyOuterClass.HomeModuleUnlockNotify.Builder.class);
     }
 
-    public static final int MODULE_ID_FIELD_NUMBER = 10;
-    private int moduleId_;
+    public static final int MODULE_ID_FIELD_NUMBER = 2;
+    private int moduleId_ = 0;
     /**
-     * <code>uint32 module_id = 10;</code>
+     * <code>uint32 module_id = 2;</code>
      * @return The moduleId.
      */
     @java.lang.Override
@@ -137,9 +90,9 @@ public final class HomeModuleUnlockNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (moduleId_ != 0) {
-        output.writeUInt32(10, moduleId_);
+        output.writeUInt32(2, moduleId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -150,9 +103,9 @@ public final class HomeModuleUnlockNotifyOuterClass {
       size = 0;
       if (moduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, moduleId_);
+          .computeUInt32Size(2, moduleId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -169,7 +122,7 @@ public final class HomeModuleUnlockNotifyOuterClass {
 
       if (getModuleId()
           != other.getModuleId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -182,7 +135,7 @@ public final class HomeModuleUnlockNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + MODULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getModuleId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -231,11 +184,13 @@ public final class HomeModuleUnlockNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.HomeModuleUnlockNotifyOuterClass.HomeModuleUnlockNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.HomeModuleUnlockNotifyOuterClass.HomeModuleUnlockNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -279,8 +234,8 @@ public final class HomeModuleUnlockNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4682
-     * Obf: MNAPLAHGPJO
+     * CmdId: 4660
+     * Name: NHKAPMNLCOF
      * </pre>
      *
      * Protobuf type {@code HomeModuleUnlockNotify}
@@ -304,24 +259,19 @@ public final class HomeModuleUnlockNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.HomeModuleUnlockNotifyOuterClass.HomeModuleUnlockNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         moduleId_ = 0;
-
         return this;
       }
 
@@ -348,9 +298,16 @@ public final class HomeModuleUnlockNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeModuleUnlockNotifyOuterClass.HomeModuleUnlockNotify buildPartial() {
         emu.grasscutter.net.proto.HomeModuleUnlockNotifyOuterClass.HomeModuleUnlockNotify result = new emu.grasscutter.net.proto.HomeModuleUnlockNotifyOuterClass.HomeModuleUnlockNotify(this);
-        result.moduleId_ = moduleId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.HomeModuleUnlockNotifyOuterClass.HomeModuleUnlockNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.moduleId_ = moduleId_;
+        }
       }
 
       @java.lang.Override
@@ -400,7 +357,7 @@ public final class HomeModuleUnlockNotifyOuterClass {
         if (other.getModuleId() != 0) {
           setModuleId(other.getModuleId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -415,23 +372,42 @@ public final class HomeModuleUnlockNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.HomeModuleUnlockNotifyOuterClass.HomeModuleUnlockNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 16: {
+                moduleId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 16
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.HomeModuleUnlockNotifyOuterClass.HomeModuleUnlockNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int moduleId_ ;
       /**
-       * <code>uint32 module_id = 10;</code>
+       * <code>uint32 module_id = 2;</code>
        * @return The moduleId.
        */
       @java.lang.Override
@@ -439,22 +415,23 @@ public final class HomeModuleUnlockNotifyOuterClass {
         return moduleId_;
       }
       /**
-       * <code>uint32 module_id = 10;</code>
+       * <code>uint32 module_id = 2;</code>
        * @param value The moduleId to set.
        * @return This builder for chaining.
        */
       public Builder setModuleId(int value) {
-        
+
         moduleId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 module_id = 10;</code>
+       * <code>uint32 module_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearModuleId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         moduleId_ = 0;
         onChanged();
         return this;
@@ -492,7 +469,18 @@ public final class HomeModuleUnlockNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HomeModuleUnlockNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -527,7 +515,7 @@ public final class HomeModuleUnlockNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034HomeModuleUnlockNotify.proto\"+\n\026HomeMo" +
-      "duleUnlockNotify\022\021\n\tmodule_id\030\n \001(\rB\033\n\031e" +
+      "duleUnlockNotify\022\021\n\tmodule_id\030\002 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

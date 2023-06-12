@@ -16,7 +16,7 @@ public final class MotionStateOuterClass {
   }
   /**
    * <pre>
-   * Obf: NCLOPCFKODI
+   * Name: CKBDHMCNIFJ
    * </pre>
    *
    * Protobuf enum {@code MotionState}

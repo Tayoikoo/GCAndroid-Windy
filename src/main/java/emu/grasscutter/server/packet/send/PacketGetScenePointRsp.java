@@ -11,7 +11,8 @@ public class PacketGetScenePointRsp extends BasePacket {
     public PacketGetScenePointRsp(Player player, int sceneId) {
         super(PacketOpcodes.GetScenePointRsp);
 
-        GetScenePointRsp.Builder p = GetScenePointRsp.newBuilder().setSceneId(sceneId);
+        GetScenePointRsp.Builder p = GetScenePointRsp.newBuilder()
+                .setSceneId(sceneId);
 
         if (GameData.getScenePointIdList().size() == 0) {
             for (int i = 1; i < 1000; i++) {

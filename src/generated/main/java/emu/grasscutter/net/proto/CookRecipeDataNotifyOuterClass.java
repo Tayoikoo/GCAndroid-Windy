@@ -19,24 +19,24 @@ public final class CookRecipeDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.CookRecipeData recipe_data = 8;</code>
+     * <code>.CookRecipeData recipe_data = 12;</code>
      * @return Whether the recipeData field is set.
      */
     boolean hasRecipeData();
     /**
-     * <code>.CookRecipeData recipe_data = 8;</code>
+     * <code>.CookRecipeData recipe_data = 12;</code>
      * @return The recipeData.
      */
     emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData getRecipeData();
     /**
-     * <code>.CookRecipeData recipe_data = 8;</code>
+     * <code>.CookRecipeData recipe_data = 12;</code>
      */
     emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeDataOrBuilder getRecipeDataOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 143
-   * Obf: GABHMDEGHOJ
+   * CmdId: 170
+   * Name: PEAPDEAMHHM
    * </pre>
    *
    * Protobuf type {@code CookRecipeDataNotify}
@@ -60,61 +60,6 @@ public final class CookRecipeDataNotifyOuterClass {
       return new CookRecipeDataNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private CookRecipeDataNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 66: {
-              emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.Builder subBuilder = null;
-              if (recipeData_ != null) {
-                subBuilder = recipeData_.toBuilder();
-              }
-              recipeData_ = input.readMessage(emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(recipeData_);
-                recipeData_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.CookRecipeDataNotifyOuterClass.internal_static_CookRecipeDataNotify_descriptor;
@@ -128,10 +73,10 @@ public final class CookRecipeDataNotifyOuterClass {
               emu.grasscutter.net.proto.CookRecipeDataNotifyOuterClass.CookRecipeDataNotify.class, emu.grasscutter.net.proto.CookRecipeDataNotifyOuterClass.CookRecipeDataNotify.Builder.class);
     }
 
-    public static final int RECIPE_DATA_FIELD_NUMBER = 8;
+    public static final int RECIPE_DATA_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData recipeData_;
     /**
-     * <code>.CookRecipeData recipe_data = 8;</code>
+     * <code>.CookRecipeData recipe_data = 12;</code>
      * @return Whether the recipeData field is set.
      */
     @java.lang.Override
@@ -139,7 +84,7 @@ public final class CookRecipeDataNotifyOuterClass {
       return recipeData_ != null;
     }
     /**
-     * <code>.CookRecipeData recipe_data = 8;</code>
+     * <code>.CookRecipeData recipe_data = 12;</code>
      * @return The recipeData.
      */
     @java.lang.Override
@@ -147,11 +92,11 @@ public final class CookRecipeDataNotifyOuterClass {
       return recipeData_ == null ? emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.getDefaultInstance() : recipeData_;
     }
     /**
-     * <code>.CookRecipeData recipe_data = 8;</code>
+     * <code>.CookRecipeData recipe_data = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeDataOrBuilder getRecipeDataOrBuilder() {
-      return getRecipeData();
+      return recipeData_ == null ? emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.getDefaultInstance() : recipeData_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -169,9 +114,9 @@ public final class CookRecipeDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (recipeData_ != null) {
-        output.writeMessage(8, getRecipeData());
+        output.writeMessage(12, getRecipeData());
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -182,9 +127,9 @@ public final class CookRecipeDataNotifyOuterClass {
       size = 0;
       if (recipeData_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getRecipeData());
+          .computeMessageSize(12, getRecipeData());
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -204,7 +149,7 @@ public final class CookRecipeDataNotifyOuterClass {
         if (!getRecipeData()
             .equals(other.getRecipeData())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -219,7 +164,7 @@ public final class CookRecipeDataNotifyOuterClass {
         hash = (37 * hash) + RECIPE_DATA_FIELD_NUMBER;
         hash = (53 * hash) + getRecipeData().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -268,11 +213,13 @@ public final class CookRecipeDataNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.CookRecipeDataNotifyOuterClass.CookRecipeDataNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.CookRecipeDataNotifyOuterClass.CookRecipeDataNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -316,8 +263,8 @@ public final class CookRecipeDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 143
-     * Obf: GABHMDEGHOJ
+     * CmdId: 170
+     * Name: PEAPDEAMHHM
      * </pre>
      *
      * Protobuf type {@code CookRecipeDataNotify}
@@ -341,26 +288,21 @@ public final class CookRecipeDataNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.CookRecipeDataNotifyOuterClass.CookRecipeDataNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (recipeDataBuilder_ == null) {
-          recipeData_ = null;
-        } else {
-          recipeData_ = null;
+        bitField0_ = 0;
+        recipeData_ = null;
+        if (recipeDataBuilder_ != null) {
+          recipeDataBuilder_.dispose();
           recipeDataBuilder_ = null;
         }
         return this;
@@ -389,13 +331,18 @@ public final class CookRecipeDataNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CookRecipeDataNotifyOuterClass.CookRecipeDataNotify buildPartial() {
         emu.grasscutter.net.proto.CookRecipeDataNotifyOuterClass.CookRecipeDataNotify result = new emu.grasscutter.net.proto.CookRecipeDataNotifyOuterClass.CookRecipeDataNotify(this);
-        if (recipeDataBuilder_ == null) {
-          result.recipeData_ = recipeData_;
-        } else {
-          result.recipeData_ = recipeDataBuilder_.build();
-        }
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.CookRecipeDataNotifyOuterClass.CookRecipeDataNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.recipeData_ = recipeDataBuilder_ == null
+              ? recipeData_
+              : recipeDataBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -445,7 +392,7 @@ public final class CookRecipeDataNotifyOuterClass {
         if (other.hasRecipeData()) {
           mergeRecipeData(other.getRecipeData());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -460,32 +407,53 @@ public final class CookRecipeDataNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.CookRecipeDataNotifyOuterClass.CookRecipeDataNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 98: {
+                input.readMessage(
+                    getRecipeDataFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 98
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.CookRecipeDataNotifyOuterClass.CookRecipeDataNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData recipeData_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData, emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.Builder, emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeDataOrBuilder> recipeDataBuilder_;
       /**
-       * <code>.CookRecipeData recipe_data = 8;</code>
+       * <code>.CookRecipeData recipe_data = 12;</code>
        * @return Whether the recipeData field is set.
        */
       public boolean hasRecipeData() {
-        return recipeDataBuilder_ != null || recipeData_ != null;
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.CookRecipeData recipe_data = 8;</code>
+       * <code>.CookRecipeData recipe_data = 12;</code>
        * @return The recipeData.
        */
       public emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData getRecipeData() {
@@ -496,7 +464,7 @@ public final class CookRecipeDataNotifyOuterClass {
         }
       }
       /**
-       * <code>.CookRecipeData recipe_data = 8;</code>
+       * <code>.CookRecipeData recipe_data = 12;</code>
        */
       public Builder setRecipeData(emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData value) {
         if (recipeDataBuilder_ == null) {
@@ -504,69 +472,69 @@ public final class CookRecipeDataNotifyOuterClass {
             throw new NullPointerException();
           }
           recipeData_ = value;
-          onChanged();
         } else {
           recipeDataBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.CookRecipeData recipe_data = 8;</code>
+       * <code>.CookRecipeData recipe_data = 12;</code>
        */
       public Builder setRecipeData(
           emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.Builder builderForValue) {
         if (recipeDataBuilder_ == null) {
           recipeData_ = builderForValue.build();
-          onChanged();
         } else {
           recipeDataBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.CookRecipeData recipe_data = 8;</code>
+       * <code>.CookRecipeData recipe_data = 12;</code>
        */
       public Builder mergeRecipeData(emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData value) {
         if (recipeDataBuilder_ == null) {
-          if (recipeData_ != null) {
-            recipeData_ =
-              emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.newBuilder(recipeData_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000001) != 0) &&
+            recipeData_ != null &&
+            recipeData_ != emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.getDefaultInstance()) {
+            getRecipeDataBuilder().mergeFrom(value);
           } else {
             recipeData_ = value;
           }
-          onChanged();
         } else {
           recipeDataBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.CookRecipeData recipe_data = 8;</code>
+       * <code>.CookRecipeData recipe_data = 12;</code>
        */
       public Builder clearRecipeData() {
-        if (recipeDataBuilder_ == null) {
-          recipeData_ = null;
-          onChanged();
-        } else {
-          recipeData_ = null;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        recipeData_ = null;
+        if (recipeDataBuilder_ != null) {
+          recipeDataBuilder_.dispose();
           recipeDataBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.CookRecipeData recipe_data = 8;</code>
+       * <code>.CookRecipeData recipe_data = 12;</code>
        */
       public emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.Builder getRecipeDataBuilder() {
-        
+        bitField0_ |= 0x00000001;
         onChanged();
         return getRecipeDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CookRecipeData recipe_data = 8;</code>
+       * <code>.CookRecipeData recipe_data = 12;</code>
        */
       public emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeDataOrBuilder getRecipeDataOrBuilder() {
         if (recipeDataBuilder_ != null) {
@@ -577,7 +545,7 @@ public final class CookRecipeDataNotifyOuterClass {
         }
       }
       /**
-       * <code>.CookRecipeData recipe_data = 8;</code>
+       * <code>.CookRecipeData recipe_data = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData, emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeData.Builder, emu.grasscutter.net.proto.CookRecipeDataOuterClass.CookRecipeDataOrBuilder> 
@@ -625,7 +593,18 @@ public final class CookRecipeDataNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CookRecipeDataNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -661,7 +640,7 @@ public final class CookRecipeDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032CookRecipeDataNotify.proto\032\024CookRecipe" +
       "Data.proto\"<\n\024CookRecipeDataNotify\022$\n\013re" +
-      "cipe_data\030\010 \001(\0132\017.CookRecipeDataB\033\n\031emu." +
+      "cipe_data\030\014 \001(\0132\017.CookRecipeDataB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

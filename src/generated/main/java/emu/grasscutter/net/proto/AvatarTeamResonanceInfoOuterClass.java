@@ -19,54 +19,54 @@ public final class AvatarTeamResonanceInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+     * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
      * @return A list containing the addTeamResonanceIdList.
      */
     java.util.List<java.lang.Integer> getAddTeamResonanceIdListList();
     /**
-     * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+     * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
      * @return The count of addTeamResonanceIdList.
      */
     int getAddTeamResonanceIdListCount();
     /**
-     * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+     * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The addTeamResonanceIdList at the given index.
      */
     int getAddTeamResonanceIdList(int index);
 
     /**
-     * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+     * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
      * @return A list containing the delTeamResonanceIdList.
      */
     java.util.List<java.lang.Integer> getDelTeamResonanceIdListList();
     /**
-     * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+     * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
      * @return The count of delTeamResonanceIdList.
      */
     int getDelTeamResonanceIdListCount();
     /**
-     * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+     * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
      * @param index The index of the element to return.
      * @return The delTeamResonanceIdList at the given index.
      */
     int getDelTeamResonanceIdList(int index);
 
     /**
-     * <code>uint64 avatar_guid = 12;</code>
+     * <code>uint64 avatar_guid = 5;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <code>uint32 entity_id = 8;</code>
+     * <code>uint32 entity_id = 11;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * Obf: NIENBIDGPFK
+   * Name: EJAIGOIJOFM
    * </pre>
    *
    * Protobuf type {@code AvatarTeamResonanceInfo}
@@ -92,107 +92,6 @@ public final class AvatarTeamResonanceInfoOuterClass {
       return new AvatarTeamResonanceInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private AvatarTeamResonanceInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                delTeamResonanceIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              delTeamResonanceIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 10: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                delTeamResonanceIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                delTeamResonanceIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 64: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              avatarGuid_ = input.readUInt64();
-              break;
-            }
-            case 112: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                addTeamResonanceIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              addTeamResonanceIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 114: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                addTeamResonanceIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                addTeamResonanceIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          delTeamResonanceIdList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          addTeamResonanceIdList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.internal_static_AvatarTeamResonanceInfo_descriptor;
@@ -206,10 +105,11 @@ public final class AvatarTeamResonanceInfoOuterClass {
               emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.AvatarTeamResonanceInfo.class, emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.AvatarTeamResonanceInfo.Builder.class);
     }
 
-    public static final int ADD_TEAM_RESONANCE_ID_LIST_FIELD_NUMBER = 14;
+    public static final int ADD_TEAM_RESONANCE_ID_LIST_FIELD_NUMBER = 7;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList addTeamResonanceIdList_;
     /**
-     * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+     * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
      * @return A list containing the addTeamResonanceIdList.
      */
     @java.lang.Override
@@ -218,14 +118,14 @@ public final class AvatarTeamResonanceInfoOuterClass {
       return addTeamResonanceIdList_;
     }
     /**
-     * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+     * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
      * @return The count of addTeamResonanceIdList.
      */
     public int getAddTeamResonanceIdListCount() {
       return addTeamResonanceIdList_.size();
     }
     /**
-     * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+     * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The addTeamResonanceIdList at the given index.
      */
@@ -234,10 +134,11 @@ public final class AvatarTeamResonanceInfoOuterClass {
     }
     private int addTeamResonanceIdListMemoizedSerializedSize = -1;
 
-    public static final int DEL_TEAM_RESONANCE_ID_LIST_FIELD_NUMBER = 1;
+    public static final int DEL_TEAM_RESONANCE_ID_LIST_FIELD_NUMBER = 12;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList delTeamResonanceIdList_;
     /**
-     * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+     * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
      * @return A list containing the delTeamResonanceIdList.
      */
     @java.lang.Override
@@ -246,14 +147,14 @@ public final class AvatarTeamResonanceInfoOuterClass {
       return delTeamResonanceIdList_;
     }
     /**
-     * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+     * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
      * @return The count of delTeamResonanceIdList.
      */
     public int getDelTeamResonanceIdListCount() {
       return delTeamResonanceIdList_.size();
     }
     /**
-     * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+     * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
      * @param index The index of the element to return.
      * @return The delTeamResonanceIdList at the given index.
      */
@@ -262,10 +163,10 @@ public final class AvatarTeamResonanceInfoOuterClass {
     }
     private int delTeamResonanceIdListMemoizedSerializedSize = -1;
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 12;
-    private long avatarGuid_;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 5;
+    private long avatarGuid_ = 0L;
     /**
-     * <code>uint64 avatar_guid = 12;</code>
+     * <code>uint64 avatar_guid = 5;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -273,10 +174,10 @@ public final class AvatarTeamResonanceInfoOuterClass {
       return avatarGuid_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 8;
-    private int entityId_;
+    public static final int ENTITY_ID_FIELD_NUMBER = 11;
+    private int entityId_ = 0;
     /**
-     * <code>uint32 entity_id = 8;</code>
+     * <code>uint32 entity_id = 11;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -299,27 +200,27 @@ public final class AvatarTeamResonanceInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getDelTeamResonanceIdListList().size() > 0) {
-        output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(delTeamResonanceIdListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < delTeamResonanceIdList_.size(); i++) {
-        output.writeUInt32NoTag(delTeamResonanceIdList_.getInt(i));
-      }
-      if (entityId_ != 0) {
-        output.writeUInt32(8, entityId_);
-      }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(12, avatarGuid_);
+        output.writeUInt64(5, avatarGuid_);
       }
       if (getAddTeamResonanceIdListList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(addTeamResonanceIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < addTeamResonanceIdList_.size(); i++) {
         output.writeUInt32NoTag(addTeamResonanceIdList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      if (entityId_ != 0) {
+        output.writeUInt32(11, entityId_);
+      }
+      if (getDelTeamResonanceIdListList().size() > 0) {
+        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(delTeamResonanceIdListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < delTeamResonanceIdList_.size(); i++) {
+        output.writeUInt32NoTag(delTeamResonanceIdList_.getInt(i));
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -328,27 +229,9 @@ public final class AvatarTeamResonanceInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < delTeamResonanceIdList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(delTeamResonanceIdList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getDelTeamResonanceIdListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        delTeamResonanceIdListMemoizedSerializedSize = dataSize;
-      }
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, entityId_);
-      }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, avatarGuid_);
+          .computeUInt64Size(5, avatarGuid_);
       }
       {
         int dataSize = 0;
@@ -364,7 +247,25 @@ public final class AvatarTeamResonanceInfoOuterClass {
         }
         addTeamResonanceIdListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, entityId_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < delTeamResonanceIdList_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(delTeamResonanceIdList_.getInt(i));
+        }
+        size += dataSize;
+        if (!getDelTeamResonanceIdListList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        delTeamResonanceIdListMemoizedSerializedSize = dataSize;
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -387,7 +288,7 @@ public final class AvatarTeamResonanceInfoOuterClass {
           != other.getAvatarGuid()) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -411,7 +312,7 @@ public final class AvatarTeamResonanceInfoOuterClass {
           getAvatarGuid());
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -460,11 +361,13 @@ public final class AvatarTeamResonanceInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.AvatarTeamResonanceInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.AvatarTeamResonanceInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -508,7 +411,7 @@ public final class AvatarTeamResonanceInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: NIENBIDGPFK
+     * Name: EJAIGOIJOFM
      * </pre>
      *
      * Protobuf type {@code AvatarTeamResonanceInfo}
@@ -532,30 +435,22 @@ public final class AvatarTeamResonanceInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.AvatarTeamResonanceInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         addTeamResonanceIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         delTeamResonanceIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         avatarGuid_ = 0L;
-
         entityId_ = 0;
-
         return this;
       }
 
@@ -582,7 +477,13 @@ public final class AvatarTeamResonanceInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.AvatarTeamResonanceInfo buildPartial() {
         emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.AvatarTeamResonanceInfo result = new emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.AvatarTeamResonanceInfo(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.AvatarTeamResonanceInfo result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           addTeamResonanceIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -593,10 +494,16 @@ public final class AvatarTeamResonanceInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.delTeamResonanceIdList_ = delTeamResonanceIdList_;
-        result.avatarGuid_ = avatarGuid_;
-        result.entityId_ = entityId_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.AvatarTeamResonanceInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.avatarGuid_ = avatarGuid_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.entityId_ = entityId_;
+        }
       }
 
       @java.lang.Override
@@ -669,7 +576,7 @@ public final class AvatarTeamResonanceInfoOuterClass {
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -684,17 +591,72 @@ public final class AvatarTeamResonanceInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.AvatarTeamResonanceInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 40: {
+                avatarGuid_ = input.readUInt64();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 40
+              case 56: {
+                int v = input.readUInt32();
+                ensureAddTeamResonanceIdListIsMutable();
+                addTeamResonanceIdList_.addInt(v);
+                break;
+              } // case 56
+              case 58: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureAddTeamResonanceIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  addTeamResonanceIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 58
+              case 88: {
+                entityId_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 88
+              case 96: {
+                int v = input.readUInt32();
+                ensureDelTeamResonanceIdListIsMutable();
+                delTeamResonanceIdList_.addInt(v);
+                break;
+              } // case 96
+              case 98: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureDelTeamResonanceIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  delTeamResonanceIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 98
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AvatarTeamResonanceInfoOuterClass.AvatarTeamResonanceInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -704,10 +666,10 @@ public final class AvatarTeamResonanceInfoOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           addTeamResonanceIdList_ = mutableCopy(addTeamResonanceIdList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
-       * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+       * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
        * @return A list containing the addTeamResonanceIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -716,14 +678,14 @@ public final class AvatarTeamResonanceInfoOuterClass {
                  java.util.Collections.unmodifiableList(addTeamResonanceIdList_) : addTeamResonanceIdList_;
       }
       /**
-       * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+       * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
        * @return The count of addTeamResonanceIdList.
        */
       public int getAddTeamResonanceIdListCount() {
         return addTeamResonanceIdList_.size();
       }
       /**
-       * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+       * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
        * @param index The index of the element to return.
        * @return The addTeamResonanceIdList at the given index.
        */
@@ -731,31 +693,33 @@ public final class AvatarTeamResonanceInfoOuterClass {
         return addTeamResonanceIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+       * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The addTeamResonanceIdList to set.
        * @return This builder for chaining.
        */
       public Builder setAddTeamResonanceIdList(
           int index, int value) {
+
         ensureAddTeamResonanceIdListIsMutable();
         addTeamResonanceIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+       * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
        * @param value The addTeamResonanceIdList to add.
        * @return This builder for chaining.
        */
       public Builder addAddTeamResonanceIdList(int value) {
+
         ensureAddTeamResonanceIdListIsMutable();
         addTeamResonanceIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+       * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
        * @param values The addTeamResonanceIdList to add.
        * @return This builder for chaining.
        */
@@ -768,7 +732,7 @@ public final class AvatarTeamResonanceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 add_team_resonance_id_list = 14;</code>
+       * <code>repeated uint32 add_team_resonance_id_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearAddTeamResonanceIdList() {
@@ -783,10 +747,10 @@ public final class AvatarTeamResonanceInfoOuterClass {
         if (!((bitField0_ & 0x00000002) != 0)) {
           delTeamResonanceIdList_ = mutableCopy(delTeamResonanceIdList_);
           bitField0_ |= 0x00000002;
-         }
+        }
       }
       /**
-       * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+       * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
        * @return A list containing the delTeamResonanceIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -795,14 +759,14 @@ public final class AvatarTeamResonanceInfoOuterClass {
                  java.util.Collections.unmodifiableList(delTeamResonanceIdList_) : delTeamResonanceIdList_;
       }
       /**
-       * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+       * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
        * @return The count of delTeamResonanceIdList.
        */
       public int getDelTeamResonanceIdListCount() {
         return delTeamResonanceIdList_.size();
       }
       /**
-       * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+       * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
        * @param index The index of the element to return.
        * @return The delTeamResonanceIdList at the given index.
        */
@@ -810,31 +774,33 @@ public final class AvatarTeamResonanceInfoOuterClass {
         return delTeamResonanceIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+       * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
        * @param index The index to set the value at.
        * @param value The delTeamResonanceIdList to set.
        * @return This builder for chaining.
        */
       public Builder setDelTeamResonanceIdList(
           int index, int value) {
+
         ensureDelTeamResonanceIdListIsMutable();
         delTeamResonanceIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+       * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
        * @param value The delTeamResonanceIdList to add.
        * @return This builder for chaining.
        */
       public Builder addDelTeamResonanceIdList(int value) {
+
         ensureDelTeamResonanceIdListIsMutable();
         delTeamResonanceIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+       * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
        * @param values The delTeamResonanceIdList to add.
        * @return This builder for chaining.
        */
@@ -847,7 +813,7 @@ public final class AvatarTeamResonanceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 del_team_resonance_id_list = 1;</code>
+       * <code>repeated uint32 del_team_resonance_id_list = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearDelTeamResonanceIdList() {
@@ -859,7 +825,7 @@ public final class AvatarTeamResonanceInfoOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 12;</code>
+       * <code>uint64 avatar_guid = 5;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -867,22 +833,23 @@ public final class AvatarTeamResonanceInfoOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 12;</code>
+       * <code>uint64 avatar_guid = 5;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
       public Builder setAvatarGuid(long value) {
-        
+
         avatarGuid_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 12;</code>
+       * <code>uint64 avatar_guid = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         avatarGuid_ = 0L;
         onChanged();
         return this;
@@ -890,7 +857,7 @@ public final class AvatarTeamResonanceInfoOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 8;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -898,22 +865,23 @@ public final class AvatarTeamResonanceInfoOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 8;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
       public Builder setEntityId(int value) {
-        
+
         entityId_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 entity_id = 8;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         entityId_ = 0;
         onChanged();
         return this;
@@ -951,7 +919,18 @@ public final class AvatarTeamResonanceInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AvatarTeamResonanceInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -987,9 +966,9 @@ public final class AvatarTeamResonanceInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035AvatarTeamResonanceInfo.proto\"\211\001\n\027Avat" +
       "arTeamResonanceInfo\022\"\n\032add_team_resonanc" +
-      "e_id_list\030\016 \003(\r\022\"\n\032del_team_resonance_id" +
-      "_list\030\001 \003(\r\022\023\n\013avatar_guid\030\014 \001(\004\022\021\n\tenti" +
-      "ty_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "e_id_list\030\007 \003(\r\022\"\n\032del_team_resonance_id" +
+      "_list\030\014 \003(\r\022\023\n\013avatar_guid\030\005 \001(\004\022\021\n\tenti" +
+      "ty_id\030\013 \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

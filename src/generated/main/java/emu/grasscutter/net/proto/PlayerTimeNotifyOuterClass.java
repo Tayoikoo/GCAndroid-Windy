@@ -19,27 +19,27 @@ public final class PlayerTimeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 player_time = 2;</code>
-     * @return The playerTime.
+     * <code>uint64 server_time = 2;</code>
+     * @return The serverTime.
      */
-    long getPlayerTime();
+    long getServerTime();
 
     /**
-     * <code>bool is_paused = 3;</code>
+     * <code>bool is_paused = 5;</code>
      * @return The isPaused.
      */
     boolean getIsPaused();
 
     /**
-     * <code>uint64 server_time = 5;</code>
-     * @return The serverTime.
+     * <code>uint64 player_time = 15;</code>
+     * @return The playerTime.
      */
-    long getServerTime();
+    long getPlayerTime();
   }
   /**
    * <pre>
-   * CmdId: 111
-   * Obf: GGKAHPHPKKE
+   * CmdId: 128
+   * Name: EMGCHDJIFIO
    * </pre>
    *
    * Protobuf type {@code PlayerTimeNotify}
@@ -63,63 +63,6 @@ public final class PlayerTimeNotifyOuterClass {
       return new PlayerTimeNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private PlayerTimeNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 16: {
-
-              playerTime_ = input.readUInt64();
-              break;
-            }
-            case 24: {
-
-              isPaused_ = input.readBool();
-              break;
-            }
-            case 40: {
-
-              serverTime_ = input.readUInt64();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.internal_static_PlayerTimeNotify_descriptor;
@@ -133,21 +76,21 @@ public final class PlayerTimeNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify.class, emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify.Builder.class);
     }
 
-    public static final int PLAYER_TIME_FIELD_NUMBER = 2;
-    private long playerTime_;
+    public static final int SERVER_TIME_FIELD_NUMBER = 2;
+    private long serverTime_ = 0L;
     /**
-     * <code>uint64 player_time = 2;</code>
-     * @return The playerTime.
+     * <code>uint64 server_time = 2;</code>
+     * @return The serverTime.
      */
     @java.lang.Override
-    public long getPlayerTime() {
-      return playerTime_;
+    public long getServerTime() {
+      return serverTime_;
     }
 
-    public static final int IS_PAUSED_FIELD_NUMBER = 3;
-    private boolean isPaused_;
+    public static final int IS_PAUSED_FIELD_NUMBER = 5;
+    private boolean isPaused_ = false;
     /**
-     * <code>bool is_paused = 3;</code>
+     * <code>bool is_paused = 5;</code>
      * @return The isPaused.
      */
     @java.lang.Override
@@ -155,15 +98,15 @@ public final class PlayerTimeNotifyOuterClass {
       return isPaused_;
     }
 
-    public static final int SERVER_TIME_FIELD_NUMBER = 5;
-    private long serverTime_;
+    public static final int PLAYER_TIME_FIELD_NUMBER = 15;
+    private long playerTime_ = 0L;
     /**
-     * <code>uint64 server_time = 5;</code>
-     * @return The serverTime.
+     * <code>uint64 player_time = 15;</code>
+     * @return The playerTime.
      */
     @java.lang.Override
-    public long getServerTime() {
-      return serverTime_;
+    public long getPlayerTime() {
+      return playerTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,16 +123,16 @@ public final class PlayerTimeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playerTime_ != 0L) {
-        output.writeUInt64(2, playerTime_);
+      if (serverTime_ != 0L) {
+        output.writeUInt64(2, serverTime_);
       }
       if (isPaused_ != false) {
-        output.writeBool(3, isPaused_);
+        output.writeBool(5, isPaused_);
       }
-      if (serverTime_ != 0L) {
-        output.writeUInt64(5, serverTime_);
+      if (playerTime_ != 0L) {
+        output.writeUInt64(15, playerTime_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -198,19 +141,19 @@ public final class PlayerTimeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playerTime_ != 0L) {
+      if (serverTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(2, playerTime_);
+          .computeUInt64Size(2, serverTime_);
       }
       if (isPaused_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isPaused_);
+          .computeBoolSize(5, isPaused_);
       }
-      if (serverTime_ != 0L) {
+      if (playerTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(5, serverTime_);
+          .computeUInt64Size(15, playerTime_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -225,13 +168,13 @@ public final class PlayerTimeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify other = (emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify) obj;
 
-      if (getPlayerTime()
-          != other.getPlayerTime()) return false;
-      if (getIsPaused()
-          != other.getIsPaused()) return false;
       if (getServerTime()
           != other.getServerTime()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getIsPaused()
+          != other.getIsPaused()) return false;
+      if (getPlayerTime()
+          != other.getPlayerTime()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -242,16 +185,16 @@ public final class PlayerTimeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PLAYER_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getPlayerTime());
-      hash = (37 * hash) + IS_PAUSED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsPaused());
       hash = (37 * hash) + SERVER_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getServerTime());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + IS_PAUSED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsPaused());
+      hash = (37 * hash) + PLAYER_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getPlayerTime());
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -300,11 +243,13 @@ public final class PlayerTimeNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -348,8 +293,8 @@ public final class PlayerTimeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 111
-     * Obf: GGKAHPHPKKE
+     * CmdId: 128
+     * Name: EMGCHDJIFIO
      * </pre>
      *
      * Protobuf type {@code PlayerTimeNotify}
@@ -373,28 +318,21 @@ public final class PlayerTimeNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        playerTime_ = 0L;
-
-        isPaused_ = false;
-
+        bitField0_ = 0;
         serverTime_ = 0L;
-
+        isPaused_ = false;
+        playerTime_ = 0L;
         return this;
       }
 
@@ -421,11 +359,22 @@ public final class PlayerTimeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify result = new emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify(this);
-        result.playerTime_ = playerTime_;
-        result.isPaused_ = isPaused_;
-        result.serverTime_ = serverTime_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.serverTime_ = serverTime_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.isPaused_ = isPaused_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.playerTime_ = playerTime_;
+        }
       }
 
       @java.lang.Override
@@ -472,16 +421,16 @@ public final class PlayerTimeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify other) {
         if (other == emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify.getDefaultInstance()) return this;
-        if (other.getPlayerTime() != 0L) {
-          setPlayerTime(other.getPlayerTime());
+        if (other.getServerTime() != 0L) {
+          setServerTime(other.getServerTime());
         }
         if (other.getIsPaused() != false) {
           setIsPaused(other.getIsPaused());
         }
-        if (other.getServerTime() != 0L) {
-          setServerTime(other.getServerTime());
+        if (other.getPlayerTime() != 0L) {
+          setPlayerTime(other.getPlayerTime());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -496,85 +445,52 @@ public final class PlayerTimeNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 16: {
+                serverTime_ = input.readUInt64();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 16
+              case 40: {
+                isPaused_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 40
+              case 120: {
+                playerTime_ = input.readUInt64();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PlayerTimeNotifyOuterClass.PlayerTimeNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private long playerTime_ ;
-      /**
-       * <code>uint64 player_time = 2;</code>
-       * @return The playerTime.
-       */
-      @java.lang.Override
-      public long getPlayerTime() {
-        return playerTime_;
-      }
-      /**
-       * <code>uint64 player_time = 2;</code>
-       * @param value The playerTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayerTime(long value) {
-        
-        playerTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 player_time = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayerTime() {
-        
-        playerTime_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private boolean isPaused_ ;
-      /**
-       * <code>bool is_paused = 3;</code>
-       * @return The isPaused.
-       */
-      @java.lang.Override
-      public boolean getIsPaused() {
-        return isPaused_;
-      }
-      /**
-       * <code>bool is_paused = 3;</code>
-       * @param value The isPaused to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsPaused(boolean value) {
-        
-        isPaused_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_paused = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsPaused() {
-        
-        isPaused_ = false;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private long serverTime_ ;
       /**
-       * <code>uint64 server_time = 5;</code>
+       * <code>uint64 server_time = 2;</code>
        * @return The serverTime.
        */
       @java.lang.Override
@@ -582,23 +498,88 @@ public final class PlayerTimeNotifyOuterClass {
         return serverTime_;
       }
       /**
-       * <code>uint64 server_time = 5;</code>
+       * <code>uint64 server_time = 2;</code>
        * @param value The serverTime to set.
        * @return This builder for chaining.
        */
       public Builder setServerTime(long value) {
-        
+
         serverTime_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 server_time = 5;</code>
+       * <code>uint64 server_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearServerTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         serverTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private boolean isPaused_ ;
+      /**
+       * <code>bool is_paused = 5;</code>
+       * @return The isPaused.
+       */
+      @java.lang.Override
+      public boolean getIsPaused() {
+        return isPaused_;
+      }
+      /**
+       * <code>bool is_paused = 5;</code>
+       * @param value The isPaused to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsPaused(boolean value) {
+
+        isPaused_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_paused = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsPaused() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        isPaused_ = false;
+        onChanged();
+        return this;
+      }
+
+      private long playerTime_ ;
+      /**
+       * <code>uint64 player_time = 15;</code>
+       * @return The playerTime.
+       */
+      @java.lang.Override
+      public long getPlayerTime() {
+        return playerTime_;
+      }
+      /**
+       * <code>uint64 player_time = 15;</code>
+       * @param value The playerTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayerTime(long value) {
+
+        playerTime_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 player_time = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayerTime() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        playerTime_ = 0L;
         onChanged();
         return this;
       }
@@ -635,7 +616,18 @@ public final class PlayerTimeNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PlayerTimeNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -670,8 +662,8 @@ public final class PlayerTimeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026PlayerTimeNotify.proto\"O\n\020PlayerTimeNo" +
-      "tify\022\023\n\013player_time\030\002 \001(\004\022\021\n\tis_paused\030\003" +
-      " \001(\010\022\023\n\013server_time\030\005 \001(\004B\033\n\031emu.grasscu" +
+      "tify\022\023\n\013server_time\030\002 \001(\004\022\021\n\tis_paused\030\005" +
+      " \001(\010\022\023\n\013player_time\030\017 \001(\004B\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -683,7 +675,7 @@ public final class PlayerTimeNotifyOuterClass {
     internal_static_PlayerTimeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerTimeNotify_descriptor,
-        new java.lang.String[] { "PlayerTime", "IsPaused", "ServerTime", });
+        new java.lang.String[] { "ServerTime", "IsPaused", "PlayerTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

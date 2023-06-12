@@ -49,7 +49,7 @@ public final class AvatarSkillInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: LJGFAMEDAGO
+   * Name: PDOJLOOPDDO
    * </pre>
    *
    * Protobuf type {@code AvatarSkillInfo}
@@ -74,83 +74,6 @@ public final class AvatarSkillInfoOuterClass {
       return new AvatarSkillInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private AvatarSkillInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              passCdTime_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                fullCdTimeList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              fullCdTimeList_.addInt(input.readUInt32());
-              break;
-            }
-            case 18: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                fullCdTimeList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                fullCdTimeList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 24: {
-
-              maxChargeCount_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          fullCdTimeList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.internal_static_AvatarSkillInfo_descriptor;
@@ -165,7 +88,7 @@ public final class AvatarSkillInfoOuterClass {
     }
 
     public static final int PASS_CD_TIME_FIELD_NUMBER = 1;
-    private int passCdTime_;
+    private int passCdTime_ = 0;
     /**
      * <code>uint32 pass_cd_time = 1;</code>
      * @return The passCdTime.
@@ -176,6 +99,7 @@ public final class AvatarSkillInfoOuterClass {
     }
 
     public static final int FULL_CD_TIME_LIST_FIELD_NUMBER = 2;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList fullCdTimeList_;
     /**
      * <code>repeated uint32 full_cd_time_list = 2;</code>
@@ -204,7 +128,7 @@ public final class AvatarSkillInfoOuterClass {
     private int fullCdTimeListMemoizedSerializedSize = -1;
 
     public static final int MAX_CHARGE_COUNT_FIELD_NUMBER = 3;
-    private int maxChargeCount_;
+    private int maxChargeCount_ = 0;
     /**
      * <code>uint32 max_charge_count = 3;</code>
      * @return The maxChargeCount.
@@ -242,7 +166,7 @@ public final class AvatarSkillInfoOuterClass {
       if (maxChargeCount_ != 0) {
         output.writeUInt32(3, maxChargeCount_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -273,7 +197,7 @@ public final class AvatarSkillInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, maxChargeCount_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -294,7 +218,7 @@ public final class AvatarSkillInfoOuterClass {
           .equals(other.getFullCdTimeListList())) return false;
       if (getMaxChargeCount()
           != other.getMaxChargeCount()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -313,7 +237,7 @@ public final class AvatarSkillInfoOuterClass {
       }
       hash = (37 * hash) + MAX_CHARGE_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getMaxChargeCount();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -362,11 +286,13 @@ public final class AvatarSkillInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -410,7 +336,7 @@ public final class AvatarSkillInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: LJGFAMEDAGO
+     * Name: PDOJLOOPDDO
      * </pre>
      *
      * Protobuf type {@code AvatarSkillInfo}
@@ -434,28 +360,21 @@ public final class AvatarSkillInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         passCdTime_ = 0;
-
         fullCdTimeList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         maxChargeCount_ = 0;
-
         return this;
       }
 
@@ -482,16 +401,28 @@ public final class AvatarSkillInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo buildPartial() {
         emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo result = new emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo(this);
-        int from_bitField0_ = bitField0_;
-        result.passCdTime_ = passCdTime_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          fullCdTimeList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.fullCdTimeList_ = fullCdTimeList_;
-        result.maxChargeCount_ = maxChargeCount_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo result) {
+        if (((bitField0_ & 0x00000002) != 0)) {
+          fullCdTimeList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.fullCdTimeList_ = fullCdTimeList_;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.passCdTime_ = passCdTime_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.maxChargeCount_ = maxChargeCount_;
+        }
       }
 
       @java.lang.Override
@@ -544,7 +475,7 @@ public final class AvatarSkillInfoOuterClass {
         if (!other.fullCdTimeList_.isEmpty()) {
           if (fullCdTimeList_.isEmpty()) {
             fullCdTimeList_ = other.fullCdTimeList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureFullCdTimeListIsMutable();
             fullCdTimeList_.addAll(other.fullCdTimeList_);
@@ -554,7 +485,7 @@ public final class AvatarSkillInfoOuterClass {
         if (other.getMaxChargeCount() != 0) {
           setMaxChargeCount(other.getMaxChargeCount());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -569,17 +500,56 @@ public final class AvatarSkillInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                passCdTime_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                int v = input.readUInt32();
+                ensureFullCdTimeListIsMutable();
+                fullCdTimeList_.addInt(v);
+                break;
+              } // case 16
+              case 18: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureFullCdTimeListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  fullCdTimeList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 18
+              case 24: {
+                maxChargeCount_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -599,8 +569,9 @@ public final class AvatarSkillInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setPassCdTime(int value) {
-        
+
         passCdTime_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -609,7 +580,7 @@ public final class AvatarSkillInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearPassCdTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         passCdTime_ = 0;
         onChanged();
         return this;
@@ -617,10 +588,10 @@ public final class AvatarSkillInfoOuterClass {
 
       private com.google.protobuf.Internal.IntList fullCdTimeList_ = emptyIntList();
       private void ensureFullCdTimeListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           fullCdTimeList_ = mutableCopy(fullCdTimeList_);
-          bitField0_ |= 0x00000001;
-         }
+          bitField0_ |= 0x00000002;
+        }
       }
       /**
        * <code>repeated uint32 full_cd_time_list = 2;</code>
@@ -628,7 +599,7 @@ public final class AvatarSkillInfoOuterClass {
        */
       public java.util.List<java.lang.Integer>
           getFullCdTimeListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000002) != 0) ?
                  java.util.Collections.unmodifiableList(fullCdTimeList_) : fullCdTimeList_;
       }
       /**
@@ -654,6 +625,7 @@ public final class AvatarSkillInfoOuterClass {
        */
       public Builder setFullCdTimeList(
           int index, int value) {
+
         ensureFullCdTimeListIsMutable();
         fullCdTimeList_.setInt(index, value);
         onChanged();
@@ -665,6 +637,7 @@ public final class AvatarSkillInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder addFullCdTimeList(int value) {
+
         ensureFullCdTimeListIsMutable();
         fullCdTimeList_.addInt(value);
         onChanged();
@@ -689,7 +662,7 @@ public final class AvatarSkillInfoOuterClass {
        */
       public Builder clearFullCdTimeList() {
         fullCdTimeList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -709,8 +682,9 @@ public final class AvatarSkillInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setMaxChargeCount(int value) {
-        
+
         maxChargeCount_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -719,7 +693,7 @@ public final class AvatarSkillInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearMaxChargeCount() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         maxChargeCount_ = 0;
         onChanged();
         return this;
@@ -757,7 +731,18 @@ public final class AvatarSkillInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AvatarSkillInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

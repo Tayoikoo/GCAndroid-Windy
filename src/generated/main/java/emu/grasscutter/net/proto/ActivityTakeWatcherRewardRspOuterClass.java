@@ -19,27 +19,27 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 activity_id = 8;</code>
+     * <code>uint32 activity_id = 7;</code>
      * @return The activityId.
      */
     int getActivityId();
 
     /**
-     * <code>uint32 watcher_id = 3;</code>
+     * <code>uint32 watcher_id = 10;</code>
      * @return The watcherId.
      */
     int getWatcherId();
   }
   /**
    * <pre>
-   * CmdId: 2111
-   * Obf: BHBNNEDNMOG
+   * CmdId: 2122
+   * Name: IIEIAEEFLGL
    * </pre>
    *
    * Protobuf type {@code ActivityTakeWatcherRewardRsp}
@@ -63,63 +63,6 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       return new ActivityTakeWatcherRewardRsp();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ActivityTakeWatcherRewardRsp(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 24: {
-
-              watcherId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 64: {
-
-              activityId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.internal_static_ActivityTakeWatcherRewardRsp_descriptor;
@@ -133,10 +76,10 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
               emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp.class, emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
-    private int retcode_;
+    public static final int RETCODE_FIELD_NUMBER = 9;
+    private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -144,10 +87,10 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 8;
-    private int activityId_;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 7;
+    private int activityId_ = 0;
     /**
-     * <code>uint32 activity_id = 8;</code>
+     * <code>uint32 activity_id = 7;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -155,10 +98,10 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       return activityId_;
     }
 
-    public static final int WATCHER_ID_FIELD_NUMBER = 3;
-    private int watcherId_;
+    public static final int WATCHER_ID_FIELD_NUMBER = 10;
+    private int watcherId_ = 0;
     /**
-     * <code>uint32 watcher_id = 3;</code>
+     * <code>uint32 watcher_id = 10;</code>
      * @return The watcherId.
      */
     @java.lang.Override
@@ -180,16 +123,16 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (watcherId_ != 0) {
-        output.writeUInt32(3, watcherId_);
+      if (activityId_ != 0) {
+        output.writeUInt32(7, activityId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(9, retcode_);
       }
-      if (activityId_ != 0) {
-        output.writeUInt32(8, activityId_);
+      if (watcherId_ != 0) {
+        output.writeUInt32(10, watcherId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -198,19 +141,19 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (watcherId_ != 0) {
+      if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, watcherId_);
+          .computeUInt32Size(7, activityId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(9, retcode_);
       }
-      if (activityId_ != 0) {
+      if (watcherId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, activityId_);
+          .computeUInt32Size(10, watcherId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -231,7 +174,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
           != other.getActivityId()) return false;
       if (getWatcherId()
           != other.getWatcherId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -248,7 +191,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       hash = (53 * hash) + getActivityId();
       hash = (37 * hash) + WATCHER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getWatcherId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +240,13 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,8 +290,8 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2111
-     * Obf: BHBNNEDNMOG
+     * CmdId: 2122
+     * Name: IIEIAEEFLGL
      * </pre>
      *
      * Protobuf type {@code ActivityTakeWatcherRewardRsp}
@@ -370,28 +315,21 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         retcode_ = 0;
-
         activityId_ = 0;
-
         watcherId_ = 0;
-
         return this;
       }
 
@@ -418,11 +356,22 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp buildPartial() {
         emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp result = new emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp(this);
-        result.retcode_ = retcode_;
-        result.activityId_ = activityId_;
-        result.watcherId_ = watcherId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.retcode_ = retcode_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.activityId_ = activityId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.watcherId_ = watcherId_;
+        }
       }
 
       @java.lang.Override
@@ -478,7 +427,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         if (other.getWatcherId() != 0) {
           setWatcherId(other.getWatcherId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -493,23 +442,52 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 56: {
+                activityId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 56
+              case 72: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 72
+              case 80: {
+                watcherId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 80
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -517,22 +495,23 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
       public Builder setRetcode(int value) {
-        
+
         retcode_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
         onChanged();
         return this;
@@ -540,7 +519,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 8;</code>
+       * <code>uint32 activity_id = 7;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -548,22 +527,23 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 8;</code>
+       * <code>uint32 activity_id = 7;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
       public Builder setActivityId(int value) {
-        
+
         activityId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 activity_id = 8;</code>
+       * <code>uint32 activity_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         activityId_ = 0;
         onChanged();
         return this;
@@ -571,7 +551,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
 
       private int watcherId_ ;
       /**
-       * <code>uint32 watcher_id = 3;</code>
+       * <code>uint32 watcher_id = 10;</code>
        * @return The watcherId.
        */
       @java.lang.Override
@@ -579,22 +559,23 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return watcherId_;
       }
       /**
-       * <code>uint32 watcher_id = 3;</code>
+       * <code>uint32 watcher_id = 10;</code>
        * @param value The watcherId to set.
        * @return This builder for chaining.
        */
       public Builder setWatcherId(int value) {
-        
+
         watcherId_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 watcher_id = 3;</code>
+       * <code>uint32 watcher_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearWatcherId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         watcherId_ = 0;
         onChanged();
         return this;
@@ -632,7 +613,18 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ActivityTakeWatcherRewardRsp(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -668,8 +660,8 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"ActivityTakeWatcherRewardRsp.proto\"X\n\034" +
       "ActivityTakeWatcherRewardRsp\022\017\n\007retcode\030" +
-      "\006 \001(\005\022\023\n\013activity_id\030\010 \001(\r\022\022\n\nwatcher_id" +
-      "\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\t \001(\005\022\023\n\013activity_id\030\007 \001(\r\022\022\n\nwatcher_id" +
+      "\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

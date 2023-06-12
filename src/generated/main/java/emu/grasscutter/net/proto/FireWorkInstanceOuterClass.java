@@ -58,59 +58,6 @@ public final class FireWorkInstanceOuterClass {
       return new FireWorkInstance();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private FireWorkInstance(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-              int rawValue = input.readEnum();
-
-              type_ = rawValue;
-              break;
-            }
-            case 16: {
-
-              value_ = input.readInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.FireWorkInstanceOuterClass.internal_static_FireWorkInstance_descriptor;
@@ -125,7 +72,7 @@ public final class FireWorkInstanceOuterClass {
     }
 
     public static final int TYPE_FIELD_NUMBER = 1;
-    private int type_;
+    private int type_ = 0;
     /**
      * <code>.FireWorkType type = 1;</code>
      * @return The enum numeric value on the wire for type.
@@ -138,13 +85,12 @@ public final class FireWorkInstanceOuterClass {
      * @return The type.
      */
     @java.lang.Override public emu.grasscutter.net.proto.FireWorkTypeOuterClass.FireWorkType getType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.FireWorkTypeOuterClass.FireWorkType result = emu.grasscutter.net.proto.FireWorkTypeOuterClass.FireWorkType.valueOf(type_);
+      emu.grasscutter.net.proto.FireWorkTypeOuterClass.FireWorkType result = emu.grasscutter.net.proto.FireWorkTypeOuterClass.FireWorkType.forNumber(type_);
       return result == null ? emu.grasscutter.net.proto.FireWorkTypeOuterClass.FireWorkType.UNRECOGNIZED : result;
     }
 
     public static final int VALUE_FIELD_NUMBER = 2;
-    private int value_;
+    private int value_ = 0;
     /**
      * <code>int32 value = 2;</code>
      * @return The value.
@@ -174,7 +120,7 @@ public final class FireWorkInstanceOuterClass {
       if (value_ != 0) {
         output.writeInt32(2, value_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -191,7 +137,7 @@ public final class FireWorkInstanceOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(2, value_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -209,7 +155,7 @@ public final class FireWorkInstanceOuterClass {
       if (type_ != other.type_) return false;
       if (getValue()
           != other.getValue()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -224,7 +170,7 @@ public final class FireWorkInstanceOuterClass {
       hash = (53 * hash) + type_;
       hash = (37 * hash) + VALUE_FIELD_NUMBER;
       hash = (53 * hash) + getValue();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -273,11 +219,13 @@ public final class FireWorkInstanceOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.FireWorkInstanceOuterClass.FireWorkInstance parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.FireWorkInstanceOuterClass.FireWorkInstance parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -341,26 +289,20 @@ public final class FireWorkInstanceOuterClass {
 
       // Construct using emu.grasscutter.net.proto.FireWorkInstanceOuterClass.FireWorkInstance.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         type_ = 0;
-
         value_ = 0;
-
         return this;
       }
 
@@ -387,10 +329,19 @@ public final class FireWorkInstanceOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FireWorkInstanceOuterClass.FireWorkInstance buildPartial() {
         emu.grasscutter.net.proto.FireWorkInstanceOuterClass.FireWorkInstance result = new emu.grasscutter.net.proto.FireWorkInstanceOuterClass.FireWorkInstance(this);
-        result.type_ = type_;
-        result.value_ = value_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.FireWorkInstanceOuterClass.FireWorkInstance result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.type_ = type_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.value_ = value_;
+        }
       }
 
       @java.lang.Override
@@ -443,7 +394,7 @@ public final class FireWorkInstanceOuterClass {
         if (other.getValue() != 0) {
           setValue(other.getValue());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -458,19 +409,43 @@ public final class FireWorkInstanceOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.FireWorkInstanceOuterClass.FireWorkInstance parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                type_ = input.readEnum();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                value_ = input.readInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.FireWorkInstanceOuterClass.FireWorkInstance) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int type_ = 0;
       /**
@@ -486,8 +461,8 @@ public final class FireWorkInstanceOuterClass {
        * @return This builder for chaining.
        */
       public Builder setTypeValue(int value) {
-        
         type_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -497,8 +472,7 @@ public final class FireWorkInstanceOuterClass {
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.FireWorkTypeOuterClass.FireWorkType getType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.FireWorkTypeOuterClass.FireWorkType result = emu.grasscutter.net.proto.FireWorkTypeOuterClass.FireWorkType.valueOf(type_);
+        emu.grasscutter.net.proto.FireWorkTypeOuterClass.FireWorkType result = emu.grasscutter.net.proto.FireWorkTypeOuterClass.FireWorkType.forNumber(type_);
         return result == null ? emu.grasscutter.net.proto.FireWorkTypeOuterClass.FireWorkType.UNRECOGNIZED : result;
       }
       /**
@@ -510,7 +484,7 @@ public final class FireWorkInstanceOuterClass {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+        bitField0_ |= 0x00000001;
         type_ = value.getNumber();
         onChanged();
         return this;
@@ -520,7 +494,7 @@ public final class FireWorkInstanceOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         type_ = 0;
         onChanged();
         return this;
@@ -541,8 +515,9 @@ public final class FireWorkInstanceOuterClass {
        * @return This builder for chaining.
        */
       public Builder setValue(int value) {
-        
+
         value_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -551,7 +526,7 @@ public final class FireWorkInstanceOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearValue() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         value_ = 0;
         onChanged();
         return this;
@@ -589,7 +564,18 @@ public final class FireWorkInstanceOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new FireWorkInstance(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

@@ -19,15 +19,15 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_auto_unlock_specific_equip = 2;</code>
+     * <code>bool is_auto_unlock_specific_equip = 14;</code>
      * @return The isAutoUnlockSpecificEquip.
      */
     boolean getIsAutoUnlockSpecificEquip();
   }
   /**
    * <pre>
-   * CmdId: 679
-   * Obf: JKJNKFEBOEE
+   * CmdId: 636
+   * Name: OBLLFNIAALA
    * </pre>
    *
    * Protobuf type {@code SetIsAutoUnlockSpecificEquipReq}
@@ -51,53 +51,6 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
       return new SetIsAutoUnlockSpecificEquipReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private SetIsAutoUnlockSpecificEquipReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 16: {
-
-              isAutoUnlockSpecificEquip_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.SetIsAutoUnlockSpecificEquipReqOuterClass.internal_static_SetIsAutoUnlockSpecificEquipReq_descriptor;
@@ -111,10 +64,10 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
               emu.grasscutter.net.proto.SetIsAutoUnlockSpecificEquipReqOuterClass.SetIsAutoUnlockSpecificEquipReq.class, emu.grasscutter.net.proto.SetIsAutoUnlockSpecificEquipReqOuterClass.SetIsAutoUnlockSpecificEquipReq.Builder.class);
     }
 
-    public static final int IS_AUTO_UNLOCK_SPECIFIC_EQUIP_FIELD_NUMBER = 2;
-    private boolean isAutoUnlockSpecificEquip_;
+    public static final int IS_AUTO_UNLOCK_SPECIFIC_EQUIP_FIELD_NUMBER = 14;
+    private boolean isAutoUnlockSpecificEquip_ = false;
     /**
-     * <code>bool is_auto_unlock_specific_equip = 2;</code>
+     * <code>bool is_auto_unlock_specific_equip = 14;</code>
      * @return The isAutoUnlockSpecificEquip.
      */
     @java.lang.Override
@@ -137,9 +90,9 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isAutoUnlockSpecificEquip_ != false) {
-        output.writeBool(2, isAutoUnlockSpecificEquip_);
+        output.writeBool(14, isAutoUnlockSpecificEquip_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -150,9 +103,9 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
       size = 0;
       if (isAutoUnlockSpecificEquip_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isAutoUnlockSpecificEquip_);
+          .computeBoolSize(14, isAutoUnlockSpecificEquip_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -169,7 +122,7 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
 
       if (getIsAutoUnlockSpecificEquip()
           != other.getIsAutoUnlockSpecificEquip()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -183,7 +136,7 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
       hash = (37 * hash) + IS_AUTO_UNLOCK_SPECIFIC_EQUIP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAutoUnlockSpecificEquip());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -232,11 +185,13 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.SetIsAutoUnlockSpecificEquipReqOuterClass.SetIsAutoUnlockSpecificEquipReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.SetIsAutoUnlockSpecificEquipReqOuterClass.SetIsAutoUnlockSpecificEquipReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -280,8 +235,8 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 679
-     * Obf: JKJNKFEBOEE
+     * CmdId: 636
+     * Name: OBLLFNIAALA
      * </pre>
      *
      * Protobuf type {@code SetIsAutoUnlockSpecificEquipReq}
@@ -305,24 +260,19 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.SetIsAutoUnlockSpecificEquipReqOuterClass.SetIsAutoUnlockSpecificEquipReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         isAutoUnlockSpecificEquip_ = false;
-
         return this;
       }
 
@@ -349,9 +299,16 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SetIsAutoUnlockSpecificEquipReqOuterClass.SetIsAutoUnlockSpecificEquipReq buildPartial() {
         emu.grasscutter.net.proto.SetIsAutoUnlockSpecificEquipReqOuterClass.SetIsAutoUnlockSpecificEquipReq result = new emu.grasscutter.net.proto.SetIsAutoUnlockSpecificEquipReqOuterClass.SetIsAutoUnlockSpecificEquipReq(this);
-        result.isAutoUnlockSpecificEquip_ = isAutoUnlockSpecificEquip_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.SetIsAutoUnlockSpecificEquipReqOuterClass.SetIsAutoUnlockSpecificEquipReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.isAutoUnlockSpecificEquip_ = isAutoUnlockSpecificEquip_;
+        }
       }
 
       @java.lang.Override
@@ -401,7 +358,7 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
         if (other.getIsAutoUnlockSpecificEquip() != false) {
           setIsAutoUnlockSpecificEquip(other.getIsAutoUnlockSpecificEquip());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -416,23 +373,42 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.SetIsAutoUnlockSpecificEquipReqOuterClass.SetIsAutoUnlockSpecificEquipReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 112: {
+                isAutoUnlockSpecificEquip_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 112
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.SetIsAutoUnlockSpecificEquipReqOuterClass.SetIsAutoUnlockSpecificEquipReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private boolean isAutoUnlockSpecificEquip_ ;
       /**
-       * <code>bool is_auto_unlock_specific_equip = 2;</code>
+       * <code>bool is_auto_unlock_specific_equip = 14;</code>
        * @return The isAutoUnlockSpecificEquip.
        */
       @java.lang.Override
@@ -440,22 +416,23 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
         return isAutoUnlockSpecificEquip_;
       }
       /**
-       * <code>bool is_auto_unlock_specific_equip = 2;</code>
+       * <code>bool is_auto_unlock_specific_equip = 14;</code>
        * @param value The isAutoUnlockSpecificEquip to set.
        * @return This builder for chaining.
        */
       public Builder setIsAutoUnlockSpecificEquip(boolean value) {
-        
+
         isAutoUnlockSpecificEquip_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_auto_unlock_specific_equip = 2;</code>
+       * <code>bool is_auto_unlock_specific_equip = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAutoUnlockSpecificEquip() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         isAutoUnlockSpecificEquip_ = false;
         onChanged();
         return this;
@@ -493,7 +470,18 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SetIsAutoUnlockSpecificEquipReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -529,7 +517,7 @@ public final class SetIsAutoUnlockSpecificEquipReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%SetIsAutoUnlockSpecificEquipReq.proto\"" +
       "H\n\037SetIsAutoUnlockSpecificEquipReq\022%\n\035is" +
-      "_auto_unlock_specific_equip\030\002 \001(\010B\033\n\031emu" +
+      "_auto_unlock_specific_equip\030\016 \001(\010B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

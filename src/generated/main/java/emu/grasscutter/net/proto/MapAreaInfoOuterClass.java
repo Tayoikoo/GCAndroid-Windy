@@ -32,7 +32,7 @@ public final class MapAreaInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: FBNGIOBADBH
+   * Name: PBKNDAIJAHH
    * </pre>
    *
    * Protobuf type {@code MapAreaInfo}
@@ -56,58 +56,6 @@ public final class MapAreaInfoOuterClass {
       return new MapAreaInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private MapAreaInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              mapAreaId_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.MapAreaInfoOuterClass.internal_static_MapAreaInfo_descriptor;
@@ -122,7 +70,7 @@ public final class MapAreaInfoOuterClass {
     }
 
     public static final int MAP_AREA_ID_FIELD_NUMBER = 1;
-    private int mapAreaId_;
+    private int mapAreaId_ = 0;
     /**
      * <code>uint32 map_area_id = 1;</code>
      * @return The mapAreaId.
@@ -133,7 +81,7 @@ public final class MapAreaInfoOuterClass {
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 2;
-    private boolean isOpen_;
+    private boolean isOpen_ = false;
     /**
      * <code>bool is_open = 2;</code>
      * @return The isOpen.
@@ -163,7 +111,7 @@ public final class MapAreaInfoOuterClass {
       if (isOpen_ != false) {
         output.writeBool(2, isOpen_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -180,7 +128,7 @@ public final class MapAreaInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, isOpen_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -199,7 +147,7 @@ public final class MapAreaInfoOuterClass {
           != other.getMapAreaId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -215,7 +163,7 @@ public final class MapAreaInfoOuterClass {
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -264,11 +212,13 @@ public final class MapAreaInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -312,7 +262,7 @@ public final class MapAreaInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: FBNGIOBADBH
+     * Name: PBKNDAIJAHH
      * </pre>
      *
      * Protobuf type {@code MapAreaInfo}
@@ -336,26 +286,20 @@ public final class MapAreaInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         mapAreaId_ = 0;
-
         isOpen_ = false;
-
         return this;
       }
 
@@ -382,10 +326,19 @@ public final class MapAreaInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo buildPartial() {
         emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo result = new emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo(this);
-        result.mapAreaId_ = mapAreaId_;
-        result.isOpen_ = isOpen_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.mapAreaId_ = mapAreaId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.isOpen_ = isOpen_;
+        }
       }
 
       @java.lang.Override
@@ -438,7 +391,7 @@ public final class MapAreaInfoOuterClass {
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -453,19 +406,43 @@ public final class MapAreaInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                mapAreaId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                isOpen_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int mapAreaId_ ;
       /**
@@ -482,8 +459,9 @@ public final class MapAreaInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setMapAreaId(int value) {
-        
+
         mapAreaId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -492,7 +470,7 @@ public final class MapAreaInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearMapAreaId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         mapAreaId_ = 0;
         onChanged();
         return this;
@@ -513,8 +491,9 @@ public final class MapAreaInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIsOpen(boolean value) {
-        
+
         isOpen_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -523,7 +502,7 @@ public final class MapAreaInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         isOpen_ = false;
         onChanged();
         return this;
@@ -561,7 +540,18 @@ public final class MapAreaInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MapAreaInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

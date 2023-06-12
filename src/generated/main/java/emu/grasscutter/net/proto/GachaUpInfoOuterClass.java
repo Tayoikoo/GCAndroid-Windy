@@ -19,31 +19,31 @@ public final class GachaUpInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 item_id_list = 8;</code>
+     * <code>uint32 item_parent_type = 8;</code>
+     * @return The itemParentType.
+     */
+    int getItemParentType();
+
+    /**
+     * <code>repeated uint32 item_id_list = 9;</code>
      * @return A list containing the itemIdList.
      */
     java.util.List<java.lang.Integer> getItemIdListList();
     /**
-     * <code>repeated uint32 item_id_list = 8;</code>
+     * <code>repeated uint32 item_id_list = 9;</code>
      * @return The count of itemIdList.
      */
     int getItemIdListCount();
     /**
-     * <code>repeated uint32 item_id_list = 8;</code>
+     * <code>repeated uint32 item_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The itemIdList at the given index.
      */
     int getItemIdList(int index);
-
-    /**
-     * <code>uint32 item_parent_type = 6;</code>
-     * @return The itemParentType.
-     */
-    int getItemParentType();
   }
   /**
    * <pre>
-   * Obf: EPKHAAPGEBH
+   * Name: OJPLFMHBHHC
    * </pre>
    *
    * Protobuf type {@code GachaUpInfo}
@@ -68,78 +68,6 @@ public final class GachaUpInfoOuterClass {
       return new GachaUpInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private GachaUpInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 48: {
-
-              itemParentType_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                itemIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              itemIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 66: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                itemIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                itemIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          itemIdList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.GachaUpInfoOuterClass.internal_static_GachaUpInfo_descriptor;
@@ -153,10 +81,22 @@ public final class GachaUpInfoOuterClass {
               emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.class, emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.Builder.class);
     }
 
-    public static final int ITEM_ID_LIST_FIELD_NUMBER = 8;
+    public static final int ITEM_PARENT_TYPE_FIELD_NUMBER = 8;
+    private int itemParentType_ = 0;
+    /**
+     * <code>uint32 item_parent_type = 8;</code>
+     * @return The itemParentType.
+     */
+    @java.lang.Override
+    public int getItemParentType() {
+      return itemParentType_;
+    }
+
+    public static final int ITEM_ID_LIST_FIELD_NUMBER = 9;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList itemIdList_;
     /**
-     * <code>repeated uint32 item_id_list = 8;</code>
+     * <code>repeated uint32 item_id_list = 9;</code>
      * @return A list containing the itemIdList.
      */
     @java.lang.Override
@@ -165,14 +105,14 @@ public final class GachaUpInfoOuterClass {
       return itemIdList_;
     }
     /**
-     * <code>repeated uint32 item_id_list = 8;</code>
+     * <code>repeated uint32 item_id_list = 9;</code>
      * @return The count of itemIdList.
      */
     public int getItemIdListCount() {
       return itemIdList_.size();
     }
     /**
-     * <code>repeated uint32 item_id_list = 8;</code>
+     * <code>repeated uint32 item_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The itemIdList at the given index.
      */
@@ -180,17 +120,6 @@ public final class GachaUpInfoOuterClass {
       return itemIdList_.getInt(index);
     }
     private int itemIdListMemoizedSerializedSize = -1;
-
-    public static final int ITEM_PARENT_TYPE_FIELD_NUMBER = 6;
-    private int itemParentType_;
-    /**
-     * <code>uint32 item_parent_type = 6;</code>
-     * @return The itemParentType.
-     */
-    @java.lang.Override
-    public int getItemParentType() {
-      return itemParentType_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -208,16 +137,16 @@ public final class GachaUpInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (itemParentType_ != 0) {
-        output.writeUInt32(6, itemParentType_);
+        output.writeUInt32(8, itemParentType_);
       }
       if (getItemIdListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(itemIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < itemIdList_.size(); i++) {
         output.writeUInt32NoTag(itemIdList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -228,7 +157,7 @@ public final class GachaUpInfoOuterClass {
       size = 0;
       if (itemParentType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, itemParentType_);
+          .computeUInt32Size(8, itemParentType_);
       }
       {
         int dataSize = 0;
@@ -244,7 +173,7 @@ public final class GachaUpInfoOuterClass {
         }
         itemIdListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -259,11 +188,11 @@ public final class GachaUpInfoOuterClass {
       }
       emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo other = (emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo) obj;
 
-      if (!getItemIdListList()
-          .equals(other.getItemIdListList())) return false;
       if (getItemParentType()
           != other.getItemParentType()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getItemIdListList()
+          .equals(other.getItemIdListList())) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -274,13 +203,13 @@ public final class GachaUpInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ITEM_PARENT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getItemParentType();
       if (getItemIdListCount() > 0) {
         hash = (37 * hash) + ITEM_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getItemIdListList().hashCode();
       }
-      hash = (37 * hash) + ITEM_PARENT_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getItemParentType();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -329,11 +258,13 @@ public final class GachaUpInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -377,7 +308,7 @@ public final class GachaUpInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: EPKHAAPGEBH
+     * Name: OJPLFMHBHHC
      * </pre>
      *
      * Protobuf type {@code GachaUpInfo}
@@ -401,26 +332,20 @@ public final class GachaUpInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        itemIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = 0;
         itemParentType_ = 0;
-
+        itemIdList_ = emptyIntList();
         return this;
       }
 
@@ -447,15 +372,25 @@ public final class GachaUpInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo buildPartial() {
         emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo result = new emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo(this);
-        int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          itemIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.itemIdList_ = itemIdList_;
-        result.itemParentType_ = itemParentType_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo result) {
+        if (((bitField0_ & 0x00000002) != 0)) {
+          itemIdList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.itemIdList_ = itemIdList_;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.itemParentType_ = itemParentType_;
+        }
       }
 
       @java.lang.Override
@@ -502,20 +437,20 @@ public final class GachaUpInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo other) {
         if (other == emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.getDefaultInstance()) return this;
+        if (other.getItemParentType() != 0) {
+          setItemParentType(other.getItemParentType());
+        }
         if (!other.itemIdList_.isEmpty()) {
           if (itemIdList_.isEmpty()) {
             itemIdList_ = other.itemIdList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureItemIdListIsMutable();
             itemIdList_.addAll(other.itemIdList_);
           }
           onChanged();
         }
-        if (other.getItemParentType() != 0) {
-          setItemParentType(other.getItemParentType());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -530,46 +465,112 @@ public final class GachaUpInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 64: {
+                itemParentType_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 64
+              case 72: {
+                int v = input.readUInt32();
+                ensureItemIdListIsMutable();
+                itemIdList_.addInt(v);
+                break;
+              } // case 72
+              case 74: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureItemIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  itemIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 74
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList itemIdList_ = emptyIntList();
-      private void ensureItemIdListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          itemIdList_ = mutableCopy(itemIdList_);
-          bitField0_ |= 0x00000001;
-         }
+      private int itemParentType_ ;
+      /**
+       * <code>uint32 item_parent_type = 8;</code>
+       * @return The itemParentType.
+       */
+      @java.lang.Override
+      public int getItemParentType() {
+        return itemParentType_;
       }
       /**
-       * <code>repeated uint32 item_id_list = 8;</code>
+       * <code>uint32 item_parent_type = 8;</code>
+       * @param value The itemParentType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setItemParentType(int value) {
+
+        itemParentType_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 item_parent_type = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearItemParentType() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        itemParentType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList itemIdList_ = emptyIntList();
+      private void ensureItemIdListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          itemIdList_ = mutableCopy(itemIdList_);
+          bitField0_ |= 0x00000002;
+        }
+      }
+      /**
+       * <code>repeated uint32 item_id_list = 9;</code>
        * @return A list containing the itemIdList.
        */
       public java.util.List<java.lang.Integer>
           getItemIdListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000002) != 0) ?
                  java.util.Collections.unmodifiableList(itemIdList_) : itemIdList_;
       }
       /**
-       * <code>repeated uint32 item_id_list = 8;</code>
+       * <code>repeated uint32 item_id_list = 9;</code>
        * @return The count of itemIdList.
        */
       public int getItemIdListCount() {
         return itemIdList_.size();
       }
       /**
-       * <code>repeated uint32 item_id_list = 8;</code>
+       * <code>repeated uint32 item_id_list = 9;</code>
        * @param index The index of the element to return.
        * @return The itemIdList at the given index.
        */
@@ -577,31 +578,33 @@ public final class GachaUpInfoOuterClass {
         return itemIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 item_id_list = 8;</code>
+       * <code>repeated uint32 item_id_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The itemIdList to set.
        * @return This builder for chaining.
        */
       public Builder setItemIdList(
           int index, int value) {
+
         ensureItemIdListIsMutable();
         itemIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 8;</code>
+       * <code>repeated uint32 item_id_list = 9;</code>
        * @param value The itemIdList to add.
        * @return This builder for chaining.
        */
       public Builder addItemIdList(int value) {
+
         ensureItemIdListIsMutable();
         itemIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 8;</code>
+       * <code>repeated uint32 item_id_list = 9;</code>
        * @param values The itemIdList to add.
        * @return This builder for chaining.
        */
@@ -614,43 +617,12 @@ public final class GachaUpInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 8;</code>
+       * <code>repeated uint32 item_id_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemIdList() {
         itemIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int itemParentType_ ;
-      /**
-       * <code>uint32 item_parent_type = 6;</code>
-       * @return The itemParentType.
-       */
-      @java.lang.Override
-      public int getItemParentType() {
-        return itemParentType_;
-      }
-      /**
-       * <code>uint32 item_parent_type = 6;</code>
-       * @param value The itemParentType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setItemParentType(int value) {
-        
-        itemParentType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 item_parent_type = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearItemParentType() {
-        
-        itemParentType_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -687,7 +659,18 @@ public final class GachaUpInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GachaUpInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -721,8 +704,8 @@ public final class GachaUpInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021GachaUpInfo.proto\"=\n\013GachaUpInfo\022\024\n\014it" +
-      "em_id_list\030\010 \003(\r\022\030\n\020item_parent_type\030\006 \001" +
+      "\n\021GachaUpInfo.proto\"=\n\013GachaUpInfo\022\030\n\020it" +
+      "em_parent_type\030\010 \001(\r\022\024\n\014item_id_list\030\t \003" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -734,7 +717,7 @@ public final class GachaUpInfoOuterClass {
     internal_static_GachaUpInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GachaUpInfo_descriptor,
-        new java.lang.String[] { "ItemIdList", "ItemParentType", });
+        new java.lang.String[] { "ItemParentType", "ItemIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

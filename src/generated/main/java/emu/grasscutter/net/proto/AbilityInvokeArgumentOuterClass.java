@@ -16,7 +16,7 @@ public final class AbilityInvokeArgumentOuterClass {
   }
   /**
    * <pre>
-   * Obf: IEGANFCMCNJ
+   * Name: OCEIMDJANPL
    * </pre>
    *
    * Protobuf enum {@code AbilityInvokeArgument}

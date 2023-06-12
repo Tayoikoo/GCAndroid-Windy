@@ -19,45 +19,45 @@ public final class ClientAbilityChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_init_hash = 11;</code>
-     * @return The isInitHash.
+     * <code>uint32 entity_id = 15;</code>
+     * @return The entityId.
      */
-    boolean getIsInitHash();
+    int getEntityId();
 
     /**
-     * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
+     * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry> 
         getInvokesList();
     /**
-     * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
+     * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
      */
     emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvokes(int index);
     /**
-     * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
+     * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
      */
     int getInvokesCount();
     /**
-     * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
+     * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
         getInvokesOrBuilderList();
     /**
-     * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
+     * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
      */
     emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvokesOrBuilder(
         int index);
 
     /**
-     * <code>uint32 entity_id = 15;</code>
-     * @return The entityId.
+     * <code>bool is_init_hash = 4;</code>
+     * @return The isInitHash.
      */
-    int getEntityId();
+    boolean getIsInitHash();
   }
   /**
    * <pre>
-   * CmdId: 1164
-   * Obf: KMBDGMBAPDC
+   * CmdId: 1178
+   * Name: DCPFIKALCJL
    * </pre>
    *
    * Protobuf type {@code ClientAbilityChangeNotify}
@@ -82,71 +82,6 @@ public final class ClientAbilityChangeNotifyOuterClass {
       return new ClientAbilityChangeNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ClientAbilityChangeNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 88: {
-
-              isInitHash_ = input.readBool();
-              break;
-            }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                invokes_ = new java.util.ArrayList<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              invokes_.add(
-                  input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry));
-              break;
-            }
-            case 120: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          invokes_ = java.util.Collections.unmodifiableList(invokes_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.internal_static_ClientAbilityChangeNotify_descriptor;
@@ -160,59 +95,8 @@ public final class ClientAbilityChangeNotifyOuterClass {
               emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify.class, emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify.Builder.class);
     }
 
-    public static final int IS_INIT_HASH_FIELD_NUMBER = 11;
-    private boolean isInitHash_;
-    /**
-     * <code>bool is_init_hash = 11;</code>
-     * @return The isInitHash.
-     */
-    @java.lang.Override
-    public boolean getIsInitHash() {
-      return isInitHash_;
-    }
-
-    public static final int INVOKES_FIELD_NUMBER = 13;
-    private java.util.List<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry> invokes_;
-    /**
-     * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry> getInvokesList() {
-      return invokes_;
-    }
-    /**
-     * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
-        getInvokesOrBuilderList() {
-      return invokes_;
-    }
-    /**
-     * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-     */
-    @java.lang.Override
-    public int getInvokesCount() {
-      return invokes_.size();
-    }
-    /**
-     * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvokes(int index) {
-      return invokes_.get(index);
-    }
-    /**
-     * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvokesOrBuilder(
-        int index) {
-      return invokes_.get(index);
-    }
-
     public static final int ENTITY_ID_FIELD_NUMBER = 15;
-    private int entityId_;
+    private int entityId_ = 0;
     /**
      * <code>uint32 entity_id = 15;</code>
      * @return The entityId.
@@ -220,6 +104,58 @@ public final class ClientAbilityChangeNotifyOuterClass {
     @java.lang.Override
     public int getEntityId() {
       return entityId_;
+    }
+
+    public static final int INVOKES_FIELD_NUMBER = 14;
+    @SuppressWarnings("serial")
+    private java.util.List<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry> invokes_;
+    /**
+     * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry> getInvokesList() {
+      return invokes_;
+    }
+    /**
+     * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
+        getInvokesOrBuilderList() {
+      return invokes_;
+    }
+    /**
+     * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+     */
+    @java.lang.Override
+    public int getInvokesCount() {
+      return invokes_.size();
+    }
+    /**
+     * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvokes(int index) {
+      return invokes_.get(index);
+    }
+    /**
+     * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvokesOrBuilder(
+        int index) {
+      return invokes_.get(index);
+    }
+
+    public static final int IS_INIT_HASH_FIELD_NUMBER = 4;
+    private boolean isInitHash_ = false;
+    /**
+     * <code>bool is_init_hash = 4;</code>
+     * @return The isInitHash.
+     */
+    @java.lang.Override
+    public boolean getIsInitHash() {
+      return isInitHash_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -237,15 +173,15 @@ public final class ClientAbilityChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isInitHash_ != false) {
-        output.writeBool(11, isInitHash_);
+        output.writeBool(4, isInitHash_);
       }
       for (int i = 0; i < invokes_.size(); i++) {
-        output.writeMessage(13, invokes_.get(i));
+        output.writeMessage(14, invokes_.get(i));
       }
       if (entityId_ != 0) {
         output.writeUInt32(15, entityId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -256,17 +192,17 @@ public final class ClientAbilityChangeNotifyOuterClass {
       size = 0;
       if (isInitHash_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isInitHash_);
+          .computeBoolSize(4, isInitHash_);
       }
       for (int i = 0; i < invokes_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, invokes_.get(i));
+          .computeMessageSize(14, invokes_.get(i));
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, entityId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -281,13 +217,13 @@ public final class ClientAbilityChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify other = (emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify) obj;
 
-      if (getIsInitHash()
-          != other.getIsInitHash()) return false;
-      if (!getInvokesList()
-          .equals(other.getInvokesList())) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getInvokesList()
+          .equals(other.getInvokesList())) return false;
+      if (getIsInitHash()
+          != other.getIsInitHash()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -298,16 +234,16 @@ public final class ClientAbilityChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_INIT_HASH_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsInitHash());
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       if (getInvokesCount() > 0) {
         hash = (37 * hash) + INVOKES_FIELD_NUMBER;
         hash = (53 * hash) + getInvokesList().hashCode();
       }
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + IS_INIT_HASH_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsInitHash());
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -356,11 +292,13 @@ public final class ClientAbilityChangeNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -404,8 +342,8 @@ public final class ClientAbilityChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1164
-     * Obf: KMBDGMBAPDC
+     * CmdId: 1178
+     * Name: DCPFIKALCJL
      * </pre>
      *
      * Protobuf type {@code ClientAbilityChangeNotify}
@@ -429,33 +367,27 @@ public final class ClientAbilityChangeNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getInvokesFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isInitHash_ = false;
-
+        bitField0_ = 0;
+        entityId_ = 0;
         if (invokesBuilder_ == null) {
           invokes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          invokes_ = null;
           invokesBuilder_.clear();
         }
-        entityId_ = 0;
-
+        bitField0_ = (bitField0_ & ~0x00000002);
+        isInitHash_ = false;
         return this;
       }
 
@@ -482,20 +414,32 @@ public final class ClientAbilityChangeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify buildPartial() {
         emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify result = new emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify(this);
-        int from_bitField0_ = bitField0_;
-        result.isInitHash_ = isInitHash_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify result) {
         if (invokesBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             invokes_ = java.util.Collections.unmodifiableList(invokes_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.invokes_ = invokes_;
         } else {
           result.invokes_ = invokesBuilder_.build();
         }
-        result.entityId_ = entityId_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.entityId_ = entityId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.isInitHash_ = isInitHash_;
+        }
       }
 
       @java.lang.Override
@@ -542,14 +486,14 @@ public final class ClientAbilityChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify other) {
         if (other == emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify.getDefaultInstance()) return this;
-        if (other.getIsInitHash() != false) {
-          setIsInitHash(other.getIsInitHash());
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
         if (invokesBuilder_ == null) {
           if (!other.invokes_.isEmpty()) {
             if (invokes_.isEmpty()) {
               invokes_ = other.invokes_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureInvokesIsMutable();
               invokes_.addAll(other.invokes_);
@@ -562,7 +506,7 @@ public final class ClientAbilityChangeNotifyOuterClass {
               invokesBuilder_.dispose();
               invokesBuilder_ = null;
               invokes_ = other.invokes_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               invokesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getInvokesFieldBuilder() : null;
@@ -571,10 +515,10 @@ public final class ClientAbilityChangeNotifyOuterClass {
             }
           }
         }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
+        if (other.getIsInitHash() != false) {
+          setIsInitHash(other.getIsInitHash());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -589,291 +533,56 @@ public final class ClientAbilityChangeNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 32: {
+                isInitHash_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 32
+              case 114: {
+                emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(),
+                        extensionRegistry);
+                if (invokesBuilder_ == null) {
+                  ensureInvokesIsMutable();
+                  invokes_.add(m);
+                } else {
+                  invokesBuilder_.addMessage(m);
+                }
+                break;
+              } // case 114
+              case 120: {
+                entityId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
-
-      private boolean isInitHash_ ;
-      /**
-       * <code>bool is_init_hash = 11;</code>
-       * @return The isInitHash.
-       */
-      @java.lang.Override
-      public boolean getIsInitHash() {
-        return isInitHash_;
-      }
-      /**
-       * <code>bool is_init_hash = 11;</code>
-       * @param value The isInitHash to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsInitHash(boolean value) {
-        
-        isInitHash_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_init_hash = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsInitHash() {
-        
-        isInitHash_ = false;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry> invokes_ =
-        java.util.Collections.emptyList();
-      private void ensureInvokesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          invokes_ = new java.util.ArrayList<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry>(invokes_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> invokesBuilder_;
-
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry> getInvokesList() {
-        if (invokesBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(invokes_);
-        } else {
-          return invokesBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public int getInvokesCount() {
-        if (invokesBuilder_ == null) {
-          return invokes_.size();
-        } else {
-          return invokesBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvokes(int index) {
-        if (invokesBuilder_ == null) {
-          return invokes_.get(index);
-        } else {
-          return invokesBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public Builder setInvokes(
-          int index, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (invokesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureInvokesIsMutable();
-          invokes_.set(index, value);
-          onChanged();
-        } else {
-          invokesBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public Builder setInvokes(
-          int index, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
-        if (invokesBuilder_ == null) {
-          ensureInvokesIsMutable();
-          invokes_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          invokesBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public Builder addInvokes(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (invokesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureInvokesIsMutable();
-          invokes_.add(value);
-          onChanged();
-        } else {
-          invokesBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public Builder addInvokes(
-          int index, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (invokesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureInvokesIsMutable();
-          invokes_.add(index, value);
-          onChanged();
-        } else {
-          invokesBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public Builder addInvokes(
-          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
-        if (invokesBuilder_ == null) {
-          ensureInvokesIsMutable();
-          invokes_.add(builderForValue.build());
-          onChanged();
-        } else {
-          invokesBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public Builder addInvokes(
-          int index, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
-        if (invokesBuilder_ == null) {
-          ensureInvokesIsMutable();
-          invokes_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          invokesBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public Builder addAllInvokes(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry> values) {
-        if (invokesBuilder_ == null) {
-          ensureInvokesIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, invokes_);
-          onChanged();
-        } else {
-          invokesBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public Builder clearInvokes() {
-        if (invokesBuilder_ == null) {
-          invokes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          invokesBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public Builder removeInvokes(int index) {
-        if (invokesBuilder_ == null) {
-          ensureInvokesIsMutable();
-          invokes_.remove(index);
-          onChanged();
-        } else {
-          invokesBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getInvokesBuilder(
-          int index) {
-        return getInvokesFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvokesOrBuilder(
-          int index) {
-        if (invokesBuilder_ == null) {
-          return invokes_.get(index);  } else {
-          return invokesBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
-           getInvokesOrBuilderList() {
-        if (invokesBuilder_ != null) {
-          return invokesBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(invokes_);
-        }
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder addInvokesBuilder() {
-        return getInvokesFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder addInvokesBuilder(
-          int index) {
-        return getInvokesFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .AbilityInvokeEntry invokes = 13;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder> 
-           getInvokesBuilderList() {
-        return getInvokesFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
-          getInvokesFieldBuilder() {
-        if (invokesBuilder_ == null) {
-          invokesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder>(
-                  invokes_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          invokes_ = null;
-        }
-        return invokesBuilder_;
-      }
 
       private int entityId_ ;
       /**
@@ -890,8 +599,9 @@ public final class ClientAbilityChangeNotifyOuterClass {
        * @return This builder for chaining.
        */
       public Builder setEntityId(int value) {
-        
+
         entityId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -900,8 +610,280 @@ public final class ClientAbilityChangeNotifyOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry> invokes_ =
+        java.util.Collections.emptyList();
+      private void ensureInvokesIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          invokes_ = new java.util.ArrayList<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry>(invokes_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> invokesBuilder_;
+
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry> getInvokesList() {
+        if (invokesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(invokes_);
+        } else {
+          return invokesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public int getInvokesCount() {
+        if (invokesBuilder_ == null) {
+          return invokes_.size();
+        } else {
+          return invokesBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvokes(int index) {
+        if (invokesBuilder_ == null) {
+          return invokes_.get(index);
+        } else {
+          return invokesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public Builder setInvokes(
+          int index, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invokesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureInvokesIsMutable();
+          invokes_.set(index, value);
+          onChanged();
+        } else {
+          invokesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public Builder setInvokes(
+          int index, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
+        if (invokesBuilder_ == null) {
+          ensureInvokesIsMutable();
+          invokes_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          invokesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public Builder addInvokes(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invokesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureInvokesIsMutable();
+          invokes_.add(value);
+          onChanged();
+        } else {
+          invokesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public Builder addInvokes(
+          int index, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invokesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureInvokesIsMutable();
+          invokes_.add(index, value);
+          onChanged();
+        } else {
+          invokesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public Builder addInvokes(
+          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
+        if (invokesBuilder_ == null) {
+          ensureInvokesIsMutable();
+          invokes_.add(builderForValue.build());
+          onChanged();
+        } else {
+          invokesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public Builder addInvokes(
+          int index, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
+        if (invokesBuilder_ == null) {
+          ensureInvokesIsMutable();
+          invokes_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          invokesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public Builder addAllInvokes(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry> values) {
+        if (invokesBuilder_ == null) {
+          ensureInvokesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, invokes_);
+          onChanged();
+        } else {
+          invokesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public Builder clearInvokes() {
+        if (invokesBuilder_ == null) {
+          invokes_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          invokesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public Builder removeInvokes(int index) {
+        if (invokesBuilder_ == null) {
+          ensureInvokesIsMutable();
+          invokes_.remove(index);
+          onChanged();
+        } else {
+          invokesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getInvokesBuilder(
+          int index) {
+        return getInvokesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvokesOrBuilder(
+          int index) {
+        if (invokesBuilder_ == null) {
+          return invokes_.get(index);  } else {
+          return invokesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
+           getInvokesOrBuilderList() {
+        if (invokesBuilder_ != null) {
+          return invokesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(invokes_);
+        }
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder addInvokesBuilder() {
+        return getInvokesFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder addInvokesBuilder(
+          int index) {
+        return getInvokesFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .AbilityInvokeEntry invokes = 14;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder> 
+           getInvokesBuilderList() {
+        return getInvokesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
+          getInvokesFieldBuilder() {
+        if (invokesBuilder_ == null) {
+          invokesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder>(
+                  invokes_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          invokes_ = null;
+        }
+        return invokesBuilder_;
+      }
+
+      private boolean isInitHash_ ;
+      /**
+       * <code>bool is_init_hash = 4;</code>
+       * @return The isInitHash.
+       */
+      @java.lang.Override
+      public boolean getIsInitHash() {
+        return isInitHash_;
+      }
+      /**
+       * <code>bool is_init_hash = 4;</code>
+       * @param value The isInitHash to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsInitHash(boolean value) {
+
+        isInitHash_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_init_hash = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsInitHash() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        isInitHash_ = false;
         onChanged();
         return this;
       }
@@ -938,7 +920,18 @@ public final class ClientAbilityChangeNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ClientAbilityChangeNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -974,9 +967,9 @@ public final class ClientAbilityChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037ClientAbilityChangeNotify.proto\032\030Abili" +
       "tyInvokeEntry.proto\"j\n\031ClientAbilityChan" +
-      "geNotify\022\024\n\014is_init_hash\030\013 \001(\010\022$\n\007invoke" +
-      "s\030\r \003(\0132\023.AbilityInvokeEntry\022\021\n\tentity_i" +
-      "d\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "geNotify\022\021\n\tentity_id\030\017 \001(\r\022$\n\007invokes\030\016" +
+      " \003(\0132\023.AbilityInvokeEntry\022\024\n\014is_init_has" +
+      "h\030\004 \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -989,7 +982,7 @@ public final class ClientAbilityChangeNotifyOuterClass {
     internal_static_ClientAbilityChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientAbilityChangeNotify_descriptor,
-        new java.lang.String[] { "IsInitHash", "Invokes", "EntityId", });
+        new java.lang.String[] { "EntityId", "Invokes", "IsInitHash", });
     emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.getDescriptor();
   }
 

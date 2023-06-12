@@ -19,15 +19,15 @@ public final class GetShopReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 shop_type = 12;</code>
+     * <code>uint32 shop_type = 11;</code>
      * @return The shopType.
      */
     int getShopType();
   }
   /**
    * <pre>
-   * CmdId: 775
-   * Obf: IONMOGGHBPF
+   * CmdId: 790
+   * Name: ACJLEMECHMH
    * </pre>
    *
    * Protobuf type {@code GetShopReq}
@@ -51,53 +51,6 @@ public final class GetShopReqOuterClass {
       return new GetShopReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private GetShopReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 96: {
-
-              shopType_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.GetShopReqOuterClass.internal_static_GetShopReq_descriptor;
@@ -111,10 +64,10 @@ public final class GetShopReqOuterClass {
               emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq.class, emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq.Builder.class);
     }
 
-    public static final int SHOP_TYPE_FIELD_NUMBER = 12;
-    private int shopType_;
+    public static final int SHOP_TYPE_FIELD_NUMBER = 11;
+    private int shopType_ = 0;
     /**
-     * <code>uint32 shop_type = 12;</code>
+     * <code>uint32 shop_type = 11;</code>
      * @return The shopType.
      */
     @java.lang.Override
@@ -137,9 +90,9 @@ public final class GetShopReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (shopType_ != 0) {
-        output.writeUInt32(12, shopType_);
+        output.writeUInt32(11, shopType_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -150,9 +103,9 @@ public final class GetShopReqOuterClass {
       size = 0;
       if (shopType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, shopType_);
+          .computeUInt32Size(11, shopType_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -169,7 +122,7 @@ public final class GetShopReqOuterClass {
 
       if (getShopType()
           != other.getShopType()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -182,7 +135,7 @@ public final class GetShopReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SHOP_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getShopType();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -231,11 +184,13 @@ public final class GetShopReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -279,8 +234,8 @@ public final class GetShopReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 775
-     * Obf: IONMOGGHBPF
+     * CmdId: 790
+     * Name: ACJLEMECHMH
      * </pre>
      *
      * Protobuf type {@code GetShopReq}
@@ -304,24 +259,19 @@ public final class GetShopReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         shopType_ = 0;
-
         return this;
       }
 
@@ -348,9 +298,16 @@ public final class GetShopReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq buildPartial() {
         emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq result = new emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq(this);
-        result.shopType_ = shopType_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.shopType_ = shopType_;
+        }
       }
 
       @java.lang.Override
@@ -400,7 +357,7 @@ public final class GetShopReqOuterClass {
         if (other.getShopType() != 0) {
           setShopType(other.getShopType());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -415,23 +372,42 @@ public final class GetShopReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 88: {
+                shopType_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 88
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.GetShopReqOuterClass.GetShopReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int shopType_ ;
       /**
-       * <code>uint32 shop_type = 12;</code>
+       * <code>uint32 shop_type = 11;</code>
        * @return The shopType.
        */
       @java.lang.Override
@@ -439,22 +415,23 @@ public final class GetShopReqOuterClass {
         return shopType_;
       }
       /**
-       * <code>uint32 shop_type = 12;</code>
+       * <code>uint32 shop_type = 11;</code>
        * @param value The shopType to set.
        * @return This builder for chaining.
        */
       public Builder setShopType(int value) {
-        
+
         shopType_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 shop_type = 12;</code>
+       * <code>uint32 shop_type = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearShopType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         shopType_ = 0;
         onChanged();
         return this;
@@ -492,7 +469,18 @@ public final class GetShopReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GetShopReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -527,7 +515,7 @@ public final class GetShopReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020GetShopReq.proto\"\037\n\nGetShopReq\022\021\n\tshop" +
-      "_type\030\014 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "_type\030\013 \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

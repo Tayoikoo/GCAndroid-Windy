@@ -16,7 +16,7 @@ public final class ResinCostTypeOuterClass {
   }
   /**
    * <pre>
-   * Obf: FGDIKNPBEMG
+   * Name: JCHKINKMPDK
    * </pre>
    *
    * Protobuf enum {@code ResinCostType}

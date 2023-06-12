@@ -60,7 +60,7 @@ public final class FoundationInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: DGNBNKHBONE
+   * Name: AMABAPDIMGK
    * </pre>
    *
    * Protobuf type {@code FoundationInfo}
@@ -86,89 +86,6 @@ public final class FoundationInfoOuterClass {
       return new FoundationInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private FoundationInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-              int rawValue = input.readEnum();
-
-              status_ = rawValue;
-              break;
-            }
-            case 16: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                uidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              uidList_.addInt(input.readUInt32());
-              break;
-            }
-            case 18: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                uidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                uidList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 24: {
-
-              currentBuildingId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              lockedByUid_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          uidList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.FoundationInfoOuterClass.internal_static_FoundationInfo_descriptor;
@@ -183,7 +100,7 @@ public final class FoundationInfoOuterClass {
     }
 
     public static final int STATUS_FIELD_NUMBER = 1;
-    private int status_;
+    private int status_ = 0;
     /**
      * <code>.FoundationStatus status = 1;</code>
      * @return The enum numeric value on the wire for status.
@@ -196,12 +113,12 @@ public final class FoundationInfoOuterClass {
      * @return The status.
      */
     @java.lang.Override public emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus getStatus() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus result = emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.valueOf(status_);
+      emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus result = emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.forNumber(status_);
       return result == null ? emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.UNRECOGNIZED : result;
     }
 
     public static final int UID_LIST_FIELD_NUMBER = 2;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList uidList_;
     /**
      * <code>repeated uint32 uid_list = 2;</code>
@@ -230,7 +147,7 @@ public final class FoundationInfoOuterClass {
     private int uidListMemoizedSerializedSize = -1;
 
     public static final int CURRENT_BUILDING_ID_FIELD_NUMBER = 3;
-    private int currentBuildingId_;
+    private int currentBuildingId_ = 0;
     /**
      * <code>uint32 current_building_id = 3;</code>
      * @return The currentBuildingId.
@@ -241,7 +158,7 @@ public final class FoundationInfoOuterClass {
     }
 
     public static final int LOCKED_BY_UID_FIELD_NUMBER = 4;
-    private int lockedByUid_;
+    private int lockedByUid_ = 0;
     /**
      * <code>uint32 locked_by_uid = 4;</code>
      * @return The lockedByUid.
@@ -282,7 +199,7 @@ public final class FoundationInfoOuterClass {
       if (lockedByUid_ != 0) {
         output.writeUInt32(4, lockedByUid_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -317,7 +234,7 @@ public final class FoundationInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, lockedByUid_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -339,7 +256,7 @@ public final class FoundationInfoOuterClass {
           != other.getCurrentBuildingId()) return false;
       if (getLockedByUid()
           != other.getLockedByUid()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -360,7 +277,7 @@ public final class FoundationInfoOuterClass {
       hash = (53 * hash) + getCurrentBuildingId();
       hash = (37 * hash) + LOCKED_BY_UID_FIELD_NUMBER;
       hash = (53 * hash) + getLockedByUid();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -409,11 +326,13 @@ public final class FoundationInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -457,7 +376,7 @@ public final class FoundationInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: DGNBNKHBONE
+     * Name: AMABAPDIMGK
      * </pre>
      *
      * Protobuf type {@code FoundationInfo}
@@ -481,30 +400,22 @@ public final class FoundationInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         status_ = 0;
-
         uidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         currentBuildingId_ = 0;
-
         lockedByUid_ = 0;
-
         return this;
       }
 
@@ -531,17 +442,31 @@ public final class FoundationInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo buildPartial() {
         emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo result = new emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo(this);
-        int from_bitField0_ = bitField0_;
-        result.status_ = status_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          uidList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.uidList_ = uidList_;
-        result.currentBuildingId_ = currentBuildingId_;
-        result.lockedByUid_ = lockedByUid_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo result) {
+        if (((bitField0_ & 0x00000002) != 0)) {
+          uidList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.uidList_ = uidList_;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.status_ = status_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.currentBuildingId_ = currentBuildingId_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.lockedByUid_ = lockedByUid_;
+        }
       }
 
       @java.lang.Override
@@ -594,7 +519,7 @@ public final class FoundationInfoOuterClass {
         if (!other.uidList_.isEmpty()) {
           if (uidList_.isEmpty()) {
             uidList_ = other.uidList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureUidListIsMutable();
             uidList_.addAll(other.uidList_);
@@ -607,7 +532,7 @@ public final class FoundationInfoOuterClass {
         if (other.getLockedByUid() != 0) {
           setLockedByUid(other.getLockedByUid());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -622,17 +547,61 @@ public final class FoundationInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                status_ = input.readEnum();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                int v = input.readUInt32();
+                ensureUidListIsMutable();
+                uidList_.addInt(v);
+                break;
+              } // case 16
+              case 18: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureUidListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  uidList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 18
+              case 24: {
+                currentBuildingId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 32: {
+                lockedByUid_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 32
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -651,8 +620,8 @@ public final class FoundationInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setStatusValue(int value) {
-        
         status_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -662,8 +631,7 @@ public final class FoundationInfoOuterClass {
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus getStatus() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus result = emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.valueOf(status_);
+        emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus result = emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.forNumber(status_);
         return result == null ? emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.UNRECOGNIZED : result;
       }
       /**
@@ -675,7 +643,7 @@ public final class FoundationInfoOuterClass {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+        bitField0_ |= 0x00000001;
         status_ = value.getNumber();
         onChanged();
         return this;
@@ -685,7 +653,7 @@ public final class FoundationInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearStatus() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         status_ = 0;
         onChanged();
         return this;
@@ -693,10 +661,10 @@ public final class FoundationInfoOuterClass {
 
       private com.google.protobuf.Internal.IntList uidList_ = emptyIntList();
       private void ensureUidListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           uidList_ = mutableCopy(uidList_);
-          bitField0_ |= 0x00000001;
-         }
+          bitField0_ |= 0x00000002;
+        }
       }
       /**
        * <code>repeated uint32 uid_list = 2;</code>
@@ -704,7 +672,7 @@ public final class FoundationInfoOuterClass {
        */
       public java.util.List<java.lang.Integer>
           getUidListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000002) != 0) ?
                  java.util.Collections.unmodifiableList(uidList_) : uidList_;
       }
       /**
@@ -730,6 +698,7 @@ public final class FoundationInfoOuterClass {
        */
       public Builder setUidList(
           int index, int value) {
+
         ensureUidListIsMutable();
         uidList_.setInt(index, value);
         onChanged();
@@ -741,6 +710,7 @@ public final class FoundationInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder addUidList(int value) {
+
         ensureUidListIsMutable();
         uidList_.addInt(value);
         onChanged();
@@ -765,7 +735,7 @@ public final class FoundationInfoOuterClass {
        */
       public Builder clearUidList() {
         uidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -785,8 +755,9 @@ public final class FoundationInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setCurrentBuildingId(int value) {
-        
+
         currentBuildingId_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -795,7 +766,7 @@ public final class FoundationInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearCurrentBuildingId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         currentBuildingId_ = 0;
         onChanged();
         return this;
@@ -816,8 +787,9 @@ public final class FoundationInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setLockedByUid(int value) {
-        
+
         lockedByUid_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -826,7 +798,7 @@ public final class FoundationInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearLockedByUid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         lockedByUid_ = 0;
         onChanged();
         return this;
@@ -864,7 +836,18 @@ public final class FoundationInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new FoundationInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

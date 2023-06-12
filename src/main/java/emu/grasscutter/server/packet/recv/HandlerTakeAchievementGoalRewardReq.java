@@ -10,8 +10,7 @@ import emu.grasscutter.server.game.GameSession;
 public class HandlerTakeAchievementGoalRewardReq extends PacketHandler {
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
-        var req =
-                TakeAchievementGoalRewardReqOuterClass.TakeAchievementGoalRewardReq.parseFrom(payload);
+        var req = TakeAchievementGoalRewardReqOuterClass.TakeAchievementGoalRewardReq.parseFrom(payload);
         session.getPlayer().getAchievements().takeGoalReward(req.getIdListList());
     }
 }

@@ -20,8 +20,8 @@ public final class AvatarExpeditionAllDataReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1665
-   * Obf: PNEIGBDCOON
+   * CmdId: 1690
+   * Name: BOMGBIMAENG
    * </pre>
    *
    * Protobuf type {@code AvatarExpeditionAllDataReq}
@@ -45,48 +45,6 @@ public final class AvatarExpeditionAllDataReqOuterClass {
       return new AvatarExpeditionAllDataReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private AvatarExpeditionAllDataReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AvatarExpeditionAllDataReqOuterClass.internal_static_AvatarExpeditionAllDataReq_descriptor;
@@ -114,7 +72,7 @@ public final class AvatarExpeditionAllDataReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -123,7 +81,7 @@ public final class AvatarExpeditionAllDataReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -138,7 +96,7 @@ public final class AvatarExpeditionAllDataReqOuterClass {
       }
       emu.grasscutter.net.proto.AvatarExpeditionAllDataReqOuterClass.AvatarExpeditionAllDataReq other = (emu.grasscutter.net.proto.AvatarExpeditionAllDataReqOuterClass.AvatarExpeditionAllDataReq) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -149,7 +107,7 @@ public final class AvatarExpeditionAllDataReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -198,11 +156,13 @@ public final class AvatarExpeditionAllDataReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.AvatarExpeditionAllDataReqOuterClass.AvatarExpeditionAllDataReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.AvatarExpeditionAllDataReqOuterClass.AvatarExpeditionAllDataReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -246,8 +206,8 @@ public final class AvatarExpeditionAllDataReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1665
-     * Obf: PNEIGBDCOON
+     * CmdId: 1690
+     * Name: BOMGBIMAENG
      * </pre>
      *
      * Protobuf type {@code AvatarExpeditionAllDataReq}
@@ -271,18 +231,13 @@ public final class AvatarExpeditionAllDataReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AvatarExpeditionAllDataReqOuterClass.AvatarExpeditionAllDataReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
@@ -361,7 +316,7 @@ public final class AvatarExpeditionAllDataReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarExpeditionAllDataReqOuterClass.AvatarExpeditionAllDataReq other) {
         if (other == emu.grasscutter.net.proto.AvatarExpeditionAllDataReqOuterClass.AvatarExpeditionAllDataReq.getDefaultInstance()) return this;
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -376,17 +331,30 @@ public final class AvatarExpeditionAllDataReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AvatarExpeditionAllDataReqOuterClass.AvatarExpeditionAllDataReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AvatarExpeditionAllDataReqOuterClass.AvatarExpeditionAllDataReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       @java.lang.Override
@@ -422,7 +390,18 @@ public final class AvatarExpeditionAllDataReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AvatarExpeditionAllDataReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

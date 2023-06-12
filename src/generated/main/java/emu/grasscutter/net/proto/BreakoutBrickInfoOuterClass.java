@@ -32,7 +32,7 @@ public final class BreakoutBrickInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: GFDMGCCDLMC
+   * Name: BMPEBBNDFKL
    * </pre>
    *
    * Protobuf type {@code BreakoutBrickInfo}
@@ -56,58 +56,6 @@ public final class BreakoutBrickInfoOuterClass {
       return new BreakoutBrickInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private BreakoutBrickInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              hp_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              elementType_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.internal_static_BreakoutBrickInfo_descriptor;
@@ -122,7 +70,7 @@ public final class BreakoutBrickInfoOuterClass {
     }
 
     public static final int HP_FIELD_NUMBER = 1;
-    private int hp_;
+    private int hp_ = 0;
     /**
      * <code>uint32 hp = 1;</code>
      * @return The hp.
@@ -133,7 +81,7 @@ public final class BreakoutBrickInfoOuterClass {
     }
 
     public static final int ELEMENT_TYPE_FIELD_NUMBER = 2;
-    private int elementType_;
+    private int elementType_ = 0;
     /**
      * <code>uint32 element_type = 2;</code>
      * @return The elementType.
@@ -163,7 +111,7 @@ public final class BreakoutBrickInfoOuterClass {
       if (elementType_ != 0) {
         output.writeUInt32(2, elementType_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -180,7 +128,7 @@ public final class BreakoutBrickInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, elementType_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -199,7 +147,7 @@ public final class BreakoutBrickInfoOuterClass {
           != other.getHp()) return false;
       if (getElementType()
           != other.getElementType()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -214,7 +162,7 @@ public final class BreakoutBrickInfoOuterClass {
       hash = (53 * hash) + getHp();
       hash = (37 * hash) + ELEMENT_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getElementType();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -263,11 +211,13 @@ public final class BreakoutBrickInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -311,7 +261,7 @@ public final class BreakoutBrickInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: GFDMGCCDLMC
+     * Name: BMPEBBNDFKL
      * </pre>
      *
      * Protobuf type {@code BreakoutBrickInfo}
@@ -335,26 +285,20 @@ public final class BreakoutBrickInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         hp_ = 0;
-
         elementType_ = 0;
-
         return this;
       }
 
@@ -381,10 +325,19 @@ public final class BreakoutBrickInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo buildPartial() {
         emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo result = new emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo(this);
-        result.hp_ = hp_;
-        result.elementType_ = elementType_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.hp_ = hp_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.elementType_ = elementType_;
+        }
       }
 
       @java.lang.Override
@@ -437,7 +390,7 @@ public final class BreakoutBrickInfoOuterClass {
         if (other.getElementType() != 0) {
           setElementType(other.getElementType());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -452,19 +405,43 @@ public final class BreakoutBrickInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                hp_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                elementType_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int hp_ ;
       /**
@@ -481,8 +458,9 @@ public final class BreakoutBrickInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setHp(int value) {
-        
+
         hp_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -491,7 +469,7 @@ public final class BreakoutBrickInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearHp() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         hp_ = 0;
         onChanged();
         return this;
@@ -512,8 +490,9 @@ public final class BreakoutBrickInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setElementType(int value) {
-        
+
         elementType_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -522,7 +501,7 @@ public final class BreakoutBrickInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearElementType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         elementType_ = 0;
         onChanged();
         return this;
@@ -560,7 +539,18 @@ public final class BreakoutBrickInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new BreakoutBrickInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

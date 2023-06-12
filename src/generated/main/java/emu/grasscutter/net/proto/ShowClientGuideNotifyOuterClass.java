@@ -19,12 +19,12 @@ public final class ShowClientGuideNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string guide_name = 11;</code>
+     * <code>string guide_name = 14;</code>
      * @return The guideName.
      */
     java.lang.String getGuideName();
     /**
-     * <code>string guide_name = 11;</code>
+     * <code>string guide_name = 14;</code>
      * @return The bytes for guideName.
      */
     com.google.protobuf.ByteString
@@ -32,8 +32,8 @@ public final class ShowClientGuideNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 3399
-   * Obf: FKCLONJPIHM
+   * CmdId: 3382
+   * Name: DELAPOPINGI
    * </pre>
    *
    * Protobuf type {@code ShowClientGuideNotify}
@@ -58,54 +58,6 @@ public final class ShowClientGuideNotifyOuterClass {
       return new ShowClientGuideNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ShowClientGuideNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 90: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              guideName_ = s;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.internal_static_ShowClientGuideNotify_descriptor;
@@ -119,10 +71,11 @@ public final class ShowClientGuideNotifyOuterClass {
               emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify.class, emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify.Builder.class);
     }
 
-    public static final int GUIDE_NAME_FIELD_NUMBER = 11;
-    private volatile java.lang.Object guideName_;
+    public static final int GUIDE_NAME_FIELD_NUMBER = 14;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object guideName_ = "";
     /**
-     * <code>string guide_name = 11;</code>
+     * <code>string guide_name = 14;</code>
      * @return The guideName.
      */
     @java.lang.Override
@@ -139,7 +92,7 @@ public final class ShowClientGuideNotifyOuterClass {
       }
     }
     /**
-     * <code>string guide_name = 11;</code>
+     * <code>string guide_name = 14;</code>
      * @return The bytes for guideName.
      */
     @java.lang.Override
@@ -172,9 +125,9 @@ public final class ShowClientGuideNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(guideName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, guideName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, guideName_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -184,9 +137,9 @@ public final class ShowClientGuideNotifyOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(guideName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, guideName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, guideName_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -203,7 +156,7 @@ public final class ShowClientGuideNotifyOuterClass {
 
       if (!getGuideName()
           .equals(other.getGuideName())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -216,7 +169,7 @@ public final class ShowClientGuideNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + GUIDE_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getGuideName().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -265,11 +218,13 @@ public final class ShowClientGuideNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -313,8 +268,8 @@ public final class ShowClientGuideNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3399
-     * Obf: FKCLONJPIHM
+     * CmdId: 3382
+     * Name: DELAPOPINGI
      * </pre>
      *
      * Protobuf type {@code ShowClientGuideNotify}
@@ -338,24 +293,19 @@ public final class ShowClientGuideNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         guideName_ = "";
-
         return this;
       }
 
@@ -382,9 +332,16 @@ public final class ShowClientGuideNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify buildPartial() {
         emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify result = new emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify(this);
-        result.guideName_ = guideName_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.guideName_ = guideName_;
+        }
       }
 
       @java.lang.Override
@@ -433,9 +390,10 @@ public final class ShowClientGuideNotifyOuterClass {
         if (other == emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify.getDefaultInstance()) return this;
         if (!other.getGuideName().isEmpty()) {
           guideName_ = other.guideName_;
+          bitField0_ |= 0x00000001;
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -450,23 +408,42 @@ public final class ShowClientGuideNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 114: {
+                guideName_ = input.readStringRequireUtf8();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 114
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ShowClientGuideNotifyOuterClass.ShowClientGuideNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private java.lang.Object guideName_ = "";
       /**
-       * <code>string guide_name = 11;</code>
+       * <code>string guide_name = 14;</code>
        * @return The guideName.
        */
       public java.lang.String getGuideName() {
@@ -482,7 +459,7 @@ public final class ShowClientGuideNotifyOuterClass {
         }
       }
       /**
-       * <code>string guide_name = 11;</code>
+       * <code>string guide_name = 14;</code>
        * @return The bytes for guideName.
        */
       public com.google.protobuf.ByteString
@@ -499,43 +476,39 @@ public final class ShowClientGuideNotifyOuterClass {
         }
       }
       /**
-       * <code>string guide_name = 11;</code>
+       * <code>string guide_name = 14;</code>
        * @param value The guideName to set.
        * @return This builder for chaining.
        */
       public Builder setGuideName(
           java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        if (value == null) { throw new NullPointerException(); }
         guideName_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>string guide_name = 11;</code>
+       * <code>string guide_name = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuideName() {
-        
         guideName_ = getDefaultInstance().getGuideName();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
       /**
-       * <code>string guide_name = 11;</code>
+       * <code>string guide_name = 14;</code>
        * @param value The bytes for guideName to set.
        * @return This builder for chaining.
        */
       public Builder setGuideNameBytes(
           com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
         guideName_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -572,7 +545,18 @@ public final class ShowClientGuideNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ShowClientGuideNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -607,7 +591,7 @@ public final class ShowClientGuideNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ShowClientGuideNotify.proto\"+\n\025ShowCli" +
-      "entGuideNotify\022\022\n\nguide_name\030\013 \001(\tB\033\n\031em" +
+      "entGuideNotify\022\022\n\nguide_name\030\016 \001(\tB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

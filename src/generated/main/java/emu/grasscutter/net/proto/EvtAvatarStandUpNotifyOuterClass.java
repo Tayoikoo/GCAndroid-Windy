@@ -19,33 +19,41 @@ public final class EvtAvatarStandUpNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 direction = 12;</code>
-     * @return The direction.
+     * <code>uint64 chair_id = 15;</code>
+     * @return The chairId.
      */
-    int getDirection();
+    long getChairId();
 
     /**
-     * <code>uint32 entity_id = 6;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
-
-    /**
-     * <code>int32 performId = 10;</code>
+     * <pre>
+     * GFBDIAMIIJD
+     * </pre>
+     *
+     * <code>int32 performId = 13;</code>
      * @return The performId.
      */
     int getPerformId();
 
     /**
-     * <code>uint64 chair_id = 14;</code>
-     * @return The chairId.
+     * <pre>
+     * NEAMEEDBKHM
+     * </pre>
+     *
+     * <code>int32 direction = 14;</code>
+     * @return The direction.
      */
-    long getChairId();
+    int getDirection();
+
+    /**
+     * <code>uint32 entity_id = 11;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
   }
   /**
    * <pre>
-   * CmdId: 349
-   * Obf: AMIICFPACPC
+   * CmdId: 373
+   * Name: HKNJGMEMBOD
    * </pre>
    *
    * Protobuf type {@code EvtAvatarStandUpNotify}
@@ -69,68 +77,6 @@ public final class EvtAvatarStandUpNotifyOuterClass {
       return new EvtAvatarStandUpNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private EvtAvatarStandUpNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 48: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              performId_ = input.readInt32();
-              break;
-            }
-            case 96: {
-
-              direction_ = input.readInt32();
-              break;
-            }
-            case 112: {
-
-              chairId_ = input.readUInt64();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.internal_static_EvtAvatarStandUpNotify_descriptor;
@@ -144,32 +90,25 @@ public final class EvtAvatarStandUpNotifyOuterClass {
               emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify.class, emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify.Builder.class);
     }
 
-    public static final int DIRECTION_FIELD_NUMBER = 12;
-    private int direction_;
+    public static final int CHAIR_ID_FIELD_NUMBER = 15;
+    private long chairId_ = 0L;
     /**
-     * <code>int32 direction = 12;</code>
-     * @return The direction.
+     * <code>uint64 chair_id = 15;</code>
+     * @return The chairId.
      */
     @java.lang.Override
-    public int getDirection() {
-      return direction_;
+    public long getChairId() {
+      return chairId_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 6;
-    private int entityId_;
+    public static final int PERFORMID_FIELD_NUMBER = 13;
+    private int performId_ = 0;
     /**
-     * <code>uint32 entity_id = 6;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
-    public static final int PERFORMID_FIELD_NUMBER = 10;
-    private int performId_;
-    /**
-     * <code>int32 performId = 10;</code>
+     * <pre>
+     * GFBDIAMIIJD
+     * </pre>
+     *
+     * <code>int32 performId = 13;</code>
      * @return The performId.
      */
     @java.lang.Override
@@ -177,15 +116,30 @@ public final class EvtAvatarStandUpNotifyOuterClass {
       return performId_;
     }
 
-    public static final int CHAIR_ID_FIELD_NUMBER = 14;
-    private long chairId_;
+    public static final int DIRECTION_FIELD_NUMBER = 14;
+    private int direction_ = 0;
     /**
-     * <code>uint64 chair_id = 14;</code>
-     * @return The chairId.
+     * <pre>
+     * NEAMEEDBKHM
+     * </pre>
+     *
+     * <code>int32 direction = 14;</code>
+     * @return The direction.
      */
     @java.lang.Override
-    public long getChairId() {
-      return chairId_;
+    public int getDirection() {
+      return direction_;
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 11;
+    private int entityId_ = 0;
+    /**
+     * <code>uint32 entity_id = 11;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,18 +157,18 @@ public final class EvtAvatarStandUpNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (entityId_ != 0) {
-        output.writeUInt32(6, entityId_);
+        output.writeUInt32(11, entityId_);
       }
       if (performId_ != 0) {
-        output.writeInt32(10, performId_);
+        output.writeInt32(13, performId_);
       }
       if (direction_ != 0) {
-        output.writeInt32(12, direction_);
+        output.writeInt32(14, direction_);
       }
       if (chairId_ != 0L) {
-        output.writeUInt64(14, chairId_);
+        output.writeUInt64(15, chairId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -225,21 +179,21 @@ public final class EvtAvatarStandUpNotifyOuterClass {
       size = 0;
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, entityId_);
+          .computeUInt32Size(11, entityId_);
       }
       if (performId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, performId_);
+          .computeInt32Size(13, performId_);
       }
       if (direction_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, direction_);
+          .computeInt32Size(14, direction_);
       }
       if (chairId_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(14, chairId_);
+          .computeUInt64Size(15, chairId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -254,15 +208,15 @@ public final class EvtAvatarStandUpNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify other = (emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify) obj;
 
+      if (getChairId()
+          != other.getChairId()) return false;
+      if (getPerformId()
+          != other.getPerformId()) return false;
       if (getDirection()
           != other.getDirection()) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
-      if (getPerformId()
-          != other.getPerformId()) return false;
-      if (getChairId()
-          != other.getChairId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -273,16 +227,16 @@ public final class EvtAvatarStandUpNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CHAIR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getChairId());
+      hash = (37 * hash) + PERFORMID_FIELD_NUMBER;
+      hash = (53 * hash) + getPerformId();
       hash = (37 * hash) + DIRECTION_FIELD_NUMBER;
       hash = (53 * hash) + getDirection();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + PERFORMID_FIELD_NUMBER;
-      hash = (53 * hash) + getPerformId();
-      hash = (37 * hash) + CHAIR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getChairId());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -331,11 +285,13 @@ public final class EvtAvatarStandUpNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -379,8 +335,8 @@ public final class EvtAvatarStandUpNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 349
-     * Obf: AMIICFPACPC
+     * CmdId: 373
+     * Name: HKNJGMEMBOD
      * </pre>
      *
      * Protobuf type {@code EvtAvatarStandUpNotify}
@@ -404,30 +360,22 @@ public final class EvtAvatarStandUpNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        direction_ = 0;
-
-        entityId_ = 0;
-
-        performId_ = 0;
-
+        bitField0_ = 0;
         chairId_ = 0L;
-
+        performId_ = 0;
+        direction_ = 0;
+        entityId_ = 0;
         return this;
       }
 
@@ -454,12 +402,25 @@ public final class EvtAvatarStandUpNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify buildPartial() {
         emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify result = new emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify(this);
-        result.direction_ = direction_;
-        result.entityId_ = entityId_;
-        result.performId_ = performId_;
-        result.chairId_ = chairId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.chairId_ = chairId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.performId_ = performId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.direction_ = direction_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.entityId_ = entityId_;
+        }
       }
 
       @java.lang.Override
@@ -506,19 +467,19 @@ public final class EvtAvatarStandUpNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify other) {
         if (other == emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify.getDefaultInstance()) return this;
+        if (other.getChairId() != 0L) {
+          setChairId(other.getChairId());
+        }
+        if (other.getPerformId() != 0) {
+          setPerformId(other.getPerformId());
+        }
         if (other.getDirection() != 0) {
           setDirection(other.getDirection());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        if (other.getPerformId() != 0) {
-          setPerformId(other.getPerformId());
-        }
-        if (other.getChairId() != 0L) {
-          setChairId(other.getChairId());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -533,116 +494,57 @@ public final class EvtAvatarStandUpNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 88: {
+                entityId_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 88
+              case 104: {
+                performId_ = input.readInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 104
+              case 112: {
+                direction_ = input.readInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 112
+              case 120: {
+                chairId_ = input.readUInt64();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.EvtAvatarStandUpNotifyOuterClass.EvtAvatarStandUpNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int direction_ ;
-      /**
-       * <code>int32 direction = 12;</code>
-       * @return The direction.
-       */
-      @java.lang.Override
-      public int getDirection() {
-        return direction_;
-      }
-      /**
-       * <code>int32 direction = 12;</code>
-       * @param value The direction to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDirection(int value) {
-        
-        direction_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 direction = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDirection() {
-        
-        direction_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 6;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 6;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int performId_ ;
-      /**
-       * <code>int32 performId = 10;</code>
-       * @return The performId.
-       */
-      @java.lang.Override
-      public int getPerformId() {
-        return performId_;
-      }
-      /**
-       * <code>int32 performId = 10;</code>
-       * @param value The performId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPerformId(int value) {
-        
-        performId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 performId = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPerformId() {
-        
-        performId_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private long chairId_ ;
       /**
-       * <code>uint64 chair_id = 14;</code>
+       * <code>uint64 chair_id = 15;</code>
        * @return The chairId.
        */
       @java.lang.Override
@@ -650,23 +552,144 @@ public final class EvtAvatarStandUpNotifyOuterClass {
         return chairId_;
       }
       /**
-       * <code>uint64 chair_id = 14;</code>
+       * <code>uint64 chair_id = 15;</code>
        * @param value The chairId to set.
        * @return This builder for chaining.
        */
       public Builder setChairId(long value) {
-        
+
         chairId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 chair_id = 14;</code>
+       * <code>uint64 chair_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearChairId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         chairId_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int performId_ ;
+      /**
+       * <pre>
+       * GFBDIAMIIJD
+       * </pre>
+       *
+       * <code>int32 performId = 13;</code>
+       * @return The performId.
+       */
+      @java.lang.Override
+      public int getPerformId() {
+        return performId_;
+      }
+      /**
+       * <pre>
+       * GFBDIAMIIJD
+       * </pre>
+       *
+       * <code>int32 performId = 13;</code>
+       * @param value The performId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPerformId(int value) {
+
+        performId_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * GFBDIAMIIJD
+       * </pre>
+       *
+       * <code>int32 performId = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPerformId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        performId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int direction_ ;
+      /**
+       * <pre>
+       * NEAMEEDBKHM
+       * </pre>
+       *
+       * <code>int32 direction = 14;</code>
+       * @return The direction.
+       */
+      @java.lang.Override
+      public int getDirection() {
+        return direction_;
+      }
+      /**
+       * <pre>
+       * NEAMEEDBKHM
+       * </pre>
+       *
+       * <code>int32 direction = 14;</code>
+       * @param value The direction to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDirection(int value) {
+
+        direction_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * NEAMEEDBKHM
+       * </pre>
+       *
+       * <code>int32 direction = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDirection() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        direction_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 11;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 11;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+
+        entityId_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        entityId_ = 0;
         onChanged();
         return this;
       }
@@ -703,7 +726,18 @@ public final class EvtAvatarStandUpNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new EvtAvatarStandUpNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -738,9 +772,9 @@ public final class EvtAvatarStandUpNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034EvtAvatarStandUpNotify.proto\"c\n\026EvtAva" +
-      "tarStandUpNotify\022\021\n\tdirection\030\014 \001(\005\022\021\n\te" +
-      "ntity_id\030\006 \001(\r\022\021\n\tperformId\030\n \001(\005\022\020\n\010cha" +
-      "ir_id\030\016 \001(\004B\033\n\031emu.grasscutter.net.proto" +
+      "tarStandUpNotify\022\020\n\010chair_id\030\017 \001(\004\022\021\n\tpe" +
+      "rformId\030\r \001(\005\022\021\n\tdirection\030\016 \001(\005\022\021\n\tenti" +
+      "ty_id\030\013 \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -752,7 +786,7 @@ public final class EvtAvatarStandUpNotifyOuterClass {
     internal_static_EvtAvatarStandUpNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtAvatarStandUpNotify_descriptor,
-        new java.lang.String[] { "Direction", "EntityId", "PerformId", "ChairId", });
+        new java.lang.String[] { "ChairId", "PerformId", "Direction", "EntityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

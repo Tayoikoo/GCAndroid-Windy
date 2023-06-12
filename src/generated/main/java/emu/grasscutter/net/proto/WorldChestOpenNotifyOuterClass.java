@@ -19,27 +19,27 @@ public final class WorldChestOpenNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_id = 11;</code>
-     * @return The groupId.
+     * <code>uint32 scene_id = 4;</code>
+     * @return The sceneId.
      */
-    int getGroupId();
+    int getSceneId();
 
     /**
-     * <code>uint32 config_id = 6;</code>
+     * <code>uint32 config_id = 9;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
-     * <code>uint32 scene_id = 2;</code>
-     * @return The sceneId.
+     * <code>uint32 group_id = 7;</code>
+     * @return The groupId.
      */
-    int getSceneId();
+    int getGroupId();
   }
   /**
    * <pre>
-   * CmdId: 3098
-   * Obf: GOCBFIPGBEC
+   * CmdId: 3203
+   * Name: FHHIKGOMKPK
    * </pre>
    *
    * Protobuf type {@code WorldChestOpenNotify}
@@ -63,63 +63,6 @@ public final class WorldChestOpenNotifyOuterClass {
       return new WorldChestOpenNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private WorldChestOpenNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 16: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              configId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              groupId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.internal_static_WorldChestOpenNotify_descriptor;
@@ -133,21 +76,21 @@ public final class WorldChestOpenNotifyOuterClass {
               emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify.class, emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify.Builder.class);
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 11;
-    private int groupId_;
+    public static final int SCENE_ID_FIELD_NUMBER = 4;
+    private int sceneId_ = 0;
     /**
-     * <code>uint32 group_id = 11;</code>
-     * @return The groupId.
+     * <code>uint32 scene_id = 4;</code>
+     * @return The sceneId.
      */
     @java.lang.Override
-    public int getGroupId() {
-      return groupId_;
+    public int getSceneId() {
+      return sceneId_;
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 6;
-    private int configId_;
+    public static final int CONFIG_ID_FIELD_NUMBER = 9;
+    private int configId_ = 0;
     /**
-     * <code>uint32 config_id = 6;</code>
+     * <code>uint32 config_id = 9;</code>
      * @return The configId.
      */
     @java.lang.Override
@@ -155,15 +98,15 @@ public final class WorldChestOpenNotifyOuterClass {
       return configId_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 2;
-    private int sceneId_;
+    public static final int GROUP_ID_FIELD_NUMBER = 7;
+    private int groupId_ = 0;
     /**
-     * <code>uint32 scene_id = 2;</code>
-     * @return The sceneId.
+     * <code>uint32 group_id = 7;</code>
+     * @return The groupId.
      */
     @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
+    public int getGroupId() {
+      return groupId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,15 +124,15 @@ public final class WorldChestOpenNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (sceneId_ != 0) {
-        output.writeUInt32(2, sceneId_);
-      }
-      if (configId_ != 0) {
-        output.writeUInt32(6, configId_);
+        output.writeUInt32(4, sceneId_);
       }
       if (groupId_ != 0) {
-        output.writeUInt32(11, groupId_);
+        output.writeUInt32(7, groupId_);
       }
-      unknownFields.writeTo(output);
+      if (configId_ != 0) {
+        output.writeUInt32(9, configId_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -200,17 +143,17 @@ public final class WorldChestOpenNotifyOuterClass {
       size = 0;
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, sceneId_);
-      }
-      if (configId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, configId_);
+          .computeUInt32Size(4, sceneId_);
       }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, groupId_);
+          .computeUInt32Size(7, groupId_);
       }
-      size += unknownFields.getSerializedSize();
+      if (configId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, configId_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -225,13 +168,13 @@ public final class WorldChestOpenNotifyOuterClass {
       }
       emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify other = (emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify) obj;
 
-      if (getGroupId()
-          != other.getGroupId()) return false;
-      if (getConfigId()
-          != other.getConfigId()) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getConfigId()
+          != other.getConfigId()) return false;
+      if (getGroupId()
+          != other.getGroupId()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -242,13 +185,13 @@ public final class WorldChestOpenNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupId();
-      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getConfigId();
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getConfigId();
+      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +240,13 @@ public final class WorldChestOpenNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,8 +290,8 @@ public final class WorldChestOpenNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3098
-     * Obf: GOCBFIPGBEC
+     * CmdId: 3203
+     * Name: FHHIKGOMKPK
      * </pre>
      *
      * Protobuf type {@code WorldChestOpenNotify}
@@ -370,28 +315,21 @@ public final class WorldChestOpenNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        groupId_ = 0;
-
-        configId_ = 0;
-
+        bitField0_ = 0;
         sceneId_ = 0;
-
+        configId_ = 0;
+        groupId_ = 0;
         return this;
       }
 
@@ -418,11 +356,22 @@ public final class WorldChestOpenNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify buildPartial() {
         emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify result = new emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify(this);
-        result.groupId_ = groupId_;
-        result.configId_ = configId_;
-        result.sceneId_ = sceneId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.sceneId_ = sceneId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.configId_ = configId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.groupId_ = groupId_;
+        }
       }
 
       @java.lang.Override
@@ -469,16 +418,16 @@ public final class WorldChestOpenNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify other) {
         if (other == emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify.getDefaultInstance()) return this;
-        if (other.getGroupId() != 0) {
-          setGroupId(other.getGroupId());
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
         }
         if (other.getConfigId() != 0) {
           setConfigId(other.getConfigId());
         }
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
+        if (other.getGroupId() != 0) {
+          setGroupId(other.getGroupId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -493,85 +442,52 @@ public final class WorldChestOpenNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 32: {
+                sceneId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 32
+              case 56: {
+                groupId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 56
+              case 72: {
+                configId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 72
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.WorldChestOpenNotifyOuterClass.WorldChestOpenNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int groupId_ ;
-      /**
-       * <code>uint32 group_id = 11;</code>
-       * @return The groupId.
-       */
-      @java.lang.Override
-      public int getGroupId() {
-        return groupId_;
-      }
-      /**
-       * <code>uint32 group_id = 11;</code>
-       * @param value The groupId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGroupId(int value) {
-        
-        groupId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 group_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGroupId() {
-        
-        groupId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int configId_ ;
-      /**
-       * <code>uint32 config_id = 6;</code>
-       * @return The configId.
-       */
-      @java.lang.Override
-      public int getConfigId() {
-        return configId_;
-      }
-      /**
-       * <code>uint32 config_id = 6;</code>
-       * @param value The configId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setConfigId(int value) {
-        
-        configId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 config_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearConfigId() {
-        
-        configId_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 2;</code>
+       * <code>uint32 scene_id = 4;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -579,23 +495,88 @@ public final class WorldChestOpenNotifyOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 2;</code>
+       * <code>uint32 scene_id = 4;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
       public Builder setSceneId(int value) {
-        
+
         sceneId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 scene_id = 2;</code>
+       * <code>uint32 scene_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int configId_ ;
+      /**
+       * <code>uint32 config_id = 9;</code>
+       * @return The configId.
+       */
+      @java.lang.Override
+      public int getConfigId() {
+        return configId_;
+      }
+      /**
+       * <code>uint32 config_id = 9;</code>
+       * @param value The configId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setConfigId(int value) {
+
+        configId_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 config_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearConfigId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        configId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int groupId_ ;
+      /**
+       * <code>uint32 group_id = 7;</code>
+       * @return The groupId.
+       */
+      @java.lang.Override
+      public int getGroupId() {
+        return groupId_;
+      }
+      /**
+       * <code>uint32 group_id = 7;</code>
+       * @param value The groupId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGroupId(int value) {
+
+        groupId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 group_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGroupId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        groupId_ = 0;
         onChanged();
         return this;
       }
@@ -632,7 +613,18 @@ public final class WorldChestOpenNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new WorldChestOpenNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -667,8 +659,8 @@ public final class WorldChestOpenNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032WorldChestOpenNotify.proto\"M\n\024WorldChe" +
-      "stOpenNotify\022\020\n\010group_id\030\013 \001(\r\022\021\n\tconfig" +
-      "_id\030\006 \001(\r\022\020\n\010scene_id\030\002 \001(\rB\033\n\031emu.grass" +
+      "stOpenNotify\022\020\n\010scene_id\030\004 \001(\r\022\021\n\tconfig" +
+      "_id\030\t \001(\r\022\020\n\010group_id\030\007 \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -680,7 +672,7 @@ public final class WorldChestOpenNotifyOuterClass {
     internal_static_WorldChestOpenNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WorldChestOpenNotify_descriptor,
-        new java.lang.String[] { "GroupId", "ConfigId", "SceneId", });
+        new java.lang.String[] { "SceneId", "ConfigId", "GroupId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

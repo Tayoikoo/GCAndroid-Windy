@@ -19,17 +19,17 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+     * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
      * @return A list containing the allUnlockedBgmIdList.
      */
     java.util.List<java.lang.Integer> getAllUnlockedBgmIdListList();
     /**
-     * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+     * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
      * @return The count of allUnlockedBgmIdList.
      */
     int getAllUnlockedBgmIdListCount();
     /**
-     * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+     * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The allUnlockedBgmIdList at the given index.
      */
@@ -37,8 +37,8 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4455
-   * Obf: MOKMFLGOAKN
+   * CmdId: 4820
+   * Name: KCKLCFKEGLC
    * </pre>
    *
    * Protobuf type {@code HomeAllUnlockedBgmIdListNotify}
@@ -63,73 +63,6 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
       return new HomeAllUnlockedBgmIdListNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private HomeAllUnlockedBgmIdListNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 104: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                allUnlockedBgmIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              allUnlockedBgmIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 106: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                allUnlockedBgmIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                allUnlockedBgmIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          allUnlockedBgmIdList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.internal_static_HomeAllUnlockedBgmIdListNotify_descriptor;
@@ -143,10 +76,11 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
               emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.HomeAllUnlockedBgmIdListNotify.class, emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.HomeAllUnlockedBgmIdListNotify.Builder.class);
     }
 
-    public static final int ALL_UNLOCKED_BGM_ID_LIST_FIELD_NUMBER = 13;
+    public static final int ALL_UNLOCKED_BGM_ID_LIST_FIELD_NUMBER = 9;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList allUnlockedBgmIdList_;
     /**
-     * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+     * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
      * @return A list containing the allUnlockedBgmIdList.
      */
     @java.lang.Override
@@ -155,14 +89,14 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
       return allUnlockedBgmIdList_;
     }
     /**
-     * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+     * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
      * @return The count of allUnlockedBgmIdList.
      */
     public int getAllUnlockedBgmIdListCount() {
       return allUnlockedBgmIdList_.size();
     }
     /**
-     * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+     * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The allUnlockedBgmIdList at the given index.
      */
@@ -187,13 +121,13 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getAllUnlockedBgmIdListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(allUnlockedBgmIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < allUnlockedBgmIdList_.size(); i++) {
         output.writeUInt32NoTag(allUnlockedBgmIdList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -216,7 +150,7 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
         }
         allUnlockedBgmIdListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -233,7 +167,7 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
 
       if (!getAllUnlockedBgmIdListList()
           .equals(other.getAllUnlockedBgmIdListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -248,7 +182,7 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
         hash = (37 * hash) + ALL_UNLOCKED_BGM_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAllUnlockedBgmIdListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +231,13 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.HomeAllUnlockedBgmIdListNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.HomeAllUnlockedBgmIdListNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,8 +281,8 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4455
-     * Obf: MOKMFLGOAKN
+     * CmdId: 4820
+     * Name: KCKLCFKEGLC
      * </pre>
      *
      * Protobuf type {@code HomeAllUnlockedBgmIdListNotify}
@@ -370,24 +306,19 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.HomeAllUnlockedBgmIdListNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         allUnlockedBgmIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -414,14 +345,22 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.HomeAllUnlockedBgmIdListNotify buildPartial() {
         emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.HomeAllUnlockedBgmIdListNotify result = new emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.HomeAllUnlockedBgmIdListNotify(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.HomeAllUnlockedBgmIdListNotify result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           allUnlockedBgmIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.allUnlockedBgmIdList_ = allUnlockedBgmIdList_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.HomeAllUnlockedBgmIdListNotify result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -478,7 +417,7 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -493,17 +432,46 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.HomeAllUnlockedBgmIdListNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 72: {
+                int v = input.readUInt32();
+                ensureAllUnlockedBgmIdListIsMutable();
+                allUnlockedBgmIdList_.addInt(v);
+                break;
+              } // case 72
+              case 74: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureAllUnlockedBgmIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  allUnlockedBgmIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 74
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.HomeAllUnlockedBgmIdListNotifyOuterClass.HomeAllUnlockedBgmIdListNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -513,10 +481,10 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           allUnlockedBgmIdList_ = mutableCopy(allUnlockedBgmIdList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
-       * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
        * @return A list containing the allUnlockedBgmIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +493,14 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
                  java.util.Collections.unmodifiableList(allUnlockedBgmIdList_) : allUnlockedBgmIdList_;
       }
       /**
-       * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
        * @return The count of allUnlockedBgmIdList.
        */
       public int getAllUnlockedBgmIdListCount() {
         return allUnlockedBgmIdList_.size();
       }
       /**
-       * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
        * @param index The index of the element to return.
        * @return The allUnlockedBgmIdList at the given index.
        */
@@ -540,31 +508,33 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
         return allUnlockedBgmIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The allUnlockedBgmIdList to set.
        * @return This builder for chaining.
        */
       public Builder setAllUnlockedBgmIdList(
           int index, int value) {
+
         ensureAllUnlockedBgmIdListIsMutable();
         allUnlockedBgmIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
        * @param value The allUnlockedBgmIdList to add.
        * @return This builder for chaining.
        */
       public Builder addAllUnlockedBgmIdList(int value) {
+
         ensureAllUnlockedBgmIdListIsMutable();
         allUnlockedBgmIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
        * @param values The allUnlockedBgmIdList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +547,7 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 all_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 all_unlocked_bgm_id_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearAllUnlockedBgmIdList() {
@@ -619,7 +589,18 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HomeAllUnlockedBgmIdListNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -655,7 +636,7 @@ public final class HomeAllUnlockedBgmIdListNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n$HomeAllUnlockedBgmIdListNotify.proto\"B" +
       "\n\036HomeAllUnlockedBgmIdListNotify\022 \n\030all_" +
-      "unlocked_bgm_id_list\030\r \003(\rB\033\n\031emu.grassc" +
+      "unlocked_bgm_id_list\030\t \003(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,21 +19,21 @@ public final class PlayerCookArgsRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>float qte_range_ratio = 10;</code>
+     * <code>float qte_range_ratio = 14;</code>
      * @return The qteRangeRatio.
      */
     float getQteRangeRatio();
   }
   /**
    * <pre>
-   * CmdId: 101
-   * Obf: CAJPAGGCEHI
+   * CmdId: 119
+   * Name: BHLPANEFMHM
    * </pre>
    *
    * Protobuf type {@code PlayerCookArgsRsp}
@@ -57,58 +57,6 @@ public final class PlayerCookArgsRspOuterClass {
       return new PlayerCookArgsRsp();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private PlayerCookArgsRsp(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 48: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 85: {
-
-              qteRangeRatio_ = input.readFloat();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PlayerCookArgsRspOuterClass.internal_static_PlayerCookArgsRsp_descriptor;
@@ -122,10 +70,10 @@ public final class PlayerCookArgsRspOuterClass {
               emu.grasscutter.net.proto.PlayerCookArgsRspOuterClass.PlayerCookArgsRsp.class, emu.grasscutter.net.proto.PlayerCookArgsRspOuterClass.PlayerCookArgsRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
-    private int retcode_;
+    public static final int RETCODE_FIELD_NUMBER = 4;
+    private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +81,10 @@ public final class PlayerCookArgsRspOuterClass {
       return retcode_;
     }
 
-    public static final int QTE_RANGE_RATIO_FIELD_NUMBER = 10;
-    private float qteRangeRatio_;
+    public static final int QTE_RANGE_RATIO_FIELD_NUMBER = 14;
+    private float qteRangeRatio_ = 0F;
     /**
-     * <code>float qte_range_ratio = 10;</code>
+     * <code>float qte_range_ratio = 14;</code>
      * @return The qteRangeRatio.
      */
     @java.lang.Override
@@ -159,12 +107,12 @@ public final class PlayerCookArgsRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(4, retcode_);
       }
-      if (qteRangeRatio_ != 0F) {
-        output.writeFloat(10, qteRangeRatio_);
+      if (java.lang.Float.floatToRawIntBits(qteRangeRatio_) != 0) {
+        output.writeFloat(14, qteRangeRatio_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -175,13 +123,13 @@ public final class PlayerCookArgsRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(4, retcode_);
       }
-      if (qteRangeRatio_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(qteRangeRatio_) != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(10, qteRangeRatio_);
+          .computeFloatSize(14, qteRangeRatio_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -201,7 +149,7 @@ public final class PlayerCookArgsRspOuterClass {
       if (java.lang.Float.floatToIntBits(getQteRangeRatio())
           != java.lang.Float.floatToIntBits(
               other.getQteRangeRatio())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -217,7 +165,7 @@ public final class PlayerCookArgsRspOuterClass {
       hash = (37 * hash) + QTE_RANGE_RATIO_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getQteRangeRatio());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -266,11 +214,13 @@ public final class PlayerCookArgsRspOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.PlayerCookArgsRspOuterClass.PlayerCookArgsRsp parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.PlayerCookArgsRspOuterClass.PlayerCookArgsRsp parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -314,8 +264,8 @@ public final class PlayerCookArgsRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 101
-     * Obf: CAJPAGGCEHI
+     * CmdId: 119
+     * Name: BHLPANEFMHM
      * </pre>
      *
      * Protobuf type {@code PlayerCookArgsRsp}
@@ -339,26 +289,20 @@ public final class PlayerCookArgsRspOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PlayerCookArgsRspOuterClass.PlayerCookArgsRsp.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         retcode_ = 0;
-
         qteRangeRatio_ = 0F;
-
         return this;
       }
 
@@ -385,10 +329,19 @@ public final class PlayerCookArgsRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerCookArgsRspOuterClass.PlayerCookArgsRsp buildPartial() {
         emu.grasscutter.net.proto.PlayerCookArgsRspOuterClass.PlayerCookArgsRsp result = new emu.grasscutter.net.proto.PlayerCookArgsRspOuterClass.PlayerCookArgsRsp(this);
-        result.retcode_ = retcode_;
-        result.qteRangeRatio_ = qteRangeRatio_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PlayerCookArgsRspOuterClass.PlayerCookArgsRsp result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.retcode_ = retcode_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.qteRangeRatio_ = qteRangeRatio_;
+        }
       }
 
       @java.lang.Override
@@ -441,7 +394,7 @@ public final class PlayerCookArgsRspOuterClass {
         if (other.getQteRangeRatio() != 0F) {
           setQteRangeRatio(other.getQteRangeRatio());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -456,23 +409,47 @@ public final class PlayerCookArgsRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PlayerCookArgsRspOuterClass.PlayerCookArgsRsp parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 32: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 32
+              case 117: {
+                qteRangeRatio_ = input.readFloat();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 117
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PlayerCookArgsRspOuterClass.PlayerCookArgsRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -480,22 +457,23 @@ public final class PlayerCookArgsRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
       public Builder setRetcode(int value) {
-        
+
         retcode_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
         onChanged();
         return this;
@@ -503,7 +481,7 @@ public final class PlayerCookArgsRspOuterClass {
 
       private float qteRangeRatio_ ;
       /**
-       * <code>float qte_range_ratio = 10;</code>
+       * <code>float qte_range_ratio = 14;</code>
        * @return The qteRangeRatio.
        */
       @java.lang.Override
@@ -511,22 +489,23 @@ public final class PlayerCookArgsRspOuterClass {
         return qteRangeRatio_;
       }
       /**
-       * <code>float qte_range_ratio = 10;</code>
+       * <code>float qte_range_ratio = 14;</code>
        * @param value The qteRangeRatio to set.
        * @return This builder for chaining.
        */
       public Builder setQteRangeRatio(float value) {
-        
+
         qteRangeRatio_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>float qte_range_ratio = 10;</code>
+       * <code>float qte_range_ratio = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearQteRangeRatio() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         qteRangeRatio_ = 0F;
         onChanged();
         return this;
@@ -564,7 +543,18 @@ public final class PlayerCookArgsRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PlayerCookArgsRsp(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -599,8 +589,8 @@ public final class PlayerCookArgsRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027PlayerCookArgsRsp.proto\"=\n\021PlayerCookA" +
-      "rgsRsp\022\017\n\007retcode\030\006 \001(\005\022\027\n\017qte_range_rat" +
-      "io\030\n \001(\002B\033\n\031emu.grasscutter.net.protob\006p" +
+      "rgsRsp\022\017\n\007retcode\030\004 \001(\005\022\027\n\017qte_range_rat" +
+      "io\030\016 \001(\002B\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

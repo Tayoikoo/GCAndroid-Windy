@@ -19,27 +19,27 @@ public final class LevelupCityReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 item_num = 12;</code>
+     * <code>uint32 item_num = 13;</code>
      * @return The itemNum.
      */
     int getItemNum();
 
     /**
-     * <code>uint32 scene_id = 4;</code>
-     * @return The sceneId.
-     */
-    int getSceneId();
-
-    /**
-     * <code>uint32 area_id = 1;</code>
+     * <code>uint32 area_id = 3;</code>
      * @return The areaId.
      */
     int getAreaId();
+
+    /**
+     * <code>uint32 scene_id = 5;</code>
+     * @return The sceneId.
+     */
+    int getSceneId();
   }
   /**
    * <pre>
-   * CmdId: 274
-   * Obf: BNHEFCDPKAM
+   * CmdId: 237
+   * Name: FMMDGBFOCNN
    * </pre>
    *
    * Protobuf type {@code LevelupCityReq}
@@ -63,63 +63,6 @@ public final class LevelupCityReqOuterClass {
       return new LevelupCityReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private LevelupCityReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              areaId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              itemNum_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.LevelupCityReqOuterClass.internal_static_LevelupCityReq_descriptor;
@@ -133,10 +76,10 @@ public final class LevelupCityReqOuterClass {
               emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq.class, emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq.Builder.class);
     }
 
-    public static final int ITEM_NUM_FIELD_NUMBER = 12;
-    private int itemNum_;
+    public static final int ITEM_NUM_FIELD_NUMBER = 13;
+    private int itemNum_ = 0;
     /**
-     * <code>uint32 item_num = 12;</code>
+     * <code>uint32 item_num = 13;</code>
      * @return The itemNum.
      */
     @java.lang.Override
@@ -144,26 +87,26 @@ public final class LevelupCityReqOuterClass {
       return itemNum_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 4;
-    private int sceneId_;
+    public static final int AREA_ID_FIELD_NUMBER = 3;
+    private int areaId_ = 0;
     /**
-     * <code>uint32 scene_id = 4;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
-
-    public static final int AREA_ID_FIELD_NUMBER = 1;
-    private int areaId_;
-    /**
-     * <code>uint32 area_id = 1;</code>
+     * <code>uint32 area_id = 3;</code>
      * @return The areaId.
      */
     @java.lang.Override
     public int getAreaId() {
       return areaId_;
+    }
+
+    public static final int SCENE_ID_FIELD_NUMBER = 5;
+    private int sceneId_ = 0;
+    /**
+     * <code>uint32 scene_id = 5;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,15 +124,15 @@ public final class LevelupCityReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (areaId_ != 0) {
-        output.writeUInt32(1, areaId_);
+        output.writeUInt32(3, areaId_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(4, sceneId_);
+        output.writeUInt32(5, sceneId_);
       }
       if (itemNum_ != 0) {
-        output.writeUInt32(12, itemNum_);
+        output.writeUInt32(13, itemNum_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -200,17 +143,17 @@ public final class LevelupCityReqOuterClass {
       size = 0;
       if (areaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, areaId_);
+          .computeUInt32Size(3, areaId_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, sceneId_);
+          .computeUInt32Size(5, sceneId_);
       }
       if (itemNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, itemNum_);
+          .computeUInt32Size(13, itemNum_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -227,11 +170,11 @@ public final class LevelupCityReqOuterClass {
 
       if (getItemNum()
           != other.getItemNum()) return false;
-      if (getSceneId()
-          != other.getSceneId()) return false;
       if (getAreaId()
           != other.getAreaId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getSceneId()
+          != other.getSceneId()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -244,11 +187,11 @@ public final class LevelupCityReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ITEM_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getItemNum();
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
       hash = (37 * hash) + AREA_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAreaId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +240,13 @@ public final class LevelupCityReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,8 +290,8 @@ public final class LevelupCityReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 274
-     * Obf: BNHEFCDPKAM
+     * CmdId: 237
+     * Name: FMMDGBFOCNN
      * </pre>
      *
      * Protobuf type {@code LevelupCityReq}
@@ -370,28 +315,21 @@ public final class LevelupCityReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         itemNum_ = 0;
-
-        sceneId_ = 0;
-
         areaId_ = 0;
-
+        sceneId_ = 0;
         return this;
       }
 
@@ -418,11 +356,22 @@ public final class LevelupCityReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq buildPartial() {
         emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq result = new emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq(this);
-        result.itemNum_ = itemNum_;
-        result.sceneId_ = sceneId_;
-        result.areaId_ = areaId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.itemNum_ = itemNum_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.areaId_ = areaId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.sceneId_ = sceneId_;
+        }
       }
 
       @java.lang.Override
@@ -472,13 +421,13 @@ public final class LevelupCityReqOuterClass {
         if (other.getItemNum() != 0) {
           setItemNum(other.getItemNum());
         }
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
-        }
         if (other.getAreaId() != 0) {
           setAreaId(other.getAreaId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -493,23 +442,52 @@ public final class LevelupCityReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 24: {
+                areaId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 24
+              case 40: {
+                sceneId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 40
+              case 104: {
+                itemNum_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 104
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.LevelupCityReqOuterClass.LevelupCityReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int itemNum_ ;
       /**
-       * <code>uint32 item_num = 12;</code>
+       * <code>uint32 item_num = 13;</code>
        * @return The itemNum.
        */
       @java.lang.Override
@@ -517,61 +495,31 @@ public final class LevelupCityReqOuterClass {
         return itemNum_;
       }
       /**
-       * <code>uint32 item_num = 12;</code>
+       * <code>uint32 item_num = 13;</code>
        * @param value The itemNum to set.
        * @return This builder for chaining.
        */
       public Builder setItemNum(int value) {
-        
+
         itemNum_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 item_num = 12;</code>
+       * <code>uint32 item_num = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemNum() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         itemNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int sceneId_ ;
-      /**
-       * <code>uint32 scene_id = 4;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>uint32 scene_id = 4;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-        
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
-        
-        sceneId_ = 0;
         onChanged();
         return this;
       }
 
       private int areaId_ ;
       /**
-       * <code>uint32 area_id = 1;</code>
+       * <code>uint32 area_id = 3;</code>
        * @return The areaId.
        */
       @java.lang.Override
@@ -579,23 +527,56 @@ public final class LevelupCityReqOuterClass {
         return areaId_;
       }
       /**
-       * <code>uint32 area_id = 1;</code>
+       * <code>uint32 area_id = 3;</code>
        * @param value The areaId to set.
        * @return This builder for chaining.
        */
       public Builder setAreaId(int value) {
-        
+
         areaId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 area_id = 1;</code>
+       * <code>uint32 area_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearAreaId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         areaId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sceneId_ ;
+      /**
+       * <code>uint32 scene_id = 5;</code>
+       * @return The sceneId.
+       */
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>uint32 scene_id = 5;</code>
+       * @param value The sceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneId(int value) {
+
+        sceneId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scene_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        sceneId_ = 0;
         onChanged();
         return this;
       }
@@ -632,7 +613,18 @@ public final class LevelupCityReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new LevelupCityReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -667,8 +659,8 @@ public final class LevelupCityReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024LevelupCityReq.proto\"E\n\016LevelupCityReq" +
-      "\022\020\n\010item_num\030\014 \001(\r\022\020\n\010scene_id\030\004 \001(\r\022\017\n\007" +
-      "area_id\030\001 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "\022\020\n\010item_num\030\r \001(\r\022\017\n\007area_id\030\003 \001(\r\022\020\n\010s" +
+      "cene_id\030\005 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -680,7 +672,7 @@ public final class LevelupCityReqOuterClass {
     internal_static_LevelupCityReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LevelupCityReq_descriptor,
-        new java.lang.String[] { "ItemNum", "SceneId", "AreaId", });
+        new java.lang.String[] { "ItemNum", "AreaId", "SceneId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

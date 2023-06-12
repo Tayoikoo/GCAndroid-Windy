@@ -19,98 +19,98 @@ public final class AsterActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 CBLMAGNNCGK = 6;</code>
-     * @return The cBLMAGNNCGK.
-     */
-    int getCBLMAGNNCGK();
-
-    /**
-     * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
-     * @return Whether the asterProgress field is set.
-     */
-    boolean hasAsterProgress();
-    /**
-     * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
-     * @return The asterProgress.
-     */
-    emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo getAsterProgress();
-    /**
-     * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
-     */
-    emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfoOrBuilder getAsterProgressOrBuilder();
-
-    /**
-     * <code>bool is_content_closed = 5;</code>
-     * @return The isContentClosed.
-     */
-    boolean getIsContentClosed();
-
-    /**
-     * <code>bool is_special_reward_taken = 4;</code>
-     * @return The isSpecialRewardTaken.
-     */
-    boolean getIsSpecialRewardTaken();
-
-    /**
-     * <code>.AsterLittleDetailInfo aster_little = 3;</code>
-     * @return Whether the asterLittle field is set.
-     */
-    boolean hasAsterLittle();
-    /**
-     * <code>.AsterLittleDetailInfo aster_little = 3;</code>
-     * @return The asterLittle.
-     */
-    emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo getAsterLittle();
-    /**
-     * <code>.AsterLittleDetailInfo aster_little = 3;</code>
-     */
-    emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfoOrBuilder getAsterLittleOrBuilder();
-
-    /**
-     * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-     * @return Whether the asterLarge field is set.
-     */
-    boolean hasAsterLarge();
-    /**
-     * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-     * @return The asterLarge.
-     */
-    emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo getAsterLarge();
-    /**
-     * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-     */
-    emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder getAsterLargeOrBuilder();
-
-    /**
-     * <code>.AsterMidDetailInfo aster_mid = 8;</code>
-     * @return Whether the asterMid field is set.
-     */
-    boolean hasAsterMid();
-    /**
-     * <code>.AsterMidDetailInfo aster_mid = 8;</code>
-     * @return The asterMid.
-     */
-    emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo getAsterMid();
-    /**
-     * <code>.AsterMidDetailInfo aster_mid = 8;</code>
-     */
-    emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfoOrBuilder getAsterMidOrBuilder();
-
-    /**
-     * <code>uint32 content_close_time = 9;</code>
+     * <code>uint32 content_close_time = 13;</code>
      * @return The contentCloseTime.
      */
     int getContentCloseTime();
 
     /**
-     * <code>uint32 CGOCPLCJMBA = 12;</code>
-     * @return The cGOCPLCJMBA.
+     * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
+     * @return Whether the asterProgress field is set.
      */
-    int getCGOCPLCJMBA();
+    boolean hasAsterProgress();
+    /**
+     * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
+     * @return The asterProgress.
+     */
+    emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo getAsterProgress();
+    /**
+     * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
+     */
+    emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfoOrBuilder getAsterProgressOrBuilder();
+
+    /**
+     * <code>.AsterLittleDetailInfo aster_little = 12;</code>
+     * @return Whether the asterLittle field is set.
+     */
+    boolean hasAsterLittle();
+    /**
+     * <code>.AsterLittleDetailInfo aster_little = 12;</code>
+     * @return The asterLittle.
+     */
+    emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo getAsterLittle();
+    /**
+     * <code>.AsterLittleDetailInfo aster_little = 12;</code>
+     */
+    emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfoOrBuilder getAsterLittleOrBuilder();
+
+    /**
+     * <code>.AsterMidDetailInfo aster_mid = 4;</code>
+     * @return Whether the asterMid field is set.
+     */
+    boolean hasAsterMid();
+    /**
+     * <code>.AsterMidDetailInfo aster_mid = 4;</code>
+     * @return The asterMid.
+     */
+    emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo getAsterMid();
+    /**
+     * <code>.AsterMidDetailInfo aster_mid = 4;</code>
+     */
+    emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfoOrBuilder getAsterMidOrBuilder();
+
+    /**
+     * <code>bool is_special_reward_taken = 8;</code>
+     * @return The isSpecialRewardTaken.
+     */
+    boolean getIsSpecialRewardTaken();
+
+    /**
+     * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+     * @return Whether the asterLarge field is set.
+     */
+    boolean hasAsterLarge();
+    /**
+     * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+     * @return The asterLarge.
+     */
+    emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo getAsterLarge();
+    /**
+     * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+     */
+    emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder getAsterLargeOrBuilder();
+
+    /**
+     * <code>bool is_content_closed = 14;</code>
+     * @return The isContentClosed.
+     */
+    boolean getIsContentClosed();
+
+    /**
+     * <code>uint32 MFJDILDLMGP = 11;</code>
+     * @return The mFJDILDLMGP.
+     */
+    int getMFJDILDLMGP();
+
+    /**
+     * <code>uint32 HNJDOJKGDOP = 5;</code>
+     * @return The hNJDOJKGDOP.
+     */
+    int getHNJDOJKGDOP();
   }
   /**
    * <pre>
-   * Obf: NAIBJIHKMIK
+   * Name: BPEIHPFCNLN
    * </pre>
    *
    * Protobuf type {@code AsterActivityDetailInfo}
@@ -134,125 +134,6 @@ public final class AsterActivityDetailInfoOuterClass {
       return new AsterActivityDetailInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private AsterActivityDetailInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 26: {
-              emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo.Builder subBuilder = null;
-              if (asterLittle_ != null) {
-                subBuilder = asterLittle_.toBuilder();
-              }
-              asterLittle_ = input.readMessage(emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(asterLittle_);
-                asterLittle_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 32: {
-
-              isSpecialRewardTaken_ = input.readBool();
-              break;
-            }
-            case 40: {
-
-              isContentClosed_ = input.readBool();
-              break;
-            }
-            case 48: {
-
-              cBLMAGNNCGK_ = input.readUInt32();
-              break;
-            }
-            case 58: {
-              emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder subBuilder = null;
-              if (asterLarge_ != null) {
-                subBuilder = asterLarge_.toBuilder();
-              }
-              asterLarge_ = input.readMessage(emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(asterLarge_);
-                asterLarge_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 66: {
-              emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo.Builder subBuilder = null;
-              if (asterMid_ != null) {
-                subBuilder = asterMid_.toBuilder();
-              }
-              asterMid_ = input.readMessage(emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(asterMid_);
-                asterMid_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 72: {
-
-              contentCloseTime_ = input.readUInt32();
-              break;
-            }
-            case 90: {
-              emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo.Builder subBuilder = null;
-              if (asterProgress_ != null) {
-                subBuilder = asterProgress_.toBuilder();
-              }
-              asterProgress_ = input.readMessage(emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(asterProgress_);
-                asterProgress_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 96: {
-
-              cGOCPLCJMBA_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.internal_static_AsterActivityDetailInfo_descriptor;
@@ -266,147 +147,10 @@ public final class AsterActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo.class, emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo.Builder.class);
     }
 
-    public static final int CBLMAGNNCGK_FIELD_NUMBER = 6;
-    private int cBLMAGNNCGK_;
+    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 13;
+    private int contentCloseTime_ = 0;
     /**
-     * <code>uint32 CBLMAGNNCGK = 6;</code>
-     * @return The cBLMAGNNCGK.
-     */
-    @java.lang.Override
-    public int getCBLMAGNNCGK() {
-      return cBLMAGNNCGK_;
-    }
-
-    public static final int ASTER_PROGRESS_FIELD_NUMBER = 11;
-    private emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo asterProgress_;
-    /**
-     * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
-     * @return Whether the asterProgress field is set.
-     */
-    @java.lang.Override
-    public boolean hasAsterProgress() {
-      return asterProgress_ != null;
-    }
-    /**
-     * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
-     * @return The asterProgress.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo getAsterProgress() {
-      return asterProgress_ == null ? emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo.getDefaultInstance() : asterProgress_;
-    }
-    /**
-     * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfoOrBuilder getAsterProgressOrBuilder() {
-      return getAsterProgress();
-    }
-
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 5;
-    private boolean isContentClosed_;
-    /**
-     * <code>bool is_content_closed = 5;</code>
-     * @return The isContentClosed.
-     */
-    @java.lang.Override
-    public boolean getIsContentClosed() {
-      return isContentClosed_;
-    }
-
-    public static final int IS_SPECIAL_REWARD_TAKEN_FIELD_NUMBER = 4;
-    private boolean isSpecialRewardTaken_;
-    /**
-     * <code>bool is_special_reward_taken = 4;</code>
-     * @return The isSpecialRewardTaken.
-     */
-    @java.lang.Override
-    public boolean getIsSpecialRewardTaken() {
-      return isSpecialRewardTaken_;
-    }
-
-    public static final int ASTER_LITTLE_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo asterLittle_;
-    /**
-     * <code>.AsterLittleDetailInfo aster_little = 3;</code>
-     * @return Whether the asterLittle field is set.
-     */
-    @java.lang.Override
-    public boolean hasAsterLittle() {
-      return asterLittle_ != null;
-    }
-    /**
-     * <code>.AsterLittleDetailInfo aster_little = 3;</code>
-     * @return The asterLittle.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo getAsterLittle() {
-      return asterLittle_ == null ? emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo.getDefaultInstance() : asterLittle_;
-    }
-    /**
-     * <code>.AsterLittleDetailInfo aster_little = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfoOrBuilder getAsterLittleOrBuilder() {
-      return getAsterLittle();
-    }
-
-    public static final int ASTER_LARGE_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo asterLarge_;
-    /**
-     * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-     * @return Whether the asterLarge field is set.
-     */
-    @java.lang.Override
-    public boolean hasAsterLarge() {
-      return asterLarge_ != null;
-    }
-    /**
-     * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-     * @return The asterLarge.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo getAsterLarge() {
-      return asterLarge_ == null ? emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.getDefaultInstance() : asterLarge_;
-    }
-    /**
-     * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder getAsterLargeOrBuilder() {
-      return getAsterLarge();
-    }
-
-    public static final int ASTER_MID_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo asterMid_;
-    /**
-     * <code>.AsterMidDetailInfo aster_mid = 8;</code>
-     * @return Whether the asterMid field is set.
-     */
-    @java.lang.Override
-    public boolean hasAsterMid() {
-      return asterMid_ != null;
-    }
-    /**
-     * <code>.AsterMidDetailInfo aster_mid = 8;</code>
-     * @return The asterMid.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo getAsterMid() {
-      return asterMid_ == null ? emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo.getDefaultInstance() : asterMid_;
-    }
-    /**
-     * <code>.AsterMidDetailInfo aster_mid = 8;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfoOrBuilder getAsterMidOrBuilder() {
-      return getAsterMid();
-    }
-
-    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 9;
-    private int contentCloseTime_;
-    /**
-     * <code>uint32 content_close_time = 9;</code>
+     * <code>uint32 content_close_time = 13;</code>
      * @return The contentCloseTime.
      */
     @java.lang.Override
@@ -414,15 +158,152 @@ public final class AsterActivityDetailInfoOuterClass {
       return contentCloseTime_;
     }
 
-    public static final int CGOCPLCJMBA_FIELD_NUMBER = 12;
-    private int cGOCPLCJMBA_;
+    public static final int ASTER_PROGRESS_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo asterProgress_;
     /**
-     * <code>uint32 CGOCPLCJMBA = 12;</code>
-     * @return The cGOCPLCJMBA.
+     * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
+     * @return Whether the asterProgress field is set.
      */
     @java.lang.Override
-    public int getCGOCPLCJMBA() {
-      return cGOCPLCJMBA_;
+    public boolean hasAsterProgress() {
+      return asterProgress_ != null;
+    }
+    /**
+     * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
+     * @return The asterProgress.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo getAsterProgress() {
+      return asterProgress_ == null ? emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo.getDefaultInstance() : asterProgress_;
+    }
+    /**
+     * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfoOrBuilder getAsterProgressOrBuilder() {
+      return asterProgress_ == null ? emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo.getDefaultInstance() : asterProgress_;
+    }
+
+    public static final int ASTER_LITTLE_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo asterLittle_;
+    /**
+     * <code>.AsterLittleDetailInfo aster_little = 12;</code>
+     * @return Whether the asterLittle field is set.
+     */
+    @java.lang.Override
+    public boolean hasAsterLittle() {
+      return asterLittle_ != null;
+    }
+    /**
+     * <code>.AsterLittleDetailInfo aster_little = 12;</code>
+     * @return The asterLittle.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo getAsterLittle() {
+      return asterLittle_ == null ? emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo.getDefaultInstance() : asterLittle_;
+    }
+    /**
+     * <code>.AsterLittleDetailInfo aster_little = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfoOrBuilder getAsterLittleOrBuilder() {
+      return asterLittle_ == null ? emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo.getDefaultInstance() : asterLittle_;
+    }
+
+    public static final int ASTER_MID_FIELD_NUMBER = 4;
+    private emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo asterMid_;
+    /**
+     * <code>.AsterMidDetailInfo aster_mid = 4;</code>
+     * @return Whether the asterMid field is set.
+     */
+    @java.lang.Override
+    public boolean hasAsterMid() {
+      return asterMid_ != null;
+    }
+    /**
+     * <code>.AsterMidDetailInfo aster_mid = 4;</code>
+     * @return The asterMid.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo getAsterMid() {
+      return asterMid_ == null ? emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo.getDefaultInstance() : asterMid_;
+    }
+    /**
+     * <code>.AsterMidDetailInfo aster_mid = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfoOrBuilder getAsterMidOrBuilder() {
+      return asterMid_ == null ? emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo.getDefaultInstance() : asterMid_;
+    }
+
+    public static final int IS_SPECIAL_REWARD_TAKEN_FIELD_NUMBER = 8;
+    private boolean isSpecialRewardTaken_ = false;
+    /**
+     * <code>bool is_special_reward_taken = 8;</code>
+     * @return The isSpecialRewardTaken.
+     */
+    @java.lang.Override
+    public boolean getIsSpecialRewardTaken() {
+      return isSpecialRewardTaken_;
+    }
+
+    public static final int ASTER_LARGE_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo asterLarge_;
+    /**
+     * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+     * @return Whether the asterLarge field is set.
+     */
+    @java.lang.Override
+    public boolean hasAsterLarge() {
+      return asterLarge_ != null;
+    }
+    /**
+     * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+     * @return The asterLarge.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo getAsterLarge() {
+      return asterLarge_ == null ? emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.getDefaultInstance() : asterLarge_;
+    }
+    /**
+     * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder getAsterLargeOrBuilder() {
+      return asterLarge_ == null ? emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.getDefaultInstance() : asterLarge_;
+    }
+
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 14;
+    private boolean isContentClosed_ = false;
+    /**
+     * <code>bool is_content_closed = 14;</code>
+     * @return The isContentClosed.
+     */
+    @java.lang.Override
+    public boolean getIsContentClosed() {
+      return isContentClosed_;
+    }
+
+    public static final int MFJDILDLMGP_FIELD_NUMBER = 11;
+    private int mFJDILDLMGP_ = 0;
+    /**
+     * <code>uint32 MFJDILDLMGP = 11;</code>
+     * @return The mFJDILDLMGP.
+     */
+    @java.lang.Override
+    public int getMFJDILDLMGP() {
+      return mFJDILDLMGP_;
+    }
+
+    public static final int HNJDOJKGDOP_FIELD_NUMBER = 5;
+    private int hNJDOJKGDOP_ = 0;
+    /**
+     * <code>uint32 HNJDOJKGDOP = 5;</code>
+     * @return The hNJDOJKGDOP.
+     */
+    @java.lang.Override
+    public int getHNJDOJKGDOP() {
+      return hNJDOJKGDOP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -439,34 +320,34 @@ public final class AsterActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (asterLittle_ != null) {
-        output.writeMessage(3, getAsterLittle());
-      }
-      if (isSpecialRewardTaken_ != false) {
-        output.writeBool(4, isSpecialRewardTaken_);
-      }
-      if (isContentClosed_ != false) {
-        output.writeBool(5, isContentClosed_);
-      }
-      if (cBLMAGNNCGK_ != 0) {
-        output.writeUInt32(6, cBLMAGNNCGK_);
+      if (asterProgress_ != null) {
+        output.writeMessage(1, getAsterProgress());
       }
       if (asterLarge_ != null) {
-        output.writeMessage(7, getAsterLarge());
+        output.writeMessage(3, getAsterLarge());
       }
       if (asterMid_ != null) {
-        output.writeMessage(8, getAsterMid());
+        output.writeMessage(4, getAsterMid());
+      }
+      if (hNJDOJKGDOP_ != 0) {
+        output.writeUInt32(5, hNJDOJKGDOP_);
+      }
+      if (isSpecialRewardTaken_ != false) {
+        output.writeBool(8, isSpecialRewardTaken_);
+      }
+      if (mFJDILDLMGP_ != 0) {
+        output.writeUInt32(11, mFJDILDLMGP_);
+      }
+      if (asterLittle_ != null) {
+        output.writeMessage(12, getAsterLittle());
       }
       if (contentCloseTime_ != 0) {
-        output.writeUInt32(9, contentCloseTime_);
+        output.writeUInt32(13, contentCloseTime_);
       }
-      if (asterProgress_ != null) {
-        output.writeMessage(11, getAsterProgress());
+      if (isContentClosed_ != false) {
+        output.writeBool(14, isContentClosed_);
       }
-      if (cGOCPLCJMBA_ != 0) {
-        output.writeUInt32(12, cGOCPLCJMBA_);
-      }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -475,43 +356,43 @@ public final class AsterActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (asterLittle_ != null) {
+      if (asterProgress_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getAsterLittle());
-      }
-      if (isSpecialRewardTaken_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isSpecialRewardTaken_);
-      }
-      if (isContentClosed_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isContentClosed_);
-      }
-      if (cBLMAGNNCGK_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, cBLMAGNNCGK_);
+          .computeMessageSize(1, getAsterProgress());
       }
       if (asterLarge_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getAsterLarge());
+          .computeMessageSize(3, getAsterLarge());
       }
       if (asterMid_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getAsterMid());
+          .computeMessageSize(4, getAsterMid());
+      }
+      if (hNJDOJKGDOP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, hNJDOJKGDOP_);
+      }
+      if (isSpecialRewardTaken_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, isSpecialRewardTaken_);
+      }
+      if (mFJDILDLMGP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, mFJDILDLMGP_);
+      }
+      if (asterLittle_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, getAsterLittle());
       }
       if (contentCloseTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, contentCloseTime_);
+          .computeUInt32Size(13, contentCloseTime_);
       }
-      if (asterProgress_ != null) {
+      if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getAsterProgress());
+          .computeBoolSize(14, isContentClosed_);
       }
-      if (cGOCPLCJMBA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, cGOCPLCJMBA_);
-      }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -526,37 +407,37 @@ public final class AsterActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo other = (emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo) obj;
 
-      if (getCBLMAGNNCGK()
-          != other.getCBLMAGNNCGK()) return false;
+      if (getContentCloseTime()
+          != other.getContentCloseTime()) return false;
       if (hasAsterProgress() != other.hasAsterProgress()) return false;
       if (hasAsterProgress()) {
         if (!getAsterProgress()
             .equals(other.getAsterProgress())) return false;
       }
-      if (getIsContentClosed()
-          != other.getIsContentClosed()) return false;
-      if (getIsSpecialRewardTaken()
-          != other.getIsSpecialRewardTaken()) return false;
       if (hasAsterLittle() != other.hasAsterLittle()) return false;
       if (hasAsterLittle()) {
         if (!getAsterLittle()
             .equals(other.getAsterLittle())) return false;
-      }
-      if (hasAsterLarge() != other.hasAsterLarge()) return false;
-      if (hasAsterLarge()) {
-        if (!getAsterLarge()
-            .equals(other.getAsterLarge())) return false;
       }
       if (hasAsterMid() != other.hasAsterMid()) return false;
       if (hasAsterMid()) {
         if (!getAsterMid()
             .equals(other.getAsterMid())) return false;
       }
-      if (getContentCloseTime()
-          != other.getContentCloseTime()) return false;
-      if (getCGOCPLCJMBA()
-          != other.getCGOCPLCJMBA()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getIsSpecialRewardTaken()
+          != other.getIsSpecialRewardTaken()) return false;
+      if (hasAsterLarge() != other.hasAsterLarge()) return false;
+      if (hasAsterLarge()) {
+        if (!getAsterLarge()
+            .equals(other.getAsterLarge())) return false;
+      }
+      if (getIsContentClosed()
+          != other.getIsContentClosed()) return false;
+      if (getMFJDILDLMGP()
+          != other.getMFJDILDLMGP()) return false;
+      if (getHNJDOJKGDOP()
+          != other.getHNJDOJKGDOP()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -567,35 +448,35 @@ public final class AsterActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CBLMAGNNCGK_FIELD_NUMBER;
-      hash = (53 * hash) + getCBLMAGNNCGK();
+      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getContentCloseTime();
       if (hasAsterProgress()) {
         hash = (37 * hash) + ASTER_PROGRESS_FIELD_NUMBER;
         hash = (53 * hash) + getAsterProgress().hashCode();
       }
-      hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsContentClosed());
-      hash = (37 * hash) + IS_SPECIAL_REWARD_TAKEN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsSpecialRewardTaken());
       if (hasAsterLittle()) {
         hash = (37 * hash) + ASTER_LITTLE_FIELD_NUMBER;
         hash = (53 * hash) + getAsterLittle().hashCode();
-      }
-      if (hasAsterLarge()) {
-        hash = (37 * hash) + ASTER_LARGE_FIELD_NUMBER;
-        hash = (53 * hash) + getAsterLarge().hashCode();
       }
       if (hasAsterMid()) {
         hash = (37 * hash) + ASTER_MID_FIELD_NUMBER;
         hash = (53 * hash) + getAsterMid().hashCode();
       }
-      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getContentCloseTime();
-      hash = (37 * hash) + CGOCPLCJMBA_FIELD_NUMBER;
-      hash = (53 * hash) + getCGOCPLCJMBA();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + IS_SPECIAL_REWARD_TAKEN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsSpecialRewardTaken());
+      if (hasAsterLarge()) {
+        hash = (37 * hash) + ASTER_LARGE_FIELD_NUMBER;
+        hash = (53 * hash) + getAsterLarge().hashCode();
+      }
+      hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsContentClosed());
+      hash = (37 * hash) + MFJDILDLMGP_FIELD_NUMBER;
+      hash = (53 * hash) + getMFJDILDLMGP();
+      hash = (37 * hash) + HNJDOJKGDOP_FIELD_NUMBER;
+      hash = (53 * hash) + getHNJDOJKGDOP();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -644,11 +525,13 @@ public final class AsterActivityDetailInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -692,7 +575,7 @@ public final class AsterActivityDetailInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: NAIBJIHKMIK
+     * Name: BPEIHPFCNLN
      * </pre>
      *
      * Protobuf type {@code AsterActivityDetailInfo}
@@ -716,56 +599,43 @@ public final class AsterActivityDetailInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cBLMAGNNCGK_ = 0;
-
-        if (asterProgressBuilder_ == null) {
-          asterProgress_ = null;
-        } else {
-          asterProgress_ = null;
+        bitField0_ = 0;
+        contentCloseTime_ = 0;
+        asterProgress_ = null;
+        if (asterProgressBuilder_ != null) {
+          asterProgressBuilder_.dispose();
           asterProgressBuilder_ = null;
         }
-        isContentClosed_ = false;
-
-        isSpecialRewardTaken_ = false;
-
-        if (asterLittleBuilder_ == null) {
-          asterLittle_ = null;
-        } else {
-          asterLittle_ = null;
+        asterLittle_ = null;
+        if (asterLittleBuilder_ != null) {
+          asterLittleBuilder_.dispose();
           asterLittleBuilder_ = null;
         }
-        if (asterLargeBuilder_ == null) {
-          asterLarge_ = null;
-        } else {
-          asterLarge_ = null;
-          asterLargeBuilder_ = null;
-        }
-        if (asterMidBuilder_ == null) {
-          asterMid_ = null;
-        } else {
-          asterMid_ = null;
+        asterMid_ = null;
+        if (asterMidBuilder_ != null) {
+          asterMidBuilder_.dispose();
           asterMidBuilder_ = null;
         }
-        contentCloseTime_ = 0;
-
-        cGOCPLCJMBA_ = 0;
-
+        isSpecialRewardTaken_ = false;
+        asterLarge_ = null;
+        if (asterLargeBuilder_ != null) {
+          asterLargeBuilder_.dispose();
+          asterLargeBuilder_ = null;
+        }
+        isContentClosed_ = false;
+        mFJDILDLMGP_ = 0;
+        hNJDOJKGDOP_ = 0;
         return this;
       }
 
@@ -792,33 +662,48 @@ public final class AsterActivityDetailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo result = new emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo(this);
-        result.cBLMAGNNCGK_ = cBLMAGNNCGK_;
-        if (asterProgressBuilder_ == null) {
-          result.asterProgress_ = asterProgress_;
-        } else {
-          result.asterProgress_ = asterProgressBuilder_.build();
-        }
-        result.isContentClosed_ = isContentClosed_;
-        result.isSpecialRewardTaken_ = isSpecialRewardTaken_;
-        if (asterLittleBuilder_ == null) {
-          result.asterLittle_ = asterLittle_;
-        } else {
-          result.asterLittle_ = asterLittleBuilder_.build();
-        }
-        if (asterLargeBuilder_ == null) {
-          result.asterLarge_ = asterLarge_;
-        } else {
-          result.asterLarge_ = asterLargeBuilder_.build();
-        }
-        if (asterMidBuilder_ == null) {
-          result.asterMid_ = asterMid_;
-        } else {
-          result.asterMid_ = asterMidBuilder_.build();
-        }
-        result.contentCloseTime_ = contentCloseTime_;
-        result.cGOCPLCJMBA_ = cGOCPLCJMBA_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.contentCloseTime_ = contentCloseTime_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.asterProgress_ = asterProgressBuilder_ == null
+              ? asterProgress_
+              : asterProgressBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.asterLittle_ = asterLittleBuilder_ == null
+              ? asterLittle_
+              : asterLittleBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.asterMid_ = asterMidBuilder_ == null
+              ? asterMid_
+              : asterMidBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.isSpecialRewardTaken_ = isSpecialRewardTaken_;
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
+          result.asterLarge_ = asterLargeBuilder_ == null
+              ? asterLarge_
+              : asterLargeBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000040) != 0)) {
+          result.isContentClosed_ = isContentClosed_;
+        }
+        if (((from_bitField0_ & 0x00000080) != 0)) {
+          result.mFJDILDLMGP_ = mFJDILDLMGP_;
+        }
+        if (((from_bitField0_ & 0x00000100) != 0)) {
+          result.hNJDOJKGDOP_ = hNJDOJKGDOP_;
+        }
       }
 
       @java.lang.Override
@@ -865,34 +750,34 @@ public final class AsterActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getCBLMAGNNCGK() != 0) {
-          setCBLMAGNNCGK(other.getCBLMAGNNCGK());
+        if (other.getContentCloseTime() != 0) {
+          setContentCloseTime(other.getContentCloseTime());
         }
         if (other.hasAsterProgress()) {
           mergeAsterProgress(other.getAsterProgress());
         }
-        if (other.getIsContentClosed() != false) {
-          setIsContentClosed(other.getIsContentClosed());
-        }
-        if (other.getIsSpecialRewardTaken() != false) {
-          setIsSpecialRewardTaken(other.getIsSpecialRewardTaken());
-        }
         if (other.hasAsterLittle()) {
           mergeAsterLittle(other.getAsterLittle());
-        }
-        if (other.hasAsterLarge()) {
-          mergeAsterLarge(other.getAsterLarge());
         }
         if (other.hasAsterMid()) {
           mergeAsterMid(other.getAsterMid());
         }
-        if (other.getContentCloseTime() != 0) {
-          setContentCloseTime(other.getContentCloseTime());
+        if (other.getIsSpecialRewardTaken() != false) {
+          setIsSpecialRewardTaken(other.getIsSpecialRewardTaken());
         }
-        if (other.getCGOCPLCJMBA() != 0) {
-          setCGOCPLCJMBA(other.getCGOCPLCJMBA());
+        if (other.hasAsterLarge()) {
+          mergeAsterLarge(other.getAsterLarge());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getIsContentClosed() != false) {
+          setIsContentClosed(other.getIsContentClosed());
+        }
+        if (other.getMFJDILDLMGP() != 0) {
+          setMFJDILDLMGP(other.getMFJDILDLMGP());
+        }
+        if (other.getHNJDOJKGDOP() != 0) {
+          setHNJDOJKGDOP(other.getHNJDOJKGDOP());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -907,47 +792,115 @@ public final class AsterActivityDetailInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getAsterProgressFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 10
+              case 26: {
+                input.readMessage(
+                    getAsterLargeFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000020;
+                break;
+              } // case 26
+              case 34: {
+                input.readMessage(
+                    getAsterMidFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 34
+              case 40: {
+                hNJDOJKGDOP_ = input.readUInt32();
+                bitField0_ |= 0x00000100;
+                break;
+              } // case 40
+              case 64: {
+                isSpecialRewardTaken_ = input.readBool();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 64
+              case 88: {
+                mFJDILDLMGP_ = input.readUInt32();
+                bitField0_ |= 0x00000080;
+                break;
+              } // case 88
+              case 98: {
+                input.readMessage(
+                    getAsterLittleFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 98
+              case 104: {
+                contentCloseTime_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 104
+              case 112: {
+                isContentClosed_ = input.readBool();
+                bitField0_ |= 0x00000040;
+                break;
+              } // case 112
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AsterActivityDetailInfoOuterClass.AsterActivityDetailInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
-      private int cBLMAGNNCGK_ ;
+      private int contentCloseTime_ ;
       /**
-       * <code>uint32 CBLMAGNNCGK = 6;</code>
-       * @return The cBLMAGNNCGK.
+       * <code>uint32 content_close_time = 13;</code>
+       * @return The contentCloseTime.
        */
       @java.lang.Override
-      public int getCBLMAGNNCGK() {
-        return cBLMAGNNCGK_;
+      public int getContentCloseTime() {
+        return contentCloseTime_;
       }
       /**
-       * <code>uint32 CBLMAGNNCGK = 6;</code>
-       * @param value The cBLMAGNNCGK to set.
+       * <code>uint32 content_close_time = 13;</code>
+       * @param value The contentCloseTime to set.
        * @return This builder for chaining.
        */
-      public Builder setCBLMAGNNCGK(int value) {
-        
-        cBLMAGNNCGK_ = value;
+      public Builder setContentCloseTime(int value) {
+
+        contentCloseTime_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CBLMAGNNCGK = 6;</code>
+       * <code>uint32 content_close_time = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCBLMAGNNCGK() {
-        
-        cBLMAGNNCGK_ = 0;
+      public Builder clearContentCloseTime() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        contentCloseTime_ = 0;
         onChanged();
         return this;
       }
@@ -956,14 +909,14 @@ public final class AsterActivityDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo, emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo.Builder, emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfoOrBuilder> asterProgressBuilder_;
       /**
-       * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
+       * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
        * @return Whether the asterProgress field is set.
        */
       public boolean hasAsterProgress() {
-        return asterProgressBuilder_ != null || asterProgress_ != null;
+        return ((bitField0_ & 0x00000002) != 0);
       }
       /**
-       * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
+       * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
        * @return The asterProgress.
        */
       public emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo getAsterProgress() {
@@ -974,7 +927,7 @@ public final class AsterActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
+       * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
        */
       public Builder setAsterProgress(emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo value) {
         if (asterProgressBuilder_ == null) {
@@ -982,69 +935,69 @@ public final class AsterActivityDetailInfoOuterClass {
             throw new NullPointerException();
           }
           asterProgress_ = value;
-          onChanged();
         } else {
           asterProgressBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
+       * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
        */
       public Builder setAsterProgress(
           emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo.Builder builderForValue) {
         if (asterProgressBuilder_ == null) {
           asterProgress_ = builderForValue.build();
-          onChanged();
         } else {
           asterProgressBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
+       * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
        */
       public Builder mergeAsterProgress(emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo value) {
         if (asterProgressBuilder_ == null) {
-          if (asterProgress_ != null) {
-            asterProgress_ =
-              emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo.newBuilder(asterProgress_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000002) != 0) &&
+            asterProgress_ != null &&
+            asterProgress_ != emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo.getDefaultInstance()) {
+            getAsterProgressBuilder().mergeFrom(value);
           } else {
             asterProgress_ = value;
           }
-          onChanged();
         } else {
           asterProgressBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
+       * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
        */
       public Builder clearAsterProgress() {
-        if (asterProgressBuilder_ == null) {
-          asterProgress_ = null;
-          onChanged();
-        } else {
-          asterProgress_ = null;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        asterProgress_ = null;
+        if (asterProgressBuilder_ != null) {
+          asterProgressBuilder_.dispose();
           asterProgressBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
+       * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
        */
       public emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo.Builder getAsterProgressBuilder() {
-        
+        bitField0_ |= 0x00000002;
         onChanged();
         return getAsterProgressFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
+       * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
        */
       public emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfoOrBuilder getAsterProgressOrBuilder() {
         if (asterProgressBuilder_ != null) {
@@ -1055,7 +1008,7 @@ public final class AsterActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.AsterProgressDetailInfo aster_progress = 11;</code>
+       * <code>.AsterProgressDetailInfo aster_progress = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo, emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfo.Builder, emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.AsterProgressDetailInfoOrBuilder> 
@@ -1071,80 +1024,18 @@ public final class AsterActivityDetailInfoOuterClass {
         return asterProgressBuilder_;
       }
 
-      private boolean isContentClosed_ ;
-      /**
-       * <code>bool is_content_closed = 5;</code>
-       * @return The isContentClosed.
-       */
-      @java.lang.Override
-      public boolean getIsContentClosed() {
-        return isContentClosed_;
-      }
-      /**
-       * <code>bool is_content_closed = 5;</code>
-       * @param value The isContentClosed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsContentClosed(boolean value) {
-        
-        isContentClosed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_content_closed = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsContentClosed() {
-        
-        isContentClosed_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isSpecialRewardTaken_ ;
-      /**
-       * <code>bool is_special_reward_taken = 4;</code>
-       * @return The isSpecialRewardTaken.
-       */
-      @java.lang.Override
-      public boolean getIsSpecialRewardTaken() {
-        return isSpecialRewardTaken_;
-      }
-      /**
-       * <code>bool is_special_reward_taken = 4;</code>
-       * @param value The isSpecialRewardTaken to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSpecialRewardTaken(boolean value) {
-        
-        isSpecialRewardTaken_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_special_reward_taken = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSpecialRewardTaken() {
-        
-        isSpecialRewardTaken_ = false;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo asterLittle_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo, emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo.Builder, emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfoOrBuilder> asterLittleBuilder_;
       /**
-       * <code>.AsterLittleDetailInfo aster_little = 3;</code>
+       * <code>.AsterLittleDetailInfo aster_little = 12;</code>
        * @return Whether the asterLittle field is set.
        */
       public boolean hasAsterLittle() {
-        return asterLittleBuilder_ != null || asterLittle_ != null;
+        return ((bitField0_ & 0x00000004) != 0);
       }
       /**
-       * <code>.AsterLittleDetailInfo aster_little = 3;</code>
+       * <code>.AsterLittleDetailInfo aster_little = 12;</code>
        * @return The asterLittle.
        */
       public emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo getAsterLittle() {
@@ -1155,7 +1046,7 @@ public final class AsterActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.AsterLittleDetailInfo aster_little = 3;</code>
+       * <code>.AsterLittleDetailInfo aster_little = 12;</code>
        */
       public Builder setAsterLittle(emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo value) {
         if (asterLittleBuilder_ == null) {
@@ -1163,69 +1054,69 @@ public final class AsterActivityDetailInfoOuterClass {
             throw new NullPointerException();
           }
           asterLittle_ = value;
-          onChanged();
         } else {
           asterLittleBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000004;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AsterLittleDetailInfo aster_little = 3;</code>
+       * <code>.AsterLittleDetailInfo aster_little = 12;</code>
        */
       public Builder setAsterLittle(
           emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo.Builder builderForValue) {
         if (asterLittleBuilder_ == null) {
           asterLittle_ = builderForValue.build();
-          onChanged();
         } else {
           asterLittleBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000004;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AsterLittleDetailInfo aster_little = 3;</code>
+       * <code>.AsterLittleDetailInfo aster_little = 12;</code>
        */
       public Builder mergeAsterLittle(emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo value) {
         if (asterLittleBuilder_ == null) {
-          if (asterLittle_ != null) {
-            asterLittle_ =
-              emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo.newBuilder(asterLittle_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000004) != 0) &&
+            asterLittle_ != null &&
+            asterLittle_ != emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo.getDefaultInstance()) {
+            getAsterLittleBuilder().mergeFrom(value);
           } else {
             asterLittle_ = value;
           }
-          onChanged();
         } else {
           asterLittleBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000004;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AsterLittleDetailInfo aster_little = 3;</code>
+       * <code>.AsterLittleDetailInfo aster_little = 12;</code>
        */
       public Builder clearAsterLittle() {
-        if (asterLittleBuilder_ == null) {
-          asterLittle_ = null;
-          onChanged();
-        } else {
-          asterLittle_ = null;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        asterLittle_ = null;
+        if (asterLittleBuilder_ != null) {
+          asterLittleBuilder_.dispose();
           asterLittleBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.AsterLittleDetailInfo aster_little = 3;</code>
+       * <code>.AsterLittleDetailInfo aster_little = 12;</code>
        */
       public emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo.Builder getAsterLittleBuilder() {
-        
+        bitField0_ |= 0x00000004;
         onChanged();
         return getAsterLittleFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AsterLittleDetailInfo aster_little = 3;</code>
+       * <code>.AsterLittleDetailInfo aster_little = 12;</code>
        */
       public emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfoOrBuilder getAsterLittleOrBuilder() {
         if (asterLittleBuilder_ != null) {
@@ -1236,7 +1127,7 @@ public final class AsterActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.AsterLittleDetailInfo aster_little = 3;</code>
+       * <code>.AsterLittleDetailInfo aster_little = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo, emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfo.Builder, emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.AsterLittleDetailInfoOrBuilder> 
@@ -1252,137 +1143,18 @@ public final class AsterActivityDetailInfoOuterClass {
         return asterLittleBuilder_;
       }
 
-      private emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo asterLarge_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder> asterLargeBuilder_;
-      /**
-       * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-       * @return Whether the asterLarge field is set.
-       */
-      public boolean hasAsterLarge() {
-        return asterLargeBuilder_ != null || asterLarge_ != null;
-      }
-      /**
-       * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-       * @return The asterLarge.
-       */
-      public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo getAsterLarge() {
-        if (asterLargeBuilder_ == null) {
-          return asterLarge_ == null ? emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.getDefaultInstance() : asterLarge_;
-        } else {
-          return asterLargeBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-       */
-      public Builder setAsterLarge(emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo value) {
-        if (asterLargeBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          asterLarge_ = value;
-          onChanged();
-        } else {
-          asterLargeBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-       */
-      public Builder setAsterLarge(
-          emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder builderForValue) {
-        if (asterLargeBuilder_ == null) {
-          asterLarge_ = builderForValue.build();
-          onChanged();
-        } else {
-          asterLargeBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-       */
-      public Builder mergeAsterLarge(emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo value) {
-        if (asterLargeBuilder_ == null) {
-          if (asterLarge_ != null) {
-            asterLarge_ =
-              emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.newBuilder(asterLarge_).mergeFrom(value).buildPartial();
-          } else {
-            asterLarge_ = value;
-          }
-          onChanged();
-        } else {
-          asterLargeBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-       */
-      public Builder clearAsterLarge() {
-        if (asterLargeBuilder_ == null) {
-          asterLarge_ = null;
-          onChanged();
-        } else {
-          asterLarge_ = null;
-          asterLargeBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-       */
-      public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder getAsterLargeBuilder() {
-        
-        onChanged();
-        return getAsterLargeFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-       */
-      public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder getAsterLargeOrBuilder() {
-        if (asterLargeBuilder_ != null) {
-          return asterLargeBuilder_.getMessageOrBuilder();
-        } else {
-          return asterLarge_ == null ?
-              emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.getDefaultInstance() : asterLarge_;
-        }
-      }
-      /**
-       * <code>.AsterLargeDetailInfo aster_large = 7;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder> 
-          getAsterLargeFieldBuilder() {
-        if (asterLargeBuilder_ == null) {
-          asterLargeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder>(
-                  getAsterLarge(),
-                  getParentForChildren(),
-                  isClean());
-          asterLarge_ = null;
-        }
-        return asterLargeBuilder_;
-      }
-
       private emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo asterMid_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo, emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo.Builder, emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfoOrBuilder> asterMidBuilder_;
       /**
-       * <code>.AsterMidDetailInfo aster_mid = 8;</code>
+       * <code>.AsterMidDetailInfo aster_mid = 4;</code>
        * @return Whether the asterMid field is set.
        */
       public boolean hasAsterMid() {
-        return asterMidBuilder_ != null || asterMid_ != null;
+        return ((bitField0_ & 0x00000008) != 0);
       }
       /**
-       * <code>.AsterMidDetailInfo aster_mid = 8;</code>
+       * <code>.AsterMidDetailInfo aster_mid = 4;</code>
        * @return The asterMid.
        */
       public emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo getAsterMid() {
@@ -1393,7 +1165,7 @@ public final class AsterActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.AsterMidDetailInfo aster_mid = 8;</code>
+       * <code>.AsterMidDetailInfo aster_mid = 4;</code>
        */
       public Builder setAsterMid(emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo value) {
         if (asterMidBuilder_ == null) {
@@ -1401,69 +1173,69 @@ public final class AsterActivityDetailInfoOuterClass {
             throw new NullPointerException();
           }
           asterMid_ = value;
-          onChanged();
         } else {
           asterMidBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000008;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AsterMidDetailInfo aster_mid = 8;</code>
+       * <code>.AsterMidDetailInfo aster_mid = 4;</code>
        */
       public Builder setAsterMid(
           emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo.Builder builderForValue) {
         if (asterMidBuilder_ == null) {
           asterMid_ = builderForValue.build();
-          onChanged();
         } else {
           asterMidBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000008;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AsterMidDetailInfo aster_mid = 8;</code>
+       * <code>.AsterMidDetailInfo aster_mid = 4;</code>
        */
       public Builder mergeAsterMid(emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo value) {
         if (asterMidBuilder_ == null) {
-          if (asterMid_ != null) {
-            asterMid_ =
-              emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo.newBuilder(asterMid_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000008) != 0) &&
+            asterMid_ != null &&
+            asterMid_ != emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo.getDefaultInstance()) {
+            getAsterMidBuilder().mergeFrom(value);
           } else {
             asterMid_ = value;
           }
-          onChanged();
         } else {
           asterMidBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000008;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AsterMidDetailInfo aster_mid = 8;</code>
+       * <code>.AsterMidDetailInfo aster_mid = 4;</code>
        */
       public Builder clearAsterMid() {
-        if (asterMidBuilder_ == null) {
-          asterMid_ = null;
-          onChanged();
-        } else {
-          asterMid_ = null;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        asterMid_ = null;
+        if (asterMidBuilder_ != null) {
+          asterMidBuilder_.dispose();
           asterMidBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.AsterMidDetailInfo aster_mid = 8;</code>
+       * <code>.AsterMidDetailInfo aster_mid = 4;</code>
        */
       public emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo.Builder getAsterMidBuilder() {
-        
+        bitField0_ |= 0x00000008;
         onChanged();
         return getAsterMidFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AsterMidDetailInfo aster_mid = 8;</code>
+       * <code>.AsterMidDetailInfo aster_mid = 4;</code>
        */
       public emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfoOrBuilder getAsterMidOrBuilder() {
         if (asterMidBuilder_ != null) {
@@ -1474,7 +1246,7 @@ public final class AsterActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.AsterMidDetailInfo aster_mid = 8;</code>
+       * <code>.AsterMidDetailInfo aster_mid = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo, emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfo.Builder, emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.AsterMidDetailInfoOrBuilder> 
@@ -1490,64 +1262,249 @@ public final class AsterActivityDetailInfoOuterClass {
         return asterMidBuilder_;
       }
 
-      private int contentCloseTime_ ;
+      private boolean isSpecialRewardTaken_ ;
       /**
-       * <code>uint32 content_close_time = 9;</code>
-       * @return The contentCloseTime.
+       * <code>bool is_special_reward_taken = 8;</code>
+       * @return The isSpecialRewardTaken.
        */
       @java.lang.Override
-      public int getContentCloseTime() {
-        return contentCloseTime_;
+      public boolean getIsSpecialRewardTaken() {
+        return isSpecialRewardTaken_;
       }
       /**
-       * <code>uint32 content_close_time = 9;</code>
-       * @param value The contentCloseTime to set.
+       * <code>bool is_special_reward_taken = 8;</code>
+       * @param value The isSpecialRewardTaken to set.
        * @return This builder for chaining.
        */
-      public Builder setContentCloseTime(int value) {
-        
-        contentCloseTime_ = value;
+      public Builder setIsSpecialRewardTaken(boolean value) {
+
+        isSpecialRewardTaken_ = value;
+        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 content_close_time = 9;</code>
+       * <code>bool is_special_reward_taken = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearContentCloseTime() {
-        
-        contentCloseTime_ = 0;
+      public Builder clearIsSpecialRewardTaken() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        isSpecialRewardTaken_ = false;
         onChanged();
         return this;
       }
 
-      private int cGOCPLCJMBA_ ;
+      private emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo asterLarge_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder> asterLargeBuilder_;
       /**
-       * <code>uint32 CGOCPLCJMBA = 12;</code>
-       * @return The cGOCPLCJMBA.
+       * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+       * @return Whether the asterLarge field is set.
        */
-      @java.lang.Override
-      public int getCGOCPLCJMBA() {
-        return cGOCPLCJMBA_;
+      public boolean hasAsterLarge() {
+        return ((bitField0_ & 0x00000020) != 0);
       }
       /**
-       * <code>uint32 CGOCPLCJMBA = 12;</code>
-       * @param value The cGOCPLCJMBA to set.
-       * @return This builder for chaining.
+       * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+       * @return The asterLarge.
        */
-      public Builder setCGOCPLCJMBA(int value) {
-        
-        cGOCPLCJMBA_ = value;
+      public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo getAsterLarge() {
+        if (asterLargeBuilder_ == null) {
+          return asterLarge_ == null ? emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.getDefaultInstance() : asterLarge_;
+        } else {
+          return asterLargeBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+       */
+      public Builder setAsterLarge(emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo value) {
+        if (asterLargeBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          asterLarge_ = value;
+        } else {
+          asterLargeBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CGOCPLCJMBA = 12;</code>
+       * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+       */
+      public Builder setAsterLarge(
+          emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder builderForValue) {
+        if (asterLargeBuilder_ == null) {
+          asterLarge_ = builderForValue.build();
+        } else {
+          asterLargeBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+       */
+      public Builder mergeAsterLarge(emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo value) {
+        if (asterLargeBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) != 0) &&
+            asterLarge_ != null &&
+            asterLarge_ != emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.getDefaultInstance()) {
+            getAsterLargeBuilder().mergeFrom(value);
+          } else {
+            asterLarge_ = value;
+          }
+        } else {
+          asterLargeBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+       */
+      public Builder clearAsterLarge() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        asterLarge_ = null;
+        if (asterLargeBuilder_ != null) {
+          asterLargeBuilder_.dispose();
+          asterLargeBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+       */
+      public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder getAsterLargeBuilder() {
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return getAsterLargeFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+       */
+      public emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder getAsterLargeOrBuilder() {
+        if (asterLargeBuilder_ != null) {
+          return asterLargeBuilder_.getMessageOrBuilder();
+        } else {
+          return asterLarge_ == null ?
+              emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.getDefaultInstance() : asterLarge_;
+        }
+      }
+      /**
+       * <code>.AsterLargeDetailInfo aster_large = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder> 
+          getAsterLargeFieldBuilder() {
+        if (asterLargeBuilder_ == null) {
+          asterLargeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfo.Builder, emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.AsterLargeDetailInfoOrBuilder>(
+                  getAsterLarge(),
+                  getParentForChildren(),
+                  isClean());
+          asterLarge_ = null;
+        }
+        return asterLargeBuilder_;
+      }
+
+      private boolean isContentClosed_ ;
+      /**
+       * <code>bool is_content_closed = 14;</code>
+       * @return The isContentClosed.
+       */
+      @java.lang.Override
+      public boolean getIsContentClosed() {
+        return isContentClosed_;
+      }
+      /**
+       * <code>bool is_content_closed = 14;</code>
+       * @param value The isContentClosed to set.
        * @return This builder for chaining.
        */
-      public Builder clearCGOCPLCJMBA() {
-        
-        cGOCPLCJMBA_ = 0;
+      public Builder setIsContentClosed(boolean value) {
+
+        isContentClosed_ = value;
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_content_closed = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsContentClosed() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        isContentClosed_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int mFJDILDLMGP_ ;
+      /**
+       * <code>uint32 MFJDILDLMGP = 11;</code>
+       * @return The mFJDILDLMGP.
+       */
+      @java.lang.Override
+      public int getMFJDILDLMGP() {
+        return mFJDILDLMGP_;
+      }
+      /**
+       * <code>uint32 MFJDILDLMGP = 11;</code>
+       * @param value The mFJDILDLMGP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMFJDILDLMGP(int value) {
+
+        mFJDILDLMGP_ = value;
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MFJDILDLMGP = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMFJDILDLMGP() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        mFJDILDLMGP_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hNJDOJKGDOP_ ;
+      /**
+       * <code>uint32 HNJDOJKGDOP = 5;</code>
+       * @return The hNJDOJKGDOP.
+       */
+      @java.lang.Override
+      public int getHNJDOJKGDOP() {
+        return hNJDOJKGDOP_;
+      }
+      /**
+       * <code>uint32 HNJDOJKGDOP = 5;</code>
+       * @param value The hNJDOJKGDOP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHNJDOJKGDOP(int value) {
+
+        hNJDOJKGDOP_ = value;
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 HNJDOJKGDOP = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHNJDOJKGDOP() {
+        bitField0_ = (bitField0_ & ~0x00000100);
+        hNJDOJKGDOP_ = 0;
         onChanged();
         return this;
       }
@@ -1584,7 +1541,18 @@ public final class AsterActivityDetailInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AsterActivityDetailInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1618,38 +1586,38 @@ public final class AsterActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035AsterActivityDetailInfo.proto\032\035AsterPr" +
-      "ogressDetailInfo.proto\032\033AsterLittleDetai" +
-      "lInfo.proto\032\032AsterLargeDetailInfo.proto\032" +
-      "\030AsterMidDetailInfo.proto\"\317\002\n\027AsterActiv" +
-      "ityDetailInfo\022\023\n\013CBLMAGNNCGK\030\006 \001(\r\0220\n\016as" +
-      "ter_progress\030\013 \001(\0132\030.AsterProgressDetail" +
-      "Info\022\031\n\021is_content_closed\030\005 \001(\010\022\037\n\027is_sp" +
-      "ecial_reward_taken\030\004 \001(\010\022,\n\014aster_little" +
-      "\030\003 \001(\0132\026.AsterLittleDetailInfo\022*\n\013aster_" +
-      "large\030\007 \001(\0132\025.AsterLargeDetailInfo\022&\n\tas" +
-      "ter_mid\030\010 \001(\0132\023.AsterMidDetailInfo\022\032\n\022co" +
-      "ntent_close_time\030\t \001(\r\022\023\n\013CGOCPLCJMBA\030\014 " +
+      "\n\035AsterActivityDetailInfo.proto\032\032AsterLa" +
+      "rgeDetailInfo.proto\032\033AsterLittleDetailIn" +
+      "fo.proto\032\030AsterMidDetailInfo.proto\032\035Aste" +
+      "rProgressDetailInfo.proto\"\317\002\n\027AsterActiv" +
+      "ityDetailInfo\022\032\n\022content_close_time\030\r \001(" +
+      "\r\0220\n\016aster_progress\030\001 \001(\0132\030.AsterProgres" +
+      "sDetailInfo\022,\n\014aster_little\030\014 \001(\0132\026.Aste" +
+      "rLittleDetailInfo\022&\n\taster_mid\030\004 \001(\0132\023.A" +
+      "sterMidDetailInfo\022\037\n\027is_special_reward_t" +
+      "aken\030\010 \001(\010\022*\n\013aster_large\030\003 \001(\0132\025.AsterL" +
+      "argeDetailInfo\022\031\n\021is_content_closed\030\016 \001(" +
+      "\010\022\023\n\013MFJDILDLMGP\030\013 \001(\r\022\023\n\013HNJDOJKGDOP\030\005 " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.getDescriptor(),
         });
     internal_static_AsterActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AsterActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AsterActivityDetailInfo_descriptor,
-        new java.lang.String[] { "CBLMAGNNCGK", "AsterProgress", "IsContentClosed", "IsSpecialRewardTaken", "AsterLittle", "AsterLarge", "AsterMid", "ContentCloseTime", "CGOCPLCJMBA", });
-    emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "ContentCloseTime", "AsterProgress", "AsterLittle", "AsterMid", "IsSpecialRewardTaken", "AsterLarge", "IsContentClosed", "MFJDILDLMGP", "HNJDOJKGDOP", });
     emu.grasscutter.net.proto.AsterLargeDetailInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AsterLittleDetailInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AsterMidDetailInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AsterProgressDetailInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

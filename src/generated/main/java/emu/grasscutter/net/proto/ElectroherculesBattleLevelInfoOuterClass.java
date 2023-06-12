@@ -19,7 +19,13 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 min_finish_time = 15;</code>
+     * <code>bool is_finish = 4;</code>
+     * @return The isFinish.
+     */
+    boolean getIsFinish();
+
+    /**
+     * <code>uint32 min_finish_time = 14;</code>
      * @return The minFinishTime.
      */
     int getMinFinishTime();
@@ -29,16 +35,10 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
      * @return The levelId.
      */
     int getLevelId();
-
-    /**
-     * <code>bool is_finish = 3;</code>
-     * @return The isFinish.
-     */
-    boolean getIsFinish();
   }
   /**
    * <pre>
-   * Obf: HNOJMOGEKCA
+   * Name: JNENOEAOCLB
    * </pre>
    *
    * Protobuf type {@code ElectroherculesBattleLevelInfo}
@@ -62,63 +62,6 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
       return new ElectroherculesBattleLevelInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ElectroherculesBattleLevelInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 24: {
-
-              isFinish_ = input.readBool();
-              break;
-            }
-            case 104: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              minFinishTime_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.internal_static_ElectroherculesBattleLevelInfo_descriptor;
@@ -132,10 +75,21 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
               emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo.class, emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo.Builder.class);
     }
 
-    public static final int MIN_FINISH_TIME_FIELD_NUMBER = 15;
-    private int minFinishTime_;
+    public static final int IS_FINISH_FIELD_NUMBER = 4;
+    private boolean isFinish_ = false;
     /**
-     * <code>uint32 min_finish_time = 15;</code>
+     * <code>bool is_finish = 4;</code>
+     * @return The isFinish.
+     */
+    @java.lang.Override
+    public boolean getIsFinish() {
+      return isFinish_;
+    }
+
+    public static final int MIN_FINISH_TIME_FIELD_NUMBER = 14;
+    private int minFinishTime_ = 0;
+    /**
+     * <code>uint32 min_finish_time = 14;</code>
      * @return The minFinishTime.
      */
     @java.lang.Override
@@ -144,7 +98,7 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
     }
 
     public static final int LEVEL_ID_FIELD_NUMBER = 13;
-    private int levelId_;
+    private int levelId_ = 0;
     /**
      * <code>uint32 level_id = 13;</code>
      * @return The levelId.
@@ -152,17 +106,6 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
-    }
-
-    public static final int IS_FINISH_FIELD_NUMBER = 3;
-    private boolean isFinish_;
-    /**
-     * <code>bool is_finish = 3;</code>
-     * @return The isFinish.
-     */
-    @java.lang.Override
-    public boolean getIsFinish() {
-      return isFinish_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,15 +123,15 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isFinish_ != false) {
-        output.writeBool(3, isFinish_);
+        output.writeBool(4, isFinish_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(13, levelId_);
       }
       if (minFinishTime_ != 0) {
-        output.writeUInt32(15, minFinishTime_);
+        output.writeUInt32(14, minFinishTime_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -199,7 +142,7 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
       size = 0;
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isFinish_);
+          .computeBoolSize(4, isFinish_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -207,9 +150,9 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
       }
       if (minFinishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, minFinishTime_);
+          .computeUInt32Size(14, minFinishTime_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -224,13 +167,13 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo other = (emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo) obj;
 
+      if (getIsFinish()
+          != other.getIsFinish()) return false;
       if (getMinFinishTime()
           != other.getMinFinishTime()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getIsFinish()
-          != other.getIsFinish()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -241,14 +184,14 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFinish());
       hash = (37 * hash) + MIN_FINISH_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getMinFinishTime();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinish());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +240,13 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,7 +290,7 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: HNOJMOGEKCA
+     * Name: JNENOEAOCLB
      * </pre>
      *
      * Protobuf type {@code ElectroherculesBattleLevelInfo}
@@ -369,28 +314,21 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        minFinishTime_ = 0;
-
-        levelId_ = 0;
-
+        bitField0_ = 0;
         isFinish_ = false;
-
+        minFinishTime_ = 0;
+        levelId_ = 0;
         return this;
       }
 
@@ -417,11 +355,22 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo buildPartial() {
         emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo result = new emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo(this);
-        result.minFinishTime_ = minFinishTime_;
-        result.levelId_ = levelId_;
-        result.isFinish_ = isFinish_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.isFinish_ = isFinish_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.minFinishTime_ = minFinishTime_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.levelId_ = levelId_;
+        }
       }
 
       @java.lang.Override
@@ -468,16 +417,16 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo other) {
         if (other == emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo.getDefaultInstance()) return this;
+        if (other.getIsFinish() != false) {
+          setIsFinish(other.getIsFinish());
+        }
         if (other.getMinFinishTime() != 0) {
           setMinFinishTime(other.getMinFinishTime());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getIsFinish() != false) {
-          setIsFinish(other.getIsFinish());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -492,23 +441,84 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 32: {
+                isFinish_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 32
+              case 104: {
+                levelId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 104
+              case 112: {
+                minFinishTime_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 112
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private boolean isFinish_ ;
+      /**
+       * <code>bool is_finish = 4;</code>
+       * @return The isFinish.
+       */
+      @java.lang.Override
+      public boolean getIsFinish() {
+        return isFinish_;
+      }
+      /**
+       * <code>bool is_finish = 4;</code>
+       * @param value The isFinish to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFinish(boolean value) {
+
+        isFinish_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_finish = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinish() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        isFinish_ = false;
+        onChanged();
         return this;
       }
 
       private int minFinishTime_ ;
       /**
-       * <code>uint32 min_finish_time = 15;</code>
+       * <code>uint32 min_finish_time = 14;</code>
        * @return The minFinishTime.
        */
       @java.lang.Override
@@ -516,22 +526,23 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
         return minFinishTime_;
       }
       /**
-       * <code>uint32 min_finish_time = 15;</code>
+       * <code>uint32 min_finish_time = 14;</code>
        * @param value The minFinishTime to set.
        * @return This builder for chaining.
        */
       public Builder setMinFinishTime(int value) {
-        
+
         minFinishTime_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 min_finish_time = 15;</code>
+       * <code>uint32 min_finish_time = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearMinFinishTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         minFinishTime_ = 0;
         onChanged();
         return this;
@@ -552,8 +563,9 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setLevelId(int value) {
-        
+
         levelId_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -562,39 +574,8 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFinish_ ;
-      /**
-       * <code>bool is_finish = 3;</code>
-       * @return The isFinish.
-       */
-      @java.lang.Override
-      public boolean getIsFinish() {
-        return isFinish_;
-      }
-      /**
-       * <code>bool is_finish = 3;</code>
-       * @param value The isFinish to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinish(boolean value) {
-        
-        isFinish_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_finish = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinish() {
-        
-        isFinish_ = false;
         onChanged();
         return this;
       }
@@ -631,7 +612,18 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ElectroherculesBattleLevelInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -666,9 +658,9 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$ElectroherculesBattleLevelInfo.proto\"^" +
-      "\n\036ElectroherculesBattleLevelInfo\022\027\n\017min_" +
-      "finish_time\030\017 \001(\r\022\020\n\010level_id\030\r \001(\r\022\021\n\ti" +
-      "s_finish\030\003 \001(\010B\033\n\031emu.grasscutter.net.pr" +
+      "\n\036ElectroherculesBattleLevelInfo\022\021\n\tis_f" +
+      "inish\030\004 \001(\010\022\027\n\017min_finish_time\030\016 \001(\r\022\020\n\010" +
+      "level_id\030\r \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -680,7 +672,7 @@ public final class ElectroherculesBattleLevelInfoOuterClass {
     internal_static_ElectroherculesBattleLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ElectroherculesBattleLevelInfo_descriptor,
-        new java.lang.String[] { "MinFinishTime", "LevelId", "IsFinish", });
+        new java.lang.String[] { "IsFinish", "MinFinishTime", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

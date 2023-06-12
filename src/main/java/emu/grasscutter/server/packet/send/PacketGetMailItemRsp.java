@@ -9,11 +9,12 @@ import emu.grasscutter.net.packet.BasePacket;
 import emu.grasscutter.net.packet.PacketOpcodes;
 import emu.grasscutter.net.proto.EquipParamOuterClass;
 import emu.grasscutter.net.proto.GetMailItemRspOuterClass.GetMailItemRsp;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class PacketGetMailItemRsp extends BasePacket {
+public class PacketGetMailItemRsp  extends BasePacket {
 
     public PacketGetMailItemRsp(Player player, List<Integer> mailList) {
         super(PacketOpcodes.GetMailItemRsp);
@@ -26,10 +27,9 @@ public class PacketGetMailItemRsp extends BasePacket {
             boolean modified = false;
             for (int mailId : mailList) {
                 Mail message = player.getMail(mailId);
-                if (!message.isAttachmentGot) { // No duplicated item
+                if (!message.isAttachmentGot) {//No duplicated item
                     for (Mail.MailItem mailItem : message.itemList) {
-                        EquipParamOuterClass.EquipParam.Builder item =
-                                EquipParamOuterClass.EquipParam.newBuilder();
+                        EquipParamOuterClass.EquipParam.Builder item = EquipParamOuterClass.EquipParam.newBuilder();
                         int promoteLevel = GameItem.getMinPromoteLevel(mailItem.itemLevel);
 
                         item.setItemId(mailItem.itemId);
@@ -52,22 +52,15 @@ public class PacketGetMailItemRsp extends BasePacket {
                     modified = true;
                 }
             }
-            if (modified) {
+            if(modified) {
                 player.save();
             }
         }
 
-        proto.addAllMailIdList(
-                claimedMessages.stream().map(player::getMailId).collect(Collectors.toList()));
+        proto.addAllMailIdList(claimedMessages.stream().map(player::getMailId).collect(Collectors.toList()));
         proto.addAllItemList(claimedItems);
 
         this.setData(proto.build());
-        player
-                .getSession()
-                .send(
-                        new PacketMailChangeNotify(
-                                player,
-                                claimedMessages)); // For some reason you have to also send the MailChangeNotify
-        // packet
+        player.getSession().send(new PacketMailChangeNotify(player, claimedMessages)); // For some reason you have to also send the MailChangeNotify packet
     }
 }

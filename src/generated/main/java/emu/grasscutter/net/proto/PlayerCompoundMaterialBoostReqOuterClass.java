@@ -19,33 +19,33 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 HDPLMDCFPAF = 12;</code>
-     * @return The hDPLMDCFPAF.
+     * <code>uint32 GHBDKDMBGEH = 5;</code>
+     * @return The gHBDKDMBGEH.
      */
-    int getHDPLMDCFPAF();
+    int getGHBDKDMBGEH();
 
     /**
-     * <code>uint32 MBEFPCNDEII = 11;</code>
-     * @return The mBEFPCNDEII.
+     * <code>uint32 OBIJFFPNJCH = 13;</code>
+     * @return The oBIJFFPNJCH.
      */
-    int getMBEFPCNDEII();
+    int getOBIJFFPNJCH();
 
     /**
-     * <code>bool is_boost_all = 9;</code>
+     * <code>bool is_boost_all = 3;</code>
      * @return The isBoostAll.
      */
     boolean getIsBoostAll();
 
     /**
-     * <code>uint32 MHMAGJKPDIO = 7;</code>
-     * @return The mHMAGJKPDIO.
+     * <code>uint32 MOOPCNDDCEP = 14;</code>
+     * @return The mOOPCNDDCEP.
      */
-    int getMHMAGJKPDIO();
+    int getMOOPCNDDCEP();
   }
   /**
    * <pre>
-   * CmdId: 114
-   * Obf: DFEPFLOHFBD
+   * CmdId: 179
+   * Name: MEAHPANFPHD
    * </pre>
    *
    * Protobuf type {@code PlayerCompoundMaterialBoostReq}
@@ -69,68 +69,6 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       return new PlayerCompoundMaterialBoostReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private PlayerCompoundMaterialBoostReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 56: {
-
-              mHMAGJKPDIO_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              isBoostAll_ = input.readBool();
-              break;
-            }
-            case 88: {
-
-              mBEFPCNDEII_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              hDPLMDCFPAF_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.internal_static_PlayerCompoundMaterialBoostReq_descriptor;
@@ -144,32 +82,32 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
               emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq.class, emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq.Builder.class);
     }
 
-    public static final int HDPLMDCFPAF_FIELD_NUMBER = 12;
-    private int hDPLMDCFPAF_;
+    public static final int GHBDKDMBGEH_FIELD_NUMBER = 5;
+    private int gHBDKDMBGEH_ = 0;
     /**
-     * <code>uint32 HDPLMDCFPAF = 12;</code>
-     * @return The hDPLMDCFPAF.
+     * <code>uint32 GHBDKDMBGEH = 5;</code>
+     * @return The gHBDKDMBGEH.
      */
     @java.lang.Override
-    public int getHDPLMDCFPAF() {
-      return hDPLMDCFPAF_;
+    public int getGHBDKDMBGEH() {
+      return gHBDKDMBGEH_;
     }
 
-    public static final int MBEFPCNDEII_FIELD_NUMBER = 11;
-    private int mBEFPCNDEII_;
+    public static final int OBIJFFPNJCH_FIELD_NUMBER = 13;
+    private int oBIJFFPNJCH_ = 0;
     /**
-     * <code>uint32 MBEFPCNDEII = 11;</code>
-     * @return The mBEFPCNDEII.
+     * <code>uint32 OBIJFFPNJCH = 13;</code>
+     * @return The oBIJFFPNJCH.
      */
     @java.lang.Override
-    public int getMBEFPCNDEII() {
-      return mBEFPCNDEII_;
+    public int getOBIJFFPNJCH() {
+      return oBIJFFPNJCH_;
     }
 
-    public static final int IS_BOOST_ALL_FIELD_NUMBER = 9;
-    private boolean isBoostAll_;
+    public static final int IS_BOOST_ALL_FIELD_NUMBER = 3;
+    private boolean isBoostAll_ = false;
     /**
-     * <code>bool is_boost_all = 9;</code>
+     * <code>bool is_boost_all = 3;</code>
      * @return The isBoostAll.
      */
     @java.lang.Override
@@ -177,15 +115,15 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       return isBoostAll_;
     }
 
-    public static final int MHMAGJKPDIO_FIELD_NUMBER = 7;
-    private int mHMAGJKPDIO_;
+    public static final int MOOPCNDDCEP_FIELD_NUMBER = 14;
+    private int mOOPCNDDCEP_ = 0;
     /**
-     * <code>uint32 MHMAGJKPDIO = 7;</code>
-     * @return The mHMAGJKPDIO.
+     * <code>uint32 MOOPCNDDCEP = 14;</code>
+     * @return The mOOPCNDDCEP.
      */
     @java.lang.Override
-    public int getMHMAGJKPDIO() {
-      return mHMAGJKPDIO_;
+    public int getMOOPCNDDCEP() {
+      return mOOPCNDDCEP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -202,19 +140,19 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mHMAGJKPDIO_ != 0) {
-        output.writeUInt32(7, mHMAGJKPDIO_);
-      }
       if (isBoostAll_ != false) {
-        output.writeBool(9, isBoostAll_);
+        output.writeBool(3, isBoostAll_);
       }
-      if (mBEFPCNDEII_ != 0) {
-        output.writeUInt32(11, mBEFPCNDEII_);
+      if (gHBDKDMBGEH_ != 0) {
+        output.writeUInt32(5, gHBDKDMBGEH_);
       }
-      if (hDPLMDCFPAF_ != 0) {
-        output.writeUInt32(12, hDPLMDCFPAF_);
+      if (oBIJFFPNJCH_ != 0) {
+        output.writeUInt32(13, oBIJFFPNJCH_);
       }
-      unknownFields.writeTo(output);
+      if (mOOPCNDDCEP_ != 0) {
+        output.writeUInt32(14, mOOPCNDDCEP_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -223,23 +161,23 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mHMAGJKPDIO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, mHMAGJKPDIO_);
-      }
       if (isBoostAll_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isBoostAll_);
+          .computeBoolSize(3, isBoostAll_);
       }
-      if (mBEFPCNDEII_ != 0) {
+      if (gHBDKDMBGEH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, mBEFPCNDEII_);
+          .computeUInt32Size(5, gHBDKDMBGEH_);
       }
-      if (hDPLMDCFPAF_ != 0) {
+      if (oBIJFFPNJCH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, hDPLMDCFPAF_);
+          .computeUInt32Size(13, oBIJFFPNJCH_);
       }
-      size += unknownFields.getSerializedSize();
+      if (mOOPCNDDCEP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, mOOPCNDDCEP_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -254,15 +192,15 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       }
       emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq other = (emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq) obj;
 
-      if (getHDPLMDCFPAF()
-          != other.getHDPLMDCFPAF()) return false;
-      if (getMBEFPCNDEII()
-          != other.getMBEFPCNDEII()) return false;
+      if (getGHBDKDMBGEH()
+          != other.getGHBDKDMBGEH()) return false;
+      if (getOBIJFFPNJCH()
+          != other.getOBIJFFPNJCH()) return false;
       if (getIsBoostAll()
           != other.getIsBoostAll()) return false;
-      if (getMHMAGJKPDIO()
-          != other.getMHMAGJKPDIO()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getMOOPCNDDCEP()
+          != other.getMOOPCNDDCEP()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -273,16 +211,16 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HDPLMDCFPAF_FIELD_NUMBER;
-      hash = (53 * hash) + getHDPLMDCFPAF();
-      hash = (37 * hash) + MBEFPCNDEII_FIELD_NUMBER;
-      hash = (53 * hash) + getMBEFPCNDEII();
+      hash = (37 * hash) + GHBDKDMBGEH_FIELD_NUMBER;
+      hash = (53 * hash) + getGHBDKDMBGEH();
+      hash = (37 * hash) + OBIJFFPNJCH_FIELD_NUMBER;
+      hash = (53 * hash) + getOBIJFFPNJCH();
       hash = (37 * hash) + IS_BOOST_ALL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsBoostAll());
-      hash = (37 * hash) + MHMAGJKPDIO_FIELD_NUMBER;
-      hash = (53 * hash) + getMHMAGJKPDIO();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + MOOPCNDDCEP_FIELD_NUMBER;
+      hash = (53 * hash) + getMOOPCNDDCEP();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -331,11 +269,13 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -379,8 +319,8 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 114
-     * Obf: DFEPFLOHFBD
+     * CmdId: 179
+     * Name: MEAHPANFPHD
      * </pre>
      *
      * Protobuf type {@code PlayerCompoundMaterialBoostReq}
@@ -404,30 +344,22 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hDPLMDCFPAF_ = 0;
-
-        mBEFPCNDEII_ = 0;
-
+        bitField0_ = 0;
+        gHBDKDMBGEH_ = 0;
+        oBIJFFPNJCH_ = 0;
         isBoostAll_ = false;
-
-        mHMAGJKPDIO_ = 0;
-
+        mOOPCNDDCEP_ = 0;
         return this;
       }
 
@@ -454,12 +386,25 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq buildPartial() {
         emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq result = new emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq(this);
-        result.hDPLMDCFPAF_ = hDPLMDCFPAF_;
-        result.mBEFPCNDEII_ = mBEFPCNDEII_;
-        result.isBoostAll_ = isBoostAll_;
-        result.mHMAGJKPDIO_ = mHMAGJKPDIO_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.gHBDKDMBGEH_ = gHBDKDMBGEH_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.oBIJFFPNJCH_ = oBIJFFPNJCH_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.isBoostAll_ = isBoostAll_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.mOOPCNDDCEP_ = mOOPCNDDCEP_;
+        }
       }
 
       @java.lang.Override
@@ -506,19 +451,19 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq other) {
         if (other == emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq.getDefaultInstance()) return this;
-        if (other.getHDPLMDCFPAF() != 0) {
-          setHDPLMDCFPAF(other.getHDPLMDCFPAF());
+        if (other.getGHBDKDMBGEH() != 0) {
+          setGHBDKDMBGEH(other.getGHBDKDMBGEH());
         }
-        if (other.getMBEFPCNDEII() != 0) {
-          setMBEFPCNDEII(other.getMBEFPCNDEII());
+        if (other.getOBIJFFPNJCH() != 0) {
+          setOBIJFFPNJCH(other.getOBIJFFPNJCH());
         }
         if (other.getIsBoostAll() != false) {
           setIsBoostAll(other.getIsBoostAll());
         }
-        if (other.getMHMAGJKPDIO() != 0) {
-          setMHMAGJKPDIO(other.getMHMAGJKPDIO());
+        if (other.getMOOPCNDDCEP() != 0) {
+          setMOOPCNDDCEP(other.getMOOPCNDDCEP());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -533,85 +478,121 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 24: {
+                isBoostAll_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 40: {
+                gHBDKDMBGEH_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 40
+              case 104: {
+                oBIJFFPNJCH_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 104
+              case 112: {
+                mOOPCNDDCEP_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 112
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PlayerCompoundMaterialBoostReqOuterClass.PlayerCompoundMaterialBoostReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private int gHBDKDMBGEH_ ;
+      /**
+       * <code>uint32 GHBDKDMBGEH = 5;</code>
+       * @return The gHBDKDMBGEH.
+       */
+      @java.lang.Override
+      public int getGHBDKDMBGEH() {
+        return gHBDKDMBGEH_;
+      }
+      /**
+       * <code>uint32 GHBDKDMBGEH = 5;</code>
+       * @param value The gHBDKDMBGEH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGHBDKDMBGEH(int value) {
+
+        gHBDKDMBGEH_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 GHBDKDMBGEH = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGHBDKDMBGEH() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        gHBDKDMBGEH_ = 0;
+        onChanged();
         return this;
       }
 
-      private int hDPLMDCFPAF_ ;
+      private int oBIJFFPNJCH_ ;
       /**
-       * <code>uint32 HDPLMDCFPAF = 12;</code>
-       * @return The hDPLMDCFPAF.
+       * <code>uint32 OBIJFFPNJCH = 13;</code>
+       * @return The oBIJFFPNJCH.
        */
       @java.lang.Override
-      public int getHDPLMDCFPAF() {
-        return hDPLMDCFPAF_;
+      public int getOBIJFFPNJCH() {
+        return oBIJFFPNJCH_;
       }
       /**
-       * <code>uint32 HDPLMDCFPAF = 12;</code>
-       * @param value The hDPLMDCFPAF to set.
+       * <code>uint32 OBIJFFPNJCH = 13;</code>
+       * @param value The oBIJFFPNJCH to set.
        * @return This builder for chaining.
        */
-      public Builder setHDPLMDCFPAF(int value) {
-        
-        hDPLMDCFPAF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 HDPLMDCFPAF = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHDPLMDCFPAF() {
-        
-        hDPLMDCFPAF_ = 0;
-        onChanged();
-        return this;
-      }
+      public Builder setOBIJFFPNJCH(int value) {
 
-      private int mBEFPCNDEII_ ;
-      /**
-       * <code>uint32 MBEFPCNDEII = 11;</code>
-       * @return The mBEFPCNDEII.
-       */
-      @java.lang.Override
-      public int getMBEFPCNDEII() {
-        return mBEFPCNDEII_;
-      }
-      /**
-       * <code>uint32 MBEFPCNDEII = 11;</code>
-       * @param value The mBEFPCNDEII to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMBEFPCNDEII(int value) {
-        
-        mBEFPCNDEII_ = value;
+        oBIJFFPNJCH_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 MBEFPCNDEII = 11;</code>
+       * <code>uint32 OBIJFFPNJCH = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMBEFPCNDEII() {
-        
-        mBEFPCNDEII_ = 0;
+      public Builder clearOBIJFFPNJCH() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        oBIJFFPNJCH_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isBoostAll_ ;
       /**
-       * <code>bool is_boost_all = 9;</code>
+       * <code>bool is_boost_all = 3;</code>
        * @return The isBoostAll.
        */
       @java.lang.Override
@@ -619,54 +600,56 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
         return isBoostAll_;
       }
       /**
-       * <code>bool is_boost_all = 9;</code>
+       * <code>bool is_boost_all = 3;</code>
        * @param value The isBoostAll to set.
        * @return This builder for chaining.
        */
       public Builder setIsBoostAll(boolean value) {
-        
+
         isBoostAll_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_boost_all = 9;</code>
+       * <code>bool is_boost_all = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsBoostAll() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         isBoostAll_ = false;
         onChanged();
         return this;
       }
 
-      private int mHMAGJKPDIO_ ;
+      private int mOOPCNDDCEP_ ;
       /**
-       * <code>uint32 MHMAGJKPDIO = 7;</code>
-       * @return The mHMAGJKPDIO.
+       * <code>uint32 MOOPCNDDCEP = 14;</code>
+       * @return The mOOPCNDDCEP.
        */
       @java.lang.Override
-      public int getMHMAGJKPDIO() {
-        return mHMAGJKPDIO_;
+      public int getMOOPCNDDCEP() {
+        return mOOPCNDDCEP_;
       }
       /**
-       * <code>uint32 MHMAGJKPDIO = 7;</code>
-       * @param value The mHMAGJKPDIO to set.
+       * <code>uint32 MOOPCNDDCEP = 14;</code>
+       * @param value The mOOPCNDDCEP to set.
        * @return This builder for chaining.
        */
-      public Builder setMHMAGJKPDIO(int value) {
-        
-        mHMAGJKPDIO_ = value;
+      public Builder setMOOPCNDDCEP(int value) {
+
+        mOOPCNDDCEP_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 MHMAGJKPDIO = 7;</code>
+       * <code>uint32 MOOPCNDDCEP = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMHMAGJKPDIO() {
-        
-        mHMAGJKPDIO_ = 0;
+      public Builder clearMOOPCNDDCEP() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        mOOPCNDDCEP_ = 0;
         onChanged();
         return this;
       }
@@ -703,7 +686,18 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PlayerCompoundMaterialBoostReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -738,9 +732,9 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$PlayerCompoundMaterialBoostReq.proto\"u" +
-      "\n\036PlayerCompoundMaterialBoostReq\022\023\n\013HDPL" +
-      "MDCFPAF\030\014 \001(\r\022\023\n\013MBEFPCNDEII\030\013 \001(\r\022\024\n\014is" +
-      "_boost_all\030\t \001(\010\022\023\n\013MHMAGJKPDIO\030\007 \001(\rB\033\n" +
+      "\n\036PlayerCompoundMaterialBoostReq\022\023\n\013GHBD" +
+      "KDMBGEH\030\005 \001(\r\022\023\n\013OBIJFFPNJCH\030\r \001(\r\022\024\n\014is" +
+      "_boost_all\030\003 \001(\010\022\023\n\013MOOPCNDDCEP\030\016 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -752,7 +746,7 @@ public final class PlayerCompoundMaterialBoostReqOuterClass {
     internal_static_PlayerCompoundMaterialBoostReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerCompoundMaterialBoostReq_descriptor,
-        new java.lang.String[] { "HDPLMDCFPAF", "MBEFPCNDEII", "IsBoostAll", "MHMAGJKPDIO", });
+        new java.lang.String[] { "GHBDKDMBGEH", "OBIJFFPNJCH", "IsBoostAll", "MOOPCNDDCEP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

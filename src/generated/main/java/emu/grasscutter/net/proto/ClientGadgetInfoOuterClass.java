@@ -96,7 +96,7 @@ public final class ClientGadgetInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: INJJFHFANAD
+   * Name: OKBKAFDHDFA
    * </pre>
    *
    * Protobuf type {@code ClientGadgetInfo}
@@ -122,132 +122,6 @@ public final class ClientGadgetInfoOuterClass {
       return new ClientGadgetInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ClientGadgetInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              campId_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              campType_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              guid_ = input.readUInt64();
-              break;
-            }
-            case 32: {
-
-              ownerEntityId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              targetEntityId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              asyncLoad_ = input.readBool();
-              break;
-            }
-            case 56: {
-
-              isPeerIdFromPlayer_ = input.readBool();
-              break;
-            }
-            case 64: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                targetEntityIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              targetEntityIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 66: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                targetEntityIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                targetEntityIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 72: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                targetLockPointIndexList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              targetLockPointIndexList_.addInt(input.readUInt32());
-              break;
-            }
-            case 74: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                targetLockPointIndexList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                targetLockPointIndexList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          targetEntityIdList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          targetLockPointIndexList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.internal_static_ClientGadgetInfo_descriptor;
@@ -262,7 +136,7 @@ public final class ClientGadgetInfoOuterClass {
     }
 
     public static final int CAMP_ID_FIELD_NUMBER = 1;
-    private int campId_;
+    private int campId_ = 0;
     /**
      * <code>uint32 camp_id = 1;</code>
      * @return The campId.
@@ -273,7 +147,7 @@ public final class ClientGadgetInfoOuterClass {
     }
 
     public static final int CAMP_TYPE_FIELD_NUMBER = 2;
-    private int campType_;
+    private int campType_ = 0;
     /**
      * <code>uint32 camp_type = 2;</code>
      * @return The campType.
@@ -284,7 +158,7 @@ public final class ClientGadgetInfoOuterClass {
     }
 
     public static final int GUID_FIELD_NUMBER = 3;
-    private long guid_;
+    private long guid_ = 0L;
     /**
      * <code>uint64 guid = 3;</code>
      * @return The guid.
@@ -295,7 +169,7 @@ public final class ClientGadgetInfoOuterClass {
     }
 
     public static final int OWNER_ENTITY_ID_FIELD_NUMBER = 4;
-    private int ownerEntityId_;
+    private int ownerEntityId_ = 0;
     /**
      * <code>uint32 owner_entity_id = 4;</code>
      * @return The ownerEntityId.
@@ -306,7 +180,7 @@ public final class ClientGadgetInfoOuterClass {
     }
 
     public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 5;
-    private int targetEntityId_;
+    private int targetEntityId_ = 0;
     /**
      * <code>uint32 target_entity_id = 5;</code>
      * @return The targetEntityId.
@@ -317,7 +191,7 @@ public final class ClientGadgetInfoOuterClass {
     }
 
     public static final int ASYNC_LOAD_FIELD_NUMBER = 6;
-    private boolean asyncLoad_;
+    private boolean asyncLoad_ = false;
     /**
      * <code>bool async_load = 6;</code>
      * @return The asyncLoad.
@@ -328,7 +202,7 @@ public final class ClientGadgetInfoOuterClass {
     }
 
     public static final int IS_PEER_ID_FROM_PLAYER_FIELD_NUMBER = 7;
-    private boolean isPeerIdFromPlayer_;
+    private boolean isPeerIdFromPlayer_ = false;
     /**
      * <code>bool is_peer_id_from_player = 7;</code>
      * @return The isPeerIdFromPlayer.
@@ -339,6 +213,7 @@ public final class ClientGadgetInfoOuterClass {
     }
 
     public static final int TARGET_ENTITY_ID_LIST_FIELD_NUMBER = 8;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList targetEntityIdList_;
     /**
      * <code>repeated uint32 target_entity_id_list = 8;</code>
@@ -367,6 +242,7 @@ public final class ClientGadgetInfoOuterClass {
     private int targetEntityIdListMemoizedSerializedSize = -1;
 
     public static final int TARGET_LOCK_POINT_INDEX_LIST_FIELD_NUMBER = 9;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList targetLockPointIndexList_;
     /**
      * <code>repeated uint32 target_lock_point_index_list = 9;</code>
@@ -444,7 +320,7 @@ public final class ClientGadgetInfoOuterClass {
       for (int i = 0; i < targetLockPointIndexList_.size(); i++) {
         output.writeUInt32NoTag(targetLockPointIndexList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -509,7 +385,7 @@ public final class ClientGadgetInfoOuterClass {
         }
         targetLockPointIndexListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -542,7 +418,7 @@ public final class ClientGadgetInfoOuterClass {
           .equals(other.getTargetEntityIdListList())) return false;
       if (!getTargetLockPointIndexListList()
           .equals(other.getTargetLockPointIndexListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -578,7 +454,7 @@ public final class ClientGadgetInfoOuterClass {
         hash = (37 * hash) + TARGET_LOCK_POINT_INDEX_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTargetLockPointIndexListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -627,11 +503,13 @@ public final class ClientGadgetInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -675,7 +553,7 @@ public final class ClientGadgetInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: INJJFHFANAD
+     * Name: OKBKAFDHDFA
      * </pre>
      *
      * Protobuf type {@code ClientGadgetInfo}
@@ -699,40 +577,27 @@ public final class ClientGadgetInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         campId_ = 0;
-
         campType_ = 0;
-
         guid_ = 0L;
-
         ownerEntityId_ = 0;
-
         targetEntityId_ = 0;
-
         asyncLoad_ = false;
-
         isPeerIdFromPlayer_ = false;
-
         targetEntityIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         targetLockPointIndexList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -759,26 +624,48 @@ public final class ClientGadgetInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo buildPartial() {
         emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo result = new emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo(this);
-        int from_bitField0_ = bitField0_;
-        result.campId_ = campId_;
-        result.campType_ = campType_;
-        result.guid_ = guid_;
-        result.ownerEntityId_ = ownerEntityId_;
-        result.targetEntityId_ = targetEntityId_;
-        result.asyncLoad_ = asyncLoad_;
-        result.isPeerIdFromPlayer_ = isPeerIdFromPlayer_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          targetEntityIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.targetEntityIdList_ = targetEntityIdList_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          targetLockPointIndexList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.targetLockPointIndexList_ = targetLockPointIndexList_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo result) {
+        if (((bitField0_ & 0x00000080) != 0)) {
+          targetEntityIdList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000080);
+        }
+        result.targetEntityIdList_ = targetEntityIdList_;
+        if (((bitField0_ & 0x00000100) != 0)) {
+          targetLockPointIndexList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000100);
+        }
+        result.targetLockPointIndexList_ = targetLockPointIndexList_;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.campId_ = campId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.campType_ = campType_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.guid_ = guid_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.ownerEntityId_ = ownerEntityId_;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.targetEntityId_ = targetEntityId_;
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
+          result.asyncLoad_ = asyncLoad_;
+        }
+        if (((from_bitField0_ & 0x00000040) != 0)) {
+          result.isPeerIdFromPlayer_ = isPeerIdFromPlayer_;
+        }
       }
 
       @java.lang.Override
@@ -849,7 +736,7 @@ public final class ClientGadgetInfoOuterClass {
         if (!other.targetEntityIdList_.isEmpty()) {
           if (targetEntityIdList_.isEmpty()) {
             targetEntityIdList_ = other.targetEntityIdList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000080);
           } else {
             ensureTargetEntityIdListIsMutable();
             targetEntityIdList_.addAll(other.targetEntityIdList_);
@@ -859,14 +746,14 @@ public final class ClientGadgetInfoOuterClass {
         if (!other.targetLockPointIndexList_.isEmpty()) {
           if (targetLockPointIndexList_.isEmpty()) {
             targetLockPointIndexList_ = other.targetLockPointIndexList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000100);
           } else {
             ensureTargetLockPointIndexListIsMutable();
             targetLockPointIndexList_.addAll(other.targetLockPointIndexList_);
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -881,17 +768,97 @@ public final class ClientGadgetInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                campId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                campType_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 24: {
+                guid_ = input.readUInt64();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 32: {
+                ownerEntityId_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 32
+              case 40: {
+                targetEntityId_ = input.readUInt32();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 40
+              case 48: {
+                asyncLoad_ = input.readBool();
+                bitField0_ |= 0x00000020;
+                break;
+              } // case 48
+              case 56: {
+                isPeerIdFromPlayer_ = input.readBool();
+                bitField0_ |= 0x00000040;
+                break;
+              } // case 56
+              case 64: {
+                int v = input.readUInt32();
+                ensureTargetEntityIdListIsMutable();
+                targetEntityIdList_.addInt(v);
+                break;
+              } // case 64
+              case 66: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureTargetEntityIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  targetEntityIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 66
+              case 72: {
+                int v = input.readUInt32();
+                ensureTargetLockPointIndexListIsMutable();
+                targetLockPointIndexList_.addInt(v);
+                break;
+              } // case 72
+              case 74: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureTargetLockPointIndexListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  targetLockPointIndexList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 74
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -911,8 +878,9 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setCampId(int value) {
-        
+
         campId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -921,7 +889,7 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearCampId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         campId_ = 0;
         onChanged();
         return this;
@@ -942,8 +910,9 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setCampType(int value) {
-        
+
         campType_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -952,7 +921,7 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearCampType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         campType_ = 0;
         onChanged();
         return this;
@@ -973,8 +942,9 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setGuid(long value) {
-        
+
         guid_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -983,7 +953,7 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         guid_ = 0L;
         onChanged();
         return this;
@@ -1004,8 +974,9 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setOwnerEntityId(int value) {
-        
+
         ownerEntityId_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -1014,7 +985,7 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearOwnerEntityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         ownerEntityId_ = 0;
         onChanged();
         return this;
@@ -1035,8 +1006,9 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setTargetEntityId(int value) {
-        
+
         targetEntityId_ = value;
+        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
@@ -1045,7 +1017,7 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearTargetEntityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000010);
         targetEntityId_ = 0;
         onChanged();
         return this;
@@ -1066,8 +1038,9 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setAsyncLoad(boolean value) {
-        
+
         asyncLoad_ = value;
+        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
@@ -1076,7 +1049,7 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearAsyncLoad() {
-        
+        bitField0_ = (bitField0_ & ~0x00000020);
         asyncLoad_ = false;
         onChanged();
         return this;
@@ -1097,8 +1070,9 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIsPeerIdFromPlayer(boolean value) {
-        
+
         isPeerIdFromPlayer_ = value;
+        bitField0_ |= 0x00000040;
         onChanged();
         return this;
       }
@@ -1107,7 +1081,7 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearIsPeerIdFromPlayer() {
-        
+        bitField0_ = (bitField0_ & ~0x00000040);
         isPeerIdFromPlayer_ = false;
         onChanged();
         return this;
@@ -1115,10 +1089,10 @@ public final class ClientGadgetInfoOuterClass {
 
       private com.google.protobuf.Internal.IntList targetEntityIdList_ = emptyIntList();
       private void ensureTargetEntityIdListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000080) != 0)) {
           targetEntityIdList_ = mutableCopy(targetEntityIdList_);
-          bitField0_ |= 0x00000001;
-         }
+          bitField0_ |= 0x00000080;
+        }
       }
       /**
        * <code>repeated uint32 target_entity_id_list = 8;</code>
@@ -1126,7 +1100,7 @@ public final class ClientGadgetInfoOuterClass {
        */
       public java.util.List<java.lang.Integer>
           getTargetEntityIdListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000080) != 0) ?
                  java.util.Collections.unmodifiableList(targetEntityIdList_) : targetEntityIdList_;
       }
       /**
@@ -1152,6 +1126,7 @@ public final class ClientGadgetInfoOuterClass {
        */
       public Builder setTargetEntityIdList(
           int index, int value) {
+
         ensureTargetEntityIdListIsMutable();
         targetEntityIdList_.setInt(index, value);
         onChanged();
@@ -1163,6 +1138,7 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder addTargetEntityIdList(int value) {
+
         ensureTargetEntityIdListIsMutable();
         targetEntityIdList_.addInt(value);
         onChanged();
@@ -1187,17 +1163,17 @@ public final class ClientGadgetInfoOuterClass {
        */
       public Builder clearTargetEntityIdList() {
         targetEntityIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000080);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.Internal.IntList targetLockPointIndexList_ = emptyIntList();
       private void ensureTargetLockPointIndexListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000100) != 0)) {
           targetLockPointIndexList_ = mutableCopy(targetLockPointIndexList_);
-          bitField0_ |= 0x00000002;
-         }
+          bitField0_ |= 0x00000100;
+        }
       }
       /**
        * <code>repeated uint32 target_lock_point_index_list = 9;</code>
@@ -1205,7 +1181,7 @@ public final class ClientGadgetInfoOuterClass {
        */
       public java.util.List<java.lang.Integer>
           getTargetLockPointIndexListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000100) != 0) ?
                  java.util.Collections.unmodifiableList(targetLockPointIndexList_) : targetLockPointIndexList_;
       }
       /**
@@ -1231,6 +1207,7 @@ public final class ClientGadgetInfoOuterClass {
        */
       public Builder setTargetLockPointIndexList(
           int index, int value) {
+
         ensureTargetLockPointIndexListIsMutable();
         targetLockPointIndexList_.setInt(index, value);
         onChanged();
@@ -1242,6 +1219,7 @@ public final class ClientGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder addTargetLockPointIndexList(int value) {
+
         ensureTargetLockPointIndexListIsMutable();
         targetLockPointIndexList_.addInt(value);
         onChanged();
@@ -1266,7 +1244,7 @@ public final class ClientGadgetInfoOuterClass {
        */
       public Builder clearTargetLockPointIndexList() {
         targetLockPointIndexList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000100);
         onChanged();
         return this;
       }
@@ -1303,7 +1281,18 @@ public final class ClientGadgetInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ClientGadgetInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

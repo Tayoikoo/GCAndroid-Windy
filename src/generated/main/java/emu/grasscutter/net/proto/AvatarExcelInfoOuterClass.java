@@ -50,7 +50,7 @@ public final class AvatarExcelInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: NNEHENIKCMK
+   * Name: FFDCKFPNAHP
    * </pre>
    *
    * Protobuf type {@code AvatarExcelInfo}
@@ -74,73 +74,6 @@ public final class AvatarExcelInfoOuterClass {
       return new AvatarExcelInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private AvatarExcelInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              prefabPathHash_ = input.readUInt64();
-              break;
-            }
-            case 16: {
-
-              prefabPathRemoteHash_ = input.readUInt64();
-              break;
-            }
-            case 24: {
-
-              controllerPathHash_ = input.readUInt64();
-              break;
-            }
-            case 32: {
-
-              controllerPathRemoteHash_ = input.readUInt64();
-              break;
-            }
-            case 40: {
-
-              combatConfigHash_ = input.readUInt64();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.internal_static_AvatarExcelInfo_descriptor;
@@ -155,7 +88,7 @@ public final class AvatarExcelInfoOuterClass {
     }
 
     public static final int PREFAB_PATH_HASH_FIELD_NUMBER = 1;
-    private long prefabPathHash_;
+    private long prefabPathHash_ = 0L;
     /**
      * <code>uint64 prefab_path_hash = 1;</code>
      * @return The prefabPathHash.
@@ -166,7 +99,7 @@ public final class AvatarExcelInfoOuterClass {
     }
 
     public static final int PREFAB_PATH_REMOTE_HASH_FIELD_NUMBER = 2;
-    private long prefabPathRemoteHash_;
+    private long prefabPathRemoteHash_ = 0L;
     /**
      * <code>uint64 prefab_path_remote_hash = 2;</code>
      * @return The prefabPathRemoteHash.
@@ -177,7 +110,7 @@ public final class AvatarExcelInfoOuterClass {
     }
 
     public static final int CONTROLLER_PATH_HASH_FIELD_NUMBER = 3;
-    private long controllerPathHash_;
+    private long controllerPathHash_ = 0L;
     /**
      * <code>uint64 controller_path_hash = 3;</code>
      * @return The controllerPathHash.
@@ -188,7 +121,7 @@ public final class AvatarExcelInfoOuterClass {
     }
 
     public static final int CONTROLLER_PATH_REMOTE_HASH_FIELD_NUMBER = 4;
-    private long controllerPathRemoteHash_;
+    private long controllerPathRemoteHash_ = 0L;
     /**
      * <code>uint64 controller_path_remote_hash = 4;</code>
      * @return The controllerPathRemoteHash.
@@ -199,7 +132,7 @@ public final class AvatarExcelInfoOuterClass {
     }
 
     public static final int COMBAT_CONFIG_HASH_FIELD_NUMBER = 5;
-    private long combatConfigHash_;
+    private long combatConfigHash_ = 0L;
     /**
      * <code>uint64 combat_config_hash = 5;</code>
      * @return The combatConfigHash.
@@ -238,7 +171,7 @@ public final class AvatarExcelInfoOuterClass {
       if (combatConfigHash_ != 0L) {
         output.writeUInt64(5, combatConfigHash_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -267,7 +200,7 @@ public final class AvatarExcelInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(5, combatConfigHash_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -292,7 +225,7 @@ public final class AvatarExcelInfoOuterClass {
           != other.getControllerPathRemoteHash()) return false;
       if (getCombatConfigHash()
           != other.getCombatConfigHash()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -318,7 +251,7 @@ public final class AvatarExcelInfoOuterClass {
       hash = (37 * hash) + COMBAT_CONFIG_HASH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getCombatConfigHash());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -367,11 +300,13 @@ public final class AvatarExcelInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -415,7 +350,7 @@ public final class AvatarExcelInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: NNEHENIKCMK
+     * Name: FFDCKFPNAHP
      * </pre>
      *
      * Protobuf type {@code AvatarExcelInfo}
@@ -439,32 +374,23 @@ public final class AvatarExcelInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         prefabPathHash_ = 0L;
-
         prefabPathRemoteHash_ = 0L;
-
         controllerPathHash_ = 0L;
-
         controllerPathRemoteHash_ = 0L;
-
         combatConfigHash_ = 0L;
-
         return this;
       }
 
@@ -491,13 +417,28 @@ public final class AvatarExcelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo buildPartial() {
         emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo result = new emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo(this);
-        result.prefabPathHash_ = prefabPathHash_;
-        result.prefabPathRemoteHash_ = prefabPathRemoteHash_;
-        result.controllerPathHash_ = controllerPathHash_;
-        result.controllerPathRemoteHash_ = controllerPathRemoteHash_;
-        result.combatConfigHash_ = combatConfigHash_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.prefabPathHash_ = prefabPathHash_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.prefabPathRemoteHash_ = prefabPathRemoteHash_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.controllerPathHash_ = controllerPathHash_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.controllerPathRemoteHash_ = controllerPathRemoteHash_;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.combatConfigHash_ = combatConfigHash_;
+        }
       }
 
       @java.lang.Override
@@ -559,7 +500,7 @@ public final class AvatarExcelInfoOuterClass {
         if (other.getCombatConfigHash() != 0L) {
           setCombatConfigHash(other.getCombatConfigHash());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -574,19 +515,58 @@ public final class AvatarExcelInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                prefabPathHash_ = input.readUInt64();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                prefabPathRemoteHash_ = input.readUInt64();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 24: {
+                controllerPathHash_ = input.readUInt64();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 32: {
+                controllerPathRemoteHash_ = input.readUInt64();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 32
+              case 40: {
+                combatConfigHash_ = input.readUInt64();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 40
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private long prefabPathHash_ ;
       /**
@@ -603,8 +583,9 @@ public final class AvatarExcelInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setPrefabPathHash(long value) {
-        
+
         prefabPathHash_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -613,7 +594,7 @@ public final class AvatarExcelInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearPrefabPathHash() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         prefabPathHash_ = 0L;
         onChanged();
         return this;
@@ -634,8 +615,9 @@ public final class AvatarExcelInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setPrefabPathRemoteHash(long value) {
-        
+
         prefabPathRemoteHash_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -644,7 +626,7 @@ public final class AvatarExcelInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearPrefabPathRemoteHash() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         prefabPathRemoteHash_ = 0L;
         onChanged();
         return this;
@@ -665,8 +647,9 @@ public final class AvatarExcelInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setControllerPathHash(long value) {
-        
+
         controllerPathHash_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -675,7 +658,7 @@ public final class AvatarExcelInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearControllerPathHash() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         controllerPathHash_ = 0L;
         onChanged();
         return this;
@@ -696,8 +679,9 @@ public final class AvatarExcelInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setControllerPathRemoteHash(long value) {
-        
+
         controllerPathRemoteHash_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -706,7 +690,7 @@ public final class AvatarExcelInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearControllerPathRemoteHash() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         controllerPathRemoteHash_ = 0L;
         onChanged();
         return this;
@@ -727,8 +711,9 @@ public final class AvatarExcelInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setCombatConfigHash(long value) {
-        
+
         combatConfigHash_ = value;
+        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
@@ -737,7 +722,7 @@ public final class AvatarExcelInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearCombatConfigHash() {
-        
+        bitField0_ = (bitField0_ & ~0x00000010);
         combatConfigHash_ = 0L;
         onChanged();
         return this;
@@ -775,7 +760,18 @@ public final class AvatarExcelInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AvatarExcelInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

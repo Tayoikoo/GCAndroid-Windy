@@ -9,7 +9,8 @@ public class PacketSetOpenStateRsp extends BasePacket {
     public PacketSetOpenStateRsp(int openState, int value) {
         super(PacketOpcodes.SetOpenStateRsp);
 
-        SetOpenStateRsp proto = SetOpenStateRsp.newBuilder().setKey(openState).setValue(value).build();
+        SetOpenStateRsp proto = SetOpenStateRsp.newBuilder()
+            .setKey(openState).setValue(value).build();
 
         this.setData(proto);
     }
@@ -17,7 +18,8 @@ public class PacketSetOpenStateRsp extends BasePacket {
     public PacketSetOpenStateRsp(Retcode retcode) {
         super(PacketOpcodes.SetOpenStateRsp);
 
-        SetOpenStateRsp proto = SetOpenStateRsp.newBuilder().setRetcode(retcode.getNumber()).build();
+        SetOpenStateRsp proto = SetOpenStateRsp.newBuilder()
+            .setRetcode(retcode.getNumber()).build();
 
         this.setData(proto);
     }

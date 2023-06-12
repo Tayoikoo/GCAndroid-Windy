@@ -16,4 +16,5 @@ public class HandlerHomeEnterEditModeFinishReq extends PacketHandler {
          */
         session.send(new PacketHomeEnterEditModeFinishRsp());
     }
+
 }

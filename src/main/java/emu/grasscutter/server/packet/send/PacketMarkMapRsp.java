@@ -3,9 +3,10 @@ package emu.grasscutter.server.packet.send;
 import emu.grasscutter.game.managers.mapmark.MapMark;
 import emu.grasscutter.net.packet.BasePacket;
 import emu.grasscutter.net.packet.PacketOpcodes;
-import emu.grasscutter.net.proto.MapMarkPointOuterClass.MapMarkPoint;
 import emu.grasscutter.net.proto.MarkMapRspOuterClass.MarkMapRsp;
-import java.util.Map;
+import emu.grasscutter.net.proto.MapMarkPointOuterClass.MapMarkPoint;
+
+import java.util.*;
 
 public class PacketMarkMapRsp extends BasePacket {
 
@@ -16,7 +17,7 @@ public class PacketMarkMapRsp extends BasePacket {
         proto.setRetcode(0);
 
         if (mapMarks != null) {
-            for (MapMark mapMark : mapMarks.values()) {
+            for (MapMark mapMark: mapMarks.values()) {
                 var markPoint = MapMarkPoint.newBuilder();
                 markPoint.setSceneId(mapMark.getSceneId());
                 markPoint.setName(mapMark.getName());

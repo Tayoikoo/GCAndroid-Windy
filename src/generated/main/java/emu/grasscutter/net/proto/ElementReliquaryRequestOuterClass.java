@@ -52,58 +52,6 @@ public final class ElementReliquaryRequestOuterClass {
       return new ElementReliquaryRequest();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ElementReliquaryRequest(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 56: {
-
-              equipType_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              elementType_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ElementReliquaryRequestOuterClass.internal_static_ElementReliquaryRequest_descriptor;
@@ -118,7 +66,7 @@ public final class ElementReliquaryRequestOuterClass {
     }
 
     public static final int ELEMENTTYPE_FIELD_NUMBER = 12;
-    private int elementType_;
+    private int elementType_ = 0;
     /**
      * <code>uint32 elementType = 12;</code>
      * @return The elementType.
@@ -129,7 +77,7 @@ public final class ElementReliquaryRequestOuterClass {
     }
 
     public static final int EQUIPTYPE_FIELD_NUMBER = 7;
-    private int equipType_;
+    private int equipType_ = 0;
     /**
      * <code>uint32 equipType = 7;</code>
      * @return The equipType.
@@ -159,7 +107,7 @@ public final class ElementReliquaryRequestOuterClass {
       if (elementType_ != 0) {
         output.writeUInt32(12, elementType_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -176,7 +124,7 @@ public final class ElementReliquaryRequestOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, elementType_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -195,7 +143,7 @@ public final class ElementReliquaryRequestOuterClass {
           != other.getElementType()) return false;
       if (getEquipType()
           != other.getEquipType()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -210,7 +158,7 @@ public final class ElementReliquaryRequestOuterClass {
       hash = (53 * hash) + getElementType();
       hash = (37 * hash) + EQUIPTYPE_FIELD_NUMBER;
       hash = (53 * hash) + getEquipType();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -259,11 +207,13 @@ public final class ElementReliquaryRequestOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.ElementReliquaryRequestOuterClass.ElementReliquaryRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.ElementReliquaryRequestOuterClass.ElementReliquaryRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -327,26 +277,20 @@ public final class ElementReliquaryRequestOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ElementReliquaryRequestOuterClass.ElementReliquaryRequest.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         elementType_ = 0;
-
         equipType_ = 0;
-
         return this;
       }
 
@@ -373,10 +317,19 @@ public final class ElementReliquaryRequestOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ElementReliquaryRequestOuterClass.ElementReliquaryRequest buildPartial() {
         emu.grasscutter.net.proto.ElementReliquaryRequestOuterClass.ElementReliquaryRequest result = new emu.grasscutter.net.proto.ElementReliquaryRequestOuterClass.ElementReliquaryRequest(this);
-        result.elementType_ = elementType_;
-        result.equipType_ = equipType_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ElementReliquaryRequestOuterClass.ElementReliquaryRequest result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.elementType_ = elementType_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.equipType_ = equipType_;
+        }
       }
 
       @java.lang.Override
@@ -429,7 +382,7 @@ public final class ElementReliquaryRequestOuterClass {
         if (other.getEquipType() != 0) {
           setEquipType(other.getEquipType());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -444,19 +397,43 @@ public final class ElementReliquaryRequestOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ElementReliquaryRequestOuterClass.ElementReliquaryRequest parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 56: {
+                equipType_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 56
+              case 96: {
+                elementType_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 96
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ElementReliquaryRequestOuterClass.ElementReliquaryRequest) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int elementType_ ;
       /**
@@ -473,8 +450,9 @@ public final class ElementReliquaryRequestOuterClass {
        * @return This builder for chaining.
        */
       public Builder setElementType(int value) {
-        
+
         elementType_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -483,7 +461,7 @@ public final class ElementReliquaryRequestOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearElementType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         elementType_ = 0;
         onChanged();
         return this;
@@ -504,8 +482,9 @@ public final class ElementReliquaryRequestOuterClass {
        * @return This builder for chaining.
        */
       public Builder setEquipType(int value) {
-        
+
         equipType_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -514,7 +493,7 @@ public final class ElementReliquaryRequestOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearEquipType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         equipType_ = 0;
         onChanged();
         return this;
@@ -552,7 +531,18 @@ public final class ElementReliquaryRequestOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ElementReliquaryRequest(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -588,8 +578,8 @@ public final class ElementReliquaryRequestOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035ElementReliquaryRequest.proto\"A\n\027Eleme" +
       "ntReliquaryRequest\022\023\n\013elementType\030\014 \001(\r\022" +
-      "\021\n\tequipType\030\007 \001(\rB!\n\031emu.grasscutter.ne" +
-      "t.protoZ\004/genb\006proto3"
+      "\021\n\tequipType\030\007 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

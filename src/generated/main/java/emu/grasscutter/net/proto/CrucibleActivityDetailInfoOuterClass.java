@@ -19,46 +19,7 @@ public final class CrucibleActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector pos = 3;</code>
-     * @return Whether the pos field is set.
-     */
-    boolean hasPos();
-    /**
-     * <code>.Vector pos = 3;</code>
-     * @return The pos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
-    /**
-     * <code>.Vector pos = 3;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
-
-    /**
-     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo> 
-        getUidInfoListList();
-    /**
-     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-     */
-    emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo getUidInfoList(int index);
-    /**
-     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-     */
-    int getUidInfoListCount();
-    /**
-     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder> 
-        getUidInfoListOrBuilderList();
-    /**
-     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-     */
-    emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder getUidInfoListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 cost_time = 5;</code>
+     * <code>uint32 cost_time = 15;</code>
      * @return The costTime.
      */
     int getCostTime();
@@ -68,10 +29,49 @@ public final class CrucibleActivityDetailInfoOuterClass {
      * @return The battleWorldLevel.
      */
     int getBattleWorldLevel();
+
+    /**
+     * <code>.Vector pos = 2;</code>
+     * @return Whether the pos field is set.
+     */
+    boolean hasPos();
+    /**
+     * <code>.Vector pos = 2;</code>
+     * @return The pos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
+    /**
+     * <code>.Vector pos = 2;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+
+    /**
+     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo> 
+        getUidInfoListList();
+    /**
+     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+     */
+    emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo getUidInfoList(int index);
+    /**
+     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+     */
+    int getUidInfoListCount();
+    /**
+     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder> 
+        getUidInfoListOrBuilderList();
+    /**
+     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+     */
+    emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder getUidInfoListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * Obf: GKNCGFLIHAF
+   * Name: HCEPMHMPEOC
    * </pre>
    *
    * Protobuf type {@code CrucibleActivityDetailInfo}
@@ -96,84 +96,6 @@ public final class CrucibleActivityDetailInfoOuterClass {
       return new CrucibleActivityDetailInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private CrucibleActivityDetailInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 26: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (pos_ != null) {
-                subBuilder = pos_.toBuilder();
-              }
-              pos_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(pos_);
-                pos_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 40: {
-
-              costTime_ = input.readUInt32();
-              break;
-            }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                uidInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              uidInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 96: {
-
-              battleWorldLevel_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          uidInfoList_ = java.util.Collections.unmodifiableList(uidInfoList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.internal_static_CrucibleActivityDetailInfo_descriptor;
@@ -187,76 +109,10 @@ public final class CrucibleActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo.class, emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo.Builder.class);
     }
 
-    public static final int POS_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+    public static final int COST_TIME_FIELD_NUMBER = 15;
+    private int costTime_ = 0;
     /**
-     * <code>.Vector pos = 3;</code>
-     * @return Whether the pos field is set.
-     */
-    @java.lang.Override
-    public boolean hasPos() {
-      return pos_ != null;
-    }
-    /**
-     * <code>.Vector pos = 3;</code>
-     * @return The pos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-    }
-    /**
-     * <code>.Vector pos = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-      return getPos();
-    }
-
-    public static final int UID_INFO_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo> uidInfoList_;
-    /**
-     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo> getUidInfoListList() {
-      return uidInfoList_;
-    }
-    /**
-     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder> 
-        getUidInfoListOrBuilderList() {
-      return uidInfoList_;
-    }
-    /**
-     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-     */
-    @java.lang.Override
-    public int getUidInfoListCount() {
-      return uidInfoList_.size();
-    }
-    /**
-     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo getUidInfoList(int index) {
-      return uidInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder getUidInfoListOrBuilder(
-        int index) {
-      return uidInfoList_.get(index);
-    }
-
-    public static final int COST_TIME_FIELD_NUMBER = 5;
-    private int costTime_;
-    /**
-     * <code>uint32 cost_time = 5;</code>
+     * <code>uint32 cost_time = 15;</code>
      * @return The costTime.
      */
     @java.lang.Override
@@ -265,7 +121,7 @@ public final class CrucibleActivityDetailInfoOuterClass {
     }
 
     public static final int BATTLE_WORLD_LEVEL_FIELD_NUMBER = 12;
-    private int battleWorldLevel_;
+    private int battleWorldLevel_ = 0;
     /**
      * <code>uint32 battle_world_level = 12;</code>
      * @return The battleWorldLevel.
@@ -273,6 +129,73 @@ public final class CrucibleActivityDetailInfoOuterClass {
     @java.lang.Override
     public int getBattleWorldLevel() {
       return battleWorldLevel_;
+    }
+
+    public static final int POS_FIELD_NUMBER = 2;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+    /**
+     * <code>.Vector pos = 2;</code>
+     * @return Whether the pos field is set.
+     */
+    @java.lang.Override
+    public boolean hasPos() {
+      return pos_ != null;
+    }
+    /**
+     * <code>.Vector pos = 2;</code>
+     * @return The pos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+    }
+    /**
+     * <code>.Vector pos = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+    }
+
+    public static final int UID_INFO_LIST_FIELD_NUMBER = 9;
+    @SuppressWarnings("serial")
+    private java.util.List<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo> uidInfoList_;
+    /**
+     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo> getUidInfoListList() {
+      return uidInfoList_;
+    }
+    /**
+     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder> 
+        getUidInfoListOrBuilderList() {
+      return uidInfoList_;
+    }
+    /**
+     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+     */
+    @java.lang.Override
+    public int getUidInfoListCount() {
+      return uidInfoList_.size();
+    }
+    /**
+     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo getUidInfoList(int index) {
+      return uidInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder getUidInfoListOrBuilder(
+        int index) {
+      return uidInfoList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -290,18 +213,18 @@ public final class CrucibleActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (pos_ != null) {
-        output.writeMessage(3, getPos());
-      }
-      if (costTime_ != 0) {
-        output.writeUInt32(5, costTime_);
+        output.writeMessage(2, getPos());
       }
       for (int i = 0; i < uidInfoList_.size(); i++) {
-        output.writeMessage(10, uidInfoList_.get(i));
+        output.writeMessage(9, uidInfoList_.get(i));
       }
       if (battleWorldLevel_ != 0) {
         output.writeUInt32(12, battleWorldLevel_);
       }
-      unknownFields.writeTo(output);
+      if (costTime_ != 0) {
+        output.writeUInt32(15, costTime_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -312,21 +235,21 @@ public final class CrucibleActivityDetailInfoOuterClass {
       size = 0;
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getPos());
-      }
-      if (costTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, costTime_);
+          .computeMessageSize(2, getPos());
       }
       for (int i = 0; i < uidInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, uidInfoList_.get(i));
+          .computeMessageSize(9, uidInfoList_.get(i));
       }
       if (battleWorldLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, battleWorldLevel_);
       }
-      size += unknownFields.getSerializedSize();
+      if (costTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, costTime_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -341,6 +264,10 @@ public final class CrucibleActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo other = (emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo) obj;
 
+      if (getCostTime()
+          != other.getCostTime()) return false;
+      if (getBattleWorldLevel()
+          != other.getBattleWorldLevel()) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
@@ -348,11 +275,7 @@ public final class CrucibleActivityDetailInfoOuterClass {
       }
       if (!getUidInfoListList()
           .equals(other.getUidInfoListList())) return false;
-      if (getCostTime()
-          != other.getCostTime()) return false;
-      if (getBattleWorldLevel()
-          != other.getBattleWorldLevel()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -363,6 +286,10 @@ public final class CrucibleActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getCostTime();
+      hash = (37 * hash) + BATTLE_WORLD_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getBattleWorldLevel();
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
@@ -371,11 +298,7 @@ public final class CrucibleActivityDetailInfoOuterClass {
         hash = (37 * hash) + UID_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getUidInfoListList().hashCode();
       }
-      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCostTime();
-      hash = (37 * hash) + BATTLE_WORLD_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getBattleWorldLevel();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -424,11 +347,13 @@ public final class CrucibleActivityDetailInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -472,7 +397,7 @@ public final class CrucibleActivityDetailInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: GKNCGFLIHAF
+     * Name: HCEPMHMPEOC
      * </pre>
      *
      * Protobuf type {@code CrucibleActivityDetailInfo}
@@ -496,39 +421,32 @@ public final class CrucibleActivityDetailInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getUidInfoListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (posBuilder_ == null) {
-          pos_ = null;
-        } else {
-          pos_ = null;
+        bitField0_ = 0;
+        costTime_ = 0;
+        battleWorldLevel_ = 0;
+        pos_ = null;
+        if (posBuilder_ != null) {
+          posBuilder_.dispose();
           posBuilder_ = null;
         }
         if (uidInfoListBuilder_ == null) {
           uidInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          uidInfoList_ = null;
           uidInfoListBuilder_.clear();
         }
-        costTime_ = 0;
-
-        battleWorldLevel_ = 0;
-
+        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
 
@@ -555,25 +473,37 @@ public final class CrucibleActivityDetailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo result = new emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo(this);
-        int from_bitField0_ = bitField0_;
-        if (posBuilder_ == null) {
-          result.pos_ = pos_;
-        } else {
-          result.pos_ = posBuilder_.build();
-        }
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo result) {
         if (uidInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000008) != 0)) {
             uidInfoList_ = java.util.Collections.unmodifiableList(uidInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000008);
           }
           result.uidInfoList_ = uidInfoList_;
         } else {
           result.uidInfoList_ = uidInfoListBuilder_.build();
         }
-        result.costTime_ = costTime_;
-        result.battleWorldLevel_ = battleWorldLevel_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.costTime_ = costTime_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.battleWorldLevel_ = battleWorldLevel_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.pos_ = posBuilder_ == null
+              ? pos_
+              : posBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -620,6 +550,12 @@ public final class CrucibleActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo.getDefaultInstance()) return this;
+        if (other.getCostTime() != 0) {
+          setCostTime(other.getCostTime());
+        }
+        if (other.getBattleWorldLevel() != 0) {
+          setBattleWorldLevel(other.getBattleWorldLevel());
+        }
         if (other.hasPos()) {
           mergePos(other.getPos());
         }
@@ -627,7 +563,7 @@ public final class CrucibleActivityDetailInfoOuterClass {
           if (!other.uidInfoList_.isEmpty()) {
             if (uidInfoList_.isEmpty()) {
               uidInfoList_ = other.uidInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000008);
             } else {
               ensureUidInfoListIsMutable();
               uidInfoList_.addAll(other.uidInfoList_);
@@ -640,7 +576,7 @@ public final class CrucibleActivityDetailInfoOuterClass {
               uidInfoListBuilder_.dispose();
               uidInfoListBuilder_ = null;
               uidInfoList_ = other.uidInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000008);
               uidInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getUidInfoListFieldBuilder() : null;
@@ -649,13 +585,7 @@ public final class CrucibleActivityDetailInfoOuterClass {
             }
           }
         }
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
-        }
-        if (other.getBattleWorldLevel() != 0) {
-          setBattleWorldLevel(other.getBattleWorldLevel());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -670,383 +600,67 @@ public final class CrucibleActivityDetailInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 18: {
+                input.readMessage(
+                    getPosFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 18
+              case 74: {
+                emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.parser(),
+                        extensionRegistry);
+                if (uidInfoListBuilder_ == null) {
+                  ensureUidInfoListIsMutable();
+                  uidInfoList_.add(m);
+                } else {
+                  uidInfoListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 74
+              case 96: {
+                battleWorldLevel_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 96
+              case 120: {
+                costTime_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.CrucibleActivityDetailInfoOuterClass.CrucibleActivityDetailInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
-      /**
-       * <code>.Vector pos = 3;</code>
-       * @return Whether the pos field is set.
-       */
-      public boolean hasPos() {
-        return posBuilder_ != null || pos_ != null;
-      }
-      /**
-       * <code>.Vector pos = 3;</code>
-       * @return The pos.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-        if (posBuilder_ == null) {
-          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-        } else {
-          return posBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector pos = 3;</code>
-       */
-      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (posBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pos_ = value;
-          onChanged();
-        } else {
-          posBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 3;</code>
-       */
-      public Builder setPos(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (posBuilder_ == null) {
-          pos_ = builderForValue.build();
-          onChanged();
-        } else {
-          posBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 3;</code>
-       */
-      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (posBuilder_ == null) {
-          if (pos_ != null) {
-            pos_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(pos_).mergeFrom(value).buildPartial();
-          } else {
-            pos_ = value;
-          }
-          onChanged();
-        } else {
-          posBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 3;</code>
-       */
-      public Builder clearPos() {
-        if (posBuilder_ == null) {
-          pos_ = null;
-          onChanged();
-        } else {
-          pos_ = null;
-          posBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 3;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
-        
-        onChanged();
-        return getPosFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector pos = 3;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-        if (posBuilder_ != null) {
-          return posBuilder_.getMessageOrBuilder();
-        } else {
-          return pos_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-        }
-      }
-      /**
-       * <code>.Vector pos = 3;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getPosFieldBuilder() {
-        if (posBuilder_ == null) {
-          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getPos(),
-                  getParentForChildren(),
-                  isClean());
-          pos_ = null;
-        }
-        return posBuilder_;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo> uidInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureUidInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          uidInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo>(uidInfoList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder> uidInfoListBuilder_;
-
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo> getUidInfoListList() {
-        if (uidInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(uidInfoList_);
-        } else {
-          return uidInfoListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public int getUidInfoListCount() {
-        if (uidInfoListBuilder_ == null) {
-          return uidInfoList_.size();
-        } else {
-          return uidInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo getUidInfoList(int index) {
-        if (uidInfoListBuilder_ == null) {
-          return uidInfoList_.get(index);
-        } else {
-          return uidInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public Builder setUidInfoList(
-          int index, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo value) {
-        if (uidInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUidInfoListIsMutable();
-          uidInfoList_.set(index, value);
-          onChanged();
-        } else {
-          uidInfoListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public Builder setUidInfoList(
-          int index, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder builderForValue) {
-        if (uidInfoListBuilder_ == null) {
-          ensureUidInfoListIsMutable();
-          uidInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          uidInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public Builder addUidInfoList(emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo value) {
-        if (uidInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUidInfoListIsMutable();
-          uidInfoList_.add(value);
-          onChanged();
-        } else {
-          uidInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public Builder addUidInfoList(
-          int index, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo value) {
-        if (uidInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureUidInfoListIsMutable();
-          uidInfoList_.add(index, value);
-          onChanged();
-        } else {
-          uidInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public Builder addUidInfoList(
-          emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder builderForValue) {
-        if (uidInfoListBuilder_ == null) {
-          ensureUidInfoListIsMutable();
-          uidInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          uidInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public Builder addUidInfoList(
-          int index, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder builderForValue) {
-        if (uidInfoListBuilder_ == null) {
-          ensureUidInfoListIsMutable();
-          uidInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          uidInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public Builder addAllUidInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo> values) {
-        if (uidInfoListBuilder_ == null) {
-          ensureUidInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, uidInfoList_);
-          onChanged();
-        } else {
-          uidInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public Builder clearUidInfoList() {
-        if (uidInfoListBuilder_ == null) {
-          uidInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          uidInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public Builder removeUidInfoList(int index) {
-        if (uidInfoListBuilder_ == null) {
-          ensureUidInfoListIsMutable();
-          uidInfoList_.remove(index);
-          onChanged();
-        } else {
-          uidInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder getUidInfoListBuilder(
-          int index) {
-        return getUidInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder getUidInfoListOrBuilder(
-          int index) {
-        if (uidInfoListBuilder_ == null) {
-          return uidInfoList_.get(index);  } else {
-          return uidInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder> 
-           getUidInfoListOrBuilderList() {
-        if (uidInfoListBuilder_ != null) {
-          return uidInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(uidInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder addUidInfoListBuilder() {
-        return getUidInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder addUidInfoListBuilder(
-          int index) {
-        return getUidInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 10;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder> 
-           getUidInfoListBuilderList() {
-        return getUidInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder> 
-          getUidInfoListFieldBuilder() {
-        if (uidInfoListBuilder_ == null) {
-          uidInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder>(
-                  uidInfoList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          uidInfoList_ = null;
-        }
-        return uidInfoListBuilder_;
-      }
-
       private int costTime_ ;
       /**
-       * <code>uint32 cost_time = 5;</code>
+       * <code>uint32 cost_time = 15;</code>
        * @return The costTime.
        */
       @java.lang.Override
@@ -1054,22 +668,23 @@ public final class CrucibleActivityDetailInfoOuterClass {
         return costTime_;
       }
       /**
-       * <code>uint32 cost_time = 5;</code>
+       * <code>uint32 cost_time = 15;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
        */
       public Builder setCostTime(int value) {
-        
+
         costTime_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cost_time = 5;</code>
+       * <code>uint32 cost_time = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         costTime_ = 0;
         onChanged();
         return this;
@@ -1090,8 +705,9 @@ public final class CrucibleActivityDetailInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setBattleWorldLevel(int value) {
-        
+
         battleWorldLevel_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -1100,10 +716,369 @@ public final class CrucibleActivityDetailInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearBattleWorldLevel() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         battleWorldLevel_ = 0;
         onChanged();
         return this;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
+      /**
+       * <code>.Vector pos = 2;</code>
+       * @return Whether the pos field is set.
+       */
+      public boolean hasPos() {
+        return ((bitField0_ & 0x00000004) != 0);
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       * @return The pos.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+        if (posBuilder_ == null) {
+          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        } else {
+          return posBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pos_ = value;
+        } else {
+          posBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      public Builder setPos(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (posBuilder_ == null) {
+          pos_ = builderForValue.build();
+        } else {
+          posBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) != 0) &&
+            pos_ != null &&
+            pos_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
+            getPosBuilder().mergeFrom(value);
+          } else {
+            pos_ = value;
+          }
+        } else {
+          posBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      public Builder clearPos() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        pos_ = null;
+        if (posBuilder_ != null) {
+          posBuilder_.dispose();
+          posBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getPosFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+        if (posBuilder_ != null) {
+          return posBuilder_.getMessageOrBuilder();
+        } else {
+          return pos_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        }
+      }
+      /**
+       * <code>.Vector pos = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getPosFieldBuilder() {
+        if (posBuilder_ == null) {
+          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getPos(),
+                  getParentForChildren(),
+                  isClean());
+          pos_ = null;
+        }
+        return posBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo> uidInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureUidInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000008) != 0)) {
+          uidInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo>(uidInfoList_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder> uidInfoListBuilder_;
+
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo> getUidInfoListList() {
+        if (uidInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(uidInfoList_);
+        } else {
+          return uidInfoListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public int getUidInfoListCount() {
+        if (uidInfoListBuilder_ == null) {
+          return uidInfoList_.size();
+        } else {
+          return uidInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo getUidInfoList(int index) {
+        if (uidInfoListBuilder_ == null) {
+          return uidInfoList_.get(index);
+        } else {
+          return uidInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public Builder setUidInfoList(
+          int index, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo value) {
+        if (uidInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUidInfoListIsMutable();
+          uidInfoList_.set(index, value);
+          onChanged();
+        } else {
+          uidInfoListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public Builder setUidInfoList(
+          int index, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder builderForValue) {
+        if (uidInfoListBuilder_ == null) {
+          ensureUidInfoListIsMutable();
+          uidInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          uidInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public Builder addUidInfoList(emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo value) {
+        if (uidInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUidInfoListIsMutable();
+          uidInfoList_.add(value);
+          onChanged();
+        } else {
+          uidInfoListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public Builder addUidInfoList(
+          int index, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo value) {
+        if (uidInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureUidInfoListIsMutable();
+          uidInfoList_.add(index, value);
+          onChanged();
+        } else {
+          uidInfoListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public Builder addUidInfoList(
+          emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder builderForValue) {
+        if (uidInfoListBuilder_ == null) {
+          ensureUidInfoListIsMutable();
+          uidInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          uidInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public Builder addUidInfoList(
+          int index, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder builderForValue) {
+        if (uidInfoListBuilder_ == null) {
+          ensureUidInfoListIsMutable();
+          uidInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          uidInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public Builder addAllUidInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo> values) {
+        if (uidInfoListBuilder_ == null) {
+          ensureUidInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, uidInfoList_);
+          onChanged();
+        } else {
+          uidInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public Builder clearUidInfoList() {
+        if (uidInfoListBuilder_ == null) {
+          uidInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+          onChanged();
+        } else {
+          uidInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public Builder removeUidInfoList(int index) {
+        if (uidInfoListBuilder_ == null) {
+          ensureUidInfoListIsMutable();
+          uidInfoList_.remove(index);
+          onChanged();
+        } else {
+          uidInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder getUidInfoListBuilder(
+          int index) {
+        return getUidInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder getUidInfoListOrBuilder(
+          int index) {
+        if (uidInfoListBuilder_ == null) {
+          return uidInfoList_.get(index);  } else {
+          return uidInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder> 
+           getUidInfoListOrBuilderList() {
+        if (uidInfoListBuilder_ != null) {
+          return uidInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(uidInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder addUidInfoListBuilder() {
+        return getUidInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder addUidInfoListBuilder(
+          int index) {
+        return getUidInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .CrucibleBattleUidInfo uid_info_list = 9;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder> 
+           getUidInfoListBuilderList() {
+        return getUidInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder> 
+          getUidInfoListFieldBuilder() {
+        if (uidInfoListBuilder_ == null) {
+          uidInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfoOrBuilder>(
+                  uidInfoList_,
+                  ((bitField0_ & 0x00000008) != 0),
+                  getParentForChildren(),
+                  isClean());
+          uidInfoList_ = null;
+        }
+        return uidInfoListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1138,7 +1113,18 @@ public final class CrucibleActivityDetailInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CrucibleActivityDetailInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1172,28 +1158,28 @@ public final class CrucibleActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n CrucibleActivityDetailInfo.proto\032\014Vect" +
-      "or.proto\032\033CrucibleBattleUidInfo.proto\"\220\001" +
-      "\n\032CrucibleActivityDetailInfo\022\024\n\003pos\030\003 \001(" +
-      "\0132\007.Vector\022-\n\ruid_info_list\030\n \003(\0132\026.Cruc" +
-      "ibleBattleUidInfo\022\021\n\tcost_time\030\005 \001(\r\022\032\n\022" +
-      "battle_world_level\030\014 \001(\rB\033\n\031emu.grasscut" +
+      "\n CrucibleActivityDetailInfo.proto\032\033Cruc" +
+      "ibleBattleUidInfo.proto\032\014Vector.proto\"\220\001" +
+      "\n\032CrucibleActivityDetailInfo\022\021\n\tcost_tim" +
+      "e\030\017 \001(\r\022\032\n\022battle_world_level\030\014 \001(\r\022\024\n\003p" +
+      "os\030\002 \001(\0132\007.Vector\022-\n\ruid_info_list\030\t \003(\013" +
+      "2\026.CrucibleBattleUidInfoB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
         });
     internal_static_CrucibleActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_CrucibleActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CrucibleActivityDetailInfo_descriptor,
-        new java.lang.String[] { "Pos", "UidInfoList", "CostTime", "BattleWorldLevel", });
-    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
+        new java.lang.String[] { "CostTime", "BattleWorldLevel", "Pos", "UidInfoList", });
     emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

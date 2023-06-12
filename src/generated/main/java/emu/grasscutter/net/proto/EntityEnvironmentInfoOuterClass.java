@@ -19,20 +19,20 @@ public final class EntityEnvironmentInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 json_climate_type = 1;</code>
-     * @return The jsonClimateType.
+     * <code>uint32 PBFMHLPEEPE = 1;</code>
+     * @return The pBFMHLPEEPE.
      */
-    int getJsonClimateType();
+    int getPBFMHLPEEPE();
 
     /**
-     * <code>uint32 climate_area_id = 2;</code>
-     * @return The climateAreaId.
+     * <code>uint32 NJDCDHDPMBE = 2;</code>
+     * @return The nJDCDHDPMBE.
      */
-    int getClimateAreaId();
+    int getNJDCDHDPMBE();
   }
   /**
    * <pre>
-   * Obf: DILGEMDKHHN
+   * Name: FMNPHBGDPIP
    * </pre>
    *
    * Protobuf type {@code EntityEnvironmentInfo}
@@ -56,58 +56,6 @@ public final class EntityEnvironmentInfoOuterClass {
       return new EntityEnvironmentInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private EntityEnvironmentInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              jsonClimateType_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              climateAreaId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.internal_static_EntityEnvironmentInfo_descriptor;
@@ -121,26 +69,26 @@ public final class EntityEnvironmentInfoOuterClass {
               emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.class, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder.class);
     }
 
-    public static final int JSON_CLIMATE_TYPE_FIELD_NUMBER = 1;
-    private int jsonClimateType_;
+    public static final int PBFMHLPEEPE_FIELD_NUMBER = 1;
+    private int pBFMHLPEEPE_ = 0;
     /**
-     * <code>uint32 json_climate_type = 1;</code>
-     * @return The jsonClimateType.
+     * <code>uint32 PBFMHLPEEPE = 1;</code>
+     * @return The pBFMHLPEEPE.
      */
     @java.lang.Override
-    public int getJsonClimateType() {
-      return jsonClimateType_;
+    public int getPBFMHLPEEPE() {
+      return pBFMHLPEEPE_;
     }
 
-    public static final int CLIMATE_AREA_ID_FIELD_NUMBER = 2;
-    private int climateAreaId_;
+    public static final int NJDCDHDPMBE_FIELD_NUMBER = 2;
+    private int nJDCDHDPMBE_ = 0;
     /**
-     * <code>uint32 climate_area_id = 2;</code>
-     * @return The climateAreaId.
+     * <code>uint32 NJDCDHDPMBE = 2;</code>
+     * @return The nJDCDHDPMBE.
      */
     @java.lang.Override
-    public int getClimateAreaId() {
-      return climateAreaId_;
+    public int getNJDCDHDPMBE() {
+      return nJDCDHDPMBE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,13 +105,13 @@ public final class EntityEnvironmentInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (jsonClimateType_ != 0) {
-        output.writeUInt32(1, jsonClimateType_);
+      if (pBFMHLPEEPE_ != 0) {
+        output.writeUInt32(1, pBFMHLPEEPE_);
       }
-      if (climateAreaId_ != 0) {
-        output.writeUInt32(2, climateAreaId_);
+      if (nJDCDHDPMBE_ != 0) {
+        output.writeUInt32(2, nJDCDHDPMBE_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -172,15 +120,15 @@ public final class EntityEnvironmentInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (jsonClimateType_ != 0) {
+      if (pBFMHLPEEPE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, jsonClimateType_);
+          .computeUInt32Size(1, pBFMHLPEEPE_);
       }
-      if (climateAreaId_ != 0) {
+      if (nJDCDHDPMBE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, climateAreaId_);
+          .computeUInt32Size(2, nJDCDHDPMBE_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -195,11 +143,11 @@ public final class EntityEnvironmentInfoOuterClass {
       }
       emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo other = (emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo) obj;
 
-      if (getJsonClimateType()
-          != other.getJsonClimateType()) return false;
-      if (getClimateAreaId()
-          != other.getClimateAreaId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getPBFMHLPEEPE()
+          != other.getPBFMHLPEEPE()) return false;
+      if (getNJDCDHDPMBE()
+          != other.getNJDCDHDPMBE()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -210,11 +158,11 @@ public final class EntityEnvironmentInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + JSON_CLIMATE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getJsonClimateType();
-      hash = (37 * hash) + CLIMATE_AREA_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getClimateAreaId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + PBFMHLPEEPE_FIELD_NUMBER;
+      hash = (53 * hash) + getPBFMHLPEEPE();
+      hash = (37 * hash) + NJDCDHDPMBE_FIELD_NUMBER;
+      hash = (53 * hash) + getNJDCDHDPMBE();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -263,11 +211,13 @@ public final class EntityEnvironmentInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -311,7 +261,7 @@ public final class EntityEnvironmentInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: DILGEMDKHHN
+     * Name: FMNPHBGDPIP
      * </pre>
      *
      * Protobuf type {@code EntityEnvironmentInfo}
@@ -335,26 +285,20 @@ public final class EntityEnvironmentInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        jsonClimateType_ = 0;
-
-        climateAreaId_ = 0;
-
+        bitField0_ = 0;
+        pBFMHLPEEPE_ = 0;
+        nJDCDHDPMBE_ = 0;
         return this;
       }
 
@@ -381,10 +325,19 @@ public final class EntityEnvironmentInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo buildPartial() {
         emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo result = new emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo(this);
-        result.jsonClimateType_ = jsonClimateType_;
-        result.climateAreaId_ = climateAreaId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.pBFMHLPEEPE_ = pBFMHLPEEPE_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.nJDCDHDPMBE_ = nJDCDHDPMBE_;
+        }
       }
 
       @java.lang.Override
@@ -431,13 +384,13 @@ public final class EntityEnvironmentInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo other) {
         if (other == emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.getDefaultInstance()) return this;
-        if (other.getJsonClimateType() != 0) {
-          setJsonClimateType(other.getJsonClimateType());
+        if (other.getPBFMHLPEEPE() != 0) {
+          setPBFMHLPEEPE(other.getPBFMHLPEEPE());
         }
-        if (other.getClimateAreaId() != 0) {
-          setClimateAreaId(other.getClimateAreaId());
+        if (other.getNJDCDHDPMBE() != 0) {
+          setNJDCDHDPMBE(other.getNJDCDHDPMBE());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -452,78 +405,104 @@ public final class EntityEnvironmentInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                pBFMHLPEEPE_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                nJDCDHDPMBE_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private int pBFMHLPEEPE_ ;
+      /**
+       * <code>uint32 PBFMHLPEEPE = 1;</code>
+       * @return The pBFMHLPEEPE.
+       */
+      @java.lang.Override
+      public int getPBFMHLPEEPE() {
+        return pBFMHLPEEPE_;
+      }
+      /**
+       * <code>uint32 PBFMHLPEEPE = 1;</code>
+       * @param value The pBFMHLPEEPE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPBFMHLPEEPE(int value) {
+
+        pBFMHLPEEPE_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 PBFMHLPEEPE = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPBFMHLPEEPE() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        pBFMHLPEEPE_ = 0;
+        onChanged();
         return this;
       }
 
-      private int jsonClimateType_ ;
+      private int nJDCDHDPMBE_ ;
       /**
-       * <code>uint32 json_climate_type = 1;</code>
-       * @return The jsonClimateType.
+       * <code>uint32 NJDCDHDPMBE = 2;</code>
+       * @return The nJDCDHDPMBE.
        */
       @java.lang.Override
-      public int getJsonClimateType() {
-        return jsonClimateType_;
+      public int getNJDCDHDPMBE() {
+        return nJDCDHDPMBE_;
       }
       /**
-       * <code>uint32 json_climate_type = 1;</code>
-       * @param value The jsonClimateType to set.
+       * <code>uint32 NJDCDHDPMBE = 2;</code>
+       * @param value The nJDCDHDPMBE to set.
        * @return This builder for chaining.
        */
-      public Builder setJsonClimateType(int value) {
-        
-        jsonClimateType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 json_climate_type = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJsonClimateType() {
-        
-        jsonClimateType_ = 0;
-        onChanged();
-        return this;
-      }
+      public Builder setNJDCDHDPMBE(int value) {
 
-      private int climateAreaId_ ;
-      /**
-       * <code>uint32 climate_area_id = 2;</code>
-       * @return The climateAreaId.
-       */
-      @java.lang.Override
-      public int getClimateAreaId() {
-        return climateAreaId_;
-      }
-      /**
-       * <code>uint32 climate_area_id = 2;</code>
-       * @param value The climateAreaId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClimateAreaId(int value) {
-        
-        climateAreaId_ = value;
+        nJDCDHDPMBE_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 climate_area_id = 2;</code>
+       * <code>uint32 NJDCDHDPMBE = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearClimateAreaId() {
-        
-        climateAreaId_ = 0;
+      public Builder clearNJDCDHDPMBE() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        nJDCDHDPMBE_ = 0;
         onChanged();
         return this;
       }
@@ -560,7 +539,18 @@ public final class EntityEnvironmentInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new EntityEnvironmentInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -594,10 +584,10 @@ public final class EntityEnvironmentInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033EntityEnvironmentInfo.proto\"K\n\025EntityE" +
-      "nvironmentInfo\022\031\n\021json_climate_type\030\001 \001(" +
-      "\r\022\027\n\017climate_area_id\030\002 \001(\rB\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "\n\033EntityEnvironmentInfo.proto\"A\n\025EntityE" +
+      "nvironmentInfo\022\023\n\013PBFMHLPEEPE\030\001 \001(\r\022\023\n\013N" +
+      "JDCDHDPMBE\030\002 \001(\rB\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -608,7 +598,7 @@ public final class EntityEnvironmentInfoOuterClass {
     internal_static_EntityEnvironmentInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EntityEnvironmentInfo_descriptor,
-        new java.lang.String[] { "JsonClimateType", "ClimateAreaId", });
+        new java.lang.String[] { "PBFMHLPEEPE", "NJDCDHDPMBE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

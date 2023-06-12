@@ -124,14 +124,12 @@ public final class SceneMonsterInfoOuterClass {
     /**
      * <code>map&lt;uint32, uint32&gt; summon_tag_map = 10;</code>
      */
-
     int getSummonTagMapOrDefault(
         int key,
         int defaultValue);
     /**
      * <code>map&lt;uint32, uint32&gt; summon_tag_map = 10;</code>
      */
-
     int getSummonTagMapOrThrow(
         int key);
 
@@ -257,11 +255,11 @@ public final class SceneMonsterInfoOuterClass {
      */
     emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfoOrBuilder getFishtankFishInfoOrBuilder();
 
-    public emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo.ContentCase getContentCase();
+    emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo.ContentCase getContentCase();
   }
   /**
    * <pre>
-   * Obf: PILOPKGAHBK
+   * Name: CIBJHBFKKAN
    * </pre>
    *
    * Protobuf type {@code SceneMonsterInfo}
@@ -288,235 +286,6 @@ public final class SceneMonsterInfoOuterClass {
       return new SceneMonsterInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private SceneMonsterInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              monsterId_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              groupId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              configId_ = input.readUInt32();
-              break;
-            }
-            case 34: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                weaponList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              weaponList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 40: {
-
-              authorityPeerId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                affixList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              affixList_.addInt(input.readUInt32());
-              break;
-            }
-            case 50: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                affixList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                affixList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 56: {
-
-              isElite_ = input.readBool();
-              break;
-            }
-            case 64: {
-
-              ownerEntityId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              summonedTag_ = input.readUInt32();
-              break;
-            }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                summonTagMap_ = com.google.protobuf.MapField.newMapField(
-                    SummonTagMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000004;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              summonTagMap__ = input.readMessage(
-                  SummonTagMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              summonTagMap_.getMutableMap().put(
-                  summonTagMap__.getKey(), summonTagMap__.getValue());
-              break;
-            }
-            case 88: {
-
-              poseId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-              int rawValue = input.readEnum();
-
-              bornType_ = rawValue;
-              break;
-            }
-            case 104: {
-
-              blockId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              markFlag_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              titleId_ = input.readUInt32();
-              break;
-            }
-            case 128: {
-
-              specialNameId_ = input.readUInt32();
-              break;
-            }
-            case 136: {
-
-              attackTargetId_ = input.readUInt32();
-              break;
-            }
-            case 146: {
-              emu.grasscutter.net.proto.MonsterRouteOuterClass.MonsterRoute.Builder subBuilder = null;
-              if (monsterRoute_ != null) {
-                subBuilder = monsterRoute_.toBuilder();
-              }
-              monsterRoute_ = input.readMessage(emu.grasscutter.net.proto.MonsterRouteOuterClass.MonsterRoute.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(monsterRoute_);
-                monsterRoute_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 152: {
-
-              aiConfigId_ = input.readUInt32();
-              break;
-            }
-            case 160: {
-
-              levelRouteId_ = input.readUInt32();
-              break;
-            }
-            case 168: {
-
-              initPoseId_ = input.readUInt32();
-              break;
-            }
-            case 176: {
-
-              isLight_ = input.readBool();
-              break;
-            }
-            case 184: {
-
-              killNum_ = input.readUInt32();
-              break;
-            }
-            case 402: {
-              emu.grasscutter.net.proto.SceneFishInfoOuterClass.SceneFishInfo.Builder subBuilder = null;
-              if (contentCase_ == 50) {
-                subBuilder = ((emu.grasscutter.net.proto.SceneFishInfoOuterClass.SceneFishInfo) content_).toBuilder();
-              }
-              content_ =
-                  input.readMessage(emu.grasscutter.net.proto.SceneFishInfoOuterClass.SceneFishInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.SceneFishInfoOuterClass.SceneFishInfo) content_);
-                content_ = subBuilder.buildPartial();
-              }
-              contentCase_ = 50;
-              break;
-            }
-            case 410: {
-              emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo.Builder subBuilder = null;
-              if (contentCase_ == 51) {
-                subBuilder = ((emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo) content_).toBuilder();
-              }
-              content_ =
-                  input.readMessage(emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo) content_);
-                content_ = subBuilder.buildPartial();
-              }
-              contentCase_ = 51;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          weaponList_ = java.util.Collections.unmodifiableList(weaponList_);
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          affixList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.internal_static_SceneMonsterInfo_descriptor;
@@ -543,6 +312,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     private int contentCase_ = 0;
+    @SuppressWarnings("serial")
     private java.lang.Object content_;
     public enum ContentCase
         implements com.google.protobuf.Internal.EnumLite,
@@ -584,7 +354,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int MONSTER_ID_FIELD_NUMBER = 1;
-    private int monsterId_;
+    private int monsterId_ = 0;
     /**
      * <code>uint32 monster_id = 1;</code>
      * @return The monsterId.
@@ -595,7 +365,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int GROUP_ID_FIELD_NUMBER = 2;
-    private int groupId_;
+    private int groupId_ = 0;
     /**
      * <code>uint32 group_id = 2;</code>
      * @return The groupId.
@@ -606,7 +376,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int CONFIG_ID_FIELD_NUMBER = 3;
-    private int configId_;
+    private int configId_ = 0;
     /**
      * <code>uint32 config_id = 3;</code>
      * @return The configId.
@@ -617,6 +387,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int WEAPON_LIST_FIELD_NUMBER = 4;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo> weaponList_;
     /**
      * <code>repeated .SceneWeaponInfo weapon_list = 4;</code>
@@ -657,7 +428,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int AUTHORITY_PEER_ID_FIELD_NUMBER = 5;
-    private int authorityPeerId_;
+    private int authorityPeerId_ = 0;
     /**
      * <code>uint32 authority_peer_id = 5;</code>
      * @return The authorityPeerId.
@@ -668,6 +439,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int AFFIX_LIST_FIELD_NUMBER = 6;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList affixList_;
     /**
      * <code>repeated uint32 affix_list = 6;</code>
@@ -696,7 +468,7 @@ public final class SceneMonsterInfoOuterClass {
     private int affixListMemoizedSerializedSize = -1;
 
     public static final int IS_ELITE_FIELD_NUMBER = 7;
-    private boolean isElite_;
+    private boolean isElite_ = false;
     /**
      * <code>bool is_elite = 7;</code>
      * @return The isElite.
@@ -707,7 +479,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int OWNER_ENTITY_ID_FIELD_NUMBER = 8;
-    private int ownerEntityId_;
+    private int ownerEntityId_ = 0;
     /**
      * <code>uint32 owner_entity_id = 8;</code>
      * @return The ownerEntityId.
@@ -718,7 +490,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int SUMMONED_TAG_FIELD_NUMBER = 9;
-    private int summonedTag_;
+    private int summonedTag_ = 0;
     /**
      * <code>uint32 summoned_tag = 9;</code>
      * @return The summonedTag.
@@ -740,6 +512,7 @@ public final class SceneMonsterInfoOuterClass {
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
+    @SuppressWarnings("serial")
     private com.google.protobuf.MapField<
         java.lang.Integer, java.lang.Integer> summonTagMap_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -750,18 +523,16 @@ public final class SceneMonsterInfoOuterClass {
       }
       return summonTagMap_;
     }
-
     public int getSummonTagMapCount() {
       return internalGetSummonTagMap().getMap().size();
     }
     /**
      * <code>map&lt;uint32, uint32&gt; summon_tag_map = 10;</code>
      */
-
     @java.lang.Override
     public boolean containsSummonTagMap(
         int key) {
-      
+
       return internalGetSummonTagMap().getMap().containsKey(key);
     }
     /**
@@ -776,7 +547,6 @@ public final class SceneMonsterInfoOuterClass {
      * <code>map&lt;uint32, uint32&gt; summon_tag_map = 10;</code>
      */
     @java.lang.Override
-
     public java.util.Map<java.lang.Integer, java.lang.Integer> getSummonTagMapMap() {
       return internalGetSummonTagMap().getMap();
     }
@@ -784,11 +554,10 @@ public final class SceneMonsterInfoOuterClass {
      * <code>map&lt;uint32, uint32&gt; summon_tag_map = 10;</code>
      */
     @java.lang.Override
-
     public int getSummonTagMapOrDefault(
         int key,
         int defaultValue) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
           internalGetSummonTagMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -797,10 +566,9 @@ public final class SceneMonsterInfoOuterClass {
      * <code>map&lt;uint32, uint32&gt; summon_tag_map = 10;</code>
      */
     @java.lang.Override
-
     public int getSummonTagMapOrThrow(
         int key) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
           internalGetSummonTagMap().getMap();
       if (!map.containsKey(key)) {
@@ -810,7 +578,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int POSE_ID_FIELD_NUMBER = 11;
-    private int poseId_;
+    private int poseId_ = 0;
     /**
      * <code>uint32 pose_id = 11;</code>
      * @return The poseId.
@@ -821,7 +589,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int BORN_TYPE_FIELD_NUMBER = 12;
-    private int bornType_;
+    private int bornType_ = 0;
     /**
      * <code>.MonsterBornType born_type = 12;</code>
      * @return The enum numeric value on the wire for bornType.
@@ -834,13 +602,12 @@ public final class SceneMonsterInfoOuterClass {
      * @return The bornType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType getBornType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType result = emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType.valueOf(bornType_);
+      emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType result = emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType.forNumber(bornType_);
       return result == null ? emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType.UNRECOGNIZED : result;
     }
 
     public static final int BLOCK_ID_FIELD_NUMBER = 13;
-    private int blockId_;
+    private int blockId_ = 0;
     /**
      * <code>uint32 block_id = 13;</code>
      * @return The blockId.
@@ -851,7 +618,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int MARK_FLAG_FIELD_NUMBER = 14;
-    private int markFlag_;
+    private int markFlag_ = 0;
     /**
      * <code>uint32 mark_flag = 14;</code>
      * @return The markFlag.
@@ -862,7 +629,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int TITLE_ID_FIELD_NUMBER = 15;
-    private int titleId_;
+    private int titleId_ = 0;
     /**
      * <code>uint32 title_id = 15;</code>
      * @return The titleId.
@@ -873,7 +640,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int SPECIAL_NAME_ID_FIELD_NUMBER = 16;
-    private int specialNameId_;
+    private int specialNameId_ = 0;
     /**
      * <code>uint32 special_name_id = 16;</code>
      * @return The specialNameId.
@@ -884,7 +651,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int ATTACK_TARGET_ID_FIELD_NUMBER = 17;
-    private int attackTargetId_;
+    private int attackTargetId_ = 0;
     /**
      * <code>uint32 attack_target_id = 17;</code>
      * @return The attackTargetId.
@@ -917,11 +684,11 @@ public final class SceneMonsterInfoOuterClass {
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MonsterRouteOuterClass.MonsterRouteOrBuilder getMonsterRouteOrBuilder() {
-      return getMonsterRoute();
+      return monsterRoute_ == null ? emu.grasscutter.net.proto.MonsterRouteOuterClass.MonsterRoute.getDefaultInstance() : monsterRoute_;
     }
 
     public static final int AI_CONFIG_ID_FIELD_NUMBER = 19;
-    private int aiConfigId_;
+    private int aiConfigId_ = 0;
     /**
      * <code>uint32 ai_config_id = 19;</code>
      * @return The aiConfigId.
@@ -932,7 +699,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int LEVEL_ROUTE_ID_FIELD_NUMBER = 20;
-    private int levelRouteId_;
+    private int levelRouteId_ = 0;
     /**
      * <code>uint32 level_route_id = 20;</code>
      * @return The levelRouteId.
@@ -943,7 +710,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int INIT_POSE_ID_FIELD_NUMBER = 21;
-    private int initPoseId_;
+    private int initPoseId_ = 0;
     /**
      * <code>uint32 init_pose_id = 21;</code>
      * @return The initPoseId.
@@ -954,7 +721,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int IS_LIGHT_FIELD_NUMBER = 22;
-    private boolean isLight_;
+    private boolean isLight_ = false;
     /**
      * <code>bool is_light = 22;</code>
      * @return The isLight.
@@ -965,7 +732,7 @@ public final class SceneMonsterInfoOuterClass {
     }
 
     public static final int KILL_NUM_FIELD_NUMBER = 23;
-    private int killNum_;
+    private int killNum_ = 0;
     /**
      * <code>uint32 kill_num = 23;</code>
      * @return The killNum.
@@ -1134,7 +901,7 @@ public final class SceneMonsterInfoOuterClass {
       if (contentCase_ == 51) {
         output.writeMessage(51, (emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo) content_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -1259,7 +1026,7 @@ public final class SceneMonsterInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(51, (emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo) content_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -1335,7 +1102,7 @@ public final class SceneMonsterInfoOuterClass {
         case 0:
         default:
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -1414,7 +1181,7 @@ public final class SceneMonsterInfoOuterClass {
         case 0:
         default:
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -1463,11 +1230,13 @@ public final class SceneMonsterInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1511,7 +1280,7 @@ public final class SceneMonsterInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: PILOPKGAHBK
+     * Name: CIBJHBFKKAN
      * </pre>
      *
      * Protobuf type {@code SceneMonsterInfo}
@@ -1557,76 +1326,57 @@ public final class SceneMonsterInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getWeaponListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         monsterId_ = 0;
-
         groupId_ = 0;
-
         configId_ = 0;
-
         if (weaponListBuilder_ == null) {
           weaponList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          weaponList_ = null;
           weaponListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000008);
         authorityPeerId_ = 0;
-
         affixList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         isElite_ = false;
-
         ownerEntityId_ = 0;
-
         summonedTag_ = 0;
-
         internalGetMutableSummonTagMap().clear();
         poseId_ = 0;
-
         bornType_ = 0;
-
         blockId_ = 0;
-
         markFlag_ = 0;
-
         titleId_ = 0;
-
         specialNameId_ = 0;
-
         attackTargetId_ = 0;
-
-        if (monsterRouteBuilder_ == null) {
-          monsterRoute_ = null;
-        } else {
-          monsterRoute_ = null;
+        monsterRoute_ = null;
+        if (monsterRouteBuilder_ != null) {
+          monsterRouteBuilder_.dispose();
           monsterRouteBuilder_ = null;
         }
         aiConfigId_ = 0;
-
         levelRouteId_ = 0;
-
         initPoseId_ = 0;
-
         isLight_ = false;
-
         killNum_ = 0;
-
+        if (fishInfoBuilder_ != null) {
+          fishInfoBuilder_.clear();
+        }
+        if (fishtankFishInfoBuilder_ != null) {
+          fishtankFishInfoBuilder_.clear();
+        }
         contentCase_ = 0;
         content_ = null;
         return this;
@@ -1655,64 +1405,111 @@ public final class SceneMonsterInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo buildPartial() {
         emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo result = new emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo(this);
-        int from_bitField0_ = bitField0_;
-        result.monsterId_ = monsterId_;
-        result.groupId_ = groupId_;
-        result.configId_ = configId_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        buildPartialOneofs(result);
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo result) {
         if (weaponListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000008) != 0)) {
             weaponList_ = java.util.Collections.unmodifiableList(weaponList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000008);
           }
           result.weaponList_ = weaponList_;
         } else {
           result.weaponList_ = weaponListBuilder_.build();
         }
-        result.authorityPeerId_ = authorityPeerId_;
-        if (((bitField0_ & 0x00000002) != 0)) {
+        if (((bitField0_ & 0x00000020) != 0)) {
           affixList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000020);
         }
         result.affixList_ = affixList_;
-        result.isElite_ = isElite_;
-        result.ownerEntityId_ = ownerEntityId_;
-        result.summonedTag_ = summonedTag_;
-        result.summonTagMap_ = internalGetSummonTagMap();
-        result.summonTagMap_.makeImmutable();
-        result.poseId_ = poseId_;
-        result.bornType_ = bornType_;
-        result.blockId_ = blockId_;
-        result.markFlag_ = markFlag_;
-        result.titleId_ = titleId_;
-        result.specialNameId_ = specialNameId_;
-        result.attackTargetId_ = attackTargetId_;
-        if (monsterRouteBuilder_ == null) {
-          result.monsterRoute_ = monsterRoute_;
-        } else {
-          result.monsterRoute_ = monsterRouteBuilder_.build();
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.monsterId_ = monsterId_;
         }
-        result.aiConfigId_ = aiConfigId_;
-        result.levelRouteId_ = levelRouteId_;
-        result.initPoseId_ = initPoseId_;
-        result.isLight_ = isLight_;
-        result.killNum_ = killNum_;
-        if (contentCase_ == 50) {
-          if (fishInfoBuilder_ == null) {
-            result.content_ = content_;
-          } else {
-            result.content_ = fishInfoBuilder_.build();
-          }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.groupId_ = groupId_;
         }
-        if (contentCase_ == 51) {
-          if (fishtankFishInfoBuilder_ == null) {
-            result.content_ = content_;
-          } else {
-            result.content_ = fishtankFishInfoBuilder_.build();
-          }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.configId_ = configId_;
         }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.authorityPeerId_ = authorityPeerId_;
+        }
+        if (((from_bitField0_ & 0x00000040) != 0)) {
+          result.isElite_ = isElite_;
+        }
+        if (((from_bitField0_ & 0x00000080) != 0)) {
+          result.ownerEntityId_ = ownerEntityId_;
+        }
+        if (((from_bitField0_ & 0x00000100) != 0)) {
+          result.summonedTag_ = summonedTag_;
+        }
+        if (((from_bitField0_ & 0x00000200) != 0)) {
+          result.summonTagMap_ = internalGetSummonTagMap();
+          result.summonTagMap_.makeImmutable();
+        }
+        if (((from_bitField0_ & 0x00000400) != 0)) {
+          result.poseId_ = poseId_;
+        }
+        if (((from_bitField0_ & 0x00000800) != 0)) {
+          result.bornType_ = bornType_;
+        }
+        if (((from_bitField0_ & 0x00001000) != 0)) {
+          result.blockId_ = blockId_;
+        }
+        if (((from_bitField0_ & 0x00002000) != 0)) {
+          result.markFlag_ = markFlag_;
+        }
+        if (((from_bitField0_ & 0x00004000) != 0)) {
+          result.titleId_ = titleId_;
+        }
+        if (((from_bitField0_ & 0x00008000) != 0)) {
+          result.specialNameId_ = specialNameId_;
+        }
+        if (((from_bitField0_ & 0x00010000) != 0)) {
+          result.attackTargetId_ = attackTargetId_;
+        }
+        if (((from_bitField0_ & 0x00020000) != 0)) {
+          result.monsterRoute_ = monsterRouteBuilder_ == null
+              ? monsterRoute_
+              : monsterRouteBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00040000) != 0)) {
+          result.aiConfigId_ = aiConfigId_;
+        }
+        if (((from_bitField0_ & 0x00080000) != 0)) {
+          result.levelRouteId_ = levelRouteId_;
+        }
+        if (((from_bitField0_ & 0x00100000) != 0)) {
+          result.initPoseId_ = initPoseId_;
+        }
+        if (((from_bitField0_ & 0x00200000) != 0)) {
+          result.isLight_ = isLight_;
+        }
+        if (((from_bitField0_ & 0x00400000) != 0)) {
+          result.killNum_ = killNum_;
+        }
+      }
+
+      private void buildPartialOneofs(emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo result) {
         result.contentCase_ = contentCase_;
-        onBuilt();
-        return result;
+        result.content_ = this.content_;
+        if (contentCase_ == 50 &&
+            fishInfoBuilder_ != null) {
+          result.content_ = fishInfoBuilder_.build();
+        }
+        if (contentCase_ == 51 &&
+            fishtankFishInfoBuilder_ != null) {
+          result.content_ = fishtankFishInfoBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -1772,7 +1569,7 @@ public final class SceneMonsterInfoOuterClass {
           if (!other.weaponList_.isEmpty()) {
             if (weaponList_.isEmpty()) {
               weaponList_ = other.weaponList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000008);
             } else {
               ensureWeaponListIsMutable();
               weaponList_.addAll(other.weaponList_);
@@ -1785,7 +1582,7 @@ public final class SceneMonsterInfoOuterClass {
               weaponListBuilder_.dispose();
               weaponListBuilder_ = null;
               weaponList_ = other.weaponList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000008);
               weaponListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getWeaponListFieldBuilder() : null;
@@ -1800,7 +1597,7 @@ public final class SceneMonsterInfoOuterClass {
         if (!other.affixList_.isEmpty()) {
           if (affixList_.isEmpty()) {
             affixList_ = other.affixList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000020);
           } else {
             ensureAffixListIsMutable();
             affixList_.addAll(other.affixList_);
@@ -1818,6 +1615,7 @@ public final class SceneMonsterInfoOuterClass {
         }
         internalGetMutableSummonTagMap().mergeFrom(
             other.internalGetSummonTagMap());
+        bitField0_ |= 0x00000200;
         if (other.getPoseId() != 0) {
           setPoseId(other.getPoseId());
         }
@@ -1870,7 +1668,7 @@ public final class SceneMonsterInfoOuterClass {
             break;
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -1885,17 +1683,184 @@ public final class SceneMonsterInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                monsterId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                groupId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 24: {
+                configId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 34: {
+                emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.parser(),
+                        extensionRegistry);
+                if (weaponListBuilder_ == null) {
+                  ensureWeaponListIsMutable();
+                  weaponList_.add(m);
+                } else {
+                  weaponListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 34
+              case 40: {
+                authorityPeerId_ = input.readUInt32();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 40
+              case 48: {
+                int v = input.readUInt32();
+                ensureAffixListIsMutable();
+                affixList_.addInt(v);
+                break;
+              } // case 48
+              case 50: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureAffixListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  affixList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 50
+              case 56: {
+                isElite_ = input.readBool();
+                bitField0_ |= 0x00000040;
+                break;
+              } // case 56
+              case 64: {
+                ownerEntityId_ = input.readUInt32();
+                bitField0_ |= 0x00000080;
+                break;
+              } // case 64
+              case 72: {
+                summonedTag_ = input.readUInt32();
+                bitField0_ |= 0x00000100;
+                break;
+              } // case 72
+              case 82: {
+                com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+                summonTagMap__ = input.readMessage(
+                    SummonTagMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+                internalGetMutableSummonTagMap().getMutableMap().put(
+                    summonTagMap__.getKey(), summonTagMap__.getValue());
+                bitField0_ |= 0x00000200;
+                break;
+              } // case 82
+              case 88: {
+                poseId_ = input.readUInt32();
+                bitField0_ |= 0x00000400;
+                break;
+              } // case 88
+              case 96: {
+                bornType_ = input.readEnum();
+                bitField0_ |= 0x00000800;
+                break;
+              } // case 96
+              case 104: {
+                blockId_ = input.readUInt32();
+                bitField0_ |= 0x00001000;
+                break;
+              } // case 104
+              case 112: {
+                markFlag_ = input.readUInt32();
+                bitField0_ |= 0x00002000;
+                break;
+              } // case 112
+              case 120: {
+                titleId_ = input.readUInt32();
+                bitField0_ |= 0x00004000;
+                break;
+              } // case 120
+              case 128: {
+                specialNameId_ = input.readUInt32();
+                bitField0_ |= 0x00008000;
+                break;
+              } // case 128
+              case 136: {
+                attackTargetId_ = input.readUInt32();
+                bitField0_ |= 0x00010000;
+                break;
+              } // case 136
+              case 146: {
+                input.readMessage(
+                    getMonsterRouteFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00020000;
+                break;
+              } // case 146
+              case 152: {
+                aiConfigId_ = input.readUInt32();
+                bitField0_ |= 0x00040000;
+                break;
+              } // case 152
+              case 160: {
+                levelRouteId_ = input.readUInt32();
+                bitField0_ |= 0x00080000;
+                break;
+              } // case 160
+              case 168: {
+                initPoseId_ = input.readUInt32();
+                bitField0_ |= 0x00100000;
+                break;
+              } // case 168
+              case 176: {
+                isLight_ = input.readBool();
+                bitField0_ |= 0x00200000;
+                break;
+              } // case 176
+              case 184: {
+                killNum_ = input.readUInt32();
+                bitField0_ |= 0x00400000;
+                break;
+              } // case 184
+              case 402: {
+                input.readMessage(
+                    getFishInfoFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                contentCase_ = 50;
+                break;
+              } // case 402
+              case 410: {
+                input.readMessage(
+                    getFishtankFishInfoFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                contentCase_ = 51;
+                break;
+              } // case 410
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int contentCase_ = 0;
@@ -1930,8 +1895,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setMonsterId(int value) {
-        
+
         monsterId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -1940,7 +1906,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearMonsterId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         monsterId_ = 0;
         onChanged();
         return this;
@@ -1961,8 +1927,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setGroupId(int value) {
-        
+
         groupId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -1971,7 +1938,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         groupId_ = 0;
         onChanged();
         return this;
@@ -1992,8 +1959,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setConfigId(int value) {
-        
+
         configId_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -2002,7 +1970,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearConfigId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         configId_ = 0;
         onChanged();
         return this;
@@ -2011,9 +1979,9 @@ public final class SceneMonsterInfoOuterClass {
       private java.util.List<emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo> weaponList_ =
         java.util.Collections.emptyList();
       private void ensureWeaponListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000008) != 0)) {
           weaponList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo>(weaponList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000008;
          }
       }
 
@@ -2163,7 +2131,7 @@ public final class SceneMonsterInfoOuterClass {
       public Builder clearWeaponList() {
         if (weaponListBuilder_ == null) {
           weaponList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000008);
           onChanged();
         } else {
           weaponListBuilder_.clear();
@@ -2240,7 +2208,7 @@ public final class SceneMonsterInfoOuterClass {
           weaponListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder>(
                   weaponList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
                   isClean());
           weaponList_ = null;
@@ -2263,8 +2231,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setAuthorityPeerId(int value) {
-        
+
         authorityPeerId_ = value;
+        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
@@ -2273,7 +2242,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearAuthorityPeerId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000010);
         authorityPeerId_ = 0;
         onChanged();
         return this;
@@ -2281,10 +2250,10 @@ public final class SceneMonsterInfoOuterClass {
 
       private com.google.protobuf.Internal.IntList affixList_ = emptyIntList();
       private void ensureAffixListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000020) != 0)) {
           affixList_ = mutableCopy(affixList_);
-          bitField0_ |= 0x00000002;
-         }
+          bitField0_ |= 0x00000020;
+        }
       }
       /**
        * <code>repeated uint32 affix_list = 6;</code>
@@ -2292,7 +2261,7 @@ public final class SceneMonsterInfoOuterClass {
        */
       public java.util.List<java.lang.Integer>
           getAffixListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000020) != 0) ?
                  java.util.Collections.unmodifiableList(affixList_) : affixList_;
       }
       /**
@@ -2318,6 +2287,7 @@ public final class SceneMonsterInfoOuterClass {
        */
       public Builder setAffixList(
           int index, int value) {
+
         ensureAffixListIsMutable();
         affixList_.setInt(index, value);
         onChanged();
@@ -2329,6 +2299,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder addAffixList(int value) {
+
         ensureAffixListIsMutable();
         affixList_.addInt(value);
         onChanged();
@@ -2353,7 +2324,7 @@ public final class SceneMonsterInfoOuterClass {
        */
       public Builder clearAffixList() {
         affixList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000020);
         onChanged();
         return this;
       }
@@ -2373,8 +2344,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIsElite(boolean value) {
-        
+
         isElite_ = value;
+        bitField0_ |= 0x00000040;
         onChanged();
         return this;
       }
@@ -2383,7 +2355,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearIsElite() {
-        
+        bitField0_ = (bitField0_ & ~0x00000040);
         isElite_ = false;
         onChanged();
         return this;
@@ -2404,8 +2376,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setOwnerEntityId(int value) {
-        
+
         ownerEntityId_ = value;
+        bitField0_ |= 0x00000080;
         onChanged();
         return this;
       }
@@ -2414,7 +2387,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearOwnerEntityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000080);
         ownerEntityId_ = 0;
         onChanged();
         return this;
@@ -2435,8 +2408,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setSummonedTag(int value) {
-        
+
         summonedTag_ = value;
+        bitField0_ |= 0x00000100;
         onChanged();
         return this;
       }
@@ -2445,7 +2419,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearSummonedTag() {
-        
+        bitField0_ = (bitField0_ & ~0x00000100);
         summonedTag_ = 0;
         onChanged();
         return this;
@@ -2454,7 +2428,7 @@ public final class SceneMonsterInfoOuterClass {
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> summonTagMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetSummonTagMap() {
+          internalGetSummonTagMap() {
         if (summonTagMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
               SummonTagMapDefaultEntryHolder.defaultEntry);
@@ -2462,8 +2436,7 @@ public final class SceneMonsterInfoOuterClass {
         return summonTagMap_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableSummonTagMap() {
-        onChanged();;
+          internalGetMutableSummonTagMap() {
         if (summonTagMap_ == null) {
           summonTagMap_ = com.google.protobuf.MapField.newMapField(
               SummonTagMapDefaultEntryHolder.defaultEntry);
@@ -2471,20 +2444,20 @@ public final class SceneMonsterInfoOuterClass {
         if (!summonTagMap_.isMutable()) {
           summonTagMap_ = summonTagMap_.copy();
         }
+        bitField0_ |= 0x00000200;
+        onChanged();
         return summonTagMap_;
       }
-
       public int getSummonTagMapCount() {
         return internalGetSummonTagMap().getMap().size();
       }
       /**
        * <code>map&lt;uint32, uint32&gt; summon_tag_map = 10;</code>
        */
-
       @java.lang.Override
       public boolean containsSummonTagMap(
           int key) {
-        
+
         return internalGetSummonTagMap().getMap().containsKey(key);
       }
       /**
@@ -2499,7 +2472,6 @@ public final class SceneMonsterInfoOuterClass {
        * <code>map&lt;uint32, uint32&gt; summon_tag_map = 10;</code>
        */
       @java.lang.Override
-
       public java.util.Map<java.lang.Integer, java.lang.Integer> getSummonTagMapMap() {
         return internalGetSummonTagMap().getMap();
       }
@@ -2507,11 +2479,10 @@ public final class SceneMonsterInfoOuterClass {
        * <code>map&lt;uint32, uint32&gt; summon_tag_map = 10;</code>
        */
       @java.lang.Override
-
       public int getSummonTagMapOrDefault(
           int key,
           int defaultValue) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
             internalGetSummonTagMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -2520,10 +2491,9 @@ public final class SceneMonsterInfoOuterClass {
        * <code>map&lt;uint32, uint32&gt; summon_tag_map = 10;</code>
        */
       @java.lang.Override
-
       public int getSummonTagMapOrThrow(
           int key) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
             internalGetSummonTagMap().getMap();
         if (!map.containsKey(key)) {
@@ -2531,8 +2501,8 @@ public final class SceneMonsterInfoOuterClass {
         }
         return map.get(key);
       }
-
       public Builder clearSummonTagMap() {
+        bitField0_ = (bitField0_ & ~0x00000200);
         internalGetMutableSummonTagMap().getMutableMap()
             .clear();
         return this;
@@ -2540,10 +2510,9 @@ public final class SceneMonsterInfoOuterClass {
       /**
        * <code>map&lt;uint32, uint32&gt; summon_tag_map = 10;</code>
        */
-
       public Builder removeSummonTagMap(
           int key) {
-        
+
         internalGetMutableSummonTagMap().getMutableMap()
             .remove(key);
         return this;
@@ -2553,7 +2522,8 @@ public final class SceneMonsterInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableSummonTagMap() {
+          getMutableSummonTagMap() {
+        bitField0_ |= 0x00000200;
         return internalGetMutableSummonTagMap().getMutableMap();
       }
       /**
@@ -2562,20 +2532,21 @@ public final class SceneMonsterInfoOuterClass {
       public Builder putSummonTagMap(
           int key,
           int value) {
-        
-        
+
+
         internalGetMutableSummonTagMap().getMutableMap()
             .put(key, value);
+        bitField0_ |= 0x00000200;
         return this;
       }
       /**
        * <code>map&lt;uint32, uint32&gt; summon_tag_map = 10;</code>
        */
-
       public Builder putAllSummonTagMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutableSummonTagMap().getMutableMap()
             .putAll(values);
+        bitField0_ |= 0x00000200;
         return this;
       }
 
@@ -2594,8 +2565,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setPoseId(int value) {
-        
+
         poseId_ = value;
+        bitField0_ |= 0x00000400;
         onChanged();
         return this;
       }
@@ -2604,7 +2576,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearPoseId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000400);
         poseId_ = 0;
         onChanged();
         return this;
@@ -2624,8 +2596,8 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setBornTypeValue(int value) {
-        
         bornType_ = value;
+        bitField0_ |= 0x00000800;
         onChanged();
         return this;
       }
@@ -2635,8 +2607,7 @@ public final class SceneMonsterInfoOuterClass {
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType getBornType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType result = emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType.valueOf(bornType_);
+        emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType result = emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType.forNumber(bornType_);
         return result == null ? emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType.UNRECOGNIZED : result;
       }
       /**
@@ -2648,7 +2619,7 @@ public final class SceneMonsterInfoOuterClass {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+        bitField0_ |= 0x00000800;
         bornType_ = value.getNumber();
         onChanged();
         return this;
@@ -2658,7 +2629,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearBornType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000800);
         bornType_ = 0;
         onChanged();
         return this;
@@ -2679,8 +2650,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setBlockId(int value) {
-        
+
         blockId_ = value;
+        bitField0_ |= 0x00001000;
         onChanged();
         return this;
       }
@@ -2689,7 +2661,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearBlockId() {
-        
+        bitField0_ = (bitField0_ & ~0x00001000);
         blockId_ = 0;
         onChanged();
         return this;
@@ -2710,8 +2682,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setMarkFlag(int value) {
-        
+
         markFlag_ = value;
+        bitField0_ |= 0x00002000;
         onChanged();
         return this;
       }
@@ -2720,7 +2693,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearMarkFlag() {
-        
+        bitField0_ = (bitField0_ & ~0x00002000);
         markFlag_ = 0;
         onChanged();
         return this;
@@ -2741,8 +2714,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setTitleId(int value) {
-        
+
         titleId_ = value;
+        bitField0_ |= 0x00004000;
         onChanged();
         return this;
       }
@@ -2751,7 +2725,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearTitleId() {
-        
+        bitField0_ = (bitField0_ & ~0x00004000);
         titleId_ = 0;
         onChanged();
         return this;
@@ -2772,8 +2746,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setSpecialNameId(int value) {
-        
+
         specialNameId_ = value;
+        bitField0_ |= 0x00008000;
         onChanged();
         return this;
       }
@@ -2782,7 +2757,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearSpecialNameId() {
-        
+        bitField0_ = (bitField0_ & ~0x00008000);
         specialNameId_ = 0;
         onChanged();
         return this;
@@ -2803,8 +2778,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setAttackTargetId(int value) {
-        
+
         attackTargetId_ = value;
+        bitField0_ |= 0x00010000;
         onChanged();
         return this;
       }
@@ -2813,7 +2789,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearAttackTargetId() {
-        
+        bitField0_ = (bitField0_ & ~0x00010000);
         attackTargetId_ = 0;
         onChanged();
         return this;
@@ -2827,7 +2803,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return Whether the monsterRoute field is set.
        */
       public boolean hasMonsterRoute() {
-        return monsterRouteBuilder_ != null || monsterRoute_ != null;
+        return ((bitField0_ & 0x00020000) != 0);
       }
       /**
        * <code>.MonsterRoute monster_route = 18;</code>
@@ -2849,11 +2825,11 @@ public final class SceneMonsterInfoOuterClass {
             throw new NullPointerException();
           }
           monsterRoute_ = value;
-          onChanged();
         } else {
           monsterRouteBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00020000;
+        onChanged();
         return this;
       }
       /**
@@ -2863,11 +2839,11 @@ public final class SceneMonsterInfoOuterClass {
           emu.grasscutter.net.proto.MonsterRouteOuterClass.MonsterRoute.Builder builderForValue) {
         if (monsterRouteBuilder_ == null) {
           monsterRoute_ = builderForValue.build();
-          onChanged();
         } else {
           monsterRouteBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00020000;
+        onChanged();
         return this;
       }
       /**
@@ -2875,38 +2851,38 @@ public final class SceneMonsterInfoOuterClass {
        */
       public Builder mergeMonsterRoute(emu.grasscutter.net.proto.MonsterRouteOuterClass.MonsterRoute value) {
         if (monsterRouteBuilder_ == null) {
-          if (monsterRoute_ != null) {
-            monsterRoute_ =
-              emu.grasscutter.net.proto.MonsterRouteOuterClass.MonsterRoute.newBuilder(monsterRoute_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00020000) != 0) &&
+            monsterRoute_ != null &&
+            monsterRoute_ != emu.grasscutter.net.proto.MonsterRouteOuterClass.MonsterRoute.getDefaultInstance()) {
+            getMonsterRouteBuilder().mergeFrom(value);
           } else {
             monsterRoute_ = value;
           }
-          onChanged();
         } else {
           monsterRouteBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00020000;
+        onChanged();
         return this;
       }
       /**
        * <code>.MonsterRoute monster_route = 18;</code>
        */
       public Builder clearMonsterRoute() {
-        if (monsterRouteBuilder_ == null) {
-          monsterRoute_ = null;
-          onChanged();
-        } else {
-          monsterRoute_ = null;
+        bitField0_ = (bitField0_ & ~0x00020000);
+        monsterRoute_ = null;
+        if (monsterRouteBuilder_ != null) {
+          monsterRouteBuilder_.dispose();
           monsterRouteBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
        * <code>.MonsterRoute monster_route = 18;</code>
        */
       public emu.grasscutter.net.proto.MonsterRouteOuterClass.MonsterRoute.Builder getMonsterRouteBuilder() {
-        
+        bitField0_ |= 0x00020000;
         onChanged();
         return getMonsterRouteFieldBuilder().getBuilder();
       }
@@ -2953,8 +2929,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setAiConfigId(int value) {
-        
+
         aiConfigId_ = value;
+        bitField0_ |= 0x00040000;
         onChanged();
         return this;
       }
@@ -2963,7 +2940,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearAiConfigId() {
-        
+        bitField0_ = (bitField0_ & ~0x00040000);
         aiConfigId_ = 0;
         onChanged();
         return this;
@@ -2984,8 +2961,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setLevelRouteId(int value) {
-        
+
         levelRouteId_ = value;
+        bitField0_ |= 0x00080000;
         onChanged();
         return this;
       }
@@ -2994,7 +2972,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearLevelRouteId() {
-        
+        bitField0_ = (bitField0_ & ~0x00080000);
         levelRouteId_ = 0;
         onChanged();
         return this;
@@ -3015,8 +2993,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setInitPoseId(int value) {
-        
+
         initPoseId_ = value;
+        bitField0_ |= 0x00100000;
         onChanged();
         return this;
       }
@@ -3025,7 +3004,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearInitPoseId() {
-        
+        bitField0_ = (bitField0_ & ~0x00100000);
         initPoseId_ = 0;
         onChanged();
         return this;
@@ -3046,8 +3025,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIsLight(boolean value) {
-        
+
         isLight_ = value;
+        bitField0_ |= 0x00200000;
         onChanged();
         return this;
       }
@@ -3056,7 +3036,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearIsLight() {
-        
+        bitField0_ = (bitField0_ & ~0x00200000);
         isLight_ = false;
         onChanged();
         return this;
@@ -3077,8 +3057,9 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setKillNum(int value) {
-        
+
         killNum_ = value;
+        bitField0_ |= 0x00400000;
         onChanged();
         return this;
       }
@@ -3087,7 +3068,7 @@ public final class SceneMonsterInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearKillNum() {
-        
+        bitField0_ = (bitField0_ & ~0x00400000);
         killNum_ = 0;
         onChanged();
         return this;
@@ -3167,8 +3148,9 @@ public final class SceneMonsterInfoOuterClass {
         } else {
           if (contentCase_ == 50) {
             fishInfoBuilder_.mergeFrom(value);
+          } else {
+            fishInfoBuilder_.setMessage(value);
           }
-          fishInfoBuilder_.setMessage(value);
         }
         contentCase_ = 50;
         return this;
@@ -3230,7 +3212,7 @@ public final class SceneMonsterInfoOuterClass {
           content_ = null;
         }
         contentCase_ = 50;
-        onChanged();;
+        onChanged();
         return fishInfoBuilder_;
       }
 
@@ -3308,8 +3290,9 @@ public final class SceneMonsterInfoOuterClass {
         } else {
           if (contentCase_ == 51) {
             fishtankFishInfoBuilder_.mergeFrom(value);
+          } else {
+            fishtankFishInfoBuilder_.setMessage(value);
           }
-          fishtankFishInfoBuilder_.setMessage(value);
         }
         contentCase_ = 51;
         return this;
@@ -3371,7 +3354,7 @@ public final class SceneMonsterInfoOuterClass {
           content_ = null;
         }
         contentCase_ = 51;
-        onChanged();;
+        onChanged();
         return fishtankFishInfoBuilder_;
       }
       @java.lang.Override
@@ -3407,7 +3390,18 @@ public final class SceneMonsterInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SceneMonsterInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -3446,10 +3440,10 @@ public final class SceneMonsterInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026SceneMonsterInfo.proto\032\025SceneWeaponInf" +
-      "o.proto\032\025MonsterBornType.proto\032\022MonsterR" +
-      "oute.proto\032\023SceneFishInfo.proto\032\026Fishtan" +
-      "kFishInfo.proto\"\343\005\n\020SceneMonsterInfo\022\022\n\n" +
+      "\n\026SceneMonsterInfo.proto\032\026FishtankFishIn" +
+      "fo.proto\032\025MonsterBornType.proto\032\022Monster" +
+      "Route.proto\032\023SceneFishInfo.proto\032\025SceneW" +
+      "eaponInfo.proto\"\343\005\n\020SceneMonsterInfo\022\022\n\n" +
       "monster_id\030\001 \001(\r\022\020\n\010group_id\030\002 \001(\r\022\021\n\tco" +
       "nfig_id\030\003 \001(\r\022%\n\013weapon_list\030\004 \003(\0132\020.Sce" +
       "neWeaponInfo\022\031\n\021authority_peer_id\030\005 \001(\r\022" +
@@ -3473,11 +3467,11 @@ public final class SceneMonsterInfoOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.FishtankFishInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MonsterBornTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MonsterRouteOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneFishInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.FishtankFishInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.getDescriptor(),
         });
     internal_static_SceneMonsterInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -3491,11 +3485,11 @@ public final class SceneMonsterInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneMonsterInfo_SummonTagMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.FishtankFishInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MonsterBornTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MonsterRouteOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneFishInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.FishtankFishInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

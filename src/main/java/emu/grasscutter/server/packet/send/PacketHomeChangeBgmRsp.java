@@ -8,7 +8,9 @@ public class PacketHomeChangeBgmRsp extends BasePacket {
     public PacketHomeChangeBgmRsp() {
         super(PacketOpcodes.HomeChangeBgmRsp);
 
-        var rsp = HomeChangeBgmRspOuterClass.HomeChangeBgmRsp.newBuilder().setRetcode(0).build();
+        var rsp = HomeChangeBgmRspOuterClass.HomeChangeBgmRsp.newBuilder()
+            .setRetcode(0)
+            .build();
 
         this.setData(rsp);
     }

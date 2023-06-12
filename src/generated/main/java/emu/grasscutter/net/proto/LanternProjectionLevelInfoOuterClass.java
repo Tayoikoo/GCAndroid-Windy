@@ -19,38 +19,38 @@ public final class LanternProjectionLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool BHFCMBEMGIN = 2;</code>
-     * @return The bHFCMBEMGIN.
-     */
-    boolean getBHFCMBEMGIN();
-
-    /**
-     * <code>uint32 id = 1;</code>
+     * <code>uint32 id = 5;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <code>bool is_finished = 13;</code>
+     * <code>bool is_finished = 1;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <code>bool OEBMEKDJDIO = 5;</code>
-     * @return The oEBMEKDJDIO.
+     * <code>bool is_show_tips = 15;</code>
+     * @return The isShowTips.
      */
-    boolean getOEBMEKDJDIO();
+    boolean getIsShowTips();
 
     /**
-     * <code>uint32 min_finish_time = 10;</code>
+     * <code>uint32 min_finish_time = 8;</code>
      * @return The minFinishTime.
      */
     int getMinFinishTime();
+
+    /**
+     * <code>bool is_can_start = 6;</code>
+     * @return The isCanStart.
+     */
+    boolean getIsCanStart();
   }
   /**
    * <pre>
-   * Obf: FCGKNGEPNDI
+   * Name: CGOBFABMIJI
    * </pre>
    *
    * Protobuf type {@code LanternProjectionLevelInfo}
@@ -74,73 +74,6 @@ public final class LanternProjectionLevelInfoOuterClass {
       return new LanternProjectionLevelInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private LanternProjectionLevelInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              id_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              bHFCMBEMGIN_ = input.readBool();
-              break;
-            }
-            case 40: {
-
-              oEBMEKDJDIO_ = input.readBool();
-              break;
-            }
-            case 80: {
-
-              minFinishTime_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              isFinished_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.internal_static_LanternProjectionLevelInfo_descriptor;
@@ -154,21 +87,10 @@ public final class LanternProjectionLevelInfoOuterClass {
               emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo.class, emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo.Builder.class);
     }
 
-    public static final int BHFCMBEMGIN_FIELD_NUMBER = 2;
-    private boolean bHFCMBEMGIN_;
+    public static final int ID_FIELD_NUMBER = 5;
+    private int id_ = 0;
     /**
-     * <code>bool BHFCMBEMGIN = 2;</code>
-     * @return The bHFCMBEMGIN.
-     */
-    @java.lang.Override
-    public boolean getBHFCMBEMGIN() {
-      return bHFCMBEMGIN_;
-    }
-
-    public static final int ID_FIELD_NUMBER = 1;
-    private int id_;
-    /**
-     * <code>uint32 id = 1;</code>
+     * <code>uint32 id = 5;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -176,10 +98,10 @@ public final class LanternProjectionLevelInfoOuterClass {
       return id_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 13;
-    private boolean isFinished_;
+    public static final int IS_FINISHED_FIELD_NUMBER = 1;
+    private boolean isFinished_ = false;
     /**
-     * <code>bool is_finished = 13;</code>
+     * <code>bool is_finished = 1;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -187,26 +109,37 @@ public final class LanternProjectionLevelInfoOuterClass {
       return isFinished_;
     }
 
-    public static final int OEBMEKDJDIO_FIELD_NUMBER = 5;
-    private boolean oEBMEKDJDIO_;
+    public static final int IS_SHOW_TIPS_FIELD_NUMBER = 15;
+    private boolean isShowTips_ = false;
     /**
-     * <code>bool OEBMEKDJDIO = 5;</code>
-     * @return The oEBMEKDJDIO.
+     * <code>bool is_show_tips = 15;</code>
+     * @return The isShowTips.
      */
     @java.lang.Override
-    public boolean getOEBMEKDJDIO() {
-      return oEBMEKDJDIO_;
+    public boolean getIsShowTips() {
+      return isShowTips_;
     }
 
-    public static final int MIN_FINISH_TIME_FIELD_NUMBER = 10;
-    private int minFinishTime_;
+    public static final int MIN_FINISH_TIME_FIELD_NUMBER = 8;
+    private int minFinishTime_ = 0;
     /**
-     * <code>uint32 min_finish_time = 10;</code>
+     * <code>uint32 min_finish_time = 8;</code>
      * @return The minFinishTime.
      */
     @java.lang.Override
     public int getMinFinishTime() {
       return minFinishTime_;
+    }
+
+    public static final int IS_CAN_START_FIELD_NUMBER = 6;
+    private boolean isCanStart_ = false;
+    /**
+     * <code>bool is_can_start = 6;</code>
+     * @return The isCanStart.
+     */
+    @java.lang.Override
+    public boolean getIsCanStart() {
+      return isCanStart_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -223,22 +156,22 @@ public final class LanternProjectionLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isFinished_ != false) {
+        output.writeBool(1, isFinished_);
+      }
       if (id_ != 0) {
-        output.writeUInt32(1, id_);
+        output.writeUInt32(5, id_);
       }
-      if (bHFCMBEMGIN_ != false) {
-        output.writeBool(2, bHFCMBEMGIN_);
-      }
-      if (oEBMEKDJDIO_ != false) {
-        output.writeBool(5, oEBMEKDJDIO_);
+      if (isCanStart_ != false) {
+        output.writeBool(6, isCanStart_);
       }
       if (minFinishTime_ != 0) {
-        output.writeUInt32(10, minFinishTime_);
+        output.writeUInt32(8, minFinishTime_);
       }
-      if (isFinished_ != false) {
-        output.writeBool(13, isFinished_);
+      if (isShowTips_ != false) {
+        output.writeBool(15, isShowTips_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -247,27 +180,27 @@ public final class LanternProjectionLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isFinished_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, isFinished_);
+      }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, id_);
+          .computeUInt32Size(5, id_);
       }
-      if (bHFCMBEMGIN_ != false) {
+      if (isCanStart_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, bHFCMBEMGIN_);
-      }
-      if (oEBMEKDJDIO_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, oEBMEKDJDIO_);
+          .computeBoolSize(6, isCanStart_);
       }
       if (minFinishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, minFinishTime_);
+          .computeUInt32Size(8, minFinishTime_);
       }
-      if (isFinished_ != false) {
+      if (isShowTips_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isFinished_);
+          .computeBoolSize(15, isShowTips_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -282,17 +215,17 @@ public final class LanternProjectionLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo other = (emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo) obj;
 
-      if (getBHFCMBEMGIN()
-          != other.getBHFCMBEMGIN()) return false;
       if (getId()
           != other.getId()) return false;
       if (getIsFinished()
           != other.getIsFinished()) return false;
-      if (getOEBMEKDJDIO()
-          != other.getOEBMEKDJDIO()) return false;
+      if (getIsShowTips()
+          != other.getIsShowTips()) return false;
       if (getMinFinishTime()
           != other.getMinFinishTime()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getIsCanStart()
+          != other.getIsCanStart()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -303,20 +236,20 @@ public final class LanternProjectionLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BHFCMBEMGIN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getBHFCMBEMGIN());
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
       hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinished());
-      hash = (37 * hash) + OEBMEKDJDIO_FIELD_NUMBER;
+      hash = (37 * hash) + IS_SHOW_TIPS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getOEBMEKDJDIO());
+          getIsShowTips());
       hash = (37 * hash) + MIN_FINISH_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getMinFinishTime();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + IS_CAN_START_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsCanStart());
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -365,11 +298,13 @@ public final class LanternProjectionLevelInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -413,7 +348,7 @@ public final class LanternProjectionLevelInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: FCGKNGEPNDI
+     * Name: CGOBFABMIJI
      * </pre>
      *
      * Protobuf type {@code LanternProjectionLevelInfo}
@@ -437,32 +372,23 @@ public final class LanternProjectionLevelInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bHFCMBEMGIN_ = false;
-
+        bitField0_ = 0;
         id_ = 0;
-
         isFinished_ = false;
-
-        oEBMEKDJDIO_ = false;
-
+        isShowTips_ = false;
         minFinishTime_ = 0;
-
+        isCanStart_ = false;
         return this;
       }
 
@@ -489,13 +415,28 @@ public final class LanternProjectionLevelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo buildPartial() {
         emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo result = new emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo(this);
-        result.bHFCMBEMGIN_ = bHFCMBEMGIN_;
-        result.id_ = id_;
-        result.isFinished_ = isFinished_;
-        result.oEBMEKDJDIO_ = oEBMEKDJDIO_;
-        result.minFinishTime_ = minFinishTime_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.id_ = id_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.isFinished_ = isFinished_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.isShowTips_ = isShowTips_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.minFinishTime_ = minFinishTime_;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.isCanStart_ = isCanStart_;
+        }
       }
 
       @java.lang.Override
@@ -542,22 +483,22 @@ public final class LanternProjectionLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo other) {
         if (other == emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo.getDefaultInstance()) return this;
-        if (other.getBHFCMBEMGIN() != false) {
-          setBHFCMBEMGIN(other.getBHFCMBEMGIN());
-        }
         if (other.getId() != 0) {
           setId(other.getId());
         }
         if (other.getIsFinished() != false) {
           setIsFinished(other.getIsFinished());
         }
-        if (other.getOEBMEKDJDIO() != false) {
-          setOEBMEKDJDIO(other.getOEBMEKDJDIO());
+        if (other.getIsShowTips() != false) {
+          setIsShowTips(other.getIsShowTips());
         }
         if (other.getMinFinishTime() != 0) {
           setMinFinishTime(other.getMinFinishTime());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getIsCanStart() != false) {
+          setIsCanStart(other.getIsCanStart());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -572,54 +513,62 @@ public final class LanternProjectionLevelInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                isFinished_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 8
+              case 40: {
+                id_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 40
+              case 48: {
+                isCanStart_ = input.readBool();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 48
+              case 64: {
+                minFinishTime_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 64
+              case 120: {
+                isShowTips_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.LanternProjectionLevelInfoOuterClass.LanternProjectionLevelInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private boolean bHFCMBEMGIN_ ;
-      /**
-       * <code>bool BHFCMBEMGIN = 2;</code>
-       * @return The bHFCMBEMGIN.
-       */
-      @java.lang.Override
-      public boolean getBHFCMBEMGIN() {
-        return bHFCMBEMGIN_;
-      }
-      /**
-       * <code>bool BHFCMBEMGIN = 2;</code>
-       * @param value The bHFCMBEMGIN to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBHFCMBEMGIN(boolean value) {
-        
-        bHFCMBEMGIN_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool BHFCMBEMGIN = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBHFCMBEMGIN() {
-        
-        bHFCMBEMGIN_ = false;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int id_ ;
       /**
-       * <code>uint32 id = 1;</code>
+       * <code>uint32 id = 5;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -627,22 +576,23 @@ public final class LanternProjectionLevelInfoOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 1;</code>
+       * <code>uint32 id = 5;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
       public Builder setId(int value) {
-        
+
         id_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 id = 1;</code>
+       * <code>uint32 id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         id_ = 0;
         onChanged();
         return this;
@@ -650,7 +600,7 @@ public final class LanternProjectionLevelInfoOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 13;</code>
+       * <code>bool is_finished = 1;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -658,61 +608,63 @@ public final class LanternProjectionLevelInfoOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 13;</code>
+       * <code>bool is_finished = 1;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
       public Builder setIsFinished(boolean value) {
-        
+
         isFinished_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_finished = 13;</code>
+       * <code>bool is_finished = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         isFinished_ = false;
         onChanged();
         return this;
       }
 
-      private boolean oEBMEKDJDIO_ ;
+      private boolean isShowTips_ ;
       /**
-       * <code>bool OEBMEKDJDIO = 5;</code>
-       * @return The oEBMEKDJDIO.
+       * <code>bool is_show_tips = 15;</code>
+       * @return The isShowTips.
        */
       @java.lang.Override
-      public boolean getOEBMEKDJDIO() {
-        return oEBMEKDJDIO_;
+      public boolean getIsShowTips() {
+        return isShowTips_;
       }
       /**
-       * <code>bool OEBMEKDJDIO = 5;</code>
-       * @param value The oEBMEKDJDIO to set.
+       * <code>bool is_show_tips = 15;</code>
+       * @param value The isShowTips to set.
        * @return This builder for chaining.
        */
-      public Builder setOEBMEKDJDIO(boolean value) {
-        
-        oEBMEKDJDIO_ = value;
+      public Builder setIsShowTips(boolean value) {
+
+        isShowTips_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>bool OEBMEKDJDIO = 5;</code>
+       * <code>bool is_show_tips = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOEBMEKDJDIO() {
-        
-        oEBMEKDJDIO_ = false;
+      public Builder clearIsShowTips() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        isShowTips_ = false;
         onChanged();
         return this;
       }
 
       private int minFinishTime_ ;
       /**
-       * <code>uint32 min_finish_time = 10;</code>
+       * <code>uint32 min_finish_time = 8;</code>
        * @return The minFinishTime.
        */
       @java.lang.Override
@@ -720,23 +672,56 @@ public final class LanternProjectionLevelInfoOuterClass {
         return minFinishTime_;
       }
       /**
-       * <code>uint32 min_finish_time = 10;</code>
+       * <code>uint32 min_finish_time = 8;</code>
        * @param value The minFinishTime to set.
        * @return This builder for chaining.
        */
       public Builder setMinFinishTime(int value) {
-        
+
         minFinishTime_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 min_finish_time = 10;</code>
+       * <code>uint32 min_finish_time = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMinFinishTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         minFinishTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isCanStart_ ;
+      /**
+       * <code>bool is_can_start = 6;</code>
+       * @return The isCanStart.
+       */
+      @java.lang.Override
+      public boolean getIsCanStart() {
+        return isCanStart_;
+      }
+      /**
+       * <code>bool is_can_start = 6;</code>
+       * @param value The isCanStart to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsCanStart(boolean value) {
+
+        isCanStart_ = value;
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_can_start = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsCanStart() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        isCanStart_ = false;
         onChanged();
         return this;
       }
@@ -773,7 +758,18 @@ public final class LanternProjectionLevelInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new LanternProjectionLevelInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -807,12 +803,12 @@ public final class LanternProjectionLevelInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n LanternProjectionLevelInfo.proto\"\200\001\n\032L" +
-      "anternProjectionLevelInfo\022\023\n\013BHFCMBEMGIN" +
-      "\030\002 \001(\010\022\n\n\002id\030\001 \001(\r\022\023\n\013is_finished\030\r \001(\010\022" +
-      "\023\n\013OEBMEKDJDIO\030\005 \001(\010\022\027\n\017min_finish_time\030" +
-      "\n \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "\n LanternProjectionLevelInfo.proto\"\202\001\n\032L" +
+      "anternProjectionLevelInfo\022\n\n\002id\030\005 \001(\r\022\023\n" +
+      "\013is_finished\030\001 \001(\010\022\024\n\014is_show_tips\030\017 \001(\010" +
+      "\022\027\n\017min_finish_time\030\010 \001(\r\022\024\n\014is_can_star" +
+      "t\030\006 \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -823,7 +819,7 @@ public final class LanternProjectionLevelInfoOuterClass {
     internal_static_LanternProjectionLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanternProjectionLevelInfo_descriptor,
-        new java.lang.String[] { "BHFCMBEMGIN", "Id", "IsFinished", "OEBMEKDJDIO", "MinFinishTime", });
+        new java.lang.String[] { "Id", "IsFinished", "IsShowTips", "MinFinishTime", "IsCanStart", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -49,7 +49,7 @@ public final class FishPoolInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: JNLEJBIEONJ
+   * Name: PPCINKMGAIE
    * </pre>
    *
    * Protobuf type {@code FishPoolInfo}
@@ -74,83 +74,6 @@ public final class FishPoolInfoOuterClass {
       return new FishPoolInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private FishPoolInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              poolId_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                fishAreaList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              fishAreaList_.addInt(input.readUInt32());
-              break;
-            }
-            case 18: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                fishAreaList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                fishAreaList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 24: {
-
-              todayFishNum_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          fishAreaList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.FishPoolInfoOuterClass.internal_static_FishPoolInfo_descriptor;
@@ -165,7 +88,7 @@ public final class FishPoolInfoOuterClass {
     }
 
     public static final int POOL_ID_FIELD_NUMBER = 1;
-    private int poolId_;
+    private int poolId_ = 0;
     /**
      * <code>uint32 pool_id = 1;</code>
      * @return The poolId.
@@ -176,6 +99,7 @@ public final class FishPoolInfoOuterClass {
     }
 
     public static final int FISH_AREA_LIST_FIELD_NUMBER = 2;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList fishAreaList_;
     /**
      * <code>repeated uint32 fish_area_list = 2;</code>
@@ -204,7 +128,7 @@ public final class FishPoolInfoOuterClass {
     private int fishAreaListMemoizedSerializedSize = -1;
 
     public static final int TODAY_FISH_NUM_FIELD_NUMBER = 3;
-    private int todayFishNum_;
+    private int todayFishNum_ = 0;
     /**
      * <code>uint32 today_fish_num = 3;</code>
      * @return The todayFishNum.
@@ -242,7 +166,7 @@ public final class FishPoolInfoOuterClass {
       if (todayFishNum_ != 0) {
         output.writeUInt32(3, todayFishNum_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -273,7 +197,7 @@ public final class FishPoolInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, todayFishNum_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -294,7 +218,7 @@ public final class FishPoolInfoOuterClass {
           .equals(other.getFishAreaListList())) return false;
       if (getTodayFishNum()
           != other.getTodayFishNum()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -313,7 +237,7 @@ public final class FishPoolInfoOuterClass {
       }
       hash = (37 * hash) + TODAY_FISH_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getTodayFishNum();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -362,11 +286,13 @@ public final class FishPoolInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -410,7 +336,7 @@ public final class FishPoolInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: JNLEJBIEONJ
+     * Name: PPCINKMGAIE
      * </pre>
      *
      * Protobuf type {@code FishPoolInfo}
@@ -434,28 +360,21 @@ public final class FishPoolInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         poolId_ = 0;
-
         fishAreaList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         todayFishNum_ = 0;
-
         return this;
       }
 
@@ -482,16 +401,28 @@ public final class FishPoolInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo buildPartial() {
         emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo result = new emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo(this);
-        int from_bitField0_ = bitField0_;
-        result.poolId_ = poolId_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          fishAreaList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.fishAreaList_ = fishAreaList_;
-        result.todayFishNum_ = todayFishNum_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo result) {
+        if (((bitField0_ & 0x00000002) != 0)) {
+          fishAreaList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.fishAreaList_ = fishAreaList_;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.poolId_ = poolId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.todayFishNum_ = todayFishNum_;
+        }
       }
 
       @java.lang.Override
@@ -544,7 +475,7 @@ public final class FishPoolInfoOuterClass {
         if (!other.fishAreaList_.isEmpty()) {
           if (fishAreaList_.isEmpty()) {
             fishAreaList_ = other.fishAreaList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureFishAreaListIsMutable();
             fishAreaList_.addAll(other.fishAreaList_);
@@ -554,7 +485,7 @@ public final class FishPoolInfoOuterClass {
         if (other.getTodayFishNum() != 0) {
           setTodayFishNum(other.getTodayFishNum());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -569,17 +500,56 @@ public final class FishPoolInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                poolId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                int v = input.readUInt32();
+                ensureFishAreaListIsMutable();
+                fishAreaList_.addInt(v);
+                break;
+              } // case 16
+              case 18: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureFishAreaListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  fishAreaList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 18
+              case 24: {
+                todayFishNum_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -599,8 +569,9 @@ public final class FishPoolInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setPoolId(int value) {
-        
+
         poolId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -609,7 +580,7 @@ public final class FishPoolInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearPoolId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         poolId_ = 0;
         onChanged();
         return this;
@@ -617,10 +588,10 @@ public final class FishPoolInfoOuterClass {
 
       private com.google.protobuf.Internal.IntList fishAreaList_ = emptyIntList();
       private void ensureFishAreaListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           fishAreaList_ = mutableCopy(fishAreaList_);
-          bitField0_ |= 0x00000001;
-         }
+          bitField0_ |= 0x00000002;
+        }
       }
       /**
        * <code>repeated uint32 fish_area_list = 2;</code>
@@ -628,7 +599,7 @@ public final class FishPoolInfoOuterClass {
        */
       public java.util.List<java.lang.Integer>
           getFishAreaListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
+        return ((bitField0_ & 0x00000002) != 0) ?
                  java.util.Collections.unmodifiableList(fishAreaList_) : fishAreaList_;
       }
       /**
@@ -654,6 +625,7 @@ public final class FishPoolInfoOuterClass {
        */
       public Builder setFishAreaList(
           int index, int value) {
+
         ensureFishAreaListIsMutable();
         fishAreaList_.setInt(index, value);
         onChanged();
@@ -665,6 +637,7 @@ public final class FishPoolInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder addFishAreaList(int value) {
+
         ensureFishAreaListIsMutable();
         fishAreaList_.addInt(value);
         onChanged();
@@ -689,7 +662,7 @@ public final class FishPoolInfoOuterClass {
        */
       public Builder clearFishAreaList() {
         fishAreaList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -709,8 +682,9 @@ public final class FishPoolInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setTodayFishNum(int value) {
-        
+
         todayFishNum_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -719,7 +693,7 @@ public final class FishPoolInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearTodayFishNum() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         todayFishNum_ = 0;
         onChanged();
         return this;
@@ -757,7 +731,18 @@ public final class FishPoolInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new FishPoolInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

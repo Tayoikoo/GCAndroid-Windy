@@ -1,21 +1,25 @@
 package emu.grasscutter.net.packet;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+
 import com.google.protobuf.GeneratedMessageV3;
 import emu.grasscutter.net.proto.PacketHeadOuterClass.PacketHead;
 import emu.grasscutter.utils.Crypto;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 
 public class BasePacket {
     private static final int const1 = 17767; // 0x4567
     private static final int const2 = -30293; // 0x89ab
-    public boolean shouldEncrypt = true;
+
     private int opcode;
     private boolean shouldBuildHeader = false;
+
     private byte[] header;
     private byte[] data;
+
     // Encryption
     private boolean useDispatchKey;
+    public boolean shouldEncrypt = true;
 
     public BasePacket(int opcode) {
         this.opcode = opcode;
@@ -80,12 +84,7 @@ public class BasePacket {
         if (this.getHeader() != null && clientSequence == 0) {
             return this;
         }
-        setHeader(
-                PacketHead.newBuilder()
-                        .setClientSequenceId(clientSequence)
-                        .setSentMs(System.currentTimeMillis())
-                        .build()
-                        .toByteArray());
+        setHeader(PacketHead.newBuilder().setClientSequenceId(clientSequence).setSentMs(System.currentTimeMillis()).build().toByteArray());
         return this;
     }
 
@@ -98,8 +97,7 @@ public class BasePacket {
             this.data = new byte[0];
         }
 
-        ByteArrayOutputStream baos =
-                new ByteArrayOutputStream(2 + 2 + 2 + 4 + getHeader().length + getData().length + 2);
+        ByteArrayOutputStream baos = new ByteArrayOutputStream(2 + 2 + 2 + 4 + getHeader().length + getData().length + 2);
 
         this.writeUint16(baos, const1);
         this.writeUint16(baos, opcode);

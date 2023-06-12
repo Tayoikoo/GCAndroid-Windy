@@ -16,7 +16,7 @@ public final class LunaRiteHintPointTypeOuterClass {
   }
   /**
    * <pre>
-   * Obf: CHIOFLNBPOE
+   * Name: KBPCMOCENDE
    * </pre>
    *
    * Protobuf enum {@code LunaRiteHintPointType}

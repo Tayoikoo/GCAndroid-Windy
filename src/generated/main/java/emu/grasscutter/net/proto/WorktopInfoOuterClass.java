@@ -43,7 +43,7 @@ public final class WorktopInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: LHPOPGLKKEE
+   * Name: PLAEKPJCLFB
    * </pre>
    *
    * Protobuf type {@code WorktopInfo}
@@ -68,78 +68,6 @@ public final class WorktopInfoOuterClass {
       return new WorktopInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private WorktopInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                optionList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              optionList_.addInt(input.readUInt32());
-              break;
-            }
-            case 10: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                optionList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                optionList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 16: {
-
-              isGuestCanOperate_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          optionList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.WorktopInfoOuterClass.internal_static_WorktopInfo_descriptor;
@@ -154,6 +82,7 @@ public final class WorktopInfoOuterClass {
     }
 
     public static final int OPTION_LIST_FIELD_NUMBER = 1;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList optionList_;
     /**
      * <code>repeated uint32 option_list = 1;</code>
@@ -182,7 +111,7 @@ public final class WorktopInfoOuterClass {
     private int optionListMemoizedSerializedSize = -1;
 
     public static final int IS_GUEST_CAN_OPERATE_FIELD_NUMBER = 2;
-    private boolean isGuestCanOperate_;
+    private boolean isGuestCanOperate_ = false;
     /**
      * <code>bool is_guest_can_operate = 2;</code>
      * @return The isGuestCanOperate.
@@ -217,7 +146,7 @@ public final class WorktopInfoOuterClass {
       if (isGuestCanOperate_ != false) {
         output.writeBool(2, isGuestCanOperate_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -244,7 +173,7 @@ public final class WorktopInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, isGuestCanOperate_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -263,7 +192,7 @@ public final class WorktopInfoOuterClass {
           .equals(other.getOptionListList())) return false;
       if (getIsGuestCanOperate()
           != other.getIsGuestCanOperate()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -281,7 +210,7 @@ public final class WorktopInfoOuterClass {
       hash = (37 * hash) + IS_GUEST_CAN_OPERATE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsGuestCanOperate());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -330,11 +259,13 @@ public final class WorktopInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.WorktopInfoOuterClass.WorktopInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.WorktopInfoOuterClass.WorktopInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -378,7 +309,7 @@ public final class WorktopInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: LHPOPGLKKEE
+     * Name: PLAEKPJCLFB
      * </pre>
      *
      * Protobuf type {@code WorktopInfo}
@@ -402,26 +333,20 @@ public final class WorktopInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.WorktopInfoOuterClass.WorktopInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         optionList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         isGuestCanOperate_ = false;
-
         return this;
       }
 
@@ -448,15 +373,25 @@ public final class WorktopInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WorktopInfoOuterClass.WorktopInfo buildPartial() {
         emu.grasscutter.net.proto.WorktopInfoOuterClass.WorktopInfo result = new emu.grasscutter.net.proto.WorktopInfoOuterClass.WorktopInfo(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.WorktopInfoOuterClass.WorktopInfo result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           optionList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.optionList_ = optionList_;
-        result.isGuestCanOperate_ = isGuestCanOperate_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.WorktopInfoOuterClass.WorktopInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.isGuestCanOperate_ = isGuestCanOperate_;
+        }
       }
 
       @java.lang.Override
@@ -516,7 +451,7 @@ public final class WorktopInfoOuterClass {
         if (other.getIsGuestCanOperate() != false) {
           setIsGuestCanOperate(other.getIsGuestCanOperate());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -531,17 +466,51 @@ public final class WorktopInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.WorktopInfoOuterClass.WorktopInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                int v = input.readUInt32();
+                ensureOptionListIsMutable();
+                optionList_.addInt(v);
+                break;
+              } // case 8
+              case 10: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureOptionListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  optionList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 10
+              case 16: {
+                isGuestCanOperate_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.WorktopInfoOuterClass.WorktopInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -551,7 +520,7 @@ public final class WorktopInfoOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           optionList_ = mutableCopy(optionList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
        * <code>repeated uint32 option_list = 1;</code>
@@ -585,6 +554,7 @@ public final class WorktopInfoOuterClass {
        */
       public Builder setOptionList(
           int index, int value) {
+
         ensureOptionListIsMutable();
         optionList_.setInt(index, value);
         onChanged();
@@ -596,6 +566,7 @@ public final class WorktopInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder addOptionList(int value) {
+
         ensureOptionListIsMutable();
         optionList_.addInt(value);
         onChanged();
@@ -640,8 +611,9 @@ public final class WorktopInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIsGuestCanOperate(boolean value) {
-        
+
         isGuestCanOperate_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -650,7 +622,7 @@ public final class WorktopInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearIsGuestCanOperate() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         isGuestCanOperate_ = false;
         onChanged();
         return this;
@@ -688,7 +660,18 @@ public final class WorktopInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new WorktopInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

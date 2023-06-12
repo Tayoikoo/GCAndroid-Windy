@@ -50,53 +50,6 @@ public final class PGHIDDKHGALOuterClass {
       return new PGHIDDKHGAL();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private PGHIDDKHGAL(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              cDMINANDFKE_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PGHIDDKHGALOuterClass.internal_static_PGHIDDKHGAL_descriptor;
@@ -111,7 +64,7 @@ public final class PGHIDDKHGALOuterClass {
     }
 
     public static final int CDMINANDFKE_FIELD_NUMBER = 1;
-    private int cDMINANDFKE_;
+    private int cDMINANDFKE_ = 0;
     /**
      * <code>uint32 CDMINANDFKE = 1;</code>
      * @return The cDMINANDFKE.
@@ -138,7 +91,7 @@ public final class PGHIDDKHGALOuterClass {
       if (cDMINANDFKE_ != 0) {
         output.writeUInt32(1, cDMINANDFKE_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -151,7 +104,7 @@ public final class PGHIDDKHGALOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, cDMINANDFKE_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -168,7 +121,7 @@ public final class PGHIDDKHGALOuterClass {
 
       if (getCDMINANDFKE()
           != other.getCDMINANDFKE()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -181,7 +134,7 @@ public final class PGHIDDKHGALOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CDMINANDFKE_FIELD_NUMBER;
       hash = (53 * hash) + getCDMINANDFKE();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -230,11 +183,13 @@ public final class PGHIDDKHGALOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.PGHIDDKHGALOuterClass.PGHIDDKHGAL parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.PGHIDDKHGALOuterClass.PGHIDDKHGAL parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -302,24 +257,19 @@ public final class PGHIDDKHGALOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PGHIDDKHGALOuterClass.PGHIDDKHGAL.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         cDMINANDFKE_ = 0;
-
         return this;
       }
 
@@ -346,9 +296,16 @@ public final class PGHIDDKHGALOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PGHIDDKHGALOuterClass.PGHIDDKHGAL buildPartial() {
         emu.grasscutter.net.proto.PGHIDDKHGALOuterClass.PGHIDDKHGAL result = new emu.grasscutter.net.proto.PGHIDDKHGALOuterClass.PGHIDDKHGAL(this);
-        result.cDMINANDFKE_ = cDMINANDFKE_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PGHIDDKHGALOuterClass.PGHIDDKHGAL result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.cDMINANDFKE_ = cDMINANDFKE_;
+        }
       }
 
       @java.lang.Override
@@ -398,7 +355,7 @@ public final class PGHIDDKHGALOuterClass {
         if (other.getCDMINANDFKE() != 0) {
           setCDMINANDFKE(other.getCDMINANDFKE());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -413,19 +370,38 @@ public final class PGHIDDKHGALOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PGHIDDKHGALOuterClass.PGHIDDKHGAL parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                cDMINANDFKE_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PGHIDDKHGALOuterClass.PGHIDDKHGAL) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int cDMINANDFKE_ ;
       /**
@@ -442,8 +418,9 @@ public final class PGHIDDKHGALOuterClass {
        * @return This builder for chaining.
        */
       public Builder setCDMINANDFKE(int value) {
-        
+
         cDMINANDFKE_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -452,7 +429,7 @@ public final class PGHIDDKHGALOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearCDMINANDFKE() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         cDMINANDFKE_ = 0;
         onChanged();
         return this;
@@ -490,7 +467,18 @@ public final class PGHIDDKHGALOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PGHIDDKHGAL(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -525,8 +513,8 @@ public final class PGHIDDKHGALOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021PGHIDDKHGAL.proto\"\"\n\013PGHIDDKHGAL\022\023\n\013CD" +
-      "MINANDFKE\030\001 \001(\rB!\n\031emu.grasscutter.net.p" +
-      "rotoZ\004/genb\006proto3"
+      "MINANDFKE\030\001 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

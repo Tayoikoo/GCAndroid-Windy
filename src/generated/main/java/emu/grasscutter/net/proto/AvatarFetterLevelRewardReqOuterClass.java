@@ -32,8 +32,8 @@ public final class AvatarFetterLevelRewardReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1656
-   * Obf: ELIDOKACJNB
+   * CmdId: 1763
+   * Name: FMBNPHNEMJA
    * </pre>
    *
    * Protobuf type {@code AvatarFetterLevelRewardReq}
@@ -57,58 +57,6 @@ public final class AvatarFetterLevelRewardReqOuterClass {
       return new AvatarFetterLevelRewardReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private AvatarFetterLevelRewardReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 16: {
-
-              avatarGuid_ = input.readUInt64();
-              break;
-            }
-            case 56: {
-
-              fetterLevel_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AvatarFetterLevelRewardReqOuterClass.internal_static_AvatarFetterLevelRewardReq_descriptor;
@@ -123,7 +71,7 @@ public final class AvatarFetterLevelRewardReqOuterClass {
     }
 
     public static final int FETTER_LEVEL_FIELD_NUMBER = 7;
-    private int fetterLevel_;
+    private int fetterLevel_ = 0;
     /**
      * <code>uint32 fetter_level = 7;</code>
      * @return The fetterLevel.
@@ -134,7 +82,7 @@ public final class AvatarFetterLevelRewardReqOuterClass {
     }
 
     public static final int AVATAR_GUID_FIELD_NUMBER = 2;
-    private long avatarGuid_;
+    private long avatarGuid_ = 0L;
     /**
      * <code>uint64 avatar_guid = 2;</code>
      * @return The avatarGuid.
@@ -164,7 +112,7 @@ public final class AvatarFetterLevelRewardReqOuterClass {
       if (fetterLevel_ != 0) {
         output.writeUInt32(7, fetterLevel_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -181,7 +129,7 @@ public final class AvatarFetterLevelRewardReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, fetterLevel_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -200,7 +148,7 @@ public final class AvatarFetterLevelRewardReqOuterClass {
           != other.getFetterLevel()) return false;
       if (getAvatarGuid()
           != other.getAvatarGuid()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -216,7 +164,7 @@ public final class AvatarFetterLevelRewardReqOuterClass {
       hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarGuid());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -265,11 +213,13 @@ public final class AvatarFetterLevelRewardReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.AvatarFetterLevelRewardReqOuterClass.AvatarFetterLevelRewardReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.AvatarFetterLevelRewardReqOuterClass.AvatarFetterLevelRewardReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -313,8 +263,8 @@ public final class AvatarFetterLevelRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1656
-     * Obf: ELIDOKACJNB
+     * CmdId: 1763
+     * Name: FMBNPHNEMJA
      * </pre>
      *
      * Protobuf type {@code AvatarFetterLevelRewardReq}
@@ -338,26 +288,20 @@ public final class AvatarFetterLevelRewardReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AvatarFetterLevelRewardReqOuterClass.AvatarFetterLevelRewardReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         fetterLevel_ = 0;
-
         avatarGuid_ = 0L;
-
         return this;
       }
 
@@ -384,10 +328,19 @@ public final class AvatarFetterLevelRewardReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarFetterLevelRewardReqOuterClass.AvatarFetterLevelRewardReq buildPartial() {
         emu.grasscutter.net.proto.AvatarFetterLevelRewardReqOuterClass.AvatarFetterLevelRewardReq result = new emu.grasscutter.net.proto.AvatarFetterLevelRewardReqOuterClass.AvatarFetterLevelRewardReq(this);
-        result.fetterLevel_ = fetterLevel_;
-        result.avatarGuid_ = avatarGuid_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AvatarFetterLevelRewardReqOuterClass.AvatarFetterLevelRewardReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.fetterLevel_ = fetterLevel_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.avatarGuid_ = avatarGuid_;
+        }
       }
 
       @java.lang.Override
@@ -440,7 +393,7 @@ public final class AvatarFetterLevelRewardReqOuterClass {
         if (other.getAvatarGuid() != 0L) {
           setAvatarGuid(other.getAvatarGuid());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -455,19 +408,43 @@ public final class AvatarFetterLevelRewardReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AvatarFetterLevelRewardReqOuterClass.AvatarFetterLevelRewardReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 16: {
+                avatarGuid_ = input.readUInt64();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 56: {
+                fetterLevel_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 56
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AvatarFetterLevelRewardReqOuterClass.AvatarFetterLevelRewardReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int fetterLevel_ ;
       /**
@@ -484,8 +461,9 @@ public final class AvatarFetterLevelRewardReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder setFetterLevel(int value) {
-        
+
         fetterLevel_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -494,7 +472,7 @@ public final class AvatarFetterLevelRewardReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearFetterLevel() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         fetterLevel_ = 0;
         onChanged();
         return this;
@@ -515,8 +493,9 @@ public final class AvatarFetterLevelRewardReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder setAvatarGuid(long value) {
-        
+
         avatarGuid_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -525,7 +504,7 @@ public final class AvatarFetterLevelRewardReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         avatarGuid_ = 0L;
         onChanged();
         return this;
@@ -563,7 +542,18 @@ public final class AvatarFetterLevelRewardReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AvatarFetterLevelRewardReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

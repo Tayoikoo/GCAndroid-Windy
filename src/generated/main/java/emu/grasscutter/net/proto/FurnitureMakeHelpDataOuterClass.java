@@ -19,20 +19,20 @@ public final class FurnitureMakeHelpDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 uid = 8;</code>
+     * <code>uint32 uid = 1;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>uint32 times = 5;</code>
+     * <code>uint32 times = 15;</code>
      * @return The times.
      */
     int getTimes();
   }
   /**
    * <pre>
-   * Obf: IGGFPDFMJAL
+   * Name: CGBMNFJOEMP
    * </pre>
    *
    * Protobuf type {@code FurnitureMakeHelpData}
@@ -56,58 +56,6 @@ public final class FurnitureMakeHelpDataOuterClass {
       return new FurnitureMakeHelpData();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private FurnitureMakeHelpData(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 40: {
-
-              times_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.internal_static_FurnitureMakeHelpData_descriptor;
@@ -121,10 +69,10 @@ public final class FurnitureMakeHelpDataOuterClass {
               emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.class, emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.Builder.class);
     }
 
-    public static final int UID_FIELD_NUMBER = 8;
-    private int uid_;
+    public static final int UID_FIELD_NUMBER = 1;
+    private int uid_ = 0;
     /**
-     * <code>uint32 uid = 8;</code>
+     * <code>uint32 uid = 1;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -132,10 +80,10 @@ public final class FurnitureMakeHelpDataOuterClass {
       return uid_;
     }
 
-    public static final int TIMES_FIELD_NUMBER = 5;
-    private int times_;
+    public static final int TIMES_FIELD_NUMBER = 15;
+    private int times_ = 0;
     /**
-     * <code>uint32 times = 5;</code>
+     * <code>uint32 times = 15;</code>
      * @return The times.
      */
     @java.lang.Override
@@ -157,13 +105,13 @@ public final class FurnitureMakeHelpDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (times_ != 0) {
-        output.writeUInt32(5, times_);
-      }
       if (uid_ != 0) {
-        output.writeUInt32(8, uid_);
+        output.writeUInt32(1, uid_);
       }
-      unknownFields.writeTo(output);
+      if (times_ != 0) {
+        output.writeUInt32(15, times_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -172,15 +120,15 @@ public final class FurnitureMakeHelpDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (times_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, times_);
-      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, uid_);
+          .computeUInt32Size(1, uid_);
       }
-      size += unknownFields.getSerializedSize();
+      if (times_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, times_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -199,7 +147,7 @@ public final class FurnitureMakeHelpDataOuterClass {
           != other.getUid()) return false;
       if (getTimes()
           != other.getTimes()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -214,7 +162,7 @@ public final class FurnitureMakeHelpDataOuterClass {
       hash = (53 * hash) + getUid();
       hash = (37 * hash) + TIMES_FIELD_NUMBER;
       hash = (53 * hash) + getTimes();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -263,11 +211,13 @@ public final class FurnitureMakeHelpDataOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -311,7 +261,7 @@ public final class FurnitureMakeHelpDataOuterClass {
     }
     /**
      * <pre>
-     * Obf: IGGFPDFMJAL
+     * Name: CGBMNFJOEMP
      * </pre>
      *
      * Protobuf type {@code FurnitureMakeHelpData}
@@ -335,26 +285,20 @@ public final class FurnitureMakeHelpDataOuterClass {
 
       // Construct using emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         uid_ = 0;
-
         times_ = 0;
-
         return this;
       }
 
@@ -381,10 +325,19 @@ public final class FurnitureMakeHelpDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData buildPartial() {
         emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData result = new emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData(this);
-        result.uid_ = uid_;
-        result.times_ = times_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.uid_ = uid_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.times_ = times_;
+        }
       }
 
       @java.lang.Override
@@ -437,7 +390,7 @@ public final class FurnitureMakeHelpDataOuterClass {
         if (other.getTimes() != 0) {
           setTimes(other.getTimes());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -452,23 +405,47 @@ public final class FurnitureMakeHelpDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                uid_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 120: {
+                times_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 8;</code>
+       * <code>uint32 uid = 1;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -476,22 +453,23 @@ public final class FurnitureMakeHelpDataOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 8;</code>
+       * <code>uint32 uid = 1;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
       public Builder setUid(int value) {
-        
+
         uid_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 uid = 8;</code>
+       * <code>uint32 uid = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         uid_ = 0;
         onChanged();
         return this;
@@ -499,7 +477,7 @@ public final class FurnitureMakeHelpDataOuterClass {
 
       private int times_ ;
       /**
-       * <code>uint32 times = 5;</code>
+       * <code>uint32 times = 15;</code>
        * @return The times.
        */
       @java.lang.Override
@@ -507,22 +485,23 @@ public final class FurnitureMakeHelpDataOuterClass {
         return times_;
       }
       /**
-       * <code>uint32 times = 5;</code>
+       * <code>uint32 times = 15;</code>
        * @param value The times to set.
        * @return This builder for chaining.
        */
       public Builder setTimes(int value) {
-        
+
         times_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 times = 5;</code>
+       * <code>uint32 times = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearTimes() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         times_ = 0;
         onChanged();
         return this;
@@ -560,7 +539,18 @@ public final class FurnitureMakeHelpDataOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new FurnitureMakeHelpData(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -595,7 +585,7 @@ public final class FurnitureMakeHelpDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033FurnitureMakeHelpData.proto\"3\n\025Furnitu" +
-      "reMakeHelpData\022\013\n\003uid\030\010 \001(\r\022\r\n\005times\030\005 \001" +
+      "reMakeHelpData\022\013\n\003uid\030\001 \001(\r\022\r\n\005times\030\017 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

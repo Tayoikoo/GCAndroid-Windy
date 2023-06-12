@@ -8,10 +8,9 @@ public class PacketHomeNewUnlockedBgmIdListNotify extends BasePacket {
     public PacketHomeNewUnlockedBgmIdListNotify(int homeBgmId) {
         super(PacketOpcodes.HomeNewUnlockedBgmIdListNotify);
 
-        var notify =
-                HomeNewUnlockedBgmIdListNotifyOuterClass.HomeNewUnlockedBgmIdListNotify.newBuilder()
-                        .addNewUnlockedBgmIdList(homeBgmId)
-                        .build();
+        var notify = HomeNewUnlockedBgmIdListNotifyOuterClass.HomeNewUnlockedBgmIdListNotify.newBuilder()
+            .addNewUnlockedBgmIdList(homeBgmId)
+            .build();
 
         this.setData(notify);
     }

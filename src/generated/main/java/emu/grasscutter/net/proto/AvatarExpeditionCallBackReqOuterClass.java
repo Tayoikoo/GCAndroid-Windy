@@ -19,17 +19,17 @@ public final class AvatarExpeditionCallBackReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint64 avatar_guid = 11;</code>
+     * <code>repeated uint64 avatar_guid = 1;</code>
      * @return A list containing the avatarGuid.
      */
     java.util.List<java.lang.Long> getAvatarGuidList();
     /**
-     * <code>repeated uint64 avatar_guid = 11;</code>
+     * <code>repeated uint64 avatar_guid = 1;</code>
      * @return The count of avatarGuid.
      */
     int getAvatarGuidCount();
     /**
-     * <code>repeated uint64 avatar_guid = 11;</code>
+     * <code>repeated uint64 avatar_guid = 1;</code>
      * @param index The index of the element to return.
      * @return The avatarGuid at the given index.
      */
@@ -37,8 +37,8 @@ public final class AvatarExpeditionCallBackReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1796
-   * Obf: IGPFBMDCNDC
+   * CmdId: 1736
+   * Name: LIPKPFIMKEG
    * </pre>
    *
    * Protobuf type {@code AvatarExpeditionCallBackReq}
@@ -63,73 +63,6 @@ public final class AvatarExpeditionCallBackReqOuterClass {
       return new AvatarExpeditionCallBackReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private AvatarExpeditionCallBackReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 88: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                avatarGuid_ = newLongList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              avatarGuid_.addLong(input.readUInt64());
-              break;
-            }
-            case 90: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                avatarGuid_ = newLongList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                avatarGuid_.addLong(input.readUInt64());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          avatarGuid_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.internal_static_AvatarExpeditionCallBackReq_descriptor;
@@ -143,10 +76,11 @@ public final class AvatarExpeditionCallBackReqOuterClass {
               emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.AvatarExpeditionCallBackReq.class, emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.AvatarExpeditionCallBackReq.Builder.class);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 11;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 1;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.LongList avatarGuid_;
     /**
-     * <code>repeated uint64 avatar_guid = 11;</code>
+     * <code>repeated uint64 avatar_guid = 1;</code>
      * @return A list containing the avatarGuid.
      */
     @java.lang.Override
@@ -155,14 +89,14 @@ public final class AvatarExpeditionCallBackReqOuterClass {
       return avatarGuid_;
     }
     /**
-     * <code>repeated uint64 avatar_guid = 11;</code>
+     * <code>repeated uint64 avatar_guid = 1;</code>
      * @return The count of avatarGuid.
      */
     public int getAvatarGuidCount() {
       return avatarGuid_.size();
     }
     /**
-     * <code>repeated uint64 avatar_guid = 11;</code>
+     * <code>repeated uint64 avatar_guid = 1;</code>
      * @param index The index of the element to return.
      * @return The avatarGuid at the given index.
      */
@@ -187,13 +121,13 @@ public final class AvatarExpeditionCallBackReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getAvatarGuidList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(avatarGuidMemoizedSerializedSize);
       }
       for (int i = 0; i < avatarGuid_.size(); i++) {
         output.writeUInt64NoTag(avatarGuid_.getLong(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -216,7 +150,7 @@ public final class AvatarExpeditionCallBackReqOuterClass {
         }
         avatarGuidMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -233,7 +167,7 @@ public final class AvatarExpeditionCallBackReqOuterClass {
 
       if (!getAvatarGuidList()
           .equals(other.getAvatarGuidList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -248,7 +182,7 @@ public final class AvatarExpeditionCallBackReqOuterClass {
         hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
         hash = (53 * hash) + getAvatarGuidList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +231,13 @@ public final class AvatarExpeditionCallBackReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.AvatarExpeditionCallBackReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.AvatarExpeditionCallBackReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,8 +281,8 @@ public final class AvatarExpeditionCallBackReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1796
-     * Obf: IGPFBMDCNDC
+     * CmdId: 1736
+     * Name: LIPKPFIMKEG
      * </pre>
      *
      * Protobuf type {@code AvatarExpeditionCallBackReq}
@@ -370,24 +306,19 @@ public final class AvatarExpeditionCallBackReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.AvatarExpeditionCallBackReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         avatarGuid_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -414,14 +345,22 @@ public final class AvatarExpeditionCallBackReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.AvatarExpeditionCallBackReq buildPartial() {
         emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.AvatarExpeditionCallBackReq result = new emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.AvatarExpeditionCallBackReq(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.AvatarExpeditionCallBackReq result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           avatarGuid_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.avatarGuid_ = avatarGuid_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.AvatarExpeditionCallBackReq result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -478,7 +417,7 @@ public final class AvatarExpeditionCallBackReqOuterClass {
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -493,17 +432,46 @@ public final class AvatarExpeditionCallBackReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.AvatarExpeditionCallBackReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                long v = input.readUInt64();
+                ensureAvatarGuidIsMutable();
+                avatarGuid_.addLong(v);
+                break;
+              } // case 8
+              case 10: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureAvatarGuidIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  avatarGuid_.addLong(input.readUInt64());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 10
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AvatarExpeditionCallBackReqOuterClass.AvatarExpeditionCallBackReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -513,10 +481,10 @@ public final class AvatarExpeditionCallBackReqOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           avatarGuid_ = mutableCopy(avatarGuid_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
-       * <code>repeated uint64 avatar_guid = 11;</code>
+       * <code>repeated uint64 avatar_guid = 1;</code>
        * @return A list containing the avatarGuid.
        */
       public java.util.List<java.lang.Long>
@@ -525,14 +493,14 @@ public final class AvatarExpeditionCallBackReqOuterClass {
                  java.util.Collections.unmodifiableList(avatarGuid_) : avatarGuid_;
       }
       /**
-       * <code>repeated uint64 avatar_guid = 11;</code>
+       * <code>repeated uint64 avatar_guid = 1;</code>
        * @return The count of avatarGuid.
        */
       public int getAvatarGuidCount() {
         return avatarGuid_.size();
       }
       /**
-       * <code>repeated uint64 avatar_guid = 11;</code>
+       * <code>repeated uint64 avatar_guid = 1;</code>
        * @param index The index of the element to return.
        * @return The avatarGuid at the given index.
        */
@@ -540,31 +508,33 @@ public final class AvatarExpeditionCallBackReqOuterClass {
         return avatarGuid_.getLong(index);
       }
       /**
-       * <code>repeated uint64 avatar_guid = 11;</code>
+       * <code>repeated uint64 avatar_guid = 1;</code>
        * @param index The index to set the value at.
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
       public Builder setAvatarGuid(
           int index, long value) {
+
         ensureAvatarGuidIsMutable();
         avatarGuid_.setLong(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid = 11;</code>
+       * <code>repeated uint64 avatar_guid = 1;</code>
        * @param value The avatarGuid to add.
        * @return This builder for chaining.
        */
       public Builder addAvatarGuid(long value) {
+
         ensureAvatarGuidIsMutable();
         avatarGuid_.addLong(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid = 11;</code>
+       * <code>repeated uint64 avatar_guid = 1;</code>
        * @param values The avatarGuid to add.
        * @return This builder for chaining.
        */
@@ -577,7 +547,7 @@ public final class AvatarExpeditionCallBackReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid = 11;</code>
+       * <code>repeated uint64 avatar_guid = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -619,7 +589,18 @@ public final class AvatarExpeditionCallBackReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AvatarExpeditionCallBackReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -655,7 +636,7 @@ public final class AvatarExpeditionCallBackReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n!AvatarExpeditionCallBackReq.proto\"2\n\033A" +
       "vatarExpeditionCallBackReq\022\023\n\013avatar_gui" +
-      "d\030\013 \003(\004B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "d\030\001 \003(\004B\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

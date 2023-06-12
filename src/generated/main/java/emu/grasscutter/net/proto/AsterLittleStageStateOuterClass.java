@@ -16,7 +16,7 @@ public final class AsterLittleStageStateOuterClass {
   }
   /**
    * <pre>
-   * Obf: KBCJBKKNMMJ
+   * Name: JFEDOFPBNLC
    * </pre>
    *
    * Protobuf enum {@code AsterLittleStageState}

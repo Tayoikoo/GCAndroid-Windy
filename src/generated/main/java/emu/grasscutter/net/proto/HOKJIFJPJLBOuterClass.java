@@ -50,53 +50,6 @@ public final class HOKJIFJPJLBOuterClass {
       return new HOKJIFJPJLB();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private HOKJIFJPJLB(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 104: {
-
-              iOILPCOLCGM_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.HOKJIFJPJLBOuterClass.internal_static_HOKJIFJPJLB_descriptor;
@@ -111,7 +64,7 @@ public final class HOKJIFJPJLBOuterClass {
     }
 
     public static final int IOILPCOLCGM_FIELD_NUMBER = 13;
-    private boolean iOILPCOLCGM_;
+    private boolean iOILPCOLCGM_ = false;
     /**
      * <code>bool IOILPCOLCGM = 13;</code>
      * @return The iOILPCOLCGM.
@@ -138,7 +91,7 @@ public final class HOKJIFJPJLBOuterClass {
       if (iOILPCOLCGM_ != false) {
         output.writeBool(13, iOILPCOLCGM_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -151,7 +104,7 @@ public final class HOKJIFJPJLBOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(13, iOILPCOLCGM_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -168,7 +121,7 @@ public final class HOKJIFJPJLBOuterClass {
 
       if (getIOILPCOLCGM()
           != other.getIOILPCOLCGM()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -182,7 +135,7 @@ public final class HOKJIFJPJLBOuterClass {
       hash = (37 * hash) + IOILPCOLCGM_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIOILPCOLCGM());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -231,11 +184,13 @@ public final class HOKJIFJPJLBOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.HOKJIFJPJLBOuterClass.HOKJIFJPJLB parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.HOKJIFJPJLBOuterClass.HOKJIFJPJLB parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -303,24 +258,19 @@ public final class HOKJIFJPJLBOuterClass {
 
       // Construct using emu.grasscutter.net.proto.HOKJIFJPJLBOuterClass.HOKJIFJPJLB.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         iOILPCOLCGM_ = false;
-
         return this;
       }
 
@@ -347,9 +297,16 @@ public final class HOKJIFJPJLBOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HOKJIFJPJLBOuterClass.HOKJIFJPJLB buildPartial() {
         emu.grasscutter.net.proto.HOKJIFJPJLBOuterClass.HOKJIFJPJLB result = new emu.grasscutter.net.proto.HOKJIFJPJLBOuterClass.HOKJIFJPJLB(this);
-        result.iOILPCOLCGM_ = iOILPCOLCGM_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.HOKJIFJPJLBOuterClass.HOKJIFJPJLB result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.iOILPCOLCGM_ = iOILPCOLCGM_;
+        }
       }
 
       @java.lang.Override
@@ -399,7 +356,7 @@ public final class HOKJIFJPJLBOuterClass {
         if (other.getIOILPCOLCGM() != false) {
           setIOILPCOLCGM(other.getIOILPCOLCGM());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -414,19 +371,38 @@ public final class HOKJIFJPJLBOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.HOKJIFJPJLBOuterClass.HOKJIFJPJLB parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 104: {
+                iOILPCOLCGM_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 104
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.HOKJIFJPJLBOuterClass.HOKJIFJPJLB) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private boolean iOILPCOLCGM_ ;
       /**
@@ -443,8 +419,9 @@ public final class HOKJIFJPJLBOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIOILPCOLCGM(boolean value) {
-        
+
         iOILPCOLCGM_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -453,7 +430,7 @@ public final class HOKJIFJPJLBOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearIOILPCOLCGM() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         iOILPCOLCGM_ = false;
         onChanged();
         return this;
@@ -491,7 +468,18 @@ public final class HOKJIFJPJLBOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HOKJIFJPJLB(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -526,8 +514,8 @@ public final class HOKJIFJPJLBOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021HOKJIFJPJLB.proto\"\"\n\013HOKJIFJPJLB\022\023\n\013IO" +
-      "ILPCOLCGM\030\r \001(\010B!\n\031emu.grasscutter.net.p" +
-      "rotoZ\004/genb\006proto3"
+      "ILPCOLCGM\030\r \001(\010B\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -68,68 +68,6 @@ public final class JAAACKLMLHIOuterClass {
       return new JAAACKLMLHI();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private JAAACKLMLHI(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              isFinish_ = input.readBool();
-              break;
-            }
-            case 80: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              dHNNFFCLPGH_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.JAAACKLMLHIOuterClass.internal_static_JAAACKLMLHI_descriptor;
@@ -144,7 +82,7 @@ public final class JAAACKLMLHIOuterClass {
     }
 
     public static final int DHNNFFCLPGH_FIELD_NUMBER = 12;
-    private int dHNNFFCLPGH_;
+    private int dHNNFFCLPGH_ = 0;
     /**
      * <code>uint32 DHNNFFCLPGH = 12;</code>
      * @return The dHNNFFCLPGH.
@@ -155,7 +93,7 @@ public final class JAAACKLMLHIOuterClass {
     }
 
     public static final int IS_FINISH_FIELD_NUMBER = 2;
-    private boolean isFinish_;
+    private boolean isFinish_ = false;
     /**
      * <code>bool is_finish = 2;</code>
      * @return The isFinish.
@@ -166,7 +104,7 @@ public final class JAAACKLMLHIOuterClass {
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 10;
-    private boolean isOpen_;
+    private boolean isOpen_ = false;
     /**
      * <code>bool is_open = 10;</code>
      * @return The isOpen.
@@ -177,7 +115,7 @@ public final class JAAACKLMLHIOuterClass {
     }
 
     public static final int LEVEL_ID_FIELD_NUMBER = 1;
-    private int levelId_;
+    private int levelId_ = 0;
     /**
      * <code>uint32 level_id = 1;</code>
      * @return The levelId.
@@ -213,7 +151,7 @@ public final class JAAACKLMLHIOuterClass {
       if (dHNNFFCLPGH_ != 0) {
         output.writeUInt32(12, dHNNFFCLPGH_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -238,7 +176,7 @@ public final class JAAACKLMLHIOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, dHNNFFCLPGH_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -261,7 +199,7 @@ public final class JAAACKLMLHIOuterClass {
           != other.getIsOpen()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -282,7 +220,7 @@ public final class JAAACKLMLHIOuterClass {
           getIsOpen());
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -331,11 +269,13 @@ public final class JAAACKLMLHIOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.JAAACKLMLHIOuterClass.JAAACKLMLHI parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.JAAACKLMLHIOuterClass.JAAACKLMLHI parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -403,30 +343,22 @@ public final class JAAACKLMLHIOuterClass {
 
       // Construct using emu.grasscutter.net.proto.JAAACKLMLHIOuterClass.JAAACKLMLHI.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         dHNNFFCLPGH_ = 0;
-
         isFinish_ = false;
-
         isOpen_ = false;
-
         levelId_ = 0;
-
         return this;
       }
 
@@ -453,12 +385,25 @@ public final class JAAACKLMLHIOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.JAAACKLMLHIOuterClass.JAAACKLMLHI buildPartial() {
         emu.grasscutter.net.proto.JAAACKLMLHIOuterClass.JAAACKLMLHI result = new emu.grasscutter.net.proto.JAAACKLMLHIOuterClass.JAAACKLMLHI(this);
-        result.dHNNFFCLPGH_ = dHNNFFCLPGH_;
-        result.isFinish_ = isFinish_;
-        result.isOpen_ = isOpen_;
-        result.levelId_ = levelId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.JAAACKLMLHIOuterClass.JAAACKLMLHI result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.dHNNFFCLPGH_ = dHNNFFCLPGH_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.isFinish_ = isFinish_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.isOpen_ = isOpen_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.levelId_ = levelId_;
+        }
       }
 
       @java.lang.Override
@@ -517,7 +462,7 @@ public final class JAAACKLMLHIOuterClass {
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -532,19 +477,53 @@ public final class JAAACKLMLHIOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.JAAACKLMLHIOuterClass.JAAACKLMLHI parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                levelId_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 8
+              case 16: {
+                isFinish_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 80: {
+                isOpen_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 80
+              case 96: {
+                dHNNFFCLPGH_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 96
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.JAAACKLMLHIOuterClass.JAAACKLMLHI) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int dHNNFFCLPGH_ ;
       /**
@@ -561,8 +540,9 @@ public final class JAAACKLMLHIOuterClass {
        * @return This builder for chaining.
        */
       public Builder setDHNNFFCLPGH(int value) {
-        
+
         dHNNFFCLPGH_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -571,7 +551,7 @@ public final class JAAACKLMLHIOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearDHNNFFCLPGH() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         dHNNFFCLPGH_ = 0;
         onChanged();
         return this;
@@ -592,8 +572,9 @@ public final class JAAACKLMLHIOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIsFinish(boolean value) {
-        
+
         isFinish_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -602,7 +583,7 @@ public final class JAAACKLMLHIOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         isFinish_ = false;
         onChanged();
         return this;
@@ -623,8 +604,9 @@ public final class JAAACKLMLHIOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIsOpen(boolean value) {
-        
+
         isOpen_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -633,7 +615,7 @@ public final class JAAACKLMLHIOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         isOpen_ = false;
         onChanged();
         return this;
@@ -654,8 +636,9 @@ public final class JAAACKLMLHIOuterClass {
        * @return This builder for chaining.
        */
       public Builder setLevelId(int value) {
-        
+
         levelId_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -664,7 +647,7 @@ public final class JAAACKLMLHIOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         levelId_ = 0;
         onChanged();
         return this;
@@ -702,7 +685,18 @@ public final class JAAACKLMLHIOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new JAAACKLMLHI(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -738,8 +732,8 @@ public final class JAAACKLMLHIOuterClass {
     java.lang.String[] descriptorData = {
       "\n\021JAAACKLMLHI.proto\"X\n\013JAAACKLMLHI\022\023\n\013DH" +
       "NNFFCLPGH\030\014 \001(\r\022\021\n\tis_finish\030\002 \001(\010\022\017\n\007is" +
-      "_open\030\n \001(\010\022\020\n\010level_id\030\001 \001(\rB!\n\031emu.gra" +
-      "sscutter.net.protoZ\004/genb\006proto3"
+      "_open\030\n \001(\010\022\020\n\010level_id\030\001 \001(\rB\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

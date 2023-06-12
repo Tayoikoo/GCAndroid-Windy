@@ -19,17 +19,17 @@ public final class BattlePassMissionDelNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 del_mission_id_list = 9;</code>
+     * <code>repeated uint32 del_mission_id_list = 1;</code>
      * @return A list containing the delMissionIdList.
      */
     java.util.List<java.lang.Integer> getDelMissionIdListList();
     /**
-     * <code>repeated uint32 del_mission_id_list = 9;</code>
+     * <code>repeated uint32 del_mission_id_list = 1;</code>
      * @return The count of delMissionIdList.
      */
     int getDelMissionIdListCount();
     /**
-     * <code>repeated uint32 del_mission_id_list = 9;</code>
+     * <code>repeated uint32 del_mission_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The delMissionIdList at the given index.
      */
@@ -37,8 +37,8 @@ public final class BattlePassMissionDelNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 2637
-   * Obf: EHBCMBGNEAI
+   * CmdId: 2617
+   * Name: PPDFLNOGDEB
    * </pre>
    *
    * Protobuf type {@code BattlePassMissionDelNotify}
@@ -63,73 +63,6 @@ public final class BattlePassMissionDelNotifyOuterClass {
       return new BattlePassMissionDelNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private BattlePassMissionDelNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 72: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                delMissionIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              delMissionIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 74: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                delMissionIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                delMissionIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          delMissionIdList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.internal_static_BattlePassMissionDelNotify_descriptor;
@@ -143,10 +76,11 @@ public final class BattlePassMissionDelNotifyOuterClass {
               emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify.class, emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify.Builder.class);
     }
 
-    public static final int DEL_MISSION_ID_LIST_FIELD_NUMBER = 9;
+    public static final int DEL_MISSION_ID_LIST_FIELD_NUMBER = 1;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList delMissionIdList_;
     /**
-     * <code>repeated uint32 del_mission_id_list = 9;</code>
+     * <code>repeated uint32 del_mission_id_list = 1;</code>
      * @return A list containing the delMissionIdList.
      */
     @java.lang.Override
@@ -155,14 +89,14 @@ public final class BattlePassMissionDelNotifyOuterClass {
       return delMissionIdList_;
     }
     /**
-     * <code>repeated uint32 del_mission_id_list = 9;</code>
+     * <code>repeated uint32 del_mission_id_list = 1;</code>
      * @return The count of delMissionIdList.
      */
     public int getDelMissionIdListCount() {
       return delMissionIdList_.size();
     }
     /**
-     * <code>repeated uint32 del_mission_id_list = 9;</code>
+     * <code>repeated uint32 del_mission_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The delMissionIdList at the given index.
      */
@@ -187,13 +121,13 @@ public final class BattlePassMissionDelNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getDelMissionIdListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(delMissionIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < delMissionIdList_.size(); i++) {
         output.writeUInt32NoTag(delMissionIdList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -216,7 +150,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
         }
         delMissionIdListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -233,7 +167,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
 
       if (!getDelMissionIdListList()
           .equals(other.getDelMissionIdListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -248,7 +182,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
         hash = (37 * hash) + DEL_MISSION_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDelMissionIdListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +231,13 @@ public final class BattlePassMissionDelNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,8 +281,8 @@ public final class BattlePassMissionDelNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2637
-     * Obf: EHBCMBGNEAI
+     * CmdId: 2617
+     * Name: PPDFLNOGDEB
      * </pre>
      *
      * Protobuf type {@code BattlePassMissionDelNotify}
@@ -370,24 +306,19 @@ public final class BattlePassMissionDelNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         delMissionIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -414,14 +345,22 @@ public final class BattlePassMissionDelNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify buildPartial() {
         emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify result = new emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           delMissionIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.delMissionIdList_ = delMissionIdList_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -478,7 +417,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -493,17 +432,46 @@ public final class BattlePassMissionDelNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                int v = input.readUInt32();
+                ensureDelMissionIdListIsMutable();
+                delMissionIdList_.addInt(v);
+                break;
+              } // case 8
+              case 10: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureDelMissionIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  delMissionIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 10
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -513,10 +481,10 @@ public final class BattlePassMissionDelNotifyOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           delMissionIdList_ = mutableCopy(delMissionIdList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 9;</code>
+       * <code>repeated uint32 del_mission_id_list = 1;</code>
        * @return A list containing the delMissionIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +493,14 @@ public final class BattlePassMissionDelNotifyOuterClass {
                  java.util.Collections.unmodifiableList(delMissionIdList_) : delMissionIdList_;
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 9;</code>
+       * <code>repeated uint32 del_mission_id_list = 1;</code>
        * @return The count of delMissionIdList.
        */
       public int getDelMissionIdListCount() {
         return delMissionIdList_.size();
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 9;</code>
+       * <code>repeated uint32 del_mission_id_list = 1;</code>
        * @param index The index of the element to return.
        * @return The delMissionIdList at the given index.
        */
@@ -540,31 +508,33 @@ public final class BattlePassMissionDelNotifyOuterClass {
         return delMissionIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 9;</code>
+       * <code>repeated uint32 del_mission_id_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The delMissionIdList to set.
        * @return This builder for chaining.
        */
       public Builder setDelMissionIdList(
           int index, int value) {
+
         ensureDelMissionIdListIsMutable();
         delMissionIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 9;</code>
+       * <code>repeated uint32 del_mission_id_list = 1;</code>
        * @param value The delMissionIdList to add.
        * @return This builder for chaining.
        */
       public Builder addDelMissionIdList(int value) {
+
         ensureDelMissionIdListIsMutable();
         delMissionIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 9;</code>
+       * <code>repeated uint32 del_mission_id_list = 1;</code>
        * @param values The delMissionIdList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +547,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 9;</code>
+       * <code>repeated uint32 del_mission_id_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDelMissionIdList() {
@@ -619,7 +589,18 @@ public final class BattlePassMissionDelNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new BattlePassMissionDelNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -655,7 +636,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n BattlePassMissionDelNotify.proto\"9\n\032Ba" +
       "ttlePassMissionDelNotify\022\033\n\023del_mission_" +
-      "id_list\030\t \003(\rB\033\n\031emu.grasscutter.net.pro" +
+      "id_list\030\001 \003(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

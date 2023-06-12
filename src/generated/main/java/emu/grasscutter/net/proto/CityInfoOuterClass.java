@@ -19,26 +19,26 @@ public final class CityInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 city_id = 15;</code>
+     * <code>uint32 city_id = 1;</code>
      * @return The cityId.
      */
     int getCityId();
 
     /**
-     * <code>uint32 crystal_num = 8;</code>
+     * <code>uint32 crystal_num = 9;</code>
      * @return The crystalNum.
      */
     int getCrystalNum();
 
     /**
-     * <code>uint32 level = 14;</code>
+     * <code>uint32 level = 5;</code>
      * @return The level.
      */
     int getLevel();
   }
   /**
    * <pre>
-   * Obf: POBBFHKEACF
+   * Name: HIOHLMOBFND
    * </pre>
    *
    * Protobuf type {@code CityInfo}
@@ -62,63 +62,6 @@ public final class CityInfoOuterClass {
       return new CityInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private CityInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 64: {
-
-              crystalNum_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              level_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              cityId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.CityInfoOuterClass.internal_static_CityInfo_descriptor;
@@ -132,10 +75,10 @@ public final class CityInfoOuterClass {
               emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.class, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder.class);
     }
 
-    public static final int CITY_ID_FIELD_NUMBER = 15;
-    private int cityId_;
+    public static final int CITY_ID_FIELD_NUMBER = 1;
+    private int cityId_ = 0;
     /**
-     * <code>uint32 city_id = 15;</code>
+     * <code>uint32 city_id = 1;</code>
      * @return The cityId.
      */
     @java.lang.Override
@@ -143,10 +86,10 @@ public final class CityInfoOuterClass {
       return cityId_;
     }
 
-    public static final int CRYSTAL_NUM_FIELD_NUMBER = 8;
-    private int crystalNum_;
+    public static final int CRYSTAL_NUM_FIELD_NUMBER = 9;
+    private int crystalNum_ = 0;
     /**
-     * <code>uint32 crystal_num = 8;</code>
+     * <code>uint32 crystal_num = 9;</code>
      * @return The crystalNum.
      */
     @java.lang.Override
@@ -154,10 +97,10 @@ public final class CityInfoOuterClass {
       return crystalNum_;
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 14;
-    private int level_;
+    public static final int LEVEL_FIELD_NUMBER = 5;
+    private int level_ = 0;
     /**
-     * <code>uint32 level = 14;</code>
+     * <code>uint32 level = 5;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -179,16 +122,16 @@ public final class CityInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (crystalNum_ != 0) {
-        output.writeUInt32(8, crystalNum_);
+      if (cityId_ != 0) {
+        output.writeUInt32(1, cityId_);
       }
       if (level_ != 0) {
-        output.writeUInt32(14, level_);
+        output.writeUInt32(5, level_);
       }
-      if (cityId_ != 0) {
-        output.writeUInt32(15, cityId_);
+      if (crystalNum_ != 0) {
+        output.writeUInt32(9, crystalNum_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -197,19 +140,19 @@ public final class CityInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (crystalNum_ != 0) {
+      if (cityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, crystalNum_);
+          .computeUInt32Size(1, cityId_);
       }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, level_);
+          .computeUInt32Size(5, level_);
       }
-      if (cityId_ != 0) {
+      if (crystalNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, cityId_);
+          .computeUInt32Size(9, crystalNum_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -230,7 +173,7 @@ public final class CityInfoOuterClass {
           != other.getCrystalNum()) return false;
       if (getLevel()
           != other.getLevel()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -247,7 +190,7 @@ public final class CityInfoOuterClass {
       hash = (53 * hash) + getCrystalNum();
       hash = (37 * hash) + LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getLevel();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -296,11 +239,13 @@ public final class CityInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -344,7 +289,7 @@ public final class CityInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: POBBFHKEACF
+     * Name: HIOHLMOBFND
      * </pre>
      *
      * Protobuf type {@code CityInfo}
@@ -368,28 +313,21 @@ public final class CityInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         cityId_ = 0;
-
         crystalNum_ = 0;
-
         level_ = 0;
-
         return this;
       }
 
@@ -416,11 +354,22 @@ public final class CityInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo buildPartial() {
         emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo result = new emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo(this);
-        result.cityId_ = cityId_;
-        result.crystalNum_ = crystalNum_;
-        result.level_ = level_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.cityId_ = cityId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.crystalNum_ = crystalNum_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.level_ = level_;
+        }
       }
 
       @java.lang.Override
@@ -476,7 +425,7 @@ public final class CityInfoOuterClass {
         if (other.getLevel() != 0) {
           setLevel(other.getLevel());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -491,23 +440,52 @@ public final class CityInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                cityId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 40: {
+                level_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 40
+              case 72: {
+                crystalNum_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 72
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int cityId_ ;
       /**
-       * <code>uint32 city_id = 15;</code>
+       * <code>uint32 city_id = 1;</code>
        * @return The cityId.
        */
       @java.lang.Override
@@ -515,22 +493,23 @@ public final class CityInfoOuterClass {
         return cityId_;
       }
       /**
-       * <code>uint32 city_id = 15;</code>
+       * <code>uint32 city_id = 1;</code>
        * @param value The cityId to set.
        * @return This builder for chaining.
        */
       public Builder setCityId(int value) {
-        
+
         cityId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 city_id = 15;</code>
+       * <code>uint32 city_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearCityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         cityId_ = 0;
         onChanged();
         return this;
@@ -538,7 +517,7 @@ public final class CityInfoOuterClass {
 
       private int crystalNum_ ;
       /**
-       * <code>uint32 crystal_num = 8;</code>
+       * <code>uint32 crystal_num = 9;</code>
        * @return The crystalNum.
        */
       @java.lang.Override
@@ -546,22 +525,23 @@ public final class CityInfoOuterClass {
         return crystalNum_;
       }
       /**
-       * <code>uint32 crystal_num = 8;</code>
+       * <code>uint32 crystal_num = 9;</code>
        * @param value The crystalNum to set.
        * @return This builder for chaining.
        */
       public Builder setCrystalNum(int value) {
-        
+
         crystalNum_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 crystal_num = 8;</code>
+       * <code>uint32 crystal_num = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearCrystalNum() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         crystalNum_ = 0;
         onChanged();
         return this;
@@ -569,7 +549,7 @@ public final class CityInfoOuterClass {
 
       private int level_ ;
       /**
-       * <code>uint32 level = 14;</code>
+       * <code>uint32 level = 5;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -577,22 +557,23 @@ public final class CityInfoOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 14;</code>
+       * <code>uint32 level = 5;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
       public Builder setLevel(int value) {
-        
+
         level_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 level = 14;</code>
+       * <code>uint32 level = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         level_ = 0;
         onChanged();
         return this;
@@ -630,7 +611,18 @@ public final class CityInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CityInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -665,7 +657,7 @@ public final class CityInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\016CityInfo.proto\"?\n\010CityInfo\022\017\n\007city_id\030" +
-      "\017 \001(\r\022\023\n\013crystal_num\030\010 \001(\r\022\r\n\005level\030\016 \001(" +
+      "\001 \001(\r\022\023\n\013crystal_num\030\t \001(\r\022\r\n\005level\030\005 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

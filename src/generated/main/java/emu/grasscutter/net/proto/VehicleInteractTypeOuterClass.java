@@ -16,7 +16,7 @@ public final class VehicleInteractTypeOuterClass {
   }
   /**
    * <pre>
-   * Obf: HPLKIGCFFBO
+   * Name: PCBLIOLCMAE
    * </pre>
    *
    * Protobuf enum {@code VehicleInteractType}

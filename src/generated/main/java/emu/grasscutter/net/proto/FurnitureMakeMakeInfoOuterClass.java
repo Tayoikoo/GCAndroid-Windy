@@ -19,20 +19,20 @@ public final class FurnitureMakeMakeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 make_count = 5;</code>
+     * <code>uint32 make_count = 14;</code>
      * @return The makeCount.
      */
     int getMakeCount();
 
     /**
-     * <code>uint32 furniture_id = 11;</code>
+     * <code>uint32 furniture_id = 6;</code>
      * @return The furnitureId.
      */
     int getFurnitureId();
   }
   /**
    * <pre>
-   * Obf: DAOCMABCHOI
+   * Name: HNLOLPHFANA
    * </pre>
    *
    * Protobuf type {@code FurnitureMakeMakeInfo}
@@ -56,58 +56,6 @@ public final class FurnitureMakeMakeInfoOuterClass {
       return new FurnitureMakeMakeInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private FurnitureMakeMakeInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 40: {
-
-              makeCount_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              furnitureId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.FurnitureMakeMakeInfoOuterClass.internal_static_FurnitureMakeMakeInfo_descriptor;
@@ -121,10 +69,10 @@ public final class FurnitureMakeMakeInfoOuterClass {
               emu.grasscutter.net.proto.FurnitureMakeMakeInfoOuterClass.FurnitureMakeMakeInfo.class, emu.grasscutter.net.proto.FurnitureMakeMakeInfoOuterClass.FurnitureMakeMakeInfo.Builder.class);
     }
 
-    public static final int MAKE_COUNT_FIELD_NUMBER = 5;
-    private int makeCount_;
+    public static final int MAKE_COUNT_FIELD_NUMBER = 14;
+    private int makeCount_ = 0;
     /**
-     * <code>uint32 make_count = 5;</code>
+     * <code>uint32 make_count = 14;</code>
      * @return The makeCount.
      */
     @java.lang.Override
@@ -132,10 +80,10 @@ public final class FurnitureMakeMakeInfoOuterClass {
       return makeCount_;
     }
 
-    public static final int FURNITURE_ID_FIELD_NUMBER = 11;
-    private int furnitureId_;
+    public static final int FURNITURE_ID_FIELD_NUMBER = 6;
+    private int furnitureId_ = 0;
     /**
-     * <code>uint32 furniture_id = 11;</code>
+     * <code>uint32 furniture_id = 6;</code>
      * @return The furnitureId.
      */
     @java.lang.Override
@@ -157,13 +105,13 @@ public final class FurnitureMakeMakeInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (makeCount_ != 0) {
-        output.writeUInt32(5, makeCount_);
-      }
       if (furnitureId_ != 0) {
-        output.writeUInt32(11, furnitureId_);
+        output.writeUInt32(6, furnitureId_);
       }
-      unknownFields.writeTo(output);
+      if (makeCount_ != 0) {
+        output.writeUInt32(14, makeCount_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -172,15 +120,15 @@ public final class FurnitureMakeMakeInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (makeCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, makeCount_);
-      }
       if (furnitureId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, furnitureId_);
+          .computeUInt32Size(6, furnitureId_);
       }
-      size += unknownFields.getSerializedSize();
+      if (makeCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, makeCount_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -199,7 +147,7 @@ public final class FurnitureMakeMakeInfoOuterClass {
           != other.getMakeCount()) return false;
       if (getFurnitureId()
           != other.getFurnitureId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -214,7 +162,7 @@ public final class FurnitureMakeMakeInfoOuterClass {
       hash = (53 * hash) + getMakeCount();
       hash = (37 * hash) + FURNITURE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getFurnitureId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -263,11 +211,13 @@ public final class FurnitureMakeMakeInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.FurnitureMakeMakeInfoOuterClass.FurnitureMakeMakeInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.FurnitureMakeMakeInfoOuterClass.FurnitureMakeMakeInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -311,7 +261,7 @@ public final class FurnitureMakeMakeInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: DAOCMABCHOI
+     * Name: HNLOLPHFANA
      * </pre>
      *
      * Protobuf type {@code FurnitureMakeMakeInfo}
@@ -335,26 +285,20 @@ public final class FurnitureMakeMakeInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.FurnitureMakeMakeInfoOuterClass.FurnitureMakeMakeInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         makeCount_ = 0;
-
         furnitureId_ = 0;
-
         return this;
       }
 
@@ -381,10 +325,19 @@ public final class FurnitureMakeMakeInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FurnitureMakeMakeInfoOuterClass.FurnitureMakeMakeInfo buildPartial() {
         emu.grasscutter.net.proto.FurnitureMakeMakeInfoOuterClass.FurnitureMakeMakeInfo result = new emu.grasscutter.net.proto.FurnitureMakeMakeInfoOuterClass.FurnitureMakeMakeInfo(this);
-        result.makeCount_ = makeCount_;
-        result.furnitureId_ = furnitureId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.FurnitureMakeMakeInfoOuterClass.FurnitureMakeMakeInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.makeCount_ = makeCount_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.furnitureId_ = furnitureId_;
+        }
       }
 
       @java.lang.Override
@@ -437,7 +390,7 @@ public final class FurnitureMakeMakeInfoOuterClass {
         if (other.getFurnitureId() != 0) {
           setFurnitureId(other.getFurnitureId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -452,23 +405,47 @@ public final class FurnitureMakeMakeInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.FurnitureMakeMakeInfoOuterClass.FurnitureMakeMakeInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 48: {
+                furnitureId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 48
+              case 112: {
+                makeCount_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 112
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.FurnitureMakeMakeInfoOuterClass.FurnitureMakeMakeInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int makeCount_ ;
       /**
-       * <code>uint32 make_count = 5;</code>
+       * <code>uint32 make_count = 14;</code>
        * @return The makeCount.
        */
       @java.lang.Override
@@ -476,22 +453,23 @@ public final class FurnitureMakeMakeInfoOuterClass {
         return makeCount_;
       }
       /**
-       * <code>uint32 make_count = 5;</code>
+       * <code>uint32 make_count = 14;</code>
        * @param value The makeCount to set.
        * @return This builder for chaining.
        */
       public Builder setMakeCount(int value) {
-        
+
         makeCount_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 make_count = 5;</code>
+       * <code>uint32 make_count = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearMakeCount() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         makeCount_ = 0;
         onChanged();
         return this;
@@ -499,7 +477,7 @@ public final class FurnitureMakeMakeInfoOuterClass {
 
       private int furnitureId_ ;
       /**
-       * <code>uint32 furniture_id = 11;</code>
+       * <code>uint32 furniture_id = 6;</code>
        * @return The furnitureId.
        */
       @java.lang.Override
@@ -507,22 +485,23 @@ public final class FurnitureMakeMakeInfoOuterClass {
         return furnitureId_;
       }
       /**
-       * <code>uint32 furniture_id = 11;</code>
+       * <code>uint32 furniture_id = 6;</code>
        * @param value The furnitureId to set.
        * @return This builder for chaining.
        */
       public Builder setFurnitureId(int value) {
-        
+
         furnitureId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 furniture_id = 11;</code>
+       * <code>uint32 furniture_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearFurnitureId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         furnitureId_ = 0;
         onChanged();
         return this;
@@ -560,7 +539,18 @@ public final class FurnitureMakeMakeInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new FurnitureMakeMakeInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -595,8 +585,8 @@ public final class FurnitureMakeMakeInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033FurnitureMakeMakeInfo.proto\"A\n\025Furnitu" +
-      "reMakeMakeInfo\022\022\n\nmake_count\030\005 \001(\r\022\024\n\014fu" +
-      "rniture_id\030\013 \001(\rB\033\n\031emu.grasscutter.net." +
+      "reMakeMakeInfo\022\022\n\nmake_count\030\016 \001(\r\022\024\n\014fu" +
+      "rniture_id\030\006 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,33 +19,33 @@ public final class TryEnterHomeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_transfer_to_safe_point = 12;</code>
-     * @return The isTransferToSafePoint.
-     */
-    boolean getIsTransferToSafePoint();
-
-    /**
-     * <code>uint32 target_point = 8;</code>
+     * <code>uint32 target_point = 7;</code>
      * @return The targetPoint.
      */
     int getTargetPoint();
 
     /**
-     * <code>uint32 target_uid = 11;</code>
+     * <code>bool EIEPKFHNILM = 2;</code>
+     * @return The eIEPKFHNILM.
+     */
+    boolean getEIEPKFHNILM();
+
+    /**
+     * <code>bool OJAFECKPAJE = 14;</code>
+     * @return The oJAFECKPAJE.
+     */
+    boolean getOJAFECKPAJE();
+
+    /**
+     * <code>uint32 target_uid = 13;</code>
      * @return The targetUid.
      */
     int getTargetUid();
-
-    /**
-     * <code>bool GGBOCPDIIKL = 14;</code>
-     * @return The gGBOCPDIIKL.
-     */
-    boolean getGGBOCPDIIKL();
   }
   /**
    * <pre>
-   * CmdId: 4565
-   * Obf: DGPBLIIAEOL
+   * CmdId: 4504
+   * Name: MBLNFDMHCMM
    * </pre>
    *
    * Protobuf type {@code TryEnterHomeReq}
@@ -69,68 +69,6 @@ public final class TryEnterHomeReqOuterClass {
       return new TryEnterHomeReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private TryEnterHomeReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 64: {
-
-              targetPoint_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              targetUid_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              isTransferToSafePoint_ = input.readBool();
-              break;
-            }
-            case 112: {
-
-              gGBOCPDIIKL_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.internal_static_TryEnterHomeReq_descriptor;
@@ -144,21 +82,10 @@ public final class TryEnterHomeReqOuterClass {
               emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq.class, emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq.Builder.class);
     }
 
-    public static final int IS_TRANSFER_TO_SAFE_POINT_FIELD_NUMBER = 12;
-    private boolean isTransferToSafePoint_;
+    public static final int TARGET_POINT_FIELD_NUMBER = 7;
+    private int targetPoint_ = 0;
     /**
-     * <code>bool is_transfer_to_safe_point = 12;</code>
-     * @return The isTransferToSafePoint.
-     */
-    @java.lang.Override
-    public boolean getIsTransferToSafePoint() {
-      return isTransferToSafePoint_;
-    }
-
-    public static final int TARGET_POINT_FIELD_NUMBER = 8;
-    private int targetPoint_;
-    /**
-     * <code>uint32 target_point = 8;</code>
+     * <code>uint32 target_point = 7;</code>
      * @return The targetPoint.
      */
     @java.lang.Override
@@ -166,26 +93,37 @@ public final class TryEnterHomeReqOuterClass {
       return targetPoint_;
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 11;
-    private int targetUid_;
+    public static final int EIEPKFHNILM_FIELD_NUMBER = 2;
+    private boolean eIEPKFHNILM_ = false;
     /**
-     * <code>uint32 target_uid = 11;</code>
+     * <code>bool EIEPKFHNILM = 2;</code>
+     * @return The eIEPKFHNILM.
+     */
+    @java.lang.Override
+    public boolean getEIEPKFHNILM() {
+      return eIEPKFHNILM_;
+    }
+
+    public static final int OJAFECKPAJE_FIELD_NUMBER = 14;
+    private boolean oJAFECKPAJE_ = false;
+    /**
+     * <code>bool OJAFECKPAJE = 14;</code>
+     * @return The oJAFECKPAJE.
+     */
+    @java.lang.Override
+    public boolean getOJAFECKPAJE() {
+      return oJAFECKPAJE_;
+    }
+
+    public static final int TARGET_UID_FIELD_NUMBER = 13;
+    private int targetUid_ = 0;
+    /**
+     * <code>uint32 target_uid = 13;</code>
      * @return The targetUid.
      */
     @java.lang.Override
     public int getTargetUid() {
       return targetUid_;
-    }
-
-    public static final int GGBOCPDIIKL_FIELD_NUMBER = 14;
-    private boolean gGBOCPDIIKL_;
-    /**
-     * <code>bool GGBOCPDIIKL = 14;</code>
-     * @return The gGBOCPDIIKL.
-     */
-    @java.lang.Override
-    public boolean getGGBOCPDIIKL() {
-      return gGBOCPDIIKL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -202,19 +140,19 @@ public final class TryEnterHomeReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (eIEPKFHNILM_ != false) {
+        output.writeBool(2, eIEPKFHNILM_);
+      }
       if (targetPoint_ != 0) {
-        output.writeUInt32(8, targetPoint_);
+        output.writeUInt32(7, targetPoint_);
       }
       if (targetUid_ != 0) {
-        output.writeUInt32(11, targetUid_);
+        output.writeUInt32(13, targetUid_);
       }
-      if (isTransferToSafePoint_ != false) {
-        output.writeBool(12, isTransferToSafePoint_);
+      if (oJAFECKPAJE_ != false) {
+        output.writeBool(14, oJAFECKPAJE_);
       }
-      if (gGBOCPDIIKL_ != false) {
-        output.writeBool(14, gGBOCPDIIKL_);
-      }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -223,23 +161,23 @@ public final class TryEnterHomeReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (eIEPKFHNILM_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, eIEPKFHNILM_);
+      }
       if (targetPoint_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, targetPoint_);
+          .computeUInt32Size(7, targetPoint_);
       }
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, targetUid_);
+          .computeUInt32Size(13, targetUid_);
       }
-      if (isTransferToSafePoint_ != false) {
+      if (oJAFECKPAJE_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isTransferToSafePoint_);
+          .computeBoolSize(14, oJAFECKPAJE_);
       }
-      if (gGBOCPDIIKL_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, gGBOCPDIIKL_);
-      }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -254,15 +192,15 @@ public final class TryEnterHomeReqOuterClass {
       }
       emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq other = (emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq) obj;
 
-      if (getIsTransferToSafePoint()
-          != other.getIsTransferToSafePoint()) return false;
       if (getTargetPoint()
           != other.getTargetPoint()) return false;
+      if (getEIEPKFHNILM()
+          != other.getEIEPKFHNILM()) return false;
+      if (getOJAFECKPAJE()
+          != other.getOJAFECKPAJE()) return false;
       if (getTargetUid()
           != other.getTargetUid()) return false;
-      if (getGGBOCPDIIKL()
-          != other.getGGBOCPDIIKL()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -273,17 +211,17 @@ public final class TryEnterHomeReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_TRANSFER_TO_SAFE_POINT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsTransferToSafePoint());
       hash = (37 * hash) + TARGET_POINT_FIELD_NUMBER;
       hash = (53 * hash) + getTargetPoint();
+      hash = (37 * hash) + EIEPKFHNILM_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getEIEPKFHNILM());
+      hash = (37 * hash) + OJAFECKPAJE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getOJAFECKPAJE());
       hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetUid();
-      hash = (37 * hash) + GGBOCPDIIKL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getGGBOCPDIIKL());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -332,11 +270,13 @@ public final class TryEnterHomeReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -380,8 +320,8 @@ public final class TryEnterHomeReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4565
-     * Obf: DGPBLIIAEOL
+     * CmdId: 4504
+     * Name: MBLNFDMHCMM
      * </pre>
      *
      * Protobuf type {@code TryEnterHomeReq}
@@ -405,30 +345,22 @@ public final class TryEnterHomeReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isTransferToSafePoint_ = false;
-
+        bitField0_ = 0;
         targetPoint_ = 0;
-
+        eIEPKFHNILM_ = false;
+        oJAFECKPAJE_ = false;
         targetUid_ = 0;
-
-        gGBOCPDIIKL_ = false;
-
         return this;
       }
 
@@ -455,12 +387,25 @@ public final class TryEnterHomeReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq buildPartial() {
         emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq result = new emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq(this);
-        result.isTransferToSafePoint_ = isTransferToSafePoint_;
-        result.targetPoint_ = targetPoint_;
-        result.targetUid_ = targetUid_;
-        result.gGBOCPDIIKL_ = gGBOCPDIIKL_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.targetPoint_ = targetPoint_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.eIEPKFHNILM_ = eIEPKFHNILM_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.oJAFECKPAJE_ = oJAFECKPAJE_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.targetUid_ = targetUid_;
+        }
       }
 
       @java.lang.Override
@@ -507,19 +452,19 @@ public final class TryEnterHomeReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq other) {
         if (other == emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq.getDefaultInstance()) return this;
-        if (other.getIsTransferToSafePoint() != false) {
-          setIsTransferToSafePoint(other.getIsTransferToSafePoint());
-        }
         if (other.getTargetPoint() != 0) {
           setTargetPoint(other.getTargetPoint());
+        }
+        if (other.getEIEPKFHNILM() != false) {
+          setEIEPKFHNILM(other.getEIEPKFHNILM());
+        }
+        if (other.getOJAFECKPAJE() != false) {
+          setOJAFECKPAJE(other.getOJAFECKPAJE());
         }
         if (other.getTargetUid() != 0) {
           setTargetUid(other.getTargetUid());
         }
-        if (other.getGGBOCPDIIKL() != false) {
-          setGGBOCPDIIKL(other.getGGBOCPDIIKL());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -534,54 +479,57 @@ public final class TryEnterHomeReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 16: {
+                eIEPKFHNILM_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 56: {
+                targetPoint_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 56
+              case 104: {
+                targetUid_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 104
+              case 112: {
+                oJAFECKPAJE_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 112
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.TryEnterHomeReqOuterClass.TryEnterHomeReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private boolean isTransferToSafePoint_ ;
-      /**
-       * <code>bool is_transfer_to_safe_point = 12;</code>
-       * @return The isTransferToSafePoint.
-       */
-      @java.lang.Override
-      public boolean getIsTransferToSafePoint() {
-        return isTransferToSafePoint_;
-      }
-      /**
-       * <code>bool is_transfer_to_safe_point = 12;</code>
-       * @param value The isTransferToSafePoint to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsTransferToSafePoint(boolean value) {
-        
-        isTransferToSafePoint_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_transfer_to_safe_point = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsTransferToSafePoint() {
-        
-        isTransferToSafePoint_ = false;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int targetPoint_ ;
       /**
-       * <code>uint32 target_point = 8;</code>
+       * <code>uint32 target_point = 7;</code>
        * @return The targetPoint.
        */
       @java.lang.Override
@@ -589,30 +537,95 @@ public final class TryEnterHomeReqOuterClass {
         return targetPoint_;
       }
       /**
-       * <code>uint32 target_point = 8;</code>
+       * <code>uint32 target_point = 7;</code>
        * @param value The targetPoint to set.
        * @return This builder for chaining.
        */
       public Builder setTargetPoint(int value) {
-        
+
         targetPoint_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 target_point = 8;</code>
+       * <code>uint32 target_point = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetPoint() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         targetPoint_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean eIEPKFHNILM_ ;
+      /**
+       * <code>bool EIEPKFHNILM = 2;</code>
+       * @return The eIEPKFHNILM.
+       */
+      @java.lang.Override
+      public boolean getEIEPKFHNILM() {
+        return eIEPKFHNILM_;
+      }
+      /**
+       * <code>bool EIEPKFHNILM = 2;</code>
+       * @param value The eIEPKFHNILM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEIEPKFHNILM(boolean value) {
+
+        eIEPKFHNILM_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool EIEPKFHNILM = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEIEPKFHNILM() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        eIEPKFHNILM_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean oJAFECKPAJE_ ;
+      /**
+       * <code>bool OJAFECKPAJE = 14;</code>
+       * @return The oJAFECKPAJE.
+       */
+      @java.lang.Override
+      public boolean getOJAFECKPAJE() {
+        return oJAFECKPAJE_;
+      }
+      /**
+       * <code>bool OJAFECKPAJE = 14;</code>
+       * @param value The oJAFECKPAJE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOJAFECKPAJE(boolean value) {
+
+        oJAFECKPAJE_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool OJAFECKPAJE = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOJAFECKPAJE() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        oJAFECKPAJE_ = false;
         onChanged();
         return this;
       }
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 11;</code>
+       * <code>uint32 target_uid = 13;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -620,54 +633,24 @@ public final class TryEnterHomeReqOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 11;</code>
+       * <code>uint32 target_uid = 13;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
       public Builder setTargetUid(int value) {
-        
+
         targetUid_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 target_uid = 11;</code>
+       * <code>uint32 target_uid = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         targetUid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean gGBOCPDIIKL_ ;
-      /**
-       * <code>bool GGBOCPDIIKL = 14;</code>
-       * @return The gGBOCPDIIKL.
-       */
-      @java.lang.Override
-      public boolean getGGBOCPDIIKL() {
-        return gGBOCPDIIKL_;
-      }
-      /**
-       * <code>bool GGBOCPDIIKL = 14;</code>
-       * @param value The gGBOCPDIIKL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGGBOCPDIIKL(boolean value) {
-        
-        gGBOCPDIIKL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool GGBOCPDIIKL = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGGBOCPDIIKL() {
-        
-        gGBOCPDIIKL_ = false;
         onChanged();
         return this;
       }
@@ -704,7 +687,18 @@ public final class TryEnterHomeReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new TryEnterHomeReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -738,11 +732,11 @@ public final class TryEnterHomeReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025TryEnterHomeReq.proto\"s\n\017TryEnterHomeR" +
-      "eq\022!\n\031is_transfer_to_safe_point\030\014 \001(\010\022\024\n" +
-      "\014target_point\030\010 \001(\r\022\022\n\ntarget_uid\030\013 \001(\r\022" +
-      "\023\n\013GGBOCPDIIKL\030\016 \001(\010B\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\025TryEnterHomeReq.proto\"e\n\017TryEnterHomeR" +
+      "eq\022\024\n\014target_point\030\007 \001(\r\022\023\n\013EIEPKFHNILM\030" +
+      "\002 \001(\010\022\023\n\013OJAFECKPAJE\030\016 \001(\010\022\022\n\ntarget_uid" +
+      "\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -753,7 +747,7 @@ public final class TryEnterHomeReqOuterClass {
     internal_static_TryEnterHomeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TryEnterHomeReq_descriptor,
-        new java.lang.String[] { "IsTransferToSafePoint", "TargetPoint", "TargetUid", "GGBOCPDIIKL", });
+        new java.lang.String[] { "TargetPoint", "EIEPKFHNILM", "OJAFECKPAJE", "TargetUid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

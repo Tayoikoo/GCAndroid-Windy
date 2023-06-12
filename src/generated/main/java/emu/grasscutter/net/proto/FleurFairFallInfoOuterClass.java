@@ -19,14 +19,14 @@ public final class FleurFairFallInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 best_score = 6;</code>
+     * <code>uint32 best_score = 4;</code>
      * @return The bestScore.
      */
     int getBestScore();
   }
   /**
    * <pre>
-   * Obf: KNDNJKFLHMA
+   * Name: IMLFLIICPJL
    * </pre>
    *
    * Protobuf type {@code FleurFairFallInfo}
@@ -50,53 +50,6 @@ public final class FleurFairFallInfoOuterClass {
       return new FleurFairFallInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private FleurFairFallInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 48: {
-
-              bestScore_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.FleurFairFallInfoOuterClass.internal_static_FleurFairFallInfo_descriptor;
@@ -110,10 +63,10 @@ public final class FleurFairFallInfoOuterClass {
               emu.grasscutter.net.proto.FleurFairFallInfoOuterClass.FleurFairFallInfo.class, emu.grasscutter.net.proto.FleurFairFallInfoOuterClass.FleurFairFallInfo.Builder.class);
     }
 
-    public static final int BEST_SCORE_FIELD_NUMBER = 6;
-    private int bestScore_;
+    public static final int BEST_SCORE_FIELD_NUMBER = 4;
+    private int bestScore_ = 0;
     /**
-     * <code>uint32 best_score = 6;</code>
+     * <code>uint32 best_score = 4;</code>
      * @return The bestScore.
      */
     @java.lang.Override
@@ -136,9 +89,9 @@ public final class FleurFairFallInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bestScore_ != 0) {
-        output.writeUInt32(6, bestScore_);
+        output.writeUInt32(4, bestScore_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -149,9 +102,9 @@ public final class FleurFairFallInfoOuterClass {
       size = 0;
       if (bestScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, bestScore_);
+          .computeUInt32Size(4, bestScore_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -168,7 +121,7 @@ public final class FleurFairFallInfoOuterClass {
 
       if (getBestScore()
           != other.getBestScore()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -181,7 +134,7 @@ public final class FleurFairFallInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + BEST_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getBestScore();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -230,11 +183,13 @@ public final class FleurFairFallInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.FleurFairFallInfoOuterClass.FleurFairFallInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.FleurFairFallInfoOuterClass.FleurFairFallInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -278,7 +233,7 @@ public final class FleurFairFallInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: KNDNJKFLHMA
+     * Name: IMLFLIICPJL
      * </pre>
      *
      * Protobuf type {@code FleurFairFallInfo}
@@ -302,24 +257,19 @@ public final class FleurFairFallInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.FleurFairFallInfoOuterClass.FleurFairFallInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         bestScore_ = 0;
-
         return this;
       }
 
@@ -346,9 +296,16 @@ public final class FleurFairFallInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FleurFairFallInfoOuterClass.FleurFairFallInfo buildPartial() {
         emu.grasscutter.net.proto.FleurFairFallInfoOuterClass.FleurFairFallInfo result = new emu.grasscutter.net.proto.FleurFairFallInfoOuterClass.FleurFairFallInfo(this);
-        result.bestScore_ = bestScore_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.FleurFairFallInfoOuterClass.FleurFairFallInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.bestScore_ = bestScore_;
+        }
       }
 
       @java.lang.Override
@@ -398,7 +355,7 @@ public final class FleurFairFallInfoOuterClass {
         if (other.getBestScore() != 0) {
           setBestScore(other.getBestScore());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -413,23 +370,42 @@ public final class FleurFairFallInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.FleurFairFallInfoOuterClass.FleurFairFallInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 32: {
+                bestScore_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 32
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.FleurFairFallInfoOuterClass.FleurFairFallInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int bestScore_ ;
       /**
-       * <code>uint32 best_score = 6;</code>
+       * <code>uint32 best_score = 4;</code>
        * @return The bestScore.
        */
       @java.lang.Override
@@ -437,22 +413,23 @@ public final class FleurFairFallInfoOuterClass {
         return bestScore_;
       }
       /**
-       * <code>uint32 best_score = 6;</code>
+       * <code>uint32 best_score = 4;</code>
        * @param value The bestScore to set.
        * @return This builder for chaining.
        */
       public Builder setBestScore(int value) {
-        
+
         bestScore_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 best_score = 6;</code>
+       * <code>uint32 best_score = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestScore() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         bestScore_ = 0;
         onChanged();
         return this;
@@ -490,7 +467,18 @@ public final class FleurFairFallInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new FleurFairFallInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -525,7 +513,7 @@ public final class FleurFairFallInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027FleurFairFallInfo.proto\"\'\n\021FleurFairFa" +
-      "llInfo\022\022\n\nbest_score\030\006 \001(\rB\033\n\031emu.grassc" +
+      "llInfo\022\022\n\nbest_score\030\004 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

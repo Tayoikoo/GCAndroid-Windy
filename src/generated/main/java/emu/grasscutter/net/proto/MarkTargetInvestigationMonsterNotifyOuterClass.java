@@ -19,33 +19,33 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 monster_id = 3;</code>
-     * @return The monsterId.
-     */
-    int getMonsterId();
-
-    /**
-     * <code>uint32 group_id = 7;</code>
+     * <code>uint32 group_id = 13;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>uint32 investigation_monster_id = 8;</code>
+     * <code>uint32 scene_id = 15;</code>
+     * @return The sceneId.
+     */
+    int getSceneId();
+
+    /**
+     * <code>uint32 investigation_monster_id = 4;</code>
      * @return The investigationMonsterId.
      */
     int getInvestigationMonsterId();
 
     /**
-     * <code>uint32 scene_id = 13;</code>
-     * @return The sceneId.
+     * <code>uint32 monster_id = 8;</code>
+     * @return The monsterId.
      */
-    int getSceneId();
+    int getMonsterId();
   }
   /**
    * <pre>
-   * CmdId: 1912
-   * Obf: FJBCDLIHGKJ
+   * CmdId: 1924
+   * Name: OHBGMLPFMDD
    * </pre>
    *
    * Protobuf type {@code MarkTargetInvestigationMonsterNotify}
@@ -69,68 +69,6 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
       return new MarkTargetInvestigationMonsterNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private MarkTargetInvestigationMonsterNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 24: {
-
-              monsterId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              groupId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              investigationMonsterId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.internal_static_MarkTargetInvestigationMonsterNotify_descriptor;
@@ -144,21 +82,10 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
               emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify.class, emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify.Builder.class);
     }
 
-    public static final int MONSTER_ID_FIELD_NUMBER = 3;
-    private int monsterId_;
+    public static final int GROUP_ID_FIELD_NUMBER = 13;
+    private int groupId_ = 0;
     /**
-     * <code>uint32 monster_id = 3;</code>
-     * @return The monsterId.
-     */
-    @java.lang.Override
-    public int getMonsterId() {
-      return monsterId_;
-    }
-
-    public static final int GROUP_ID_FIELD_NUMBER = 7;
-    private int groupId_;
-    /**
-     * <code>uint32 group_id = 7;</code>
+     * <code>uint32 group_id = 13;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -166,10 +93,21 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
       return groupId_;
     }
 
-    public static final int INVESTIGATION_MONSTER_ID_FIELD_NUMBER = 8;
-    private int investigationMonsterId_;
+    public static final int SCENE_ID_FIELD_NUMBER = 15;
+    private int sceneId_ = 0;
     /**
-     * <code>uint32 investigation_monster_id = 8;</code>
+     * <code>uint32 scene_id = 15;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
+    }
+
+    public static final int INVESTIGATION_MONSTER_ID_FIELD_NUMBER = 4;
+    private int investigationMonsterId_ = 0;
+    /**
+     * <code>uint32 investigation_monster_id = 4;</code>
      * @return The investigationMonsterId.
      */
     @java.lang.Override
@@ -177,15 +115,15 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
       return investigationMonsterId_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 13;
-    private int sceneId_;
+    public static final int MONSTER_ID_FIELD_NUMBER = 8;
+    private int monsterId_ = 0;
     /**
-     * <code>uint32 scene_id = 13;</code>
-     * @return The sceneId.
+     * <code>uint32 monster_id = 8;</code>
+     * @return The monsterId.
      */
     @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
+    public int getMonsterId() {
+      return monsterId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -202,19 +140,19 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (investigationMonsterId_ != 0) {
+        output.writeUInt32(4, investigationMonsterId_);
+      }
       if (monsterId_ != 0) {
-        output.writeUInt32(3, monsterId_);
+        output.writeUInt32(8, monsterId_);
       }
       if (groupId_ != 0) {
-        output.writeUInt32(7, groupId_);
-      }
-      if (investigationMonsterId_ != 0) {
-        output.writeUInt32(8, investigationMonsterId_);
+        output.writeUInt32(13, groupId_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(13, sceneId_);
+        output.writeUInt32(15, sceneId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -223,23 +161,23 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (investigationMonsterId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, investigationMonsterId_);
+      }
       if (monsterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, monsterId_);
+          .computeUInt32Size(8, monsterId_);
       }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, groupId_);
-      }
-      if (investigationMonsterId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, investigationMonsterId_);
+          .computeUInt32Size(13, groupId_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, sceneId_);
+          .computeUInt32Size(15, sceneId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -254,15 +192,15 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify other = (emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify) obj;
 
-      if (getMonsterId()
-          != other.getMonsterId()) return false;
       if (getGroupId()
           != other.getGroupId()) return false;
-      if (getInvestigationMonsterId()
-          != other.getInvestigationMonsterId()) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getInvestigationMonsterId()
+          != other.getInvestigationMonsterId()) return false;
+      if (getMonsterId()
+          != other.getMonsterId()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -273,15 +211,15 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MONSTER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMonsterId();
       hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGroupId();
-      hash = (37 * hash) + INVESTIGATION_MONSTER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getInvestigationMonsterId();
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + INVESTIGATION_MONSTER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getInvestigationMonsterId();
+      hash = (37 * hash) + MONSTER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMonsterId();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -330,11 +268,13 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -378,8 +318,8 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1912
-     * Obf: FJBCDLIHGKJ
+     * CmdId: 1924
+     * Name: OHBGMLPFMDD
      * </pre>
      *
      * Protobuf type {@code MarkTargetInvestigationMonsterNotify}
@@ -403,30 +343,22 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        monsterId_ = 0;
-
+        bitField0_ = 0;
         groupId_ = 0;
-
-        investigationMonsterId_ = 0;
-
         sceneId_ = 0;
-
+        investigationMonsterId_ = 0;
+        monsterId_ = 0;
         return this;
       }
 
@@ -453,12 +385,25 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify buildPartial() {
         emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify result = new emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify(this);
-        result.monsterId_ = monsterId_;
-        result.groupId_ = groupId_;
-        result.investigationMonsterId_ = investigationMonsterId_;
-        result.sceneId_ = sceneId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.groupId_ = groupId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.sceneId_ = sceneId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.investigationMonsterId_ = investigationMonsterId_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.monsterId_ = monsterId_;
+        }
       }
 
       @java.lang.Override
@@ -505,19 +450,19 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify other) {
         if (other == emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify.getDefaultInstance()) return this;
-        if (other.getMonsterId() != 0) {
-          setMonsterId(other.getMonsterId());
-        }
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
-        }
-        if (other.getInvestigationMonsterId() != 0) {
-          setInvestigationMonsterId(other.getInvestigationMonsterId());
         }
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getInvestigationMonsterId() != 0) {
+          setInvestigationMonsterId(other.getInvestigationMonsterId());
+        }
+        if (other.getMonsterId() != 0) {
+          setMonsterId(other.getMonsterId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -532,54 +477,57 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 32: {
+                investigationMonsterId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 32
+              case 64: {
+                monsterId_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 64
+              case 104: {
+                groupId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 104
+              case 120: {
+                sceneId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.MarkTargetInvestigationMonsterNotifyOuterClass.MarkTargetInvestigationMonsterNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int monsterId_ ;
-      /**
-       * <code>uint32 monster_id = 3;</code>
-       * @return The monsterId.
-       */
-      @java.lang.Override
-      public int getMonsterId() {
-        return monsterId_;
-      }
-      /**
-       * <code>uint32 monster_id = 3;</code>
-       * @param value The monsterId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMonsterId(int value) {
-        
-        monsterId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 monster_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMonsterId() {
-        
-        monsterId_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 13;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -587,61 +535,31 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 13;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
       public Builder setGroupId(int value) {
-        
+
         groupId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         groupId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int investigationMonsterId_ ;
-      /**
-       * <code>uint32 investigation_monster_id = 8;</code>
-       * @return The investigationMonsterId.
-       */
-      @java.lang.Override
-      public int getInvestigationMonsterId() {
-        return investigationMonsterId_;
-      }
-      /**
-       * <code>uint32 investigation_monster_id = 8;</code>
-       * @param value The investigationMonsterId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setInvestigationMonsterId(int value) {
-        
-        investigationMonsterId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 investigation_monster_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearInvestigationMonsterId() {
-        
-        investigationMonsterId_ = 0;
         onChanged();
         return this;
       }
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 13;</code>
+       * <code>uint32 scene_id = 15;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -649,23 +567,88 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 13;</code>
+       * <code>uint32 scene_id = 15;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
       public Builder setSceneId(int value) {
-        
+
         sceneId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 scene_id = 13;</code>
+       * <code>uint32 scene_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int investigationMonsterId_ ;
+      /**
+       * <code>uint32 investigation_monster_id = 4;</code>
+       * @return The investigationMonsterId.
+       */
+      @java.lang.Override
+      public int getInvestigationMonsterId() {
+        return investigationMonsterId_;
+      }
+      /**
+       * <code>uint32 investigation_monster_id = 4;</code>
+       * @param value The investigationMonsterId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setInvestigationMonsterId(int value) {
+
+        investigationMonsterId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 investigation_monster_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearInvestigationMonsterId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        investigationMonsterId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int monsterId_ ;
+      /**
+       * <code>uint32 monster_id = 8;</code>
+       * @return The monsterId.
+       */
+      @java.lang.Override
+      public int getMonsterId() {
+        return monsterId_;
+      }
+      /**
+       * <code>uint32 monster_id = 8;</code>
+       * @param value The monsterId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMonsterId(int value) {
+
+        monsterId_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 monster_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMonsterId() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        monsterId_ = 0;
         onChanged();
         return this;
       }
@@ -702,7 +685,18 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MarkTargetInvestigationMonsterNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -738,9 +732,9 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n*MarkTargetInvestigationMonsterNotify.p" +
       "roto\"\200\001\n$MarkTargetInvestigationMonsterN" +
-      "otify\022\022\n\nmonster_id\030\003 \001(\r\022\020\n\010group_id\030\007 " +
-      "\001(\r\022 \n\030investigation_monster_id\030\010 \001(\r\022\020\n" +
-      "\010scene_id\030\r \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "otify\022\020\n\010group_id\030\r \001(\r\022\020\n\010scene_id\030\017 \001(" +
+      "\r\022 \n\030investigation_monster_id\030\004 \001(\r\022\022\n\nm" +
+      "onster_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -752,7 +746,7 @@ public final class MarkTargetInvestigationMonsterNotifyOuterClass {
     internal_static_MarkTargetInvestigationMonsterNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MarkTargetInvestigationMonsterNotify_descriptor,
-        new java.lang.String[] { "MonsterId", "GroupId", "InvestigationMonsterId", "SceneId", });
+        new java.lang.String[] { "GroupId", "SceneId", "InvestigationMonsterId", "MonsterId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

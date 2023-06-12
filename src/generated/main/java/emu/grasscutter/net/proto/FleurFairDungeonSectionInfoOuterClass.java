@@ -19,26 +19,26 @@ public final class FleurFairDungeonSectionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 2;</code>
+     * <code>uint32 open_time = 6;</code>
+     * @return The openTime.
+     */
+    int getOpenTime();
+
+    /**
+     * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 section_id = 10;</code>
+     * <code>uint32 section_id = 11;</code>
      * @return The sectionId.
      */
     int getSectionId();
-
-    /**
-     * <code>uint32 open_time = 14;</code>
-     * @return The openTime.
-     */
-    int getOpenTime();
   }
   /**
    * <pre>
-   * Obf: OFGPKKENEFH
+   * Name: PKBOCMLKJDJ
    * </pre>
    *
    * Protobuf type {@code FleurFairDungeonSectionInfo}
@@ -62,63 +62,6 @@ public final class FleurFairDungeonSectionInfoOuterClass {
       return new FleurFairDungeonSectionInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private FleurFairDungeonSectionInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 16: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 80: {
-
-              sectionId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              openTime_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.internal_static_FleurFairDungeonSectionInfo_descriptor;
@@ -132,10 +75,21 @@ public final class FleurFairDungeonSectionInfoOuterClass {
               emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo.class, emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 2;
-    private boolean isOpen_;
+    public static final int OPEN_TIME_FIELD_NUMBER = 6;
+    private int openTime_ = 0;
     /**
-     * <code>bool is_open = 2;</code>
+     * <code>uint32 open_time = 6;</code>
+     * @return The openTime.
+     */
+    @java.lang.Override
+    public int getOpenTime() {
+      return openTime_;
+    }
+
+    public static final int IS_OPEN_FIELD_NUMBER = 9;
+    private boolean isOpen_ = false;
+    /**
+     * <code>bool is_open = 9;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -143,26 +97,15 @@ public final class FleurFairDungeonSectionInfoOuterClass {
       return isOpen_;
     }
 
-    public static final int SECTION_ID_FIELD_NUMBER = 10;
-    private int sectionId_;
+    public static final int SECTION_ID_FIELD_NUMBER = 11;
+    private int sectionId_ = 0;
     /**
-     * <code>uint32 section_id = 10;</code>
+     * <code>uint32 section_id = 11;</code>
      * @return The sectionId.
      */
     @java.lang.Override
     public int getSectionId() {
       return sectionId_;
-    }
-
-    public static final int OPEN_TIME_FIELD_NUMBER = 14;
-    private int openTime_;
-    /**
-     * <code>uint32 open_time = 14;</code>
-     * @return The openTime.
-     */
-    @java.lang.Override
-    public int getOpenTime() {
-      return openTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,16 +122,16 @@ public final class FleurFairDungeonSectionInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (openTime_ != 0) {
+        output.writeUInt32(6, openTime_);
+      }
       if (isOpen_ != false) {
-        output.writeBool(2, isOpen_);
+        output.writeBool(9, isOpen_);
       }
       if (sectionId_ != 0) {
-        output.writeUInt32(10, sectionId_);
+        output.writeUInt32(11, sectionId_);
       }
-      if (openTime_ != 0) {
-        output.writeUInt32(14, openTime_);
-      }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -197,19 +140,19 @@ public final class FleurFairDungeonSectionInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (openTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, openTime_);
+      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isOpen_);
+          .computeBoolSize(9, isOpen_);
       }
       if (sectionId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, sectionId_);
+          .computeUInt32Size(11, sectionId_);
       }
-      if (openTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, openTime_);
-      }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -224,13 +167,13 @@ public final class FleurFairDungeonSectionInfoOuterClass {
       }
       emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo other = (emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo) obj;
 
+      if (getOpenTime()
+          != other.getOpenTime()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getSectionId()
           != other.getSectionId()) return false;
-      if (getOpenTime()
-          != other.getOpenTime()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -241,14 +184,14 @@ public final class FleurFairDungeonSectionInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getOpenTime();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
       hash = (37 * hash) + SECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSectionId();
-      hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getOpenTime();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +240,13 @@ public final class FleurFairDungeonSectionInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,7 +290,7 @@ public final class FleurFairDungeonSectionInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: OFGPKKENEFH
+     * Name: PKBOCMLKJDJ
      * </pre>
      *
      * Protobuf type {@code FleurFairDungeonSectionInfo}
@@ -369,28 +314,21 @@ public final class FleurFairDungeonSectionInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isOpen_ = false;
-
-        sectionId_ = 0;
-
+        bitField0_ = 0;
         openTime_ = 0;
-
+        isOpen_ = false;
+        sectionId_ = 0;
         return this;
       }
 
@@ -417,11 +355,22 @@ public final class FleurFairDungeonSectionInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo buildPartial() {
         emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo result = new emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo(this);
-        result.isOpen_ = isOpen_;
-        result.sectionId_ = sectionId_;
-        result.openTime_ = openTime_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.openTime_ = openTime_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.isOpen_ = isOpen_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.sectionId_ = sectionId_;
+        }
       }
 
       @java.lang.Override
@@ -468,16 +417,16 @@ public final class FleurFairDungeonSectionInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo other) {
         if (other == emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo.getDefaultInstance()) return this;
+        if (other.getOpenTime() != 0) {
+          setOpenTime(other.getOpenTime());
+        }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
         if (other.getSectionId() != 0) {
           setSectionId(other.getSectionId());
         }
-        if (other.getOpenTime() != 0) {
-          setOpenTime(other.getOpenTime());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -492,85 +441,52 @@ public final class FleurFairDungeonSectionInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 48: {
+                openTime_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 48
+              case 72: {
+                isOpen_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 72
+              case 88: {
+                sectionId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 88
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 2;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 2;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int sectionId_ ;
-      /**
-       * <code>uint32 section_id = 10;</code>
-       * @return The sectionId.
-       */
-      @java.lang.Override
-      public int getSectionId() {
-        return sectionId_;
-      }
-      /**
-       * <code>uint32 section_id = 10;</code>
-       * @param value The sectionId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSectionId(int value) {
-        
-        sectionId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 section_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSectionId() {
-        
-        sectionId_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int openTime_ ;
       /**
-       * <code>uint32 open_time = 14;</code>
+       * <code>uint32 open_time = 6;</code>
        * @return The openTime.
        */
       @java.lang.Override
@@ -578,23 +494,88 @@ public final class FleurFairDungeonSectionInfoOuterClass {
         return openTime_;
       }
       /**
-       * <code>uint32 open_time = 14;</code>
+       * <code>uint32 open_time = 6;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
        */
       public Builder setOpenTime(int value) {
-        
+
         openTime_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 open_time = 14;</code>
+       * <code>uint32 open_time = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpenTime() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         openTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isOpen_ ;
+      /**
+       * <code>bool is_open = 9;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <code>bool is_open = 9;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+
+        isOpen_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_open = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int sectionId_ ;
+      /**
+       * <code>uint32 section_id = 11;</code>
+       * @return The sectionId.
+       */
+      @java.lang.Override
+      public int getSectionId() {
+        return sectionId_;
+      }
+      /**
+       * <code>uint32 section_id = 11;</code>
+       * @param value The sectionId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSectionId(int value) {
+
+        sectionId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 section_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSectionId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        sectionId_ = 0;
         onChanged();
         return this;
       }
@@ -631,7 +612,18 @@ public final class FleurFairDungeonSectionInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new FleurFairDungeonSectionInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -666,8 +658,8 @@ public final class FleurFairDungeonSectionInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!FleurFairDungeonSectionInfo.proto\"U\n\033F" +
-      "leurFairDungeonSectionInfo\022\017\n\007is_open\030\002 " +
-      "\001(\010\022\022\n\nsection_id\030\n \001(\r\022\021\n\topen_time\030\016 \001" +
+      "leurFairDungeonSectionInfo\022\021\n\topen_time\030" +
+      "\006 \001(\r\022\017\n\007is_open\030\t \001(\010\022\022\n\nsection_id\030\013 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -679,7 +671,7 @@ public final class FleurFairDungeonSectionInfoOuterClass {
     internal_static_FleurFairDungeonSectionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FleurFairDungeonSectionInfo_descriptor,
-        new java.lang.String[] { "IsOpen", "SectionId", "OpenTime", });
+        new java.lang.String[] { "OpenTime", "IsOpen", "SectionId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,124 +19,124 @@ public final class AbilityMetaModifierChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ModifierProperty properties = 14;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty> 
-        getPropertiesList();
-    /**
-     * <code>repeated .ModifierProperty properties = 14;</code>
-     */
-    emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty getProperties(int index);
-    /**
-     * <code>repeated .ModifierProperty properties = 14;</code>
-     */
-    int getPropertiesCount();
-    /**
-     * <code>repeated .ModifierProperty properties = 14;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierPropertyOrBuilder> 
-        getPropertiesOrBuilderList();
-    /**
-     * <code>repeated .ModifierProperty properties = 14;</code>
-     */
-    emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierPropertyOrBuilder getPropertiesOrBuilder(
-        int index);
-
-    /**
-     * <code>.ModifierAction action = 4;</code>
-     * @return The enum numeric value on the wire for action.
-     */
-    int getActionValue();
-    /**
-     * <code>.ModifierAction action = 4;</code>
-     * @return The action.
-     */
-    emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction getAction();
-
-    /**
-     * <code>uint32 apply_entity_id = 2;</code>
-     * @return The applyEntityId.
-     */
-    int getApplyEntityId();
-
-    /**
-     * <code>bool is_mute_remote = 15;</code>
-     * @return The isMuteRemote.
-     */
-    boolean getIsMuteRemote();
-
-    /**
-     * <code>bool JGGDMDGLJOP = 8;</code>
-     * @return The jGGDMDGLJOP.
-     */
-    boolean getJGGDMDGLJOP();
-
-    /**
-     * <code>.AbilityString parent_ability_name = 1;</code>
-     * @return Whether the parentAbilityName field is set.
-     */
-    boolean hasParentAbilityName();
-    /**
-     * <code>.AbilityString parent_ability_name = 1;</code>
-     * @return The parentAbilityName.
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityName();
-    /**
-     * <code>.AbilityString parent_ability_name = 1;</code>
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityNameOrBuilder();
-
-    /**
-     * <code>uint32 server_buff_uid = 7;</code>
+     * <code>uint32 server_buff_uid = 13;</code>
      * @return The serverBuffUid.
      */
     int getServerBuffUid();
 
     /**
-     * <code>.AbilityString parent_ability_override = 10;</code>
-     * @return Whether the parentAbilityOverride field is set.
+     * <code>bool JAODDPOBICJ = 4;</code>
+     * @return The jAODDPOBICJ.
      */
-    boolean hasParentAbilityOverride();
-    /**
-     * <code>.AbilityString parent_ability_override = 10;</code>
-     * @return The parentAbilityOverride.
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityOverride();
-    /**
-     * <code>.AbilityString parent_ability_override = 10;</code>
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityOverrideOrBuilder();
+    boolean getJAODDPOBICJ();
 
     /**
-     * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-     * @return Whether the attachedInstancedModifier field is set.
+     * <code>repeated .ModifierProperty properties = 11;</code>
      */
-    boolean hasAttachedInstancedModifier();
+    java.util.List<emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty> 
+        getPropertiesList();
     /**
-     * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-     * @return The attachedInstancedModifier.
+     * <code>repeated .ModifierProperty properties = 11;</code>
      */
-    emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier getAttachedInstancedModifier();
+    emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty getProperties(int index);
     /**
-     * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
+     * <code>repeated .ModifierProperty properties = 11;</code>
      */
-    emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder getAttachedInstancedModifierOrBuilder();
-
+    int getPropertiesCount();
     /**
-     * <code>bool DLOLFHNNEKI = 12;</code>
-     * @return The dLOLFHNNEKI.
+     * <code>repeated .ModifierProperty properties = 11;</code>
      */
-    boolean getDLOLFHNNEKI();
+    java.util.List<? extends emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierPropertyOrBuilder> 
+        getPropertiesOrBuilderList();
+    /**
+     * <code>repeated .ModifierProperty properties = 11;</code>
+     */
+    emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierPropertyOrBuilder getPropertiesOrBuilder(
+        int index);
 
     /**
      * <code>int32 modifier_local_id = 5;</code>
      * @return The modifierLocalId.
      */
     int getModifierLocalId();
+
+    /**
+     * <code>.AbilityString parent_ability_override = 6;</code>
+     * @return Whether the parentAbilityOverride field is set.
+     */
+    boolean hasParentAbilityOverride();
+    /**
+     * <code>.AbilityString parent_ability_override = 6;</code>
+     * @return The parentAbilityOverride.
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityOverride();
+    /**
+     * <code>.AbilityString parent_ability_override = 6;</code>
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityOverrideOrBuilder();
+
+    /**
+     * <code>bool KJPKHNFAEDC = 14;</code>
+     * @return The kJPKHNFAEDC.
+     */
+    boolean getKJPKHNFAEDC();
+
+    /**
+     * <code>bool is_attached_parent_ability = 1;</code>
+     * @return The isAttachedParentAbility.
+     */
+    boolean getIsAttachedParentAbility();
+
+    /**
+     * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+     * @return Whether the attachedInstancedModifier field is set.
+     */
+    boolean hasAttachedInstancedModifier();
+    /**
+     * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+     * @return The attachedInstancedModifier.
+     */
+    emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier getAttachedInstancedModifier();
+    /**
+     * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+     */
+    emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder getAttachedInstancedModifierOrBuilder();
+
+    /**
+     * <code>.ModifierAction action = 3;</code>
+     * @return The enum numeric value on the wire for action.
+     */
+    int getActionValue();
+    /**
+     * <code>.ModifierAction action = 3;</code>
+     * @return The action.
+     */
+    emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction getAction();
+
+    /**
+     * <code>uint32 apply_entity_id = 8;</code>
+     * @return The applyEntityId.
+     */
+    int getApplyEntityId();
+
+    /**
+     * <code>.AbilityString parent_ability_name = 15;</code>
+     * @return Whether the parentAbilityName field is set.
+     */
+    boolean hasParentAbilityName();
+    /**
+     * <code>.AbilityString parent_ability_name = 15;</code>
+     * @return The parentAbilityName.
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityName();
+    /**
+     * <code>.AbilityString parent_ability_name = 15;</code>
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityNameOrBuilder();
   }
   /**
    * <pre>
-   * Obf: NANLJHBMAGF
+   * Name: MPIOJLNOMAC
    * </pre>
    *
    * Protobuf type {@code AbilityMetaModifierChange}
@@ -162,136 +162,6 @@ public final class AbilityMetaModifierChangeOuterClass {
       return new AbilityMetaModifierChange();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private AbilityMetaModifierChange(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder subBuilder = null;
-              if (parentAbilityName_ != null) {
-                subBuilder = parentAbilityName_.toBuilder();
-              }
-              parentAbilityName_ = input.readMessage(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(parentAbilityName_);
-                parentAbilityName_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 16: {
-
-              applyEntityId_ = input.readUInt32();
-              break;
-            }
-            case 26: {
-              emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.Builder subBuilder = null;
-              if (attachedInstancedModifier_ != null) {
-                subBuilder = attachedInstancedModifier_.toBuilder();
-              }
-              attachedInstancedModifier_ = input.readMessage(emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(attachedInstancedModifier_);
-                attachedInstancedModifier_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 32: {
-              int rawValue = input.readEnum();
-
-              action_ = rawValue;
-              break;
-            }
-            case 40: {
-
-              modifierLocalId_ = input.readInt32();
-              break;
-            }
-            case 56: {
-
-              serverBuffUid_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              jGGDMDGLJOP_ = input.readBool();
-              break;
-            }
-            case 82: {
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder subBuilder = null;
-              if (parentAbilityOverride_ != null) {
-                subBuilder = parentAbilityOverride_.toBuilder();
-              }
-              parentAbilityOverride_ = input.readMessage(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(parentAbilityOverride_);
-                parentAbilityOverride_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 96: {
-
-              dLOLFHNNEKI_ = input.readBool();
-              break;
-            }
-            case 114: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                properties_ = new java.util.ArrayList<emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              properties_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.parser(), extensionRegistry));
-              break;
-            }
-            case 120: {
-
-              isMuteRemote_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          properties_ = java.util.Collections.unmodifiableList(properties_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.internal_static_AbilityMetaModifierChange_descriptor;
@@ -305,128 +175,10 @@ public final class AbilityMetaModifierChangeOuterClass {
               emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange.class, emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange.Builder.class);
     }
 
-    public static final int PROPERTIES_FIELD_NUMBER = 14;
-    private java.util.List<emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty> properties_;
+    public static final int SERVER_BUFF_UID_FIELD_NUMBER = 13;
+    private int serverBuffUid_ = 0;
     /**
-     * <code>repeated .ModifierProperty properties = 14;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty> getPropertiesList() {
-      return properties_;
-    }
-    /**
-     * <code>repeated .ModifierProperty properties = 14;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierPropertyOrBuilder> 
-        getPropertiesOrBuilderList() {
-      return properties_;
-    }
-    /**
-     * <code>repeated .ModifierProperty properties = 14;</code>
-     */
-    @java.lang.Override
-    public int getPropertiesCount() {
-      return properties_.size();
-    }
-    /**
-     * <code>repeated .ModifierProperty properties = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty getProperties(int index) {
-      return properties_.get(index);
-    }
-    /**
-     * <code>repeated .ModifierProperty properties = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierPropertyOrBuilder getPropertiesOrBuilder(
-        int index) {
-      return properties_.get(index);
-    }
-
-    public static final int ACTION_FIELD_NUMBER = 4;
-    private int action_;
-    /**
-     * <code>.ModifierAction action = 4;</code>
-     * @return The enum numeric value on the wire for action.
-     */
-    @java.lang.Override public int getActionValue() {
-      return action_;
-    }
-    /**
-     * <code>.ModifierAction action = 4;</code>
-     * @return The action.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction getAction() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction result = emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.valueOf(action_);
-      return result == null ? emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.UNRECOGNIZED : result;
-    }
-
-    public static final int APPLY_ENTITY_ID_FIELD_NUMBER = 2;
-    private int applyEntityId_;
-    /**
-     * <code>uint32 apply_entity_id = 2;</code>
-     * @return The applyEntityId.
-     */
-    @java.lang.Override
-    public int getApplyEntityId() {
-      return applyEntityId_;
-    }
-
-    public static final int IS_MUTE_REMOTE_FIELD_NUMBER = 15;
-    private boolean isMuteRemote_;
-    /**
-     * <code>bool is_mute_remote = 15;</code>
-     * @return The isMuteRemote.
-     */
-    @java.lang.Override
-    public boolean getIsMuteRemote() {
-      return isMuteRemote_;
-    }
-
-    public static final int JGGDMDGLJOP_FIELD_NUMBER = 8;
-    private boolean jGGDMDGLJOP_;
-    /**
-     * <code>bool JGGDMDGLJOP = 8;</code>
-     * @return The jGGDMDGLJOP.
-     */
-    @java.lang.Override
-    public boolean getJGGDMDGLJOP() {
-      return jGGDMDGLJOP_;
-    }
-
-    public static final int PARENT_ABILITY_NAME_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString parentAbilityName_;
-    /**
-     * <code>.AbilityString parent_ability_name = 1;</code>
-     * @return Whether the parentAbilityName field is set.
-     */
-    @java.lang.Override
-    public boolean hasParentAbilityName() {
-      return parentAbilityName_ != null;
-    }
-    /**
-     * <code>.AbilityString parent_ability_name = 1;</code>
-     * @return The parentAbilityName.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityName() {
-      return parentAbilityName_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityName_;
-    }
-    /**
-     * <code>.AbilityString parent_ability_name = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityNameOrBuilder() {
-      return getParentAbilityName();
-    }
-
-    public static final int SERVER_BUFF_UID_FIELD_NUMBER = 7;
-    private int serverBuffUid_;
-    /**
-     * <code>uint32 server_buff_uid = 7;</code>
+     * <code>uint32 server_buff_uid = 13;</code>
      * @return The serverBuffUid.
      */
     @java.lang.Override
@@ -434,71 +186,60 @@ public final class AbilityMetaModifierChangeOuterClass {
       return serverBuffUid_;
     }
 
-    public static final int PARENT_ABILITY_OVERRIDE_FIELD_NUMBER = 10;
-    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString parentAbilityOverride_;
+    public static final int JAODDPOBICJ_FIELD_NUMBER = 4;
+    private boolean jAODDPOBICJ_ = false;
     /**
-     * <code>.AbilityString parent_ability_override = 10;</code>
-     * @return Whether the parentAbilityOverride field is set.
+     * <code>bool JAODDPOBICJ = 4;</code>
+     * @return The jAODDPOBICJ.
      */
     @java.lang.Override
-    public boolean hasParentAbilityOverride() {
-      return parentAbilityOverride_ != null;
-    }
-    /**
-     * <code>.AbilityString parent_ability_override = 10;</code>
-     * @return The parentAbilityOverride.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityOverride() {
-      return parentAbilityOverride_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityOverride_;
-    }
-    /**
-     * <code>.AbilityString parent_ability_override = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityOverrideOrBuilder() {
-      return getParentAbilityOverride();
+    public boolean getJAODDPOBICJ() {
+      return jAODDPOBICJ_;
     }
 
-    public static final int ATTACHED_INSTANCED_MODIFIER_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier attachedInstancedModifier_;
+    public static final int PROPERTIES_FIELD_NUMBER = 11;
+    @SuppressWarnings("serial")
+    private java.util.List<emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty> properties_;
     /**
-     * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-     * @return Whether the attachedInstancedModifier field is set.
+     * <code>repeated .ModifierProperty properties = 11;</code>
      */
     @java.lang.Override
-    public boolean hasAttachedInstancedModifier() {
-      return attachedInstancedModifier_ != null;
+    public java.util.List<emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty> getPropertiesList() {
+      return properties_;
     }
     /**
-     * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-     * @return The attachedInstancedModifier.
+     * <code>repeated .ModifierProperty properties = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier getAttachedInstancedModifier() {
-      return attachedInstancedModifier_ == null ? emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.getDefaultInstance() : attachedInstancedModifier_;
+    public java.util.List<? extends emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierPropertyOrBuilder> 
+        getPropertiesOrBuilderList() {
+      return properties_;
     }
     /**
-     * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
+     * <code>repeated .ModifierProperty properties = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder getAttachedInstancedModifierOrBuilder() {
-      return getAttachedInstancedModifier();
+    public int getPropertiesCount() {
+      return properties_.size();
     }
-
-    public static final int DLOLFHNNEKI_FIELD_NUMBER = 12;
-    private boolean dLOLFHNNEKI_;
     /**
-     * <code>bool DLOLFHNNEKI = 12;</code>
-     * @return The dLOLFHNNEKI.
+     * <code>repeated .ModifierProperty properties = 11;</code>
      */
     @java.lang.Override
-    public boolean getDLOLFHNNEKI() {
-      return dLOLFHNNEKI_;
+    public emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty getProperties(int index) {
+      return properties_.get(index);
+    }
+    /**
+     * <code>repeated .ModifierProperty properties = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierPropertyOrBuilder getPropertiesOrBuilder(
+        int index) {
+      return properties_.get(index);
     }
 
     public static final int MODIFIER_LOCAL_ID_FIELD_NUMBER = 5;
-    private int modifierLocalId_;
+    private int modifierLocalId_ = 0;
     /**
      * <code>int32 modifier_local_id = 5;</code>
      * @return The modifierLocalId.
@@ -506,6 +247,135 @@ public final class AbilityMetaModifierChangeOuterClass {
     @java.lang.Override
     public int getModifierLocalId() {
       return modifierLocalId_;
+    }
+
+    public static final int PARENT_ABILITY_OVERRIDE_FIELD_NUMBER = 6;
+    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString parentAbilityOverride_;
+    /**
+     * <code>.AbilityString parent_ability_override = 6;</code>
+     * @return Whether the parentAbilityOverride field is set.
+     */
+    @java.lang.Override
+    public boolean hasParentAbilityOverride() {
+      return parentAbilityOverride_ != null;
+    }
+    /**
+     * <code>.AbilityString parent_ability_override = 6;</code>
+     * @return The parentAbilityOverride.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityOverride() {
+      return parentAbilityOverride_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityOverride_;
+    }
+    /**
+     * <code>.AbilityString parent_ability_override = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityOverrideOrBuilder() {
+      return parentAbilityOverride_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityOverride_;
+    }
+
+    public static final int KJPKHNFAEDC_FIELD_NUMBER = 14;
+    private boolean kJPKHNFAEDC_ = false;
+    /**
+     * <code>bool KJPKHNFAEDC = 14;</code>
+     * @return The kJPKHNFAEDC.
+     */
+    @java.lang.Override
+    public boolean getKJPKHNFAEDC() {
+      return kJPKHNFAEDC_;
+    }
+
+    public static final int IS_ATTACHED_PARENT_ABILITY_FIELD_NUMBER = 1;
+    private boolean isAttachedParentAbility_ = false;
+    /**
+     * <code>bool is_attached_parent_ability = 1;</code>
+     * @return The isAttachedParentAbility.
+     */
+    @java.lang.Override
+    public boolean getIsAttachedParentAbility() {
+      return isAttachedParentAbility_;
+    }
+
+    public static final int ATTACHED_INSTANCED_MODIFIER_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier attachedInstancedModifier_;
+    /**
+     * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+     * @return Whether the attachedInstancedModifier field is set.
+     */
+    @java.lang.Override
+    public boolean hasAttachedInstancedModifier() {
+      return attachedInstancedModifier_ != null;
+    }
+    /**
+     * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+     * @return The attachedInstancedModifier.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier getAttachedInstancedModifier() {
+      return attachedInstancedModifier_ == null ? emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.getDefaultInstance() : attachedInstancedModifier_;
+    }
+    /**
+     * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder getAttachedInstancedModifierOrBuilder() {
+      return attachedInstancedModifier_ == null ? emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.getDefaultInstance() : attachedInstancedModifier_;
+    }
+
+    public static final int ACTION_FIELD_NUMBER = 3;
+    private int action_ = 0;
+    /**
+     * <code>.ModifierAction action = 3;</code>
+     * @return The enum numeric value on the wire for action.
+     */
+    @java.lang.Override public int getActionValue() {
+      return action_;
+    }
+    /**
+     * <code>.ModifierAction action = 3;</code>
+     * @return The action.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction getAction() {
+      emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction result = emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.forNumber(action_);
+      return result == null ? emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.UNRECOGNIZED : result;
+    }
+
+    public static final int APPLY_ENTITY_ID_FIELD_NUMBER = 8;
+    private int applyEntityId_ = 0;
+    /**
+     * <code>uint32 apply_entity_id = 8;</code>
+     * @return The applyEntityId.
+     */
+    @java.lang.Override
+    public int getApplyEntityId() {
+      return applyEntityId_;
+    }
+
+    public static final int PARENT_ABILITY_NAME_FIELD_NUMBER = 15;
+    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString parentAbilityName_;
+    /**
+     * <code>.AbilityString parent_ability_name = 15;</code>
+     * @return Whether the parentAbilityName field is set.
+     */
+    @java.lang.Override
+    public boolean hasParentAbilityName() {
+      return parentAbilityName_ != null;
+    }
+    /**
+     * <code>.AbilityString parent_ability_name = 15;</code>
+     * @return The parentAbilityName.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityName() {
+      return parentAbilityName_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityName_;
+    }
+    /**
+     * <code>.AbilityString parent_ability_name = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityNameOrBuilder() {
+      return parentAbilityName_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityName_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -522,40 +392,40 @@ public final class AbilityMetaModifierChangeOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (parentAbilityName_ != null) {
-        output.writeMessage(1, getParentAbilityName());
-      }
-      if (applyEntityId_ != 0) {
-        output.writeUInt32(2, applyEntityId_);
-      }
-      if (attachedInstancedModifier_ != null) {
-        output.writeMessage(3, getAttachedInstancedModifier());
+      if (isAttachedParentAbility_ != false) {
+        output.writeBool(1, isAttachedParentAbility_);
       }
       if (action_ != emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.MODIFIER_ACTION_ADDED.getNumber()) {
-        output.writeEnum(4, action_);
+        output.writeEnum(3, action_);
+      }
+      if (jAODDPOBICJ_ != false) {
+        output.writeBool(4, jAODDPOBICJ_);
       }
       if (modifierLocalId_ != 0) {
         output.writeInt32(5, modifierLocalId_);
       }
-      if (serverBuffUid_ != 0) {
-        output.writeUInt32(7, serverBuffUid_);
-      }
-      if (jGGDMDGLJOP_ != false) {
-        output.writeBool(8, jGGDMDGLJOP_);
-      }
       if (parentAbilityOverride_ != null) {
-        output.writeMessage(10, getParentAbilityOverride());
+        output.writeMessage(6, getParentAbilityOverride());
       }
-      if (dLOLFHNNEKI_ != false) {
-        output.writeBool(12, dLOLFHNNEKI_);
+      if (applyEntityId_ != 0) {
+        output.writeUInt32(8, applyEntityId_);
       }
       for (int i = 0; i < properties_.size(); i++) {
-        output.writeMessage(14, properties_.get(i));
+        output.writeMessage(11, properties_.get(i));
       }
-      if (isMuteRemote_ != false) {
-        output.writeBool(15, isMuteRemote_);
+      if (attachedInstancedModifier_ != null) {
+        output.writeMessage(12, getAttachedInstancedModifier());
       }
-      unknownFields.writeTo(output);
+      if (serverBuffUid_ != 0) {
+        output.writeUInt32(13, serverBuffUid_);
+      }
+      if (kJPKHNFAEDC_ != false) {
+        output.writeBool(14, kJPKHNFAEDC_);
+      }
+      if (parentAbilityName_ != null) {
+        output.writeMessage(15, getParentAbilityName());
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -564,51 +434,51 @@ public final class AbilityMetaModifierChangeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (parentAbilityName_ != null) {
+      if (isAttachedParentAbility_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getParentAbilityName());
-      }
-      if (applyEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, applyEntityId_);
-      }
-      if (attachedInstancedModifier_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getAttachedInstancedModifier());
+          .computeBoolSize(1, isAttachedParentAbility_);
       }
       if (action_ != emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.MODIFIER_ACTION_ADDED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, action_);
+          .computeEnumSize(3, action_);
+      }
+      if (jAODDPOBICJ_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, jAODDPOBICJ_);
       }
       if (modifierLocalId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(5, modifierLocalId_);
       }
-      if (serverBuffUid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, serverBuffUid_);
-      }
-      if (jGGDMDGLJOP_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, jGGDMDGLJOP_);
-      }
       if (parentAbilityOverride_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getParentAbilityOverride());
+          .computeMessageSize(6, getParentAbilityOverride());
       }
-      if (dLOLFHNNEKI_ != false) {
+      if (applyEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, dLOLFHNNEKI_);
+          .computeUInt32Size(8, applyEntityId_);
       }
       for (int i = 0; i < properties_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, properties_.get(i));
+          .computeMessageSize(11, properties_.get(i));
       }
-      if (isMuteRemote_ != false) {
+      if (attachedInstancedModifier_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isMuteRemote_);
+          .computeMessageSize(12, getAttachedInstancedModifier());
       }
-      size += unknownFields.getSerializedSize();
+      if (serverBuffUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, serverBuffUid_);
+      }
+      if (kJPKHNFAEDC_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, kJPKHNFAEDC_);
+      }
+      if (parentAbilityName_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, getParentAbilityName());
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -623,37 +493,37 @@ public final class AbilityMetaModifierChangeOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange other = (emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange) obj;
 
-      if (!getPropertiesList()
-          .equals(other.getPropertiesList())) return false;
-      if (action_ != other.action_) return false;
-      if (getApplyEntityId()
-          != other.getApplyEntityId()) return false;
-      if (getIsMuteRemote()
-          != other.getIsMuteRemote()) return false;
-      if (getJGGDMDGLJOP()
-          != other.getJGGDMDGLJOP()) return false;
-      if (hasParentAbilityName() != other.hasParentAbilityName()) return false;
-      if (hasParentAbilityName()) {
-        if (!getParentAbilityName()
-            .equals(other.getParentAbilityName())) return false;
-      }
       if (getServerBuffUid()
           != other.getServerBuffUid()) return false;
+      if (getJAODDPOBICJ()
+          != other.getJAODDPOBICJ()) return false;
+      if (!getPropertiesList()
+          .equals(other.getPropertiesList())) return false;
+      if (getModifierLocalId()
+          != other.getModifierLocalId()) return false;
       if (hasParentAbilityOverride() != other.hasParentAbilityOverride()) return false;
       if (hasParentAbilityOverride()) {
         if (!getParentAbilityOverride()
             .equals(other.getParentAbilityOverride())) return false;
       }
+      if (getKJPKHNFAEDC()
+          != other.getKJPKHNFAEDC()) return false;
+      if (getIsAttachedParentAbility()
+          != other.getIsAttachedParentAbility()) return false;
       if (hasAttachedInstancedModifier() != other.hasAttachedInstancedModifier()) return false;
       if (hasAttachedInstancedModifier()) {
         if (!getAttachedInstancedModifier()
             .equals(other.getAttachedInstancedModifier())) return false;
       }
-      if (getDLOLFHNNEKI()
-          != other.getDLOLFHNNEKI()) return false;
-      if (getModifierLocalId()
-          != other.getModifierLocalId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (action_ != other.action_) return false;
+      if (getApplyEntityId()
+          != other.getApplyEntityId()) return false;
+      if (hasParentAbilityName() != other.hasParentAbilityName()) return false;
+      if (hasParentAbilityName()) {
+        if (!getParentAbilityName()
+            .equals(other.getParentAbilityName())) return false;
+      }
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -664,40 +534,40 @@ public final class AbilityMetaModifierChangeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SERVER_BUFF_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getServerBuffUid();
+      hash = (37 * hash) + JAODDPOBICJ_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getJAODDPOBICJ());
       if (getPropertiesCount() > 0) {
         hash = (37 * hash) + PROPERTIES_FIELD_NUMBER;
         hash = (53 * hash) + getPropertiesList().hashCode();
+      }
+      hash = (37 * hash) + MODIFIER_LOCAL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getModifierLocalId();
+      if (hasParentAbilityOverride()) {
+        hash = (37 * hash) + PARENT_ABILITY_OVERRIDE_FIELD_NUMBER;
+        hash = (53 * hash) + getParentAbilityOverride().hashCode();
+      }
+      hash = (37 * hash) + KJPKHNFAEDC_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getKJPKHNFAEDC());
+      hash = (37 * hash) + IS_ATTACHED_PARENT_ABILITY_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsAttachedParentAbility());
+      if (hasAttachedInstancedModifier()) {
+        hash = (37 * hash) + ATTACHED_INSTANCED_MODIFIER_FIELD_NUMBER;
+        hash = (53 * hash) + getAttachedInstancedModifier().hashCode();
       }
       hash = (37 * hash) + ACTION_FIELD_NUMBER;
       hash = (53 * hash) + action_;
       hash = (37 * hash) + APPLY_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getApplyEntityId();
-      hash = (37 * hash) + IS_MUTE_REMOTE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsMuteRemote());
-      hash = (37 * hash) + JGGDMDGLJOP_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getJGGDMDGLJOP());
       if (hasParentAbilityName()) {
         hash = (37 * hash) + PARENT_ABILITY_NAME_FIELD_NUMBER;
         hash = (53 * hash) + getParentAbilityName().hashCode();
       }
-      hash = (37 * hash) + SERVER_BUFF_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getServerBuffUid();
-      if (hasParentAbilityOverride()) {
-        hash = (37 * hash) + PARENT_ABILITY_OVERRIDE_FIELD_NUMBER;
-        hash = (53 * hash) + getParentAbilityOverride().hashCode();
-      }
-      if (hasAttachedInstancedModifier()) {
-        hash = (37 * hash) + ATTACHED_INSTANCED_MODIFIER_FIELD_NUMBER;
-        hash = (53 * hash) + getAttachedInstancedModifier().hashCode();
-      }
-      hash = (37 * hash) + DLOLFHNNEKI_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getDLOLFHNNEKI());
-      hash = (37 * hash) + MODIFIER_LOCAL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getModifierLocalId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -746,11 +616,13 @@ public final class AbilityMetaModifierChangeOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -794,7 +666,7 @@ public final class AbilityMetaModifierChangeOuterClass {
     }
     /**
      * <pre>
-     * Obf: NANLJHBMAGF
+     * Name: MPIOJLNOMAC
      * </pre>
      *
      * Protobuf type {@code AbilityMetaModifierChange}
@@ -818,61 +690,47 @@ public final class AbilityMetaModifierChangeOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getPropertiesFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
+        serverBuffUid_ = 0;
+        jAODDPOBICJ_ = false;
         if (propertiesBuilder_ == null) {
           properties_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          properties_ = null;
           propertiesBuilder_.clear();
         }
-        action_ = 0;
-
-        applyEntityId_ = 0;
-
-        isMuteRemote_ = false;
-
-        jGGDMDGLJOP_ = false;
-
-        if (parentAbilityNameBuilder_ == null) {
-          parentAbilityName_ = null;
-        } else {
-          parentAbilityName_ = null;
-          parentAbilityNameBuilder_ = null;
-        }
-        serverBuffUid_ = 0;
-
-        if (parentAbilityOverrideBuilder_ == null) {
-          parentAbilityOverride_ = null;
-        } else {
-          parentAbilityOverride_ = null;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        modifierLocalId_ = 0;
+        parentAbilityOverride_ = null;
+        if (parentAbilityOverrideBuilder_ != null) {
+          parentAbilityOverrideBuilder_.dispose();
           parentAbilityOverrideBuilder_ = null;
         }
-        if (attachedInstancedModifierBuilder_ == null) {
-          attachedInstancedModifier_ = null;
-        } else {
-          attachedInstancedModifier_ = null;
+        kJPKHNFAEDC_ = false;
+        isAttachedParentAbility_ = false;
+        attachedInstancedModifier_ = null;
+        if (attachedInstancedModifierBuilder_ != null) {
+          attachedInstancedModifierBuilder_.dispose();
           attachedInstancedModifierBuilder_ = null;
         }
-        dLOLFHNNEKI_ = false;
-
-        modifierLocalId_ = 0;
-
+        action_ = 0;
+        applyEntityId_ = 0;
+        parentAbilityName_ = null;
+        if (parentAbilityNameBuilder_ != null) {
+          parentAbilityNameBuilder_.dispose();
+          parentAbilityNameBuilder_ = null;
+        }
         return this;
       }
 
@@ -899,40 +757,62 @@ public final class AbilityMetaModifierChangeOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange buildPartial() {
         emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange result = new emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange result) {
         if (propertiesBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000004) != 0)) {
             properties_ = java.util.Collections.unmodifiableList(properties_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000004);
           }
           result.properties_ = properties_;
         } else {
           result.properties_ = propertiesBuilder_.build();
         }
-        result.action_ = action_;
-        result.applyEntityId_ = applyEntityId_;
-        result.isMuteRemote_ = isMuteRemote_;
-        result.jGGDMDGLJOP_ = jGGDMDGLJOP_;
-        if (parentAbilityNameBuilder_ == null) {
-          result.parentAbilityName_ = parentAbilityName_;
-        } else {
-          result.parentAbilityName_ = parentAbilityNameBuilder_.build();
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.serverBuffUid_ = serverBuffUid_;
         }
-        result.serverBuffUid_ = serverBuffUid_;
-        if (parentAbilityOverrideBuilder_ == null) {
-          result.parentAbilityOverride_ = parentAbilityOverride_;
-        } else {
-          result.parentAbilityOverride_ = parentAbilityOverrideBuilder_.build();
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.jAODDPOBICJ_ = jAODDPOBICJ_;
         }
-        if (attachedInstancedModifierBuilder_ == null) {
-          result.attachedInstancedModifier_ = attachedInstancedModifier_;
-        } else {
-          result.attachedInstancedModifier_ = attachedInstancedModifierBuilder_.build();
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.modifierLocalId_ = modifierLocalId_;
         }
-        result.dLOLFHNNEKI_ = dLOLFHNNEKI_;
-        result.modifierLocalId_ = modifierLocalId_;
-        onBuilt();
-        return result;
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.parentAbilityOverride_ = parentAbilityOverrideBuilder_ == null
+              ? parentAbilityOverride_
+              : parentAbilityOverrideBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
+          result.kJPKHNFAEDC_ = kJPKHNFAEDC_;
+        }
+        if (((from_bitField0_ & 0x00000040) != 0)) {
+          result.isAttachedParentAbility_ = isAttachedParentAbility_;
+        }
+        if (((from_bitField0_ & 0x00000080) != 0)) {
+          result.attachedInstancedModifier_ = attachedInstancedModifierBuilder_ == null
+              ? attachedInstancedModifier_
+              : attachedInstancedModifierBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000100) != 0)) {
+          result.action_ = action_;
+        }
+        if (((from_bitField0_ & 0x00000200) != 0)) {
+          result.applyEntityId_ = applyEntityId_;
+        }
+        if (((from_bitField0_ & 0x00000400) != 0)) {
+          result.parentAbilityName_ = parentAbilityNameBuilder_ == null
+              ? parentAbilityName_
+              : parentAbilityNameBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -979,11 +859,17 @@ public final class AbilityMetaModifierChangeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange other) {
         if (other == emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange.getDefaultInstance()) return this;
+        if (other.getServerBuffUid() != 0) {
+          setServerBuffUid(other.getServerBuffUid());
+        }
+        if (other.getJAODDPOBICJ() != false) {
+          setJAODDPOBICJ(other.getJAODDPOBICJ());
+        }
         if (propertiesBuilder_ == null) {
           if (!other.properties_.isEmpty()) {
             if (properties_.isEmpty()) {
               properties_ = other.properties_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
               ensurePropertiesIsMutable();
               properties_.addAll(other.properties_);
@@ -996,7 +882,7 @@ public final class AbilityMetaModifierChangeOuterClass {
               propertiesBuilder_.dispose();
               propertiesBuilder_ = null;
               properties_ = other.properties_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000004);
               propertiesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPropertiesFieldBuilder() : null;
@@ -1005,37 +891,31 @@ public final class AbilityMetaModifierChangeOuterClass {
             }
           }
         }
+        if (other.getModifierLocalId() != 0) {
+          setModifierLocalId(other.getModifierLocalId());
+        }
+        if (other.hasParentAbilityOverride()) {
+          mergeParentAbilityOverride(other.getParentAbilityOverride());
+        }
+        if (other.getKJPKHNFAEDC() != false) {
+          setKJPKHNFAEDC(other.getKJPKHNFAEDC());
+        }
+        if (other.getIsAttachedParentAbility() != false) {
+          setIsAttachedParentAbility(other.getIsAttachedParentAbility());
+        }
+        if (other.hasAttachedInstancedModifier()) {
+          mergeAttachedInstancedModifier(other.getAttachedInstancedModifier());
+        }
         if (other.action_ != 0) {
           setActionValue(other.getActionValue());
         }
         if (other.getApplyEntityId() != 0) {
           setApplyEntityId(other.getApplyEntityId());
         }
-        if (other.getIsMuteRemote() != false) {
-          setIsMuteRemote(other.getIsMuteRemote());
-        }
-        if (other.getJGGDMDGLJOP() != false) {
-          setJGGDMDGLJOP(other.getJGGDMDGLJOP());
-        }
         if (other.hasParentAbilityName()) {
           mergeParentAbilityName(other.getParentAbilityName());
         }
-        if (other.getServerBuffUid() != 0) {
-          setServerBuffUid(other.getServerBuffUid());
-        }
-        if (other.hasParentAbilityOverride()) {
-          mergeParentAbilityOverride(other.getParentAbilityOverride());
-        }
-        if (other.hasAttachedInstancedModifier()) {
-          mergeAttachedInstancedModifier(other.getAttachedInstancedModifier());
-        }
-        if (other.getDLOLFHNNEKI() != false) {
-          setDLOLFHNNEKI(other.getDLOLFHNNEKI());
-        }
-        if (other.getModifierLocalId() != 0) {
-          setModifierLocalId(other.getModifierLocalId());
-        }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -1050,27 +930,173 @@ public final class AbilityMetaModifierChangeOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                isAttachedParentAbility_ = input.readBool();
+                bitField0_ |= 0x00000040;
+                break;
+              } // case 8
+              case 24: {
+                action_ = input.readEnum();
+                bitField0_ |= 0x00000100;
+                break;
+              } // case 24
+              case 32: {
+                jAODDPOBICJ_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 32
+              case 40: {
+                modifierLocalId_ = input.readInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 40
+              case 50: {
+                input.readMessage(
+                    getParentAbilityOverrideFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 50
+              case 64: {
+                applyEntityId_ = input.readUInt32();
+                bitField0_ |= 0x00000200;
+                break;
+              } // case 64
+              case 90: {
+                emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.parser(),
+                        extensionRegistry);
+                if (propertiesBuilder_ == null) {
+                  ensurePropertiesIsMutable();
+                  properties_.add(m);
+                } else {
+                  propertiesBuilder_.addMessage(m);
+                }
+                break;
+              } // case 90
+              case 98: {
+                input.readMessage(
+                    getAttachedInstancedModifierFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000080;
+                break;
+              } // case 98
+              case 104: {
+                serverBuffUid_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 104
+              case 112: {
+                kJPKHNFAEDC_ = input.readBool();
+                bitField0_ |= 0x00000020;
+                break;
+              } // case 112
+              case 122: {
+                input.readMessage(
+                    getParentAbilityNameFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000400;
+                break;
+              } // case 122
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
 
+      private int serverBuffUid_ ;
+      /**
+       * <code>uint32 server_buff_uid = 13;</code>
+       * @return The serverBuffUid.
+       */
+      @java.lang.Override
+      public int getServerBuffUid() {
+        return serverBuffUid_;
+      }
+      /**
+       * <code>uint32 server_buff_uid = 13;</code>
+       * @param value The serverBuffUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setServerBuffUid(int value) {
+
+        serverBuffUid_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 server_buff_uid = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearServerBuffUid() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        serverBuffUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean jAODDPOBICJ_ ;
+      /**
+       * <code>bool JAODDPOBICJ = 4;</code>
+       * @return The jAODDPOBICJ.
+       */
+      @java.lang.Override
+      public boolean getJAODDPOBICJ() {
+        return jAODDPOBICJ_;
+      }
+      /**
+       * <code>bool JAODDPOBICJ = 4;</code>
+       * @param value The jAODDPOBICJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJAODDPOBICJ(boolean value) {
+
+        jAODDPOBICJ_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool JAODDPOBICJ = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJAODDPOBICJ() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        jAODDPOBICJ_ = false;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty> properties_ =
         java.util.Collections.emptyList();
       private void ensurePropertiesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           properties_ = new java.util.ArrayList<emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty>(properties_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000004;
          }
       }
 
@@ -1078,7 +1104,7 @@ public final class AbilityMetaModifierChangeOuterClass {
           emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty, emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.Builder, emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierPropertyOrBuilder> propertiesBuilder_;
 
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty> getPropertiesList() {
         if (propertiesBuilder_ == null) {
@@ -1088,7 +1114,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         }
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public int getPropertiesCount() {
         if (propertiesBuilder_ == null) {
@@ -1098,7 +1124,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         }
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty getProperties(int index) {
         if (propertiesBuilder_ == null) {
@@ -1108,7 +1134,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         }
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public Builder setProperties(
           int index, emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty value) {
@@ -1125,7 +1151,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public Builder setProperties(
           int index, emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.Builder builderForValue) {
@@ -1139,7 +1165,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public Builder addProperties(emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty value) {
         if (propertiesBuilder_ == null) {
@@ -1155,7 +1181,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public Builder addProperties(
           int index, emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty value) {
@@ -1172,7 +1198,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public Builder addProperties(
           emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.Builder builderForValue) {
@@ -1186,7 +1212,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public Builder addProperties(
           int index, emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.Builder builderForValue) {
@@ -1200,7 +1226,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public Builder addAllProperties(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty> values) {
@@ -1215,12 +1241,12 @@ public final class AbilityMetaModifierChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public Builder clearProperties() {
         if (propertiesBuilder_ == null) {
           properties_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
           propertiesBuilder_.clear();
@@ -1228,7 +1254,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public Builder removeProperties(int index) {
         if (propertiesBuilder_ == null) {
@@ -1241,14 +1267,14 @@ public final class AbilityMetaModifierChangeOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.Builder getPropertiesBuilder(
           int index) {
         return getPropertiesFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierPropertyOrBuilder getPropertiesOrBuilder(
           int index) {
@@ -1258,7 +1284,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         }
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierPropertyOrBuilder> 
            getPropertiesOrBuilderList() {
@@ -1269,14 +1295,14 @@ public final class AbilityMetaModifierChangeOuterClass {
         }
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.Builder addPropertiesBuilder() {
         return getPropertiesFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.getDefaultInstance());
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.Builder addPropertiesBuilder(
           int index) {
@@ -1284,7 +1310,7 @@ public final class AbilityMetaModifierChangeOuterClass {
             index, emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.getDefaultInstance());
       }
       /**
-       * <code>repeated .ModifierProperty properties = 14;</code>
+       * <code>repeated .ModifierProperty properties = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.Builder> 
            getPropertiesBuilderList() {
@@ -1297,578 +1323,12 @@ public final class AbilityMetaModifierChangeOuterClass {
           propertiesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty, emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierProperty.Builder, emu.grasscutter.net.proto.ModifierPropertyOuterClass.ModifierPropertyOrBuilder>(
                   properties_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
           properties_ = null;
         }
         return propertiesBuilder_;
-      }
-
-      private int action_ = 0;
-      /**
-       * <code>.ModifierAction action = 4;</code>
-       * @return The enum numeric value on the wire for action.
-       */
-      @java.lang.Override public int getActionValue() {
-        return action_;
-      }
-      /**
-       * <code>.ModifierAction action = 4;</code>
-       * @param value The enum numeric value on the wire for action to set.
-       * @return This builder for chaining.
-       */
-      public Builder setActionValue(int value) {
-        
-        action_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.ModifierAction action = 4;</code>
-       * @return The action.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction getAction() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction result = emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.valueOf(action_);
-        return result == null ? emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.ModifierAction action = 4;</code>
-       * @param value The action to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAction(emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        action_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.ModifierAction action = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAction() {
-        
-        action_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int applyEntityId_ ;
-      /**
-       * <code>uint32 apply_entity_id = 2;</code>
-       * @return The applyEntityId.
-       */
-      @java.lang.Override
-      public int getApplyEntityId() {
-        return applyEntityId_;
-      }
-      /**
-       * <code>uint32 apply_entity_id = 2;</code>
-       * @param value The applyEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setApplyEntityId(int value) {
-        
-        applyEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 apply_entity_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearApplyEntityId() {
-        
-        applyEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isMuteRemote_ ;
-      /**
-       * <code>bool is_mute_remote = 15;</code>
-       * @return The isMuteRemote.
-       */
-      @java.lang.Override
-      public boolean getIsMuteRemote() {
-        return isMuteRemote_;
-      }
-      /**
-       * <code>bool is_mute_remote = 15;</code>
-       * @param value The isMuteRemote to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsMuteRemote(boolean value) {
-        
-        isMuteRemote_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_mute_remote = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsMuteRemote() {
-        
-        isMuteRemote_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean jGGDMDGLJOP_ ;
-      /**
-       * <code>bool JGGDMDGLJOP = 8;</code>
-       * @return The jGGDMDGLJOP.
-       */
-      @java.lang.Override
-      public boolean getJGGDMDGLJOP() {
-        return jGGDMDGLJOP_;
-      }
-      /**
-       * <code>bool JGGDMDGLJOP = 8;</code>
-       * @param value The jGGDMDGLJOP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJGGDMDGLJOP(boolean value) {
-        
-        jGGDMDGLJOP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool JGGDMDGLJOP = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJGGDMDGLJOP() {
-        
-        jGGDMDGLJOP_ = false;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString parentAbilityName_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> parentAbilityNameBuilder_;
-      /**
-       * <code>.AbilityString parent_ability_name = 1;</code>
-       * @return Whether the parentAbilityName field is set.
-       */
-      public boolean hasParentAbilityName() {
-        return parentAbilityNameBuilder_ != null || parentAbilityName_ != null;
-      }
-      /**
-       * <code>.AbilityString parent_ability_name = 1;</code>
-       * @return The parentAbilityName.
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityName() {
-        if (parentAbilityNameBuilder_ == null) {
-          return parentAbilityName_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityName_;
-        } else {
-          return parentAbilityNameBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.AbilityString parent_ability_name = 1;</code>
-       */
-      public Builder setParentAbilityName(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
-        if (parentAbilityNameBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          parentAbilityName_ = value;
-          onChanged();
-        } else {
-          parentAbilityNameBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString parent_ability_name = 1;</code>
-       */
-      public Builder setParentAbilityName(
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
-        if (parentAbilityNameBuilder_ == null) {
-          parentAbilityName_ = builderForValue.build();
-          onChanged();
-        } else {
-          parentAbilityNameBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString parent_ability_name = 1;</code>
-       */
-      public Builder mergeParentAbilityName(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
-        if (parentAbilityNameBuilder_ == null) {
-          if (parentAbilityName_ != null) {
-            parentAbilityName_ =
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.newBuilder(parentAbilityName_).mergeFrom(value).buildPartial();
-          } else {
-            parentAbilityName_ = value;
-          }
-          onChanged();
-        } else {
-          parentAbilityNameBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString parent_ability_name = 1;</code>
-       */
-      public Builder clearParentAbilityName() {
-        if (parentAbilityNameBuilder_ == null) {
-          parentAbilityName_ = null;
-          onChanged();
-        } else {
-          parentAbilityName_ = null;
-          parentAbilityNameBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString parent_ability_name = 1;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getParentAbilityNameBuilder() {
-        
-        onChanged();
-        return getParentAbilityNameFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AbilityString parent_ability_name = 1;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityNameOrBuilder() {
-        if (parentAbilityNameBuilder_ != null) {
-          return parentAbilityNameBuilder_.getMessageOrBuilder();
-        } else {
-          return parentAbilityName_ == null ?
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityName_;
-        }
-      }
-      /**
-       * <code>.AbilityString parent_ability_name = 1;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
-          getParentAbilityNameFieldBuilder() {
-        if (parentAbilityNameBuilder_ == null) {
-          parentAbilityNameBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder>(
-                  getParentAbilityName(),
-                  getParentForChildren(),
-                  isClean());
-          parentAbilityName_ = null;
-        }
-        return parentAbilityNameBuilder_;
-      }
-
-      private int serverBuffUid_ ;
-      /**
-       * <code>uint32 server_buff_uid = 7;</code>
-       * @return The serverBuffUid.
-       */
-      @java.lang.Override
-      public int getServerBuffUid() {
-        return serverBuffUid_;
-      }
-      /**
-       * <code>uint32 server_buff_uid = 7;</code>
-       * @param value The serverBuffUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setServerBuffUid(int value) {
-        
-        serverBuffUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 server_buff_uid = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearServerBuffUid() {
-        
-        serverBuffUid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString parentAbilityOverride_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> parentAbilityOverrideBuilder_;
-      /**
-       * <code>.AbilityString parent_ability_override = 10;</code>
-       * @return Whether the parentAbilityOverride field is set.
-       */
-      public boolean hasParentAbilityOverride() {
-        return parentAbilityOverrideBuilder_ != null || parentAbilityOverride_ != null;
-      }
-      /**
-       * <code>.AbilityString parent_ability_override = 10;</code>
-       * @return The parentAbilityOverride.
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityOverride() {
-        if (parentAbilityOverrideBuilder_ == null) {
-          return parentAbilityOverride_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityOverride_;
-        } else {
-          return parentAbilityOverrideBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.AbilityString parent_ability_override = 10;</code>
-       */
-      public Builder setParentAbilityOverride(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
-        if (parentAbilityOverrideBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          parentAbilityOverride_ = value;
-          onChanged();
-        } else {
-          parentAbilityOverrideBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString parent_ability_override = 10;</code>
-       */
-      public Builder setParentAbilityOverride(
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
-        if (parentAbilityOverrideBuilder_ == null) {
-          parentAbilityOverride_ = builderForValue.build();
-          onChanged();
-        } else {
-          parentAbilityOverrideBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString parent_ability_override = 10;</code>
-       */
-      public Builder mergeParentAbilityOverride(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
-        if (parentAbilityOverrideBuilder_ == null) {
-          if (parentAbilityOverride_ != null) {
-            parentAbilityOverride_ =
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.newBuilder(parentAbilityOverride_).mergeFrom(value).buildPartial();
-          } else {
-            parentAbilityOverride_ = value;
-          }
-          onChanged();
-        } else {
-          parentAbilityOverrideBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString parent_ability_override = 10;</code>
-       */
-      public Builder clearParentAbilityOverride() {
-        if (parentAbilityOverrideBuilder_ == null) {
-          parentAbilityOverride_ = null;
-          onChanged();
-        } else {
-          parentAbilityOverride_ = null;
-          parentAbilityOverrideBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString parent_ability_override = 10;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getParentAbilityOverrideBuilder() {
-        
-        onChanged();
-        return getParentAbilityOverrideFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AbilityString parent_ability_override = 10;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityOverrideOrBuilder() {
-        if (parentAbilityOverrideBuilder_ != null) {
-          return parentAbilityOverrideBuilder_.getMessageOrBuilder();
-        } else {
-          return parentAbilityOverride_ == null ?
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityOverride_;
-        }
-      }
-      /**
-       * <code>.AbilityString parent_ability_override = 10;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
-          getParentAbilityOverrideFieldBuilder() {
-        if (parentAbilityOverrideBuilder_ == null) {
-          parentAbilityOverrideBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder>(
-                  getParentAbilityOverride(),
-                  getParentForChildren(),
-                  isClean());
-          parentAbilityOverride_ = null;
-        }
-        return parentAbilityOverrideBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier attachedInstancedModifier_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier, emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.Builder, emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder> attachedInstancedModifierBuilder_;
-      /**
-       * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-       * @return Whether the attachedInstancedModifier field is set.
-       */
-      public boolean hasAttachedInstancedModifier() {
-        return attachedInstancedModifierBuilder_ != null || attachedInstancedModifier_ != null;
-      }
-      /**
-       * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-       * @return The attachedInstancedModifier.
-       */
-      public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier getAttachedInstancedModifier() {
-        if (attachedInstancedModifierBuilder_ == null) {
-          return attachedInstancedModifier_ == null ? emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.getDefaultInstance() : attachedInstancedModifier_;
-        } else {
-          return attachedInstancedModifierBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-       */
-      public Builder setAttachedInstancedModifier(emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier value) {
-        if (attachedInstancedModifierBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          attachedInstancedModifier_ = value;
-          onChanged();
-        } else {
-          attachedInstancedModifierBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-       */
-      public Builder setAttachedInstancedModifier(
-          emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.Builder builderForValue) {
-        if (attachedInstancedModifierBuilder_ == null) {
-          attachedInstancedModifier_ = builderForValue.build();
-          onChanged();
-        } else {
-          attachedInstancedModifierBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-       */
-      public Builder mergeAttachedInstancedModifier(emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier value) {
-        if (attachedInstancedModifierBuilder_ == null) {
-          if (attachedInstancedModifier_ != null) {
-            attachedInstancedModifier_ =
-              emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.newBuilder(attachedInstancedModifier_).mergeFrom(value).buildPartial();
-          } else {
-            attachedInstancedModifier_ = value;
-          }
-          onChanged();
-        } else {
-          attachedInstancedModifierBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-       */
-      public Builder clearAttachedInstancedModifier() {
-        if (attachedInstancedModifierBuilder_ == null) {
-          attachedInstancedModifier_ = null;
-          onChanged();
-        } else {
-          attachedInstancedModifier_ = null;
-          attachedInstancedModifierBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.Builder getAttachedInstancedModifierBuilder() {
-        
-        onChanged();
-        return getAttachedInstancedModifierFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder getAttachedInstancedModifierOrBuilder() {
-        if (attachedInstancedModifierBuilder_ != null) {
-          return attachedInstancedModifierBuilder_.getMessageOrBuilder();
-        } else {
-          return attachedInstancedModifier_ == null ?
-              emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.getDefaultInstance() : attachedInstancedModifier_;
-        }
-      }
-      /**
-       * <code>.AbilityAttachedModifier attached_instanced_modifier = 3;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier, emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.Builder, emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder> 
-          getAttachedInstancedModifierFieldBuilder() {
-        if (attachedInstancedModifierBuilder_ == null) {
-          attachedInstancedModifierBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier, emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.Builder, emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder>(
-                  getAttachedInstancedModifier(),
-                  getParentForChildren(),
-                  isClean());
-          attachedInstancedModifier_ = null;
-        }
-        return attachedInstancedModifierBuilder_;
-      }
-
-      private boolean dLOLFHNNEKI_ ;
-      /**
-       * <code>bool DLOLFHNNEKI = 12;</code>
-       * @return The dLOLFHNNEKI.
-       */
-      @java.lang.Override
-      public boolean getDLOLFHNNEKI() {
-        return dLOLFHNNEKI_;
-      }
-      /**
-       * <code>bool DLOLFHNNEKI = 12;</code>
-       * @param value The dLOLFHNNEKI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDLOLFHNNEKI(boolean value) {
-        
-        dLOLFHNNEKI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool DLOLFHNNEKI = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDLOLFHNNEKI() {
-        
-        dLOLFHNNEKI_ = false;
-        onChanged();
-        return this;
       }
 
       private int modifierLocalId_ ;
@@ -1886,8 +1346,9 @@ public final class AbilityMetaModifierChangeOuterClass {
        * @return This builder for chaining.
        */
       public Builder setModifierLocalId(int value) {
-        
+
         modifierLocalId_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -1896,10 +1357,516 @@ public final class AbilityMetaModifierChangeOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearModifierLocalId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         modifierLocalId_ = 0;
         onChanged();
         return this;
+      }
+
+      private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString parentAbilityOverride_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> parentAbilityOverrideBuilder_;
+      /**
+       * <code>.AbilityString parent_ability_override = 6;</code>
+       * @return Whether the parentAbilityOverride field is set.
+       */
+      public boolean hasParentAbilityOverride() {
+        return ((bitField0_ & 0x00000010) != 0);
+      }
+      /**
+       * <code>.AbilityString parent_ability_override = 6;</code>
+       * @return The parentAbilityOverride.
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityOverride() {
+        if (parentAbilityOverrideBuilder_ == null) {
+          return parentAbilityOverride_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityOverride_;
+        } else {
+          return parentAbilityOverrideBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.AbilityString parent_ability_override = 6;</code>
+       */
+      public Builder setParentAbilityOverride(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
+        if (parentAbilityOverrideBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          parentAbilityOverride_ = value;
+        } else {
+          parentAbilityOverrideBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityString parent_ability_override = 6;</code>
+       */
+      public Builder setParentAbilityOverride(
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
+        if (parentAbilityOverrideBuilder_ == null) {
+          parentAbilityOverride_ = builderForValue.build();
+        } else {
+          parentAbilityOverrideBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityString parent_ability_override = 6;</code>
+       */
+      public Builder mergeParentAbilityOverride(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
+        if (parentAbilityOverrideBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) != 0) &&
+            parentAbilityOverride_ != null &&
+            parentAbilityOverride_ != emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance()) {
+            getParentAbilityOverrideBuilder().mergeFrom(value);
+          } else {
+            parentAbilityOverride_ = value;
+          }
+        } else {
+          parentAbilityOverrideBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityString parent_ability_override = 6;</code>
+       */
+      public Builder clearParentAbilityOverride() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        parentAbilityOverride_ = null;
+        if (parentAbilityOverrideBuilder_ != null) {
+          parentAbilityOverrideBuilder_.dispose();
+          parentAbilityOverrideBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityString parent_ability_override = 6;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getParentAbilityOverrideBuilder() {
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return getParentAbilityOverrideFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.AbilityString parent_ability_override = 6;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityOverrideOrBuilder() {
+        if (parentAbilityOverrideBuilder_ != null) {
+          return parentAbilityOverrideBuilder_.getMessageOrBuilder();
+        } else {
+          return parentAbilityOverride_ == null ?
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityOverride_;
+        }
+      }
+      /**
+       * <code>.AbilityString parent_ability_override = 6;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
+          getParentAbilityOverrideFieldBuilder() {
+        if (parentAbilityOverrideBuilder_ == null) {
+          parentAbilityOverrideBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder>(
+                  getParentAbilityOverride(),
+                  getParentForChildren(),
+                  isClean());
+          parentAbilityOverride_ = null;
+        }
+        return parentAbilityOverrideBuilder_;
+      }
+
+      private boolean kJPKHNFAEDC_ ;
+      /**
+       * <code>bool KJPKHNFAEDC = 14;</code>
+       * @return The kJPKHNFAEDC.
+       */
+      @java.lang.Override
+      public boolean getKJPKHNFAEDC() {
+        return kJPKHNFAEDC_;
+      }
+      /**
+       * <code>bool KJPKHNFAEDC = 14;</code>
+       * @param value The kJPKHNFAEDC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKJPKHNFAEDC(boolean value) {
+
+        kJPKHNFAEDC_ = value;
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool KJPKHNFAEDC = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKJPKHNFAEDC() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        kJPKHNFAEDC_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isAttachedParentAbility_ ;
+      /**
+       * <code>bool is_attached_parent_ability = 1;</code>
+       * @return The isAttachedParentAbility.
+       */
+      @java.lang.Override
+      public boolean getIsAttachedParentAbility() {
+        return isAttachedParentAbility_;
+      }
+      /**
+       * <code>bool is_attached_parent_ability = 1;</code>
+       * @param value The isAttachedParentAbility to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsAttachedParentAbility(boolean value) {
+
+        isAttachedParentAbility_ = value;
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_attached_parent_ability = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsAttachedParentAbility() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        isAttachedParentAbility_ = false;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier attachedInstancedModifier_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier, emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.Builder, emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder> attachedInstancedModifierBuilder_;
+      /**
+       * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+       * @return Whether the attachedInstancedModifier field is set.
+       */
+      public boolean hasAttachedInstancedModifier() {
+        return ((bitField0_ & 0x00000080) != 0);
+      }
+      /**
+       * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+       * @return The attachedInstancedModifier.
+       */
+      public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier getAttachedInstancedModifier() {
+        if (attachedInstancedModifierBuilder_ == null) {
+          return attachedInstancedModifier_ == null ? emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.getDefaultInstance() : attachedInstancedModifier_;
+        } else {
+          return attachedInstancedModifierBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+       */
+      public Builder setAttachedInstancedModifier(emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier value) {
+        if (attachedInstancedModifierBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          attachedInstancedModifier_ = value;
+        } else {
+          attachedInstancedModifierBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+       */
+      public Builder setAttachedInstancedModifier(
+          emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.Builder builderForValue) {
+        if (attachedInstancedModifierBuilder_ == null) {
+          attachedInstancedModifier_ = builderForValue.build();
+        } else {
+          attachedInstancedModifierBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+       */
+      public Builder mergeAttachedInstancedModifier(emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier value) {
+        if (attachedInstancedModifierBuilder_ == null) {
+          if (((bitField0_ & 0x00000080) != 0) &&
+            attachedInstancedModifier_ != null &&
+            attachedInstancedModifier_ != emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.getDefaultInstance()) {
+            getAttachedInstancedModifierBuilder().mergeFrom(value);
+          } else {
+            attachedInstancedModifier_ = value;
+          }
+        } else {
+          attachedInstancedModifierBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+       */
+      public Builder clearAttachedInstancedModifier() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        attachedInstancedModifier_ = null;
+        if (attachedInstancedModifierBuilder_ != null) {
+          attachedInstancedModifierBuilder_.dispose();
+          attachedInstancedModifierBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.Builder getAttachedInstancedModifierBuilder() {
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return getAttachedInstancedModifierFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder getAttachedInstancedModifierOrBuilder() {
+        if (attachedInstancedModifierBuilder_ != null) {
+          return attachedInstancedModifierBuilder_.getMessageOrBuilder();
+        } else {
+          return attachedInstancedModifier_ == null ?
+              emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.getDefaultInstance() : attachedInstancedModifier_;
+        }
+      }
+      /**
+       * <code>.AbilityAttachedModifier attached_instanced_modifier = 12;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier, emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.Builder, emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder> 
+          getAttachedInstancedModifierFieldBuilder() {
+        if (attachedInstancedModifierBuilder_ == null) {
+          attachedInstancedModifierBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier, emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.Builder, emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder>(
+                  getAttachedInstancedModifier(),
+                  getParentForChildren(),
+                  isClean());
+          attachedInstancedModifier_ = null;
+        }
+        return attachedInstancedModifierBuilder_;
+      }
+
+      private int action_ = 0;
+      /**
+       * <code>.ModifierAction action = 3;</code>
+       * @return The enum numeric value on the wire for action.
+       */
+      @java.lang.Override public int getActionValue() {
+        return action_;
+      }
+      /**
+       * <code>.ModifierAction action = 3;</code>
+       * @param value The enum numeric value on the wire for action to set.
+       * @return This builder for chaining.
+       */
+      public Builder setActionValue(int value) {
+        action_ = value;
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ModifierAction action = 3;</code>
+       * @return The action.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction getAction() {
+        emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction result = emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.forNumber(action_);
+        return result == null ? emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.ModifierAction action = 3;</code>
+       * @param value The action to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAction(emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000100;
+        action_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ModifierAction action = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAction() {
+        bitField0_ = (bitField0_ & ~0x00000100);
+        action_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int applyEntityId_ ;
+      /**
+       * <code>uint32 apply_entity_id = 8;</code>
+       * @return The applyEntityId.
+       */
+      @java.lang.Override
+      public int getApplyEntityId() {
+        return applyEntityId_;
+      }
+      /**
+       * <code>uint32 apply_entity_id = 8;</code>
+       * @param value The applyEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setApplyEntityId(int value) {
+
+        applyEntityId_ = value;
+        bitField0_ |= 0x00000200;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 apply_entity_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearApplyEntityId() {
+        bitField0_ = (bitField0_ & ~0x00000200);
+        applyEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString parentAbilityName_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> parentAbilityNameBuilder_;
+      /**
+       * <code>.AbilityString parent_ability_name = 15;</code>
+       * @return Whether the parentAbilityName field is set.
+       */
+      public boolean hasParentAbilityName() {
+        return ((bitField0_ & 0x00000400) != 0);
+      }
+      /**
+       * <code>.AbilityString parent_ability_name = 15;</code>
+       * @return The parentAbilityName.
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityName() {
+        if (parentAbilityNameBuilder_ == null) {
+          return parentAbilityName_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityName_;
+        } else {
+          return parentAbilityNameBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.AbilityString parent_ability_name = 15;</code>
+       */
+      public Builder setParentAbilityName(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
+        if (parentAbilityNameBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          parentAbilityName_ = value;
+        } else {
+          parentAbilityNameBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityString parent_ability_name = 15;</code>
+       */
+      public Builder setParentAbilityName(
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
+        if (parentAbilityNameBuilder_ == null) {
+          parentAbilityName_ = builderForValue.build();
+        } else {
+          parentAbilityNameBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityString parent_ability_name = 15;</code>
+       */
+      public Builder mergeParentAbilityName(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
+        if (parentAbilityNameBuilder_ == null) {
+          if (((bitField0_ & 0x00000400) != 0) &&
+            parentAbilityName_ != null &&
+            parentAbilityName_ != emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance()) {
+            getParentAbilityNameBuilder().mergeFrom(value);
+          } else {
+            parentAbilityName_ = value;
+          }
+        } else {
+          parentAbilityNameBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityString parent_ability_name = 15;</code>
+       */
+      public Builder clearParentAbilityName() {
+        bitField0_ = (bitField0_ & ~0x00000400);
+        parentAbilityName_ = null;
+        if (parentAbilityNameBuilder_ != null) {
+          parentAbilityNameBuilder_.dispose();
+          parentAbilityNameBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AbilityString parent_ability_name = 15;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getParentAbilityNameBuilder() {
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return getParentAbilityNameFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.AbilityString parent_ability_name = 15;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityNameOrBuilder() {
+        if (parentAbilityNameBuilder_ != null) {
+          return parentAbilityNameBuilder_.getMessageOrBuilder();
+        } else {
+          return parentAbilityName_ == null ?
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityName_;
+        }
+      }
+      /**
+       * <code>.AbilityString parent_ability_name = 15;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
+          getParentAbilityNameFieldBuilder() {
+        if (parentAbilityNameBuilder_ == null) {
+          parentAbilityNameBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder>(
+                  getParentAbilityName(),
+                  getParentForChildren(),
+                  isClean());
+          parentAbilityName_ = null;
+        }
+        return parentAbilityNameBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1934,7 +1901,18 @@ public final class AbilityMetaModifierChangeOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AbilityMetaModifierChange(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -1968,40 +1946,40 @@ public final class AbilityMetaModifierChangeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037AbilityMetaModifierChange.proto\032\026Modif" +
-      "ierProperty.proto\032\024ModifierAction.proto\032" +
-      "\023AbilityString.proto\032\035AbilityAttachedMod" +
-      "ifier.proto\"\217\003\n\031AbilityMetaModifierChang" +
-      "e\022%\n\nproperties\030\016 \003(\0132\021.ModifierProperty" +
-      "\022\037\n\006action\030\004 \001(\0162\017.ModifierAction\022\027\n\017app" +
-      "ly_entity_id\030\002 \001(\r\022\026\n\016is_mute_remote\030\017 \001" +
-      "(\010\022\023\n\013JGGDMDGLJOP\030\010 \001(\010\022+\n\023parent_abilit" +
-      "y_name\030\001 \001(\0132\016.AbilityString\022\027\n\017server_b" +
-      "uff_uid\030\007 \001(\r\022/\n\027parent_ability_override" +
-      "\030\n \001(\0132\016.AbilityString\022=\n\033attached_insta" +
-      "nced_modifier\030\003 \001(\0132\030.AbilityAttachedMod" +
-      "ifier\022\023\n\013DLOLFHNNEKI\030\014 \001(\010\022\031\n\021modifier_l" +
-      "ocal_id\030\005 \001(\005B\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\n\037AbilityMetaModifierChange.proto\032\035Abili" +
+      "tyAttachedModifier.proto\032\023AbilityString." +
+      "proto\032\024ModifierAction.proto\032\026ModifierPro" +
+      "perty.proto\"\233\003\n\031AbilityMetaModifierChang" +
+      "e\022\027\n\017server_buff_uid\030\r \001(\r\022\023\n\013JAODDPOBIC" +
+      "J\030\004 \001(\010\022%\n\nproperties\030\013 \003(\0132\021.ModifierPr" +
+      "operty\022\031\n\021modifier_local_id\030\005 \001(\005\022/\n\027par" +
+      "ent_ability_override\030\006 \001(\0132\016.AbilityStri" +
+      "ng\022\023\n\013KJPKHNFAEDC\030\016 \001(\010\022\"\n\032is_attached_p" +
+      "arent_ability\030\001 \001(\010\022=\n\033attached_instance" +
+      "d_modifier\030\014 \001(\0132\030.AbilityAttachedModifi" +
+      "er\022\037\n\006action\030\003 \001(\0162\017.ModifierAction\022\027\n\017a" +
+      "pply_entity_id\030\010 \001(\r\022+\n\023parent_ability_n" +
+      "ame\030\017 \001(\0132\016.AbilityStringB\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.ModifierPropertyOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.ModifierActionOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ModifierActionOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ModifierPropertyOuterClass.getDescriptor(),
         });
     internal_static_AbilityMetaModifierChange_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AbilityMetaModifierChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMetaModifierChange_descriptor,
-        new java.lang.String[] { "Properties", "Action", "ApplyEntityId", "IsMuteRemote", "JGGDMDGLJOP", "ParentAbilityName", "ServerBuffUid", "ParentAbilityOverride", "AttachedInstancedModifier", "DLOLFHNNEKI", "ModifierLocalId", });
-    emu.grasscutter.net.proto.ModifierPropertyOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.ModifierActionOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor();
+        new java.lang.String[] { "ServerBuffUid", "JAODDPOBICJ", "Properties", "ModifierLocalId", "ParentAbilityOverride", "KJPKHNFAEDC", "IsAttachedParentAbility", "AttachedInstancedModifier", "Action", "ApplyEntityId", "ParentAbilityName", });
     emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ModifierActionOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ModifierPropertyOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,27 +19,27 @@ public final class DailyTaskDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 finished_num = 6;</code>
-     * @return The finishedNum.
-     */
-    int getFinishedNum();
-
-    /**
-     * <code>uint32 score_reward_id = 9;</code>
+     * <code>uint32 score_reward_id = 1;</code>
      * @return The scoreRewardId.
      */
     int getScoreRewardId();
 
     /**
-     * <code>bool is_taken_score_reward = 15;</code>
+     * <code>bool is_taken_score_reward = 6;</code>
      * @return The isTakenScoreReward.
      */
     boolean getIsTakenScoreReward();
+
+    /**
+     * <code>uint32 finished_num = 8;</code>
+     * @return The finishedNum.
+     */
+    int getFinishedNum();
   }
   /**
    * <pre>
-   * CmdId: 156
-   * Obf: LKFOLMKGHDK
+   * CmdId: 158
+   * Name: POECKGCEMFF
    * </pre>
    *
    * Protobuf type {@code DailyTaskDataNotify}
@@ -63,63 +63,6 @@ public final class DailyTaskDataNotifyOuterClass {
       return new DailyTaskDataNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private DailyTaskDataNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 48: {
-
-              finishedNum_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              scoreRewardId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              isTakenScoreReward_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.internal_static_DailyTaskDataNotify_descriptor;
@@ -133,21 +76,10 @@ public final class DailyTaskDataNotifyOuterClass {
               emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify.class, emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify.Builder.class);
     }
 
-    public static final int FINISHED_NUM_FIELD_NUMBER = 6;
-    private int finishedNum_;
+    public static final int SCORE_REWARD_ID_FIELD_NUMBER = 1;
+    private int scoreRewardId_ = 0;
     /**
-     * <code>uint32 finished_num = 6;</code>
-     * @return The finishedNum.
-     */
-    @java.lang.Override
-    public int getFinishedNum() {
-      return finishedNum_;
-    }
-
-    public static final int SCORE_REWARD_ID_FIELD_NUMBER = 9;
-    private int scoreRewardId_;
-    /**
-     * <code>uint32 score_reward_id = 9;</code>
+     * <code>uint32 score_reward_id = 1;</code>
      * @return The scoreRewardId.
      */
     @java.lang.Override
@@ -155,15 +87,26 @@ public final class DailyTaskDataNotifyOuterClass {
       return scoreRewardId_;
     }
 
-    public static final int IS_TAKEN_SCORE_REWARD_FIELD_NUMBER = 15;
-    private boolean isTakenScoreReward_;
+    public static final int IS_TAKEN_SCORE_REWARD_FIELD_NUMBER = 6;
+    private boolean isTakenScoreReward_ = false;
     /**
-     * <code>bool is_taken_score_reward = 15;</code>
+     * <code>bool is_taken_score_reward = 6;</code>
      * @return The isTakenScoreReward.
      */
     @java.lang.Override
     public boolean getIsTakenScoreReward() {
       return isTakenScoreReward_;
+    }
+
+    public static final int FINISHED_NUM_FIELD_NUMBER = 8;
+    private int finishedNum_ = 0;
+    /**
+     * <code>uint32 finished_num = 8;</code>
+     * @return The finishedNum.
+     */
+    @java.lang.Override
+    public int getFinishedNum() {
+      return finishedNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,16 +123,16 @@ public final class DailyTaskDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (finishedNum_ != 0) {
-        output.writeUInt32(6, finishedNum_);
-      }
       if (scoreRewardId_ != 0) {
-        output.writeUInt32(9, scoreRewardId_);
+        output.writeUInt32(1, scoreRewardId_);
       }
       if (isTakenScoreReward_ != false) {
-        output.writeBool(15, isTakenScoreReward_);
+        output.writeBool(6, isTakenScoreReward_);
       }
-      unknownFields.writeTo(output);
+      if (finishedNum_ != 0) {
+        output.writeUInt32(8, finishedNum_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -198,19 +141,19 @@ public final class DailyTaskDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (finishedNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, finishedNum_);
-      }
       if (scoreRewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, scoreRewardId_);
+          .computeUInt32Size(1, scoreRewardId_);
       }
       if (isTakenScoreReward_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isTakenScoreReward_);
+          .computeBoolSize(6, isTakenScoreReward_);
       }
-      size += unknownFields.getSerializedSize();
+      if (finishedNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, finishedNum_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -225,13 +168,13 @@ public final class DailyTaskDataNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify other = (emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify) obj;
 
-      if (getFinishedNum()
-          != other.getFinishedNum()) return false;
       if (getScoreRewardId()
           != other.getScoreRewardId()) return false;
       if (getIsTakenScoreReward()
           != other.getIsTakenScoreReward()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getFinishedNum()
+          != other.getFinishedNum()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -242,14 +185,14 @@ public final class DailyTaskDataNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FINISHED_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getFinishedNum();
       hash = (37 * hash) + SCORE_REWARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScoreRewardId();
       hash = (37 * hash) + IS_TAKEN_SCORE_REWARD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTakenScoreReward());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + FINISHED_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getFinishedNum();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -298,11 +241,13 @@ public final class DailyTaskDataNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -346,8 +291,8 @@ public final class DailyTaskDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 156
-     * Obf: LKFOLMKGHDK
+     * CmdId: 158
+     * Name: POECKGCEMFF
      * </pre>
      *
      * Protobuf type {@code DailyTaskDataNotify}
@@ -371,28 +316,21 @@ public final class DailyTaskDataNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        finishedNum_ = 0;
-
+        bitField0_ = 0;
         scoreRewardId_ = 0;
-
         isTakenScoreReward_ = false;
-
+        finishedNum_ = 0;
         return this;
       }
 
@@ -419,11 +357,22 @@ public final class DailyTaskDataNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify buildPartial() {
         emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify result = new emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify(this);
-        result.finishedNum_ = finishedNum_;
-        result.scoreRewardId_ = scoreRewardId_;
-        result.isTakenScoreReward_ = isTakenScoreReward_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.scoreRewardId_ = scoreRewardId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.isTakenScoreReward_ = isTakenScoreReward_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.finishedNum_ = finishedNum_;
+        }
       }
 
       @java.lang.Override
@@ -470,16 +419,16 @@ public final class DailyTaskDataNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify other) {
         if (other == emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify.getDefaultInstance()) return this;
-        if (other.getFinishedNum() != 0) {
-          setFinishedNum(other.getFinishedNum());
-        }
         if (other.getScoreRewardId() != 0) {
           setScoreRewardId(other.getScoreRewardId());
         }
         if (other.getIsTakenScoreReward() != false) {
           setIsTakenScoreReward(other.getIsTakenScoreReward());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getFinishedNum() != 0) {
+          setFinishedNum(other.getFinishedNum());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -494,54 +443,52 @@ public final class DailyTaskDataNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                scoreRewardId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 48: {
+                isTakenScoreReward_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 48
+              case 64: {
+                finishedNum_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 64
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int finishedNum_ ;
-      /**
-       * <code>uint32 finished_num = 6;</code>
-       * @return The finishedNum.
-       */
-      @java.lang.Override
-      public int getFinishedNum() {
-        return finishedNum_;
-      }
-      /**
-       * <code>uint32 finished_num = 6;</code>
-       * @param value The finishedNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinishedNum(int value) {
-        
-        finishedNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 finished_num = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinishedNum() {
-        
-        finishedNum_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int scoreRewardId_ ;
       /**
-       * <code>uint32 score_reward_id = 9;</code>
+       * <code>uint32 score_reward_id = 1;</code>
        * @return The scoreRewardId.
        */
       @java.lang.Override
@@ -549,22 +496,23 @@ public final class DailyTaskDataNotifyOuterClass {
         return scoreRewardId_;
       }
       /**
-       * <code>uint32 score_reward_id = 9;</code>
+       * <code>uint32 score_reward_id = 1;</code>
        * @param value The scoreRewardId to set.
        * @return This builder for chaining.
        */
       public Builder setScoreRewardId(int value) {
-        
+
         scoreRewardId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 score_reward_id = 9;</code>
+       * <code>uint32 score_reward_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearScoreRewardId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         scoreRewardId_ = 0;
         onChanged();
         return this;
@@ -572,7 +520,7 @@ public final class DailyTaskDataNotifyOuterClass {
 
       private boolean isTakenScoreReward_ ;
       /**
-       * <code>bool is_taken_score_reward = 15;</code>
+       * <code>bool is_taken_score_reward = 6;</code>
        * @return The isTakenScoreReward.
        */
       @java.lang.Override
@@ -580,23 +528,56 @@ public final class DailyTaskDataNotifyOuterClass {
         return isTakenScoreReward_;
       }
       /**
-       * <code>bool is_taken_score_reward = 15;</code>
+       * <code>bool is_taken_score_reward = 6;</code>
        * @param value The isTakenScoreReward to set.
        * @return This builder for chaining.
        */
       public Builder setIsTakenScoreReward(boolean value) {
-        
+
         isTakenScoreReward_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_taken_score_reward = 15;</code>
+       * <code>bool is_taken_score_reward = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTakenScoreReward() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         isTakenScoreReward_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int finishedNum_ ;
+      /**
+       * <code>uint32 finished_num = 8;</code>
+       * @return The finishedNum.
+       */
+      @java.lang.Override
+      public int getFinishedNum() {
+        return finishedNum_;
+      }
+      /**
+       * <code>uint32 finished_num = 8;</code>
+       * @param value The finishedNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFinishedNum(int value) {
+
+        finishedNum_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 finished_num = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFinishedNum() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        finishedNum_ = 0;
         onChanged();
         return this;
       }
@@ -633,7 +614,18 @@ public final class DailyTaskDataNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new DailyTaskDataNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -668,9 +660,9 @@ public final class DailyTaskDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031DailyTaskDataNotify.proto\"c\n\023DailyTask" +
-      "DataNotify\022\024\n\014finished_num\030\006 \001(\r\022\027\n\017scor" +
-      "e_reward_id\030\t \001(\r\022\035\n\025is_taken_score_rewa" +
-      "rd\030\017 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
+      "DataNotify\022\027\n\017score_reward_id\030\001 \001(\r\022\035\n\025i" +
+      "s_taken_score_reward\030\006 \001(\010\022\024\n\014finished_n" +
+      "um\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +674,7 @@ public final class DailyTaskDataNotifyOuterClass {
     internal_static_DailyTaskDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DailyTaskDataNotify_descriptor,
-        new java.lang.String[] { "FinishedNum", "ScoreRewardId", "IsTakenScoreReward", });
+        new java.lang.String[] { "ScoreRewardId", "IsTakenScoreReward", "FinishedNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

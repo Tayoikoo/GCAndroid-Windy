@@ -37,7 +37,7 @@ public final class DeshretObeliskGadgetInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: LGFNBNFIONC
+   * Name: ADDCBCDDJIL
    * </pre>
    *
    * Protobuf type {@code DeshretObeliskGadgetInfo}
@@ -62,73 +62,6 @@ public final class DeshretObeliskGadgetInfoOuterClass {
       return new DeshretObeliskGadgetInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private DeshretObeliskGadgetInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                argumentList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              argumentList_.addInt(input.readUInt32());
-              break;
-            }
-            case 10: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                argumentList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                argumentList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          argumentList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.internal_static_DeshretObeliskGadgetInfo_descriptor;
@@ -143,6 +76,7 @@ public final class DeshretObeliskGadgetInfoOuterClass {
     }
 
     public static final int ARGUMENT_LIST_FIELD_NUMBER = 1;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList argumentList_;
     /**
      * <code>repeated uint32 argument_list = 1;</code>
@@ -192,7 +126,7 @@ public final class DeshretObeliskGadgetInfoOuterClass {
       for (int i = 0; i < argumentList_.size(); i++) {
         output.writeUInt32NoTag(argumentList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -215,7 +149,7 @@ public final class DeshretObeliskGadgetInfoOuterClass {
         }
         argumentListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -232,7 +166,7 @@ public final class DeshretObeliskGadgetInfoOuterClass {
 
       if (!getArgumentListList()
           .equals(other.getArgumentListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -247,7 +181,7 @@ public final class DeshretObeliskGadgetInfoOuterClass {
         hash = (37 * hash) + ARGUMENT_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getArgumentListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -296,11 +230,13 @@ public final class DeshretObeliskGadgetInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -344,7 +280,7 @@ public final class DeshretObeliskGadgetInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: LGFNBNFIONC
+     * Name: ADDCBCDDJIL
      * </pre>
      *
      * Protobuf type {@code DeshretObeliskGadgetInfo}
@@ -368,24 +304,19 @@ public final class DeshretObeliskGadgetInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         argumentList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -412,14 +343,22 @@ public final class DeshretObeliskGadgetInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo buildPartial() {
         emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo result = new emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           argumentList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.argumentList_ = argumentList_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -476,7 +415,7 @@ public final class DeshretObeliskGadgetInfoOuterClass {
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -491,17 +430,46 @@ public final class DeshretObeliskGadgetInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                int v = input.readUInt32();
+                ensureArgumentListIsMutable();
+                argumentList_.addInt(v);
+                break;
+              } // case 8
+              case 10: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureArgumentListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  argumentList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 10
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -511,7 +479,7 @@ public final class DeshretObeliskGadgetInfoOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           argumentList_ = mutableCopy(argumentList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
        * <code>repeated uint32 argument_list = 1;</code>
@@ -545,6 +513,7 @@ public final class DeshretObeliskGadgetInfoOuterClass {
        */
       public Builder setArgumentList(
           int index, int value) {
+
         ensureArgumentListIsMutable();
         argumentList_.setInt(index, value);
         onChanged();
@@ -556,6 +525,7 @@ public final class DeshretObeliskGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder addArgumentList(int value) {
+
         ensureArgumentListIsMutable();
         argumentList_.addInt(value);
         onChanged();
@@ -617,7 +587,18 @@ public final class DeshretObeliskGadgetInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new DeshretObeliskGadgetInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

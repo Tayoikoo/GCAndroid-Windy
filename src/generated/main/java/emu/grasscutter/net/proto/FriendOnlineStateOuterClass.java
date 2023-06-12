@@ -16,7 +16,7 @@ public final class FriendOnlineStateOuterClass {
   }
   /**
    * <pre>
-   * Obf: LDPPKCBGAHG
+   * Name: IFJDEEJLEDK
    * </pre>
    *
    * Protobuf enum {@code FriendOnlineState}

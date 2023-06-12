@@ -19,24 +19,24 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
      * @return Whether the sceneArrangementInfo field is set.
      */
     boolean hasSceneArrangementInfo();
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
      * @return The sceneArrangementInfo.
      */
     emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo getSceneArrangementInfo();
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
      */
     emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder getSceneArrangementInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4871
-   * Obf: AHPNGIHKNPH
+   * CmdId: 4461
+   * Name: OIACCGHPIPD
    * </pre>
    *
    * Protobuf type {@code HomeUpdateArrangementInfoReq}
@@ -60,61 +60,6 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       return new HomeUpdateArrangementInfoReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private HomeUpdateArrangementInfoReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 50: {
-              emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder subBuilder = null;
-              if (sceneArrangementInfo_ != null) {
-                subBuilder = sceneArrangementInfo_.toBuilder();
-              }
-              sceneArrangementInfo_ = input.readMessage(emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(sceneArrangementInfo_);
-                sceneArrangementInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.HomeUpdateArrangementInfoReqOuterClass.internal_static_HomeUpdateArrangementInfoReq_descriptor;
@@ -128,10 +73,10 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
               emu.grasscutter.net.proto.HomeUpdateArrangementInfoReqOuterClass.HomeUpdateArrangementInfoReq.class, emu.grasscutter.net.proto.HomeUpdateArrangementInfoReqOuterClass.HomeUpdateArrangementInfoReq.Builder.class);
     }
 
-    public static final int SCENE_ARRANGEMENT_INFO_FIELD_NUMBER = 6;
+    public static final int SCENE_ARRANGEMENT_INFO_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo sceneArrangementInfo_;
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
      * @return Whether the sceneArrangementInfo field is set.
      */
     @java.lang.Override
@@ -139,7 +84,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       return sceneArrangementInfo_ != null;
     }
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
      * @return The sceneArrangementInfo.
      */
     @java.lang.Override
@@ -147,11 +92,11 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       return sceneArrangementInfo_ == null ? emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.getDefaultInstance() : sceneArrangementInfo_;
     }
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder getSceneArrangementInfoOrBuilder() {
-      return getSceneArrangementInfo();
+      return sceneArrangementInfo_ == null ? emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.getDefaultInstance() : sceneArrangementInfo_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -169,9 +114,9 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (sceneArrangementInfo_ != null) {
-        output.writeMessage(6, getSceneArrangementInfo());
+        output.writeMessage(15, getSceneArrangementInfo());
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -182,9 +127,9 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       size = 0;
       if (sceneArrangementInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getSceneArrangementInfo());
+          .computeMessageSize(15, getSceneArrangementInfo());
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -204,7 +149,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
         if (!getSceneArrangementInfo()
             .equals(other.getSceneArrangementInfo())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -219,7 +164,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
         hash = (37 * hash) + SCENE_ARRANGEMENT_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getSceneArrangementInfo().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -268,11 +213,13 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.HomeUpdateArrangementInfoReqOuterClass.HomeUpdateArrangementInfoReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.HomeUpdateArrangementInfoReqOuterClass.HomeUpdateArrangementInfoReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -316,8 +263,8 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4871
-     * Obf: AHPNGIHKNPH
+     * CmdId: 4461
+     * Name: OIACCGHPIPD
      * </pre>
      *
      * Protobuf type {@code HomeUpdateArrangementInfoReq}
@@ -341,26 +288,21 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.HomeUpdateArrangementInfoReqOuterClass.HomeUpdateArrangementInfoReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (sceneArrangementInfoBuilder_ == null) {
-          sceneArrangementInfo_ = null;
-        } else {
-          sceneArrangementInfo_ = null;
+        bitField0_ = 0;
+        sceneArrangementInfo_ = null;
+        if (sceneArrangementInfoBuilder_ != null) {
+          sceneArrangementInfoBuilder_.dispose();
           sceneArrangementInfoBuilder_ = null;
         }
         return this;
@@ -389,13 +331,18 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeUpdateArrangementInfoReqOuterClass.HomeUpdateArrangementInfoReq buildPartial() {
         emu.grasscutter.net.proto.HomeUpdateArrangementInfoReqOuterClass.HomeUpdateArrangementInfoReq result = new emu.grasscutter.net.proto.HomeUpdateArrangementInfoReqOuterClass.HomeUpdateArrangementInfoReq(this);
-        if (sceneArrangementInfoBuilder_ == null) {
-          result.sceneArrangementInfo_ = sceneArrangementInfo_;
-        } else {
-          result.sceneArrangementInfo_ = sceneArrangementInfoBuilder_.build();
-        }
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.HomeUpdateArrangementInfoReqOuterClass.HomeUpdateArrangementInfoReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.sceneArrangementInfo_ = sceneArrangementInfoBuilder_ == null
+              ? sceneArrangementInfo_
+              : sceneArrangementInfoBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -445,7 +392,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
         if (other.hasSceneArrangementInfo()) {
           mergeSceneArrangementInfo(other.getSceneArrangementInfo());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -460,32 +407,53 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.HomeUpdateArrangementInfoReqOuterClass.HomeUpdateArrangementInfoReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 122: {
+                input.readMessage(
+                    getSceneArrangementInfoFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 122
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.HomeUpdateArrangementInfoReqOuterClass.HomeUpdateArrangementInfoReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo sceneArrangementInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo, emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder, emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder> sceneArrangementInfoBuilder_;
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        * @return Whether the sceneArrangementInfo field is set.
        */
       public boolean hasSceneArrangementInfo() {
-        return sceneArrangementInfoBuilder_ != null || sceneArrangementInfo_ != null;
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        * @return The sceneArrangementInfo.
        */
       public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo getSceneArrangementInfo() {
@@ -496,7 +464,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
         }
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       public Builder setSceneArrangementInfo(emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo value) {
         if (sceneArrangementInfoBuilder_ == null) {
@@ -504,69 +472,69 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
             throw new NullPointerException();
           }
           sceneArrangementInfo_ = value;
-          onChanged();
         } else {
           sceneArrangementInfoBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       public Builder setSceneArrangementInfo(
           emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder builderForValue) {
         if (sceneArrangementInfoBuilder_ == null) {
           sceneArrangementInfo_ = builderForValue.build();
-          onChanged();
         } else {
           sceneArrangementInfoBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       public Builder mergeSceneArrangementInfo(emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo value) {
         if (sceneArrangementInfoBuilder_ == null) {
-          if (sceneArrangementInfo_ != null) {
-            sceneArrangementInfo_ =
-              emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.newBuilder(sceneArrangementInfo_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000001) != 0) &&
+            sceneArrangementInfo_ != null &&
+            sceneArrangementInfo_ != emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.getDefaultInstance()) {
+            getSceneArrangementInfoBuilder().mergeFrom(value);
           } else {
             sceneArrangementInfo_ = value;
           }
-          onChanged();
         } else {
           sceneArrangementInfoBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       public Builder clearSceneArrangementInfo() {
-        if (sceneArrangementInfoBuilder_ == null) {
-          sceneArrangementInfo_ = null;
-          onChanged();
-        } else {
-          sceneArrangementInfo_ = null;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        sceneArrangementInfo_ = null;
+        if (sceneArrangementInfoBuilder_ != null) {
+          sceneArrangementInfoBuilder_.dispose();
           sceneArrangementInfoBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder getSceneArrangementInfoBuilder() {
-        
+        bitField0_ |= 0x00000001;
         onChanged();
         return getSceneArrangementInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder getSceneArrangementInfoOrBuilder() {
         if (sceneArrangementInfoBuilder_ != null) {
@@ -577,7 +545,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
         }
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 6;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo, emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder, emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder> 
@@ -625,7 +593,18 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HomeUpdateArrangementInfoReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -662,7 +641,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       "\n\"HomeUpdateArrangementInfoReq.proto\032\036Ho" +
       "meSceneArrangementInfo.proto\"Y\n\034HomeUpda" +
       "teArrangementInfoReq\0229\n\026scene_arrangemen" +
-      "t_info\030\006 \001(\0132\031.HomeSceneArrangementInfoB" +
+      "t_info\030\017 \001(\0132\031.HomeSceneArrangementInfoB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

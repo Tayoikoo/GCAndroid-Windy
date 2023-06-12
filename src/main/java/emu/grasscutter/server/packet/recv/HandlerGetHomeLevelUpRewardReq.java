@@ -1,17 +1,19 @@
 package emu.grasscutter.server.packet.recv;
 
+import java.util.List;
+import java.util.Set;
+
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.common.ItemParamData;
+
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.ActionReason;
 import emu.grasscutter.net.packet.Opcodes;
 import emu.grasscutter.net.packet.PacketHandler;
 import emu.grasscutter.net.packet.PacketOpcodes;
-import emu.grasscutter.net.proto.GetHomeLevelUpRewardReqOuterClass.GetHomeLevelUpRewardReq;
 import emu.grasscutter.server.game.GameSession;
 import emu.grasscutter.server.packet.send.PacketGetHomeLevelUpRewardRsp;
-import java.util.List;
-import java.util.Set;
+import emu.grasscutter.net.proto.GetHomeLevelUpRewardReqOuterClass.GetHomeLevelUpRewardReq;
 
 @Opcodes(PacketOpcodes.GetHomeLevelUpRewardReq)
 public class HandlerGetHomeLevelUpRewardReq extends PacketHandler {
@@ -23,11 +25,10 @@ public class HandlerGetHomeLevelUpRewardReq extends PacketHandler {
             GetHomeLevelUpRewardReq req = GetHomeLevelUpRewardReq.parseFrom(payload);
             int level = req.getLevel();
             Set<Integer> homeRewardedLevels = session.getPlayer().getHomeRewardedLevels();
-            if (!homeRewardedLevels.contains(level)) { // No duplicated reward
+            if (!homeRewardedLevels.contains(level)) {// No duplicated reward
                 int rewardId = GameData.getHomeWorldLevelDataMap().get(level).getRewardId();
                 if (rewardId != 0) {
-                    List<ItemParamData> rewardItems =
-                            GameData.getRewardDataMap().get(rewardId).getRewardItemList();
+                    List<ItemParamData> rewardItems = GameData.getRewardDataMap().get(rewardId).getRewardItemList();
                     pl.getInventory().addItemParamDatas(rewardItems, ActionReason.GetHomeLevelupReward);
                     homeRewardedLevels.add(level);
                     pl.setHomeRewardedLevels(homeRewardedLevels);

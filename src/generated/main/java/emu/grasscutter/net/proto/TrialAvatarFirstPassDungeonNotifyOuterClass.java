@@ -19,15 +19,15 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 trial_avatar_index_id = 7;</code>
+     * <code>uint32 trial_avatar_index_id = 5;</code>
      * @return The trialAvatarIndexId.
      */
     int getTrialAvatarIndexId();
   }
   /**
    * <pre>
-   * CmdId: 2005
-   * Obf: ACMPPBHOFEN
+   * CmdId: 2089
+   * Name: LJGHKOONHHG
    * </pre>
    *
    * Protobuf type {@code TrialAvatarFirstPassDungeonNotify}
@@ -51,53 +51,6 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
       return new TrialAvatarFirstPassDungeonNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private TrialAvatarFirstPassDungeonNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 56: {
-
-              trialAvatarIndexId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.internal_static_TrialAvatarFirstPassDungeonNotify_descriptor;
@@ -111,10 +64,10 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
               emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.class, emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.Builder.class);
     }
 
-    public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 7;
-    private int trialAvatarIndexId_;
+    public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 5;
+    private int trialAvatarIndexId_ = 0;
     /**
-     * <code>uint32 trial_avatar_index_id = 7;</code>
+     * <code>uint32 trial_avatar_index_id = 5;</code>
      * @return The trialAvatarIndexId.
      */
     @java.lang.Override
@@ -137,9 +90,9 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (trialAvatarIndexId_ != 0) {
-        output.writeUInt32(7, trialAvatarIndexId_);
+        output.writeUInt32(5, trialAvatarIndexId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -150,9 +103,9 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
       size = 0;
       if (trialAvatarIndexId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, trialAvatarIndexId_);
+          .computeUInt32Size(5, trialAvatarIndexId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -169,7 +122,7 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
 
       if (getTrialAvatarIndexId()
           != other.getTrialAvatarIndexId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -182,7 +135,7 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTrialAvatarIndexId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -231,11 +184,13 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -279,8 +234,8 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2005
-     * Obf: ACMPPBHOFEN
+     * CmdId: 2089
+     * Name: LJGHKOONHHG
      * </pre>
      *
      * Protobuf type {@code TrialAvatarFirstPassDungeonNotify}
@@ -304,24 +259,19 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         trialAvatarIndexId_ = 0;
-
         return this;
       }
 
@@ -348,9 +298,16 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify buildPartial() {
         emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify result = new emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify(this);
-        result.trialAvatarIndexId_ = trialAvatarIndexId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.trialAvatarIndexId_ = trialAvatarIndexId_;
+        }
       }
 
       @java.lang.Override
@@ -400,7 +357,7 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
         if (other.getTrialAvatarIndexId() != 0) {
           setTrialAvatarIndexId(other.getTrialAvatarIndexId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -415,23 +372,42 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 40: {
+                trialAvatarIndexId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 40
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.TrialAvatarFirstPassDungeonNotifyOuterClass.TrialAvatarFirstPassDungeonNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int trialAvatarIndexId_ ;
       /**
-       * <code>uint32 trial_avatar_index_id = 7;</code>
+       * <code>uint32 trial_avatar_index_id = 5;</code>
        * @return The trialAvatarIndexId.
        */
       @java.lang.Override
@@ -439,22 +415,23 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
         return trialAvatarIndexId_;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 7;</code>
+       * <code>uint32 trial_avatar_index_id = 5;</code>
        * @param value The trialAvatarIndexId to set.
        * @return This builder for chaining.
        */
       public Builder setTrialAvatarIndexId(int value) {
-        
+
         trialAvatarIndexId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 7;</code>
+       * <code>uint32 trial_avatar_index_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearTrialAvatarIndexId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         trialAvatarIndexId_ = 0;
         onChanged();
         return this;
@@ -492,7 +469,18 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new TrialAvatarFirstPassDungeonNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -528,7 +516,7 @@ public final class TrialAvatarFirstPassDungeonNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'TrialAvatarFirstPassDungeonNotify.prot" +
       "o\"B\n!TrialAvatarFirstPassDungeonNotify\022\035" +
-      "\n\025trial_avatar_index_id\030\007 \001(\rB\033\n\031emu.gra" +
+      "\n\025trial_avatar_index_id\030\005 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

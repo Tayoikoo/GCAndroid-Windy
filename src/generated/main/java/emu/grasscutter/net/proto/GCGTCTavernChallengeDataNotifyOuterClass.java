@@ -19,33 +19,33 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData> 
         getTavernChallengeListList();
     /**
-     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
      */
     emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData getTavernChallengeList(int index);
     /**
-     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
      */
     int getTavernChallengeListCount();
     /**
-     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeDataOrBuilder> 
         getTavernChallengeListOrBuilderList();
     /**
-     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
      */
     emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeDataOrBuilder getTavernChallengeListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 7777
-   * Obf: LLKPACFPMLG
+   * CmdId: 7414
+   * Name: DIAAKFMAGEI
    * </pre>
    *
    * Protobuf type {@code GCGTCTavernChallengeDataNotify}
@@ -70,61 +70,6 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
       return new GCGTCTavernChallengeDataNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private GCGTCTavernChallengeDataNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 34: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                tavernChallengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              tavernChallengeList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          tavernChallengeList_ = java.util.Collections.unmodifiableList(tavernChallengeList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.internal_static_GCGTCTavernChallengeDataNotify_descriptor;
@@ -138,17 +83,18 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
               emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.GCGTCTavernChallengeDataNotify.class, emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.GCGTCTavernChallengeDataNotify.Builder.class);
     }
 
-    public static final int TAVERN_CHALLENGE_LIST_FIELD_NUMBER = 4;
+    public static final int TAVERN_CHALLENGE_LIST_FIELD_NUMBER = 7;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData> tavernChallengeList_;
     /**
-     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData> getTavernChallengeListList() {
       return tavernChallengeList_;
     }
     /**
-     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeDataOrBuilder> 
@@ -156,21 +102,21 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
       return tavernChallengeList_;
     }
     /**
-     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
      */
     @java.lang.Override
     public int getTavernChallengeListCount() {
       return tavernChallengeList_.size();
     }
     /**
-     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData getTavernChallengeList(int index) {
       return tavernChallengeList_.get(index);
     }
     /**
-     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+     * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeDataOrBuilder getTavernChallengeListOrBuilder(
@@ -193,9 +139,9 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < tavernChallengeList_.size(); i++) {
-        output.writeMessage(4, tavernChallengeList_.get(i));
+        output.writeMessage(7, tavernChallengeList_.get(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -206,9 +152,9 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
       size = 0;
       for (int i = 0; i < tavernChallengeList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, tavernChallengeList_.get(i));
+          .computeMessageSize(7, tavernChallengeList_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -225,7 +171,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
 
       if (!getTavernChallengeListList()
           .equals(other.getTavernChallengeListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -240,7 +186,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         hash = (37 * hash) + TAVERN_CHALLENGE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTavernChallengeListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -289,11 +235,13 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.GCGTCTavernChallengeDataNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.GCGTCTavernChallengeDataNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -337,8 +285,8 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7777
-     * Obf: LLKPACFPMLG
+     * CmdId: 7414
+     * Name: DIAAKFMAGEI
      * </pre>
      *
      * Protobuf type {@code GCGTCTavernChallengeDataNotify}
@@ -362,29 +310,25 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.GCGTCTavernChallengeDataNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getTavernChallengeListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         if (tavernChallengeListBuilder_ == null) {
           tavernChallengeList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          tavernChallengeList_ = null;
           tavernChallengeListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -411,7 +355,13 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.GCGTCTavernChallengeDataNotify buildPartial() {
         emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.GCGTCTavernChallengeDataNotify result = new emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.GCGTCTavernChallengeDataNotify(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.GCGTCTavernChallengeDataNotify result) {
         if (tavernChallengeListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             tavernChallengeList_ = java.util.Collections.unmodifiableList(tavernChallengeList_);
@@ -421,8 +371,10 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         } else {
           result.tavernChallengeList_ = tavernChallengeListBuilder_.build();
         }
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.GCGTCTavernChallengeDataNotify result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -495,7 +447,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -510,17 +462,43 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.GCGTCTavernChallengeDataNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 58: {
+                emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.parser(),
+                        extensionRegistry);
+                if (tavernChallengeListBuilder_ == null) {
+                  ensureTavernChallengeListIsMutable();
+                  tavernChallengeList_.add(m);
+                } else {
+                  tavernChallengeListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 58
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.GCGTCTavernChallengeDataNotifyOuterClass.GCGTCTavernChallengeDataNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -538,7 +516,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
           emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData, emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder, emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeDataOrBuilder> tavernChallengeListBuilder_;
 
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData> getTavernChallengeListList() {
         if (tavernChallengeListBuilder_ == null) {
@@ -548,7 +526,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public int getTavernChallengeListCount() {
         if (tavernChallengeListBuilder_ == null) {
@@ -558,7 +536,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData getTavernChallengeList(int index) {
         if (tavernChallengeListBuilder_ == null) {
@@ -568,7 +546,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public Builder setTavernChallengeList(
           int index, emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData value) {
@@ -585,7 +563,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public Builder setTavernChallengeList(
           int index, emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder builderForValue) {
@@ -599,7 +577,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public Builder addTavernChallengeList(emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData value) {
         if (tavernChallengeListBuilder_ == null) {
@@ -615,7 +593,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public Builder addTavernChallengeList(
           int index, emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData value) {
@@ -632,7 +610,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public Builder addTavernChallengeList(
           emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder builderForValue) {
@@ -646,7 +624,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public Builder addTavernChallengeList(
           int index, emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder builderForValue) {
@@ -660,7 +638,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public Builder addAllTavernChallengeList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData> values) {
@@ -675,7 +653,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public Builder clearTavernChallengeList() {
         if (tavernChallengeListBuilder_ == null) {
@@ -688,7 +666,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public Builder removeTavernChallengeList(int index) {
         if (tavernChallengeListBuilder_ == null) {
@@ -701,14 +679,14 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder getTavernChallengeListBuilder(
           int index) {
         return getTavernChallengeListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeDataOrBuilder getTavernChallengeListOrBuilder(
           int index) {
@@ -718,7 +696,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeDataOrBuilder> 
            getTavernChallengeListOrBuilderList() {
@@ -729,14 +707,14 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder addTavernChallengeListBuilder() {
         return getTavernChallengeListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder addTavernChallengeListBuilder(
           int index) {
@@ -744,7 +722,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
             index, emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 4;</code>
+       * <code>repeated .GCGTCTavernChallengeData tavern_challenge_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGTCTavernChallengeDataOuterClass.GCGTCTavernChallengeData.Builder> 
            getTavernChallengeListBuilderList() {
@@ -797,7 +775,18 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GCGTCTavernChallengeDataNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -834,7 +823,7 @@ public final class GCGTCTavernChallengeDataNotifyOuterClass {
       "\n$GCGTCTavernChallengeDataNotify.proto\032\036" +
       "GCGTCTavernChallengeData.proto\"Z\n\036GCGTCT" +
       "avernChallengeDataNotify\0228\n\025tavern_chall" +
-      "enge_list\030\004 \003(\0132\031.GCGTCTavernChallengeDa" +
+      "enge_list\030\007 \003(\0132\031.GCGTCTavernChallengeDa" +
       "taB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -38,7 +38,7 @@ public final class FishtankFishInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: EMABGGFKFDB
+   * Name: GNBJGEJCCJN
    * </pre>
    *
    * Protobuf type {@code FishtankFishInfo}
@@ -62,63 +62,6 @@ public final class FishtankFishInfoOuterClass {
       return new FishtankFishInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private FishtankFishInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 13: {
-
-              fishDistanceFromWater_ = input.readFloat();
-              break;
-            }
-            case 21: {
-
-              fishScale_ = input.readFloat();
-              break;
-            }
-            case 29: {
-
-              initialRotationY_ = input.readFloat();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.FishtankFishInfoOuterClass.internal_static_FishtankFishInfo_descriptor;
@@ -133,7 +76,7 @@ public final class FishtankFishInfoOuterClass {
     }
 
     public static final int FISH_DISTANCE_FROM_WATER_FIELD_NUMBER = 1;
-    private float fishDistanceFromWater_;
+    private float fishDistanceFromWater_ = 0F;
     /**
      * <code>float fish_distance_from_water = 1;</code>
      * @return The fishDistanceFromWater.
@@ -144,7 +87,7 @@ public final class FishtankFishInfoOuterClass {
     }
 
     public static final int FISH_SCALE_FIELD_NUMBER = 2;
-    private float fishScale_;
+    private float fishScale_ = 0F;
     /**
      * <code>float fish_scale = 2;</code>
      * @return The fishScale.
@@ -155,7 +98,7 @@ public final class FishtankFishInfoOuterClass {
     }
 
     public static final int INITIAL_ROTATION_Y_FIELD_NUMBER = 3;
-    private float initialRotationY_;
+    private float initialRotationY_ = 0F;
     /**
      * <code>float initial_rotation_y = 3;</code>
      * @return The initialRotationY.
@@ -179,16 +122,16 @@ public final class FishtankFishInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (fishDistanceFromWater_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(fishDistanceFromWater_) != 0) {
         output.writeFloat(1, fishDistanceFromWater_);
       }
-      if (fishScale_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(fishScale_) != 0) {
         output.writeFloat(2, fishScale_);
       }
-      if (initialRotationY_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(initialRotationY_) != 0) {
         output.writeFloat(3, initialRotationY_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -197,19 +140,19 @@ public final class FishtankFishInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (fishDistanceFromWater_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(fishDistanceFromWater_) != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(1, fishDistanceFromWater_);
       }
-      if (fishScale_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(fishScale_) != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(2, fishScale_);
       }
-      if (initialRotationY_ != 0F) {
+      if (java.lang.Float.floatToRawIntBits(initialRotationY_) != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(3, initialRotationY_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -233,7 +176,7 @@ public final class FishtankFishInfoOuterClass {
       if (java.lang.Float.floatToIntBits(getInitialRotationY())
           != java.lang.Float.floatToIntBits(
               other.getInitialRotationY())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -253,7 +196,7 @@ public final class FishtankFishInfoOuterClass {
       hash = (37 * hash) + INITIAL_ROTATION_Y_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getInitialRotationY());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -302,11 +245,13 @@ public final class FishtankFishInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -350,7 +295,7 @@ public final class FishtankFishInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: EMABGGFKFDB
+     * Name: GNBJGEJCCJN
      * </pre>
      *
      * Protobuf type {@code FishtankFishInfo}
@@ -374,28 +319,21 @@ public final class FishtankFishInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         fishDistanceFromWater_ = 0F;
-
         fishScale_ = 0F;
-
         initialRotationY_ = 0F;
-
         return this;
       }
 
@@ -422,11 +360,22 @@ public final class FishtankFishInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo buildPartial() {
         emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo result = new emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo(this);
-        result.fishDistanceFromWater_ = fishDistanceFromWater_;
-        result.fishScale_ = fishScale_;
-        result.initialRotationY_ = initialRotationY_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.fishDistanceFromWater_ = fishDistanceFromWater_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.fishScale_ = fishScale_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.initialRotationY_ = initialRotationY_;
+        }
       }
 
       @java.lang.Override
@@ -482,7 +431,7 @@ public final class FishtankFishInfoOuterClass {
         if (other.getInitialRotationY() != 0F) {
           setInitialRotationY(other.getInitialRotationY());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -497,19 +446,48 @@ public final class FishtankFishInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 13: {
+                fishDistanceFromWater_ = input.readFloat();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 13
+              case 21: {
+                fishScale_ = input.readFloat();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 21
+              case 29: {
+                initialRotationY_ = input.readFloat();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 29
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.FishtankFishInfoOuterClass.FishtankFishInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private float fishDistanceFromWater_ ;
       /**
@@ -526,8 +504,9 @@ public final class FishtankFishInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setFishDistanceFromWater(float value) {
-        
+
         fishDistanceFromWater_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -536,7 +515,7 @@ public final class FishtankFishInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearFishDistanceFromWater() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         fishDistanceFromWater_ = 0F;
         onChanged();
         return this;
@@ -557,8 +536,9 @@ public final class FishtankFishInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setFishScale(float value) {
-        
+
         fishScale_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -567,7 +547,7 @@ public final class FishtankFishInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearFishScale() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         fishScale_ = 0F;
         onChanged();
         return this;
@@ -588,8 +568,9 @@ public final class FishtankFishInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setInitialRotationY(float value) {
-        
+
         initialRotationY_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -598,7 +579,7 @@ public final class FishtankFishInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearInitialRotationY() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         initialRotationY_ = 0F;
         onChanged();
         return this;
@@ -636,7 +617,18 @@ public final class FishtankFishInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new FishtankFishInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

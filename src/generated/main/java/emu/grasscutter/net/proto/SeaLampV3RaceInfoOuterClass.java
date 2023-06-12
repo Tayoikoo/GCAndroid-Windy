@@ -19,32 +19,32 @@ public final class SeaLampV3RaceInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo> 
         getLevelInfoListList();
     /**
-     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
      */
     emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo getLevelInfoList(int index);
     /**
-     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfoOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
      */
     emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfoOrBuilder getLevelInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * Obf: MBDDHEHCMGF
+   * Name: HLPOLJHCJGP
    * </pre>
    *
    * Protobuf type {@code SeaLampV3RaceInfo}
@@ -69,61 +69,6 @@ public final class SeaLampV3RaceInfoOuterClass {
       return new SeaLampV3RaceInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private SeaLampV3RaceInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 74: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              levelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          levelInfoList_ = java.util.Collections.unmodifiableList(levelInfoList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.internal_static_SeaLampV3RaceInfo_descriptor;
@@ -137,17 +82,18 @@ public final class SeaLampV3RaceInfoOuterClass {
               emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.SeaLampV3RaceInfo.class, emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.SeaLampV3RaceInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 9;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 6;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo> levelInfoList_;
     /**
-     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfoOrBuilder> 
@@ -155,21 +101,21 @@ public final class SeaLampV3RaceInfoOuterClass {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+     * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfoOrBuilder getLevelInfoListOrBuilder(
@@ -192,9 +138,9 @@ public final class SeaLampV3RaceInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(9, levelInfoList_.get(i));
+        output.writeMessage(6, levelInfoList_.get(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -205,9 +151,9 @@ public final class SeaLampV3RaceInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, levelInfoList_.get(i));
+          .computeMessageSize(6, levelInfoList_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -224,7 +170,7 @@ public final class SeaLampV3RaceInfoOuterClass {
 
       if (!getLevelInfoListList()
           .equals(other.getLevelInfoListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -239,7 +185,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         hash = (37 * hash) + LEVEL_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getLevelInfoListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -288,11 +234,13 @@ public final class SeaLampV3RaceInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.SeaLampV3RaceInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.SeaLampV3RaceInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -336,7 +284,7 @@ public final class SeaLampV3RaceInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: MBDDHEHCMGF
+     * Name: HLPOLJHCJGP
      * </pre>
      *
      * Protobuf type {@code SeaLampV3RaceInfo}
@@ -360,29 +308,25 @@ public final class SeaLampV3RaceInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.SeaLampV3RaceInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getLevelInfoListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         if (levelInfoListBuilder_ == null) {
           levelInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          levelInfoList_ = null;
           levelInfoListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -409,7 +353,13 @@ public final class SeaLampV3RaceInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.SeaLampV3RaceInfo buildPartial() {
         emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.SeaLampV3RaceInfo result = new emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.SeaLampV3RaceInfo(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.SeaLampV3RaceInfo result) {
         if (levelInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             levelInfoList_ = java.util.Collections.unmodifiableList(levelInfoList_);
@@ -419,8 +369,10 @@ public final class SeaLampV3RaceInfoOuterClass {
         } else {
           result.levelInfoList_ = levelInfoListBuilder_.build();
         }
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.SeaLampV3RaceInfo result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -493,7 +445,7 @@ public final class SeaLampV3RaceInfoOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -508,17 +460,43 @@ public final class SeaLampV3RaceInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.SeaLampV3RaceInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 50: {
+                emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo.parser(),
+                        extensionRegistry);
+                if (levelInfoListBuilder_ == null) {
+                  ensureLevelInfoListIsMutable();
+                  levelInfoList_.add(m);
+                } else {
+                  levelInfoListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 50
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.SeaLampV3RaceInfoOuterClass.SeaLampV3RaceInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -536,7 +514,7 @@ public final class SeaLampV3RaceInfoOuterClass {
           emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo, emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo.Builder, emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfoOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
@@ -546,7 +524,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -556,7 +534,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -566,7 +544,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo value) {
@@ -583,7 +561,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo.Builder builderForValue) {
@@ -597,7 +575,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public Builder addLevelInfoList(emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo value) {
         if (levelInfoListBuilder_ == null) {
@@ -613,7 +591,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo value) {
@@ -630,7 +608,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public Builder addLevelInfoList(
           emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo.Builder builderForValue) {
@@ -644,7 +622,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo.Builder builderForValue) {
@@ -658,7 +636,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public Builder addAllLevelInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo> values) {
@@ -673,7 +651,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -686,7 +664,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -699,14 +677,14 @@ public final class SeaLampV3RaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfoOrBuilder getLevelInfoListOrBuilder(
           int index) {
@@ -716,7 +694,7 @@ public final class SeaLampV3RaceInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfoOrBuilder> 
            getLevelInfoListOrBuilderList() {
@@ -727,14 +705,14 @@ public final class SeaLampV3RaceInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo.Builder addLevelInfoListBuilder(
           int index) {
@@ -742,7 +720,7 @@ public final class SeaLampV3RaceInfoOuterClass {
             index, emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 9;</code>
+       * <code>repeated .SeaLampV3RaceLevelInfo level_info_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SeaLampV3RaceLevelInfoOuterClass.SeaLampV3RaceLevelInfo.Builder> 
            getLevelInfoListBuilderList() {
@@ -795,7 +773,18 @@ public final class SeaLampV3RaceInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SeaLampV3RaceInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -831,7 +820,7 @@ public final class SeaLampV3RaceInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027SeaLampV3RaceInfo.proto\032\034SeaLampV3Race" +
       "LevelInfo.proto\"E\n\021SeaLampV3RaceInfo\0220\n\017" +
-      "level_info_list\030\t \003(\0132\027.SeaLampV3RaceLev" +
+      "level_info_list\030\006 \003(\0132\027.SeaLampV3RaceLev" +
       "elInfoB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };

@@ -19,18 +19,18 @@ public final class WorldPlayerDieNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.PlayerDieType die_type = 14;</code>
+     * <code>.PlayerDieType die_type = 15;</code>
      * @return The enum numeric value on the wire for dieType.
      */
     int getDieTypeValue();
     /**
-     * <code>.PlayerDieType die_type = 14;</code>
+     * <code>.PlayerDieType die_type = 15;</code>
      * @return The dieType.
      */
     emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType();
 
     /**
-     * <code>uint32 murderer_entity_id = 9;</code>
+     * <code>uint32 murderer_entity_id = 10;</code>
      * @return The murdererEntityId.
      */
     int getMurdererEntityId();
@@ -47,22 +47,22 @@ public final class WorldPlayerDieNotifyOuterClass {
     int getMonsterId();
 
     /**
-     * <code>uint32 gadget_id = 8;</code>
+     * <code>uint32 gadget_id = 7;</code>
      * @return Whether the gadgetId field is set.
      */
     boolean hasGadgetId();
     /**
-     * <code>uint32 gadget_id = 8;</code>
+     * <code>uint32 gadget_id = 7;</code>
      * @return The gadgetId.
      */
     int getGadgetId();
 
-    public emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.WorldPlayerDieNotify.EntityCase getEntityCase();
+    emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.WorldPlayerDieNotify.EntityCase getEntityCase();
   }
   /**
    * <pre>
-   * CmdId: 214
-   * Obf: BNHIPBPNGMA
+   * CmdId: 279
+   * Name: GKOJHPIPBHO
    * </pre>
    *
    * Protobuf type {@code WorldPlayerDieNotify}
@@ -87,69 +87,6 @@ public final class WorldPlayerDieNotifyOuterClass {
       return new WorldPlayerDieNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private WorldPlayerDieNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 16: {
-              entityCase_ = 2;
-              entity_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-              entityCase_ = 8;
-              entity_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              murdererEntityId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-              int rawValue = input.readEnum();
-
-              dieType_ = rawValue;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.internal_static_WorldPlayerDieNotify_descriptor;
@@ -164,12 +101,13 @@ public final class WorldPlayerDieNotifyOuterClass {
     }
 
     private int entityCase_ = 0;
+    @SuppressWarnings("serial")
     private java.lang.Object entity_;
     public enum EntityCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
       MONSTER_ID(2),
-      GADGET_ID(8),
+      GADGET_ID(7),
       ENTITY_NOT_SET(0);
       private final int value;
       private EntityCase(int value) {
@@ -188,7 +126,7 @@ public final class WorldPlayerDieNotifyOuterClass {
       public static EntityCase forNumber(int value) {
         switch (value) {
           case 2: return MONSTER_ID;
-          case 8: return GADGET_ID;
+          case 7: return GADGET_ID;
           case 0: return ENTITY_NOT_SET;
           default: return null;
         }
@@ -204,29 +142,28 @@ public final class WorldPlayerDieNotifyOuterClass {
           entityCase_);
     }
 
-    public static final int DIE_TYPE_FIELD_NUMBER = 14;
-    private int dieType_;
+    public static final int DIE_TYPE_FIELD_NUMBER = 15;
+    private int dieType_ = 0;
     /**
-     * <code>.PlayerDieType die_type = 14;</code>
+     * <code>.PlayerDieType die_type = 15;</code>
      * @return The enum numeric value on the wire for dieType.
      */
     @java.lang.Override public int getDieTypeValue() {
       return dieType_;
     }
     /**
-     * <code>.PlayerDieType die_type = 14;</code>
+     * <code>.PlayerDieType die_type = 15;</code>
      * @return The dieType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType result = emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.valueOf(dieType_);
+      emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType result = emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.forNumber(dieType_);
       return result == null ? emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.UNRECOGNIZED : result;
     }
 
-    public static final int MURDERER_ENTITY_ID_FIELD_NUMBER = 9;
-    private int murdererEntityId_;
+    public static final int MURDERER_ENTITY_ID_FIELD_NUMBER = 10;
+    private int murdererEntityId_ = 0;
     /**
-     * <code>uint32 murderer_entity_id = 9;</code>
+     * <code>uint32 murderer_entity_id = 10;</code>
      * @return The murdererEntityId.
      */
     @java.lang.Override
@@ -255,22 +192,22 @@ public final class WorldPlayerDieNotifyOuterClass {
       return 0;
     }
 
-    public static final int GADGET_ID_FIELD_NUMBER = 8;
+    public static final int GADGET_ID_FIELD_NUMBER = 7;
     /**
-     * <code>uint32 gadget_id = 8;</code>
+     * <code>uint32 gadget_id = 7;</code>
      * @return Whether the gadgetId field is set.
      */
     @java.lang.Override
     public boolean hasGadgetId() {
-      return entityCase_ == 8;
+      return entityCase_ == 7;
     }
     /**
-     * <code>uint32 gadget_id = 8;</code>
+     * <code>uint32 gadget_id = 7;</code>
      * @return The gadgetId.
      */
     @java.lang.Override
     public int getGadgetId() {
-      if (entityCase_ == 8) {
+      if (entityCase_ == 7) {
         return (java.lang.Integer) entity_;
       }
       return 0;
@@ -294,17 +231,17 @@ public final class WorldPlayerDieNotifyOuterClass {
         output.writeUInt32(
             2, (int)((java.lang.Integer) entity_));
       }
-      if (entityCase_ == 8) {
+      if (entityCase_ == 7) {
         output.writeUInt32(
-            8, (int)((java.lang.Integer) entity_));
+            7, (int)((java.lang.Integer) entity_));
       }
       if (murdererEntityId_ != 0) {
-        output.writeUInt32(9, murdererEntityId_);
+        output.writeUInt32(10, murdererEntityId_);
       }
       if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
-        output.writeEnum(14, dieType_);
+        output.writeEnum(15, dieType_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -318,20 +255,20 @@ public final class WorldPlayerDieNotifyOuterClass {
           .computeUInt32Size(
               2, (int)((java.lang.Integer) entity_));
       }
-      if (entityCase_ == 8) {
+      if (entityCase_ == 7) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(
-              8, (int)((java.lang.Integer) entity_));
+              7, (int)((java.lang.Integer) entity_));
       }
       if (murdererEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, murdererEntityId_);
+          .computeUInt32Size(10, murdererEntityId_);
       }
       if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, dieType_);
+          .computeEnumSize(15, dieType_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -355,14 +292,14 @@ public final class WorldPlayerDieNotifyOuterClass {
           if (getMonsterId()
               != other.getMonsterId()) return false;
           break;
-        case 8:
+        case 7:
           if (getGadgetId()
               != other.getGadgetId()) return false;
           break;
         case 0:
         default:
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -382,14 +319,14 @@ public final class WorldPlayerDieNotifyOuterClass {
           hash = (37 * hash) + MONSTER_ID_FIELD_NUMBER;
           hash = (53 * hash) + getMonsterId();
           break;
-        case 8:
+        case 7:
           hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
           hash = (53 * hash) + getGadgetId();
           break;
         case 0:
         default:
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -438,11 +375,13 @@ public final class WorldPlayerDieNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.WorldPlayerDieNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.WorldPlayerDieNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -486,8 +425,8 @@ public final class WorldPlayerDieNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 214
-     * Obf: BNHIPBPNGMA
+     * CmdId: 279
+     * Name: GKOJHPIPBHO
      * </pre>
      *
      * Protobuf type {@code WorldPlayerDieNotify}
@@ -511,26 +450,20 @@ public final class WorldPlayerDieNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.WorldPlayerDieNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         dieType_ = 0;
-
         murdererEntityId_ = 0;
-
         entityCase_ = 0;
         entity_ = null;
         return this;
@@ -559,17 +492,25 @@ public final class WorldPlayerDieNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.WorldPlayerDieNotify buildPartial() {
         emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.WorldPlayerDieNotify result = new emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.WorldPlayerDieNotify(this);
-        result.dieType_ = dieType_;
-        result.murdererEntityId_ = murdererEntityId_;
-        if (entityCase_ == 2) {
-          result.entity_ = entity_;
-        }
-        if (entityCase_ == 8) {
-          result.entity_ = entity_;
-        }
-        result.entityCase_ = entityCase_;
+        if (bitField0_ != 0) { buildPartial0(result); }
+        buildPartialOneofs(result);
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.WorldPlayerDieNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.dieType_ = dieType_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.murdererEntityId_ = murdererEntityId_;
+        }
+      }
+
+      private void buildPartialOneofs(emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.WorldPlayerDieNotify result) {
+        result.entityCase_ = entityCase_;
+        result.entity_ = this.entity_;
       }
 
       @java.lang.Override
@@ -635,7 +576,7 @@ public final class WorldPlayerDieNotifyOuterClass {
             break;
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -650,17 +591,50 @@ public final class WorldPlayerDieNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.WorldPlayerDieNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 16: {
+                entity_ = input.readUInt32();
+                entityCase_ = 2;
+                break;
+              } // case 16
+              case 56: {
+                entity_ = input.readUInt32();
+                entityCase_ = 7;
+                break;
+              } // case 56
+              case 80: {
+                murdererEntityId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 80
+              case 120: {
+                dieType_ = input.readEnum();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.WorldPlayerDieNotifyOuterClass.WorldPlayerDieNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int entityCase_ = 0;
@@ -678,38 +652,38 @@ public final class WorldPlayerDieNotifyOuterClass {
         return this;
       }
 
+      private int bitField0_;
 
       private int dieType_ = 0;
       /**
-       * <code>.PlayerDieType die_type = 14;</code>
+       * <code>.PlayerDieType die_type = 15;</code>
        * @return The enum numeric value on the wire for dieType.
        */
       @java.lang.Override public int getDieTypeValue() {
         return dieType_;
       }
       /**
-       * <code>.PlayerDieType die_type = 14;</code>
+       * <code>.PlayerDieType die_type = 15;</code>
        * @param value The enum numeric value on the wire for dieType to set.
        * @return This builder for chaining.
        */
       public Builder setDieTypeValue(int value) {
-        
         dieType_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>.PlayerDieType die_type = 14;</code>
+       * <code>.PlayerDieType die_type = 15;</code>
        * @return The dieType.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType result = emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.valueOf(dieType_);
+        emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType result = emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.forNumber(dieType_);
         return result == null ? emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.PlayerDieType die_type = 14;</code>
+       * <code>.PlayerDieType die_type = 15;</code>
        * @param value The dieType to set.
        * @return This builder for chaining.
        */
@@ -717,17 +691,17 @@ public final class WorldPlayerDieNotifyOuterClass {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+        bitField0_ |= 0x00000001;
         dieType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.PlayerDieType die_type = 14;</code>
+       * <code>.PlayerDieType die_type = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearDieType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         dieType_ = 0;
         onChanged();
         return this;
@@ -735,7 +709,7 @@ public final class WorldPlayerDieNotifyOuterClass {
 
       private int murdererEntityId_ ;
       /**
-       * <code>uint32 murderer_entity_id = 9;</code>
+       * <code>uint32 murderer_entity_id = 10;</code>
        * @return The murdererEntityId.
        */
       @java.lang.Override
@@ -743,22 +717,23 @@ public final class WorldPlayerDieNotifyOuterClass {
         return murdererEntityId_;
       }
       /**
-       * <code>uint32 murderer_entity_id = 9;</code>
+       * <code>uint32 murderer_entity_id = 10;</code>
        * @param value The murdererEntityId to set.
        * @return This builder for chaining.
        */
       public Builder setMurdererEntityId(int value) {
-        
+
         murdererEntityId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 murderer_entity_id = 9;</code>
+       * <code>uint32 murderer_entity_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearMurdererEntityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         murdererEntityId_ = 0;
         onChanged();
         return this;
@@ -787,6 +762,7 @@ public final class WorldPlayerDieNotifyOuterClass {
        * @return This builder for chaining.
        */
       public Builder setMonsterId(int value) {
+
         entityCase_ = 2;
         entity_ = value;
         onChanged();
@@ -806,39 +782,40 @@ public final class WorldPlayerDieNotifyOuterClass {
       }
 
       /**
-       * <code>uint32 gadget_id = 8;</code>
+       * <code>uint32 gadget_id = 7;</code>
        * @return Whether the gadgetId field is set.
        */
       public boolean hasGadgetId() {
-        return entityCase_ == 8;
+        return entityCase_ == 7;
       }
       /**
-       * <code>uint32 gadget_id = 8;</code>
+       * <code>uint32 gadget_id = 7;</code>
        * @return The gadgetId.
        */
       public int getGadgetId() {
-        if (entityCase_ == 8) {
+        if (entityCase_ == 7) {
           return (java.lang.Integer) entity_;
         }
         return 0;
       }
       /**
-       * <code>uint32 gadget_id = 8;</code>
+       * <code>uint32 gadget_id = 7;</code>
        * @param value The gadgetId to set.
        * @return This builder for chaining.
        */
       public Builder setGadgetId(int value) {
-        entityCase_ = 8;
+
+        entityCase_ = 7;
         entity_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 gadget_id = 8;</code>
+       * <code>uint32 gadget_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetId() {
-        if (entityCase_ == 8) {
+        if (entityCase_ == 7) {
           entityCase_ = 0;
           entity_ = null;
           onChanged();
@@ -878,7 +855,18 @@ public final class WorldPlayerDieNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new WorldPlayerDieNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -914,9 +902,9 @@ public final class WorldPlayerDieNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032WorldPlayerDieNotify.proto\032\023PlayerDieT" +
       "ype.proto\"\211\001\n\024WorldPlayerDieNotify\022 \n\010di" +
-      "e_type\030\016 \001(\0162\016.PlayerDieType\022\032\n\022murderer" +
-      "_entity_id\030\t \001(\r\022\024\n\nmonster_id\030\002 \001(\rH\000\022\023" +
-      "\n\tgadget_id\030\010 \001(\rH\000B\010\n\006entityB\033\n\031emu.gra" +
+      "e_type\030\017 \001(\0162\016.PlayerDieType\022\032\n\022murderer" +
+      "_entity_id\030\n \001(\r\022\024\n\nmonster_id\030\002 \001(\rH\000\022\023" +
+      "\n\tgadget_id\030\007 \001(\rH\000B\010\n\006entityB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

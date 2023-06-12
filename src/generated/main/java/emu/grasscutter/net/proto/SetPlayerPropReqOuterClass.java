@@ -19,33 +19,33 @@ public final class SetPlayerPropReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .PropValue prop_list = 15;</code>
+     * <code>repeated .PropValue prop_list = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.PropValueOuterClass.PropValue> 
         getPropListList();
     /**
-     * <code>repeated .PropValue prop_list = 15;</code>
+     * <code>repeated .PropValue prop_list = 10;</code>
      */
     emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropList(int index);
     /**
-     * <code>repeated .PropValue prop_list = 15;</code>
+     * <code>repeated .PropValue prop_list = 10;</code>
      */
     int getPropListCount();
     /**
-     * <code>repeated .PropValue prop_list = 15;</code>
+     * <code>repeated .PropValue prop_list = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder> 
         getPropListOrBuilderList();
     /**
-     * <code>repeated .PropValue prop_list = 15;</code>
+     * <code>repeated .PropValue prop_list = 10;</code>
      */
     emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder getPropListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 134
-   * Obf: GPOOEKBEBCI
+   * CmdId: 165
+   * Name: BBDFLDLMAFA
    * </pre>
    *
    * Protobuf type {@code SetPlayerPropReq}
@@ -70,61 +70,6 @@ public final class SetPlayerPropReqOuterClass {
       return new SetPlayerPropReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private SetPlayerPropReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 122: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                propList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PropValueOuterClass.PropValue>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              propList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.PropValueOuterClass.PropValue.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          propList_ = java.util.Collections.unmodifiableList(propList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.internal_static_SetPlayerPropReq_descriptor;
@@ -138,17 +83,18 @@ public final class SetPlayerPropReqOuterClass {
               emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq.class, emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq.Builder.class);
     }
 
-    public static final int PROP_LIST_FIELD_NUMBER = 15;
+    public static final int PROP_LIST_FIELD_NUMBER = 10;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.PropValueOuterClass.PropValue> propList_;
     /**
-     * <code>repeated .PropValue prop_list = 15;</code>
+     * <code>repeated .PropValue prop_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.PropValueOuterClass.PropValue> getPropListList() {
       return propList_;
     }
     /**
-     * <code>repeated .PropValue prop_list = 15;</code>
+     * <code>repeated .PropValue prop_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder> 
@@ -156,21 +102,21 @@ public final class SetPlayerPropReqOuterClass {
       return propList_;
     }
     /**
-     * <code>repeated .PropValue prop_list = 15;</code>
+     * <code>repeated .PropValue prop_list = 10;</code>
      */
     @java.lang.Override
     public int getPropListCount() {
       return propList_.size();
     }
     /**
-     * <code>repeated .PropValue prop_list = 15;</code>
+     * <code>repeated .PropValue prop_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropList(int index) {
       return propList_.get(index);
     }
     /**
-     * <code>repeated .PropValue prop_list = 15;</code>
+     * <code>repeated .PropValue prop_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder getPropListOrBuilder(
@@ -193,9 +139,9 @@ public final class SetPlayerPropReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < propList_.size(); i++) {
-        output.writeMessage(15, propList_.get(i));
+        output.writeMessage(10, propList_.get(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -206,9 +152,9 @@ public final class SetPlayerPropReqOuterClass {
       size = 0;
       for (int i = 0; i < propList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, propList_.get(i));
+          .computeMessageSize(10, propList_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -225,7 +171,7 @@ public final class SetPlayerPropReqOuterClass {
 
       if (!getPropListList()
           .equals(other.getPropListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -240,7 +186,7 @@ public final class SetPlayerPropReqOuterClass {
         hash = (37 * hash) + PROP_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getPropListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -289,11 +235,13 @@ public final class SetPlayerPropReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -337,8 +285,8 @@ public final class SetPlayerPropReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 134
-     * Obf: GPOOEKBEBCI
+     * CmdId: 165
+     * Name: BBDFLDLMAFA
      * </pre>
      *
      * Protobuf type {@code SetPlayerPropReq}
@@ -362,29 +310,25 @@ public final class SetPlayerPropReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getPropListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         if (propListBuilder_ == null) {
           propList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          propList_ = null;
           propListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -411,7 +355,13 @@ public final class SetPlayerPropReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq buildPartial() {
         emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq result = new emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq result) {
         if (propListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             propList_ = java.util.Collections.unmodifiableList(propList_);
@@ -421,8 +371,10 @@ public final class SetPlayerPropReqOuterClass {
         } else {
           result.propList_ = propListBuilder_.build();
         }
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -495,7 +447,7 @@ public final class SetPlayerPropReqOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -510,17 +462,43 @@ public final class SetPlayerPropReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 82: {
+                emu.grasscutter.net.proto.PropValueOuterClass.PropValue m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.PropValueOuterClass.PropValue.parser(),
+                        extensionRegistry);
+                if (propListBuilder_ == null) {
+                  ensurePropListIsMutable();
+                  propList_.add(m);
+                } else {
+                  propListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 82
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.SetPlayerPropReqOuterClass.SetPlayerPropReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -538,7 +516,7 @@ public final class SetPlayerPropReqOuterClass {
           emu.grasscutter.net.proto.PropValueOuterClass.PropValue, emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder, emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder> propListBuilder_;
 
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PropValueOuterClass.PropValue> getPropListList() {
         if (propListBuilder_ == null) {
@@ -548,7 +526,7 @@ public final class SetPlayerPropReqOuterClass {
         }
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public int getPropListCount() {
         if (propListBuilder_ == null) {
@@ -558,7 +536,7 @@ public final class SetPlayerPropReqOuterClass {
         }
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropList(int index) {
         if (propListBuilder_ == null) {
@@ -568,7 +546,7 @@ public final class SetPlayerPropReqOuterClass {
         }
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public Builder setPropList(
           int index, emu.grasscutter.net.proto.PropValueOuterClass.PropValue value) {
@@ -585,7 +563,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public Builder setPropList(
           int index, emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder builderForValue) {
@@ -599,7 +577,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public Builder addPropList(emu.grasscutter.net.proto.PropValueOuterClass.PropValue value) {
         if (propListBuilder_ == null) {
@@ -615,7 +593,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public Builder addPropList(
           int index, emu.grasscutter.net.proto.PropValueOuterClass.PropValue value) {
@@ -632,7 +610,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public Builder addPropList(
           emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder builderForValue) {
@@ -646,7 +624,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public Builder addPropList(
           int index, emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder builderForValue) {
@@ -660,7 +638,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public Builder addAllPropList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.PropValueOuterClass.PropValue> values) {
@@ -675,7 +653,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public Builder clearPropList() {
         if (propListBuilder_ == null) {
@@ -688,7 +666,7 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public Builder removePropList(int index) {
         if (propListBuilder_ == null) {
@@ -701,14 +679,14 @@ public final class SetPlayerPropReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder getPropListBuilder(
           int index) {
         return getPropListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder getPropListOrBuilder(
           int index) {
@@ -718,7 +696,7 @@ public final class SetPlayerPropReqOuterClass {
         }
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PropValueOuterClass.PropValueOrBuilder> 
            getPropListOrBuilderList() {
@@ -729,14 +707,14 @@ public final class SetPlayerPropReqOuterClass {
         }
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder addPropListBuilder() {
         return getPropListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.PropValueOuterClass.PropValue.getDefaultInstance());
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder addPropListBuilder(
           int index) {
@@ -744,7 +722,7 @@ public final class SetPlayerPropReqOuterClass {
             index, emu.grasscutter.net.proto.PropValueOuterClass.PropValue.getDefaultInstance());
       }
       /**
-       * <code>repeated .PropValue prop_list = 15;</code>
+       * <code>repeated .PropValue prop_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PropValueOuterClass.PropValue.Builder> 
            getPropListBuilderList() {
@@ -797,7 +775,18 @@ public final class SetPlayerPropReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SetPlayerPropReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -832,7 +821,7 @@ public final class SetPlayerPropReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026SetPlayerPropReq.proto\032\017PropValue.prot" +
-      "o\"1\n\020SetPlayerPropReq\022\035\n\tprop_list\030\017 \003(\013" +
+      "o\"1\n\020SetPlayerPropReq\022\035\n\tprop_list\030\n \003(\013" +
       "2\n.PropValueB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };

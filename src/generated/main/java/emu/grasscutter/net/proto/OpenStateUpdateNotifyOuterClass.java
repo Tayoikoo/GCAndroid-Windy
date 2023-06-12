@@ -19,11 +19,11 @@ public final class OpenStateUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
      */
     int getOpenStateMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
      */
     boolean containsOpenStateMap(
         int key);
@@ -34,28 +34,26 @@ public final class OpenStateUpdateNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getOpenStateMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getOpenStateMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
      */
-
     int getOpenStateMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
      */
-
     int getOpenStateMapOrThrow(
         int key);
   }
   /**
    * <pre>
-   * CmdId: 131
-   * Obf: NMDDJJCDOPG
+   * CmdId: 139
+   * Name: IAHGJJDFDOI
    * </pre>
    *
    * Protobuf type {@code OpenStateUpdateNotify}
@@ -79,62 +77,6 @@ public final class OpenStateUpdateNotifyOuterClass {
       return new OpenStateUpdateNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private OpenStateUpdateNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                openStateMap_ = com.google.protobuf.MapField.newMapField(
-                    OpenStateMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              openStateMap__ = input.readMessage(
-                  OpenStateMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              openStateMap_.getMutableMap().put(
-                  openStateMap__.getKey(), openStateMap__.getValue());
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.internal_static_OpenStateUpdateNotify_descriptor;
@@ -145,7 +87,7 @@ public final class OpenStateUpdateNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 1:
+        case 9:
           return internalGetOpenStateMap();
         default:
           throw new RuntimeException(
@@ -160,7 +102,7 @@ public final class OpenStateUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.OpenStateUpdateNotify.class, emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.OpenStateUpdateNotify.Builder.class);
     }
 
-    public static final int OPEN_STATE_MAP_FIELD_NUMBER = 1;
+    public static final int OPEN_STATE_MAP_FIELD_NUMBER = 9;
     private static final class OpenStateMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -172,6 +114,7 @@ public final class OpenStateUpdateNotifyOuterClass {
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
+    @SuppressWarnings("serial")
     private com.google.protobuf.MapField<
         java.lang.Integer, java.lang.Integer> openStateMap_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -182,18 +125,16 @@ public final class OpenStateUpdateNotifyOuterClass {
       }
       return openStateMap_;
     }
-
     public int getOpenStateMapCount() {
       return internalGetOpenStateMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
      */
-
     @java.lang.Override
     public boolean containsOpenStateMap(
         int key) {
-      
+
       return internalGetOpenStateMap().getMap().containsKey(key);
     }
     /**
@@ -205,34 +146,31 @@ public final class OpenStateUpdateNotifyOuterClass {
       return getOpenStateMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
      */
     @java.lang.Override
-
     public java.util.Map<java.lang.Integer, java.lang.Integer> getOpenStateMapMap() {
       return internalGetOpenStateMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
      */
     @java.lang.Override
-
     public int getOpenStateMapOrDefault(
         int key,
         int defaultValue) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
           internalGetOpenStateMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
      */
     @java.lang.Override
-
     public int getOpenStateMapOrThrow(
         int key) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
           internalGetOpenStateMap().getMap();
       if (!map.containsKey(key)) {
@@ -260,8 +198,8 @@ public final class OpenStateUpdateNotifyOuterClass {
           output,
           internalGetOpenStateMap(),
           OpenStateMapDefaultEntryHolder.defaultEntry,
-          1);
-      unknownFields.writeTo(output);
+          9);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -278,9 +216,9 @@ public final class OpenStateUpdateNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(1, openStateMap__);
+            .computeMessageSize(9, openStateMap__);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -297,7 +235,7 @@ public final class OpenStateUpdateNotifyOuterClass {
 
       if (!internalGetOpenStateMap().equals(
           other.internalGetOpenStateMap())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -312,7 +250,7 @@ public final class OpenStateUpdateNotifyOuterClass {
         hash = (37 * hash) + OPEN_STATE_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetOpenStateMap().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -361,11 +299,13 @@ public final class OpenStateUpdateNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.OpenStateUpdateNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.OpenStateUpdateNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -409,8 +349,8 @@ public final class OpenStateUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 131
-     * Obf: NMDDJJCDOPG
+     * CmdId: 139
+     * Name: IAHGJJDFDOI
      * </pre>
      *
      * Protobuf type {@code OpenStateUpdateNotify}
@@ -428,7 +368,7 @@ public final class OpenStateUpdateNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 1:
+          case 9:
             return internalGetOpenStateMap();
           default:
             throw new RuntimeException(
@@ -439,7 +379,7 @@ public final class OpenStateUpdateNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 1:
+          case 9:
             return internalGetMutableOpenStateMap();
           default:
             throw new RuntimeException(
@@ -456,22 +396,18 @@ public final class OpenStateUpdateNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.OpenStateUpdateNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         internalGetMutableOpenStateMap().clear();
         return this;
       }
@@ -499,11 +435,17 @@ public final class OpenStateUpdateNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.OpenStateUpdateNotify buildPartial() {
         emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.OpenStateUpdateNotify result = new emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.OpenStateUpdateNotify(this);
-        int from_bitField0_ = bitField0_;
-        result.openStateMap_ = internalGetOpenStateMap();
-        result.openStateMap_.makeImmutable();
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.OpenStateUpdateNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.openStateMap_ = internalGetOpenStateMap();
+          result.openStateMap_.makeImmutable();
+        }
       }
 
       @java.lang.Override
@@ -552,7 +494,8 @@ public final class OpenStateUpdateNotifyOuterClass {
         if (other == emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.OpenStateUpdateNotify.getDefaultInstance()) return this;
         internalGetMutableOpenStateMap().mergeFrom(
             other.internalGetOpenStateMap());
-        this.mergeUnknownFields(other.unknownFields);
+        bitField0_ |= 0x00000001;
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -567,17 +510,39 @@ public final class OpenStateUpdateNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.OpenStateUpdateNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 74: {
+                com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+                openStateMap__ = input.readMessage(
+                    OpenStateMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+                internalGetMutableOpenStateMap().getMutableMap().put(
+                    openStateMap__.getKey(), openStateMap__.getValue());
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 74
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.OpenStateUpdateNotifyOuterClass.OpenStateUpdateNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -585,7 +550,7 @@ public final class OpenStateUpdateNotifyOuterClass {
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> openStateMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetOpenStateMap() {
+          internalGetOpenStateMap() {
         if (openStateMap_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
               OpenStateMapDefaultEntryHolder.defaultEntry);
@@ -593,8 +558,7 @@ public final class OpenStateUpdateNotifyOuterClass {
         return openStateMap_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableOpenStateMap() {
-        onChanged();;
+          internalGetMutableOpenStateMap() {
         if (openStateMap_ == null) {
           openStateMap_ = com.google.protobuf.MapField.newMapField(
               OpenStateMapDefaultEntryHolder.defaultEntry);
@@ -602,20 +566,20 @@ public final class OpenStateUpdateNotifyOuterClass {
         if (!openStateMap_.isMutable()) {
           openStateMap_ = openStateMap_.copy();
         }
+        bitField0_ |= 0x00000001;
+        onChanged();
         return openStateMap_;
       }
-
       public int getOpenStateMapCount() {
         return internalGetOpenStateMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
        */
-
       @java.lang.Override
       public boolean containsOpenStateMap(
           int key) {
-        
+
         return internalGetOpenStateMap().getMap().containsKey(key);
       }
       /**
@@ -627,34 +591,31 @@ public final class OpenStateUpdateNotifyOuterClass {
         return getOpenStateMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
        */
       @java.lang.Override
-
       public java.util.Map<java.lang.Integer, java.lang.Integer> getOpenStateMapMap() {
         return internalGetOpenStateMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
        */
       @java.lang.Override
-
       public int getOpenStateMapOrDefault(
           int key,
           int defaultValue) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
             internalGetOpenStateMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
        */
       @java.lang.Override
-
       public int getOpenStateMapOrThrow(
           int key) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
             internalGetOpenStateMap().getMap();
         if (!map.containsKey(key)) {
@@ -662,19 +623,18 @@ public final class OpenStateUpdateNotifyOuterClass {
         }
         return map.get(key);
       }
-
       public Builder clearOpenStateMap() {
+        bitField0_ = (bitField0_ & ~0x00000001);
         internalGetMutableOpenStateMap().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
        */
-
       public Builder removeOpenStateMap(
           int key) {
-        
+
         internalGetMutableOpenStateMap().getMutableMap()
             .remove(key);
         return this;
@@ -684,29 +644,31 @@ public final class OpenStateUpdateNotifyOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableOpenStateMap() {
+          getMutableOpenStateMap() {
+        bitField0_ |= 0x00000001;
         return internalGetMutableOpenStateMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
        */
       public Builder putOpenStateMap(
           int key,
           int value) {
-        
-        
+
+
         internalGetMutableOpenStateMap().getMutableMap()
             .put(key, value);
+        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; open_state_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; open_state_map = 9;</code>
        */
-
       public Builder putAllOpenStateMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutableOpenStateMap().getMutableMap()
             .putAll(values);
+        bitField0_ |= 0x00000001;
         return this;
       }
       @java.lang.Override
@@ -742,7 +704,18 @@ public final class OpenStateUpdateNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new OpenStateUpdateNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -782,7 +755,7 @@ public final class OpenStateUpdateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033OpenStateUpdateNotify.proto\"\216\001\n\025OpenSt" +
-      "ateUpdateNotify\022@\n\016open_state_map\030\001 \003(\0132" +
+      "ateUpdateNotify\022@\n\016open_state_map\030\t \003(\0132" +
       "(.OpenStateUpdateNotify.OpenStateMapEntr" +
       "y\0323\n\021OpenStateMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005v" +
       "alue\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.pr" +

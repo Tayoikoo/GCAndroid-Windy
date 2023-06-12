@@ -19,7 +19,7 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_trial = 10;</code>
+     * <code>bool is_trial = 13;</code>
      * @return The isTrial.
      */
     boolean getIsTrial();
@@ -32,7 +32,7 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: MEOEEOOKNAA
+   * Name: KKGDPNEEALG
    * </pre>
    *
    * Protobuf type {@code CrystalLinkDungeonAvatarInfo}
@@ -56,58 +56,6 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
       return new CrystalLinkDungeonAvatarInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private CrystalLinkDungeonAvatarInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 80: {
-
-              isTrial_ = input.readBool();
-              break;
-            }
-            case 112: {
-
-              avatarGuid_ = input.readUInt64();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.internal_static_CrystalLinkDungeonAvatarInfo_descriptor;
@@ -121,10 +69,10 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
               emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.class, emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.Builder.class);
     }
 
-    public static final int IS_TRIAL_FIELD_NUMBER = 10;
-    private boolean isTrial_;
+    public static final int IS_TRIAL_FIELD_NUMBER = 13;
+    private boolean isTrial_ = false;
     /**
-     * <code>bool is_trial = 10;</code>
+     * <code>bool is_trial = 13;</code>
      * @return The isTrial.
      */
     @java.lang.Override
@@ -133,7 +81,7 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
     }
 
     public static final int AVATAR_GUID_FIELD_NUMBER = 14;
-    private long avatarGuid_;
+    private long avatarGuid_ = 0L;
     /**
      * <code>uint64 avatar_guid = 14;</code>
      * @return The avatarGuid.
@@ -158,12 +106,12 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isTrial_ != false) {
-        output.writeBool(10, isTrial_);
+        output.writeBool(13, isTrial_);
       }
       if (avatarGuid_ != 0L) {
         output.writeUInt64(14, avatarGuid_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -174,13 +122,13 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
       size = 0;
       if (isTrial_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isTrial_);
+          .computeBoolSize(13, isTrial_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(14, avatarGuid_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -199,7 +147,7 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
           != other.getIsTrial()) return false;
       if (getAvatarGuid()
           != other.getAvatarGuid()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -216,7 +164,7 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
       hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarGuid());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -265,11 +213,13 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -313,7 +263,7 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: MEOEEOOKNAA
+     * Name: KKGDPNEEALG
      * </pre>
      *
      * Protobuf type {@code CrystalLinkDungeonAvatarInfo}
@@ -337,26 +287,20 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         isTrial_ = false;
-
         avatarGuid_ = 0L;
-
         return this;
       }
 
@@ -383,10 +327,19 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo result = new emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo(this);
-        result.isTrial_ = isTrial_;
-        result.avatarGuid_ = avatarGuid_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.isTrial_ = isTrial_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.avatarGuid_ = avatarGuid_;
+        }
       }
 
       @java.lang.Override
@@ -439,7 +392,7 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
         if (other.getAvatarGuid() != 0L) {
           setAvatarGuid(other.getAvatarGuid());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -454,23 +407,47 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 104: {
+                isTrial_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 104
+              case 112: {
+                avatarGuid_ = input.readUInt64();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 112
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.CrystalLinkDungeonAvatarInfoOuterClass.CrystalLinkDungeonAvatarInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private boolean isTrial_ ;
       /**
-       * <code>bool is_trial = 10;</code>
+       * <code>bool is_trial = 13;</code>
        * @return The isTrial.
        */
       @java.lang.Override
@@ -478,22 +455,23 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
         return isTrial_;
       }
       /**
-       * <code>bool is_trial = 10;</code>
+       * <code>bool is_trial = 13;</code>
        * @param value The isTrial to set.
        * @return This builder for chaining.
        */
       public Builder setIsTrial(boolean value) {
-        
+
         isTrial_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_trial = 10;</code>
+       * <code>bool is_trial = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTrial() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         isTrial_ = false;
         onChanged();
         return this;
@@ -514,8 +492,9 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setAvatarGuid(long value) {
-        
+
         avatarGuid_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -524,7 +503,7 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         avatarGuid_ = 0L;
         onChanged();
         return this;
@@ -562,7 +541,18 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CrystalLinkDungeonAvatarInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -598,7 +588,7 @@ public final class CrystalLinkDungeonAvatarInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"CrystalLinkDungeonAvatarInfo.proto\"E\n\034" +
       "CrystalLinkDungeonAvatarInfo\022\020\n\010is_trial" +
-      "\030\n \001(\010\022\023\n\013avatar_guid\030\016 \001(\004B\033\n\031emu.grass" +
+      "\030\r \001(\010\022\023\n\013avatar_guid\030\016 \001(\004B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

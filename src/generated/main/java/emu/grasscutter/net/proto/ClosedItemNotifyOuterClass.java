@@ -19,17 +19,17 @@ public final class ClosedItemNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 item_id_list = 1;</code>
+     * <code>repeated uint32 item_id_list = 14;</code>
      * @return A list containing the itemIdList.
      */
     java.util.List<java.lang.Integer> getItemIdListList();
     /**
-     * <code>repeated uint32 item_id_list = 1;</code>
+     * <code>repeated uint32 item_id_list = 14;</code>
      * @return The count of itemIdList.
      */
     int getItemIdListCount();
     /**
-     * <code>repeated uint32 item_id_list = 1;</code>
+     * <code>repeated uint32 item_id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The itemIdList at the given index.
      */
@@ -37,8 +37,8 @@ public final class ClosedItemNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 647
-   * Obf: IHODBFNNEON
+   * CmdId: 691
+   * Name: GLJHANJIAPK
    * </pre>
    *
    * Protobuf type {@code ClosedItemNotify}
@@ -63,73 +63,6 @@ public final class ClosedItemNotifyOuterClass {
       return new ClosedItemNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ClosedItemNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                itemIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              itemIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 10: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                itemIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                itemIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          itemIdList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.internal_static_ClosedItemNotify_descriptor;
@@ -143,10 +76,11 @@ public final class ClosedItemNotifyOuterClass {
               emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.ClosedItemNotify.class, emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.ClosedItemNotify.Builder.class);
     }
 
-    public static final int ITEM_ID_LIST_FIELD_NUMBER = 1;
+    public static final int ITEM_ID_LIST_FIELD_NUMBER = 14;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList itemIdList_;
     /**
-     * <code>repeated uint32 item_id_list = 1;</code>
+     * <code>repeated uint32 item_id_list = 14;</code>
      * @return A list containing the itemIdList.
      */
     @java.lang.Override
@@ -155,14 +89,14 @@ public final class ClosedItemNotifyOuterClass {
       return itemIdList_;
     }
     /**
-     * <code>repeated uint32 item_id_list = 1;</code>
+     * <code>repeated uint32 item_id_list = 14;</code>
      * @return The count of itemIdList.
      */
     public int getItemIdListCount() {
       return itemIdList_.size();
     }
     /**
-     * <code>repeated uint32 item_id_list = 1;</code>
+     * <code>repeated uint32 item_id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The itemIdList at the given index.
      */
@@ -187,13 +121,13 @@ public final class ClosedItemNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getItemIdListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(itemIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < itemIdList_.size(); i++) {
         output.writeUInt32NoTag(itemIdList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -216,7 +150,7 @@ public final class ClosedItemNotifyOuterClass {
         }
         itemIdListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -233,7 +167,7 @@ public final class ClosedItemNotifyOuterClass {
 
       if (!getItemIdListList()
           .equals(other.getItemIdListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -248,7 +182,7 @@ public final class ClosedItemNotifyOuterClass {
         hash = (37 * hash) + ITEM_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getItemIdListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +231,13 @@ public final class ClosedItemNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.ClosedItemNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.ClosedItemNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,8 +281,8 @@ public final class ClosedItemNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 647
-     * Obf: IHODBFNNEON
+     * CmdId: 691
+     * Name: GLJHANJIAPK
      * </pre>
      *
      * Protobuf type {@code ClosedItemNotify}
@@ -370,24 +306,19 @@ public final class ClosedItemNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.ClosedItemNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         itemIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -414,14 +345,22 @@ public final class ClosedItemNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.ClosedItemNotify buildPartial() {
         emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.ClosedItemNotify result = new emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.ClosedItemNotify(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.ClosedItemNotify result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           itemIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.itemIdList_ = itemIdList_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.ClosedItemNotify result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -478,7 +417,7 @@ public final class ClosedItemNotifyOuterClass {
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -493,17 +432,46 @@ public final class ClosedItemNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.ClosedItemNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 112: {
+                int v = input.readUInt32();
+                ensureItemIdListIsMutable();
+                itemIdList_.addInt(v);
+                break;
+              } // case 112
+              case 114: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureItemIdListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  itemIdList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 114
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ClosedItemNotifyOuterClass.ClosedItemNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -513,10 +481,10 @@ public final class ClosedItemNotifyOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           itemIdList_ = mutableCopy(itemIdList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
-       * <code>repeated uint32 item_id_list = 1;</code>
+       * <code>repeated uint32 item_id_list = 14;</code>
        * @return A list containing the itemIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +493,14 @@ public final class ClosedItemNotifyOuterClass {
                  java.util.Collections.unmodifiableList(itemIdList_) : itemIdList_;
       }
       /**
-       * <code>repeated uint32 item_id_list = 1;</code>
+       * <code>repeated uint32 item_id_list = 14;</code>
        * @return The count of itemIdList.
        */
       public int getItemIdListCount() {
         return itemIdList_.size();
       }
       /**
-       * <code>repeated uint32 item_id_list = 1;</code>
+       * <code>repeated uint32 item_id_list = 14;</code>
        * @param index The index of the element to return.
        * @return The itemIdList at the given index.
        */
@@ -540,31 +508,33 @@ public final class ClosedItemNotifyOuterClass {
         return itemIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 item_id_list = 1;</code>
+       * <code>repeated uint32 item_id_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The itemIdList to set.
        * @return This builder for chaining.
        */
       public Builder setItemIdList(
           int index, int value) {
+
         ensureItemIdListIsMutable();
         itemIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 1;</code>
+       * <code>repeated uint32 item_id_list = 14;</code>
        * @param value The itemIdList to add.
        * @return This builder for chaining.
        */
       public Builder addItemIdList(int value) {
+
         ensureItemIdListIsMutable();
         itemIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 1;</code>
+       * <code>repeated uint32 item_id_list = 14;</code>
        * @param values The itemIdList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +547,7 @@ public final class ClosedItemNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 1;</code>
+       * <code>repeated uint32 item_id_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemIdList() {
@@ -619,7 +589,18 @@ public final class ClosedItemNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ClosedItemNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -654,7 +635,7 @@ public final class ClosedItemNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026ClosedItemNotify.proto\"(\n\020ClosedItemNo" +
-      "tify\022\024\n\014item_id_list\030\001 \003(\rB\033\n\031emu.grassc" +
+      "tify\022\024\n\014item_id_list\030\016 \003(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

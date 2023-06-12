@@ -16,7 +16,7 @@ public final class AbilityScalarTypeOuterClass {
   }
   /**
    * <pre>
-   * Obf: EBCOKIIELIE
+   * Name: OOCPHEKKCJH
    * </pre>
    *
    * Protobuf enum {@code AbilityScalarType}

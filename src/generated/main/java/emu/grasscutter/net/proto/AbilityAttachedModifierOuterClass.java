@@ -50,7 +50,7 @@ public final class AbilityAttachedModifierOuterClass {
   }
   /**
    * <pre>
-   * Obf: KLMOHHKFHDB
+   * Name: ECIBJPBMCPH
    * </pre>
    *
    * Protobuf type {@code AbilityAttachedModifier}
@@ -74,73 +74,6 @@ public final class AbilityAttachedModifierOuterClass {
       return new AbilityAttachedModifier();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private AbilityAttachedModifier(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              isInvalid_ = input.readBool();
-              break;
-            }
-            case 16: {
-
-              ownerEntityId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              instancedModifierId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              isServerbuffModifier_ = input.readBool();
-              break;
-            }
-            case 40: {
-
-              attachNameHash_ = input.readInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.internal_static_AbilityAttachedModifier_descriptor;
@@ -155,7 +88,7 @@ public final class AbilityAttachedModifierOuterClass {
     }
 
     public static final int IS_INVALID_FIELD_NUMBER = 1;
-    private boolean isInvalid_;
+    private boolean isInvalid_ = false;
     /**
      * <code>bool is_invalid = 1;</code>
      * @return The isInvalid.
@@ -166,7 +99,7 @@ public final class AbilityAttachedModifierOuterClass {
     }
 
     public static final int OWNER_ENTITY_ID_FIELD_NUMBER = 2;
-    private int ownerEntityId_;
+    private int ownerEntityId_ = 0;
     /**
      * <code>uint32 owner_entity_id = 2;</code>
      * @return The ownerEntityId.
@@ -177,7 +110,7 @@ public final class AbilityAttachedModifierOuterClass {
     }
 
     public static final int INSTANCED_MODIFIER_ID_FIELD_NUMBER = 3;
-    private int instancedModifierId_;
+    private int instancedModifierId_ = 0;
     /**
      * <code>uint32 instanced_modifier_id = 3;</code>
      * @return The instancedModifierId.
@@ -188,7 +121,7 @@ public final class AbilityAttachedModifierOuterClass {
     }
 
     public static final int IS_SERVERBUFF_MODIFIER_FIELD_NUMBER = 4;
-    private boolean isServerbuffModifier_;
+    private boolean isServerbuffModifier_ = false;
     /**
      * <code>bool is_serverbuff_modifier = 4;</code>
      * @return The isServerbuffModifier.
@@ -199,7 +132,7 @@ public final class AbilityAttachedModifierOuterClass {
     }
 
     public static final int ATTACH_NAME_HASH_FIELD_NUMBER = 5;
-    private int attachNameHash_;
+    private int attachNameHash_ = 0;
     /**
      * <code>int32 attach_name_hash = 5;</code>
      * @return The attachNameHash.
@@ -238,7 +171,7 @@ public final class AbilityAttachedModifierOuterClass {
       if (attachNameHash_ != 0) {
         output.writeInt32(5, attachNameHash_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -267,7 +200,7 @@ public final class AbilityAttachedModifierOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(5, attachNameHash_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -292,7 +225,7 @@ public final class AbilityAttachedModifierOuterClass {
           != other.getIsServerbuffModifier()) return false;
       if (getAttachNameHash()
           != other.getAttachNameHash()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -315,7 +248,7 @@ public final class AbilityAttachedModifierOuterClass {
           getIsServerbuffModifier());
       hash = (37 * hash) + ATTACH_NAME_HASH_FIELD_NUMBER;
       hash = (53 * hash) + getAttachNameHash();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -364,11 +297,13 @@ public final class AbilityAttachedModifierOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -412,7 +347,7 @@ public final class AbilityAttachedModifierOuterClass {
     }
     /**
      * <pre>
-     * Obf: KLMOHHKFHDB
+     * Name: ECIBJPBMCPH
      * </pre>
      *
      * Protobuf type {@code AbilityAttachedModifier}
@@ -436,32 +371,23 @@ public final class AbilityAttachedModifierOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         isInvalid_ = false;
-
         ownerEntityId_ = 0;
-
         instancedModifierId_ = 0;
-
         isServerbuffModifier_ = false;
-
         attachNameHash_ = 0;
-
         return this;
       }
 
@@ -488,13 +414,28 @@ public final class AbilityAttachedModifierOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier buildPartial() {
         emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier result = new emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier(this);
-        result.isInvalid_ = isInvalid_;
-        result.ownerEntityId_ = ownerEntityId_;
-        result.instancedModifierId_ = instancedModifierId_;
-        result.isServerbuffModifier_ = isServerbuffModifier_;
-        result.attachNameHash_ = attachNameHash_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.isInvalid_ = isInvalid_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.ownerEntityId_ = ownerEntityId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.instancedModifierId_ = instancedModifierId_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.isServerbuffModifier_ = isServerbuffModifier_;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.attachNameHash_ = attachNameHash_;
+        }
       }
 
       @java.lang.Override
@@ -556,7 +497,7 @@ public final class AbilityAttachedModifierOuterClass {
         if (other.getAttachNameHash() != 0) {
           setAttachNameHash(other.getAttachNameHash());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -571,19 +512,58 @@ public final class AbilityAttachedModifierOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                isInvalid_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                ownerEntityId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 24: {
+                instancedModifierId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 32: {
+                isServerbuffModifier_ = input.readBool();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 32
+              case 40: {
+                attachNameHash_ = input.readInt32();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 40
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private boolean isInvalid_ ;
       /**
@@ -600,8 +580,9 @@ public final class AbilityAttachedModifierOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIsInvalid(boolean value) {
-        
+
         isInvalid_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -610,7 +591,7 @@ public final class AbilityAttachedModifierOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearIsInvalid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         isInvalid_ = false;
         onChanged();
         return this;
@@ -631,8 +612,9 @@ public final class AbilityAttachedModifierOuterClass {
        * @return This builder for chaining.
        */
       public Builder setOwnerEntityId(int value) {
-        
+
         ownerEntityId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -641,7 +623,7 @@ public final class AbilityAttachedModifierOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearOwnerEntityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         ownerEntityId_ = 0;
         onChanged();
         return this;
@@ -662,8 +644,9 @@ public final class AbilityAttachedModifierOuterClass {
        * @return This builder for chaining.
        */
       public Builder setInstancedModifierId(int value) {
-        
+
         instancedModifierId_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -672,7 +655,7 @@ public final class AbilityAttachedModifierOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearInstancedModifierId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         instancedModifierId_ = 0;
         onChanged();
         return this;
@@ -693,8 +676,9 @@ public final class AbilityAttachedModifierOuterClass {
        * @return This builder for chaining.
        */
       public Builder setIsServerbuffModifier(boolean value) {
-        
+
         isServerbuffModifier_ = value;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -703,7 +687,7 @@ public final class AbilityAttachedModifierOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearIsServerbuffModifier() {
-        
+        bitField0_ = (bitField0_ & ~0x00000008);
         isServerbuffModifier_ = false;
         onChanged();
         return this;
@@ -724,8 +708,9 @@ public final class AbilityAttachedModifierOuterClass {
        * @return This builder for chaining.
        */
       public Builder setAttachNameHash(int value) {
-        
+
         attachNameHash_ = value;
+        bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
@@ -734,7 +719,7 @@ public final class AbilityAttachedModifierOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearAttachNameHash() {
-        
+        bitField0_ = (bitField0_ & ~0x00000010);
         attachNameHash_ = 0;
         onChanged();
         return this;
@@ -772,7 +757,18 @@ public final class AbilityAttachedModifierOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AbilityAttachedModifier(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

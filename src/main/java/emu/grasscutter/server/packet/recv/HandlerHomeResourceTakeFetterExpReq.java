@@ -8,10 +8,11 @@ import emu.grasscutter.server.packet.send.PacketHomeResourceTakeFetterExpRsp;
 
 @Opcodes(PacketOpcodes.HomeResourceTakeFetterExpReq)
 public class HandlerHomeResourceTakeFetterExpReq extends PacketHandler {
+	
+	@Override
+	public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
 
-    @Override
-    public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
+		session.send(new PacketHomeResourceTakeFetterExpRsp(session.getPlayer()));
+	}
 
-        session.send(new PacketHomeResourceTakeFetterExpRsp(session.getPlayer()));
-    }
 }

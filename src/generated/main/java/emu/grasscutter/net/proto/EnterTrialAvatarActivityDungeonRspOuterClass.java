@@ -19,27 +19,27 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 12;</code>
-     * @return The activityId.
-     */
-    int getActivityId();
-
-    /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 trial_avatar_index_id = 8;</code>
+     * <code>uint32 trial_avatar_index_id = 15;</code>
      * @return The trialAvatarIndexId.
      */
     int getTrialAvatarIndexId();
+
+    /**
+     * <code>uint32 activity_id = 6;</code>
+     * @return The activityId.
+     */
+    int getActivityId();
   }
   /**
    * <pre>
-   * CmdId: 2170
-   * Obf: BIPJBPEAGIH
+   * CmdId: 2033
+   * Name: HJPEGJLNEKL
    * </pre>
    *
    * Protobuf type {@code EnterTrialAvatarActivityDungeonRsp}
@@ -63,63 +63,6 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
       return new EnterTrialAvatarActivityDungeonRsp();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private EnterTrialAvatarActivityDungeonRsp(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 24: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 64: {
-
-              trialAvatarIndexId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              activityId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.internal_static_EnterTrialAvatarActivityDungeonRsp_descriptor;
@@ -133,21 +76,10 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
               emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp.class, emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 12;
-    private int activityId_;
+    public static final int RETCODE_FIELD_NUMBER = 12;
+    private int retcode_ = 0;
     /**
-     * <code>uint32 activity_id = 12;</code>
-     * @return The activityId.
-     */
-    @java.lang.Override
-    public int getActivityId() {
-      return activityId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 3;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -155,15 +87,26 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
       return retcode_;
     }
 
-    public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 8;
-    private int trialAvatarIndexId_;
+    public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 15;
+    private int trialAvatarIndexId_ = 0;
     /**
-     * <code>uint32 trial_avatar_index_id = 8;</code>
+     * <code>uint32 trial_avatar_index_id = 15;</code>
      * @return The trialAvatarIndexId.
      */
     @java.lang.Override
     public int getTrialAvatarIndexId() {
       return trialAvatarIndexId_;
+    }
+
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 6;
+    private int activityId_ = 0;
+    /**
+     * <code>uint32 activity_id = 6;</code>
+     * @return The activityId.
+     */
+    @java.lang.Override
+    public int getActivityId() {
+      return activityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,16 +123,16 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (activityId_ != 0) {
+        output.writeUInt32(6, activityId_);
+      }
       if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
+        output.writeInt32(12, retcode_);
       }
       if (trialAvatarIndexId_ != 0) {
-        output.writeUInt32(8, trialAvatarIndexId_);
+        output.writeUInt32(15, trialAvatarIndexId_);
       }
-      if (activityId_ != 0) {
-        output.writeUInt32(12, activityId_);
-      }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -198,19 +141,19 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (activityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, activityId_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
+          .computeInt32Size(12, retcode_);
       }
       if (trialAvatarIndexId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, trialAvatarIndexId_);
+          .computeUInt32Size(15, trialAvatarIndexId_);
       }
-      if (activityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, activityId_);
-      }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -225,13 +168,13 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
       }
       emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp other = (emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp) obj;
 
-      if (getActivityId()
-          != other.getActivityId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getTrialAvatarIndexId()
           != other.getTrialAvatarIndexId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getActivityId()
+          != other.getActivityId()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -242,13 +185,13 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getActivityId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTrialAvatarIndexId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getActivityId();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +240,13 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,8 +290,8 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2170
-     * Obf: BIPJBPEAGIH
+     * CmdId: 2033
+     * Name: HJPEGJLNEKL
      * </pre>
      *
      * Protobuf type {@code EnterTrialAvatarActivityDungeonRsp}
@@ -370,28 +315,21 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
 
       // Construct using emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        activityId_ = 0;
-
+        bitField0_ = 0;
         retcode_ = 0;
-
         trialAvatarIndexId_ = 0;
-
+        activityId_ = 0;
         return this;
       }
 
@@ -418,11 +356,22 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp buildPartial() {
         emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp result = new emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp(this);
-        result.activityId_ = activityId_;
-        result.retcode_ = retcode_;
-        result.trialAvatarIndexId_ = trialAvatarIndexId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.retcode_ = retcode_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.trialAvatarIndexId_ = trialAvatarIndexId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.activityId_ = activityId_;
+        }
       }
 
       @java.lang.Override
@@ -469,16 +418,16 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp other) {
         if (other == emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp.getDefaultInstance()) return this;
-        if (other.getActivityId() != 0) {
-          setActivityId(other.getActivityId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
         if (other.getTrialAvatarIndexId() != 0) {
           setTrialAvatarIndexId(other.getTrialAvatarIndexId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getActivityId() != 0) {
+          setActivityId(other.getActivityId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -493,54 +442,52 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 48: {
+                activityId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 48
+              case 96: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 96
+              case 120: {
+                trialAvatarIndexId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonRspOuterClass.EnterTrialAvatarActivityDungeonRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int activityId_ ;
-      /**
-       * <code>uint32 activity_id = 12;</code>
-       * @return The activityId.
-       */
-      @java.lang.Override
-      public int getActivityId() {
-        return activityId_;
-      }
-      /**
-       * <code>uint32 activity_id = 12;</code>
-       * @param value The activityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setActivityId(int value) {
-        
-        activityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 activity_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearActivityId() {
-        
-        activityId_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -548,22 +495,23 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
       public Builder setRetcode(int value) {
-        
+
         retcode_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
         onChanged();
         return this;
@@ -571,7 +519,7 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
 
       private int trialAvatarIndexId_ ;
       /**
-       * <code>uint32 trial_avatar_index_id = 8;</code>
+       * <code>uint32 trial_avatar_index_id = 15;</code>
        * @return The trialAvatarIndexId.
        */
       @java.lang.Override
@@ -579,23 +527,56 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
         return trialAvatarIndexId_;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 8;</code>
+       * <code>uint32 trial_avatar_index_id = 15;</code>
        * @param value The trialAvatarIndexId to set.
        * @return This builder for chaining.
        */
       public Builder setTrialAvatarIndexId(int value) {
-        
+
         trialAvatarIndexId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 8;</code>
+       * <code>uint32 trial_avatar_index_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearTrialAvatarIndexId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         trialAvatarIndexId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int activityId_ ;
+      /**
+       * <code>uint32 activity_id = 6;</code>
+       * @return The activityId.
+       */
+      @java.lang.Override
+      public int getActivityId() {
+        return activityId_;
+      }
+      /**
+       * <code>uint32 activity_id = 6;</code>
+       * @param value The activityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setActivityId(int value) {
+
+        activityId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 activity_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearActivityId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        activityId_ = 0;
         onChanged();
         return this;
       }
@@ -632,7 +613,18 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new EnterTrialAvatarActivityDungeonRsp(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -668,8 +660,8 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n(EnterTrialAvatarActivityDungeonRsp.pro" +
       "to\"i\n\"EnterTrialAvatarActivityDungeonRsp" +
-      "\022\023\n\013activity_id\030\014 \001(\r\022\017\n\007retcode\030\003 \001(\005\022\035" +
-      "\n\025trial_avatar_index_id\030\010 \001(\rB\033\n\031emu.gra" +
+      "\022\017\n\007retcode\030\014 \001(\005\022\035\n\025trial_avatar_index_" +
+      "id\030\017 \001(\r\022\023\n\013activity_id\030\006 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +673,7 @@ public final class EnterTrialAvatarActivityDungeonRspOuterClass {
     internal_static_EnterTrialAvatarActivityDungeonRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EnterTrialAvatarActivityDungeonRsp_descriptor,
-        new java.lang.String[] { "ActivityId", "Retcode", "TrialAvatarIndexId", });
+        new java.lang.String[] { "Retcode", "TrialAvatarIndexId", "ActivityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

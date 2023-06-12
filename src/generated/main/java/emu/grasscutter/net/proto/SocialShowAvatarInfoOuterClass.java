@@ -38,7 +38,7 @@ public final class SocialShowAvatarInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: HFJBPBGJGNP
+   * Name: PKPGAPABGIN
    * </pre>
    *
    * Protobuf type {@code SocialShowAvatarInfo}
@@ -62,63 +62,6 @@ public final class SocialShowAvatarInfoOuterClass {
       return new SocialShowAvatarInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private SocialShowAvatarInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              avatarId_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              level_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              costumeId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.internal_static_SocialShowAvatarInfo_descriptor;
@@ -133,7 +76,7 @@ public final class SocialShowAvatarInfoOuterClass {
     }
 
     public static final int AVATAR_ID_FIELD_NUMBER = 1;
-    private int avatarId_;
+    private int avatarId_ = 0;
     /**
      * <code>uint32 avatar_id = 1;</code>
      * @return The avatarId.
@@ -144,7 +87,7 @@ public final class SocialShowAvatarInfoOuterClass {
     }
 
     public static final int LEVEL_FIELD_NUMBER = 2;
-    private int level_;
+    private int level_ = 0;
     /**
      * <code>uint32 level = 2;</code>
      * @return The level.
@@ -155,7 +98,7 @@ public final class SocialShowAvatarInfoOuterClass {
     }
 
     public static final int COSTUME_ID_FIELD_NUMBER = 3;
-    private int costumeId_;
+    private int costumeId_ = 0;
     /**
      * <code>uint32 costume_id = 3;</code>
      * @return The costumeId.
@@ -188,7 +131,7 @@ public final class SocialShowAvatarInfoOuterClass {
       if (costumeId_ != 0) {
         output.writeUInt32(3, costumeId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -209,7 +152,7 @@ public final class SocialShowAvatarInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, costumeId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -230,7 +173,7 @@ public final class SocialShowAvatarInfoOuterClass {
           != other.getLevel()) return false;
       if (getCostumeId()
           != other.getCostumeId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -247,7 +190,7 @@ public final class SocialShowAvatarInfoOuterClass {
       hash = (53 * hash) + getLevel();
       hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCostumeId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -296,11 +239,13 @@ public final class SocialShowAvatarInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -344,7 +289,7 @@ public final class SocialShowAvatarInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: HFJBPBGJGNP
+     * Name: PKPGAPABGIN
      * </pre>
      *
      * Protobuf type {@code SocialShowAvatarInfo}
@@ -368,28 +313,21 @@ public final class SocialShowAvatarInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         avatarId_ = 0;
-
         level_ = 0;
-
         costumeId_ = 0;
-
         return this;
       }
 
@@ -416,11 +354,22 @@ public final class SocialShowAvatarInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo result = new emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo(this);
-        result.avatarId_ = avatarId_;
-        result.level_ = level_;
-        result.costumeId_ = costumeId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.avatarId_ = avatarId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.level_ = level_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.costumeId_ = costumeId_;
+        }
       }
 
       @java.lang.Override
@@ -476,7 +425,7 @@ public final class SocialShowAvatarInfoOuterClass {
         if (other.getCostumeId() != 0) {
           setCostumeId(other.getCostumeId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -491,19 +440,48 @@ public final class SocialShowAvatarInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                avatarId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                level_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 24: {
+                costumeId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int avatarId_ ;
       /**
@@ -520,8 +498,9 @@ public final class SocialShowAvatarInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setAvatarId(int value) {
-        
+
         avatarId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -530,7 +509,7 @@ public final class SocialShowAvatarInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         avatarId_ = 0;
         onChanged();
         return this;
@@ -551,8 +530,9 @@ public final class SocialShowAvatarInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setLevel(int value) {
-        
+
         level_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -561,7 +541,7 @@ public final class SocialShowAvatarInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         level_ = 0;
         onChanged();
         return this;
@@ -582,8 +562,9 @@ public final class SocialShowAvatarInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setCostumeId(int value) {
-        
+
         costumeId_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -592,7 +573,7 @@ public final class SocialShowAvatarInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearCostumeId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         costumeId_ = 0;
         onChanged();
         return this;
@@ -630,7 +611,18 @@ public final class SocialShowAvatarInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SocialShowAvatarInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

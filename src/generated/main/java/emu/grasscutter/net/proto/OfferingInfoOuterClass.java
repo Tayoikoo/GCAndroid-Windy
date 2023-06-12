@@ -26,7 +26,7 @@ public final class OfferingInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: PKHMLMBDEPB
+   * Name: APJFIICJMBD
    * </pre>
    *
    * Protobuf type {@code OfferingInfo}
@@ -50,53 +50,6 @@ public final class OfferingInfoOuterClass {
       return new OfferingInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private OfferingInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              offeringId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.OfferingInfoOuterClass.internal_static_OfferingInfo_descriptor;
@@ -111,7 +64,7 @@ public final class OfferingInfoOuterClass {
     }
 
     public static final int OFFERING_ID_FIELD_NUMBER = 1;
-    private int offeringId_;
+    private int offeringId_ = 0;
     /**
      * <code>uint32 offering_id = 1;</code>
      * @return The offeringId.
@@ -138,7 +91,7 @@ public final class OfferingInfoOuterClass {
       if (offeringId_ != 0) {
         output.writeUInt32(1, offeringId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -151,7 +104,7 @@ public final class OfferingInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, offeringId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -168,7 +121,7 @@ public final class OfferingInfoOuterClass {
 
       if (getOfferingId()
           != other.getOfferingId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -181,7 +134,7 @@ public final class OfferingInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + OFFERING_ID_FIELD_NUMBER;
       hash = (53 * hash) + getOfferingId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -230,11 +183,13 @@ public final class OfferingInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.OfferingInfoOuterClass.OfferingInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.OfferingInfoOuterClass.OfferingInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -278,7 +233,7 @@ public final class OfferingInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: PKHMLMBDEPB
+     * Name: APJFIICJMBD
      * </pre>
      *
      * Protobuf type {@code OfferingInfo}
@@ -302,24 +257,19 @@ public final class OfferingInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.OfferingInfoOuterClass.OfferingInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         offeringId_ = 0;
-
         return this;
       }
 
@@ -346,9 +296,16 @@ public final class OfferingInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.OfferingInfoOuterClass.OfferingInfo buildPartial() {
         emu.grasscutter.net.proto.OfferingInfoOuterClass.OfferingInfo result = new emu.grasscutter.net.proto.OfferingInfoOuterClass.OfferingInfo(this);
-        result.offeringId_ = offeringId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.OfferingInfoOuterClass.OfferingInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.offeringId_ = offeringId_;
+        }
       }
 
       @java.lang.Override
@@ -398,7 +355,7 @@ public final class OfferingInfoOuterClass {
         if (other.getOfferingId() != 0) {
           setOfferingId(other.getOfferingId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -413,19 +370,38 @@ public final class OfferingInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.OfferingInfoOuterClass.OfferingInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                offeringId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.OfferingInfoOuterClass.OfferingInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int offeringId_ ;
       /**
@@ -442,8 +418,9 @@ public final class OfferingInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setOfferingId(int value) {
-        
+
         offeringId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -452,7 +429,7 @@ public final class OfferingInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearOfferingId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         offeringId_ = 0;
         onChanged();
         return this;
@@ -490,7 +467,18 @@ public final class OfferingInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new OfferingInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

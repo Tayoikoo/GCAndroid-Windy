@@ -19,20 +19,20 @@ public final class BartenderTaskInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_finish = 2;</code>
-     * @return The isFinish.
-     */
-    boolean getIsFinish();
-
-    /**
-     * <code>uint32 id = 4;</code>
+     * <code>uint32 id = 14;</code>
      * @return The id.
      */
     int getId();
+
+    /**
+     * <code>bool is_finish = 10;</code>
+     * @return The isFinish.
+     */
+    boolean getIsFinish();
   }
   /**
    * <pre>
-   * Obf: LPJBJOMDBDA
+   * Name: EKPPHANLAGM
    * </pre>
    *
    * Protobuf type {@code BartenderTaskInfo}
@@ -56,58 +56,6 @@ public final class BartenderTaskInfoOuterClass {
       return new BartenderTaskInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private BartenderTaskInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 16: {
-
-              isFinish_ = input.readBool();
-              break;
-            }
-            case 32: {
-
-              id_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.internal_static_BartenderTaskInfo_descriptor;
@@ -121,26 +69,26 @@ public final class BartenderTaskInfoOuterClass {
               emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo.class, emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo.Builder.class);
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 2;
-    private boolean isFinish_;
+    public static final int ID_FIELD_NUMBER = 14;
+    private int id_ = 0;
     /**
-     * <code>bool is_finish = 2;</code>
-     * @return The isFinish.
-     */
-    @java.lang.Override
-    public boolean getIsFinish() {
-      return isFinish_;
-    }
-
-    public static final int ID_FIELD_NUMBER = 4;
-    private int id_;
-    /**
-     * <code>uint32 id = 4;</code>
+     * <code>uint32 id = 14;</code>
      * @return The id.
      */
     @java.lang.Override
     public int getId() {
       return id_;
+    }
+
+    public static final int IS_FINISH_FIELD_NUMBER = 10;
+    private boolean isFinish_ = false;
+    /**
+     * <code>bool is_finish = 10;</code>
+     * @return The isFinish.
+     */
+    @java.lang.Override
+    public boolean getIsFinish() {
+      return isFinish_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,12 +106,12 @@ public final class BartenderTaskInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isFinish_ != false) {
-        output.writeBool(2, isFinish_);
+        output.writeBool(10, isFinish_);
       }
       if (id_ != 0) {
-        output.writeUInt32(4, id_);
+        output.writeUInt32(14, id_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -174,13 +122,13 @@ public final class BartenderTaskInfoOuterClass {
       size = 0;
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isFinish_);
+          .computeBoolSize(10, isFinish_);
       }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, id_);
+          .computeUInt32Size(14, id_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -195,11 +143,11 @@ public final class BartenderTaskInfoOuterClass {
       }
       emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo other = (emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo) obj;
 
-      if (getIsFinish()
-          != other.getIsFinish()) return false;
       if (getId()
           != other.getId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getIsFinish()
+          != other.getIsFinish()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -210,12 +158,12 @@ public final class BartenderTaskInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -264,11 +212,13 @@ public final class BartenderTaskInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -312,7 +262,7 @@ public final class BartenderTaskInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: LPJBJOMDBDA
+     * Name: EKPPHANLAGM
      * </pre>
      *
      * Protobuf type {@code BartenderTaskInfo}
@@ -336,26 +286,20 @@ public final class BartenderTaskInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isFinish_ = false;
-
+        bitField0_ = 0;
         id_ = 0;
-
+        isFinish_ = false;
         return this;
       }
 
@@ -382,10 +326,19 @@ public final class BartenderTaskInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo buildPartial() {
         emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo result = new emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo(this);
-        result.isFinish_ = isFinish_;
-        result.id_ = id_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.id_ = id_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.isFinish_ = isFinish_;
+        }
       }
 
       @java.lang.Override
@@ -432,13 +385,13 @@ public final class BartenderTaskInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo other) {
         if (other == emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo.getDefaultInstance()) return this;
-        if (other.getIsFinish() != false) {
-          setIsFinish(other.getIsFinish());
-        }
         if (other.getId() != 0) {
           setId(other.getId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getIsFinish() != false) {
+          setIsFinish(other.getIsFinish());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -453,54 +406,47 @@ public final class BartenderTaskInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 80: {
+                isFinish_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 80
+              case 112: {
+                id_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 112
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private boolean isFinish_ ;
-      /**
-       * <code>bool is_finish = 2;</code>
-       * @return The isFinish.
-       */
-      @java.lang.Override
-      public boolean getIsFinish() {
-        return isFinish_;
-      }
-      /**
-       * <code>bool is_finish = 2;</code>
-       * @param value The isFinish to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinish(boolean value) {
-        
-        isFinish_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_finish = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinish() {
-        
-        isFinish_ = false;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int id_ ;
       /**
-       * <code>uint32 id = 4;</code>
+       * <code>uint32 id = 14;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -508,23 +454,56 @@ public final class BartenderTaskInfoOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 4;</code>
+       * <code>uint32 id = 14;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
       public Builder setId(int value) {
-        
+
         id_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 id = 4;</code>
+       * <code>uint32 id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         id_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isFinish_ ;
+      /**
+       * <code>bool is_finish = 10;</code>
+       * @return The isFinish.
+       */
+      @java.lang.Override
+      public boolean getIsFinish() {
+        return isFinish_;
+      }
+      /**
+       * <code>bool is_finish = 10;</code>
+       * @param value The isFinish to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFinish(boolean value) {
+
+        isFinish_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_finish = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinish() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        isFinish_ = false;
         onChanged();
         return this;
       }
@@ -561,7 +540,18 @@ public final class BartenderTaskInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new BartenderTaskInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -596,7 +586,7 @@ public final class BartenderTaskInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027BartenderTaskInfo.proto\"2\n\021BartenderTa" +
-      "skInfo\022\021\n\tis_finish\030\002 \001(\010\022\n\n\002id\030\004 \001(\rB\033\n" +
+      "skInfo\022\n\n\002id\030\016 \001(\r\022\021\n\tis_finish\030\n \001(\010B\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +598,7 @@ public final class BartenderTaskInfoOuterClass {
     internal_static_BartenderTaskInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BartenderTaskInfo_descriptor,
-        new java.lang.String[] { "IsFinish", "Id", });
+        new java.lang.String[] { "Id", "IsFinish", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

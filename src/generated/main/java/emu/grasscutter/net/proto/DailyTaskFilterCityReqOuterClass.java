@@ -19,15 +19,15 @@ public final class DailyTaskFilterCityReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 city_id = 8;</code>
+     * <code>uint32 city_id = 1;</code>
      * @return The cityId.
      */
     int getCityId();
   }
   /**
    * <pre>
-   * CmdId: 132
-   * Obf: FGIIGEAAJGI
+   * CmdId: 180
+   * Name: OPHFKHGDMBK
    * </pre>
    *
    * Protobuf type {@code DailyTaskFilterCityReq}
@@ -51,53 +51,6 @@ public final class DailyTaskFilterCityReqOuterClass {
       return new DailyTaskFilterCityReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private DailyTaskFilterCityReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 64: {
-
-              cityId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.internal_static_DailyTaskFilterCityReq_descriptor;
@@ -111,10 +64,10 @@ public final class DailyTaskFilterCityReqOuterClass {
               emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq.class, emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq.Builder.class);
     }
 
-    public static final int CITY_ID_FIELD_NUMBER = 8;
-    private int cityId_;
+    public static final int CITY_ID_FIELD_NUMBER = 1;
+    private int cityId_ = 0;
     /**
-     * <code>uint32 city_id = 8;</code>
+     * <code>uint32 city_id = 1;</code>
      * @return The cityId.
      */
     @java.lang.Override
@@ -137,9 +90,9 @@ public final class DailyTaskFilterCityReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cityId_ != 0) {
-        output.writeUInt32(8, cityId_);
+        output.writeUInt32(1, cityId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -150,9 +103,9 @@ public final class DailyTaskFilterCityReqOuterClass {
       size = 0;
       if (cityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, cityId_);
+          .computeUInt32Size(1, cityId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -169,7 +122,7 @@ public final class DailyTaskFilterCityReqOuterClass {
 
       if (getCityId()
           != other.getCityId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -182,7 +135,7 @@ public final class DailyTaskFilterCityReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCityId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -231,11 +184,13 @@ public final class DailyTaskFilterCityReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -279,8 +234,8 @@ public final class DailyTaskFilterCityReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 132
-     * Obf: FGIIGEAAJGI
+     * CmdId: 180
+     * Name: OPHFKHGDMBK
      * </pre>
      *
      * Protobuf type {@code DailyTaskFilterCityReq}
@@ -304,24 +259,19 @@ public final class DailyTaskFilterCityReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         cityId_ = 0;
-
         return this;
       }
 
@@ -348,9 +298,16 @@ public final class DailyTaskFilterCityReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq buildPartial() {
         emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq result = new emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq(this);
-        result.cityId_ = cityId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.cityId_ = cityId_;
+        }
       }
 
       @java.lang.Override
@@ -400,7 +357,7 @@ public final class DailyTaskFilterCityReqOuterClass {
         if (other.getCityId() != 0) {
           setCityId(other.getCityId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -415,23 +372,42 @@ public final class DailyTaskFilterCityReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                cityId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.DailyTaskFilterCityReqOuterClass.DailyTaskFilterCityReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int cityId_ ;
       /**
-       * <code>uint32 city_id = 8;</code>
+       * <code>uint32 city_id = 1;</code>
        * @return The cityId.
        */
       @java.lang.Override
@@ -439,22 +415,23 @@ public final class DailyTaskFilterCityReqOuterClass {
         return cityId_;
       }
       /**
-       * <code>uint32 city_id = 8;</code>
+       * <code>uint32 city_id = 1;</code>
        * @param value The cityId to set.
        * @return This builder for chaining.
        */
       public Builder setCityId(int value) {
-        
+
         cityId_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 city_id = 8;</code>
+       * <code>uint32 city_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearCityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         cityId_ = 0;
         onChanged();
         return this;
@@ -492,7 +469,18 @@ public final class DailyTaskFilterCityReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new DailyTaskFilterCityReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -527,7 +515,7 @@ public final class DailyTaskFilterCityReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034DailyTaskFilterCityReq.proto\")\n\026DailyT" +
-      "askFilterCityReq\022\017\n\007city_id\030\010 \001(\rB\033\n\031emu" +
+      "askFilterCityReq\022\017\n\007city_id\030\001 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

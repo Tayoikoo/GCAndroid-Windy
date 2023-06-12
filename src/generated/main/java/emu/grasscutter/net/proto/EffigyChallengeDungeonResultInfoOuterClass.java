@@ -19,16 +19,10 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_max_score = 12;</code>
+     * <code>uint32 challenge_max_score = 11;</code>
      * @return The challengeMaxScore.
      */
     int getChallengeMaxScore();
-
-    /**
-     * <code>uint32 challenge_score = 5;</code>
-     * @return The challengeScore.
-     */
-    int getChallengeScore();
 
     /**
      * <code>uint32 challenge_id = 13;</code>
@@ -37,20 +31,26 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
     int getChallengeId();
 
     /**
-     * <code>bool is_in_time_limit = 7;</code>
+     * <code>bool is_success = 5;</code>
+     * @return The isSuccess.
+     */
+    boolean getIsSuccess();
+
+    /**
+     * <code>bool is_in_time_limit = 4;</code>
      * @return The isInTimeLimit.
      */
     boolean getIsInTimeLimit();
 
     /**
-     * <code>bool is_success = 9;</code>
-     * @return The isSuccess.
+     * <code>uint32 challenge_score = 14;</code>
+     * @return The challengeScore.
      */
-    boolean getIsSuccess();
+    int getChallengeScore();
   }
   /**
    * <pre>
-   * Obf: GOJCDDACIBM
+   * Name: PCCKJKGKPOA
    * </pre>
    *
    * Protobuf type {@code EffigyChallengeDungeonResultInfo}
@@ -74,73 +74,6 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
       return new EffigyChallengeDungeonResultInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private EffigyChallengeDungeonResultInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 40: {
-
-              challengeScore_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              isInTimeLimit_ = input.readBool();
-              break;
-            }
-            case 72: {
-
-              isSuccess_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              challengeMaxScore_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              challengeId_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.internal_static_EffigyChallengeDungeonResultInfo_descriptor;
@@ -154,10 +87,10 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
               emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.class, emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.Builder.class);
     }
 
-    public static final int CHALLENGE_MAX_SCORE_FIELD_NUMBER = 12;
-    private int challengeMaxScore_;
+    public static final int CHALLENGE_MAX_SCORE_FIELD_NUMBER = 11;
+    private int challengeMaxScore_ = 0;
     /**
-     * <code>uint32 challenge_max_score = 12;</code>
+     * <code>uint32 challenge_max_score = 11;</code>
      * @return The challengeMaxScore.
      */
     @java.lang.Override
@@ -165,19 +98,8 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
       return challengeMaxScore_;
     }
 
-    public static final int CHALLENGE_SCORE_FIELD_NUMBER = 5;
-    private int challengeScore_;
-    /**
-     * <code>uint32 challenge_score = 5;</code>
-     * @return The challengeScore.
-     */
-    @java.lang.Override
-    public int getChallengeScore() {
-      return challengeScore_;
-    }
-
     public static final int CHALLENGE_ID_FIELD_NUMBER = 13;
-    private int challengeId_;
+    private int challengeId_ = 0;
     /**
      * <code>uint32 challenge_id = 13;</code>
      * @return The challengeId.
@@ -187,10 +109,21 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
       return challengeId_;
     }
 
-    public static final int IS_IN_TIME_LIMIT_FIELD_NUMBER = 7;
-    private boolean isInTimeLimit_;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 5;
+    private boolean isSuccess_ = false;
     /**
-     * <code>bool is_in_time_limit = 7;</code>
+     * <code>bool is_success = 5;</code>
+     * @return The isSuccess.
+     */
+    @java.lang.Override
+    public boolean getIsSuccess() {
+      return isSuccess_;
+    }
+
+    public static final int IS_IN_TIME_LIMIT_FIELD_NUMBER = 4;
+    private boolean isInTimeLimit_ = false;
+    /**
+     * <code>bool is_in_time_limit = 4;</code>
      * @return The isInTimeLimit.
      */
     @java.lang.Override
@@ -198,15 +131,15 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
       return isInTimeLimit_;
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 9;
-    private boolean isSuccess_;
+    public static final int CHALLENGE_SCORE_FIELD_NUMBER = 14;
+    private int challengeScore_ = 0;
     /**
-     * <code>bool is_success = 9;</code>
-     * @return The isSuccess.
+     * <code>uint32 challenge_score = 14;</code>
+     * @return The challengeScore.
      */
     @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
+    public int getChallengeScore() {
+      return challengeScore_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -223,22 +156,22 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (challengeScore_ != 0) {
-        output.writeUInt32(5, challengeScore_);
-      }
       if (isInTimeLimit_ != false) {
-        output.writeBool(7, isInTimeLimit_);
+        output.writeBool(4, isInTimeLimit_);
       }
       if (isSuccess_ != false) {
-        output.writeBool(9, isSuccess_);
+        output.writeBool(5, isSuccess_);
       }
       if (challengeMaxScore_ != 0) {
-        output.writeUInt32(12, challengeMaxScore_);
+        output.writeUInt32(11, challengeMaxScore_);
       }
       if (challengeId_ != 0) {
         output.writeUInt32(13, challengeId_);
       }
-      unknownFields.writeTo(output);
+      if (challengeScore_ != 0) {
+        output.writeUInt32(14, challengeScore_);
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -247,27 +180,27 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (challengeScore_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, challengeScore_);
-      }
       if (isInTimeLimit_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isInTimeLimit_);
+          .computeBoolSize(4, isInTimeLimit_);
       }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isSuccess_);
+          .computeBoolSize(5, isSuccess_);
       }
       if (challengeMaxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, challengeMaxScore_);
+          .computeUInt32Size(11, challengeMaxScore_);
       }
       if (challengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(13, challengeId_);
       }
-      size += unknownFields.getSerializedSize();
+      if (challengeScore_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, challengeScore_);
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -284,15 +217,15 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
 
       if (getChallengeMaxScore()
           != other.getChallengeMaxScore()) return false;
-      if (getChallengeScore()
-          != other.getChallengeScore()) return false;
       if (getChallengeId()
           != other.getChallengeId()) return false;
-      if (getIsInTimeLimit()
-          != other.getIsInTimeLimit()) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getIsInTimeLimit()
+          != other.getIsInTimeLimit()) return false;
+      if (getChallengeScore()
+          != other.getChallengeScore()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -305,17 +238,17 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CHALLENGE_MAX_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeMaxScore();
-      hash = (37 * hash) + CHALLENGE_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeScore();
       hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeId();
-      hash = (37 * hash) + IS_IN_TIME_LIMIT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsInTimeLimit());
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + IS_IN_TIME_LIMIT_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsInTimeLimit());
+      hash = (37 * hash) + CHALLENGE_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeScore();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -364,11 +297,13 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -412,7 +347,7 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: GOJCDDACIBM
+     * Name: PCCKJKGKPOA
      * </pre>
      *
      * Protobuf type {@code EffigyChallengeDungeonResultInfo}
@@ -436,32 +371,23 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         challengeMaxScore_ = 0;
-
-        challengeScore_ = 0;
-
         challengeId_ = 0;
-
-        isInTimeLimit_ = false;
-
         isSuccess_ = false;
-
+        isInTimeLimit_ = false;
+        challengeScore_ = 0;
         return this;
       }
 
@@ -488,13 +414,28 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo buildPartial() {
         emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo result = new emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo(this);
-        result.challengeMaxScore_ = challengeMaxScore_;
-        result.challengeScore_ = challengeScore_;
-        result.challengeId_ = challengeId_;
-        result.isInTimeLimit_ = isInTimeLimit_;
-        result.isSuccess_ = isSuccess_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.challengeMaxScore_ = challengeMaxScore_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.challengeId_ = challengeId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.isSuccess_ = isSuccess_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.isInTimeLimit_ = isInTimeLimit_;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.challengeScore_ = challengeScore_;
+        }
       }
 
       @java.lang.Override
@@ -544,19 +485,19 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
         if (other.getChallengeMaxScore() != 0) {
           setChallengeMaxScore(other.getChallengeMaxScore());
         }
-        if (other.getChallengeScore() != 0) {
-          setChallengeScore(other.getChallengeScore());
-        }
         if (other.getChallengeId() != 0) {
           setChallengeId(other.getChallengeId());
-        }
-        if (other.getIsInTimeLimit() != false) {
-          setIsInTimeLimit(other.getIsInTimeLimit());
         }
         if (other.getIsSuccess() != false) {
           setIsSuccess(other.getIsSuccess());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getIsInTimeLimit() != false) {
+          setIsInTimeLimit(other.getIsInTimeLimit());
+        }
+        if (other.getChallengeScore() != 0) {
+          setChallengeScore(other.getChallengeScore());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -571,23 +512,62 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 32: {
+                isInTimeLimit_ = input.readBool();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 32
+              case 40: {
+                isSuccess_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 40
+              case 88: {
+                challengeMaxScore_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 88
+              case 104: {
+                challengeId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 104
+              case 112: {
+                challengeScore_ = input.readUInt32();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 112
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.EffigyChallengeDungeonResultInfoOuterClass.EffigyChallengeDungeonResultInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int challengeMaxScore_ ;
       /**
-       * <code>uint32 challenge_max_score = 12;</code>
+       * <code>uint32 challenge_max_score = 11;</code>
        * @return The challengeMaxScore.
        */
       @java.lang.Override
@@ -595,54 +575,24 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
         return challengeMaxScore_;
       }
       /**
-       * <code>uint32 challenge_max_score = 12;</code>
+       * <code>uint32 challenge_max_score = 11;</code>
        * @param value The challengeMaxScore to set.
        * @return This builder for chaining.
        */
       public Builder setChallengeMaxScore(int value) {
-        
+
         challengeMaxScore_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_max_score = 12;</code>
+       * <code>uint32 challenge_max_score = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeMaxScore() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         challengeMaxScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int challengeScore_ ;
-      /**
-       * <code>uint32 challenge_score = 5;</code>
-       * @return The challengeScore.
-       */
-      @java.lang.Override
-      public int getChallengeScore() {
-        return challengeScore_;
-      }
-      /**
-       * <code>uint32 challenge_score = 5;</code>
-       * @param value The challengeScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChallengeScore(int value) {
-        
-        challengeScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 challenge_score = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChallengeScore() {
-        
-        challengeScore_ = 0;
         onChanged();
         return this;
       }
@@ -662,8 +612,9 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setChallengeId(int value) {
-        
+
         challengeId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -672,46 +623,15 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         challengeId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isInTimeLimit_ ;
-      /**
-       * <code>bool is_in_time_limit = 7;</code>
-       * @return The isInTimeLimit.
-       */
-      @java.lang.Override
-      public boolean getIsInTimeLimit() {
-        return isInTimeLimit_;
-      }
-      /**
-       * <code>bool is_in_time_limit = 7;</code>
-       * @param value The isInTimeLimit to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsInTimeLimit(boolean value) {
-        
-        isInTimeLimit_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_in_time_limit = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsInTimeLimit() {
-        
-        isInTimeLimit_ = false;
         onChanged();
         return this;
       }
 
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 9;</code>
+       * <code>bool is_success = 5;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -719,23 +639,88 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 9;</code>
+       * <code>bool is_success = 5;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
       public Builder setIsSuccess(boolean value) {
-        
+
         isSuccess_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_success = 9;</code>
+       * <code>bool is_success = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         isSuccess_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isInTimeLimit_ ;
+      /**
+       * <code>bool is_in_time_limit = 4;</code>
+       * @return The isInTimeLimit.
+       */
+      @java.lang.Override
+      public boolean getIsInTimeLimit() {
+        return isInTimeLimit_;
+      }
+      /**
+       * <code>bool is_in_time_limit = 4;</code>
+       * @param value The isInTimeLimit to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsInTimeLimit(boolean value) {
+
+        isInTimeLimit_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_in_time_limit = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsInTimeLimit() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        isInTimeLimit_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int challengeScore_ ;
+      /**
+       * <code>uint32 challenge_score = 14;</code>
+       * @return The challengeScore.
+       */
+      @java.lang.Override
+      public int getChallengeScore() {
+        return challengeScore_;
+      }
+      /**
+       * <code>uint32 challenge_score = 14;</code>
+       * @param value The challengeScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChallengeScore(int value) {
+
+        challengeScore_ = value;
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 challenge_score = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChallengeScore() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        challengeScore_ = 0;
         onChanged();
         return this;
       }
@@ -772,7 +757,18 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new EffigyChallengeDungeonResultInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -808,9 +804,9 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n&EffigyChallengeDungeonResultInfo.proto" +
       "\"\234\001\n EffigyChallengeDungeonResultInfo\022\033\n" +
-      "\023challenge_max_score\030\014 \001(\r\022\027\n\017challenge_" +
-      "score\030\005 \001(\r\022\024\n\014challenge_id\030\r \001(\r\022\030\n\020is_" +
-      "in_time_limit\030\007 \001(\010\022\022\n\nis_success\030\t \001(\010B" +
+      "\023challenge_max_score\030\013 \001(\r\022\024\n\014challenge_" +
+      "id\030\r \001(\r\022\022\n\nis_success\030\005 \001(\010\022\030\n\020is_in_ti" +
+      "me_limit\030\004 \001(\010\022\027\n\017challenge_score\030\016 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -822,7 +818,7 @@ public final class EffigyChallengeDungeonResultInfoOuterClass {
     internal_static_EffigyChallengeDungeonResultInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EffigyChallengeDungeonResultInfo_descriptor,
-        new java.lang.String[] { "ChallengeMaxScore", "ChallengeScore", "ChallengeId", "IsInTimeLimit", "IsSuccess", });
+        new java.lang.String[] { "ChallengeMaxScore", "ChallengeId", "IsSuccess", "IsInTimeLimit", "ChallengeScore", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

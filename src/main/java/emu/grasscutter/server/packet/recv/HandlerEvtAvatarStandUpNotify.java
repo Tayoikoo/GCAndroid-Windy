@@ -16,4 +16,5 @@ public class HandlerEvtAvatarStandUpNotify extends PacketHandler {
 
         session.getPlayer().getScene().broadcastPacket(new PacketEvtAvatarStandUpNotify(notify));
     }
+
 }

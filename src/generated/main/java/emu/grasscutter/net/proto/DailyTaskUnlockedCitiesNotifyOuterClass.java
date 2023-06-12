@@ -19,17 +19,17 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 unlocked_city_list = 5;</code>
+     * <code>repeated uint32 unlocked_city_list = 6;</code>
      * @return A list containing the unlockedCityList.
      */
     java.util.List<java.lang.Integer> getUnlockedCityListList();
     /**
-     * <code>repeated uint32 unlocked_city_list = 5;</code>
+     * <code>repeated uint32 unlocked_city_list = 6;</code>
      * @return The count of unlockedCityList.
      */
     int getUnlockedCityListCount();
     /**
-     * <code>repeated uint32 unlocked_city_list = 5;</code>
+     * <code>repeated uint32 unlocked_city_list = 6;</code>
      * @param index The index of the element to return.
      * @return The unlockedCityList at the given index.
      */
@@ -37,8 +37,8 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 127
-   * Obf: MAFKBKGEIBB
+   * CmdId: 105
+   * Name: KAPPPLGDHBL
    * </pre>
    *
    * Protobuf type {@code DailyTaskUnlockedCitiesNotify}
@@ -63,73 +63,6 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
       return new DailyTaskUnlockedCitiesNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private DailyTaskUnlockedCitiesNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 40: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unlockedCityList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              unlockedCityList_.addInt(input.readUInt32());
-              break;
-            }
-            case 42: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                unlockedCityList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                unlockedCityList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unlockedCityList_.makeImmutable(); // C
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.internal_static_DailyTaskUnlockedCitiesNotify_descriptor;
@@ -143,10 +76,11 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
               emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify.class, emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify.Builder.class);
     }
 
-    public static final int UNLOCKED_CITY_LIST_FIELD_NUMBER = 5;
+    public static final int UNLOCKED_CITY_LIST_FIELD_NUMBER = 6;
+    @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList unlockedCityList_;
     /**
-     * <code>repeated uint32 unlocked_city_list = 5;</code>
+     * <code>repeated uint32 unlocked_city_list = 6;</code>
      * @return A list containing the unlockedCityList.
      */
     @java.lang.Override
@@ -155,14 +89,14 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
       return unlockedCityList_;
     }
     /**
-     * <code>repeated uint32 unlocked_city_list = 5;</code>
+     * <code>repeated uint32 unlocked_city_list = 6;</code>
      * @return The count of unlockedCityList.
      */
     public int getUnlockedCityListCount() {
       return unlockedCityList_.size();
     }
     /**
-     * <code>repeated uint32 unlocked_city_list = 5;</code>
+     * <code>repeated uint32 unlocked_city_list = 6;</code>
      * @param index The index of the element to return.
      * @return The unlockedCityList at the given index.
      */
@@ -187,13 +121,13 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getUnlockedCityListList().size() > 0) {
-        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(unlockedCityListMemoizedSerializedSize);
       }
       for (int i = 0; i < unlockedCityList_.size(); i++) {
         output.writeUInt32NoTag(unlockedCityList_.getInt(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -216,7 +150,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
         }
         unlockedCityListMemoizedSerializedSize = dataSize;
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -233,7 +167,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
 
       if (!getUnlockedCityListList()
           .equals(other.getUnlockedCityListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -248,7 +182,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
         hash = (37 * hash) + UNLOCKED_CITY_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getUnlockedCityListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -297,11 +231,13 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -345,8 +281,8 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 127
-     * Obf: MAFKBKGEIBB
+     * CmdId: 105
+     * Name: KAPPPLGDHBL
      * </pre>
      *
      * Protobuf type {@code DailyTaskUnlockedCitiesNotify}
@@ -370,24 +306,19 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         unlockedCityList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -414,14 +345,22 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify buildPartial() {
         emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify result = new emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify result) {
         if (((bitField0_ & 0x00000001) != 0)) {
           unlockedCityList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.unlockedCityList_ = unlockedCityList_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -478,7 +417,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
           }
           onChanged();
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -493,17 +432,46 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 48: {
+                int v = input.readUInt32();
+                ensureUnlockedCityListIsMutable();
+                unlockedCityList_.addInt(v);
+                break;
+              } // case 48
+              case 50: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureUnlockedCityListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  unlockedCityList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 50
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -513,10 +481,10 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
         if (!((bitField0_ & 0x00000001) != 0)) {
           unlockedCityList_ = mutableCopy(unlockedCityList_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 5;</code>
+       * <code>repeated uint32 unlocked_city_list = 6;</code>
        * @return A list containing the unlockedCityList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +493,14 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
                  java.util.Collections.unmodifiableList(unlockedCityList_) : unlockedCityList_;
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 5;</code>
+       * <code>repeated uint32 unlocked_city_list = 6;</code>
        * @return The count of unlockedCityList.
        */
       public int getUnlockedCityListCount() {
         return unlockedCityList_.size();
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 5;</code>
+       * <code>repeated uint32 unlocked_city_list = 6;</code>
        * @param index The index of the element to return.
        * @return The unlockedCityList at the given index.
        */
@@ -540,31 +508,33 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
         return unlockedCityList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 5;</code>
+       * <code>repeated uint32 unlocked_city_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The unlockedCityList to set.
        * @return This builder for chaining.
        */
       public Builder setUnlockedCityList(
           int index, int value) {
+
         ensureUnlockedCityListIsMutable();
         unlockedCityList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 5;</code>
+       * <code>repeated uint32 unlocked_city_list = 6;</code>
        * @param value The unlockedCityList to add.
        * @return This builder for chaining.
        */
       public Builder addUnlockedCityList(int value) {
+
         ensureUnlockedCityListIsMutable();
         unlockedCityList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 5;</code>
+       * <code>repeated uint32 unlocked_city_list = 6;</code>
        * @param values The unlockedCityList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +547,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 5;</code>
+       * <code>repeated uint32 unlocked_city_list = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearUnlockedCityList() {
@@ -619,7 +589,18 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new DailyTaskUnlockedCitiesNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -655,7 +636,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#DailyTaskUnlockedCitiesNotify.proto\";\n" +
       "\035DailyTaskUnlockedCitiesNotify\022\032\n\022unlock" +
-      "ed_city_list\030\005 \003(\rB\033\n\031emu.grasscutter.ne" +
+      "ed_city_list\030\006 \003(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -16,7 +16,7 @@ public final class ForwardTypeOuterClass {
   }
   /**
    * <pre>
-   * Obf: GPGOKLPGBAG
+   * Name: PEHLILGOPKN
    * </pre>
    *
    * Protobuf enum {@code ForwardType}

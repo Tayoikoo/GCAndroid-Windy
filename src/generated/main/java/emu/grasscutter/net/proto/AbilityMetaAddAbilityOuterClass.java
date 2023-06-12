@@ -19,23 +19,23 @@ public final class AbilityMetaAddAbilityOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.AbilityAppliedAbility ability = 2;</code>
+     * <code>.AbilityAppliedAbility ability = 1;</code>
      * @return Whether the ability field is set.
      */
     boolean hasAbility();
     /**
-     * <code>.AbilityAppliedAbility ability = 2;</code>
+     * <code>.AbilityAppliedAbility ability = 1;</code>
      * @return The ability.
      */
     emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility getAbility();
     /**
-     * <code>.AbilityAppliedAbility ability = 2;</code>
+     * <code>.AbilityAppliedAbility ability = 1;</code>
      */
     emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder getAbilityOrBuilder();
   }
   /**
    * <pre>
-   * Obf: KGNBOGPLLAM
+   * Name: JOAGDFOJABP
    * </pre>
    *
    * Protobuf type {@code AbilityMetaAddAbility}
@@ -59,61 +59,6 @@ public final class AbilityMetaAddAbilityOuterClass {
       return new AbilityMetaAddAbility();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private AbilityMetaAddAbility(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 18: {
-              emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder subBuilder = null;
-              if (ability_ != null) {
-                subBuilder = ability_.toBuilder();
-              }
-              ability_ = input.readMessage(emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(ability_);
-                ability_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.internal_static_AbilityMetaAddAbility_descriptor;
@@ -127,10 +72,10 @@ public final class AbilityMetaAddAbilityOuterClass {
               emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility.class, emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility.Builder.class);
     }
 
-    public static final int ABILITY_FIELD_NUMBER = 2;
+    public static final int ABILITY_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility ability_;
     /**
-     * <code>.AbilityAppliedAbility ability = 2;</code>
+     * <code>.AbilityAppliedAbility ability = 1;</code>
      * @return Whether the ability field is set.
      */
     @java.lang.Override
@@ -138,7 +83,7 @@ public final class AbilityMetaAddAbilityOuterClass {
       return ability_ != null;
     }
     /**
-     * <code>.AbilityAppliedAbility ability = 2;</code>
+     * <code>.AbilityAppliedAbility ability = 1;</code>
      * @return The ability.
      */
     @java.lang.Override
@@ -146,11 +91,11 @@ public final class AbilityMetaAddAbilityOuterClass {
       return ability_ == null ? emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.getDefaultInstance() : ability_;
     }
     /**
-     * <code>.AbilityAppliedAbility ability = 2;</code>
+     * <code>.AbilityAppliedAbility ability = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder getAbilityOrBuilder() {
-      return getAbility();
+      return ability_ == null ? emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.getDefaultInstance() : ability_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -168,9 +113,9 @@ public final class AbilityMetaAddAbilityOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (ability_ != null) {
-        output.writeMessage(2, getAbility());
+        output.writeMessage(1, getAbility());
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -181,9 +126,9 @@ public final class AbilityMetaAddAbilityOuterClass {
       size = 0;
       if (ability_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getAbility());
+          .computeMessageSize(1, getAbility());
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -203,7 +148,7 @@ public final class AbilityMetaAddAbilityOuterClass {
         if (!getAbility()
             .equals(other.getAbility())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -218,7 +163,7 @@ public final class AbilityMetaAddAbilityOuterClass {
         hash = (37 * hash) + ABILITY_FIELD_NUMBER;
         hash = (53 * hash) + getAbility().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -267,11 +212,13 @@ public final class AbilityMetaAddAbilityOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -315,7 +262,7 @@ public final class AbilityMetaAddAbilityOuterClass {
     }
     /**
      * <pre>
-     * Obf: KGNBOGPLLAM
+     * Name: JOAGDFOJABP
      * </pre>
      *
      * Protobuf type {@code AbilityMetaAddAbility}
@@ -339,26 +286,21 @@ public final class AbilityMetaAddAbilityOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (abilityBuilder_ == null) {
-          ability_ = null;
-        } else {
-          ability_ = null;
+        bitField0_ = 0;
+        ability_ = null;
+        if (abilityBuilder_ != null) {
+          abilityBuilder_.dispose();
           abilityBuilder_ = null;
         }
         return this;
@@ -387,13 +329,18 @@ public final class AbilityMetaAddAbilityOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility buildPartial() {
         emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility result = new emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility(this);
-        if (abilityBuilder_ == null) {
-          result.ability_ = ability_;
-        } else {
-          result.ability_ = abilityBuilder_.build();
-        }
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.ability_ = abilityBuilder_ == null
+              ? ability_
+              : abilityBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -443,7 +390,7 @@ public final class AbilityMetaAddAbilityOuterClass {
         if (other.hasAbility()) {
           mergeAbility(other.getAbility());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -458,32 +405,53 @@ public final class AbilityMetaAddAbilityOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getAbilityFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 10
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility ability_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder> abilityBuilder_;
       /**
-       * <code>.AbilityAppliedAbility ability = 2;</code>
+       * <code>.AbilityAppliedAbility ability = 1;</code>
        * @return Whether the ability field is set.
        */
       public boolean hasAbility() {
-        return abilityBuilder_ != null || ability_ != null;
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.AbilityAppliedAbility ability = 2;</code>
+       * <code>.AbilityAppliedAbility ability = 1;</code>
        * @return The ability.
        */
       public emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility getAbility() {
@@ -494,7 +462,7 @@ public final class AbilityMetaAddAbilityOuterClass {
         }
       }
       /**
-       * <code>.AbilityAppliedAbility ability = 2;</code>
+       * <code>.AbilityAppliedAbility ability = 1;</code>
        */
       public Builder setAbility(emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility value) {
         if (abilityBuilder_ == null) {
@@ -502,69 +470,69 @@ public final class AbilityMetaAddAbilityOuterClass {
             throw new NullPointerException();
           }
           ability_ = value;
-          onChanged();
         } else {
           abilityBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AbilityAppliedAbility ability = 2;</code>
+       * <code>.AbilityAppliedAbility ability = 1;</code>
        */
       public Builder setAbility(
           emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder builderForValue) {
         if (abilityBuilder_ == null) {
           ability_ = builderForValue.build();
-          onChanged();
         } else {
           abilityBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AbilityAppliedAbility ability = 2;</code>
+       * <code>.AbilityAppliedAbility ability = 1;</code>
        */
       public Builder mergeAbility(emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility value) {
         if (abilityBuilder_ == null) {
-          if (ability_ != null) {
-            ability_ =
-              emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.newBuilder(ability_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000001) != 0) &&
+            ability_ != null &&
+            ability_ != emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.getDefaultInstance()) {
+            getAbilityBuilder().mergeFrom(value);
           } else {
             ability_ = value;
           }
-          onChanged();
         } else {
           abilityBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.AbilityAppliedAbility ability = 2;</code>
+       * <code>.AbilityAppliedAbility ability = 1;</code>
        */
       public Builder clearAbility() {
-        if (abilityBuilder_ == null) {
-          ability_ = null;
-          onChanged();
-        } else {
-          ability_ = null;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        ability_ = null;
+        if (abilityBuilder_ != null) {
+          abilityBuilder_.dispose();
           abilityBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.AbilityAppliedAbility ability = 2;</code>
+       * <code>.AbilityAppliedAbility ability = 1;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder getAbilityBuilder() {
-        
+        bitField0_ |= 0x00000001;
         onChanged();
         return getAbilityFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilityAppliedAbility ability = 2;</code>
+       * <code>.AbilityAppliedAbility ability = 1;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder getAbilityOrBuilder() {
         if (abilityBuilder_ != null) {
@@ -575,7 +543,7 @@ public final class AbilityMetaAddAbilityOuterClass {
         }
       }
       /**
-       * <code>.AbilityAppliedAbility ability = 2;</code>
+       * <code>.AbilityAppliedAbility ability = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder> 
@@ -623,7 +591,18 @@ public final class AbilityMetaAddAbilityOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AbilityMetaAddAbility(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -659,7 +638,7 @@ public final class AbilityMetaAddAbilityOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033AbilityMetaAddAbility.proto\032\033AbilityAp" +
       "pliedAbility.proto\"@\n\025AbilityMetaAddAbil" +
-      "ity\022\'\n\007ability\030\002 \001(\0132\026.AbilityAppliedAbi" +
+      "ity\022\'\n\007ability\030\001 \001(\0132\026.AbilityAppliedAbi" +
       "lityB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

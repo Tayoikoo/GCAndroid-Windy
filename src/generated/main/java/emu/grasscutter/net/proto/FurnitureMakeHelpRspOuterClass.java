@@ -19,39 +19,39 @@ public final class FurnitureMakeHelpRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+     * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData> 
         getHelpDataListList();
     /**
-     * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+     * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
      */
     emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData getHelpDataList(int index);
     /**
-     * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+     * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
      */
     int getHelpDataListCount();
     /**
-     * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+     * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpDataOrBuilder> 
         getHelpDataListOrBuilderList();
     /**
-     * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+     * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
      */
     emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpDataOrBuilder getHelpDataListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 4581
-   * Obf: HBPNHOHAOOC
+   * CmdId: 4567
+   * Name: EDBKNPNNLMH
    * </pre>
    *
    * Protobuf type {@code FurnitureMakeHelpRsp}
@@ -76,66 +76,6 @@ public final class FurnitureMakeHelpRspOuterClass {
       return new FurnitureMakeHelpRsp();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private FurnitureMakeHelpRsp(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 50: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                helpDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              helpDataList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.parser(), extensionRegistry));
-              break;
-            }
-            case 64: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          helpDataList_ = java.util.Collections.unmodifiableList(helpDataList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.internal_static_FurnitureMakeHelpRsp_descriptor;
@@ -149,10 +89,10 @@ public final class FurnitureMakeHelpRspOuterClass {
               emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.FurnitureMakeHelpRsp.class, emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.FurnitureMakeHelpRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_;
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -160,17 +100,18 @@ public final class FurnitureMakeHelpRspOuterClass {
       return retcode_;
     }
 
-    public static final int HELP_DATA_LIST_FIELD_NUMBER = 6;
+    public static final int HELP_DATA_LIST_FIELD_NUMBER = 14;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData> helpDataList_;
     /**
-     * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+     * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData> getHelpDataListList() {
       return helpDataList_;
     }
     /**
-     * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+     * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpDataOrBuilder> 
@@ -178,21 +119,21 @@ public final class FurnitureMakeHelpRspOuterClass {
       return helpDataList_;
     }
     /**
-     * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+     * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
      */
     @java.lang.Override
     public int getHelpDataListCount() {
       return helpDataList_.size();
     }
     /**
-     * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+     * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData getHelpDataList(int index) {
       return helpDataList_.get(index);
     }
     /**
-     * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+     * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpDataOrBuilder getHelpDataListOrBuilder(
@@ -214,13 +155,13 @@ public final class FurnitureMakeHelpRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < helpDataList_.size(); i++) {
-        output.writeMessage(6, helpDataList_.get(i));
-      }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(13, retcode_);
       }
-      unknownFields.writeTo(output);
+      for (int i = 0; i < helpDataList_.size(); i++) {
+        output.writeMessage(14, helpDataList_.get(i));
+      }
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -229,15 +170,15 @@ public final class FurnitureMakeHelpRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < helpDataList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, helpDataList_.get(i));
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(13, retcode_);
       }
-      size += unknownFields.getSerializedSize();
+      for (int i = 0; i < helpDataList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, helpDataList_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -256,7 +197,7 @@ public final class FurnitureMakeHelpRspOuterClass {
           != other.getRetcode()) return false;
       if (!getHelpDataListList()
           .equals(other.getHelpDataListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -273,7 +214,7 @@ public final class FurnitureMakeHelpRspOuterClass {
         hash = (37 * hash) + HELP_DATA_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getHelpDataListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -322,11 +263,13 @@ public final class FurnitureMakeHelpRspOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.FurnitureMakeHelpRsp parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.FurnitureMakeHelpRsp parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -370,8 +313,8 @@ public final class FurnitureMakeHelpRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4581
-     * Obf: HBPNHOHAOOC
+     * CmdId: 4567
+     * Name: EDBKNPNNLMH
      * </pre>
      *
      * Protobuf type {@code FurnitureMakeHelpRsp}
@@ -395,31 +338,26 @@ public final class FurnitureMakeHelpRspOuterClass {
 
       // Construct using emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.FurnitureMakeHelpRsp.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getHelpDataListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         retcode_ = 0;
-
         if (helpDataListBuilder_ == null) {
           helpDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          helpDataList_ = null;
           helpDataListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -446,19 +384,29 @@ public final class FurnitureMakeHelpRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.FurnitureMakeHelpRsp buildPartial() {
         emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.FurnitureMakeHelpRsp result = new emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.FurnitureMakeHelpRsp(this);
-        int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.FurnitureMakeHelpRsp result) {
         if (helpDataListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             helpDataList_ = java.util.Collections.unmodifiableList(helpDataList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.helpDataList_ = helpDataList_;
         } else {
           result.helpDataList_ = helpDataListBuilder_.build();
         }
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.FurnitureMakeHelpRsp result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.retcode_ = retcode_;
+        }
       }
 
       @java.lang.Override
@@ -512,7 +460,7 @@ public final class FurnitureMakeHelpRspOuterClass {
           if (!other.helpDataList_.isEmpty()) {
             if (helpDataList_.isEmpty()) {
               helpDataList_ = other.helpDataList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureHelpDataListIsMutable();
               helpDataList_.addAll(other.helpDataList_);
@@ -525,7 +473,7 @@ public final class FurnitureMakeHelpRspOuterClass {
               helpDataListBuilder_.dispose();
               helpDataListBuilder_ = null;
               helpDataList_ = other.helpDataList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               helpDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getHelpDataListFieldBuilder() : null;
@@ -534,7 +482,7 @@ public final class FurnitureMakeHelpRspOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -549,24 +497,55 @@ public final class FurnitureMakeHelpRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.FurnitureMakeHelpRsp parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 104: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 104
+              case 114: {
+                emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.parser(),
+                        extensionRegistry);
+                if (helpDataListBuilder_ == null) {
+                  ensureHelpDataListIsMutable();
+                  helpDataList_.add(m);
+                } else {
+                  helpDataListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 114
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.FurnitureMakeHelpRspOuterClass.FurnitureMakeHelpRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -574,22 +553,23 @@ public final class FurnitureMakeHelpRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
       public Builder setRetcode(int value) {
-        
+
         retcode_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
         onChanged();
         return this;
@@ -598,9 +578,9 @@ public final class FurnitureMakeHelpRspOuterClass {
       private java.util.List<emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData> helpDataList_ =
         java.util.Collections.emptyList();
       private void ensureHelpDataListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           helpDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData>(helpDataList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -608,7 +588,7 @@ public final class FurnitureMakeHelpRspOuterClass {
           emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData, emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.Builder, emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpDataOrBuilder> helpDataListBuilder_;
 
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData> getHelpDataListList() {
         if (helpDataListBuilder_ == null) {
@@ -618,7 +598,7 @@ public final class FurnitureMakeHelpRspOuterClass {
         }
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public int getHelpDataListCount() {
         if (helpDataListBuilder_ == null) {
@@ -628,7 +608,7 @@ public final class FurnitureMakeHelpRspOuterClass {
         }
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData getHelpDataList(int index) {
         if (helpDataListBuilder_ == null) {
@@ -638,7 +618,7 @@ public final class FurnitureMakeHelpRspOuterClass {
         }
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public Builder setHelpDataList(
           int index, emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData value) {
@@ -655,7 +635,7 @@ public final class FurnitureMakeHelpRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public Builder setHelpDataList(
           int index, emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.Builder builderForValue) {
@@ -669,7 +649,7 @@ public final class FurnitureMakeHelpRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public Builder addHelpDataList(emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData value) {
         if (helpDataListBuilder_ == null) {
@@ -685,7 +665,7 @@ public final class FurnitureMakeHelpRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public Builder addHelpDataList(
           int index, emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData value) {
@@ -702,7 +682,7 @@ public final class FurnitureMakeHelpRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public Builder addHelpDataList(
           emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.Builder builderForValue) {
@@ -716,7 +696,7 @@ public final class FurnitureMakeHelpRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public Builder addHelpDataList(
           int index, emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.Builder builderForValue) {
@@ -730,7 +710,7 @@ public final class FurnitureMakeHelpRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public Builder addAllHelpDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData> values) {
@@ -745,12 +725,12 @@ public final class FurnitureMakeHelpRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public Builder clearHelpDataList() {
         if (helpDataListBuilder_ == null) {
           helpDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           helpDataListBuilder_.clear();
@@ -758,7 +738,7 @@ public final class FurnitureMakeHelpRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public Builder removeHelpDataList(int index) {
         if (helpDataListBuilder_ == null) {
@@ -771,14 +751,14 @@ public final class FurnitureMakeHelpRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.Builder getHelpDataListBuilder(
           int index) {
         return getHelpDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpDataOrBuilder getHelpDataListOrBuilder(
           int index) {
@@ -788,7 +768,7 @@ public final class FurnitureMakeHelpRspOuterClass {
         }
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpDataOrBuilder> 
            getHelpDataListOrBuilderList() {
@@ -799,14 +779,14 @@ public final class FurnitureMakeHelpRspOuterClass {
         }
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.Builder addHelpDataListBuilder() {
         return getHelpDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.getDefaultInstance());
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.Builder addHelpDataListBuilder(
           int index) {
@@ -814,7 +794,7 @@ public final class FurnitureMakeHelpRspOuterClass {
             index, emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.getDefaultInstance());
       }
       /**
-       * <code>repeated .FurnitureMakeHelpData help_data_list = 6;</code>
+       * <code>repeated .FurnitureMakeHelpData help_data_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.Builder> 
            getHelpDataListBuilderList() {
@@ -827,7 +807,7 @@ public final class FurnitureMakeHelpRspOuterClass {
           helpDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData, emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpData.Builder, emu.grasscutter.net.proto.FurnitureMakeHelpDataOuterClass.FurnitureMakeHelpDataOrBuilder>(
                   helpDataList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           helpDataList_ = null;
@@ -867,7 +847,18 @@ public final class FurnitureMakeHelpRspOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new FurnitureMakeHelpRsp(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -903,7 +894,7 @@ public final class FurnitureMakeHelpRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032FurnitureMakeHelpRsp.proto\032\033FurnitureM" +
       "akeHelpData.proto\"W\n\024FurnitureMakeHelpRs" +
-      "p\022\017\n\007retcode\030\010 \001(\005\022.\n\016help_data_list\030\006 \003" +
+      "p\022\017\n\007retcode\030\r \001(\005\022.\n\016help_data_list\030\016 \003" +
       "(\0132\026.FurnitureMakeHelpDataB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };

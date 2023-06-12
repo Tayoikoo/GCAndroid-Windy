@@ -19,33 +19,45 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 talent_index = 12;</code>
-     * @return The talentIndex.
-     */
-    int getTalentIndex();
-
-    /**
-     * <code>uint32 extra_level = 5;</code>
-     * @return The extraLevel.
-     */
-    int getExtraLevel();
-
-    /**
-     * <code>uint64 avatar_guid = 13;</code>
+     * <code>uint64 avatar_guid = 15;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <code>uint32 talent_type = 6;</code>
+     * <pre>
+     * CBAGHCLLOCO
+     * </pre>
+     *
+     * <code>uint32 talent_index = 10;</code>
+     * @return The talentIndex.
+     */
+    int getTalentIndex();
+
+    /**
+     * <pre>
+     * KPPFFPBNNAC
+     * </pre>
+     *
+     * <code>uint32 talent_type = 3;</code>
      * @return The talentType.
      */
     int getTalentType();
+
+    /**
+     * <pre>
+     * LDLMAGLNLEA
+     * </pre>
+     *
+     * <code>uint32 extra_level = 4;</code>
+     * @return The extraLevel.
+     */
+    int getExtraLevel();
   }
   /**
    * <pre>
-   * CmdId: 1094
-   * Obf: GCKJMOIPFPE
+   * CmdId: 1099
+   * Name: FHFLCAHNFCP
    * </pre>
    *
    * Protobuf type {@code ProudSkillExtraLevelNotify}
@@ -69,68 +81,6 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
       return new ProudSkillExtraLevelNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ProudSkillExtraLevelNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 40: {
-
-              extraLevel_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              talentType_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              talentIndex_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              avatarGuid_ = input.readUInt64();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.internal_static_ProudSkillExtraLevelNotify_descriptor;
@@ -144,32 +94,10 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
               emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify.class, emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify.Builder.class);
     }
 
-    public static final int TALENT_INDEX_FIELD_NUMBER = 12;
-    private int talentIndex_;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 15;
+    private long avatarGuid_ = 0L;
     /**
-     * <code>uint32 talent_index = 12;</code>
-     * @return The talentIndex.
-     */
-    @java.lang.Override
-    public int getTalentIndex() {
-      return talentIndex_;
-    }
-
-    public static final int EXTRA_LEVEL_FIELD_NUMBER = 5;
-    private int extraLevel_;
-    /**
-     * <code>uint32 extra_level = 5;</code>
-     * @return The extraLevel.
-     */
-    @java.lang.Override
-    public int getExtraLevel() {
-      return extraLevel_;
-    }
-
-    public static final int AVATAR_GUID_FIELD_NUMBER = 13;
-    private long avatarGuid_;
-    /**
-     * <code>uint64 avatar_guid = 13;</code>
+     * <code>uint64 avatar_guid = 15;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -177,15 +105,49 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
       return avatarGuid_;
     }
 
-    public static final int TALENT_TYPE_FIELD_NUMBER = 6;
-    private int talentType_;
+    public static final int TALENT_INDEX_FIELD_NUMBER = 10;
+    private int talentIndex_ = 0;
     /**
-     * <code>uint32 talent_type = 6;</code>
+     * <pre>
+     * CBAGHCLLOCO
+     * </pre>
+     *
+     * <code>uint32 talent_index = 10;</code>
+     * @return The talentIndex.
+     */
+    @java.lang.Override
+    public int getTalentIndex() {
+      return talentIndex_;
+    }
+
+    public static final int TALENT_TYPE_FIELD_NUMBER = 3;
+    private int talentType_ = 0;
+    /**
+     * <pre>
+     * KPPFFPBNNAC
+     * </pre>
+     *
+     * <code>uint32 talent_type = 3;</code>
      * @return The talentType.
      */
     @java.lang.Override
     public int getTalentType() {
       return talentType_;
+    }
+
+    public static final int EXTRA_LEVEL_FIELD_NUMBER = 4;
+    private int extraLevel_ = 0;
+    /**
+     * <pre>
+     * LDLMAGLNLEA
+     * </pre>
+     *
+     * <code>uint32 extra_level = 4;</code>
+     * @return The extraLevel.
+     */
+    @java.lang.Override
+    public int getExtraLevel() {
+      return extraLevel_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -202,19 +164,19 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (extraLevel_ != 0) {
-        output.writeUInt32(5, extraLevel_);
-      }
       if (talentType_ != 0) {
-        output.writeUInt32(6, talentType_);
+        output.writeUInt32(3, talentType_);
+      }
+      if (extraLevel_ != 0) {
+        output.writeUInt32(4, extraLevel_);
       }
       if (talentIndex_ != 0) {
-        output.writeUInt32(12, talentIndex_);
+        output.writeUInt32(10, talentIndex_);
       }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(13, avatarGuid_);
+        output.writeUInt64(15, avatarGuid_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -223,23 +185,23 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (extraLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, extraLevel_);
-      }
       if (talentType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, talentType_);
+          .computeUInt32Size(3, talentType_);
+      }
+      if (extraLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, extraLevel_);
       }
       if (talentIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, talentIndex_);
+          .computeUInt32Size(10, talentIndex_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(13, avatarGuid_);
+          .computeUInt64Size(15, avatarGuid_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -254,15 +216,15 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify other = (emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify) obj;
 
-      if (getTalentIndex()
-          != other.getTalentIndex()) return false;
-      if (getExtraLevel()
-          != other.getExtraLevel()) return false;
       if (getAvatarGuid()
           != other.getAvatarGuid()) return false;
+      if (getTalentIndex()
+          != other.getTalentIndex()) return false;
       if (getTalentType()
           != other.getTalentType()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (getExtraLevel()
+          != other.getExtraLevel()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -273,16 +235,16 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TALENT_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getTalentIndex();
-      hash = (37 * hash) + EXTRA_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getExtraLevel();
       hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarGuid());
+      hash = (37 * hash) + TALENT_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getTalentIndex();
       hash = (37 * hash) + TALENT_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getTalentType();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (37 * hash) + EXTRA_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getExtraLevel();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -331,11 +293,13 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -379,8 +343,8 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1094
-     * Obf: GCKJMOIPFPE
+     * CmdId: 1099
+     * Name: FHFLCAHNFCP
      * </pre>
      *
      * Protobuf type {@code ProudSkillExtraLevelNotify}
@@ -404,30 +368,22 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        talentIndex_ = 0;
-
-        extraLevel_ = 0;
-
+        bitField0_ = 0;
         avatarGuid_ = 0L;
-
+        talentIndex_ = 0;
         talentType_ = 0;
-
+        extraLevel_ = 0;
         return this;
       }
 
@@ -454,12 +410,25 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify buildPartial() {
         emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify result = new emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify(this);
-        result.talentIndex_ = talentIndex_;
-        result.extraLevel_ = extraLevel_;
-        result.avatarGuid_ = avatarGuid_;
-        result.talentType_ = talentType_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.avatarGuid_ = avatarGuid_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.talentIndex_ = talentIndex_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.talentType_ = talentType_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.extraLevel_ = extraLevel_;
+        }
       }
 
       @java.lang.Override
@@ -506,19 +475,19 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify other) {
         if (other == emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify.getDefaultInstance()) return this;
-        if (other.getTalentIndex() != 0) {
-          setTalentIndex(other.getTalentIndex());
-        }
-        if (other.getExtraLevel() != 0) {
-          setExtraLevel(other.getExtraLevel());
-        }
         if (other.getAvatarGuid() != 0L) {
           setAvatarGuid(other.getAvatarGuid());
+        }
+        if (other.getTalentIndex() != 0) {
+          setTalentIndex(other.getTalentIndex());
         }
         if (other.getTalentType() != 0) {
           setTalentType(other.getTalentType());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        if (other.getExtraLevel() != 0) {
+          setExtraLevel(other.getExtraLevel());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -533,85 +502,57 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 24: {
+                talentType_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 32: {
+                extraLevel_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 32
+              case 80: {
+                talentIndex_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 80
+              case 120: {
+                avatarGuid_ = input.readUInt64();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ProudSkillExtraLevelNotifyOuterClass.ProudSkillExtraLevelNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int talentIndex_ ;
-      /**
-       * <code>uint32 talent_index = 12;</code>
-       * @return The talentIndex.
-       */
-      @java.lang.Override
-      public int getTalentIndex() {
-        return talentIndex_;
-      }
-      /**
-       * <code>uint32 talent_index = 12;</code>
-       * @param value The talentIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTalentIndex(int value) {
-        
-        talentIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 talent_index = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTalentIndex() {
-        
-        talentIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int extraLevel_ ;
-      /**
-       * <code>uint32 extra_level = 5;</code>
-       * @return The extraLevel.
-       */
-      @java.lang.Override
-      public int getExtraLevel() {
-        return extraLevel_;
-      }
-      /**
-       * <code>uint32 extra_level = 5;</code>
-       * @param value The extraLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setExtraLevel(int value) {
-        
-        extraLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 extra_level = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearExtraLevel() {
-        
-        extraLevel_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 13;</code>
+       * <code>uint64 avatar_guid = 15;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -619,30 +560,79 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 13;</code>
+       * <code>uint64 avatar_guid = 15;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
       public Builder setAvatarGuid(long value) {
-        
+
         avatarGuid_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 13;</code>
+       * <code>uint64 avatar_guid = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         avatarGuid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int talentIndex_ ;
+      /**
+       * <pre>
+       * CBAGHCLLOCO
+       * </pre>
+       *
+       * <code>uint32 talent_index = 10;</code>
+       * @return The talentIndex.
+       */
+      @java.lang.Override
+      public int getTalentIndex() {
+        return talentIndex_;
+      }
+      /**
+       * <pre>
+       * CBAGHCLLOCO
+       * </pre>
+       *
+       * <code>uint32 talent_index = 10;</code>
+       * @param value The talentIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTalentIndex(int value) {
+
+        talentIndex_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * CBAGHCLLOCO
+       * </pre>
+       *
+       * <code>uint32 talent_index = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTalentIndex() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        talentIndex_ = 0;
         onChanged();
         return this;
       }
 
       private int talentType_ ;
       /**
-       * <code>uint32 talent_type = 6;</code>
+       * <pre>
+       * KPPFFPBNNAC
+       * </pre>
+       *
+       * <code>uint32 talent_type = 3;</code>
        * @return The talentType.
        */
       @java.lang.Override
@@ -650,23 +640,76 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
         return talentType_;
       }
       /**
-       * <code>uint32 talent_type = 6;</code>
+       * <pre>
+       * KPPFFPBNNAC
+       * </pre>
+       *
+       * <code>uint32 talent_type = 3;</code>
        * @param value The talentType to set.
        * @return This builder for chaining.
        */
       public Builder setTalentType(int value) {
-        
+
         talentType_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 talent_type = 6;</code>
+       * <pre>
+       * KPPFFPBNNAC
+       * </pre>
+       *
+       * <code>uint32 talent_type = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearTalentType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         talentType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int extraLevel_ ;
+      /**
+       * <pre>
+       * LDLMAGLNLEA
+       * </pre>
+       *
+       * <code>uint32 extra_level = 4;</code>
+       * @return The extraLevel.
+       */
+      @java.lang.Override
+      public int getExtraLevel() {
+        return extraLevel_;
+      }
+      /**
+       * <pre>
+       * LDLMAGLNLEA
+       * </pre>
+       *
+       * <code>uint32 extra_level = 4;</code>
+       * @param value The extraLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setExtraLevel(int value) {
+
+        extraLevel_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * LDLMAGLNLEA
+       * </pre>
+       *
+       * <code>uint32 extra_level = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearExtraLevel() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        extraLevel_ = 0;
         onChanged();
         return this;
       }
@@ -703,7 +746,18 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ProudSkillExtraLevelNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -738,9 +792,9 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n ProudSkillExtraLevelNotify.proto\"q\n\032Pr" +
-      "oudSkillExtraLevelNotify\022\024\n\014talent_index" +
-      "\030\014 \001(\r\022\023\n\013extra_level\030\005 \001(\r\022\023\n\013avatar_gu" +
-      "id\030\r \001(\004\022\023\n\013talent_type\030\006 \001(\rB\033\n\031emu.gra" +
+      "oudSkillExtraLevelNotify\022\023\n\013avatar_guid\030" +
+      "\017 \001(\004\022\024\n\014talent_index\030\n \001(\r\022\023\n\013talent_ty" +
+      "pe\030\003 \001(\r\022\023\n\013extra_level\030\004 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -752,7 +806,7 @@ public final class ProudSkillExtraLevelNotifyOuterClass {
     internal_static_ProudSkillExtraLevelNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ProudSkillExtraLevelNotify_descriptor,
-        new java.lang.String[] { "TalentIndex", "ExtraLevel", "AvatarGuid", "TalentType", });
+        new java.lang.String[] { "AvatarGuid", "TalentIndex", "TalentType", "ExtraLevel", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

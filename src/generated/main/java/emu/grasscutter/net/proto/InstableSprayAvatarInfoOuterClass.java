@@ -19,20 +19,20 @@ public final class InstableSprayAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_trial = 11;</code>
+     * <code>bool is_trial = 7;</code>
      * @return The isTrial.
      */
     boolean getIsTrial();
 
     /**
-     * <code>uint64 avatar_id = 1;</code>
+     * <code>uint64 avatar_id = 5;</code>
      * @return The avatarId.
      */
     long getAvatarId();
   }
   /**
    * <pre>
-   * Obf: JIOLGMNCBND
+   * Name: JMAGIHDGPPP
    * </pre>
    *
    * Protobuf type {@code InstableSprayAvatarInfo}
@@ -56,58 +56,6 @@ public final class InstableSprayAvatarInfoOuterClass {
       return new InstableSprayAvatarInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private InstableSprayAvatarInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              avatarId_ = input.readUInt64();
-              break;
-            }
-            case 88: {
-
-              isTrial_ = input.readBool();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.internal_static_InstableSprayAvatarInfo_descriptor;
@@ -121,10 +69,10 @@ public final class InstableSprayAvatarInfoOuterClass {
               emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.class, emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.Builder.class);
     }
 
-    public static final int IS_TRIAL_FIELD_NUMBER = 11;
-    private boolean isTrial_;
+    public static final int IS_TRIAL_FIELD_NUMBER = 7;
+    private boolean isTrial_ = false;
     /**
-     * <code>bool is_trial = 11;</code>
+     * <code>bool is_trial = 7;</code>
      * @return The isTrial.
      */
     @java.lang.Override
@@ -132,10 +80,10 @@ public final class InstableSprayAvatarInfoOuterClass {
       return isTrial_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 1;
-    private long avatarId_;
+    public static final int AVATAR_ID_FIELD_NUMBER = 5;
+    private long avatarId_ = 0L;
     /**
-     * <code>uint64 avatar_id = 1;</code>
+     * <code>uint64 avatar_id = 5;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -158,12 +106,12 @@ public final class InstableSprayAvatarInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (avatarId_ != 0L) {
-        output.writeUInt64(1, avatarId_);
+        output.writeUInt64(5, avatarId_);
       }
       if (isTrial_ != false) {
-        output.writeBool(11, isTrial_);
+        output.writeBool(7, isTrial_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -174,13 +122,13 @@ public final class InstableSprayAvatarInfoOuterClass {
       size = 0;
       if (avatarId_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, avatarId_);
+          .computeUInt64Size(5, avatarId_);
       }
       if (isTrial_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isTrial_);
+          .computeBoolSize(7, isTrial_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -199,7 +147,7 @@ public final class InstableSprayAvatarInfoOuterClass {
           != other.getIsTrial()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -216,7 +164,7 @@ public final class InstableSprayAvatarInfoOuterClass {
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarId());
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -265,11 +213,13 @@ public final class InstableSprayAvatarInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -313,7 +263,7 @@ public final class InstableSprayAvatarInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: JIOLGMNCBND
+     * Name: JMAGIHDGPPP
      * </pre>
      *
      * Protobuf type {@code InstableSprayAvatarInfo}
@@ -337,26 +287,20 @@ public final class InstableSprayAvatarInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         isTrial_ = false;
-
         avatarId_ = 0L;
-
         return this;
       }
 
@@ -383,10 +327,19 @@ public final class InstableSprayAvatarInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo result = new emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo(this);
-        result.isTrial_ = isTrial_;
-        result.avatarId_ = avatarId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.isTrial_ = isTrial_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.avatarId_ = avatarId_;
+        }
       }
 
       @java.lang.Override
@@ -439,7 +392,7 @@ public final class InstableSprayAvatarInfoOuterClass {
         if (other.getAvatarId() != 0L) {
           setAvatarId(other.getAvatarId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -454,23 +407,47 @@ public final class InstableSprayAvatarInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 40: {
+                avatarId_ = input.readUInt64();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 40
+              case 56: {
+                isTrial_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 56
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private boolean isTrial_ ;
       /**
-       * <code>bool is_trial = 11;</code>
+       * <code>bool is_trial = 7;</code>
        * @return The isTrial.
        */
       @java.lang.Override
@@ -478,22 +455,23 @@ public final class InstableSprayAvatarInfoOuterClass {
         return isTrial_;
       }
       /**
-       * <code>bool is_trial = 11;</code>
+       * <code>bool is_trial = 7;</code>
        * @param value The isTrial to set.
        * @return This builder for chaining.
        */
       public Builder setIsTrial(boolean value) {
-        
+
         isTrial_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_trial = 11;</code>
+       * <code>bool is_trial = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTrial() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         isTrial_ = false;
         onChanged();
         return this;
@@ -501,7 +479,7 @@ public final class InstableSprayAvatarInfoOuterClass {
 
       private long avatarId_ ;
       /**
-       * <code>uint64 avatar_id = 1;</code>
+       * <code>uint64 avatar_id = 5;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -509,22 +487,23 @@ public final class InstableSprayAvatarInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint64 avatar_id = 1;</code>
+       * <code>uint64 avatar_id = 5;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
       public Builder setAvatarId(long value) {
-        
+
         avatarId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 avatar_id = 1;</code>
+       * <code>uint64 avatar_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         avatarId_ = 0L;
         onChanged();
         return this;
@@ -562,7 +541,18 @@ public final class InstableSprayAvatarInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new InstableSprayAvatarInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -597,8 +587,8 @@ public final class InstableSprayAvatarInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035InstableSprayAvatarInfo.proto\">\n\027Insta" +
-      "bleSprayAvatarInfo\022\020\n\010is_trial\030\013 \001(\010\022\021\n\t" +
-      "avatar_id\030\001 \001(\004B\033\n\031emu.grasscutter.net.p" +
+      "bleSprayAvatarInfo\022\020\n\010is_trial\030\007 \001(\010\022\021\n\t" +
+      "avatar_id\030\005 \001(\004B\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

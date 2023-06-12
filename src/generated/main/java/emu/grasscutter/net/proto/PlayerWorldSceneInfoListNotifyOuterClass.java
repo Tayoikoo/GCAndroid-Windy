@@ -19,33 +19,33 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+     * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo> 
         getInfoListList();
     /**
-     * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+     * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
      */
     emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo getInfoList(int index);
     /**
-     * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+     * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
      */
     int getInfoListCount();
     /**
-     * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+     * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfoOrBuilder> 
         getInfoListOrBuilderList();
     /**
-     * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+     * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
      */
     emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfoOrBuilder getInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 3422
-   * Obf: BJMKMMHILOB
+   * CmdId: 3205
+   * Name: LEHGOANEDOH
    * </pre>
    *
    * Protobuf type {@code PlayerWorldSceneInfoListNotify}
@@ -70,61 +70,6 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
       return new PlayerWorldSceneInfoListNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private PlayerWorldSceneInfoListNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                infoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              infoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          infoList_ = java.util.Collections.unmodifiableList(infoList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.internal_static_PlayerWorldSceneInfoListNotify_descriptor;
@@ -138,17 +83,18 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.PlayerWorldSceneInfoListNotify.class, emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.PlayerWorldSceneInfoListNotify.Builder.class);
     }
 
-    public static final int INFO_LIST_FIELD_NUMBER = 12;
+    public static final int INFO_LIST_FIELD_NUMBER = 10;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo> infoList_;
     /**
-     * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+     * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo> getInfoListList() {
       return infoList_;
     }
     /**
-     * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+     * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfoOrBuilder> 
@@ -156,21 +102,21 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
       return infoList_;
     }
     /**
-     * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+     * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
      */
     @java.lang.Override
     public int getInfoListCount() {
       return infoList_.size();
     }
     /**
-     * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+     * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo getInfoList(int index) {
       return infoList_.get(index);
     }
     /**
-     * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+     * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfoOrBuilder getInfoListOrBuilder(
@@ -193,9 +139,9 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < infoList_.size(); i++) {
-        output.writeMessage(12, infoList_.get(i));
+        output.writeMessage(10, infoList_.get(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -206,9 +152,9 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
       size = 0;
       for (int i = 0; i < infoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, infoList_.get(i));
+          .computeMessageSize(10, infoList_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -225,7 +171,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
 
       if (!getInfoListList()
           .equals(other.getInfoListList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -240,7 +186,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         hash = (37 * hash) + INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getInfoListList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -289,11 +235,13 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.PlayerWorldSceneInfoListNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.PlayerWorldSceneInfoListNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -337,8 +285,8 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3422
-     * Obf: BJMKMMHILOB
+     * CmdId: 3205
+     * Name: LEHGOANEDOH
      * </pre>
      *
      * Protobuf type {@code PlayerWorldSceneInfoListNotify}
@@ -362,29 +310,25 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.PlayerWorldSceneInfoListNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getInfoListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         if (infoListBuilder_ == null) {
           infoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          infoList_ = null;
           infoListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -411,7 +355,13 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.PlayerWorldSceneInfoListNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.PlayerWorldSceneInfoListNotify result = new emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.PlayerWorldSceneInfoListNotify(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.PlayerWorldSceneInfoListNotify result) {
         if (infoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             infoList_ = java.util.Collections.unmodifiableList(infoList_);
@@ -421,8 +371,10 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         } else {
           result.infoList_ = infoListBuilder_.build();
         }
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.PlayerWorldSceneInfoListNotify result) {
+        int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
@@ -495,7 +447,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -510,17 +462,43 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.PlayerWorldSceneInfoListNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 82: {
+                emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.parser(),
+                        extensionRegistry);
+                if (infoListBuilder_ == null) {
+                  ensureInfoListIsMutable();
+                  infoList_.add(m);
+                } else {
+                  infoListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 82
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.PlayerWorldSceneInfoListNotifyOuterClass.PlayerWorldSceneInfoListNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -538,7 +516,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
           emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo, emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.Builder, emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfoOrBuilder> infoListBuilder_;
 
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo> getInfoListList() {
         if (infoListBuilder_ == null) {
@@ -548,7 +526,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public int getInfoListCount() {
         if (infoListBuilder_ == null) {
@@ -558,7 +536,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo getInfoList(int index) {
         if (infoListBuilder_ == null) {
@@ -568,7 +546,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public Builder setInfoList(
           int index, emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo value) {
@@ -585,7 +563,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public Builder setInfoList(
           int index, emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.Builder builderForValue) {
@@ -599,7 +577,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public Builder addInfoList(emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo value) {
         if (infoListBuilder_ == null) {
@@ -615,7 +593,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public Builder addInfoList(
           int index, emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo value) {
@@ -632,7 +610,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public Builder addInfoList(
           emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.Builder builderForValue) {
@@ -646,7 +624,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public Builder addInfoList(
           int index, emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.Builder builderForValue) {
@@ -660,7 +638,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public Builder addAllInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo> values) {
@@ -675,7 +653,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public Builder clearInfoList() {
         if (infoListBuilder_ == null) {
@@ -688,7 +666,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public Builder removeInfoList(int index) {
         if (infoListBuilder_ == null) {
@@ -701,14 +679,14 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.Builder getInfoListBuilder(
           int index) {
         return getInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfoOrBuilder getInfoListOrBuilder(
           int index) {
@@ -718,7 +696,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfoOrBuilder> 
            getInfoListOrBuilderList() {
@@ -729,14 +707,14 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.Builder addInfoListBuilder() {
         return getInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.Builder addInfoListBuilder(
           int index) {
@@ -744,7 +722,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
             index, emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .PlayerWorldSceneInfo info_list = 12;</code>
+       * <code>repeated .PlayerWorldSceneInfo info_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.Builder> 
            getInfoListBuilderList() {
@@ -797,7 +775,18 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PlayerWorldSceneInfoListNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -833,7 +822,7 @@ public final class PlayerWorldSceneInfoListNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n$PlayerWorldSceneInfoListNotify.proto\032\032" +
       "PlayerWorldSceneInfo.proto\"J\n\036PlayerWorl" +
-      "dSceneInfoListNotify\022(\n\tinfo_list\030\014 \003(\0132" +
+      "dSceneInfoListNotify\022(\n\tinfo_list\030\n \003(\0132" +
       "\025.PlayerWorldSceneInfoB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };

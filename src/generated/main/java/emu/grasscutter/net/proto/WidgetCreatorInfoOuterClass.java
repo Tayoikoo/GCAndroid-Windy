@@ -19,40 +19,40 @@ public final class WidgetCreatorInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.WidgetCreatorOpType op_type = 13;</code>
+     * <code>.WidgetCreateLocationInfo location_info = 12;</code>
+     * @return Whether the locationInfo field is set.
+     */
+    boolean hasLocationInfo();
+    /**
+     * <code>.WidgetCreateLocationInfo location_info = 12;</code>
+     * @return The locationInfo.
+     */
+    emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo getLocationInfo();
+    /**
+     * <code>.WidgetCreateLocationInfo location_info = 12;</code>
+     */
+    emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder getLocationInfoOrBuilder();
+
+    /**
+     * <code>.WidgetCreatorOpType op_type = 5;</code>
      * @return The enum numeric value on the wire for opType.
      */
     int getOpTypeValue();
     /**
-     * <code>.WidgetCreatorOpType op_type = 13;</code>
+     * <code>.WidgetCreatorOpType op_type = 5;</code>
      * @return The opType.
      */
     emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType getOpType();
 
     /**
-     * <code>.WidgetCreateLocationInfo location_info = 8;</code>
-     * @return Whether the locationInfo field is set.
-     */
-    boolean hasLocationInfo();
-    /**
-     * <code>.WidgetCreateLocationInfo location_info = 8;</code>
-     * @return The locationInfo.
-     */
-    emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo getLocationInfo();
-    /**
-     * <code>.WidgetCreateLocationInfo location_info = 8;</code>
-     */
-    emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder getLocationInfoOrBuilder();
-
-    /**
-     * <code>uint32 entity_id = 9;</code>
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * Obf: MGKIFECKMDL
+   * Name: LNBOOJAPOBI
    * </pre>
    *
    * Protobuf type {@code WidgetCreatorInfo}
@@ -77,72 +77,6 @@ public final class WidgetCreatorInfoOuterClass {
       return new WidgetCreatorInfo();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private WidgetCreatorInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 66: {
-              emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder subBuilder = null;
-              if (locationInfo_ != null) {
-                subBuilder = locationInfo_.toBuilder();
-              }
-              locationInfo_ = input.readMessage(emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(locationInfo_);
-                locationInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 72: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-              int rawValue = input.readEnum();
-
-              opType_ = rawValue;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.internal_static_WidgetCreatorInfo_descriptor;
@@ -156,29 +90,10 @@ public final class WidgetCreatorInfoOuterClass {
               emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.class, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder.class);
     }
 
-    public static final int OP_TYPE_FIELD_NUMBER = 13;
-    private int opType_;
-    /**
-     * <code>.WidgetCreatorOpType op_type = 13;</code>
-     * @return The enum numeric value on the wire for opType.
-     */
-    @java.lang.Override public int getOpTypeValue() {
-      return opType_;
-    }
-    /**
-     * <code>.WidgetCreatorOpType op_type = 13;</code>
-     * @return The opType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType getOpType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType result = emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType.valueOf(opType_);
-      return result == null ? emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType.UNRECOGNIZED : result;
-    }
-
-    public static final int LOCATION_INFO_FIELD_NUMBER = 8;
+    public static final int LOCATION_INFO_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo locationInfo_;
     /**
-     * <code>.WidgetCreateLocationInfo location_info = 8;</code>
+     * <code>.WidgetCreateLocationInfo location_info = 12;</code>
      * @return Whether the locationInfo field is set.
      */
     @java.lang.Override
@@ -186,7 +101,7 @@ public final class WidgetCreatorInfoOuterClass {
       return locationInfo_ != null;
     }
     /**
-     * <code>.WidgetCreateLocationInfo location_info = 8;</code>
+     * <code>.WidgetCreateLocationInfo location_info = 12;</code>
      * @return The locationInfo.
      */
     @java.lang.Override
@@ -194,17 +109,35 @@ public final class WidgetCreatorInfoOuterClass {
       return locationInfo_ == null ? emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance() : locationInfo_;
     }
     /**
-     * <code>.WidgetCreateLocationInfo location_info = 8;</code>
+     * <code>.WidgetCreateLocationInfo location_info = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder getLocationInfoOrBuilder() {
-      return getLocationInfo();
+      return locationInfo_ == null ? emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance() : locationInfo_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 9;
-    private int entityId_;
+    public static final int OP_TYPE_FIELD_NUMBER = 5;
+    private int opType_ = 0;
     /**
-     * <code>uint32 entity_id = 9;</code>
+     * <code>.WidgetCreatorOpType op_type = 5;</code>
+     * @return The enum numeric value on the wire for opType.
+     */
+    @java.lang.Override public int getOpTypeValue() {
+      return opType_;
+    }
+    /**
+     * <code>.WidgetCreatorOpType op_type = 5;</code>
+     * @return The opType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType getOpType() {
+      emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType result = emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType.forNumber(opType_);
+      return result == null ? emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType.UNRECOGNIZED : result;
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 8;
+    private int entityId_ = 0;
+    /**
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -226,16 +159,16 @@ public final class WidgetCreatorInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (locationInfo_ != null) {
-        output.writeMessage(8, getLocationInfo());
+      if (opType_ != emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType.WIDGET_CREATOR_TYPE_NONE.getNumber()) {
+        output.writeEnum(5, opType_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(9, entityId_);
+        output.writeUInt32(8, entityId_);
       }
-      if (opType_ != emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType.WIDGET_CREATOR_TYPE_NONE.getNumber()) {
-        output.writeEnum(13, opType_);
+      if (locationInfo_ != null) {
+        output.writeMessage(12, getLocationInfo());
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -244,19 +177,19 @@ public final class WidgetCreatorInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (locationInfo_ != null) {
+      if (opType_ != emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType.WIDGET_CREATOR_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getLocationInfo());
+          .computeEnumSize(5, opType_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, entityId_);
+          .computeUInt32Size(8, entityId_);
       }
-      if (opType_ != emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType.WIDGET_CREATOR_TYPE_NONE.getNumber()) {
+      if (locationInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, opType_);
+          .computeMessageSize(12, getLocationInfo());
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -271,15 +204,15 @@ public final class WidgetCreatorInfoOuterClass {
       }
       emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo other = (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) obj;
 
-      if (opType_ != other.opType_) return false;
       if (hasLocationInfo() != other.hasLocationInfo()) return false;
       if (hasLocationInfo()) {
         if (!getLocationInfo()
             .equals(other.getLocationInfo())) return false;
       }
+      if (opType_ != other.opType_) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -290,15 +223,15 @@ public final class WidgetCreatorInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OP_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + opType_;
       if (hasLocationInfo()) {
         hash = (37 * hash) + LOCATION_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getLocationInfo().hashCode();
       }
+      hash = (37 * hash) + OP_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + opType_;
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -347,11 +280,13 @@ public final class WidgetCreatorInfoOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -395,7 +330,7 @@ public final class WidgetCreatorInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: MGKIFECKMDL
+     * Name: LNBOOJAPOBI
      * </pre>
      *
      * Protobuf type {@code WidgetCreatorInfo}
@@ -419,32 +354,25 @@ public final class WidgetCreatorInfoOuterClass {
 
       // Construct using emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        opType_ = 0;
-
-        if (locationInfoBuilder_ == null) {
-          locationInfo_ = null;
-        } else {
-          locationInfo_ = null;
+        bitField0_ = 0;
+        locationInfo_ = null;
+        if (locationInfoBuilder_ != null) {
+          locationInfoBuilder_.dispose();
           locationInfoBuilder_ = null;
         }
+        opType_ = 0;
         entityId_ = 0;
-
         return this;
       }
 
@@ -471,15 +399,24 @@ public final class WidgetCreatorInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo buildPartial() {
         emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo result = new emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo(this);
-        result.opType_ = opType_;
-        if (locationInfoBuilder_ == null) {
-          result.locationInfo_ = locationInfo_;
-        } else {
-          result.locationInfo_ = locationInfoBuilder_.build();
-        }
-        result.entityId_ = entityId_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.locationInfo_ = locationInfoBuilder_ == null
+              ? locationInfo_
+              : locationInfoBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.opType_ = opType_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.entityId_ = entityId_;
+        }
       }
 
       @java.lang.Override
@@ -526,16 +463,16 @@ public final class WidgetCreatorInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo other) {
         if (other == emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.getDefaultInstance()) return this;
-        if (other.opType_ != 0) {
-          setOpTypeValue(other.getOpTypeValue());
-        }
         if (other.hasLocationInfo()) {
           mergeLocationInfo(other.getLocationInfo());
+        }
+        if (other.opType_ != 0) {
+          setOpTypeValue(other.getOpTypeValue());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -550,86 +487,63 @@ public final class WidgetCreatorInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 40: {
+                opType_ = input.readEnum();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 40
+              case 64: {
+                entityId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 64
+              case 98: {
+                input.readMessage(
+                    getLocationInfoFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 98
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
-
-      private int opType_ = 0;
-      /**
-       * <code>.WidgetCreatorOpType op_type = 13;</code>
-       * @return The enum numeric value on the wire for opType.
-       */
-      @java.lang.Override public int getOpTypeValue() {
-        return opType_;
-      }
-      /**
-       * <code>.WidgetCreatorOpType op_type = 13;</code>
-       * @param value The enum numeric value on the wire for opType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOpTypeValue(int value) {
-        
-        opType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.WidgetCreatorOpType op_type = 13;</code>
-       * @return The opType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType getOpType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType result = emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType.valueOf(opType_);
-        return result == null ? emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.WidgetCreatorOpType op_type = 13;</code>
-       * @param value The opType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOpType(emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        opType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.WidgetCreatorOpType op_type = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOpType() {
-        
-        opType_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo locationInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder> locationInfoBuilder_;
       /**
-       * <code>.WidgetCreateLocationInfo location_info = 8;</code>
+       * <code>.WidgetCreateLocationInfo location_info = 12;</code>
        * @return Whether the locationInfo field is set.
        */
       public boolean hasLocationInfo() {
-        return locationInfoBuilder_ != null || locationInfo_ != null;
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.WidgetCreateLocationInfo location_info = 8;</code>
+       * <code>.WidgetCreateLocationInfo location_info = 12;</code>
        * @return The locationInfo.
        */
       public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo getLocationInfo() {
@@ -640,7 +554,7 @@ public final class WidgetCreatorInfoOuterClass {
         }
       }
       /**
-       * <code>.WidgetCreateLocationInfo location_info = 8;</code>
+       * <code>.WidgetCreateLocationInfo location_info = 12;</code>
        */
       public Builder setLocationInfo(emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo value) {
         if (locationInfoBuilder_ == null) {
@@ -648,69 +562,69 @@ public final class WidgetCreatorInfoOuterClass {
             throw new NullPointerException();
           }
           locationInfo_ = value;
-          onChanged();
         } else {
           locationInfoBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.WidgetCreateLocationInfo location_info = 8;</code>
+       * <code>.WidgetCreateLocationInfo location_info = 12;</code>
        */
       public Builder setLocationInfo(
           emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder builderForValue) {
         if (locationInfoBuilder_ == null) {
           locationInfo_ = builderForValue.build();
-          onChanged();
         } else {
           locationInfoBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.WidgetCreateLocationInfo location_info = 8;</code>
+       * <code>.WidgetCreateLocationInfo location_info = 12;</code>
        */
       public Builder mergeLocationInfo(emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo value) {
         if (locationInfoBuilder_ == null) {
-          if (locationInfo_ != null) {
-            locationInfo_ =
-              emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.newBuilder(locationInfo_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000001) != 0) &&
+            locationInfo_ != null &&
+            locationInfo_ != emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.getDefaultInstance()) {
+            getLocationInfoBuilder().mergeFrom(value);
           } else {
             locationInfo_ = value;
           }
-          onChanged();
         } else {
           locationInfoBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
-       * <code>.WidgetCreateLocationInfo location_info = 8;</code>
+       * <code>.WidgetCreateLocationInfo location_info = 12;</code>
        */
       public Builder clearLocationInfo() {
-        if (locationInfoBuilder_ == null) {
-          locationInfo_ = null;
-          onChanged();
-        } else {
-          locationInfo_ = null;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        locationInfo_ = null;
+        if (locationInfoBuilder_ != null) {
+          locationInfoBuilder_.dispose();
           locationInfoBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
-       * <code>.WidgetCreateLocationInfo location_info = 8;</code>
+       * <code>.WidgetCreateLocationInfo location_info = 12;</code>
        */
       public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder getLocationInfoBuilder() {
-        
+        bitField0_ |= 0x00000001;
         onChanged();
         return getLocationInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.WidgetCreateLocationInfo location_info = 8;</code>
+       * <code>.WidgetCreateLocationInfo location_info = 12;</code>
        */
       public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder getLocationInfoOrBuilder() {
         if (locationInfoBuilder_ != null) {
@@ -721,7 +635,7 @@ public final class WidgetCreatorInfoOuterClass {
         }
       }
       /**
-       * <code>.WidgetCreateLocationInfo location_info = 8;</code>
+       * <code>.WidgetCreateLocationInfo location_info = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder> 
@@ -737,9 +651,62 @@ public final class WidgetCreatorInfoOuterClass {
         return locationInfoBuilder_;
       }
 
+      private int opType_ = 0;
+      /**
+       * <code>.WidgetCreatorOpType op_type = 5;</code>
+       * @return The enum numeric value on the wire for opType.
+       */
+      @java.lang.Override public int getOpTypeValue() {
+        return opType_;
+      }
+      /**
+       * <code>.WidgetCreatorOpType op_type = 5;</code>
+       * @param value The enum numeric value on the wire for opType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOpTypeValue(int value) {
+        opType_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.WidgetCreatorOpType op_type = 5;</code>
+       * @return The opType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType getOpType() {
+        emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType result = emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType.forNumber(opType_);
+        return result == null ? emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.WidgetCreatorOpType op_type = 5;</code>
+       * @param value The opType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOpType(emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.WidgetCreatorOpType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000002;
+        opType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.WidgetCreatorOpType op_type = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOpType() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        opType_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -747,22 +714,23 @@ public final class WidgetCreatorInfoOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
       public Builder setEntityId(int value) {
-        
+
         entityId_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 entity_id = 9;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         entityId_ = 0;
         onChanged();
         return this;
@@ -800,7 +768,18 @@ public final class WidgetCreatorInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new WidgetCreatorInfo(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -834,28 +813,28 @@ public final class WidgetCreatorInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027WidgetCreatorInfo.proto\032\031WidgetCreator" +
-      "OpType.proto\032\036WidgetCreateLocationInfo.p" +
-      "roto\"\177\n\021WidgetCreatorInfo\022%\n\007op_type\030\r \001" +
-      "(\0162\024.WidgetCreatorOpType\0220\n\rlocation_inf" +
-      "o\030\010 \001(\0132\031.WidgetCreateLocationInfo\022\021\n\ten" +
-      "tity_id\030\t \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "\n\027WidgetCreatorInfo.proto\032\036WidgetCreateL" +
+      "ocationInfo.proto\032\031WidgetCreatorOpType.p" +
+      "roto\"\177\n\021WidgetCreatorInfo\0220\n\rlocation_in" +
+      "fo\030\014 \001(\0132\031.WidgetCreateLocationInfo\022%\n\007o" +
+      "p_type\030\005 \001(\0162\024.WidgetCreatorOpType\022\021\n\ten" +
+      "tity_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.getDescriptor(),
         });
     internal_static_WidgetCreatorInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_WidgetCreatorInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WidgetCreatorInfo_descriptor,
-        new java.lang.String[] { "OpType", "LocationInfo", "EntityId", });
-    emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.getDescriptor();
+        new java.lang.String[] { "LocationInfo", "OpType", "EntityId", });
     emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.WidgetCreatorOpTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

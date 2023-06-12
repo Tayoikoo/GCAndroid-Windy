@@ -16,7 +16,7 @@ public final class PlatformTypeOuterClass {
   }
   /**
    * <pre>
-   * Obf: OBGLBKLIHPE
+   * Name: IIINMHIAOCN
    * </pre>
    *
    * Protobuf enum {@code PlatformType}

@@ -71,66 +71,6 @@ public final class ReliquaryResponseOuterClass {
       return new ReliquaryResponse();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private ReliquaryResponse(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                nbbpegfkpac_ = new java.util.ArrayList<emu.grasscutter.net.proto.GameplayRecommendationReliquaryMainPropDataOuterClass.GameplayRecommendationReliquaryMainPropData>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              nbbpegfkpac_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GameplayRecommendationReliquaryMainPropDataOuterClass.GameplayRecommendationReliquaryMainPropData.parser(), extensionRegistry));
-              break;
-            }
-            case 120: {
-
-              equipType_ = input.readUInt32();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          nbbpegfkpac_ = java.util.Collections.unmodifiableList(nbbpegfkpac_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.ReliquaryResponseOuterClass.internal_static_ReliquaryResponse_descriptor;
@@ -145,6 +85,7 @@ public final class ReliquaryResponseOuterClass {
     }
 
     public static final int NBBPEGFKPAC_FIELD_NUMBER = 12;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.GameplayRecommendationReliquaryMainPropDataOuterClass.GameplayRecommendationReliquaryMainPropData> nbbpegfkpac_;
     /**
      * <code>repeated .GameplayRecommendationReliquaryMainPropData nbbpegfkpac = 12;</code>
@@ -185,7 +126,7 @@ public final class ReliquaryResponseOuterClass {
     }
 
     public static final int EQUIPTYPE_FIELD_NUMBER = 15;
-    private int equipType_;
+    private int equipType_ = 0;
     /**
      * <code>uint32 equipType = 15;</code>
      * @return The equipType.
@@ -215,7 +156,7 @@ public final class ReliquaryResponseOuterClass {
       if (equipType_ != 0) {
         output.writeUInt32(15, equipType_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -232,7 +173,7 @@ public final class ReliquaryResponseOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, equipType_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -251,7 +192,7 @@ public final class ReliquaryResponseOuterClass {
           .equals(other.getNbbpegfkpacList())) return false;
       if (getEquipType()
           != other.getEquipType()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -268,7 +209,7 @@ public final class ReliquaryResponseOuterClass {
       }
       hash = (37 * hash) + EQUIPTYPE_FIELD_NUMBER;
       hash = (53 * hash) + getEquipType();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -317,11 +258,13 @@ public final class ReliquaryResponseOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.ReliquaryResponseOuterClass.ReliquaryResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.ReliquaryResponseOuterClass.ReliquaryResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -385,31 +328,26 @@ public final class ReliquaryResponseOuterClass {
 
       // Construct using emu.grasscutter.net.proto.ReliquaryResponseOuterClass.ReliquaryResponse.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getNbbpegfkpacFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         if (nbbpegfkpacBuilder_ == null) {
           nbbpegfkpac_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          nbbpegfkpac_ = null;
           nbbpegfkpacBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000001);
         equipType_ = 0;
-
         return this;
       }
 
@@ -436,7 +374,13 @@ public final class ReliquaryResponseOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ReliquaryResponseOuterClass.ReliquaryResponse buildPartial() {
         emu.grasscutter.net.proto.ReliquaryResponseOuterClass.ReliquaryResponse result = new emu.grasscutter.net.proto.ReliquaryResponseOuterClass.ReliquaryResponse(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.ReliquaryResponseOuterClass.ReliquaryResponse result) {
         if (nbbpegfkpacBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             nbbpegfkpac_ = java.util.Collections.unmodifiableList(nbbpegfkpac_);
@@ -446,9 +390,13 @@ public final class ReliquaryResponseOuterClass {
         } else {
           result.nbbpegfkpac_ = nbbpegfkpacBuilder_.build();
         }
-        result.equipType_ = equipType_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.ReliquaryResponseOuterClass.ReliquaryResponse result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.equipType_ = equipType_;
+        }
       }
 
       @java.lang.Override
@@ -524,7 +472,7 @@ public final class ReliquaryResponseOuterClass {
         if (other.getEquipType() != 0) {
           setEquipType(other.getEquipType());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -539,17 +487,48 @@ public final class ReliquaryResponseOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.ReliquaryResponseOuterClass.ReliquaryResponse parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 98: {
+                emu.grasscutter.net.proto.GameplayRecommendationReliquaryMainPropDataOuterClass.GameplayRecommendationReliquaryMainPropData m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.GameplayRecommendationReliquaryMainPropDataOuterClass.GameplayRecommendationReliquaryMainPropData.parser(),
+                        extensionRegistry);
+                if (nbbpegfkpacBuilder_ == null) {
+                  ensureNbbpegfkpacIsMutable();
+                  nbbpegfkpac_.add(m);
+                } else {
+                  nbbpegfkpacBuilder_.addMessage(m);
+                }
+                break;
+              } // case 98
+              case 120: {
+                equipType_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 120
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.ReliquaryResponseOuterClass.ReliquaryResponse) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -809,8 +788,9 @@ public final class ReliquaryResponseOuterClass {
        * @return This builder for chaining.
        */
       public Builder setEquipType(int value) {
-        
+
         equipType_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -819,7 +799,7 @@ public final class ReliquaryResponseOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearEquipType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         equipType_ = 0;
         onChanged();
         return this;
@@ -857,7 +837,18 @@ public final class ReliquaryResponseOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ReliquaryResponse(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -895,8 +886,8 @@ public final class ReliquaryResponseOuterClass {
       "mendationReliquaryMainPropData.proto\"i\n\021" +
       "ReliquaryResponse\022A\n\013nbbpegfkpac\030\014 \003(\0132," +
       ".GameplayRecommendationReliquaryMainProp" +
-      "Data\022\021\n\tequipType\030\017 \001(\rB!\n\031emu.grasscutt" +
-      "er.net.protoZ\004/genb\006proto3"
+      "Data\022\021\n\tequipType\030\017 \001(\rB\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

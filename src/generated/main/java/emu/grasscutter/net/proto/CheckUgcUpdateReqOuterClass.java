@@ -19,20 +19,20 @@ public final class CheckUgcUpdateReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.UgcType ugc_type = 4;</code>
+     * <code>.UgcType ugc_type = 6;</code>
      * @return The enum numeric value on the wire for ugcType.
      */
     int getUgcTypeValue();
     /**
-     * <code>.UgcType ugc_type = 4;</code>
+     * <code>.UgcType ugc_type = 6;</code>
      * @return The ugcType.
      */
     emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType();
   }
   /**
    * <pre>
-   * CmdId: 6303
-   * Obf: MCMPDMKLJFP
+   * CmdId: 6342
+   * Name: FALNIBLGNCF
    * </pre>
    *
    * Protobuf type {@code CheckUgcUpdateReq}
@@ -57,54 +57,6 @@ public final class CheckUgcUpdateReqOuterClass {
       return new CheckUgcUpdateReq();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private CheckUgcUpdateReq(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 32: {
-              int rawValue = input.readEnum();
-
-              ugcType_ = rawValue;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.internal_static_CheckUgcUpdateReq_descriptor;
@@ -118,22 +70,21 @@ public final class CheckUgcUpdateReqOuterClass {
               emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq.class, emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq.Builder.class);
     }
 
-    public static final int UGC_TYPE_FIELD_NUMBER = 4;
-    private int ugcType_;
+    public static final int UGC_TYPE_FIELD_NUMBER = 6;
+    private int ugcType_ = 0;
     /**
-     * <code>.UgcType ugc_type = 4;</code>
+     * <code>.UgcType ugc_type = 6;</code>
      * @return The enum numeric value on the wire for ugcType.
      */
     @java.lang.Override public int getUgcTypeValue() {
       return ugcType_;
     }
     /**
-     * <code>.UgcType ugc_type = 4;</code>
+     * <code>.UgcType ugc_type = 6;</code>
      * @return The ugcType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType result = emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.valueOf(ugcType_);
+      emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType result = emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.forNumber(ugcType_);
       return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
     }
 
@@ -152,9 +103,9 @@ public final class CheckUgcUpdateReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
-        output.writeEnum(4, ugcType_);
+        output.writeEnum(6, ugcType_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -165,9 +116,9 @@ public final class CheckUgcUpdateReqOuterClass {
       size = 0;
       if (ugcType_ != emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UGC_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, ugcType_);
+          .computeEnumSize(6, ugcType_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -183,7 +134,7 @@ public final class CheckUgcUpdateReqOuterClass {
       emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq other = (emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq) obj;
 
       if (ugcType_ != other.ugcType_) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -196,7 +147,7 @@ public final class CheckUgcUpdateReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + UGC_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + ugcType_;
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -245,11 +196,13 @@ public final class CheckUgcUpdateReqOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -293,8 +246,8 @@ public final class CheckUgcUpdateReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6303
-     * Obf: MCMPDMKLJFP
+     * CmdId: 6342
+     * Name: FALNIBLGNCF
      * </pre>
      *
      * Protobuf type {@code CheckUgcUpdateReq}
@@ -318,24 +271,19 @@ public final class CheckUgcUpdateReqOuterClass {
 
       // Construct using emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         ugcType_ = 0;
-
         return this;
       }
 
@@ -362,9 +310,16 @@ public final class CheckUgcUpdateReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq buildPartial() {
         emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq result = new emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq(this);
-        result.ugcType_ = ugcType_;
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.ugcType_ = ugcType_;
+        }
       }
 
       @java.lang.Override
@@ -414,7 +369,7 @@ public final class CheckUgcUpdateReqOuterClass {
         if (other.ugcType_ != 0) {
           setUgcTypeValue(other.getUgcTypeValue());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -429,51 +384,69 @@ public final class CheckUgcUpdateReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 48: {
+                ugcType_ = input.readEnum();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 48
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.CheckUgcUpdateReqOuterClass.CheckUgcUpdateReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private int ugcType_ = 0;
       /**
-       * <code>.UgcType ugc_type = 4;</code>
+       * <code>.UgcType ugc_type = 6;</code>
        * @return The enum numeric value on the wire for ugcType.
        */
       @java.lang.Override public int getUgcTypeValue() {
         return ugcType_;
       }
       /**
-       * <code>.UgcType ugc_type = 4;</code>
+       * <code>.UgcType ugc_type = 6;</code>
        * @param value The enum numeric value on the wire for ugcType to set.
        * @return This builder for chaining.
        */
       public Builder setUgcTypeValue(int value) {
-        
         ugcType_ = value;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>.UgcType ugc_type = 4;</code>
+       * <code>.UgcType ugc_type = 6;</code>
        * @return The ugcType.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType getUgcType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType result = emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.valueOf(ugcType_);
+        emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType result = emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.forNumber(ugcType_);
         return result == null ? emu.grasscutter.net.proto.UgcTypeOuterClass.UgcType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.UgcType ugc_type = 4;</code>
+       * <code>.UgcType ugc_type = 6;</code>
        * @param value The ugcType to set.
        * @return This builder for chaining.
        */
@@ -481,17 +454,17 @@ public final class CheckUgcUpdateReqOuterClass {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+        bitField0_ |= 0x00000001;
         ugcType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.UgcType ugc_type = 4;</code>
+       * <code>.UgcType ugc_type = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearUgcType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000001);
         ugcType_ = 0;
         onChanged();
         return this;
@@ -529,7 +502,18 @@ public final class CheckUgcUpdateReqOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CheckUgcUpdateReq(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -564,7 +548,7 @@ public final class CheckUgcUpdateReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027CheckUgcUpdateReq.proto\032\rUgcType.proto" +
-      "\"/\n\021CheckUgcUpdateReq\022\032\n\010ugc_type\030\004 \001(\0162" +
+      "\"/\n\021CheckUgcUpdateReq\022\032\n\010ugc_type\030\006 \001(\0162" +
       "\010.UgcTypeB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
