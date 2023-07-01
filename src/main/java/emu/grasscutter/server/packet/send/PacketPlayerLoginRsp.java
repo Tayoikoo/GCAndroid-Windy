@@ -34,6 +34,7 @@ public class PacketPlayerLoginRsp extends BasePacket {
             if (regionCache == null) {
                 try {
                     // todo: we might want to push custom config to client
+<<<<<<< HEAD
                     RegionInfo serverRegion = RegionInfo.newBuilder()
                             .setGateserverIp(lr(GAME_INFO.accessAddress, GAME_INFO.bindAddress))
                             .setGateserverPort(lr(GAME_INFO.accessPort, GAME_INFO.bindPort))
@@ -41,6 +42,19 @@ public class PacketPlayerLoginRsp extends BasePacket {
                             .build();
 
                     regionCache = QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.newBuilder().setRegionInfo(serverRegion).build();
+=======
+                    RegionInfo serverRegion =
+                            RegionInfo.newBuilder()
+                                    .setGateserverIp(lr(GAME_INFO.accessAddress, GAME_INFO.bindAddress))
+                                    .setGateserverPort(lr(GAME_INFO.accessPort, GAME_INFO.bindPort))
+                                    .build();
+
+                    var regionCache =
+                            QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp.newBuilder()
+                                    .setRegionInfo(serverRegion)
+                                    .setClientSecretKey(ByteString.copyFrom(Crypto.DISPATCH_SEED))
+                                    .build();
+>>>>>>> 8c2d00fcd330277c26f6e08d51f5a2afc155a8d6
                 } catch (Exception e) {
                     Grasscutter.getLogger().error("Error while initializing region cache!", e);
                 }

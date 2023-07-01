@@ -35,7 +35,8 @@ public class World implements Iterable<Player> {
     private int nextPeerId = 0;
     private int worldLevel;
 
-    @Getter private boolean isMultiplayer, timeLocked = false;
+    @Getter private boolean isMultiplayer = false;
+    @Getter private boolean timeLocked;
 
     private long lastUpdateTime;
     @Getter private int tickCount = 0;
@@ -56,6 +57,7 @@ public class World implements Iterable<Player> {
         this.entity = new EntityWorld(this);
         this.worldLevel = player.getWorldLevel();
         this.isMultiplayer = isMultiplayer;
+        this.timeLocked = player.getProperty(PlayerProperty.PROP_IS_GAME_TIME_LOCKED) != 0;
 
         this.lastUpdateTime = System.currentTimeMillis();
         this.currentWorldTime = host.getPlayerGameTime();
@@ -435,7 +437,11 @@ public class World implements Iterable<Player> {
         // Check if there are players in this world.
         if (this.getPlayerCount() == 0) return true;
         // Tick all associated scenes.
-        this.getScenes().forEach((k, scene) -> scene.onTick());
+        this.getScenes()
+                .forEach(
+                        (k, scene) -> {
+                            if (scene.getPlayerCount() > 0) scene.onTick();
+                        });
 
         // sync time every 10 seconds
         if (this.tickCount % 10 == 0) {

@@ -556,10 +556,6 @@ public final class Scene {
         this.finishLoading();
         this.checkPlayerRespawn();
         if (this.tickCount++ % 10 == 0) this.broadcastPacket(new PacketSceneTimeNotify(this));
-        if (this.getPlayerCount() <= 0 && !this.dontDestroyWhenEmpty) {
-            this.getScriptManager().onDestroy();
-            this.getWorld().deregisterScene(this);
-        }
     }
 
     /** Validates a player's current position. Teleports the player if the player is out of bounds. */
@@ -696,18 +692,6 @@ public final class Scene {
             npcBornEntries.addAll(loadNpcForPlayer(player));
         }
 
-        // clear the unreachable group for client
-        var toUnload =
-                this.npcBornEntrySet.stream()
-                        .filter(i -> !npcBornEntries.contains(i))
-                        .map(SceneNpcBornEntry::getGroupId)
-                        .toList();
-
-        if (toUnload.size() > 0) {
-            broadcastPacket(new PacketGroupUnloadNotify(toUnload));
-            Grasscutter.getLogger().trace("Unload NPC Group {}", toUnload);
-        }
-        // exchange the new npcBornEntry Set
         this.npcBornEntrySet = npcBornEntries;
     }
 
@@ -854,7 +838,7 @@ public final class Scene {
                         .collect(Collectors.toSet());
 
         for (var group : this.loadedGroups) {
-            if (!visible.contains(group.id) && !group.dynamic_load)
+            if (!visible.contains(group.id) && !group.dynamic_load && !group.dontUnload)
                 unloadGroup(scriptManager.getBlocks().get(group.block_id), group.id);
         }
 
@@ -1160,14 +1144,27 @@ public final class Scene {
                         pos.toDoubleArray(),
                         Grasscutter.getConfig().server.game.loadEntitiesForPlayerRange);
 
-        var sceneNpcBornEntries =
+        var sceneNpcBornCanidates =
                 npcList.stream().filter(i -> !this.npcBornEntrySet.contains(i)).toList();
+
+        List<SceneNpcBornEntry> sceneNpcBornEntries = new ArrayList<>();
+        sceneNpcBornCanidates.forEach(
+                i -> {
+                    var groupInstance = scriptManager.getGroupInstanceById(i.getGroupId());
+                    if (groupInstance == null) return;
+                    if (i.getSuiteIdList() != null
+                            && !i.getSuiteIdList().contains(groupInstance.getActiveSuiteId())) return;
+                    sceneNpcBornEntries.add(i);
+                });
 
         if (sceneNpcBornEntries.size() > 0) {
             this.broadcastPacket(new PacketGroupSuiteNotify(sceneNpcBornEntries));
             Grasscutter.getLogger().trace("Loaded Npc Group Suite {}", sceneNpcBornEntries);
         }
-        return npcList;
+
+        return npcList.stream()
+                .filter(i -> this.npcBornEntrySet.contains(i) || sceneNpcBornEntries.contains(i))
+                .toList();
     }
 
     public void loadGroupForQuest(List<QuestGroupSuite> sceneGroupSuite) {
