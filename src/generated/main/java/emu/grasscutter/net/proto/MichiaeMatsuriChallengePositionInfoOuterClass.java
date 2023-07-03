@@ -19,35 +19,35 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector pos = 14;</code>
-     * @return Whether the pos field is set.
-     */
-    boolean hasPos();
-    /**
-     * <code>.Vector pos = 14;</code>
-     * @return The pos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
-    /**
-     * <code>.Vector pos = 14;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
-
-    /**
-     * <code>uint32 group_id = 5;</code>
+     * <code>uint32 group_id = 11;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>uint32 gadget_id = 2;</code>
+     * <code>.Vector pos = 3;</code>
+     * @return Whether the pos field is set.
+     */
+    boolean hasPos();
+    /**
+     * <code>.Vector pos = 3;</code>
+     * @return The pos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
+    /**
+     * <code>.Vector pos = 3;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+
+    /**
+     * <code>uint32 gadget_id = 12;</code>
      * @return The gadgetId.
      */
     int getGadgetId();
   }
   /**
    * <pre>
-   * Name: FIEDHLLPOKA
+   * Obf: FKOFDCNFGIN
    * </pre>
    *
    * Protobuf type {@code MichiaeMatsuriChallengePositionInfo}
@@ -84,36 +84,10 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
               emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.class, emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.Builder.class);
     }
 
-    public static final int POS_FIELD_NUMBER = 14;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-    /**
-     * <code>.Vector pos = 14;</code>
-     * @return Whether the pos field is set.
-     */
-    @java.lang.Override
-    public boolean hasPos() {
-      return pos_ != null;
-    }
-    /**
-     * <code>.Vector pos = 14;</code>
-     * @return The pos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-    }
-    /**
-     * <code>.Vector pos = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-    }
-
-    public static final int GROUP_ID_FIELD_NUMBER = 5;
+    public static final int GROUP_ID_FIELD_NUMBER = 11;
     private int groupId_ = 0;
     /**
-     * <code>uint32 group_id = 5;</code>
+     * <code>uint32 group_id = 11;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -121,10 +95,36 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
       return groupId_;
     }
 
-    public static final int GADGET_ID_FIELD_NUMBER = 2;
+    public static final int POS_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+    /**
+     * <code>.Vector pos = 3;</code>
+     * @return Whether the pos field is set.
+     */
+    @java.lang.Override
+    public boolean hasPos() {
+      return pos_ != null;
+    }
+    /**
+     * <code>.Vector pos = 3;</code>
+     * @return The pos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+    }
+    /**
+     * <code>.Vector pos = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+    }
+
+    public static final int GADGET_ID_FIELD_NUMBER = 12;
     private int gadgetId_ = 0;
     /**
-     * <code>uint32 gadget_id = 2;</code>
+     * <code>uint32 gadget_id = 12;</code>
      * @return The gadgetId.
      */
     @java.lang.Override
@@ -146,14 +146,14 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gadgetId_ != 0) {
-        output.writeUInt32(2, gadgetId_);
+      if (pos_ != null) {
+        output.writeMessage(3, getPos());
       }
       if (groupId_ != 0) {
-        output.writeUInt32(5, groupId_);
+        output.writeUInt32(11, groupId_);
       }
-      if (pos_ != null) {
-        output.writeMessage(14, getPos());
+      if (gadgetId_ != 0) {
+        output.writeUInt32(12, gadgetId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -164,17 +164,17 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gadgetId_ != 0) {
+      if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, gadgetId_);
+          .computeMessageSize(3, getPos());
       }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, groupId_);
+          .computeUInt32Size(11, groupId_);
       }
-      if (pos_ != null) {
+      if (gadgetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getPos());
+          .computeUInt32Size(12, gadgetId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -191,13 +191,13 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
       }
       emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo other = (emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo) obj;
 
+      if (getGroupId()
+          != other.getGroupId()) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
-      if (getGroupId()
-          != other.getGroupId()) return false;
       if (getGadgetId()
           != other.getGadgetId()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
@@ -211,12 +211,12 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId();
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
-      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupId();
       hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetId();
       hash = (29 * hash) + getUnknownFields().hashCode();
@@ -318,7 +318,7 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: FIEDHLLPOKA
+     * Obf: FKOFDCNFGIN
      * </pre>
      *
      * Protobuf type {@code MichiaeMatsuriChallengePositionInfo}
@@ -354,12 +354,12 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
+        groupId_ = 0;
         pos_ = null;
         if (posBuilder_ != null) {
           posBuilder_.dispose();
           posBuilder_ = null;
         }
-        groupId_ = 0;
         gadgetId_ = 0;
         return this;
       }
@@ -395,12 +395,12 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.groupId_ = groupId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
           result.pos_ = posBuilder_ == null
               ? pos_
               : posBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.groupId_ = groupId_;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
           result.gadgetId_ = gadgetId_;
@@ -451,11 +451,11 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo other) {
         if (other == emu.grasscutter.net.proto.MichiaeMatsuriChallengePositionInfoOuterClass.MichiaeMatsuriChallengePositionInfo.getDefaultInstance()) return this;
-        if (other.hasPos()) {
-          mergePos(other.getPos());
-        }
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
+        }
+        if (other.hasPos()) {
+          mergePos(other.getPos());
         }
         if (other.getGadgetId() != 0) {
           setGadgetId(other.getGadgetId());
@@ -486,23 +486,23 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 16: {
-                gadgetId_ = input.readUInt32();
-                bitField0_ |= 0x00000004;
-                break;
-              } // case 16
-              case 40: {
-                groupId_ = input.readUInt32();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 40
-              case 114: {
+              case 26: {
                 input.readMessage(
                     getPosFieldBuilder().getBuilder(),
                     extensionRegistry);
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 26
+              case 88: {
+                groupId_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 114
+              } // case 88
+              case 96: {
+                gadgetId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 96
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -520,18 +520,50 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
       }
       private int bitField0_;
 
+      private int groupId_ ;
+      /**
+       * <code>uint32 group_id = 11;</code>
+       * @return The groupId.
+       */
+      @java.lang.Override
+      public int getGroupId() {
+        return groupId_;
+      }
+      /**
+       * <code>uint32 group_id = 11;</code>
+       * @param value The groupId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGroupId(int value) {
+
+        groupId_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 group_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGroupId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        groupId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 14;</code>
+       * <code>.Vector pos = 3;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
-        return ((bitField0_ & 0x00000001) != 0);
+        return ((bitField0_ & 0x00000002) != 0);
       }
       /**
-       * <code>.Vector pos = 14;</code>
+       * <code>.Vector pos = 3;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -542,7 +574,7 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 14;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -553,12 +585,12 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
         } else {
           posBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>.Vector pos = 14;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -567,16 +599,16 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
         } else {
           posBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>.Vector pos = 14;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0) &&
+          if (((bitField0_ & 0x00000002) != 0) &&
             pos_ != null &&
             pos_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
             getPosBuilder().mergeFrom(value);
@@ -586,15 +618,15 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
         } else {
           posBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>.Vector pos = 14;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder clearPos() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         pos_ = null;
         if (posBuilder_ != null) {
           posBuilder_.dispose();
@@ -604,15 +636,15 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 14;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         onChanged();
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 14;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -623,7 +655,7 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 14;</code>
+       * <code>.Vector pos = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -639,41 +671,9 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
         return posBuilder_;
       }
 
-      private int groupId_ ;
-      /**
-       * <code>uint32 group_id = 5;</code>
-       * @return The groupId.
-       */
-      @java.lang.Override
-      public int getGroupId() {
-        return groupId_;
-      }
-      /**
-       * <code>uint32 group_id = 5;</code>
-       * @param value The groupId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGroupId(int value) {
-
-        groupId_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 group_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGroupId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        groupId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int gadgetId_ ;
       /**
-       * <code>uint32 gadget_id = 2;</code>
+       * <code>uint32 gadget_id = 12;</code>
        * @return The gadgetId.
        */
       @java.lang.Override
@@ -681,7 +681,7 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
         return gadgetId_;
       }
       /**
-       * <code>uint32 gadget_id = 2;</code>
+       * <code>uint32 gadget_id = 12;</code>
        * @param value The gadgetId to set.
        * @return This builder for chaining.
        */
@@ -693,7 +693,7 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_id = 2;</code>
+       * <code>uint32 gadget_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetId() {
@@ -782,8 +782,8 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n)MichiaeMatsuriChallengePositionInfo.pr" +
       "oto\032\014Vector.proto\"`\n#MichiaeMatsuriChall" +
-      "engePositionInfo\022\024\n\003pos\030\016 \001(\0132\007.Vector\022\020" +
-      "\n\010group_id\030\005 \001(\r\022\021\n\tgadget_id\030\002 \001(\rB\033\n\031e" +
+      "engePositionInfo\022\020\n\010group_id\030\013 \001(\r\022\024\n\003po" +
+      "s\030\003 \001(\0132\007.Vector\022\021\n\tgadget_id\030\014 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -796,7 +796,7 @@ public final class MichiaeMatsuriChallengePositionInfoOuterClass {
     internal_static_MichiaeMatsuriChallengePositionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MichiaeMatsuriChallengePositionInfo_descriptor,
-        new java.lang.String[] { "Pos", "GroupId", "GadgetId", });
+        new java.lang.String[] { "GroupId", "Pos", "GadgetId", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

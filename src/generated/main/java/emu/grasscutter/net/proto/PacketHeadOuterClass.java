@@ -180,7 +180,7 @@ public final class PacketHeadOuterClass {
   }
   /**
    * <pre>
-   * Name: OPEGMEBLMFH
+   * Obf: NEPABBOKLDD
    * </pre>
    *
    * Protobuf type {@code PacketHead}
@@ -932,7 +932,7 @@ public final class PacketHeadOuterClass {
     }
     /**
      * <pre>
-     * Name: OPEGMEBLMFH
+     * Obf: NEPABBOKLDD
      * </pre>
      *
      * Protobuf type {@code PacketHead}

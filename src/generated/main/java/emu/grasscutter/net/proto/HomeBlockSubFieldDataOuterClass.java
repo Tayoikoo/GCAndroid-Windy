@@ -19,38 +19,38 @@ public final class HomeBlockSubFieldDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector pos = 7;</code>
-     * @return Whether the pos field is set.
-     */
-    boolean hasPos();
-    /**
-     * <code>.Vector pos = 7;</code>
-     * @return The pos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
-    /**
-     * <code>.Vector pos = 7;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
-
-    /**
-     * <code>.Vector rot = 5;</code>
+     * <code>.Vector rot = 10;</code>
      * @return Whether the rot field is set.
      */
     boolean hasRot();
     /**
-     * <code>.Vector rot = 5;</code>
+     * <code>.Vector rot = 10;</code>
      * @return The rot.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
     /**
-     * <code>.Vector rot = 5;</code>
+     * <code>.Vector rot = 10;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
+
+    /**
+     * <code>.Vector pos = 12;</code>
+     * @return Whether the pos field is set.
+     */
+    boolean hasPos();
+    /**
+     * <code>.Vector pos = 12;</code>
+     * @return The pos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
+    /**
+     * <code>.Vector pos = 12;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
   }
   /**
    * <pre>
-   * Name: INCOBHPDNFA
+   * Obf: OPNHIHEAIIK
    * </pre>
    *
    * Protobuf type {@code HomeBlockSubFieldData}
@@ -87,36 +87,10 @@ public final class HomeBlockSubFieldDataOuterClass {
               emu.grasscutter.net.proto.HomeBlockSubFieldDataOuterClass.HomeBlockSubFieldData.class, emu.grasscutter.net.proto.HomeBlockSubFieldDataOuterClass.HomeBlockSubFieldData.Builder.class);
     }
 
-    public static final int POS_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-    /**
-     * <code>.Vector pos = 7;</code>
-     * @return Whether the pos field is set.
-     */
-    @java.lang.Override
-    public boolean hasPos() {
-      return pos_ != null;
-    }
-    /**
-     * <code>.Vector pos = 7;</code>
-     * @return The pos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-    }
-    /**
-     * <code>.Vector pos = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-    }
-
-    public static final int ROT_FIELD_NUMBER = 5;
+    public static final int ROT_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
     /**
-     * <code>.Vector rot = 5;</code>
+     * <code>.Vector rot = 10;</code>
      * @return Whether the rot field is set.
      */
     @java.lang.Override
@@ -124,7 +98,7 @@ public final class HomeBlockSubFieldDataOuterClass {
       return rot_ != null;
     }
     /**
-     * <code>.Vector rot = 5;</code>
+     * <code>.Vector rot = 10;</code>
      * @return The rot.
      */
     @java.lang.Override
@@ -132,11 +106,37 @@ public final class HomeBlockSubFieldDataOuterClass {
       return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
     }
     /**
-     * <code>.Vector rot = 5;</code>
+     * <code>.Vector rot = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
       return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
+    }
+
+    public static final int POS_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+    /**
+     * <code>.Vector pos = 12;</code>
+     * @return Whether the pos field is set.
+     */
+    @java.lang.Override
+    public boolean hasPos() {
+      return pos_ != null;
+    }
+    /**
+     * <code>.Vector pos = 12;</code>
+     * @return The pos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+    }
+    /**
+     * <code>.Vector pos = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -154,10 +154,10 @@ public final class HomeBlockSubFieldDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (rot_ != null) {
-        output.writeMessage(5, getRot());
+        output.writeMessage(10, getRot());
       }
       if (pos_ != null) {
-        output.writeMessage(7, getPos());
+        output.writeMessage(12, getPos());
       }
       getUnknownFields().writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class HomeBlockSubFieldDataOuterClass {
       size = 0;
       if (rot_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getRot());
+          .computeMessageSize(10, getRot());
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getPos());
+          .computeMessageSize(12, getPos());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -191,15 +191,15 @@ public final class HomeBlockSubFieldDataOuterClass {
       }
       emu.grasscutter.net.proto.HomeBlockSubFieldDataOuterClass.HomeBlockSubFieldData other = (emu.grasscutter.net.proto.HomeBlockSubFieldDataOuterClass.HomeBlockSubFieldData) obj;
 
-      if (hasPos() != other.hasPos()) return false;
-      if (hasPos()) {
-        if (!getPos()
-            .equals(other.getPos())) return false;
-      }
       if (hasRot() != other.hasRot()) return false;
       if (hasRot()) {
         if (!getRot()
             .equals(other.getRot())) return false;
+      }
+      if (hasPos() != other.hasPos()) return false;
+      if (hasPos()) {
+        if (!getPos()
+            .equals(other.getPos())) return false;
       }
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
@@ -212,13 +212,13 @@ public final class HomeBlockSubFieldDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasPos()) {
-        hash = (37 * hash) + POS_FIELD_NUMBER;
-        hash = (53 * hash) + getPos().hashCode();
-      }
       if (hasRot()) {
         hash = (37 * hash) + ROT_FIELD_NUMBER;
         hash = (53 * hash) + getRot().hashCode();
+      }
+      if (hasPos()) {
+        hash = (37 * hash) + POS_FIELD_NUMBER;
+        hash = (53 * hash) + getPos().hashCode();
       }
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
@@ -319,7 +319,7 @@ public final class HomeBlockSubFieldDataOuterClass {
     }
     /**
      * <pre>
-     * Name: INCOBHPDNFA
+     * Obf: OPNHIHEAIIK
      * </pre>
      *
      * Protobuf type {@code HomeBlockSubFieldData}
@@ -355,15 +355,15 @@ public final class HomeBlockSubFieldDataOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        pos_ = null;
-        if (posBuilder_ != null) {
-          posBuilder_.dispose();
-          posBuilder_ = null;
-        }
         rot_ = null;
         if (rotBuilder_ != null) {
           rotBuilder_.dispose();
           rotBuilder_ = null;
+        }
+        pos_ = null;
+        if (posBuilder_ != null) {
+          posBuilder_.dispose();
+          posBuilder_ = null;
         }
         return this;
       }
@@ -399,14 +399,14 @@ public final class HomeBlockSubFieldDataOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.HomeBlockSubFieldDataOuterClass.HomeBlockSubFieldData result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.pos_ = posBuilder_ == null
-              ? pos_
-              : posBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
           result.rot_ = rotBuilder_ == null
               ? rot_
               : rotBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.pos_ = posBuilder_ == null
+              ? pos_
+              : posBuilder_.build();
         }
       }
 
@@ -454,11 +454,11 @@ public final class HomeBlockSubFieldDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeBlockSubFieldDataOuterClass.HomeBlockSubFieldData other) {
         if (other == emu.grasscutter.net.proto.HomeBlockSubFieldDataOuterClass.HomeBlockSubFieldData.getDefaultInstance()) return this;
-        if (other.hasPos()) {
-          mergePos(other.getPos());
-        }
         if (other.hasRot()) {
           mergeRot(other.getRot());
+        }
+        if (other.hasPos()) {
+          mergePos(other.getPos());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -486,20 +486,20 @@ public final class HomeBlockSubFieldDataOuterClass {
               case 0:
                 done = true;
                 break;
-              case 42: {
+              case 82: {
                 input.readMessage(
                     getRotFieldBuilder().getBuilder(),
                     extensionRegistry);
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000001;
                 break;
-              } // case 42
-              case 58: {
+              } // case 82
+              case 98: {
                 input.readMessage(
                     getPosFieldBuilder().getBuilder(),
                     extensionRegistry);
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
                 break;
-              } // case 58
+              } // case 98
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -517,137 +517,18 @@ public final class HomeBlockSubFieldDataOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
-      /**
-       * <code>.Vector pos = 7;</code>
-       * @return Whether the pos field is set.
-       */
-      public boolean hasPos() {
-        return ((bitField0_ & 0x00000001) != 0);
-      }
-      /**
-       * <code>.Vector pos = 7;</code>
-       * @return The pos.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-        if (posBuilder_ == null) {
-          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-        } else {
-          return posBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector pos = 7;</code>
-       */
-      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (posBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pos_ = value;
-        } else {
-          posBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 7;</code>
-       */
-      public Builder setPos(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (posBuilder_ == null) {
-          pos_ = builderForValue.build();
-        } else {
-          posBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 7;</code>
-       */
-      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (posBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0) &&
-            pos_ != null &&
-            pos_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
-            getPosBuilder().mergeFrom(value);
-          } else {
-            pos_ = value;
-          }
-        } else {
-          posBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 7;</code>
-       */
-      public Builder clearPos() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        pos_ = null;
-        if (posBuilder_ != null) {
-          posBuilder_.dispose();
-          posBuilder_ = null;
-        }
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 7;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return getPosFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector pos = 7;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-        if (posBuilder_ != null) {
-          return posBuilder_.getMessageOrBuilder();
-        } else {
-          return pos_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-        }
-      }
-      /**
-       * <code>.Vector pos = 7;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getPosFieldBuilder() {
-        if (posBuilder_ == null) {
-          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getPos(),
-                  getParentForChildren(),
-                  isClean());
-          pos_ = null;
-        }
-        return posBuilder_;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
       /**
-       * <code>.Vector rot = 5;</code>
+       * <code>.Vector rot = 10;</code>
        * @return Whether the rot field is set.
        */
       public boolean hasRot() {
-        return ((bitField0_ & 0x00000002) != 0);
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.Vector rot = 5;</code>
+       * <code>.Vector rot = 10;</code>
        * @return The rot.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
@@ -658,7 +539,7 @@ public final class HomeBlockSubFieldDataOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 5;</code>
+       * <code>.Vector rot = 10;</code>
        */
       public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -669,12 +550,12 @@ public final class HomeBlockSubFieldDataOuterClass {
         } else {
           rotBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>.Vector rot = 5;</code>
+       * <code>.Vector rot = 10;</code>
        */
       public Builder setRot(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -683,16 +564,16 @@ public final class HomeBlockSubFieldDataOuterClass {
         } else {
           rotBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>.Vector rot = 5;</code>
+       * <code>.Vector rot = 10;</code>
        */
       public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0) &&
+          if (((bitField0_ & 0x00000001) != 0) &&
             rot_ != null &&
             rot_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
             getRotBuilder().mergeFrom(value);
@@ -702,15 +583,15 @@ public final class HomeBlockSubFieldDataOuterClass {
         } else {
           rotBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>.Vector rot = 5;</code>
+       * <code>.Vector rot = 10;</code>
        */
       public Builder clearRot() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         rot_ = null;
         if (rotBuilder_ != null) {
           rotBuilder_.dispose();
@@ -720,15 +601,15 @@ public final class HomeBlockSubFieldDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 5;</code>
+       * <code>.Vector rot = 10;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
         onChanged();
         return getRotFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector rot = 5;</code>
+       * <code>.Vector rot = 10;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
         if (rotBuilder_ != null) {
@@ -739,7 +620,7 @@ public final class HomeBlockSubFieldDataOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 5;</code>
+       * <code>.Vector rot = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -753,6 +634,125 @@ public final class HomeBlockSubFieldDataOuterClass {
           rot_ = null;
         }
         return rotBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
+      /**
+       * <code>.Vector pos = 12;</code>
+       * @return Whether the pos field is set.
+       */
+      public boolean hasPos() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       * <code>.Vector pos = 12;</code>
+       * @return The pos.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+        if (posBuilder_ == null) {
+          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        } else {
+          return posBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector pos = 12;</code>
+       */
+      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pos_ = value;
+        } else {
+          posBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 12;</code>
+       */
+      public Builder setPos(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (posBuilder_ == null) {
+          pos_ = builderForValue.build();
+        } else {
+          posBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 12;</code>
+       */
+      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0) &&
+            pos_ != null &&
+            pos_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
+            getPosBuilder().mergeFrom(value);
+          } else {
+            pos_ = value;
+          }
+        } else {
+          posBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 12;</code>
+       */
+      public Builder clearPos() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        pos_ = null;
+        if (posBuilder_ != null) {
+          posBuilder_.dispose();
+          posBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 12;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getPosFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector pos = 12;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+        if (posBuilder_ != null) {
+          return posBuilder_.getMessageOrBuilder();
+        } else {
+          return pos_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        }
+      }
+      /**
+       * <code>.Vector pos = 12;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getPosFieldBuilder() {
+        if (posBuilder_ == null) {
+          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getPos(),
+                  getParentForChildren(),
+                  isClean());
+          pos_ = null;
+        }
+        return posBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -833,8 +833,8 @@ public final class HomeBlockSubFieldDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033HomeBlockSubFieldData.proto\032\014Vector.pr" +
-      "oto\"C\n\025HomeBlockSubFieldData\022\024\n\003pos\030\007 \001(" +
-      "\0132\007.Vector\022\024\n\003rot\030\005 \001(\0132\007.VectorB\033\n\031emu." +
+      "oto\"C\n\025HomeBlockSubFieldData\022\024\n\003rot\030\n \001(" +
+      "\0132\007.Vector\022\024\n\003pos\030\014 \001(\0132\007.VectorB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -847,7 +847,7 @@ public final class HomeBlockSubFieldDataOuterClass {
     internal_static_HomeBlockSubFieldData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeBlockSubFieldData_descriptor,
-        new java.lang.String[] { "Pos", "Rot", });
+        new java.lang.String[] { "Rot", "Pos", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

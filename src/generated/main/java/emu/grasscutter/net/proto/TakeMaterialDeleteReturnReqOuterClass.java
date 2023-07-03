@@ -19,20 +19,20 @@ public final class TakeMaterialDeleteReturnReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.MaterialDeleteReturnType type = 10;</code>
+     * <code>.MaterialDeleteReturnType type = 5;</code>
      * @return The enum numeric value on the wire for type.
      */
     int getTypeValue();
     /**
-     * <code>.MaterialDeleteReturnType type = 10;</code>
+     * <code>.MaterialDeleteReturnType type = 5;</code>
      * @return The type.
      */
     emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType getType();
   }
   /**
    * <pre>
-   * CmdId: 664
-   * Name: BOFCLLGHIDM
+   * CmdId: 677
+   * Obf: BOEOPIAOODM
    * </pre>
    *
    * Protobuf type {@code TakeMaterialDeleteReturnReq}
@@ -70,17 +70,17 @@ public final class TakeMaterialDeleteReturnReqOuterClass {
               emu.grasscutter.net.proto.TakeMaterialDeleteReturnReqOuterClass.TakeMaterialDeleteReturnReq.class, emu.grasscutter.net.proto.TakeMaterialDeleteReturnReqOuterClass.TakeMaterialDeleteReturnReq.Builder.class);
     }
 
-    public static final int TYPE_FIELD_NUMBER = 10;
+    public static final int TYPE_FIELD_NUMBER = 5;
     private int type_ = 0;
     /**
-     * <code>.MaterialDeleteReturnType type = 10;</code>
+     * <code>.MaterialDeleteReturnType type = 5;</code>
      * @return The enum numeric value on the wire for type.
      */
     @java.lang.Override public int getTypeValue() {
       return type_;
     }
     /**
-     * <code>.MaterialDeleteReturnType type = 10;</code>
+     * <code>.MaterialDeleteReturnType type = 5;</code>
      * @return The type.
      */
     @java.lang.Override public emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType getType() {
@@ -103,7 +103,7 @@ public final class TakeMaterialDeleteReturnReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MATERIAL_DELETE_RETURN_BAG.getNumber()) {
-        output.writeEnum(10, type_);
+        output.writeEnum(5, type_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -116,7 +116,7 @@ public final class TakeMaterialDeleteReturnReqOuterClass {
       size = 0;
       if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MATERIAL_DELETE_RETURN_BAG.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, type_);
+          .computeEnumSize(5, type_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -246,8 +246,8 @@ public final class TakeMaterialDeleteReturnReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 664
-     * Name: BOFCLLGHIDM
+     * CmdId: 677
+     * Obf: BOEOPIAOODM
      * </pre>
      *
      * Protobuf type {@code TakeMaterialDeleteReturnReq}
@@ -395,11 +395,11 @@ public final class TakeMaterialDeleteReturnReqOuterClass {
               case 0:
                 done = true;
                 break;
-              case 80: {
+              case 40: {
                 type_ = input.readEnum();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 80
+              } // case 40
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -419,14 +419,14 @@ public final class TakeMaterialDeleteReturnReqOuterClass {
 
       private int type_ = 0;
       /**
-       * <code>.MaterialDeleteReturnType type = 10;</code>
+       * <code>.MaterialDeleteReturnType type = 5;</code>
        * @return The enum numeric value on the wire for type.
        */
       @java.lang.Override public int getTypeValue() {
         return type_;
       }
       /**
-       * <code>.MaterialDeleteReturnType type = 10;</code>
+       * <code>.MaterialDeleteReturnType type = 5;</code>
        * @param value The enum numeric value on the wire for type to set.
        * @return This builder for chaining.
        */
@@ -437,7 +437,7 @@ public final class TakeMaterialDeleteReturnReqOuterClass {
         return this;
       }
       /**
-       * <code>.MaterialDeleteReturnType type = 10;</code>
+       * <code>.MaterialDeleteReturnType type = 5;</code>
        * @return The type.
        */
       @java.lang.Override
@@ -446,7 +446,7 @@ public final class TakeMaterialDeleteReturnReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.MaterialDeleteReturnType type = 10;</code>
+       * <code>.MaterialDeleteReturnType type = 5;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
@@ -460,7 +460,7 @@ public final class TakeMaterialDeleteReturnReqOuterClass {
         return this;
       }
       /**
-       * <code>.MaterialDeleteReturnType type = 10;</code>
+       * <code>.MaterialDeleteReturnType type = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearType() {
@@ -549,7 +549,7 @@ public final class TakeMaterialDeleteReturnReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n!TakeMaterialDeleteReturnReq.proto\032\036Mat" +
       "erialDeleteReturnType.proto\"F\n\033TakeMater" +
-      "ialDeleteReturnReq\022\'\n\004type\030\n \001(\0162\031.Mater" +
+      "ialDeleteReturnReq\022\'\n\004type\030\005 \001(\0162\031.Mater" +
       "ialDeleteReturnTypeB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };

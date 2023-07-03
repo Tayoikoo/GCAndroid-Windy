@@ -50,7 +50,7 @@ public final class MailItemOuterClass {
   }
   /**
    * <pre>
-   * Name: PNGOGFIBMGO
+   * Obf: MBAJGGFCGGC
    * </pre>
    *
    * Protobuf type {@code MailItem}
@@ -319,7 +319,7 @@ public final class MailItemOuterClass {
     }
     /**
      * <pre>
-     * Name: PNGOGFIBMGO
+     * Obf: MBAJGGFCGGC
      * </pre>
      *
      * Protobuf type {@code MailItem}

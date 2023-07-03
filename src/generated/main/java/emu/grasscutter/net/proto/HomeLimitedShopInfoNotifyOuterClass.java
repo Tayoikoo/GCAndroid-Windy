@@ -19,24 +19,24 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+     * <code>.HomeLimitedShopInfo shop_info = 7;</code>
      * @return Whether the shopInfo field is set.
      */
     boolean hasShopInfo();
     /**
-     * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+     * <code>.HomeLimitedShopInfo shop_info = 7;</code>
      * @return The shopInfo.
      */
     emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo getShopInfo();
     /**
-     * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+     * <code>.HomeLimitedShopInfo shop_info = 7;</code>
      */
     emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfoOrBuilder getShopInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4825
-   * Name: JCKDHCAPEIA
+   * CmdId: 4852
+   * Obf: PGHENMOIDIC
    * </pre>
    *
    * Protobuf type {@code HomeLimitedShopInfoNotify}
@@ -73,10 +73,10 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
               emu.grasscutter.net.proto.HomeLimitedShopInfoNotifyOuterClass.HomeLimitedShopInfoNotify.class, emu.grasscutter.net.proto.HomeLimitedShopInfoNotifyOuterClass.HomeLimitedShopInfoNotify.Builder.class);
     }
 
-    public static final int SHOP_INFO_FIELD_NUMBER = 9;
+    public static final int SHOP_INFO_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo shopInfo_;
     /**
-     * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+     * <code>.HomeLimitedShopInfo shop_info = 7;</code>
      * @return Whether the shopInfo field is set.
      */
     @java.lang.Override
@@ -84,7 +84,7 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
       return shopInfo_ != null;
     }
     /**
-     * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+     * <code>.HomeLimitedShopInfo shop_info = 7;</code>
      * @return The shopInfo.
      */
     @java.lang.Override
@@ -92,7 +92,7 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
       return shopInfo_ == null ? emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo.getDefaultInstance() : shopInfo_;
     }
     /**
-     * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+     * <code>.HomeLimitedShopInfo shop_info = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfoOrBuilder getShopInfoOrBuilder() {
@@ -114,7 +114,7 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (shopInfo_ != null) {
-        output.writeMessage(9, getShopInfo());
+        output.writeMessage(7, getShopInfo());
       }
       getUnknownFields().writeTo(output);
     }
@@ -127,7 +127,7 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
       size = 0;
       if (shopInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getShopInfo());
+          .computeMessageSize(7, getShopInfo());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -263,8 +263,8 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4825
-     * Name: JCKDHCAPEIA
+     * CmdId: 4852
+     * Obf: PGHENMOIDIC
      * </pre>
      *
      * Protobuf type {@code HomeLimitedShopInfoNotify}
@@ -418,13 +418,13 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
               case 0:
                 done = true;
                 break;
-              case 74: {
+              case 58: {
                 input.readMessage(
                     getShopInfoFieldBuilder().getBuilder(),
                     extensionRegistry);
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 74
+              } // case 58
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -446,14 +446,14 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo, emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo.Builder, emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfoOrBuilder> shopInfoBuilder_;
       /**
-       * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+       * <code>.HomeLimitedShopInfo shop_info = 7;</code>
        * @return Whether the shopInfo field is set.
        */
       public boolean hasShopInfo() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+       * <code>.HomeLimitedShopInfo shop_info = 7;</code>
        * @return The shopInfo.
        */
       public emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo getShopInfo() {
@@ -464,7 +464,7 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+       * <code>.HomeLimitedShopInfo shop_info = 7;</code>
        */
       public Builder setShopInfo(emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo value) {
         if (shopInfoBuilder_ == null) {
@@ -480,7 +480,7 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+       * <code>.HomeLimitedShopInfo shop_info = 7;</code>
        */
       public Builder setShopInfo(
           emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo.Builder builderForValue) {
@@ -494,7 +494,7 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+       * <code>.HomeLimitedShopInfo shop_info = 7;</code>
        */
       public Builder mergeShopInfo(emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo value) {
         if (shopInfoBuilder_ == null) {
@@ -513,7 +513,7 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+       * <code>.HomeLimitedShopInfo shop_info = 7;</code>
        */
       public Builder clearShopInfo() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -526,7 +526,7 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+       * <code>.HomeLimitedShopInfo shop_info = 7;</code>
        */
       public emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo.Builder getShopInfoBuilder() {
         bitField0_ |= 0x00000001;
@@ -534,7 +534,7 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         return getShopInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+       * <code>.HomeLimitedShopInfo shop_info = 7;</code>
        */
       public emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfoOrBuilder getShopInfoOrBuilder() {
         if (shopInfoBuilder_ != null) {
@@ -545,7 +545,7 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.HomeLimitedShopInfo shop_info = 9;</code>
+       * <code>.HomeLimitedShopInfo shop_info = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo, emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo.Builder, emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfoOrBuilder> 
@@ -640,7 +640,7 @@ public final class HomeLimitedShopInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037HomeLimitedShopInfoNotify.proto\032\031HomeL" +
       "imitedShopInfo.proto\"D\n\031HomeLimitedShopI" +
-      "nfoNotify\022\'\n\tshop_info\030\t \001(\0132\024.HomeLimit" +
+      "nfoNotify\022\'\n\tshop_info\030\007 \001(\0132\024.HomeLimit" +
       "edShopInfoB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };

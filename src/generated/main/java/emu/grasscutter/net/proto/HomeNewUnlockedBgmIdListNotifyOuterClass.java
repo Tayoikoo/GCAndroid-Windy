@@ -19,17 +19,17 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+     * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
      * @return A list containing the newUnlockedBgmIdList.
      */
     java.util.List<java.lang.Integer> getNewUnlockedBgmIdListList();
     /**
-     * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+     * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
      * @return The count of newUnlockedBgmIdList.
      */
     int getNewUnlockedBgmIdListCount();
     /**
-     * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+     * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The newUnlockedBgmIdList at the given index.
      */
@@ -37,8 +37,8 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4669
-   * Name: LBIGJHDPPMH
+   * CmdId: 4560
+   * Obf: LALMMCFMMNA
    * </pre>
    *
    * Protobuf type {@code HomeNewUnlockedBgmIdListNotify}
@@ -76,11 +76,11 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
               emu.grasscutter.net.proto.HomeNewUnlockedBgmIdListNotifyOuterClass.HomeNewUnlockedBgmIdListNotify.class, emu.grasscutter.net.proto.HomeNewUnlockedBgmIdListNotifyOuterClass.HomeNewUnlockedBgmIdListNotify.Builder.class);
     }
 
-    public static final int NEW_UNLOCKED_BGM_ID_LIST_FIELD_NUMBER = 13;
+    public static final int NEW_UNLOCKED_BGM_ID_LIST_FIELD_NUMBER = 14;
     @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList newUnlockedBgmIdList_;
     /**
-     * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+     * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
      * @return A list containing the newUnlockedBgmIdList.
      */
     @java.lang.Override
@@ -89,14 +89,14 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
       return newUnlockedBgmIdList_;
     }
     /**
-     * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+     * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
      * @return The count of newUnlockedBgmIdList.
      */
     public int getNewUnlockedBgmIdListCount() {
       return newUnlockedBgmIdList_.size();
     }
     /**
-     * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+     * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The newUnlockedBgmIdList at the given index.
      */
@@ -121,7 +121,7 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getNewUnlockedBgmIdListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(newUnlockedBgmIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < newUnlockedBgmIdList_.size(); i++) {
@@ -281,8 +281,8 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4669
-     * Name: LBIGJHDPPMH
+     * CmdId: 4560
+     * Obf: LALMMCFMMNA
      * </pre>
      *
      * Protobuf type {@code HomeNewUnlockedBgmIdListNotify}
@@ -443,13 +443,13 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
               case 0:
                 done = true;
                 break;
-              case 104: {
+              case 112: {
                 int v = input.readUInt32();
                 ensureNewUnlockedBgmIdListIsMutable();
                 newUnlockedBgmIdList_.addInt(v);
                 break;
-              } // case 104
-              case 106: {
+              } // case 112
+              case 114: {
                 int length = input.readRawVarint32();
                 int limit = input.pushLimit(length);
                 ensureNewUnlockedBgmIdListIsMutable();
@@ -458,7 +458,7 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
                 }
                 input.popLimit(limit);
                 break;
-              } // case 106
+              } // case 114
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -484,7 +484,7 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
        * @return A list containing the newUnlockedBgmIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -493,14 +493,14 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
                  java.util.Collections.unmodifiableList(newUnlockedBgmIdList_) : newUnlockedBgmIdList_;
       }
       /**
-       * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
        * @return The count of newUnlockedBgmIdList.
        */
       public int getNewUnlockedBgmIdListCount() {
         return newUnlockedBgmIdList_.size();
       }
       /**
-       * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
        * @param index The index of the element to return.
        * @return The newUnlockedBgmIdList at the given index.
        */
@@ -508,7 +508,7 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
         return newUnlockedBgmIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The newUnlockedBgmIdList to set.
        * @return This builder for chaining.
@@ -522,7 +522,7 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
        * @param value The newUnlockedBgmIdList to add.
        * @return This builder for chaining.
        */
@@ -534,7 +534,7 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
        * @param values The newUnlockedBgmIdList to add.
        * @return This builder for chaining.
        */
@@ -547,7 +547,7 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 new_unlocked_bgm_id_list = 13;</code>
+       * <code>repeated uint32 new_unlocked_bgm_id_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearNewUnlockedBgmIdList() {
@@ -636,7 +636,7 @@ public final class HomeNewUnlockedBgmIdListNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n$HomeNewUnlockedBgmIdListNotify.proto\"B" +
       "\n\036HomeNewUnlockedBgmIdListNotify\022 \n\030new_" +
-      "unlocked_bgm_id_list\030\r \003(\rB\033\n\031emu.grassc" +
+      "unlocked_bgm_id_list\030\016 \003(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

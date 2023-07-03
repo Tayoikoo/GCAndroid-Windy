@@ -60,7 +60,7 @@ public final class FoundationInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: AMABAPDIMGK
+   * Obf: DGNBNKHBONE
    * </pre>
    *
    * Protobuf type {@code FoundationInfo}
@@ -376,7 +376,7 @@ public final class FoundationInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: AMABAPDIMGK
+     * Obf: DGNBNKHBONE
      * </pre>
      *
      * Protobuf type {@code FoundationInfo}

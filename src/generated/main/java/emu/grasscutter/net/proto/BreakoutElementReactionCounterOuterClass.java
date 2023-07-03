@@ -32,7 +32,7 @@ public final class BreakoutElementReactionCounterOuterClass {
   }
   /**
    * <pre>
-   * Name: FIPDDEKMPLK
+   * Obf: ECLOAEHKMCA
    * </pre>
    *
    * Protobuf type {@code BreakoutElementReactionCounter}
@@ -261,7 +261,7 @@ public final class BreakoutElementReactionCounterOuterClass {
     }
     /**
      * <pre>
-     * Name: FIPDDEKMPLK
+     * Obf: ECLOAEHKMCA
      * </pre>
      *
      * Protobuf type {@code BreakoutElementReactionCounter}

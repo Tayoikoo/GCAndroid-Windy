@@ -19,32 +19,32 @@ public final class RogueShowAvatarTeamInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+     * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo> 
         getAvatarListList();
     /**
-     * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+     * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
      */
     emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo getAvatarList(int index);
     /**
-     * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+     * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
      */
     int getAvatarListCount();
     /**
-     * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+     * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfoOrBuilder> 
         getAvatarListOrBuilderList();
     /**
-     * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+     * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
      */
     emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfoOrBuilder getAvatarListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * Name: EKLAJOBKPEA
+   * Obf: PAFAMIEEDHL
    * </pre>
    *
    * Protobuf type {@code RogueShowAvatarTeamInfo}
@@ -82,18 +82,18 @@ public final class RogueShowAvatarTeamInfoOuterClass {
               emu.grasscutter.net.proto.RogueShowAvatarTeamInfoOuterClass.RogueShowAvatarTeamInfo.class, emu.grasscutter.net.proto.RogueShowAvatarTeamInfoOuterClass.RogueShowAvatarTeamInfo.Builder.class);
     }
 
-    public static final int AVATAR_LIST_FIELD_NUMBER = 12;
+    public static final int AVATAR_LIST_FIELD_NUMBER = 5;
     @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo> avatarList_;
     /**
-     * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+     * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo> getAvatarListList() {
       return avatarList_;
     }
     /**
-     * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+     * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfoOrBuilder> 
@@ -101,21 +101,21 @@ public final class RogueShowAvatarTeamInfoOuterClass {
       return avatarList_;
     }
     /**
-     * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+     * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
      */
     @java.lang.Override
     public int getAvatarListCount() {
       return avatarList_.size();
     }
     /**
-     * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+     * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo getAvatarList(int index) {
       return avatarList_.get(index);
     }
     /**
-     * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+     * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfoOrBuilder getAvatarListOrBuilder(
@@ -138,7 +138,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < avatarList_.size(); i++) {
-        output.writeMessage(12, avatarList_.get(i));
+        output.writeMessage(5, avatarList_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -151,7 +151,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
       size = 0;
       for (int i = 0; i < avatarList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, avatarList_.get(i));
+          .computeMessageSize(5, avatarList_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -284,7 +284,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: EKLAJOBKPEA
+     * Obf: PAFAMIEEDHL
      * </pre>
      *
      * Protobuf type {@code RogueShowAvatarTeamInfo}
@@ -471,7 +471,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 98: {
+              case 42: {
                 emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo m =
                     input.readMessage(
                         emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.parser(),
@@ -483,7 +483,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
                   avatarListBuilder_.addMessage(m);
                 }
                 break;
-              } // case 98
+              } // case 42
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -514,7 +514,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
           emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo, emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.Builder, emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfoOrBuilder> avatarListBuilder_;
 
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo> getAvatarListList() {
         if (avatarListBuilder_ == null) {
@@ -524,7 +524,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public int getAvatarListCount() {
         if (avatarListBuilder_ == null) {
@@ -534,7 +534,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo getAvatarList(int index) {
         if (avatarListBuilder_ == null) {
@@ -544,7 +544,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public Builder setAvatarList(
           int index, emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo value) {
@@ -561,7 +561,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public Builder setAvatarList(
           int index, emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.Builder builderForValue) {
@@ -575,7 +575,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public Builder addAvatarList(emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo value) {
         if (avatarListBuilder_ == null) {
@@ -591,7 +591,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public Builder addAvatarList(
           int index, emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo value) {
@@ -608,7 +608,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public Builder addAvatarList(
           emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.Builder builderForValue) {
@@ -622,7 +622,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public Builder addAvatarList(
           int index, emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public Builder addAllAvatarList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo> values) {
@@ -651,7 +651,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public Builder clearAvatarList() {
         if (avatarListBuilder_ == null) {
@@ -664,7 +664,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public Builder removeAvatarList(int index) {
         if (avatarListBuilder_ == null) {
@@ -677,14 +677,14 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.Builder getAvatarListBuilder(
           int index) {
         return getAvatarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfoOrBuilder getAvatarListOrBuilder(
           int index) {
@@ -694,7 +694,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfoOrBuilder> 
            getAvatarListOrBuilderList() {
@@ -705,14 +705,14 @@ public final class RogueShowAvatarTeamInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.Builder addAvatarListBuilder() {
         return getAvatarListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.Builder addAvatarListBuilder(
           int index) {
@@ -720,7 +720,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
             index, emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .RogueAvatarInfo avatar_list = 12;</code>
+       * <code>repeated .RogueAvatarInfo avatar_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RogueAvatarInfoOuterClass.RogueAvatarInfo.Builder> 
            getAvatarListBuilderList() {
@@ -820,7 +820,7 @@ public final class RogueShowAvatarTeamInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035RogueShowAvatarTeamInfo.proto\032\025RogueAv" +
       "atarInfo.proto\"@\n\027RogueShowAvatarTeamInf" +
-      "o\022%\n\013avatar_list\030\014 \003(\0132\020.RogueAvatarInfo" +
+      "o\022%\n\013avatar_list\030\005 \003(\0132\020.RogueAvatarInfo" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

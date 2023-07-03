@@ -60,7 +60,7 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: IFBJHHAOAPP
+   * Obf: EKLGADJMNAI
    * </pre>
    *
    * Protobuf type {@code BreakoutSyncConnectUidInfo}
@@ -382,7 +382,7 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: IFBJHHAOAPP
+     * Obf: EKLGADJMNAI
      * </pre>
      *
      * Protobuf type {@code BreakoutSyncConnectUidInfo}

@@ -19,21 +19,21 @@ public final class WidgetDoBagRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 material_id = 9;</code>
+     * <code>uint32 material_id = 7;</code>
      * @return The materialId.
      */
     int getMaterialId();
+
+    /**
+     * <code>int32 retcode = 5;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 4279
-   * Name: PBKOFJACIMK
+   * CmdId: 4290
+   * Obf: FEPEMHCMCOL
    * </pre>
    *
    * Protobuf type {@code WidgetDoBagRsp}
@@ -70,26 +70,26 @@ public final class WidgetDoBagRspOuterClass {
               emu.grasscutter.net.proto.WidgetDoBagRspOuterClass.WidgetDoBagRsp.class, emu.grasscutter.net.proto.WidgetDoBagRspOuterClass.WidgetDoBagRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_ = 0;
-    /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int MATERIAL_ID_FIELD_NUMBER = 9;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 7;
     private int materialId_ = 0;
     /**
-     * <code>uint32 material_id = 9;</code>
+     * <code>uint32 material_id = 7;</code>
      * @return The materialId.
      */
     @java.lang.Override
     public int getMaterialId() {
       return materialId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 5;
+    private int retcode_ = 0;
+    /**
+     * <code>int32 retcode = 5;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -107,10 +107,10 @@ public final class WidgetDoBagRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(5, retcode_);
       }
       if (materialId_ != 0) {
-        output.writeUInt32(9, materialId_);
+        output.writeUInt32(7, materialId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -123,11 +123,11 @@ public final class WidgetDoBagRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(5, retcode_);
       }
       if (materialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, materialId_);
+          .computeUInt32Size(7, materialId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -144,10 +144,10 @@ public final class WidgetDoBagRspOuterClass {
       }
       emu.grasscutter.net.proto.WidgetDoBagRspOuterClass.WidgetDoBagRsp other = (emu.grasscutter.net.proto.WidgetDoBagRspOuterClass.WidgetDoBagRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getMaterialId()
           != other.getMaterialId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -159,10 +159,10 @@ public final class WidgetDoBagRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + MATERIAL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMaterialId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -262,8 +262,8 @@ public final class WidgetDoBagRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4279
-     * Name: PBKOFJACIMK
+     * CmdId: 4290
+     * Obf: FEPEMHCMCOL
      * </pre>
      *
      * Protobuf type {@code WidgetDoBagRsp}
@@ -299,8 +299,8 @@ public final class WidgetDoBagRspOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        retcode_ = 0;
         materialId_ = 0;
+        retcode_ = 0;
         return this;
       }
 
@@ -335,10 +335,10 @@ public final class WidgetDoBagRspOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.WidgetDoBagRspOuterClass.WidgetDoBagRsp result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.retcode_ = retcode_;
+          result.materialId_ = materialId_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.materialId_ = materialId_;
+          result.retcode_ = retcode_;
         }
       }
 
@@ -386,11 +386,11 @@ public final class WidgetDoBagRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WidgetDoBagRspOuterClass.WidgetDoBagRsp other) {
         if (other == emu.grasscutter.net.proto.WidgetDoBagRspOuterClass.WidgetDoBagRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getMaterialId() != 0) {
           setMaterialId(other.getMaterialId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -418,16 +418,16 @@ public final class WidgetDoBagRspOuterClass {
               case 0:
                 done = true;
                 break;
-              case 64: {
+              case 40: {
                 retcode_ = input.readInt32();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 64
-              case 72: {
-                materialId_ = input.readUInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 72
+              } // case 40
+              case 56: {
+                materialId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 56
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -445,41 +445,9 @@ public final class WidgetDoBagRspOuterClass {
       }
       private int bitField0_;
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-
-        retcode_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int materialId_ ;
       /**
-       * <code>uint32 material_id = 9;</code>
+       * <code>uint32 material_id = 7;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -487,24 +455,56 @@ public final class WidgetDoBagRspOuterClass {
         return materialId_;
       }
       /**
-       * <code>uint32 material_id = 9;</code>
+       * <code>uint32 material_id = 7;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
       public Builder setMaterialId(int value) {
 
         materialId_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 material_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMaterialId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        materialId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 5;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 5;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+
+        retcode_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 material_id = 9;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMaterialId() {
+      public Builder clearRetcode() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        materialId_ = 0;
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -587,7 +587,7 @@ public final class WidgetDoBagRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024WidgetDoBagRsp.proto\"6\n\016WidgetDoBagRsp" +
-      "\022\017\n\007retcode\030\010 \001(\005\022\023\n\013material_id\030\t \001(\rB\033" +
+      "\022\023\n\013material_id\030\007 \001(\r\022\017\n\007retcode\030\005 \001(\005B\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -599,7 +599,7 @@ public final class WidgetDoBagRspOuterClass {
     internal_static_WidgetDoBagRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WidgetDoBagRsp_descriptor,
-        new java.lang.String[] { "Retcode", "MaterialId", });
+        new java.lang.String[] { "MaterialId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

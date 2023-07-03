@@ -19,102 +19,102 @@ public final class ItemAddHintNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ItemHint item_list = 12;</code>
+     * <code>bool GCNFBOCLHPE = 7;</code>
+     * @return The gCNFBOCLHPE.
      */
-    java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> 
-        getItemListList();
-    /**
-     * <code>repeated .ItemHint item_list = 12;</code>
-     */
-    emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint getItemList(int index);
-    /**
-     * <code>repeated .ItemHint item_list = 12;</code>
-     */
-    int getItemListCount();
-    /**
-     * <code>repeated .ItemHint item_list = 12;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> 
-        getItemListOrBuilderList();
-    /**
-     * <code>repeated .ItemHint item_list = 12;</code>
-     */
-    emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder getItemListOrBuilder(
-        int index);
+    boolean getGCNFBOCLHPE();
 
     /**
-     * <code>.Vector position = 9;</code>
-     * @return Whether the position field is set.
+     * <code>bool PJLFNPEEBNP = 5;</code>
+     * @return The pJLFNPEEBNP.
      */
-    boolean hasPosition();
-    /**
-     * <code>.Vector position = 9;</code>
-     * @return The position.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPosition();
-    /**
-     * <code>.Vector position = 9;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPositionOrBuilder();
+    boolean getPJLFNPEEBNP();
 
     /**
-     * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+     * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> 
         getOverflowTransformedItemListList();
     /**
-     * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+     * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
      */
     emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint getOverflowTransformedItemList(int index);
     /**
-     * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+     * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
      */
     int getOverflowTransformedItemListCount();
     /**
-     * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+     * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> 
         getOverflowTransformedItemListOrBuilderList();
     /**
-     * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+     * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
      */
     emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder getOverflowTransformedItemListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 quest_id = 6;</code>
+     * <code>repeated .ItemHint item_list = 13;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> 
+        getItemListList();
+    /**
+     * <code>repeated .ItemHint item_list = 13;</code>
+     */
+    emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint getItemList(int index);
+    /**
+     * <code>repeated .ItemHint item_list = 13;</code>
+     */
+    int getItemListCount();
+    /**
+     * <code>repeated .ItemHint item_list = 13;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> 
+        getItemListOrBuilderList();
+    /**
+     * <code>repeated .ItemHint item_list = 13;</code>
+     */
+    emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder getItemListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 quest_id = 15;</code>
      * @return The questId.
      */
     int getQuestId();
 
     /**
-     * <code>bool OCIEEDOLGDB = 3;</code>
-     * @return The oCIEEDOLGDB.
+     * <code>.Vector position = 8;</code>
+     * @return Whether the position field is set.
      */
-    boolean getOCIEEDOLGDB();
+    boolean hasPosition();
+    /**
+     * <code>.Vector position = 8;</code>
+     * @return The position.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPosition();
+    /**
+     * <code>.Vector position = 8;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPositionOrBuilder();
 
     /**
-     * <code>bool ENCLFHLBLLA = 8;</code>
-     * @return The eNCLFHLBLLA.
+     * <code>bool MMHKDGBFKAC = 9;</code>
+     * @return The mMHKDGBFKAC.
      */
-    boolean getENCLFHLBLLA();
+    boolean getMMHKDGBFKAC();
 
     /**
-     * <code>bool JPDJLIPKABJ = 13;</code>
-     * @return The jPDJLIPKABJ.
-     */
-    boolean getJPDJLIPKABJ();
-
-    /**
-     * <code>uint32 reason = 11;</code>
+     * <code>uint32 reason = 4;</code>
      * @return The reason.
      */
     int getReason();
   }
   /**
    * <pre>
-   * CmdId: 616
-   * Name: IBLPBENLBJI
+   * CmdId: 655
+   * Obf: FOCMGEBMEOH
    * </pre>
    *
    * Protobuf type {@code ItemAddHintNotify}
@@ -129,8 +129,8 @@ public final class ItemAddHintNotifyOuterClass {
       super(builder);
     }
     private ItemAddHintNotify() {
-      itemList_ = java.util.Collections.emptyList();
       overflowTransformedItemList_ = java.util.Collections.emptyList();
+      itemList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -153,85 +153,40 @@ public final class ItemAddHintNotifyOuterClass {
               emu.grasscutter.net.proto.ItemAddHintNotifyOuterClass.ItemAddHintNotify.class, emu.grasscutter.net.proto.ItemAddHintNotifyOuterClass.ItemAddHintNotify.Builder.class);
     }
 
-    public static final int ITEM_LIST_FIELD_NUMBER = 12;
-    @SuppressWarnings("serial")
-    private java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> itemList_;
+    public static final int GCNFBOCLHPE_FIELD_NUMBER = 7;
+    private boolean gCNFBOCLHPE_ = false;
     /**
-     * <code>repeated .ItemHint item_list = 12;</code>
+     * <code>bool GCNFBOCLHPE = 7;</code>
+     * @return The gCNFBOCLHPE.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> getItemListList() {
-      return itemList_;
-    }
-    /**
-     * <code>repeated .ItemHint item_list = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> 
-        getItemListOrBuilderList() {
-      return itemList_;
-    }
-    /**
-     * <code>repeated .ItemHint item_list = 12;</code>
-     */
-    @java.lang.Override
-    public int getItemListCount() {
-      return itemList_.size();
-    }
-    /**
-     * <code>repeated .ItemHint item_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint getItemList(int index) {
-      return itemList_.get(index);
-    }
-    /**
-     * <code>repeated .ItemHint item_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder getItemListOrBuilder(
-        int index) {
-      return itemList_.get(index);
+    public boolean getGCNFBOCLHPE() {
+      return gCNFBOCLHPE_;
     }
 
-    public static final int POSITION_FIELD_NUMBER = 9;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector position_;
+    public static final int PJLFNPEEBNP_FIELD_NUMBER = 5;
+    private boolean pJLFNPEEBNP_ = false;
     /**
-     * <code>.Vector position = 9;</code>
-     * @return Whether the position field is set.
+     * <code>bool PJLFNPEEBNP = 5;</code>
+     * @return The pJLFNPEEBNP.
      */
     @java.lang.Override
-    public boolean hasPosition() {
-      return position_ != null;
-    }
-    /**
-     * <code>.Vector position = 9;</code>
-     * @return The position.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPosition() {
-      return position_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : position_;
-    }
-    /**
-     * <code>.Vector position = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPositionOrBuilder() {
-      return position_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : position_;
+    public boolean getPJLFNPEEBNP() {
+      return pJLFNPEEBNP_;
     }
 
-    public static final int OVERFLOW_TRANSFORMED_ITEM_LIST_FIELD_NUMBER = 15;
+    public static final int OVERFLOW_TRANSFORMED_ITEM_LIST_FIELD_NUMBER = 1;
     @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> overflowTransformedItemList_;
     /**
-     * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+     * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> getOverflowTransformedItemListList() {
       return overflowTransformedItemList_;
     }
     /**
-     * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+     * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> 
@@ -239,21 +194,21 @@ public final class ItemAddHintNotifyOuterClass {
       return overflowTransformedItemList_;
     }
     /**
-     * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+     * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
      */
     @java.lang.Override
     public int getOverflowTransformedItemListCount() {
       return overflowTransformedItemList_.size();
     }
     /**
-     * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+     * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint getOverflowTransformedItemList(int index) {
       return overflowTransformedItemList_.get(index);
     }
     /**
-     * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+     * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder getOverflowTransformedItemListOrBuilder(
@@ -261,10 +216,51 @@ public final class ItemAddHintNotifyOuterClass {
       return overflowTransformedItemList_.get(index);
     }
 
-    public static final int QUEST_ID_FIELD_NUMBER = 6;
+    public static final int ITEM_LIST_FIELD_NUMBER = 13;
+    @SuppressWarnings("serial")
+    private java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> itemList_;
+    /**
+     * <code>repeated .ItemHint item_list = 13;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> getItemListList() {
+      return itemList_;
+    }
+    /**
+     * <code>repeated .ItemHint item_list = 13;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> 
+        getItemListOrBuilderList() {
+      return itemList_;
+    }
+    /**
+     * <code>repeated .ItemHint item_list = 13;</code>
+     */
+    @java.lang.Override
+    public int getItemListCount() {
+      return itemList_.size();
+    }
+    /**
+     * <code>repeated .ItemHint item_list = 13;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint getItemList(int index) {
+      return itemList_.get(index);
+    }
+    /**
+     * <code>repeated .ItemHint item_list = 13;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder getItemListOrBuilder(
+        int index) {
+      return itemList_.get(index);
+    }
+
+    public static final int QUEST_ID_FIELD_NUMBER = 15;
     private int questId_ = 0;
     /**
-     * <code>uint32 quest_id = 6;</code>
+     * <code>uint32 quest_id = 15;</code>
      * @return The questId.
      */
     @java.lang.Override
@@ -272,43 +268,47 @@ public final class ItemAddHintNotifyOuterClass {
       return questId_;
     }
 
-    public static final int OCIEEDOLGDB_FIELD_NUMBER = 3;
-    private boolean oCIEEDOLGDB_ = false;
+    public static final int POSITION_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector position_;
     /**
-     * <code>bool OCIEEDOLGDB = 3;</code>
-     * @return The oCIEEDOLGDB.
+     * <code>.Vector position = 8;</code>
+     * @return Whether the position field is set.
      */
     @java.lang.Override
-    public boolean getOCIEEDOLGDB() {
-      return oCIEEDOLGDB_;
+    public boolean hasPosition() {
+      return position_ != null;
     }
-
-    public static final int ENCLFHLBLLA_FIELD_NUMBER = 8;
-    private boolean eNCLFHLBLLA_ = false;
     /**
-     * <code>bool ENCLFHLBLLA = 8;</code>
-     * @return The eNCLFHLBLLA.
+     * <code>.Vector position = 8;</code>
+     * @return The position.
      */
     @java.lang.Override
-    public boolean getENCLFHLBLLA() {
-      return eNCLFHLBLLA_;
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPosition() {
+      return position_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : position_;
     }
-
-    public static final int JPDJLIPKABJ_FIELD_NUMBER = 13;
-    private boolean jPDJLIPKABJ_ = false;
     /**
-     * <code>bool JPDJLIPKABJ = 13;</code>
-     * @return The jPDJLIPKABJ.
+     * <code>.Vector position = 8;</code>
      */
     @java.lang.Override
-    public boolean getJPDJLIPKABJ() {
-      return jPDJLIPKABJ_;
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPositionOrBuilder() {
+      return position_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : position_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 11;
+    public static final int MMHKDGBFKAC_FIELD_NUMBER = 9;
+    private boolean mMHKDGBFKAC_ = false;
+    /**
+     * <code>bool MMHKDGBFKAC = 9;</code>
+     * @return The mMHKDGBFKAC.
+     */
+    @java.lang.Override
+    public boolean getMMHKDGBFKAC() {
+      return mMHKDGBFKAC_;
+    }
+
+    public static final int REASON_FIELD_NUMBER = 4;
     private int reason_ = 0;
     /**
-     * <code>uint32 reason = 11;</code>
+     * <code>uint32 reason = 4;</code>
      * @return The reason.
      */
     @java.lang.Override
@@ -330,29 +330,29 @@ public final class ItemAddHintNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (oCIEEDOLGDB_ != false) {
-        output.writeBool(3, oCIEEDOLGDB_);
-      }
-      if (questId_ != 0) {
-        output.writeUInt32(6, questId_);
-      }
-      if (eNCLFHLBLLA_ != false) {
-        output.writeBool(8, eNCLFHLBLLA_);
-      }
-      if (position_ != null) {
-        output.writeMessage(9, getPosition());
+      for (int i = 0; i < overflowTransformedItemList_.size(); i++) {
+        output.writeMessage(1, overflowTransformedItemList_.get(i));
       }
       if (reason_ != 0) {
-        output.writeUInt32(11, reason_);
+        output.writeUInt32(4, reason_);
+      }
+      if (pJLFNPEEBNP_ != false) {
+        output.writeBool(5, pJLFNPEEBNP_);
+      }
+      if (gCNFBOCLHPE_ != false) {
+        output.writeBool(7, gCNFBOCLHPE_);
+      }
+      if (position_ != null) {
+        output.writeMessage(8, getPosition());
+      }
+      if (mMHKDGBFKAC_ != false) {
+        output.writeBool(9, mMHKDGBFKAC_);
       }
       for (int i = 0; i < itemList_.size(); i++) {
-        output.writeMessage(12, itemList_.get(i));
+        output.writeMessage(13, itemList_.get(i));
       }
-      if (jPDJLIPKABJ_ != false) {
-        output.writeBool(13, jPDJLIPKABJ_);
-      }
-      for (int i = 0; i < overflowTransformedItemList_.size(); i++) {
-        output.writeMessage(15, overflowTransformedItemList_.get(i));
+      if (questId_ != 0) {
+        output.writeUInt32(15, questId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -363,37 +363,37 @@ public final class ItemAddHintNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (oCIEEDOLGDB_ != false) {
+      for (int i = 0; i < overflowTransformedItemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, oCIEEDOLGDB_);
-      }
-      if (questId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, questId_);
-      }
-      if (eNCLFHLBLLA_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, eNCLFHLBLLA_);
-      }
-      if (position_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getPosition());
+          .computeMessageSize(1, overflowTransformedItemList_.get(i));
       }
       if (reason_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, reason_);
+          .computeUInt32Size(4, reason_);
+      }
+      if (pJLFNPEEBNP_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, pJLFNPEEBNP_);
+      }
+      if (gCNFBOCLHPE_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(7, gCNFBOCLHPE_);
+      }
+      if (position_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, getPosition());
+      }
+      if (mMHKDGBFKAC_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, mMHKDGBFKAC_);
       }
       for (int i = 0; i < itemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, itemList_.get(i));
+          .computeMessageSize(13, itemList_.get(i));
       }
-      if (jPDJLIPKABJ_ != false) {
+      if (questId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, jPDJLIPKABJ_);
-      }
-      for (int i = 0; i < overflowTransformedItemList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, overflowTransformedItemList_.get(i));
+          .computeUInt32Size(15, questId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -410,23 +410,23 @@ public final class ItemAddHintNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ItemAddHintNotifyOuterClass.ItemAddHintNotify other = (emu.grasscutter.net.proto.ItemAddHintNotifyOuterClass.ItemAddHintNotify) obj;
 
+      if (getGCNFBOCLHPE()
+          != other.getGCNFBOCLHPE()) return false;
+      if (getPJLFNPEEBNP()
+          != other.getPJLFNPEEBNP()) return false;
+      if (!getOverflowTransformedItemListList()
+          .equals(other.getOverflowTransformedItemListList())) return false;
       if (!getItemListList()
           .equals(other.getItemListList())) return false;
+      if (getQuestId()
+          != other.getQuestId()) return false;
       if (hasPosition() != other.hasPosition()) return false;
       if (hasPosition()) {
         if (!getPosition()
             .equals(other.getPosition())) return false;
       }
-      if (!getOverflowTransformedItemListList()
-          .equals(other.getOverflowTransformedItemListList())) return false;
-      if (getQuestId()
-          != other.getQuestId()) return false;
-      if (getOCIEEDOLGDB()
-          != other.getOCIEEDOLGDB()) return false;
-      if (getENCLFHLBLLA()
-          != other.getENCLFHLBLLA()) return false;
-      if (getJPDJLIPKABJ()
-          != other.getJPDJLIPKABJ()) return false;
+      if (getMMHKDGBFKAC()
+          != other.getMMHKDGBFKAC()) return false;
       if (getReason()
           != other.getReason()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
@@ -440,29 +440,29 @@ public final class ItemAddHintNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getItemListCount() > 0) {
-        hash = (37 * hash) + ITEM_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getItemListList().hashCode();
-      }
-      if (hasPosition()) {
-        hash = (37 * hash) + POSITION_FIELD_NUMBER;
-        hash = (53 * hash) + getPosition().hashCode();
-      }
+      hash = (37 * hash) + GCNFBOCLHPE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getGCNFBOCLHPE());
+      hash = (37 * hash) + PJLFNPEEBNP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getPJLFNPEEBNP());
       if (getOverflowTransformedItemListCount() > 0) {
         hash = (37 * hash) + OVERFLOW_TRANSFORMED_ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getOverflowTransformedItemListList().hashCode();
       }
+      if (getItemListCount() > 0) {
+        hash = (37 * hash) + ITEM_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getItemListList().hashCode();
+      }
       hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
       hash = (53 * hash) + getQuestId();
-      hash = (37 * hash) + OCIEEDOLGDB_FIELD_NUMBER;
+      if (hasPosition()) {
+        hash = (37 * hash) + POSITION_FIELD_NUMBER;
+        hash = (53 * hash) + getPosition().hashCode();
+      }
+      hash = (37 * hash) + MMHKDGBFKAC_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getOCIEEDOLGDB());
-      hash = (37 * hash) + ENCLFHLBLLA_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getENCLFHLBLLA());
-      hash = (37 * hash) + JPDJLIPKABJ_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getJPDJLIPKABJ());
+          getMMHKDGBFKAC());
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + getReason();
       hash = (29 * hash) + getUnknownFields().hashCode();
@@ -564,8 +564,8 @@ public final class ItemAddHintNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 616
-     * Name: IBLPBENLBJI
+     * CmdId: 655
+     * Obf: FOCMGEBMEOH
      * </pre>
      *
      * Protobuf type {@code ItemAddHintNotify}
@@ -601,18 +601,8 @@ public final class ItemAddHintNotifyOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        if (itemListBuilder_ == null) {
-          itemList_ = java.util.Collections.emptyList();
-        } else {
-          itemList_ = null;
-          itemListBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        position_ = null;
-        if (positionBuilder_ != null) {
-          positionBuilder_.dispose();
-          positionBuilder_ = null;
-        }
+        gCNFBOCLHPE_ = false;
+        pJLFNPEEBNP_ = false;
         if (overflowTransformedItemListBuilder_ == null) {
           overflowTransformedItemList_ = java.util.Collections.emptyList();
         } else {
@@ -620,10 +610,20 @@ public final class ItemAddHintNotifyOuterClass {
           overflowTransformedItemListBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000004);
+        if (itemListBuilder_ == null) {
+          itemList_ = java.util.Collections.emptyList();
+        } else {
+          itemList_ = null;
+          itemListBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
         questId_ = 0;
-        oCIEEDOLGDB_ = false;
-        eNCLFHLBLLA_ = false;
-        jPDJLIPKABJ_ = false;
+        position_ = null;
+        if (positionBuilder_ != null) {
+          positionBuilder_.dispose();
+          positionBuilder_ = null;
+        }
+        mMHKDGBFKAC_ = false;
         reason_ = 0;
         return this;
       }
@@ -658,15 +658,6 @@ public final class ItemAddHintNotifyOuterClass {
       }
 
       private void buildPartialRepeatedFields(emu.grasscutter.net.proto.ItemAddHintNotifyOuterClass.ItemAddHintNotify result) {
-        if (itemListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            itemList_ = java.util.Collections.unmodifiableList(itemList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.itemList_ = itemList_;
-        } else {
-          result.itemList_ = itemListBuilder_.build();
-        }
         if (overflowTransformedItemListBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0)) {
             overflowTransformedItemList_ = java.util.Collections.unmodifiableList(overflowTransformedItemList_);
@@ -676,26 +667,35 @@ public final class ItemAddHintNotifyOuterClass {
         } else {
           result.overflowTransformedItemList_ = overflowTransformedItemListBuilder_.build();
         }
+        if (itemListBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) != 0)) {
+            itemList_ = java.util.Collections.unmodifiableList(itemList_);
+            bitField0_ = (bitField0_ & ~0x00000008);
+          }
+          result.itemList_ = itemList_;
+        } else {
+          result.itemList_ = itemListBuilder_.build();
+        }
       }
 
       private void buildPartial0(emu.grasscutter.net.proto.ItemAddHintNotifyOuterClass.ItemAddHintNotify result) {
         int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.gCNFBOCLHPE_ = gCNFBOCLHPE_;
+        }
         if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.pJLFNPEEBNP_ = pJLFNPEEBNP_;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.questId_ = questId_;
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
           result.position_ = positionBuilder_ == null
               ? position_
               : positionBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.questId_ = questId_;
-        }
-        if (((from_bitField0_ & 0x00000010) != 0)) {
-          result.oCIEEDOLGDB_ = oCIEEDOLGDB_;
-        }
-        if (((from_bitField0_ & 0x00000020) != 0)) {
-          result.eNCLFHLBLLA_ = eNCLFHLBLLA_;
-        }
         if (((from_bitField0_ & 0x00000040) != 0)) {
-          result.jPDJLIPKABJ_ = jPDJLIPKABJ_;
+          result.mMHKDGBFKAC_ = mMHKDGBFKAC_;
         }
         if (((from_bitField0_ & 0x00000080) != 0)) {
           result.reason_ = reason_;
@@ -746,34 +746,11 @@ public final class ItemAddHintNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ItemAddHintNotifyOuterClass.ItemAddHintNotify other) {
         if (other == emu.grasscutter.net.proto.ItemAddHintNotifyOuterClass.ItemAddHintNotify.getDefaultInstance()) return this;
-        if (itemListBuilder_ == null) {
-          if (!other.itemList_.isEmpty()) {
-            if (itemList_.isEmpty()) {
-              itemList_ = other.itemList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-            } else {
-              ensureItemListIsMutable();
-              itemList_.addAll(other.itemList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.itemList_.isEmpty()) {
-            if (itemListBuilder_.isEmpty()) {
-              itemListBuilder_.dispose();
-              itemListBuilder_ = null;
-              itemList_ = other.itemList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              itemListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getItemListFieldBuilder() : null;
-            } else {
-              itemListBuilder_.addAllMessages(other.itemList_);
-            }
-          }
+        if (other.getGCNFBOCLHPE() != false) {
+          setGCNFBOCLHPE(other.getGCNFBOCLHPE());
         }
-        if (other.hasPosition()) {
-          mergePosition(other.getPosition());
+        if (other.getPJLFNPEEBNP() != false) {
+          setPJLFNPEEBNP(other.getPJLFNPEEBNP());
         }
         if (overflowTransformedItemListBuilder_ == null) {
           if (!other.overflowTransformedItemList_.isEmpty()) {
@@ -801,17 +778,40 @@ public final class ItemAddHintNotifyOuterClass {
             }
           }
         }
+        if (itemListBuilder_ == null) {
+          if (!other.itemList_.isEmpty()) {
+            if (itemList_.isEmpty()) {
+              itemList_ = other.itemList_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+            } else {
+              ensureItemListIsMutable();
+              itemList_.addAll(other.itemList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.itemList_.isEmpty()) {
+            if (itemListBuilder_.isEmpty()) {
+              itemListBuilder_.dispose();
+              itemListBuilder_ = null;
+              itemList_ = other.itemList_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+              itemListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getItemListFieldBuilder() : null;
+            } else {
+              itemListBuilder_.addAllMessages(other.itemList_);
+            }
+          }
+        }
         if (other.getQuestId() != 0) {
           setQuestId(other.getQuestId());
         }
-        if (other.getOCIEEDOLGDB() != false) {
-          setOCIEEDOLGDB(other.getOCIEEDOLGDB());
+        if (other.hasPosition()) {
+          mergePosition(other.getPosition());
         }
-        if (other.getENCLFHLBLLA() != false) {
-          setENCLFHLBLLA(other.getENCLFHLBLLA());
-        }
-        if (other.getJPDJLIPKABJ() != false) {
-          setJPDJLIPKABJ(other.getJPDJLIPKABJ());
+        if (other.getMMHKDGBFKAC() != false) {
+          setMMHKDGBFKAC(other.getMMHKDGBFKAC());
         }
         if (other.getReason() != 0) {
           setReason(other.getReason());
@@ -842,52 +842,7 @@ public final class ItemAddHintNotifyOuterClass {
               case 0:
                 done = true;
                 break;
-              case 24: {
-                oCIEEDOLGDB_ = input.readBool();
-                bitField0_ |= 0x00000010;
-                break;
-              } // case 24
-              case 48: {
-                questId_ = input.readUInt32();
-                bitField0_ |= 0x00000008;
-                break;
-              } // case 48
-              case 64: {
-                eNCLFHLBLLA_ = input.readBool();
-                bitField0_ |= 0x00000020;
-                break;
-              } // case 64
-              case 74: {
-                input.readMessage(
-                    getPositionFieldBuilder().getBuilder(),
-                    extensionRegistry);
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 74
-              case 88: {
-                reason_ = input.readUInt32();
-                bitField0_ |= 0x00000080;
-                break;
-              } // case 88
-              case 98: {
-                emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint m =
-                    input.readMessage(
-                        emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.parser(),
-                        extensionRegistry);
-                if (itemListBuilder_ == null) {
-                  ensureItemListIsMutable();
-                  itemList_.add(m);
-                } else {
-                  itemListBuilder_.addMessage(m);
-                }
-                break;
-              } // case 98
-              case 104: {
-                jPDJLIPKABJ_ = input.readBool();
-                bitField0_ |= 0x00000040;
-                break;
-              } // case 104
-              case 122: {
+              case 10: {
                 emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint m =
                     input.readMessage(
                         emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.parser(),
@@ -899,7 +854,52 @@ public final class ItemAddHintNotifyOuterClass {
                   overflowTransformedItemListBuilder_.addMessage(m);
                 }
                 break;
-              } // case 122
+              } // case 10
+              case 32: {
+                reason_ = input.readUInt32();
+                bitField0_ |= 0x00000080;
+                break;
+              } // case 32
+              case 40: {
+                pJLFNPEEBNP_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 40
+              case 56: {
+                gCNFBOCLHPE_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 56
+              case 66: {
+                input.readMessage(
+                    getPositionFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000020;
+                break;
+              } // case 66
+              case 72: {
+                mMHKDGBFKAC_ = input.readBool();
+                bitField0_ |= 0x00000040;
+                break;
+              } // case 72
+              case 106: {
+                emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.parser(),
+                        extensionRegistry);
+                if (itemListBuilder_ == null) {
+                  ensureItemListIsMutable();
+                  itemList_.add(m);
+                } else {
+                  itemListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 106
+              case 120: {
+                questId_ = input.readUInt32();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 120
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -917,363 +917,68 @@ public final class ItemAddHintNotifyOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> itemList_ =
-        java.util.Collections.emptyList();
-      private void ensureItemListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint>(itemList_);
-          bitField0_ |= 0x00000001;
-         }
+      private boolean gCNFBOCLHPE_ ;
+      /**
+       * <code>bool GCNFBOCLHPE = 7;</code>
+       * @return The gCNFBOCLHPE.
+       */
+      @java.lang.Override
+      public boolean getGCNFBOCLHPE() {
+        return gCNFBOCLHPE_;
+      }
+      /**
+       * <code>bool GCNFBOCLHPE = 7;</code>
+       * @param value The gCNFBOCLHPE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGCNFBOCLHPE(boolean value) {
+
+        gCNFBOCLHPE_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool GCNFBOCLHPE = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGCNFBOCLHPE() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        gCNFBOCLHPE_ = false;
+        onChanged();
+        return this;
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> itemListBuilder_;
+      private boolean pJLFNPEEBNP_ ;
+      /**
+       * <code>bool PJLFNPEEBNP = 5;</code>
+       * @return The pJLFNPEEBNP.
+       */
+      @java.lang.Override
+      public boolean getPJLFNPEEBNP() {
+        return pJLFNPEEBNP_;
+      }
+      /**
+       * <code>bool PJLFNPEEBNP = 5;</code>
+       * @param value The pJLFNPEEBNP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPJLFNPEEBNP(boolean value) {
 
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> getItemListList() {
-        if (itemListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(itemList_);
-        } else {
-          return itemListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public int getItemListCount() {
-        if (itemListBuilder_ == null) {
-          return itemList_.size();
-        } else {
-          return itemListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint getItemList(int index) {
-        if (itemListBuilder_ == null) {
-          return itemList_.get(index);
-        } else {
-          return itemListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public Builder setItemList(
-          int index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint value) {
-        if (itemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureItemListIsMutable();
-          itemList_.set(index, value);
-          onChanged();
-        } else {
-          itemListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public Builder setItemList(
-          int index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder builderForValue) {
-        if (itemListBuilder_ == null) {
-          ensureItemListIsMutable();
-          itemList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          itemListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public Builder addItemList(emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint value) {
-        if (itemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureItemListIsMutable();
-          itemList_.add(value);
-          onChanged();
-        } else {
-          itemListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public Builder addItemList(
-          int index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint value) {
-        if (itemListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureItemListIsMutable();
-          itemList_.add(index, value);
-          onChanged();
-        } else {
-          itemListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public Builder addItemList(
-          emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder builderForValue) {
-        if (itemListBuilder_ == null) {
-          ensureItemListIsMutable();
-          itemList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          itemListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public Builder addItemList(
-          int index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder builderForValue) {
-        if (itemListBuilder_ == null) {
-          ensureItemListIsMutable();
-          itemList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          itemListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public Builder addAllItemList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> values) {
-        if (itemListBuilder_ == null) {
-          ensureItemListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, itemList_);
-          onChanged();
-        } else {
-          itemListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public Builder clearItemList() {
-        if (itemListBuilder_ == null) {
-          itemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          itemListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public Builder removeItemList(int index) {
-        if (itemListBuilder_ == null) {
-          ensureItemListIsMutable();
-          itemList_.remove(index);
-          onChanged();
-        } else {
-          itemListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder getItemListBuilder(
-          int index) {
-        return getItemListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder getItemListOrBuilder(
-          int index) {
-        if (itemListBuilder_ == null) {
-          return itemList_.get(index);  } else {
-          return itemListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> 
-           getItemListOrBuilderList() {
-        if (itemListBuilder_ != null) {
-          return itemListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(itemList_);
-        }
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder addItemListBuilder() {
-        return getItemListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder addItemListBuilder(
-          int index) {
-        return getItemListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ItemHint item_list = 12;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder> 
-           getItemListBuilderList() {
-        return getItemListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> 
-          getItemListFieldBuilder() {
-        if (itemListBuilder_ == null) {
-          itemListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder>(
-                  itemList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          itemList_ = null;
-        }
-        return itemListBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector position_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> positionBuilder_;
-      /**
-       * <code>.Vector position = 9;</code>
-       * @return Whether the position field is set.
-       */
-      public boolean hasPosition() {
-        return ((bitField0_ & 0x00000002) != 0);
-      }
-      /**
-       * <code>.Vector position = 9;</code>
-       * @return The position.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPosition() {
-        if (positionBuilder_ == null) {
-          return position_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : position_;
-        } else {
-          return positionBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector position = 9;</code>
-       */
-      public Builder setPosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (positionBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          position_ = value;
-        } else {
-          positionBuilder_.setMessage(value);
-        }
+        pJLFNPEEBNP_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>.Vector position = 9;</code>
+       * <code>bool PJLFNPEEBNP = 5;</code>
+       * @return This builder for chaining.
        */
-      public Builder setPosition(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (positionBuilder_ == null) {
-          position_ = builderForValue.build();
-        } else {
-          positionBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.Vector position = 9;</code>
-       */
-      public Builder mergePosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (positionBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0) &&
-            position_ != null &&
-            position_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
-            getPositionBuilder().mergeFrom(value);
-          } else {
-            position_ = value;
-          }
-        } else {
-          positionBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.Vector position = 9;</code>
-       */
-      public Builder clearPosition() {
+      public Builder clearPJLFNPEEBNP() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        position_ = null;
-        if (positionBuilder_ != null) {
-          positionBuilder_.dispose();
-          positionBuilder_ = null;
-        }
+        pJLFNPEEBNP_ = false;
         onChanged();
         return this;
-      }
-      /**
-       * <code>.Vector position = 9;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPositionBuilder() {
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return getPositionFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector position = 9;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPositionOrBuilder() {
-        if (positionBuilder_ != null) {
-          return positionBuilder_.getMessageOrBuilder();
-        } else {
-          return position_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : position_;
-        }
-      }
-      /**
-       * <code>.Vector position = 9;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getPositionFieldBuilder() {
-        if (positionBuilder_ == null) {
-          positionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getPosition(),
-                  getParentForChildren(),
-                  isClean());
-          position_ = null;
-        }
-        return positionBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> overflowTransformedItemList_ =
@@ -1289,7 +994,7 @@ public final class ItemAddHintNotifyOuterClass {
           emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> overflowTransformedItemListBuilder_;
 
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> getOverflowTransformedItemListList() {
         if (overflowTransformedItemListBuilder_ == null) {
@@ -1299,7 +1004,7 @@ public final class ItemAddHintNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public int getOverflowTransformedItemListCount() {
         if (overflowTransformedItemListBuilder_ == null) {
@@ -1309,7 +1014,7 @@ public final class ItemAddHintNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint getOverflowTransformedItemList(int index) {
         if (overflowTransformedItemListBuilder_ == null) {
@@ -1319,7 +1024,7 @@ public final class ItemAddHintNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public Builder setOverflowTransformedItemList(
           int index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint value) {
@@ -1336,7 +1041,7 @@ public final class ItemAddHintNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public Builder setOverflowTransformedItemList(
           int index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder builderForValue) {
@@ -1350,7 +1055,7 @@ public final class ItemAddHintNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public Builder addOverflowTransformedItemList(emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint value) {
         if (overflowTransformedItemListBuilder_ == null) {
@@ -1366,7 +1071,7 @@ public final class ItemAddHintNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public Builder addOverflowTransformedItemList(
           int index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint value) {
@@ -1383,7 +1088,7 @@ public final class ItemAddHintNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public Builder addOverflowTransformedItemList(
           emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder builderForValue) {
@@ -1397,7 +1102,7 @@ public final class ItemAddHintNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public Builder addOverflowTransformedItemList(
           int index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder builderForValue) {
@@ -1411,7 +1116,7 @@ public final class ItemAddHintNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public Builder addAllOverflowTransformedItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> values) {
@@ -1426,7 +1131,7 @@ public final class ItemAddHintNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public Builder clearOverflowTransformedItemList() {
         if (overflowTransformedItemListBuilder_ == null) {
@@ -1439,7 +1144,7 @@ public final class ItemAddHintNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public Builder removeOverflowTransformedItemList(int index) {
         if (overflowTransformedItemListBuilder_ == null) {
@@ -1452,14 +1157,14 @@ public final class ItemAddHintNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder getOverflowTransformedItemListBuilder(
           int index) {
         return getOverflowTransformedItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder getOverflowTransformedItemListOrBuilder(
           int index) {
@@ -1469,7 +1174,7 @@ public final class ItemAddHintNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> 
            getOverflowTransformedItemListOrBuilderList() {
@@ -1480,14 +1185,14 @@ public final class ItemAddHintNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder addOverflowTransformedItemListBuilder() {
         return getOverflowTransformedItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder addOverflowTransformedItemListBuilder(
           int index) {
@@ -1495,7 +1200,7 @@ public final class ItemAddHintNotifyOuterClass {
             index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemHint overflow_transformed_item_list = 15;</code>
+       * <code>repeated .ItemHint overflow_transformed_item_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder> 
            getOverflowTransformedItemListBuilderList() {
@@ -1516,9 +1221,249 @@ public final class ItemAddHintNotifyOuterClass {
         return overflowTransformedItemListBuilder_;
       }
 
+      private java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> itemList_ =
+        java.util.Collections.emptyList();
+      private void ensureItemListIsMutable() {
+        if (!((bitField0_ & 0x00000008) != 0)) {
+          itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint>(itemList_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> itemListBuilder_;
+
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> getItemListList() {
+        if (itemListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(itemList_);
+        } else {
+          return itemListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public int getItemListCount() {
+        if (itemListBuilder_ == null) {
+          return itemList_.size();
+        } else {
+          return itemListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint getItemList(int index) {
+        if (itemListBuilder_ == null) {
+          return itemList_.get(index);
+        } else {
+          return itemListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public Builder setItemList(
+          int index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint value) {
+        if (itemListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureItemListIsMutable();
+          itemList_.set(index, value);
+          onChanged();
+        } else {
+          itemListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public Builder setItemList(
+          int index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder builderForValue) {
+        if (itemListBuilder_ == null) {
+          ensureItemListIsMutable();
+          itemList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          itemListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public Builder addItemList(emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint value) {
+        if (itemListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureItemListIsMutable();
+          itemList_.add(value);
+          onChanged();
+        } else {
+          itemListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public Builder addItemList(
+          int index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint value) {
+        if (itemListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureItemListIsMutable();
+          itemList_.add(index, value);
+          onChanged();
+        } else {
+          itemListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public Builder addItemList(
+          emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder builderForValue) {
+        if (itemListBuilder_ == null) {
+          ensureItemListIsMutable();
+          itemList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          itemListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public Builder addItemList(
+          int index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder builderForValue) {
+        if (itemListBuilder_ == null) {
+          ensureItemListIsMutable();
+          itemList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          itemListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public Builder addAllItemList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint> values) {
+        if (itemListBuilder_ == null) {
+          ensureItemListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, itemList_);
+          onChanged();
+        } else {
+          itemListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public Builder clearItemList() {
+        if (itemListBuilder_ == null) {
+          itemList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+          onChanged();
+        } else {
+          itemListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public Builder removeItemList(int index) {
+        if (itemListBuilder_ == null) {
+          ensureItemListIsMutable();
+          itemList_.remove(index);
+          onChanged();
+        } else {
+          itemListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder getItemListBuilder(
+          int index) {
+        return getItemListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder getItemListOrBuilder(
+          int index) {
+        if (itemListBuilder_ == null) {
+          return itemList_.get(index);  } else {
+          return itemListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> 
+           getItemListOrBuilderList() {
+        if (itemListBuilder_ != null) {
+          return itemListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(itemList_);
+        }
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder addItemListBuilder() {
+        return getItemListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder addItemListBuilder(
+          int index) {
+        return getItemListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ItemHint item_list = 13;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder> 
+           getItemListBuilderList() {
+        return getItemListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder> 
+          getItemListFieldBuilder() {
+        if (itemListBuilder_ == null) {
+          itemListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHintOrBuilder>(
+                  itemList_,
+                  ((bitField0_ & 0x00000008) != 0),
+                  getParentForChildren(),
+                  isClean());
+          itemList_ = null;
+        }
+        return itemListBuilder_;
+      }
+
       private int questId_ ;
       /**
-       * <code>uint32 quest_id = 6;</code>
+       * <code>uint32 quest_id = 15;</code>
        * @return The questId.
        */
       @java.lang.Override
@@ -1526,127 +1471,182 @@ public final class ItemAddHintNotifyOuterClass {
         return questId_;
       }
       /**
-       * <code>uint32 quest_id = 6;</code>
+       * <code>uint32 quest_id = 15;</code>
        * @param value The questId to set.
        * @return This builder for chaining.
        */
       public Builder setQuestId(int value) {
 
         questId_ = value;
-        bitField0_ |= 0x00000008;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 quest_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearQuestId() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        questId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean oCIEEDOLGDB_ ;
-      /**
-       * <code>bool OCIEEDOLGDB = 3;</code>
-       * @return The oCIEEDOLGDB.
-       */
-      @java.lang.Override
-      public boolean getOCIEEDOLGDB() {
-        return oCIEEDOLGDB_;
-      }
-      /**
-       * <code>bool OCIEEDOLGDB = 3;</code>
-       * @param value The oCIEEDOLGDB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOCIEEDOLGDB(boolean value) {
-
-        oCIEEDOLGDB_ = value;
         bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
       /**
-       * <code>bool OCIEEDOLGDB = 3;</code>
+       * <code>uint32 quest_id = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOCIEEDOLGDB() {
+      public Builder clearQuestId() {
         bitField0_ = (bitField0_ & ~0x00000010);
-        oCIEEDOLGDB_ = false;
+        questId_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean eNCLFHLBLLA_ ;
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector position_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> positionBuilder_;
       /**
-       * <code>bool ENCLFHLBLLA = 8;</code>
-       * @return The eNCLFHLBLLA.
+       * <code>.Vector position = 8;</code>
+       * @return Whether the position field is set.
        */
-      @java.lang.Override
-      public boolean getENCLFHLBLLA() {
-        return eNCLFHLBLLA_;
+      public boolean hasPosition() {
+        return ((bitField0_ & 0x00000020) != 0);
       }
       /**
-       * <code>bool ENCLFHLBLLA = 8;</code>
-       * @param value The eNCLFHLBLLA to set.
-       * @return This builder for chaining.
+       * <code>.Vector position = 8;</code>
+       * @return The position.
        */
-      public Builder setENCLFHLBLLA(boolean value) {
-
-        eNCLFHLBLLA_ = value;
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPosition() {
+        if (positionBuilder_ == null) {
+          return position_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : position_;
+        } else {
+          return positionBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector position = 8;</code>
+       */
+      public Builder setPosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (positionBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          position_ = value;
+        } else {
+          positionBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
       /**
-       * <code>bool ENCLFHLBLLA = 8;</code>
-       * @return This builder for chaining.
+       * <code>.Vector position = 8;</code>
        */
-      public Builder clearENCLFHLBLLA() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        eNCLFHLBLLA_ = false;
+      public Builder setPosition(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (positionBuilder_ == null) {
+          position_ = builderForValue.build();
+        } else {
+          positionBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
-
-      private boolean jPDJLIPKABJ_ ;
       /**
-       * <code>bool JPDJLIPKABJ = 13;</code>
-       * @return The jPDJLIPKABJ.
+       * <code>.Vector position = 8;</code>
        */
-      @java.lang.Override
-      public boolean getJPDJLIPKABJ() {
-        return jPDJLIPKABJ_;
+      public Builder mergePosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (positionBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) != 0) &&
+            position_ != null &&
+            position_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
+            getPositionBuilder().mergeFrom(value);
+          } else {
+            position_ = value;
+          }
+        } else {
+          positionBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
       }
       /**
-       * <code>bool JPDJLIPKABJ = 13;</code>
-       * @param value The jPDJLIPKABJ to set.
+       * <code>.Vector position = 8;</code>
+       */
+      public Builder clearPosition() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        position_ = null;
+        if (positionBuilder_ != null) {
+          positionBuilder_.dispose();
+          positionBuilder_ = null;
+        }
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.Vector position = 8;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPositionBuilder() {
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return getPositionFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector position = 8;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPositionOrBuilder() {
+        if (positionBuilder_ != null) {
+          return positionBuilder_.getMessageOrBuilder();
+        } else {
+          return position_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : position_;
+        }
+      }
+      /**
+       * <code>.Vector position = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getPositionFieldBuilder() {
+        if (positionBuilder_ == null) {
+          positionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getPosition(),
+                  getParentForChildren(),
+                  isClean());
+          position_ = null;
+        }
+        return positionBuilder_;
+      }
+
+      private boolean mMHKDGBFKAC_ ;
+      /**
+       * <code>bool MMHKDGBFKAC = 9;</code>
+       * @return The mMHKDGBFKAC.
+       */
+      @java.lang.Override
+      public boolean getMMHKDGBFKAC() {
+        return mMHKDGBFKAC_;
+      }
+      /**
+       * <code>bool MMHKDGBFKAC = 9;</code>
+       * @param value The mMHKDGBFKAC to set.
        * @return This builder for chaining.
        */
-      public Builder setJPDJLIPKABJ(boolean value) {
+      public Builder setMMHKDGBFKAC(boolean value) {
 
-        jPDJLIPKABJ_ = value;
+        mMHKDGBFKAC_ = value;
         bitField0_ |= 0x00000040;
         onChanged();
         return this;
       }
       /**
-       * <code>bool JPDJLIPKABJ = 13;</code>
+       * <code>bool MMHKDGBFKAC = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJPDJLIPKABJ() {
+      public Builder clearMMHKDGBFKAC() {
         bitField0_ = (bitField0_ & ~0x00000040);
-        jPDJLIPKABJ_ = false;
+        mMHKDGBFKAC_ = false;
         onChanged();
         return this;
       }
 
       private int reason_ ;
       /**
-       * <code>uint32 reason = 11;</code>
+       * <code>uint32 reason = 4;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -1654,7 +1654,7 @@ public final class ItemAddHintNotifyOuterClass {
         return reason_;
       }
       /**
-       * <code>uint32 reason = 11;</code>
+       * <code>uint32 reason = 4;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -1666,7 +1666,7 @@ public final class ItemAddHintNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reason = 11;</code>
+       * <code>uint32 reason = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -1754,12 +1754,12 @@ public final class ItemAddHintNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027ItemAddHintNotify.proto\032\016ItemHint.prot" +
-      "o\032\014Vector.proto\"\340\001\n\021ItemAddHintNotify\022\034\n" +
-      "\titem_list\030\014 \003(\0132\t.ItemHint\022\031\n\010position\030" +
-      "\t \001(\0132\007.Vector\0221\n\036overflow_transformed_i" +
-      "tem_list\030\017 \003(\0132\t.ItemHint\022\020\n\010quest_id\030\006 " +
-      "\001(\r\022\023\n\013OCIEEDOLGDB\030\003 \001(\010\022\023\n\013ENCLFHLBLLA\030" +
-      "\010 \001(\010\022\023\n\013JPDJLIPKABJ\030\r \001(\010\022\016\n\006reason\030\013 \001" +
+      "o\032\014Vector.proto\"\340\001\n\021ItemAddHintNotify\022\023\n" +
+      "\013GCNFBOCLHPE\030\007 \001(\010\022\023\n\013PJLFNPEEBNP\030\005 \001(\010\022" +
+      "1\n\036overflow_transformed_item_list\030\001 \003(\0132" +
+      "\t.ItemHint\022\034\n\titem_list\030\r \003(\0132\t.ItemHint" +
+      "\022\020\n\010quest_id\030\017 \001(\r\022\031\n\010position\030\010 \001(\0132\007.V" +
+      "ector\022\023\n\013MMHKDGBFKAC\030\t \001(\010\022\016\n\006reason\030\004 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1773,7 +1773,7 @@ public final class ItemAddHintNotifyOuterClass {
     internal_static_ItemAddHintNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ItemAddHintNotify_descriptor,
-        new java.lang.String[] { "ItemList", "Position", "OverflowTransformedItemList", "QuestId", "OCIEEDOLGDB", "ENCLFHLBLLA", "JPDJLIPKABJ", "Reason", });
+        new java.lang.String[] { "GCNFBOCLHPE", "PJLFNPEEBNP", "OverflowTransformedItemList", "ItemList", "QuestId", "Position", "MMHKDGBFKAC", "Reason", });
     emu.grasscutter.net.proto.ItemHintOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }

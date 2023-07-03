@@ -20,8 +20,8 @@ public final class GetFurnitureCurModuleArrangeCountReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4845
-   * Name: MLAGPADBHDI
+   * CmdId: 4688
+   * Obf: AOKHNKCIGFG
    * </pre>
    *
    * Protobuf type {@code GetFurnitureCurModuleArrangeCountReq}
@@ -206,8 +206,8 @@ public final class GetFurnitureCurModuleArrangeCountReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4845
-     * Name: MLAGPADBHDI
+     * CmdId: 4688
+     * Obf: AOKHNKCIGFG
      * </pre>
      *
      * Protobuf type {@code GetFurnitureCurModuleArrangeCountReq}

@@ -19,21 +19,21 @@ public final class GetSceneAreaReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 belong_uid = 1;</code>
+     * <code>uint32 belong_uid = 11;</code>
      * @return The belongUid.
      */
     int getBelongUid();
 
     /**
-     * <code>uint32 scene_id = 9;</code>
+     * <code>uint32 scene_id = 6;</code>
      * @return The sceneId.
      */
     int getSceneId();
   }
   /**
    * <pre>
-   * CmdId: 286
-   * Name: CLAIAONNJPO
+   * CmdId: 233
+   * Obf: HJJMIDADBAP
    * </pre>
    *
    * Protobuf type {@code GetSceneAreaReq}
@@ -70,10 +70,10 @@ public final class GetSceneAreaReqOuterClass {
               emu.grasscutter.net.proto.GetSceneAreaReqOuterClass.GetSceneAreaReq.class, emu.grasscutter.net.proto.GetSceneAreaReqOuterClass.GetSceneAreaReq.Builder.class);
     }
 
-    public static final int BELONG_UID_FIELD_NUMBER = 1;
+    public static final int BELONG_UID_FIELD_NUMBER = 11;
     private int belongUid_ = 0;
     /**
-     * <code>uint32 belong_uid = 1;</code>
+     * <code>uint32 belong_uid = 11;</code>
      * @return The belongUid.
      */
     @java.lang.Override
@@ -81,10 +81,10 @@ public final class GetSceneAreaReqOuterClass {
       return belongUid_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 9;
+    public static final int SCENE_ID_FIELD_NUMBER = 6;
     private int sceneId_ = 0;
     /**
-     * <code>uint32 scene_id = 9;</code>
+     * <code>uint32 scene_id = 6;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -106,11 +106,11 @@ public final class GetSceneAreaReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (belongUid_ != 0) {
-        output.writeUInt32(1, belongUid_);
-      }
       if (sceneId_ != 0) {
-        output.writeUInt32(9, sceneId_);
+        output.writeUInt32(6, sceneId_);
+      }
+      if (belongUid_ != 0) {
+        output.writeUInt32(11, belongUid_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -121,13 +121,13 @@ public final class GetSceneAreaReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (belongUid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, belongUid_);
-      }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, sceneId_);
+          .computeUInt32Size(6, sceneId_);
+      }
+      if (belongUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, belongUid_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -262,8 +262,8 @@ public final class GetSceneAreaReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 286
-     * Name: CLAIAONNJPO
+     * CmdId: 233
+     * Obf: HJJMIDADBAP
      * </pre>
      *
      * Protobuf type {@code GetSceneAreaReq}
@@ -418,16 +418,16 @@ public final class GetSceneAreaReqOuterClass {
               case 0:
                 done = true;
                 break;
-              case 8: {
-                belongUid_ = input.readUInt32();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 8
-              case 72: {
+              case 48: {
                 sceneId_ = input.readUInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 72
+              } // case 48
+              case 88: {
+                belongUid_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 88
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -447,7 +447,7 @@ public final class GetSceneAreaReqOuterClass {
 
       private int belongUid_ ;
       /**
-       * <code>uint32 belong_uid = 1;</code>
+       * <code>uint32 belong_uid = 11;</code>
        * @return The belongUid.
        */
       @java.lang.Override
@@ -455,7 +455,7 @@ public final class GetSceneAreaReqOuterClass {
         return belongUid_;
       }
       /**
-       * <code>uint32 belong_uid = 1;</code>
+       * <code>uint32 belong_uid = 11;</code>
        * @param value The belongUid to set.
        * @return This builder for chaining.
        */
@@ -467,7 +467,7 @@ public final class GetSceneAreaReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 belong_uid = 1;</code>
+       * <code>uint32 belong_uid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearBelongUid() {
@@ -479,7 +479,7 @@ public final class GetSceneAreaReqOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 9;</code>
+       * <code>uint32 scene_id = 6;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -487,7 +487,7 @@ public final class GetSceneAreaReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 9;</code>
+       * <code>uint32 scene_id = 6;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -499,7 +499,7 @@ public final class GetSceneAreaReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 9;</code>
+       * <code>uint32 scene_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -587,7 +587,7 @@ public final class GetSceneAreaReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025GetSceneAreaReq.proto\"7\n\017GetSceneAreaR" +
-      "eq\022\022\n\nbelong_uid\030\001 \001(\r\022\020\n\010scene_id\030\t \001(\r" +
+      "eq\022\022\n\nbelong_uid\030\013 \001(\r\022\020\n\010scene_id\030\006 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

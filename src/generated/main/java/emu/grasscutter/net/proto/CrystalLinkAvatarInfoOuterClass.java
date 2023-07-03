@@ -19,7 +19,7 @@ public final class CrystalLinkAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_id = 10;</code>
+     * <code>uint64 avatar_id = 4;</code>
      * @return The avatarId.
      */
     long getAvatarId();
@@ -32,7 +32,7 @@ public final class CrystalLinkAvatarInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: ODPFLNHGMEI
+   * Obf: MAANKHLADDM
    * </pre>
    *
    * Protobuf type {@code CrystalLinkAvatarInfo}
@@ -69,10 +69,10 @@ public final class CrystalLinkAvatarInfoOuterClass {
               emu.grasscutter.net.proto.CrystalLinkAvatarInfoOuterClass.CrystalLinkAvatarInfo.class, emu.grasscutter.net.proto.CrystalLinkAvatarInfoOuterClass.CrystalLinkAvatarInfo.Builder.class);
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 10;
+    public static final int AVATAR_ID_FIELD_NUMBER = 4;
     private long avatarId_ = 0L;
     /**
-     * <code>uint64 avatar_id = 10;</code>
+     * <code>uint64 avatar_id = 4;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -109,7 +109,7 @@ public final class CrystalLinkAvatarInfoOuterClass {
         output.writeBool(3, isTrial_);
       }
       if (avatarId_ != 0L) {
-        output.writeUInt64(10, avatarId_);
+        output.writeUInt64(4, avatarId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -126,7 +126,7 @@ public final class CrystalLinkAvatarInfoOuterClass {
       }
       if (avatarId_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, avatarId_);
+          .computeUInt64Size(4, avatarId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -263,7 +263,7 @@ public final class CrystalLinkAvatarInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: ODPFLNHGMEI
+     * Obf: MAANKHLADDM
      * </pre>
      *
      * Protobuf type {@code CrystalLinkAvatarInfo}
@@ -423,11 +423,11 @@ public final class CrystalLinkAvatarInfoOuterClass {
                 bitField0_ |= 0x00000002;
                 break;
               } // case 24
-              case 80: {
+              case 32: {
                 avatarId_ = input.readUInt64();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 80
+              } // case 32
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -447,7 +447,7 @@ public final class CrystalLinkAvatarInfoOuterClass {
 
       private long avatarId_ ;
       /**
-       * <code>uint64 avatar_id = 10;</code>
+       * <code>uint64 avatar_id = 4;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -455,7 +455,7 @@ public final class CrystalLinkAvatarInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint64 avatar_id = 10;</code>
+       * <code>uint64 avatar_id = 4;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -467,7 +467,7 @@ public final class CrystalLinkAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_id = 10;</code>
+       * <code>uint64 avatar_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -587,7 +587,7 @@ public final class CrystalLinkAvatarInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033CrystalLinkAvatarInfo.proto\"<\n\025Crystal" +
-      "LinkAvatarInfo\022\021\n\tavatar_id\030\n \001(\004\022\020\n\010is_" +
+      "LinkAvatarInfo\022\021\n\tavatar_id\030\004 \001(\004\022\020\n\010is_" +
       "trial\030\003 \001(\010B\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };

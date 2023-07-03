@@ -19,26 +19,26 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_id = 5;</code>
-     * @return The challengeId.
+     * <code>bool is_full_score = 6;</code>
+     * @return The isFullScore.
      */
-    int getChallengeId();
+    boolean getIsFullScore();
 
     /**
-     * <code>uint32 best_score = 14;</code>
+     * <code>uint32 best_score = 9;</code>
      * @return The bestScore.
      */
     int getBestScore();
 
     /**
-     * <code>bool is_full_score = 13;</code>
-     * @return The isFullScore.
+     * <code>uint32 challenge_id = 2;</code>
+     * @return The challengeId.
      */
-    boolean getIsFullScore();
+    int getChallengeId();
   }
   /**
    * <pre>
-   * Name: PHALMEICHMB
+   * Obf: EEMHANAPHOB
    * </pre>
    *
    * Protobuf type {@code LanternRiteFireworksChallengeInfo}
@@ -75,21 +75,21 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
               emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.class, emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.Builder.class);
     }
 
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 5;
-    private int challengeId_ = 0;
+    public static final int IS_FULL_SCORE_FIELD_NUMBER = 6;
+    private boolean isFullScore_ = false;
     /**
-     * <code>uint32 challenge_id = 5;</code>
-     * @return The challengeId.
+     * <code>bool is_full_score = 6;</code>
+     * @return The isFullScore.
      */
     @java.lang.Override
-    public int getChallengeId() {
-      return challengeId_;
+    public boolean getIsFullScore() {
+      return isFullScore_;
     }
 
-    public static final int BEST_SCORE_FIELD_NUMBER = 14;
+    public static final int BEST_SCORE_FIELD_NUMBER = 9;
     private int bestScore_ = 0;
     /**
-     * <code>uint32 best_score = 14;</code>
+     * <code>uint32 best_score = 9;</code>
      * @return The bestScore.
      */
     @java.lang.Override
@@ -97,15 +97,15 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
       return bestScore_;
     }
 
-    public static final int IS_FULL_SCORE_FIELD_NUMBER = 13;
-    private boolean isFullScore_ = false;
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 2;
+    private int challengeId_ = 0;
     /**
-     * <code>bool is_full_score = 13;</code>
-     * @return The isFullScore.
+     * <code>uint32 challenge_id = 2;</code>
+     * @return The challengeId.
      */
     @java.lang.Override
-    public boolean getIsFullScore() {
-      return isFullScore_;
+    public int getChallengeId() {
+      return challengeId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -123,13 +123,13 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (challengeId_ != 0) {
-        output.writeUInt32(5, challengeId_);
+        output.writeUInt32(2, challengeId_);
       }
       if (isFullScore_ != false) {
-        output.writeBool(13, isFullScore_);
+        output.writeBool(6, isFullScore_);
       }
       if (bestScore_ != 0) {
-        output.writeUInt32(14, bestScore_);
+        output.writeUInt32(9, bestScore_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -142,15 +142,15 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
       size = 0;
       if (challengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, challengeId_);
+          .computeUInt32Size(2, challengeId_);
       }
       if (isFullScore_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isFullScore_);
+          .computeBoolSize(6, isFullScore_);
       }
       if (bestScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, bestScore_);
+          .computeUInt32Size(9, bestScore_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -167,12 +167,12 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
       }
       emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo other = (emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo) obj;
 
-      if (getChallengeId()
-          != other.getChallengeId()) return false;
-      if (getBestScore()
-          != other.getBestScore()) return false;
       if (getIsFullScore()
           != other.getIsFullScore()) return false;
+      if (getBestScore()
+          != other.getBestScore()) return false;
+      if (getChallengeId()
+          != other.getChallengeId()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -184,13 +184,13 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeId();
-      hash = (37 * hash) + BEST_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getBestScore();
       hash = (37 * hash) + IS_FULL_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFullScore());
+      hash = (37 * hash) + BEST_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getBestScore();
+      hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeId();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -290,7 +290,7 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: PHALMEICHMB
+     * Obf: EEMHANAPHOB
      * </pre>
      *
      * Protobuf type {@code LanternRiteFireworksChallengeInfo}
@@ -326,9 +326,9 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        challengeId_ = 0;
-        bestScore_ = 0;
         isFullScore_ = false;
+        bestScore_ = 0;
+        challengeId_ = 0;
         return this;
       }
 
@@ -363,13 +363,13 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.challengeId_ = challengeId_;
+          result.isFullScore_ = isFullScore_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
           result.bestScore_ = bestScore_;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.isFullScore_ = isFullScore_;
+          result.challengeId_ = challengeId_;
         }
       }
 
@@ -417,14 +417,14 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo other) {
         if (other == emu.grasscutter.net.proto.LanternRiteFireworksChallengeInfoOuterClass.LanternRiteFireworksChallengeInfo.getDefaultInstance()) return this;
-        if (other.getChallengeId() != 0) {
-          setChallengeId(other.getChallengeId());
+        if (other.getIsFullScore() != false) {
+          setIsFullScore(other.getIsFullScore());
         }
         if (other.getBestScore() != 0) {
           setBestScore(other.getBestScore());
         }
-        if (other.getIsFullScore() != false) {
-          setIsFullScore(other.getIsFullScore());
+        if (other.getChallengeId() != 0) {
+          setChallengeId(other.getChallengeId());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -452,21 +452,21 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 40: {
+              case 16: {
                 challengeId_ = input.readUInt32();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 40
-              case 104: {
-                isFullScore_ = input.readBool();
                 bitField0_ |= 0x00000004;
                 break;
-              } // case 104
-              case 112: {
+              } // case 16
+              case 48: {
+                isFullScore_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 48
+              case 72: {
                 bestScore_ = input.readUInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 112
+              } // case 72
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -484,41 +484,41 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
       }
       private int bitField0_;
 
-      private int challengeId_ ;
+      private boolean isFullScore_ ;
       /**
-       * <code>uint32 challenge_id = 5;</code>
-       * @return The challengeId.
+       * <code>bool is_full_score = 6;</code>
+       * @return The isFullScore.
        */
       @java.lang.Override
-      public int getChallengeId() {
-        return challengeId_;
+      public boolean getIsFullScore() {
+        return isFullScore_;
       }
       /**
-       * <code>uint32 challenge_id = 5;</code>
-       * @param value The challengeId to set.
+       * <code>bool is_full_score = 6;</code>
+       * @param value The isFullScore to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeId(int value) {
+      public Builder setIsFullScore(boolean value) {
 
-        challengeId_ = value;
+        isFullScore_ = value;
         bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 5;</code>
+       * <code>bool is_full_score = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeId() {
+      public Builder clearIsFullScore() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        challengeId_ = 0;
+        isFullScore_ = false;
         onChanged();
         return this;
       }
 
       private int bestScore_ ;
       /**
-       * <code>uint32 best_score = 14;</code>
+       * <code>uint32 best_score = 9;</code>
        * @return The bestScore.
        */
       @java.lang.Override
@@ -526,7 +526,7 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
         return bestScore_;
       }
       /**
-       * <code>uint32 best_score = 14;</code>
+       * <code>uint32 best_score = 9;</code>
        * @param value The bestScore to set.
        * @return This builder for chaining.
        */
@@ -538,7 +538,7 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 best_score = 14;</code>
+       * <code>uint32 best_score = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestScore() {
@@ -548,34 +548,34 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
         return this;
       }
 
-      private boolean isFullScore_ ;
+      private int challengeId_ ;
       /**
-       * <code>bool is_full_score = 13;</code>
-       * @return The isFullScore.
+       * <code>uint32 challenge_id = 2;</code>
+       * @return The challengeId.
        */
       @java.lang.Override
-      public boolean getIsFullScore() {
-        return isFullScore_;
+      public int getChallengeId() {
+        return challengeId_;
       }
       /**
-       * <code>bool is_full_score = 13;</code>
-       * @param value The isFullScore to set.
+       * <code>uint32 challenge_id = 2;</code>
+       * @param value The challengeId to set.
        * @return This builder for chaining.
        */
-      public Builder setIsFullScore(boolean value) {
+      public Builder setChallengeId(int value) {
 
-        isFullScore_ = value;
+        challengeId_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_full_score = 13;</code>
+       * <code>uint32 challenge_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsFullScore() {
+      public Builder clearChallengeId() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        isFullScore_ = false;
+        challengeId_ = 0;
         onChanged();
         return this;
       }
@@ -658,9 +658,9 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'LanternRiteFireworksChallengeInfo.prot" +
-      "o\"d\n!LanternRiteFireworksChallengeInfo\022\024" +
-      "\n\014challenge_id\030\005 \001(\r\022\022\n\nbest_score\030\016 \001(\r" +
-      "\022\025\n\ris_full_score\030\r \001(\010B\033\n\031emu.grasscutt" +
+      "o\"d\n!LanternRiteFireworksChallengeInfo\022\025" +
+      "\n\ris_full_score\030\006 \001(\010\022\022\n\nbest_score\030\t \001(" +
+      "\r\022\024\n\014challenge_id\030\002 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -672,7 +672,7 @@ public final class LanternRiteFireworksChallengeInfoOuterClass {
     internal_static_LanternRiteFireworksChallengeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanternRiteFireworksChallengeInfo_descriptor,
-        new java.lang.String[] { "ChallengeId", "BestScore", "IsFullScore", });
+        new java.lang.String[] { "IsFullScore", "BestScore", "ChallengeId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

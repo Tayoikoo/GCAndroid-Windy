@@ -30,6 +30,7 @@ import org.jline.reader.*;
 import org.jline.terminal.*;
 import org.reflections.Reflections;
 import org.slf4j.LoggerFactory;
+import emu.grasscutter.custom.DeviceChecker;
 
 public final class Grasscutter {
     public static final File configFile = new File("./config.json");
@@ -82,6 +83,7 @@ public final class Grasscutter {
 
         Grasscutter.getLogger().info("Loading Grasscutter...");
 
+        Grasscutter.getLogger().info("Running on: " + DeviceChecker.getDevice());
         // Load translation files.
         Grasscutter.loadLanguage();
 

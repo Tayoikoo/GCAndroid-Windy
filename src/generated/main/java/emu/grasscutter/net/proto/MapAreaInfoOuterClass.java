@@ -32,7 +32,7 @@ public final class MapAreaInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: PBKNDAIJAHH
+   * Obf: FBNGIOBADBH
    * </pre>
    *
    * Protobuf type {@code MapAreaInfo}
@@ -262,7 +262,7 @@ public final class MapAreaInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: PBKNDAIJAHH
+     * Obf: FBNGIOBADBH
      * </pre>
      *
      * Protobuf type {@code MapAreaInfo}

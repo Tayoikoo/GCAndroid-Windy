@@ -44,7 +44,7 @@ public final class RoguelikeGadgetInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: AAFJPKBFECB
+   * Obf: JGFICLGKFFD
    * </pre>
    *
    * Protobuf type {@code RoguelikeGadgetInfo}
@@ -317,7 +317,7 @@ public final class RoguelikeGadgetInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: AAFJPKBFECB
+     * Obf: JGFICLGKFFD
      * </pre>
      *
      * Protobuf type {@code RoguelikeGadgetInfo}

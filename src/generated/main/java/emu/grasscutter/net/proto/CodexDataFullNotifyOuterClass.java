@@ -19,62 +19,62 @@ public final class CodexDataFullNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 last_read_pushtips_type_id = 15;</code>
-     * @return The lastReadPushtipsTypeId.
-     */
-    int getLastReadPushtipsTypeId();
-
-    /**
-     * <code>repeated .CodexTypeData type_data_list = 13;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData> 
-        getTypeDataListList();
-    /**
-     * <code>repeated .CodexTypeData type_data_list = 13;</code>
-     */
-    emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData getTypeDataList(int index);
-    /**
-     * <code>repeated .CodexTypeData type_data_list = 13;</code>
-     */
-    int getTypeDataListCount();
-    /**
-     * <code>repeated .CodexTypeData type_data_list = 13;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeDataOrBuilder> 
-        getTypeDataListOrBuilderList();
-    /**
-     * <code>repeated .CodexTypeData type_data_list = 13;</code>
-     */
-    emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeDataOrBuilder getTypeDataListOrBuilder(
-        int index);
-
-    /**
-     * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
+     * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
      * @return A list containing the recentViewedPushtipsList.
      */
     java.util.List<java.lang.Integer> getRecentViewedPushtipsListList();
     /**
-     * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
+     * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
      * @return The count of recentViewedPushtipsList.
      */
     int getRecentViewedPushtipsListCount();
     /**
-     * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
+     * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
      * @param index The index of the element to return.
      * @return The recentViewedPushtipsList at the given index.
      */
     int getRecentViewedPushtipsList(int index);
 
     /**
-     * <code>uint32 last_read_pushtips_codex_id = 7;</code>
-     * @return The lastReadPushtipsCodexId.
+     * <code>uint32 BGFNNPAOPML = 9;</code>
+     * @return The bGFNNPAOPML.
      */
-    int getLastReadPushtipsCodexId();
+    int getBGFNNPAOPML();
+
+    /**
+     * <code>uint32 IAIMLAPJCIN = 2;</code>
+     * @return The iAIMLAPJCIN.
+     */
+    int getIAIMLAPJCIN();
+
+    /**
+     * <code>repeated .CodexTypeData type_data_list = 11;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData> 
+        getTypeDataListList();
+    /**
+     * <code>repeated .CodexTypeData type_data_list = 11;</code>
+     */
+    emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData getTypeDataList(int index);
+    /**
+     * <code>repeated .CodexTypeData type_data_list = 11;</code>
+     */
+    int getTypeDataListCount();
+    /**
+     * <code>repeated .CodexTypeData type_data_list = 11;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeDataOrBuilder> 
+        getTypeDataListOrBuilderList();
+    /**
+     * <code>repeated .CodexTypeData type_data_list = 11;</code>
+     */
+    emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeDataOrBuilder getTypeDataListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * CmdId: 4202
-   * Name: DEOFNLAMNKE
+   * CmdId: 4207
+   * Obf: PHDPIAHJJAB
    * </pre>
    *
    * Protobuf type {@code CodexDataFullNotify}
@@ -89,8 +89,8 @@ public final class CodexDataFullNotifyOuterClass {
       super(builder);
     }
     private CodexDataFullNotify() {
-      typeDataList_ = java.util.Collections.emptyList();
       recentViewedPushtipsList_ = emptyIntList();
+      typeDataList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -113,63 +113,11 @@ public final class CodexDataFullNotifyOuterClass {
               emu.grasscutter.net.proto.CodexDataFullNotifyOuterClass.CodexDataFullNotify.class, emu.grasscutter.net.proto.CodexDataFullNotifyOuterClass.CodexDataFullNotify.Builder.class);
     }
 
-    public static final int LAST_READ_PUSHTIPS_TYPE_ID_FIELD_NUMBER = 15;
-    private int lastReadPushtipsTypeId_ = 0;
-    /**
-     * <code>uint32 last_read_pushtips_type_id = 15;</code>
-     * @return The lastReadPushtipsTypeId.
-     */
-    @java.lang.Override
-    public int getLastReadPushtipsTypeId() {
-      return lastReadPushtipsTypeId_;
-    }
-
-    public static final int TYPE_DATA_LIST_FIELD_NUMBER = 13;
-    @SuppressWarnings("serial")
-    private java.util.List<emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData> typeDataList_;
-    /**
-     * <code>repeated .CodexTypeData type_data_list = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData> getTypeDataListList() {
-      return typeDataList_;
-    }
-    /**
-     * <code>repeated .CodexTypeData type_data_list = 13;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeDataOrBuilder> 
-        getTypeDataListOrBuilderList() {
-      return typeDataList_;
-    }
-    /**
-     * <code>repeated .CodexTypeData type_data_list = 13;</code>
-     */
-    @java.lang.Override
-    public int getTypeDataListCount() {
-      return typeDataList_.size();
-    }
-    /**
-     * <code>repeated .CodexTypeData type_data_list = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData getTypeDataList(int index) {
-      return typeDataList_.get(index);
-    }
-    /**
-     * <code>repeated .CodexTypeData type_data_list = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeDataOrBuilder getTypeDataListOrBuilder(
-        int index) {
-      return typeDataList_.get(index);
-    }
-
-    public static final int RECENT_VIEWED_PUSHTIPS_LIST_FIELD_NUMBER = 14;
+    public static final int RECENT_VIEWED_PUSHTIPS_LIST_FIELD_NUMBER = 7;
     @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList recentViewedPushtipsList_;
     /**
-     * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
+     * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
      * @return A list containing the recentViewedPushtipsList.
      */
     @java.lang.Override
@@ -178,14 +126,14 @@ public final class CodexDataFullNotifyOuterClass {
       return recentViewedPushtipsList_;
     }
     /**
-     * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
+     * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
      * @return The count of recentViewedPushtipsList.
      */
     public int getRecentViewedPushtipsListCount() {
       return recentViewedPushtipsList_.size();
     }
     /**
-     * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
+     * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
      * @param index The index of the element to return.
      * @return The recentViewedPushtipsList at the given index.
      */
@@ -194,15 +142,67 @@ public final class CodexDataFullNotifyOuterClass {
     }
     private int recentViewedPushtipsListMemoizedSerializedSize = -1;
 
-    public static final int LAST_READ_PUSHTIPS_CODEX_ID_FIELD_NUMBER = 7;
-    private int lastReadPushtipsCodexId_ = 0;
+    public static final int BGFNNPAOPML_FIELD_NUMBER = 9;
+    private int bGFNNPAOPML_ = 0;
     /**
-     * <code>uint32 last_read_pushtips_codex_id = 7;</code>
-     * @return The lastReadPushtipsCodexId.
+     * <code>uint32 BGFNNPAOPML = 9;</code>
+     * @return The bGFNNPAOPML.
      */
     @java.lang.Override
-    public int getLastReadPushtipsCodexId() {
-      return lastReadPushtipsCodexId_;
+    public int getBGFNNPAOPML() {
+      return bGFNNPAOPML_;
+    }
+
+    public static final int IAIMLAPJCIN_FIELD_NUMBER = 2;
+    private int iAIMLAPJCIN_ = 0;
+    /**
+     * <code>uint32 IAIMLAPJCIN = 2;</code>
+     * @return The iAIMLAPJCIN.
+     */
+    @java.lang.Override
+    public int getIAIMLAPJCIN() {
+      return iAIMLAPJCIN_;
+    }
+
+    public static final int TYPE_DATA_LIST_FIELD_NUMBER = 11;
+    @SuppressWarnings("serial")
+    private java.util.List<emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData> typeDataList_;
+    /**
+     * <code>repeated .CodexTypeData type_data_list = 11;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData> getTypeDataListList() {
+      return typeDataList_;
+    }
+    /**
+     * <code>repeated .CodexTypeData type_data_list = 11;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeDataOrBuilder> 
+        getTypeDataListOrBuilderList() {
+      return typeDataList_;
+    }
+    /**
+     * <code>repeated .CodexTypeData type_data_list = 11;</code>
+     */
+    @java.lang.Override
+    public int getTypeDataListCount() {
+      return typeDataList_.size();
+    }
+    /**
+     * <code>repeated .CodexTypeData type_data_list = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData getTypeDataList(int index) {
+      return typeDataList_.get(index);
+    }
+    /**
+     * <code>repeated .CodexTypeData type_data_list = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeDataOrBuilder getTypeDataListOrBuilder(
+        int index) {
+      return typeDataList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -220,21 +220,21 @@ public final class CodexDataFullNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (lastReadPushtipsCodexId_ != 0) {
-        output.writeUInt32(7, lastReadPushtipsCodexId_);
-      }
-      for (int i = 0; i < typeDataList_.size(); i++) {
-        output.writeMessage(13, typeDataList_.get(i));
+      if (iAIMLAPJCIN_ != 0) {
+        output.writeUInt32(2, iAIMLAPJCIN_);
       }
       if (getRecentViewedPushtipsListList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(recentViewedPushtipsListMemoizedSerializedSize);
       }
       for (int i = 0; i < recentViewedPushtipsList_.size(); i++) {
         output.writeUInt32NoTag(recentViewedPushtipsList_.getInt(i));
       }
-      if (lastReadPushtipsTypeId_ != 0) {
-        output.writeUInt32(15, lastReadPushtipsTypeId_);
+      if (bGFNNPAOPML_ != 0) {
+        output.writeUInt32(9, bGFNNPAOPML_);
+      }
+      for (int i = 0; i < typeDataList_.size(); i++) {
+        output.writeMessage(11, typeDataList_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -245,13 +245,9 @@ public final class CodexDataFullNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lastReadPushtipsCodexId_ != 0) {
+      if (iAIMLAPJCIN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, lastReadPushtipsCodexId_);
-      }
-      for (int i = 0; i < typeDataList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, typeDataList_.get(i));
+          .computeUInt32Size(2, iAIMLAPJCIN_);
       }
       {
         int dataSize = 0;
@@ -267,9 +263,13 @@ public final class CodexDataFullNotifyOuterClass {
         }
         recentViewedPushtipsListMemoizedSerializedSize = dataSize;
       }
-      if (lastReadPushtipsTypeId_ != 0) {
+      if (bGFNNPAOPML_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, lastReadPushtipsTypeId_);
+          .computeUInt32Size(9, bGFNNPAOPML_);
+      }
+      for (int i = 0; i < typeDataList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, typeDataList_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -286,14 +286,14 @@ public final class CodexDataFullNotifyOuterClass {
       }
       emu.grasscutter.net.proto.CodexDataFullNotifyOuterClass.CodexDataFullNotify other = (emu.grasscutter.net.proto.CodexDataFullNotifyOuterClass.CodexDataFullNotify) obj;
 
-      if (getLastReadPushtipsTypeId()
-          != other.getLastReadPushtipsTypeId()) return false;
-      if (!getTypeDataListList()
-          .equals(other.getTypeDataListList())) return false;
       if (!getRecentViewedPushtipsListList()
           .equals(other.getRecentViewedPushtipsListList())) return false;
-      if (getLastReadPushtipsCodexId()
-          != other.getLastReadPushtipsCodexId()) return false;
+      if (getBGFNNPAOPML()
+          != other.getBGFNNPAOPML()) return false;
+      if (getIAIMLAPJCIN()
+          != other.getIAIMLAPJCIN()) return false;
+      if (!getTypeDataListList()
+          .equals(other.getTypeDataListList())) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -305,18 +305,18 @@ public final class CodexDataFullNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LAST_READ_PUSHTIPS_TYPE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLastReadPushtipsTypeId();
-      if (getTypeDataListCount() > 0) {
-        hash = (37 * hash) + TYPE_DATA_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTypeDataListList().hashCode();
-      }
       if (getRecentViewedPushtipsListCount() > 0) {
         hash = (37 * hash) + RECENT_VIEWED_PUSHTIPS_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRecentViewedPushtipsListList().hashCode();
       }
-      hash = (37 * hash) + LAST_READ_PUSHTIPS_CODEX_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLastReadPushtipsCodexId();
+      hash = (37 * hash) + BGFNNPAOPML_FIELD_NUMBER;
+      hash = (53 * hash) + getBGFNNPAOPML();
+      hash = (37 * hash) + IAIMLAPJCIN_FIELD_NUMBER;
+      hash = (53 * hash) + getIAIMLAPJCIN();
+      if (getTypeDataListCount() > 0) {
+        hash = (37 * hash) + TYPE_DATA_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getTypeDataListList().hashCode();
+      }
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -416,8 +416,8 @@ public final class CodexDataFullNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4202
-     * Name: DEOFNLAMNKE
+     * CmdId: 4207
+     * Obf: PHDPIAHJJAB
      * </pre>
      *
      * Protobuf type {@code CodexDataFullNotify}
@@ -453,16 +453,16 @@ public final class CodexDataFullNotifyOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        lastReadPushtipsTypeId_ = 0;
+        recentViewedPushtipsList_ = emptyIntList();
+        bGFNNPAOPML_ = 0;
+        iAIMLAPJCIN_ = 0;
         if (typeDataListBuilder_ == null) {
           typeDataList_ = java.util.Collections.emptyList();
         } else {
           typeDataList_ = null;
           typeDataListBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000002);
-        recentViewedPushtipsList_ = emptyIntList();
-        lastReadPushtipsCodexId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
 
@@ -496,29 +496,29 @@ public final class CodexDataFullNotifyOuterClass {
       }
 
       private void buildPartialRepeatedFields(emu.grasscutter.net.proto.CodexDataFullNotifyOuterClass.CodexDataFullNotify result) {
+        if (((bitField0_ & 0x00000001) != 0)) {
+          recentViewedPushtipsList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.recentViewedPushtipsList_ = recentViewedPushtipsList_;
         if (typeDataListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000008) != 0)) {
             typeDataList_ = java.util.Collections.unmodifiableList(typeDataList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000008);
           }
           result.typeDataList_ = typeDataList_;
         } else {
           result.typeDataList_ = typeDataListBuilder_.build();
         }
-        if (((bitField0_ & 0x00000004) != 0)) {
-          recentViewedPushtipsList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        }
-        result.recentViewedPushtipsList_ = recentViewedPushtipsList_;
       }
 
       private void buildPartial0(emu.grasscutter.net.proto.CodexDataFullNotifyOuterClass.CodexDataFullNotify result) {
         int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.lastReadPushtipsTypeId_ = lastReadPushtipsTypeId_;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.bGFNNPAOPML_ = bGFNNPAOPML_;
         }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.lastReadPushtipsCodexId_ = lastReadPushtipsCodexId_;
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.iAIMLAPJCIN_ = iAIMLAPJCIN_;
         }
       }
 
@@ -566,14 +566,27 @@ public final class CodexDataFullNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CodexDataFullNotifyOuterClass.CodexDataFullNotify other) {
         if (other == emu.grasscutter.net.proto.CodexDataFullNotifyOuterClass.CodexDataFullNotify.getDefaultInstance()) return this;
-        if (other.getLastReadPushtipsTypeId() != 0) {
-          setLastReadPushtipsTypeId(other.getLastReadPushtipsTypeId());
+        if (!other.recentViewedPushtipsList_.isEmpty()) {
+          if (recentViewedPushtipsList_.isEmpty()) {
+            recentViewedPushtipsList_ = other.recentViewedPushtipsList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureRecentViewedPushtipsListIsMutable();
+            recentViewedPushtipsList_.addAll(other.recentViewedPushtipsList_);
+          }
+          onChanged();
+        }
+        if (other.getBGFNNPAOPML() != 0) {
+          setBGFNNPAOPML(other.getBGFNNPAOPML());
+        }
+        if (other.getIAIMLAPJCIN() != 0) {
+          setIAIMLAPJCIN(other.getIAIMLAPJCIN());
         }
         if (typeDataListBuilder_ == null) {
           if (!other.typeDataList_.isEmpty()) {
             if (typeDataList_.isEmpty()) {
               typeDataList_ = other.typeDataList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000008);
             } else {
               ensureTypeDataListIsMutable();
               typeDataList_.addAll(other.typeDataList_);
@@ -586,7 +599,7 @@ public final class CodexDataFullNotifyOuterClass {
               typeDataListBuilder_.dispose();
               typeDataListBuilder_ = null;
               typeDataList_ = other.typeDataList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000008);
               typeDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getTypeDataListFieldBuilder() : null;
@@ -594,19 +607,6 @@ public final class CodexDataFullNotifyOuterClass {
               typeDataListBuilder_.addAllMessages(other.typeDataList_);
             }
           }
-        }
-        if (!other.recentViewedPushtipsList_.isEmpty()) {
-          if (recentViewedPushtipsList_.isEmpty()) {
-            recentViewedPushtipsList_ = other.recentViewedPushtipsList_;
-            bitField0_ = (bitField0_ & ~0x00000004);
-          } else {
-            ensureRecentViewedPushtipsListIsMutable();
-            recentViewedPushtipsList_.addAll(other.recentViewedPushtipsList_);
-          }
-          onChanged();
-        }
-        if (other.getLastReadPushtipsCodexId() != 0) {
-          setLastReadPushtipsCodexId(other.getLastReadPushtipsCodexId());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -634,12 +634,33 @@ public final class CodexDataFullNotifyOuterClass {
               case 0:
                 done = true;
                 break;
+              case 16: {
+                iAIMLAPJCIN_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 16
               case 56: {
-                lastReadPushtipsCodexId_ = input.readUInt32();
-                bitField0_ |= 0x00000008;
+                int v = input.readUInt32();
+                ensureRecentViewedPushtipsListIsMutable();
+                recentViewedPushtipsList_.addInt(v);
                 break;
               } // case 56
-              case 106: {
+              case 58: {
+                int length = input.readRawVarint32();
+                int limit = input.pushLimit(length);
+                ensureRecentViewedPushtipsListIsMutable();
+                while (input.getBytesUntilLimit() > 0) {
+                  recentViewedPushtipsList_.addInt(input.readUInt32());
+                }
+                input.popLimit(limit);
+                break;
+              } // case 58
+              case 72: {
+                bGFNNPAOPML_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 72
+              case 90: {
                 emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData m =
                     input.readMessage(
                         emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData.parser(),
@@ -651,28 +672,7 @@ public final class CodexDataFullNotifyOuterClass {
                   typeDataListBuilder_.addMessage(m);
                 }
                 break;
-              } // case 106
-              case 112: {
-                int v = input.readUInt32();
-                ensureRecentViewedPushtipsListIsMutable();
-                recentViewedPushtipsList_.addInt(v);
-                break;
-              } // case 112
-              case 114: {
-                int length = input.readRawVarint32();
-                int limit = input.pushLimit(length);
-                ensureRecentViewedPushtipsListIsMutable();
-                while (input.getBytesUntilLimit() > 0) {
-                  recentViewedPushtipsList_.addInt(input.readUInt32());
-                }
-                input.popLimit(limit);
-                break;
-              } // case 114
-              case 120: {
-                lastReadPushtipsTypeId_ = input.readUInt32();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 120
+              } // case 90
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -690,34 +690,147 @@ public final class CodexDataFullNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int lastReadPushtipsTypeId_ ;
-      /**
-       * <code>uint32 last_read_pushtips_type_id = 15;</code>
-       * @return The lastReadPushtipsTypeId.
-       */
-      @java.lang.Override
-      public int getLastReadPushtipsTypeId() {
-        return lastReadPushtipsTypeId_;
+      private com.google.protobuf.Internal.IntList recentViewedPushtipsList_ = emptyIntList();
+      private void ensureRecentViewedPushtipsListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          recentViewedPushtipsList_ = mutableCopy(recentViewedPushtipsList_);
+          bitField0_ |= 0x00000001;
+        }
       }
       /**
-       * <code>uint32 last_read_pushtips_type_id = 15;</code>
-       * @param value The lastReadPushtipsTypeId to set.
+       * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
+       * @return A list containing the recentViewedPushtipsList.
+       */
+      public java.util.List<java.lang.Integer>
+          getRecentViewedPushtipsListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(recentViewedPushtipsList_) : recentViewedPushtipsList_;
+      }
+      /**
+       * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
+       * @return The count of recentViewedPushtipsList.
+       */
+      public int getRecentViewedPushtipsListCount() {
+        return recentViewedPushtipsList_.size();
+      }
+      /**
+       * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
+       * @param index The index of the element to return.
+       * @return The recentViewedPushtipsList at the given index.
+       */
+      public int getRecentViewedPushtipsList(int index) {
+        return recentViewedPushtipsList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
+       * @param index The index to set the value at.
+       * @param value The recentViewedPushtipsList to set.
        * @return This builder for chaining.
        */
-      public Builder setLastReadPushtipsTypeId(int value) {
+      public Builder setRecentViewedPushtipsList(
+          int index, int value) {
 
-        lastReadPushtipsTypeId_ = value;
-        bitField0_ |= 0x00000001;
+        ensureRecentViewedPushtipsListIsMutable();
+        recentViewedPushtipsList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 last_read_pushtips_type_id = 15;</code>
+       * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
+       * @param value The recentViewedPushtipsList to add.
        * @return This builder for chaining.
        */
-      public Builder clearLastReadPushtipsTypeId() {
+      public Builder addRecentViewedPushtipsList(int value) {
+
+        ensureRecentViewedPushtipsListIsMutable();
+        recentViewedPushtipsList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
+       * @param values The recentViewedPushtipsList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllRecentViewedPushtipsList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureRecentViewedPushtipsListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, recentViewedPushtipsList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 recent_viewed_pushtips_list = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRecentViewedPushtipsList() {
+        recentViewedPushtipsList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        lastReadPushtipsTypeId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bGFNNPAOPML_ ;
+      /**
+       * <code>uint32 BGFNNPAOPML = 9;</code>
+       * @return The bGFNNPAOPML.
+       */
+      @java.lang.Override
+      public int getBGFNNPAOPML() {
+        return bGFNNPAOPML_;
+      }
+      /**
+       * <code>uint32 BGFNNPAOPML = 9;</code>
+       * @param value The bGFNNPAOPML to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBGFNNPAOPML(int value) {
+
+        bGFNNPAOPML_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BGFNNPAOPML = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBGFNNPAOPML() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        bGFNNPAOPML_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int iAIMLAPJCIN_ ;
+      /**
+       * <code>uint32 IAIMLAPJCIN = 2;</code>
+       * @return The iAIMLAPJCIN.
+       */
+      @java.lang.Override
+      public int getIAIMLAPJCIN() {
+        return iAIMLAPJCIN_;
+      }
+      /**
+       * <code>uint32 IAIMLAPJCIN = 2;</code>
+       * @param value The iAIMLAPJCIN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIAIMLAPJCIN(int value) {
+
+        iAIMLAPJCIN_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 IAIMLAPJCIN = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIAIMLAPJCIN() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        iAIMLAPJCIN_ = 0;
         onChanged();
         return this;
       }
@@ -725,9 +838,9 @@ public final class CodexDataFullNotifyOuterClass {
       private java.util.List<emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData> typeDataList_ =
         java.util.Collections.emptyList();
       private void ensureTypeDataListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000008) != 0)) {
           typeDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData>(typeDataList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000008;
          }
       }
 
@@ -735,7 +848,7 @@ public final class CodexDataFullNotifyOuterClass {
           emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData, emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData.Builder, emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeDataOrBuilder> typeDataListBuilder_;
 
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData> getTypeDataListList() {
         if (typeDataListBuilder_ == null) {
@@ -745,7 +858,7 @@ public final class CodexDataFullNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public int getTypeDataListCount() {
         if (typeDataListBuilder_ == null) {
@@ -755,7 +868,7 @@ public final class CodexDataFullNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData getTypeDataList(int index) {
         if (typeDataListBuilder_ == null) {
@@ -765,7 +878,7 @@ public final class CodexDataFullNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public Builder setTypeDataList(
           int index, emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData value) {
@@ -782,7 +895,7 @@ public final class CodexDataFullNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public Builder setTypeDataList(
           int index, emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData.Builder builderForValue) {
@@ -796,7 +909,7 @@ public final class CodexDataFullNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public Builder addTypeDataList(emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData value) {
         if (typeDataListBuilder_ == null) {
@@ -812,7 +925,7 @@ public final class CodexDataFullNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public Builder addTypeDataList(
           int index, emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData value) {
@@ -829,7 +942,7 @@ public final class CodexDataFullNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public Builder addTypeDataList(
           emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData.Builder builderForValue) {
@@ -843,7 +956,7 @@ public final class CodexDataFullNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public Builder addTypeDataList(
           int index, emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData.Builder builderForValue) {
@@ -857,7 +970,7 @@ public final class CodexDataFullNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public Builder addAllTypeDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData> values) {
@@ -872,12 +985,12 @@ public final class CodexDataFullNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public Builder clearTypeDataList() {
         if (typeDataListBuilder_ == null) {
           typeDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000008);
           onChanged();
         } else {
           typeDataListBuilder_.clear();
@@ -885,7 +998,7 @@ public final class CodexDataFullNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public Builder removeTypeDataList(int index) {
         if (typeDataListBuilder_ == null) {
@@ -898,14 +1011,14 @@ public final class CodexDataFullNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData.Builder getTypeDataListBuilder(
           int index) {
         return getTypeDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeDataOrBuilder getTypeDataListOrBuilder(
           int index) {
@@ -915,7 +1028,7 @@ public final class CodexDataFullNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeDataOrBuilder> 
            getTypeDataListOrBuilderList() {
@@ -926,14 +1039,14 @@ public final class CodexDataFullNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData.Builder addTypeDataListBuilder() {
         return getTypeDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData.getDefaultInstance());
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData.Builder addTypeDataListBuilder(
           int index) {
@@ -941,7 +1054,7 @@ public final class CodexDataFullNotifyOuterClass {
             index, emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData.getDefaultInstance());
       }
       /**
-       * <code>repeated .CodexTypeData type_data_list = 13;</code>
+       * <code>repeated .CodexTypeData type_data_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData.Builder> 
            getTypeDataListBuilderList() {
@@ -954,125 +1067,12 @@ public final class CodexDataFullNotifyOuterClass {
           typeDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData, emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData.Builder, emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeDataOrBuilder>(
                   typeDataList_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
                   isClean());
           typeDataList_ = null;
         }
         return typeDataListBuilder_;
-      }
-
-      private com.google.protobuf.Internal.IntList recentViewedPushtipsList_ = emptyIntList();
-      private void ensureRecentViewedPushtipsListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          recentViewedPushtipsList_ = mutableCopy(recentViewedPushtipsList_);
-          bitField0_ |= 0x00000004;
-        }
-      }
-      /**
-       * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
-       * @return A list containing the recentViewedPushtipsList.
-       */
-      public java.util.List<java.lang.Integer>
-          getRecentViewedPushtipsListList() {
-        return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(recentViewedPushtipsList_) : recentViewedPushtipsList_;
-      }
-      /**
-       * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
-       * @return The count of recentViewedPushtipsList.
-       */
-      public int getRecentViewedPushtipsListCount() {
-        return recentViewedPushtipsList_.size();
-      }
-      /**
-       * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
-       * @param index The index of the element to return.
-       * @return The recentViewedPushtipsList at the given index.
-       */
-      public int getRecentViewedPushtipsList(int index) {
-        return recentViewedPushtipsList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
-       * @param index The index to set the value at.
-       * @param value The recentViewedPushtipsList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRecentViewedPushtipsList(
-          int index, int value) {
-
-        ensureRecentViewedPushtipsListIsMutable();
-        recentViewedPushtipsList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
-       * @param value The recentViewedPushtipsList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addRecentViewedPushtipsList(int value) {
-
-        ensureRecentViewedPushtipsListIsMutable();
-        recentViewedPushtipsList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
-       * @param values The recentViewedPushtipsList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllRecentViewedPushtipsList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureRecentViewedPushtipsListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, recentViewedPushtipsList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 recent_viewed_pushtips_list = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRecentViewedPushtipsList() {
-        recentViewedPushtipsList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-
-      private int lastReadPushtipsCodexId_ ;
-      /**
-       * <code>uint32 last_read_pushtips_codex_id = 7;</code>
-       * @return The lastReadPushtipsCodexId.
-       */
-      @java.lang.Override
-      public int getLastReadPushtipsCodexId() {
-        return lastReadPushtipsCodexId_;
-      }
-      /**
-       * <code>uint32 last_read_pushtips_codex_id = 7;</code>
-       * @param value The lastReadPushtipsCodexId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLastReadPushtipsCodexId(int value) {
-
-        lastReadPushtipsCodexId_ = value;
-        bitField0_ |= 0x00000008;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 last_read_pushtips_codex_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLastReadPushtipsCodexId() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        lastReadPushtipsCodexId_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1153,12 +1153,11 @@ public final class CodexDataFullNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031CodexDataFullNotify.proto\032\023CodexTypeDa" +
-      "ta.proto\"\253\001\n\023CodexDataFullNotify\022\"\n\032last" +
-      "_read_pushtips_type_id\030\017 \001(\r\022&\n\016type_dat" +
-      "a_list\030\r \003(\0132\016.CodexTypeData\022#\n\033recent_v" +
-      "iewed_pushtips_list\030\016 \003(\r\022#\n\033last_read_p" +
-      "ushtips_codex_id\030\007 \001(\rB\033\n\031emu.grasscutte" +
-      "r.net.protob\006proto3"
+      "ta.proto\"\214\001\n\023CodexDataFullNotify\022#\n\033rece" +
+      "nt_viewed_pushtips_list\030\007 \003(\r\022\023\n\013BGFNNPA" +
+      "OPML\030\t \001(\r\022\023\n\013IAIMLAPJCIN\030\002 \001(\r\022&\n\016type_" +
+      "data_list\030\013 \003(\0132\016.CodexTypeDataB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1170,7 +1169,7 @@ public final class CodexDataFullNotifyOuterClass {
     internal_static_CodexDataFullNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CodexDataFullNotify_descriptor,
-        new java.lang.String[] { "LastReadPushtipsTypeId", "TypeDataList", "RecentViewedPushtipsList", "LastReadPushtipsCodexId", });
+        new java.lang.String[] { "RecentViewedPushtipsList", "BGFNNPAOPML", "IAIMLAPJCIN", "TypeDataList", });
     emu.grasscutter.net.proto.CodexTypeDataOuterClass.getDescriptor();
   }
 

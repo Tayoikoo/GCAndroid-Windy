@@ -19,24 +19,24 @@ public final class ProfilePictureChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
+     * <code>.ProfilePicture profile_picture = 4;</code>
      * @return Whether the profilePicture field is set.
      */
     boolean hasProfilePicture();
     /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
+     * <code>.ProfilePicture profile_picture = 4;</code>
      * @return The profilePicture.
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
     /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
+     * <code>.ProfilePicture profile_picture = 4;</code>
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4037
-   * Name: HOJEGAPGGNE
+   * CmdId: 4074
+   * Obf: BACBAKKDEGF
    * </pre>
    *
    * Protobuf type {@code ProfilePictureChangeNotify}
@@ -73,10 +73,10 @@ public final class ProfilePictureChangeNotifyOuterClass {
               emu.grasscutter.net.proto.ProfilePictureChangeNotifyOuterClass.ProfilePictureChangeNotify.class, emu.grasscutter.net.proto.ProfilePictureChangeNotifyOuterClass.ProfilePictureChangeNotify.Builder.class);
     }
 
-    public static final int PROFILE_PICTURE_FIELD_NUMBER = 9;
+    public static final int PROFILE_PICTURE_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
     /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
+     * <code>.ProfilePicture profile_picture = 4;</code>
      * @return Whether the profilePicture field is set.
      */
     @java.lang.Override
@@ -84,7 +84,7 @@ public final class ProfilePictureChangeNotifyOuterClass {
       return profilePicture_ != null;
     }
     /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
+     * <code>.ProfilePicture profile_picture = 4;</code>
      * @return The profilePicture.
      */
     @java.lang.Override
@@ -92,7 +92,7 @@ public final class ProfilePictureChangeNotifyOuterClass {
       return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
     }
     /**
-     * <code>.ProfilePicture profile_picture = 9;</code>
+     * <code>.ProfilePicture profile_picture = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
@@ -114,7 +114,7 @@ public final class ProfilePictureChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (profilePicture_ != null) {
-        output.writeMessage(9, getProfilePicture());
+        output.writeMessage(4, getProfilePicture());
       }
       getUnknownFields().writeTo(output);
     }
@@ -127,7 +127,7 @@ public final class ProfilePictureChangeNotifyOuterClass {
       size = 0;
       if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getProfilePicture());
+          .computeMessageSize(4, getProfilePicture());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -263,8 +263,8 @@ public final class ProfilePictureChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4037
-     * Name: HOJEGAPGGNE
+     * CmdId: 4074
+     * Obf: BACBAKKDEGF
      * </pre>
      *
      * Protobuf type {@code ProfilePictureChangeNotify}
@@ -418,13 +418,13 @@ public final class ProfilePictureChangeNotifyOuterClass {
               case 0:
                 done = true;
                 break;
-              case 74: {
+              case 34: {
                 input.readMessage(
                     getProfilePictureFieldBuilder().getBuilder(),
                     extensionRegistry);
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 74
+              } // case 34
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -446,14 +446,14 @@ public final class ProfilePictureChangeNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <code>.ProfilePicture profile_picture = 4;</code>
        * @return Whether the profilePicture field is set.
        */
       public boolean hasProfilePicture() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <code>.ProfilePicture profile_picture = 4;</code>
        * @return The profilePicture.
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
@@ -464,7 +464,7 @@ public final class ProfilePictureChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <code>.ProfilePicture profile_picture = 4;</code>
        */
       public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
         if (profilePictureBuilder_ == null) {
@@ -480,7 +480,7 @@ public final class ProfilePictureChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <code>.ProfilePicture profile_picture = 4;</code>
        */
       public Builder setProfilePicture(
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
@@ -494,7 +494,7 @@ public final class ProfilePictureChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <code>.ProfilePicture profile_picture = 4;</code>
        */
       public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
         if (profilePictureBuilder_ == null) {
@@ -513,7 +513,7 @@ public final class ProfilePictureChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <code>.ProfilePicture profile_picture = 4;</code>
        */
       public Builder clearProfilePicture() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -526,7 +526,7 @@ public final class ProfilePictureChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <code>.ProfilePicture profile_picture = 4;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
         bitField0_ |= 0x00000001;
@@ -534,7 +534,7 @@ public final class ProfilePictureChangeNotifyOuterClass {
         return getProfilePictureFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <code>.ProfilePicture profile_picture = 4;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
         if (profilePictureBuilder_ != null) {
@@ -545,7 +545,7 @@ public final class ProfilePictureChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>.ProfilePicture profile_picture = 9;</code>
+       * <code>.ProfilePicture profile_picture = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
@@ -640,7 +640,7 @@ public final class ProfilePictureChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n ProfilePictureChangeNotify.proto\032\024Prof" +
       "ilePicture.proto\"F\n\032ProfilePictureChange" +
-      "Notify\022(\n\017profile_picture\030\t \001(\0132\017.Profil" +
+      "Notify\022(\n\017profile_picture\030\004 \001(\0132\017.Profil" +
       "ePictureB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };

@@ -19,32 +19,32 @@ public final class GravenInnocenceRaceInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo> 
         getLevelInfoListList();
     /**
-     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
      */
     emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo getLevelInfoList(int index);
     /**
-     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfoOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
      */
     emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfoOrBuilder getLevelInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * Name: MPLGIPBGDAG
+   * Obf: DAPOFPEOFAL
    * </pre>
    *
    * Protobuf type {@code GravenInnocenceRaceInfo}
@@ -82,18 +82,18 @@ public final class GravenInnocenceRaceInfoOuterClass {
               emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo.class, emu.grasscutter.net.proto.GravenInnocenceRaceInfoOuterClass.GravenInnocenceRaceInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 14;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 13;
     @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo> levelInfoList_;
     /**
-     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfoOrBuilder> 
@@ -101,21 +101,21 @@ public final class GravenInnocenceRaceInfoOuterClass {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+     * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfoOrBuilder getLevelInfoListOrBuilder(
@@ -138,7 +138,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(14, levelInfoList_.get(i));
+        output.writeMessage(13, levelInfoList_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -151,7 +151,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, levelInfoList_.get(i));
+          .computeMessageSize(13, levelInfoList_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -284,7 +284,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: MPLGIPBGDAG
+     * Obf: DAPOFPEOFAL
      * </pre>
      *
      * Protobuf type {@code GravenInnocenceRaceInfo}
@@ -471,7 +471,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 114: {
+              case 106: {
                 emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo m =
                     input.readMessage(
                         emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.parser(),
@@ -483,7 +483,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
                   levelInfoListBuilder_.addMessage(m);
                 }
                 break;
-              } // case 114
+              } // case 106
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -514,7 +514,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
           emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo, emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.Builder, emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfoOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
@@ -524,7 +524,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -534,7 +534,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -544,7 +544,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo value) {
@@ -561,7 +561,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.Builder builderForValue) {
@@ -575,7 +575,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public Builder addLevelInfoList(emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo value) {
         if (levelInfoListBuilder_ == null) {
@@ -591,7 +591,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo value) {
@@ -608,7 +608,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public Builder addLevelInfoList(
           emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.Builder builderForValue) {
@@ -622,7 +622,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public Builder addAllLevelInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo> values) {
@@ -651,7 +651,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -664,7 +664,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -677,14 +677,14 @@ public final class GravenInnocenceRaceInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfoOrBuilder getLevelInfoListOrBuilder(
           int index) {
@@ -694,7 +694,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfoOrBuilder> 
            getLevelInfoListOrBuilderList() {
@@ -705,14 +705,14 @@ public final class GravenInnocenceRaceInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.Builder addLevelInfoListBuilder(
           int index) {
@@ -720,7 +720,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
             index, emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 14;</code>
+       * <code>repeated .GravenInnocenceRaceLevelInfo level_info_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GravenInnocenceRaceLevelInfoOuterClass.GravenInnocenceRaceLevelInfo.Builder> 
            getLevelInfoListBuilderList() {
@@ -820,7 +820,7 @@ public final class GravenInnocenceRaceInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035GravenInnocenceRaceInfo.proto\032\"GravenI" +
       "nnocenceRaceLevelInfo.proto\"Q\n\027GravenInn" +
-      "ocenceRaceInfo\0226\n\017level_info_list\030\016 \003(\0132" +
+      "ocenceRaceInfo\0226\n\017level_info_list\030\r \003(\0132" +
       "\035.GravenInnocenceRaceLevelInfoB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };

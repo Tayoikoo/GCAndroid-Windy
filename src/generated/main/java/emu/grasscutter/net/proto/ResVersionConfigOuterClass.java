@@ -92,7 +92,7 @@ public final class ResVersionConfigOuterClass {
   }
   /**
    * <pre>
-   * Name: HCBPECOJPEI
+   * Obf: FJIHAIMDBMB
    * </pre>
    *
    * Protobuf type {@code ResVersionConfig}
@@ -572,7 +572,7 @@ public final class ResVersionConfigOuterClass {
     }
     /**
      * <pre>
-     * Name: HCBPECOJPEI
+     * Obf: FJIHAIMDBMB
      * </pre>
      *
      * Protobuf type {@code ResVersionConfig}

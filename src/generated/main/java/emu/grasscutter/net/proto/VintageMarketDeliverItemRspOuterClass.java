@@ -19,21 +19,21 @@ public final class VintageMarketDeliverItemRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 trader_id = 6;</code>
-     * @return The traderId.
-     */
-    int getTraderId();
-
-    /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 trader_id = 2;</code>
+     * @return The traderId.
+     */
+    int getTraderId();
   }
   /**
    * <pre>
-   * CmdId: 22707
-   * Name: BKAMPLBFEJC
+   * CmdId: 21476
+   * Obf: GMGFPDFNNCP
    * </pre>
    *
    * Protobuf type {@code VintageMarketDeliverItemRsp}
@@ -70,26 +70,26 @@ public final class VintageMarketDeliverItemRspOuterClass {
               emu.grasscutter.net.proto.VintageMarketDeliverItemRspOuterClass.VintageMarketDeliverItemRsp.class, emu.grasscutter.net.proto.VintageMarketDeliverItemRspOuterClass.VintageMarketDeliverItemRsp.Builder.class);
     }
 
-    public static final int TRADER_ID_FIELD_NUMBER = 6;
-    private int traderId_ = 0;
-    /**
-     * <code>uint32 trader_id = 6;</code>
-     * @return The traderId.
-     */
-    @java.lang.Override
-    public int getTraderId() {
-      return traderId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int TRADER_ID_FIELD_NUMBER = 2;
+    private int traderId_ = 0;
+    /**
+     * <code>uint32 trader_id = 2;</code>
+     * @return The traderId.
+     */
+    @java.lang.Override
+    public int getTraderId() {
+      return traderId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -107,10 +107,10 @@ public final class VintageMarketDeliverItemRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (traderId_ != 0) {
-        output.writeUInt32(6, traderId_);
+        output.writeUInt32(2, traderId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(15, retcode_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -123,11 +123,11 @@ public final class VintageMarketDeliverItemRspOuterClass {
       size = 0;
       if (traderId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, traderId_);
+          .computeUInt32Size(2, traderId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(15, retcode_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -144,10 +144,10 @@ public final class VintageMarketDeliverItemRspOuterClass {
       }
       emu.grasscutter.net.proto.VintageMarketDeliverItemRspOuterClass.VintageMarketDeliverItemRsp other = (emu.grasscutter.net.proto.VintageMarketDeliverItemRspOuterClass.VintageMarketDeliverItemRsp) obj;
 
-      if (getTraderId()
-          != other.getTraderId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getTraderId()
+          != other.getTraderId()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -159,10 +159,10 @@ public final class VintageMarketDeliverItemRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TRADER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTraderId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + TRADER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTraderId();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -262,8 +262,8 @@ public final class VintageMarketDeliverItemRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22707
-     * Name: BKAMPLBFEJC
+     * CmdId: 21476
+     * Obf: GMGFPDFNNCP
      * </pre>
      *
      * Protobuf type {@code VintageMarketDeliverItemRsp}
@@ -299,8 +299,8 @@ public final class VintageMarketDeliverItemRspOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        traderId_ = 0;
         retcode_ = 0;
+        traderId_ = 0;
         return this;
       }
 
@@ -335,10 +335,10 @@ public final class VintageMarketDeliverItemRspOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.VintageMarketDeliverItemRspOuterClass.VintageMarketDeliverItemRsp result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.traderId_ = traderId_;
+          result.retcode_ = retcode_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.retcode_ = retcode_;
+          result.traderId_ = traderId_;
         }
       }
 
@@ -386,11 +386,11 @@ public final class VintageMarketDeliverItemRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageMarketDeliverItemRspOuterClass.VintageMarketDeliverItemRsp other) {
         if (other == emu.grasscutter.net.proto.VintageMarketDeliverItemRspOuterClass.VintageMarketDeliverItemRsp.getDefaultInstance()) return this;
-        if (other.getTraderId() != 0) {
-          setTraderId(other.getTraderId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getTraderId() != 0) {
+          setTraderId(other.getTraderId());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -418,16 +418,16 @@ public final class VintageMarketDeliverItemRspOuterClass {
               case 0:
                 done = true;
                 break;
-              case 48: {
+              case 16: {
                 traderId_ = input.readUInt32();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 48
-              case 72: {
-                retcode_ = input.readInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 72
+              } // case 16
+              case 120: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 120
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -445,41 +445,9 @@ public final class VintageMarketDeliverItemRspOuterClass {
       }
       private int bitField0_;
 
-      private int traderId_ ;
-      /**
-       * <code>uint32 trader_id = 6;</code>
-       * @return The traderId.
-       */
-      @java.lang.Override
-      public int getTraderId() {
-        return traderId_;
-      }
-      /**
-       * <code>uint32 trader_id = 6;</code>
-       * @param value The traderId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTraderId(int value) {
-
-        traderId_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 trader_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTraderId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        traderId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -487,24 +455,56 @@ public final class VintageMarketDeliverItemRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
       public Builder setRetcode(int value) {
 
         retcode_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int traderId_ ;
+      /**
+       * <code>uint32 trader_id = 2;</code>
+       * @return The traderId.
+       */
+      @java.lang.Override
+      public int getTraderId() {
+        return traderId_;
+      }
+      /**
+       * <code>uint32 trader_id = 2;</code>
+       * @param value The traderId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTraderId(int value) {
+
+        traderId_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>uint32 trader_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRetcode() {
+      public Builder clearTraderId() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        retcode_ = 0;
+        traderId_ = 0;
         onChanged();
         return this;
       }
@@ -587,8 +587,8 @@ public final class VintageMarketDeliverItemRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!VintageMarketDeliverItemRsp.proto\"A\n\033V" +
-      "intageMarketDeliverItemRsp\022\021\n\ttrader_id\030" +
-      "\006 \001(\r\022\017\n\007retcode\030\t \001(\005B\033\n\031emu.grasscutte" +
+      "intageMarketDeliverItemRsp\022\017\n\007retcode\030\017 " +
+      "\001(\005\022\021\n\ttrader_id\030\002 \001(\rB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -600,7 +600,7 @@ public final class VintageMarketDeliverItemRspOuterClass {
     internal_static_VintageMarketDeliverItemRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageMarketDeliverItemRsp_descriptor,
-        new java.lang.String[] { "TraderId", "Retcode", });
+        new java.lang.String[] { "Retcode", "TraderId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

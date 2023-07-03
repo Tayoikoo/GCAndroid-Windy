@@ -19,7 +19,7 @@ public final class BonusActivityInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bonus_activity_id = 13;</code>
+     * <code>uint32 bonus_activity_id = 12;</code>
      * @return The bonusActivityId.
      */
     int getBonusActivityId();
@@ -32,7 +32,7 @@ public final class BonusActivityInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: JAEINPOMBHJ
+   * Obf: JOMIHJEJLBP
    * </pre>
    *
    * Protobuf type {@code BonusActivityInfo}
@@ -69,10 +69,10 @@ public final class BonusActivityInfoOuterClass {
               emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo.class, emu.grasscutter.net.proto.BonusActivityInfoOuterClass.BonusActivityInfo.Builder.class);
     }
 
-    public static final int BONUS_ACTIVITY_ID_FIELD_NUMBER = 13;
+    public static final int BONUS_ACTIVITY_ID_FIELD_NUMBER = 12;
     private int bonusActivityId_ = 0;
     /**
-     * <code>uint32 bonus_activity_id = 13;</code>
+     * <code>uint32 bonus_activity_id = 12;</code>
      * @return The bonusActivityId.
      */
     @java.lang.Override
@@ -109,7 +109,7 @@ public final class BonusActivityInfoOuterClass {
         output.writeUInt32(1, state_);
       }
       if (bonusActivityId_ != 0) {
-        output.writeUInt32(13, bonusActivityId_);
+        output.writeUInt32(12, bonusActivityId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -126,7 +126,7 @@ public final class BonusActivityInfoOuterClass {
       }
       if (bonusActivityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, bonusActivityId_);
+          .computeUInt32Size(12, bonusActivityId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -261,7 +261,7 @@ public final class BonusActivityInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: JAEINPOMBHJ
+     * Obf: JOMIHJEJLBP
      * </pre>
      *
      * Protobuf type {@code BonusActivityInfo}
@@ -421,11 +421,11 @@ public final class BonusActivityInfoOuterClass {
                 bitField0_ |= 0x00000002;
                 break;
               } // case 8
-              case 104: {
+              case 96: {
                 bonusActivityId_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 104
+              } // case 96
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -445,7 +445,7 @@ public final class BonusActivityInfoOuterClass {
 
       private int bonusActivityId_ ;
       /**
-       * <code>uint32 bonus_activity_id = 13;</code>
+       * <code>uint32 bonus_activity_id = 12;</code>
        * @return The bonusActivityId.
        */
       @java.lang.Override
@@ -453,7 +453,7 @@ public final class BonusActivityInfoOuterClass {
         return bonusActivityId_;
       }
       /**
-       * <code>uint32 bonus_activity_id = 13;</code>
+       * <code>uint32 bonus_activity_id = 12;</code>
        * @param value The bonusActivityId to set.
        * @return This builder for chaining.
        */
@@ -465,7 +465,7 @@ public final class BonusActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bonus_activity_id = 13;</code>
+       * <code>uint32 bonus_activity_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearBonusActivityId() {
@@ -585,7 +585,7 @@ public final class BonusActivityInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027BonusActivityInfo.proto\"=\n\021BonusActivi" +
-      "tyInfo\022\031\n\021bonus_activity_id\030\r \001(\r\022\r\n\005sta" +
+      "tyInfo\022\031\n\021bonus_activity_id\030\014 \001(\r\022\r\n\005sta" +
       "te\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };

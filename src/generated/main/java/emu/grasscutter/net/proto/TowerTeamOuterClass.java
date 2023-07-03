@@ -19,23 +19,23 @@ public final class TowerTeamOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 tower_team_id = 2;</code>
+     * <code>uint32 tower_team_id = 13;</code>
      * @return The towerTeamId.
      */
     int getTowerTeamId();
 
     /**
-     * <code>repeated uint64 avatar_guid_list = 1;</code>
+     * <code>repeated uint64 avatar_guid_list = 9;</code>
      * @return A list containing the avatarGuidList.
      */
     java.util.List<java.lang.Long> getAvatarGuidListList();
     /**
-     * <code>repeated uint64 avatar_guid_list = 1;</code>
+     * <code>repeated uint64 avatar_guid_list = 9;</code>
      * @return The count of avatarGuidList.
      */
     int getAvatarGuidListCount();
     /**
-     * <code>repeated uint64 avatar_guid_list = 1;</code>
+     * <code>repeated uint64 avatar_guid_list = 9;</code>
      * @param index The index of the element to return.
      * @return The avatarGuidList at the given index.
      */
@@ -43,7 +43,7 @@ public final class TowerTeamOuterClass {
   }
   /**
    * <pre>
-   * Name: DHIACDOHOHA
+   * Obf: NOGLNAGCMIJ
    * </pre>
    *
    * Protobuf type {@code TowerTeam}
@@ -81,10 +81,10 @@ public final class TowerTeamOuterClass {
               emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.class, emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.Builder.class);
     }
 
-    public static final int TOWER_TEAM_ID_FIELD_NUMBER = 2;
+    public static final int TOWER_TEAM_ID_FIELD_NUMBER = 13;
     private int towerTeamId_ = 0;
     /**
-     * <code>uint32 tower_team_id = 2;</code>
+     * <code>uint32 tower_team_id = 13;</code>
      * @return The towerTeamId.
      */
     @java.lang.Override
@@ -92,11 +92,11 @@ public final class TowerTeamOuterClass {
       return towerTeamId_;
     }
 
-    public static final int AVATAR_GUID_LIST_FIELD_NUMBER = 1;
+    public static final int AVATAR_GUID_LIST_FIELD_NUMBER = 9;
     @SuppressWarnings("serial")
     private com.google.protobuf.Internal.LongList avatarGuidList_;
     /**
-     * <code>repeated uint64 avatar_guid_list = 1;</code>
+     * <code>repeated uint64 avatar_guid_list = 9;</code>
      * @return A list containing the avatarGuidList.
      */
     @java.lang.Override
@@ -105,14 +105,14 @@ public final class TowerTeamOuterClass {
       return avatarGuidList_;
     }
     /**
-     * <code>repeated uint64 avatar_guid_list = 1;</code>
+     * <code>repeated uint64 avatar_guid_list = 9;</code>
      * @return The count of avatarGuidList.
      */
     public int getAvatarGuidListCount() {
       return avatarGuidList_.size();
     }
     /**
-     * <code>repeated uint64 avatar_guid_list = 1;</code>
+     * <code>repeated uint64 avatar_guid_list = 9;</code>
      * @param index The index of the element to return.
      * @return The avatarGuidList at the given index.
      */
@@ -137,14 +137,14 @@ public final class TowerTeamOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getAvatarGuidListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(avatarGuidListMemoizedSerializedSize);
       }
       for (int i = 0; i < avatarGuidList_.size(); i++) {
         output.writeUInt64NoTag(avatarGuidList_.getLong(i));
       }
       if (towerTeamId_ != 0) {
-        output.writeUInt32(2, towerTeamId_);
+        output.writeUInt32(13, towerTeamId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -171,7 +171,7 @@ public final class TowerTeamOuterClass {
       }
       if (towerTeamId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, towerTeamId_);
+          .computeUInt32Size(13, towerTeamId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -308,7 +308,7 @@ public final class TowerTeamOuterClass {
     }
     /**
      * <pre>
-     * Name: DHIACDOHOHA
+     * Obf: NOGLNAGCMIJ
      * </pre>
      *
      * Protobuf type {@code TowerTeam}
@@ -476,13 +476,13 @@ public final class TowerTeamOuterClass {
               case 0:
                 done = true;
                 break;
-              case 8: {
+              case 72: {
                 long v = input.readUInt64();
                 ensureAvatarGuidListIsMutable();
                 avatarGuidList_.addLong(v);
                 break;
-              } // case 8
-              case 10: {
+              } // case 72
+              case 74: {
                 int length = input.readRawVarint32();
                 int limit = input.pushLimit(length);
                 ensureAvatarGuidListIsMutable();
@@ -491,12 +491,12 @@ public final class TowerTeamOuterClass {
                 }
                 input.popLimit(limit);
                 break;
-              } // case 10
-              case 16: {
+              } // case 74
+              case 104: {
                 towerTeamId_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 16
+              } // case 104
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -516,7 +516,7 @@ public final class TowerTeamOuterClass {
 
       private int towerTeamId_ ;
       /**
-       * <code>uint32 tower_team_id = 2;</code>
+       * <code>uint32 tower_team_id = 13;</code>
        * @return The towerTeamId.
        */
       @java.lang.Override
@@ -524,7 +524,7 @@ public final class TowerTeamOuterClass {
         return towerTeamId_;
       }
       /**
-       * <code>uint32 tower_team_id = 2;</code>
+       * <code>uint32 tower_team_id = 13;</code>
        * @param value The towerTeamId to set.
        * @return This builder for chaining.
        */
@@ -536,7 +536,7 @@ public final class TowerTeamOuterClass {
         return this;
       }
       /**
-       * <code>uint32 tower_team_id = 2;</code>
+       * <code>uint32 tower_team_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearTowerTeamId() {
@@ -554,7 +554,7 @@ public final class TowerTeamOuterClass {
         }
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 1;</code>
+       * <code>repeated uint64 avatar_guid_list = 9;</code>
        * @return A list containing the avatarGuidList.
        */
       public java.util.List<java.lang.Long>
@@ -563,14 +563,14 @@ public final class TowerTeamOuterClass {
                  java.util.Collections.unmodifiableList(avatarGuidList_) : avatarGuidList_;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 1;</code>
+       * <code>repeated uint64 avatar_guid_list = 9;</code>
        * @return The count of avatarGuidList.
        */
       public int getAvatarGuidListCount() {
         return avatarGuidList_.size();
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 1;</code>
+       * <code>repeated uint64 avatar_guid_list = 9;</code>
        * @param index The index of the element to return.
        * @return The avatarGuidList at the given index.
        */
@@ -578,7 +578,7 @@ public final class TowerTeamOuterClass {
         return avatarGuidList_.getLong(index);
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 1;</code>
+       * <code>repeated uint64 avatar_guid_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The avatarGuidList to set.
        * @return This builder for chaining.
@@ -592,7 +592,7 @@ public final class TowerTeamOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 1;</code>
+       * <code>repeated uint64 avatar_guid_list = 9;</code>
        * @param value The avatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -604,7 +604,7 @@ public final class TowerTeamOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 1;</code>
+       * <code>repeated uint64 avatar_guid_list = 9;</code>
        * @param values The avatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -617,7 +617,7 @@ public final class TowerTeamOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 1;</code>
+       * <code>repeated uint64 avatar_guid_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuidList() {
@@ -705,7 +705,7 @@ public final class TowerTeamOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\017TowerTeam.proto\"<\n\tTowerTeam\022\025\n\rtower_" +
-      "team_id\030\002 \001(\r\022\030\n\020avatar_guid_list\030\001 \003(\004B" +
+      "team_id\030\r \001(\r\022\030\n\020avatar_guid_list\030\t \003(\004B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

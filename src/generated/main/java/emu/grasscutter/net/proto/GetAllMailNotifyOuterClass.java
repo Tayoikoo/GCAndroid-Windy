@@ -26,8 +26,8 @@ public final class GetAllMailNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1465
-   * Name: GNHCOJIHAOF
+   * CmdId: 1434
+   * Obf: CNDIIOHHDIO
    * </pre>
    *
    * Protobuf type {@code GetAllMailNotify}
@@ -235,8 +235,8 @@ public final class GetAllMailNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1465
-     * Name: GNHCOJIHAOF
+     * CmdId: 1434
+     * Obf: CNDIIOHHDIO
      * </pre>
      *
      * Protobuf type {@code GetAllMailNotify}

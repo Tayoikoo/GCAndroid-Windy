@@ -19,27 +19,27 @@ public final class AvatarSkillUpgradeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_guid = 14;</code>
+     * <code>uint32 old_level = 10;</code>
+     * @return The oldLevel.
+     */
+    int getOldLevel();
+
+    /**
+     * <code>uint64 avatar_guid = 2;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <code>uint32 avatar_skill_id = 7;</code>
+     * <code>uint32 avatar_skill_id = 8;</code>
      * @return The avatarSkillId.
      */
     int getAvatarSkillId();
-
-    /**
-     * <code>uint32 old_level = 15;</code>
-     * @return The oldLevel.
-     */
-    int getOldLevel();
   }
   /**
    * <pre>
-   * CmdId: 1078
-   * Name: PPGGAIJGNKM
+   * CmdId: 1064
+   * Obf: MDDPDCJCKCB
    * </pre>
    *
    * Protobuf type {@code AvatarSkillUpgradeReq}
@@ -76,10 +76,21 @@ public final class AvatarSkillUpgradeReqOuterClass {
               emu.grasscutter.net.proto.AvatarSkillUpgradeReqOuterClass.AvatarSkillUpgradeReq.class, emu.grasscutter.net.proto.AvatarSkillUpgradeReqOuterClass.AvatarSkillUpgradeReq.Builder.class);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 14;
+    public static final int OLD_LEVEL_FIELD_NUMBER = 10;
+    private int oldLevel_ = 0;
+    /**
+     * <code>uint32 old_level = 10;</code>
+     * @return The oldLevel.
+     */
+    @java.lang.Override
+    public int getOldLevel() {
+      return oldLevel_;
+    }
+
+    public static final int AVATAR_GUID_FIELD_NUMBER = 2;
     private long avatarGuid_ = 0L;
     /**
-     * <code>uint64 avatar_guid = 14;</code>
+     * <code>uint64 avatar_guid = 2;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -87,26 +98,15 @@ public final class AvatarSkillUpgradeReqOuterClass {
       return avatarGuid_;
     }
 
-    public static final int AVATAR_SKILL_ID_FIELD_NUMBER = 7;
+    public static final int AVATAR_SKILL_ID_FIELD_NUMBER = 8;
     private int avatarSkillId_ = 0;
     /**
-     * <code>uint32 avatar_skill_id = 7;</code>
+     * <code>uint32 avatar_skill_id = 8;</code>
      * @return The avatarSkillId.
      */
     @java.lang.Override
     public int getAvatarSkillId() {
       return avatarSkillId_;
-    }
-
-    public static final int OLD_LEVEL_FIELD_NUMBER = 15;
-    private int oldLevel_ = 0;
-    /**
-     * <code>uint32 old_level = 15;</code>
-     * @return The oldLevel.
-     */
-    @java.lang.Override
-    public int getOldLevel() {
-      return oldLevel_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -123,14 +123,14 @@ public final class AvatarSkillUpgradeReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (avatarSkillId_ != 0) {
-        output.writeUInt32(7, avatarSkillId_);
-      }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(14, avatarGuid_);
+        output.writeUInt64(2, avatarGuid_);
+      }
+      if (avatarSkillId_ != 0) {
+        output.writeUInt32(8, avatarSkillId_);
       }
       if (oldLevel_ != 0) {
-        output.writeUInt32(15, oldLevel_);
+        output.writeUInt32(10, oldLevel_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -141,17 +141,17 @@ public final class AvatarSkillUpgradeReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (avatarSkillId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, avatarSkillId_);
-      }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(14, avatarGuid_);
+          .computeUInt64Size(2, avatarGuid_);
+      }
+      if (avatarSkillId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, avatarSkillId_);
       }
       if (oldLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, oldLevel_);
+          .computeUInt32Size(10, oldLevel_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -168,12 +168,12 @@ public final class AvatarSkillUpgradeReqOuterClass {
       }
       emu.grasscutter.net.proto.AvatarSkillUpgradeReqOuterClass.AvatarSkillUpgradeReq other = (emu.grasscutter.net.proto.AvatarSkillUpgradeReqOuterClass.AvatarSkillUpgradeReq) obj;
 
+      if (getOldLevel()
+          != other.getOldLevel()) return false;
       if (getAvatarGuid()
           != other.getAvatarGuid()) return false;
       if (getAvatarSkillId()
           != other.getAvatarSkillId()) return false;
-      if (getOldLevel()
-          != other.getOldLevel()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -185,13 +185,13 @@ public final class AvatarSkillUpgradeReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + OLD_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getOldLevel();
       hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarGuid());
       hash = (37 * hash) + AVATAR_SKILL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarSkillId();
-      hash = (37 * hash) + OLD_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getOldLevel();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -291,8 +291,8 @@ public final class AvatarSkillUpgradeReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1078
-     * Name: PPGGAIJGNKM
+     * CmdId: 1064
+     * Obf: MDDPDCJCKCB
      * </pre>
      *
      * Protobuf type {@code AvatarSkillUpgradeReq}
@@ -328,9 +328,9 @@ public final class AvatarSkillUpgradeReqOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
+        oldLevel_ = 0;
         avatarGuid_ = 0L;
         avatarSkillId_ = 0;
-        oldLevel_ = 0;
         return this;
       }
 
@@ -365,13 +365,13 @@ public final class AvatarSkillUpgradeReqOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.AvatarSkillUpgradeReqOuterClass.AvatarSkillUpgradeReq result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.avatarGuid_ = avatarGuid_;
+          result.oldLevel_ = oldLevel_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.avatarSkillId_ = avatarSkillId_;
+          result.avatarGuid_ = avatarGuid_;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.oldLevel_ = oldLevel_;
+          result.avatarSkillId_ = avatarSkillId_;
         }
       }
 
@@ -419,14 +419,14 @@ public final class AvatarSkillUpgradeReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarSkillUpgradeReqOuterClass.AvatarSkillUpgradeReq other) {
         if (other == emu.grasscutter.net.proto.AvatarSkillUpgradeReqOuterClass.AvatarSkillUpgradeReq.getDefaultInstance()) return this;
+        if (other.getOldLevel() != 0) {
+          setOldLevel(other.getOldLevel());
+        }
         if (other.getAvatarGuid() != 0L) {
           setAvatarGuid(other.getAvatarGuid());
         }
         if (other.getAvatarSkillId() != 0) {
           setAvatarSkillId(other.getAvatarSkillId());
-        }
-        if (other.getOldLevel() != 0) {
-          setOldLevel(other.getOldLevel());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -454,21 +454,21 @@ public final class AvatarSkillUpgradeReqOuterClass {
               case 0:
                 done = true;
                 break;
-              case 56: {
-                avatarSkillId_ = input.readUInt32();
+              case 16: {
+                avatarGuid_ = input.readUInt64();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 56
-              case 112: {
-                avatarGuid_ = input.readUInt64();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 112
-              case 120: {
-                oldLevel_ = input.readUInt32();
+              } // case 16
+              case 64: {
+                avatarSkillId_ = input.readUInt32();
                 bitField0_ |= 0x00000004;
                 break;
-              } // case 120
+              } // case 64
+              case 80: {
+                oldLevel_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 80
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -486,73 +486,9 @@ public final class AvatarSkillUpgradeReqOuterClass {
       }
       private int bitField0_;
 
-      private long avatarGuid_ ;
-      /**
-       * <code>uint64 avatar_guid = 14;</code>
-       * @return The avatarGuid.
-       */
-      @java.lang.Override
-      public long getAvatarGuid() {
-        return avatarGuid_;
-      }
-      /**
-       * <code>uint64 avatar_guid = 14;</code>
-       * @param value The avatarGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarGuid(long value) {
-
-        avatarGuid_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 avatar_guid = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarGuid() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        avatarGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private int avatarSkillId_ ;
-      /**
-       * <code>uint32 avatar_skill_id = 7;</code>
-       * @return The avatarSkillId.
-       */
-      @java.lang.Override
-      public int getAvatarSkillId() {
-        return avatarSkillId_;
-      }
-      /**
-       * <code>uint32 avatar_skill_id = 7;</code>
-       * @param value The avatarSkillId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarSkillId(int value) {
-
-        avatarSkillId_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 avatar_skill_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarSkillId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        avatarSkillId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int oldLevel_ ;
       /**
-       * <code>uint32 old_level = 15;</code>
+       * <code>uint32 old_level = 10;</code>
        * @return The oldLevel.
        */
       @java.lang.Override
@@ -560,24 +496,88 @@ public final class AvatarSkillUpgradeReqOuterClass {
         return oldLevel_;
       }
       /**
-       * <code>uint32 old_level = 15;</code>
+       * <code>uint32 old_level = 10;</code>
        * @param value The oldLevel to set.
        * @return This builder for chaining.
        */
       public Builder setOldLevel(int value) {
 
         oldLevel_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 old_level = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOldLevel() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        oldLevel_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long avatarGuid_ ;
+      /**
+       * <code>uint64 avatar_guid = 2;</code>
+       * @return The avatarGuid.
+       */
+      @java.lang.Override
+      public long getAvatarGuid() {
+        return avatarGuid_;
+      }
+      /**
+       * <code>uint64 avatar_guid = 2;</code>
+       * @param value The avatarGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarGuid(long value) {
+
+        avatarGuid_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 avatar_guid = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarGuid() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        avatarGuid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int avatarSkillId_ ;
+      /**
+       * <code>uint32 avatar_skill_id = 8;</code>
+       * @return The avatarSkillId.
+       */
+      @java.lang.Override
+      public int getAvatarSkillId() {
+        return avatarSkillId_;
+      }
+      /**
+       * <code>uint32 avatar_skill_id = 8;</code>
+       * @param value The avatarSkillId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarSkillId(int value) {
+
+        avatarSkillId_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 old_level = 15;</code>
+       * <code>uint32 avatar_skill_id = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOldLevel() {
+      public Builder clearAvatarSkillId() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        oldLevel_ = 0;
+        avatarSkillId_ = 0;
         onChanged();
         return this;
       }
@@ -660,8 +660,8 @@ public final class AvatarSkillUpgradeReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033AvatarSkillUpgradeReq.proto\"X\n\025AvatarS" +
-      "killUpgradeReq\022\023\n\013avatar_guid\030\016 \001(\004\022\027\n\017a" +
-      "vatar_skill_id\030\007 \001(\r\022\021\n\told_level\030\017 \001(\rB" +
+      "killUpgradeReq\022\021\n\told_level\030\n \001(\r\022\023\n\013ava" +
+      "tar_guid\030\002 \001(\004\022\027\n\017avatar_skill_id\030\010 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -673,7 +673,7 @@ public final class AvatarSkillUpgradeReqOuterClass {
     internal_static_AvatarSkillUpgradeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarSkillUpgradeReq_descriptor,
-        new java.lang.String[] { "AvatarGuid", "AvatarSkillId", "OldLevel", });
+        new java.lang.String[] { "OldLevel", "AvatarGuid", "AvatarSkillId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

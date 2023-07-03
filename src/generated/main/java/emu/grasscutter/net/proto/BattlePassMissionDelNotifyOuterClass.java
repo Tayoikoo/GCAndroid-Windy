@@ -19,17 +19,17 @@ public final class BattlePassMissionDelNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 del_mission_id_list = 1;</code>
+     * <code>repeated uint32 del_mission_id_list = 9;</code>
      * @return A list containing the delMissionIdList.
      */
     java.util.List<java.lang.Integer> getDelMissionIdListList();
     /**
-     * <code>repeated uint32 del_mission_id_list = 1;</code>
+     * <code>repeated uint32 del_mission_id_list = 9;</code>
      * @return The count of delMissionIdList.
      */
     int getDelMissionIdListCount();
     /**
-     * <code>repeated uint32 del_mission_id_list = 1;</code>
+     * <code>repeated uint32 del_mission_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The delMissionIdList at the given index.
      */
@@ -37,8 +37,8 @@ public final class BattlePassMissionDelNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 2617
-   * Name: PPDFLNOGDEB
+   * CmdId: 2637
+   * Obf: EHBCMBGNEAI
    * </pre>
    *
    * Protobuf type {@code BattlePassMissionDelNotify}
@@ -76,11 +76,11 @@ public final class BattlePassMissionDelNotifyOuterClass {
               emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify.class, emu.grasscutter.net.proto.BattlePassMissionDelNotifyOuterClass.BattlePassMissionDelNotify.Builder.class);
     }
 
-    public static final int DEL_MISSION_ID_LIST_FIELD_NUMBER = 1;
+    public static final int DEL_MISSION_ID_LIST_FIELD_NUMBER = 9;
     @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList delMissionIdList_;
     /**
-     * <code>repeated uint32 del_mission_id_list = 1;</code>
+     * <code>repeated uint32 del_mission_id_list = 9;</code>
      * @return A list containing the delMissionIdList.
      */
     @java.lang.Override
@@ -89,14 +89,14 @@ public final class BattlePassMissionDelNotifyOuterClass {
       return delMissionIdList_;
     }
     /**
-     * <code>repeated uint32 del_mission_id_list = 1;</code>
+     * <code>repeated uint32 del_mission_id_list = 9;</code>
      * @return The count of delMissionIdList.
      */
     public int getDelMissionIdListCount() {
       return delMissionIdList_.size();
     }
     /**
-     * <code>repeated uint32 del_mission_id_list = 1;</code>
+     * <code>repeated uint32 del_mission_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The delMissionIdList at the given index.
      */
@@ -121,7 +121,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getDelMissionIdListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(delMissionIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < delMissionIdList_.size(); i++) {
@@ -281,8 +281,8 @@ public final class BattlePassMissionDelNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2617
-     * Name: PPDFLNOGDEB
+     * CmdId: 2637
+     * Obf: EHBCMBGNEAI
      * </pre>
      *
      * Protobuf type {@code BattlePassMissionDelNotify}
@@ -443,13 +443,13 @@ public final class BattlePassMissionDelNotifyOuterClass {
               case 0:
                 done = true;
                 break;
-              case 8: {
+              case 72: {
                 int v = input.readUInt32();
                 ensureDelMissionIdListIsMutable();
                 delMissionIdList_.addInt(v);
                 break;
-              } // case 8
-              case 10: {
+              } // case 72
+              case 74: {
                 int length = input.readRawVarint32();
                 int limit = input.pushLimit(length);
                 ensureDelMissionIdListIsMutable();
@@ -458,7 +458,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
                 }
                 input.popLimit(limit);
                 break;
-              } // case 10
+              } // case 74
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -484,7 +484,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 1;</code>
+       * <code>repeated uint32 del_mission_id_list = 9;</code>
        * @return A list containing the delMissionIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -493,14 +493,14 @@ public final class BattlePassMissionDelNotifyOuterClass {
                  java.util.Collections.unmodifiableList(delMissionIdList_) : delMissionIdList_;
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 1;</code>
+       * <code>repeated uint32 del_mission_id_list = 9;</code>
        * @return The count of delMissionIdList.
        */
       public int getDelMissionIdListCount() {
         return delMissionIdList_.size();
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 1;</code>
+       * <code>repeated uint32 del_mission_id_list = 9;</code>
        * @param index The index of the element to return.
        * @return The delMissionIdList at the given index.
        */
@@ -508,7 +508,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
         return delMissionIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 1;</code>
+       * <code>repeated uint32 del_mission_id_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The delMissionIdList to set.
        * @return This builder for chaining.
@@ -522,7 +522,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 1;</code>
+       * <code>repeated uint32 del_mission_id_list = 9;</code>
        * @param value The delMissionIdList to add.
        * @return This builder for chaining.
        */
@@ -534,7 +534,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 1;</code>
+       * <code>repeated uint32 del_mission_id_list = 9;</code>
        * @param values The delMissionIdList to add.
        * @return This builder for chaining.
        */
@@ -547,7 +547,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 del_mission_id_list = 1;</code>
+       * <code>repeated uint32 del_mission_id_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearDelMissionIdList() {
@@ -636,7 +636,7 @@ public final class BattlePassMissionDelNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n BattlePassMissionDelNotify.proto\"9\n\032Ba" +
       "ttlePassMissionDelNotify\022\033\n\023del_mission_" +
-      "id_list\030\001 \003(\rB\033\n\031emu.grasscutter.net.pro" +
+      "id_list\030\t \003(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -25,17 +25,17 @@ public final class TakeCityReputationParentQuestReqOuterClass {
     int getCityId();
 
     /**
-     * <code>repeated uint32 parent_quest_list = 1;</code>
+     * <code>repeated uint32 parent_quest_list = 10;</code>
      * @return A list containing the parentQuestList.
      */
     java.util.List<java.lang.Integer> getParentQuestListList();
     /**
-     * <code>repeated uint32 parent_quest_list = 1;</code>
+     * <code>repeated uint32 parent_quest_list = 10;</code>
      * @return The count of parentQuestList.
      */
     int getParentQuestListCount();
     /**
-     * <code>repeated uint32 parent_quest_list = 1;</code>
+     * <code>repeated uint32 parent_quest_list = 10;</code>
      * @param index The index of the element to return.
      * @return The parentQuestList at the given index.
      */
@@ -43,8 +43,8 @@ public final class TakeCityReputationParentQuestReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 2856
-   * Name: ABPHHHLKJBA
+   * CmdId: 2848
+   * Obf: LNAPPLPMLHC
    * </pre>
    *
    * Protobuf type {@code TakeCityReputationParentQuestReq}
@@ -93,11 +93,11 @@ public final class TakeCityReputationParentQuestReqOuterClass {
       return cityId_;
     }
 
-    public static final int PARENT_QUEST_LIST_FIELD_NUMBER = 1;
+    public static final int PARENT_QUEST_LIST_FIELD_NUMBER = 10;
     @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList parentQuestList_;
     /**
-     * <code>repeated uint32 parent_quest_list = 1;</code>
+     * <code>repeated uint32 parent_quest_list = 10;</code>
      * @return A list containing the parentQuestList.
      */
     @java.lang.Override
@@ -106,14 +106,14 @@ public final class TakeCityReputationParentQuestReqOuterClass {
       return parentQuestList_;
     }
     /**
-     * <code>repeated uint32 parent_quest_list = 1;</code>
+     * <code>repeated uint32 parent_quest_list = 10;</code>
      * @return The count of parentQuestList.
      */
     public int getParentQuestListCount() {
       return parentQuestList_.size();
     }
     /**
-     * <code>repeated uint32 parent_quest_list = 1;</code>
+     * <code>repeated uint32 parent_quest_list = 10;</code>
      * @param index The index of the element to return.
      * @return The parentQuestList at the given index.
      */
@@ -138,7 +138,7 @@ public final class TakeCityReputationParentQuestReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getParentQuestListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(parentQuestListMemoizedSerializedSize);
       }
       for (int i = 0; i < parentQuestList_.size(); i++) {
@@ -309,8 +309,8 @@ public final class TakeCityReputationParentQuestReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2856
-     * Name: ABPHHHLKJBA
+     * CmdId: 2848
+     * Obf: LNAPPLPMLHC
      * </pre>
      *
      * Protobuf type {@code TakeCityReputationParentQuestReq}
@@ -478,13 +478,13 @@ public final class TakeCityReputationParentQuestReqOuterClass {
               case 0:
                 done = true;
                 break;
-              case 8: {
+              case 80: {
                 int v = input.readUInt32();
                 ensureParentQuestListIsMutable();
                 parentQuestList_.addInt(v);
                 break;
-              } // case 8
-              case 10: {
+              } // case 80
+              case 82: {
                 int length = input.readRawVarint32();
                 int limit = input.pushLimit(length);
                 ensureParentQuestListIsMutable();
@@ -493,7 +493,7 @@ public final class TakeCityReputationParentQuestReqOuterClass {
                 }
                 input.popLimit(limit);
                 break;
-              } // case 10
+              } // case 82
               case 112: {
                 cityId_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
@@ -556,7 +556,7 @@ public final class TakeCityReputationParentQuestReqOuterClass {
         }
       }
       /**
-       * <code>repeated uint32 parent_quest_list = 1;</code>
+       * <code>repeated uint32 parent_quest_list = 10;</code>
        * @return A list containing the parentQuestList.
        */
       public java.util.List<java.lang.Integer>
@@ -565,14 +565,14 @@ public final class TakeCityReputationParentQuestReqOuterClass {
                  java.util.Collections.unmodifiableList(parentQuestList_) : parentQuestList_;
       }
       /**
-       * <code>repeated uint32 parent_quest_list = 1;</code>
+       * <code>repeated uint32 parent_quest_list = 10;</code>
        * @return The count of parentQuestList.
        */
       public int getParentQuestListCount() {
         return parentQuestList_.size();
       }
       /**
-       * <code>repeated uint32 parent_quest_list = 1;</code>
+       * <code>repeated uint32 parent_quest_list = 10;</code>
        * @param index The index of the element to return.
        * @return The parentQuestList at the given index.
        */
@@ -580,7 +580,7 @@ public final class TakeCityReputationParentQuestReqOuterClass {
         return parentQuestList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 parent_quest_list = 1;</code>
+       * <code>repeated uint32 parent_quest_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The parentQuestList to set.
        * @return This builder for chaining.
@@ -594,7 +594,7 @@ public final class TakeCityReputationParentQuestReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 parent_quest_list = 1;</code>
+       * <code>repeated uint32 parent_quest_list = 10;</code>
        * @param value The parentQuestList to add.
        * @return This builder for chaining.
        */
@@ -606,7 +606,7 @@ public final class TakeCityReputationParentQuestReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 parent_quest_list = 1;</code>
+       * <code>repeated uint32 parent_quest_list = 10;</code>
        * @param values The parentQuestList to add.
        * @return This builder for chaining.
        */
@@ -619,7 +619,7 @@ public final class TakeCityReputationParentQuestReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 parent_quest_list = 1;</code>
+       * <code>repeated uint32 parent_quest_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearParentQuestList() {
@@ -708,7 +708,7 @@ public final class TakeCityReputationParentQuestReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n&TakeCityReputationParentQuestReq.proto" +
       "\"N\n TakeCityReputationParentQuestReq\022\017\n\007" +
-      "city_id\030\016 \001(\r\022\031\n\021parent_quest_list\030\001 \003(\r" +
+      "city_id\030\016 \001(\r\022\031\n\021parent_quest_list\030\n \003(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

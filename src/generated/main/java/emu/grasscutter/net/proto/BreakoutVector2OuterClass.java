@@ -32,7 +32,7 @@ public final class BreakoutVector2OuterClass {
   }
   /**
    * <pre>
-   * Name: GBLHDOOKNCK
+   * Obf: FBODBKPINBJ
    * </pre>
    *
    * Protobuf type {@code BreakoutVector2}
@@ -261,7 +261,7 @@ public final class BreakoutVector2OuterClass {
     }
     /**
      * <pre>
-     * Name: GBLHDOOKNCK
+     * Obf: FBODBKPINBJ
      * </pre>
      *
      * Protobuf type {@code BreakoutVector2}

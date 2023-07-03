@@ -19,15 +19,15 @@ public final class HomePreChangeEditModeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_enter_edit_mode = 11;</code>
+     * <code>bool is_enter_edit_mode = 4;</code>
      * @return The isEnterEditMode.
      */
     boolean getIsEnterEditMode();
   }
   /**
    * <pre>
-   * CmdId: 4490
-   * Name: ACCOBPBFHPH
+   * CmdId: 4830
+   * Obf: DGFGCDOOMLC
    * </pre>
    *
    * Protobuf type {@code HomePreChangeEditModeNotify}
@@ -64,10 +64,10 @@ public final class HomePreChangeEditModeNotifyOuterClass {
               emu.grasscutter.net.proto.HomePreChangeEditModeNotifyOuterClass.HomePreChangeEditModeNotify.class, emu.grasscutter.net.proto.HomePreChangeEditModeNotifyOuterClass.HomePreChangeEditModeNotify.Builder.class);
     }
 
-    public static final int IS_ENTER_EDIT_MODE_FIELD_NUMBER = 11;
+    public static final int IS_ENTER_EDIT_MODE_FIELD_NUMBER = 4;
     private boolean isEnterEditMode_ = false;
     /**
-     * <code>bool is_enter_edit_mode = 11;</code>
+     * <code>bool is_enter_edit_mode = 4;</code>
      * @return The isEnterEditMode.
      */
     @java.lang.Override
@@ -90,7 +90,7 @@ public final class HomePreChangeEditModeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isEnterEditMode_ != false) {
-        output.writeBool(11, isEnterEditMode_);
+        output.writeBool(4, isEnterEditMode_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -103,7 +103,7 @@ public final class HomePreChangeEditModeNotifyOuterClass {
       size = 0;
       if (isEnterEditMode_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isEnterEditMode_);
+          .computeBoolSize(4, isEnterEditMode_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -235,8 +235,8 @@ public final class HomePreChangeEditModeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4490
-     * Name: ACCOBPBFHPH
+     * CmdId: 4830
+     * Obf: DGFGCDOOMLC
      * </pre>
      *
      * Protobuf type {@code HomePreChangeEditModeNotify}
@@ -384,11 +384,11 @@ public final class HomePreChangeEditModeNotifyOuterClass {
               case 0:
                 done = true;
                 break;
-              case 88: {
+              case 32: {
                 isEnterEditMode_ = input.readBool();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 88
+              } // case 32
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -408,7 +408,7 @@ public final class HomePreChangeEditModeNotifyOuterClass {
 
       private boolean isEnterEditMode_ ;
       /**
-       * <code>bool is_enter_edit_mode = 11;</code>
+       * <code>bool is_enter_edit_mode = 4;</code>
        * @return The isEnterEditMode.
        */
       @java.lang.Override
@@ -416,7 +416,7 @@ public final class HomePreChangeEditModeNotifyOuterClass {
         return isEnterEditMode_;
       }
       /**
-       * <code>bool is_enter_edit_mode = 11;</code>
+       * <code>bool is_enter_edit_mode = 4;</code>
        * @param value The isEnterEditMode to set.
        * @return This builder for chaining.
        */
@@ -428,7 +428,7 @@ public final class HomePreChangeEditModeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_enter_edit_mode = 11;</code>
+       * <code>bool is_enter_edit_mode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsEnterEditMode() {
@@ -517,7 +517,7 @@ public final class HomePreChangeEditModeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n!HomePreChangeEditModeNotify.proto\"9\n\033H" +
       "omePreChangeEditModeNotify\022\032\n\022is_enter_e" +
-      "dit_mode\030\013 \001(\010B\033\n\031emu.grasscutter.net.pr" +
+      "dit_mode\030\004 \001(\010B\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

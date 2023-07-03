@@ -19,13 +19,13 @@ public final class GetActivityShopSheetInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 shop_type = 9;</code>
+     * <code>uint32 shop_type = 8;</code>
      * @return The shopType.
      */
     int getShopType();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -56,8 +56,8 @@ public final class GetActivityShopSheetInfoRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 772
-   * Name: EPKOFNPJGBC
+   * CmdId: 735
+   * Obf: LIFMPPDHPGF
    * </pre>
    *
    * Protobuf type {@code GetActivityShopSheetInfoRsp}
@@ -95,10 +95,10 @@ public final class GetActivityShopSheetInfoRspOuterClass {
               emu.grasscutter.net.proto.GetActivityShopSheetInfoRspOuterClass.GetActivityShopSheetInfoRsp.class, emu.grasscutter.net.proto.GetActivityShopSheetInfoRspOuterClass.GetActivityShopSheetInfoRsp.Builder.class);
     }
 
-    public static final int SHOP_TYPE_FIELD_NUMBER = 9;
+    public static final int SHOP_TYPE_FIELD_NUMBER = 8;
     private int shopType_ = 0;
     /**
-     * <code>uint32 shop_type = 9;</code>
+     * <code>uint32 shop_type = 8;</code>
      * @return The shopType.
      */
     @java.lang.Override
@@ -106,10 +106,10 @@ public final class GetActivityShopSheetInfoRspOuterClass {
       return shopType_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -175,11 +175,11 @@ public final class GetActivityShopSheetInfoRspOuterClass {
       for (int i = 0; i < sheetInfoList_.size(); i++) {
         output.writeMessage(1, sheetInfoList_.get(i));
       }
-      if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
-      }
       if (shopType_ != 0) {
-        output.writeUInt32(9, shopType_);
+        output.writeUInt32(8, shopType_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(11, retcode_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -194,13 +194,13 @@ public final class GetActivityShopSheetInfoRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, sheetInfoList_.get(i));
       }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
-      }
       if (shopType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, shopType_);
+          .computeUInt32Size(8, shopType_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, retcode_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -341,8 +341,8 @@ public final class GetActivityShopSheetInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 772
-     * Name: EPKOFNPJGBC
+     * CmdId: 735
+     * Obf: LIFMPPDHPGF
      * </pre>
      *
      * Protobuf type {@code GetActivityShopSheetInfoRsp}
@@ -557,15 +557,15 @@ public final class GetActivityShopSheetInfoRspOuterClass {
                 break;
               } // case 10
               case 64: {
-                retcode_ = input.readInt32();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 64
-              case 72: {
                 shopType_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 72
+              } // case 64
+              case 88: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 88
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -585,7 +585,7 @@ public final class GetActivityShopSheetInfoRspOuterClass {
 
       private int shopType_ ;
       /**
-       * <code>uint32 shop_type = 9;</code>
+       * <code>uint32 shop_type = 8;</code>
        * @return The shopType.
        */
       @java.lang.Override
@@ -593,7 +593,7 @@ public final class GetActivityShopSheetInfoRspOuterClass {
         return shopType_;
       }
       /**
-       * <code>uint32 shop_type = 9;</code>
+       * <code>uint32 shop_type = 8;</code>
        * @param value The shopType to set.
        * @return This builder for chaining.
        */
@@ -605,7 +605,7 @@ public final class GetActivityShopSheetInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 shop_type = 9;</code>
+       * <code>uint32 shop_type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearShopType() {
@@ -617,7 +617,7 @@ public final class GetActivityShopSheetInfoRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -625,7 +625,7 @@ public final class GetActivityShopSheetInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -637,7 +637,7 @@ public final class GetActivityShopSheetInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -966,8 +966,8 @@ public final class GetActivityShopSheetInfoRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n!GetActivityShopSheetInfoRsp.proto\032\033Act" +
       "ivityShopSheetInfo.proto\"r\n\033GetActivityS" +
-      "hopSheetInfoRsp\022\021\n\tshop_type\030\t \001(\r\022\017\n\007re" +
-      "tcode\030\010 \001(\005\022/\n\017sheet_info_list\030\001 \003(\0132\026.A" +
+      "hopSheetInfoRsp\022\021\n\tshop_type\030\010 \001(\r\022\017\n\007re" +
+      "tcode\030\013 \001(\005\022/\n\017sheet_info_list\030\001 \003(\0132\026.A" +
       "ctivityShopSheetInfoB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };

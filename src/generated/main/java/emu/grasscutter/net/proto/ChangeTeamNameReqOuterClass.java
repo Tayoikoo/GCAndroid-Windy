@@ -19,27 +19,27 @@ public final class ChangeTeamNameReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 team_id = 11;</code>
-     * @return The teamId.
-     */
-    int getTeamId();
-
-    /**
-     * <code>string team_name = 12;</code>
+     * <code>string team_name = 2;</code>
      * @return The teamName.
      */
     java.lang.String getTeamName();
     /**
-     * <code>string team_name = 12;</code>
+     * <code>string team_name = 2;</code>
      * @return The bytes for teamName.
      */
     com.google.protobuf.ByteString
         getTeamNameBytes();
+
+    /**
+     * <code>int32 team_id = 9;</code>
+     * @return The teamId.
+     */
+    int getTeamId();
   }
   /**
    * <pre>
-   * CmdId: 1613
-   * Name: HAGAEOHPAKD
+   * CmdId: 1664
+   * Obf: LJCBDKBNGAI
    * </pre>
    *
    * Protobuf type {@code ChangeTeamNameReq}
@@ -77,22 +77,11 @@ public final class ChangeTeamNameReqOuterClass {
               emu.grasscutter.net.proto.ChangeTeamNameReqOuterClass.ChangeTeamNameReq.class, emu.grasscutter.net.proto.ChangeTeamNameReqOuterClass.ChangeTeamNameReq.Builder.class);
     }
 
-    public static final int TEAM_ID_FIELD_NUMBER = 11;
-    private int teamId_ = 0;
-    /**
-     * <code>int32 team_id = 11;</code>
-     * @return The teamId.
-     */
-    @java.lang.Override
-    public int getTeamId() {
-      return teamId_;
-    }
-
-    public static final int TEAM_NAME_FIELD_NUMBER = 12;
+    public static final int TEAM_NAME_FIELD_NUMBER = 2;
     @SuppressWarnings("serial")
     private volatile java.lang.Object teamName_ = "";
     /**
-     * <code>string team_name = 12;</code>
+     * <code>string team_name = 2;</code>
      * @return The teamName.
      */
     @java.lang.Override
@@ -109,7 +98,7 @@ public final class ChangeTeamNameReqOuterClass {
       }
     }
     /**
-     * <code>string team_name = 12;</code>
+     * <code>string team_name = 2;</code>
      * @return The bytes for teamName.
      */
     @java.lang.Override
@@ -127,6 +116,17 @@ public final class ChangeTeamNameReqOuterClass {
       }
     }
 
+    public static final int TEAM_ID_FIELD_NUMBER = 9;
+    private int teamId_ = 0;
+    /**
+     * <code>int32 team_id = 9;</code>
+     * @return The teamId.
+     */
+    @java.lang.Override
+    public int getTeamId() {
+      return teamId_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -141,11 +141,11 @@ public final class ChangeTeamNameReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (teamId_ != 0) {
-        output.writeInt32(11, teamId_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(teamName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, teamName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, teamName_);
+      }
+      if (teamId_ != 0) {
+        output.writeInt32(9, teamId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -156,12 +156,12 @@ public final class ChangeTeamNameReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(teamName_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, teamName_);
+      }
       if (teamId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, teamId_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(teamName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, teamName_);
+          .computeInt32Size(9, teamId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -178,10 +178,10 @@ public final class ChangeTeamNameReqOuterClass {
       }
       emu.grasscutter.net.proto.ChangeTeamNameReqOuterClass.ChangeTeamNameReq other = (emu.grasscutter.net.proto.ChangeTeamNameReqOuterClass.ChangeTeamNameReq) obj;
 
-      if (getTeamId()
-          != other.getTeamId()) return false;
       if (!getTeamName()
           .equals(other.getTeamName())) return false;
+      if (getTeamId()
+          != other.getTeamId()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -193,10 +193,10 @@ public final class ChangeTeamNameReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TEAM_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTeamId();
       hash = (37 * hash) + TEAM_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getTeamName().hashCode();
+      hash = (37 * hash) + TEAM_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTeamId();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -296,8 +296,8 @@ public final class ChangeTeamNameReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1613
-     * Name: HAGAEOHPAKD
+     * CmdId: 1664
+     * Obf: LJCBDKBNGAI
      * </pre>
      *
      * Protobuf type {@code ChangeTeamNameReq}
@@ -333,8 +333,8 @@ public final class ChangeTeamNameReqOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        teamId_ = 0;
         teamName_ = "";
+        teamId_ = 0;
         return this;
       }
 
@@ -369,10 +369,10 @@ public final class ChangeTeamNameReqOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.ChangeTeamNameReqOuterClass.ChangeTeamNameReq result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.teamId_ = teamId_;
+          result.teamName_ = teamName_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.teamName_ = teamName_;
+          result.teamId_ = teamId_;
         }
       }
 
@@ -420,13 +420,13 @@ public final class ChangeTeamNameReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChangeTeamNameReqOuterClass.ChangeTeamNameReq other) {
         if (other == emu.grasscutter.net.proto.ChangeTeamNameReqOuterClass.ChangeTeamNameReq.getDefaultInstance()) return this;
-        if (other.getTeamId() != 0) {
-          setTeamId(other.getTeamId());
-        }
         if (!other.getTeamName().isEmpty()) {
           teamName_ = other.teamName_;
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000001;
           onChanged();
+        }
+        if (other.getTeamId() != 0) {
+          setTeamId(other.getTeamId());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -454,16 +454,16 @@ public final class ChangeTeamNameReqOuterClass {
               case 0:
                 done = true;
                 break;
-              case 88: {
-                teamId_ = input.readInt32();
+              case 18: {
+                teamName_ = input.readStringRequireUtf8();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 88
-              case 98: {
-                teamName_ = input.readStringRequireUtf8();
+              } // case 18
+              case 72: {
+                teamId_ = input.readInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 98
+              } // case 72
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -481,41 +481,9 @@ public final class ChangeTeamNameReqOuterClass {
       }
       private int bitField0_;
 
-      private int teamId_ ;
-      /**
-       * <code>int32 team_id = 11;</code>
-       * @return The teamId.
-       */
-      @java.lang.Override
-      public int getTeamId() {
-        return teamId_;
-      }
-      /**
-       * <code>int32 team_id = 11;</code>
-       * @param value The teamId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTeamId(int value) {
-
-        teamId_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 team_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTeamId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        teamId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object teamName_ = "";
       /**
-       * <code>string team_name = 12;</code>
+       * <code>string team_name = 2;</code>
        * @return The teamName.
        */
       public java.lang.String getTeamName() {
@@ -531,7 +499,7 @@ public final class ChangeTeamNameReqOuterClass {
         }
       }
       /**
-       * <code>string team_name = 12;</code>
+       * <code>string team_name = 2;</code>
        * @return The bytes for teamName.
        */
       public com.google.protobuf.ByteString
@@ -548,7 +516,7 @@ public final class ChangeTeamNameReqOuterClass {
         }
       }
       /**
-       * <code>string team_name = 12;</code>
+       * <code>string team_name = 2;</code>
        * @param value The teamName to set.
        * @return This builder for chaining.
        */
@@ -556,22 +524,22 @@ public final class ChangeTeamNameReqOuterClass {
           java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
         teamName_ = value;
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>string team_name = 12;</code>
+       * <code>string team_name = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearTeamName() {
         teamName_ = getDefaultInstance().getTeamName();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
       /**
-       * <code>string team_name = 12;</code>
+       * <code>string team_name = 2;</code>
        * @param value The bytes for teamName to set.
        * @return This builder for chaining.
        */
@@ -580,7 +548,39 @@ public final class ChangeTeamNameReqOuterClass {
         if (value == null) { throw new NullPointerException(); }
         checkByteStringIsUtf8(value);
         teamName_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+
+      private int teamId_ ;
+      /**
+       * <code>int32 team_id = 9;</code>
+       * @return The teamId.
+       */
+      @java.lang.Override
+      public int getTeamId() {
+        return teamId_;
+      }
+      /**
+       * <code>int32 team_id = 9;</code>
+       * @param value The teamId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTeamId(int value) {
+
+        teamId_ = value;
         bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 team_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTeamId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        teamId_ = 0;
         onChanged();
         return this;
       }
@@ -663,8 +663,8 @@ public final class ChangeTeamNameReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027ChangeTeamNameReq.proto\"7\n\021ChangeTeamN" +
-      "ameReq\022\017\n\007team_id\030\013 \001(\005\022\021\n\tteam_name\030\014 \001" +
-      "(\tB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "ameReq\022\021\n\tteam_name\030\002 \001(\t\022\017\n\007team_id\030\t \001" +
+      "(\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -675,7 +675,7 @@ public final class ChangeTeamNameReqOuterClass {
     internal_static_ChangeTeamNameReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChangeTeamNameReq_descriptor,
-        new java.lang.String[] { "TeamId", "TeamName", });
+        new java.lang.String[] { "TeamName", "TeamId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

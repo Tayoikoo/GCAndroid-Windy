@@ -44,7 +44,7 @@ public final class CustomGadgetTreeInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: BJGMHMHDCGE
+   * Obf: DPOLIKKKKLA
    * </pre>
    *
    * Protobuf type {@code CustomGadgetTreeInfo}
@@ -284,7 +284,7 @@ public final class CustomGadgetTreeInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: BJGMHMHDCGE
+     * Obf: DPOLIKKKKLA
      * </pre>
      *
      * Protobuf type {@code CustomGadgetTreeInfo}

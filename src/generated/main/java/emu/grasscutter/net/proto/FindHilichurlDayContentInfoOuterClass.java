@@ -19,14 +19,14 @@ public final class FindHilichurlDayContentInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 start_time = 9;</code>
+     * <code>uint32 start_time = 1;</code>
      * @return The startTime.
      */
     int getStartTime();
   }
   /**
    * <pre>
-   * Name: EDAGPFHFMBA
+   * Obf: BHHCINDOAGH
    * </pre>
    *
    * Protobuf type {@code FindHilichurlDayContentInfo}
@@ -63,10 +63,10 @@ public final class FindHilichurlDayContentInfoOuterClass {
               emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.class, emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.Builder.class);
     }
 
-    public static final int START_TIME_FIELD_NUMBER = 9;
+    public static final int START_TIME_FIELD_NUMBER = 1;
     private int startTime_ = 0;
     /**
-     * <code>uint32 start_time = 9;</code>
+     * <code>uint32 start_time = 1;</code>
      * @return The startTime.
      */
     @java.lang.Override
@@ -89,7 +89,7 @@ public final class FindHilichurlDayContentInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (startTime_ != 0) {
-        output.writeUInt32(9, startTime_);
+        output.writeUInt32(1, startTime_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -102,7 +102,7 @@ public final class FindHilichurlDayContentInfoOuterClass {
       size = 0;
       if (startTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, startTime_);
+          .computeUInt32Size(1, startTime_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -233,7 +233,7 @@ public final class FindHilichurlDayContentInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: EDAGPFHFMBA
+     * Obf: BHHCINDOAGH
      * </pre>
      *
      * Protobuf type {@code FindHilichurlDayContentInfo}
@@ -381,11 +381,11 @@ public final class FindHilichurlDayContentInfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 72: {
+              case 8: {
                 startTime_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 72
+              } // case 8
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -405,7 +405,7 @@ public final class FindHilichurlDayContentInfoOuterClass {
 
       private int startTime_ ;
       /**
-       * <code>uint32 start_time = 9;</code>
+       * <code>uint32 start_time = 1;</code>
        * @return The startTime.
        */
       @java.lang.Override
@@ -413,7 +413,7 @@ public final class FindHilichurlDayContentInfoOuterClass {
         return startTime_;
       }
       /**
-       * <code>uint32 start_time = 9;</code>
+       * <code>uint32 start_time = 1;</code>
        * @param value The startTime to set.
        * @return This builder for chaining.
        */
@@ -425,7 +425,7 @@ public final class FindHilichurlDayContentInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 start_time = 9;</code>
+       * <code>uint32 start_time = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearStartTime() {
@@ -514,7 +514,7 @@ public final class FindHilichurlDayContentInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n!FindHilichurlDayContentInfo.proto\"1\n\033F" +
       "indHilichurlDayContentInfo\022\022\n\nstart_time" +
-      "\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

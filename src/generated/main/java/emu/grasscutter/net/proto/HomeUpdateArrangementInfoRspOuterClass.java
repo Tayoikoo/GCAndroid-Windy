@@ -19,15 +19,15 @@ public final class HomeUpdateArrangementInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 4888
-   * Name: CECACCENJCG
+   * CmdId: 4771
+   * Obf: LPIILLEHCAB
    * </pre>
    *
    * Protobuf type {@code HomeUpdateArrangementInfoRsp}
@@ -64,10 +64,10 @@ public final class HomeUpdateArrangementInfoRspOuterClass {
               emu.grasscutter.net.proto.HomeUpdateArrangementInfoRspOuterClass.HomeUpdateArrangementInfoRsp.class, emu.grasscutter.net.proto.HomeUpdateArrangementInfoRspOuterClass.HomeUpdateArrangementInfoRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -90,7 +90,7 @@ public final class HomeUpdateArrangementInfoRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(13, retcode_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -103,7 +103,7 @@ public final class HomeUpdateArrangementInfoRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(13, retcode_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -234,8 +234,8 @@ public final class HomeUpdateArrangementInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4888
-     * Name: CECACCENJCG
+     * CmdId: 4771
+     * Obf: LPIILLEHCAB
      * </pre>
      *
      * Protobuf type {@code HomeUpdateArrangementInfoRsp}
@@ -383,11 +383,11 @@ public final class HomeUpdateArrangementInfoRspOuterClass {
               case 0:
                 done = true;
                 break;
-              case 120: {
+              case 104: {
                 retcode_ = input.readInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 120
+              } // case 104
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -407,7 +407,7 @@ public final class HomeUpdateArrangementInfoRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -415,7 +415,7 @@ public final class HomeUpdateArrangementInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -427,7 +427,7 @@ public final class HomeUpdateArrangementInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -516,7 +516,7 @@ public final class HomeUpdateArrangementInfoRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"HomeUpdateArrangementInfoRsp.proto\"/\n\034" +
       "HomeUpdateArrangementInfoRsp\022\017\n\007retcode\030" +
-      "\017 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\r \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

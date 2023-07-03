@@ -100,7 +100,7 @@ emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinD
   }
   /**
    * <pre>
-   * Name: COGBGNFGPGI
+   * Obf: EIFECCBEIPL
    * </pre>
    *
    * Protobuf type {@code BossChestInfo}
@@ -557,7 +557,7 @@ emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinD
     }
     /**
      * <pre>
-     * Name: COGBGNFGPGI
+     * Obf: EIFECCBEIPL
      * </pre>
      *
      * Protobuf type {@code BossChestInfo}

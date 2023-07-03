@@ -19,15 +19,15 @@ public final class WorldPlayerReviveRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 287
-   * Name: FLPNFCLHHNP
+   * CmdId: 204
+   * Obf: COOLDGLJJKA
    * </pre>
    *
    * Protobuf type {@code WorldPlayerReviveRsp}
@@ -64,10 +64,10 @@ public final class WorldPlayerReviveRspOuterClass {
               emu.grasscutter.net.proto.WorldPlayerReviveRspOuterClass.WorldPlayerReviveRsp.class, emu.grasscutter.net.proto.WorldPlayerReviveRspOuterClass.WorldPlayerReviveRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -90,7 +90,7 @@ public final class WorldPlayerReviveRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
+        output.writeInt32(9, retcode_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -103,7 +103,7 @@ public final class WorldPlayerReviveRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
+          .computeInt32Size(9, retcode_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -234,8 +234,8 @@ public final class WorldPlayerReviveRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 287
-     * Name: FLPNFCLHHNP
+     * CmdId: 204
+     * Obf: COOLDGLJJKA
      * </pre>
      *
      * Protobuf type {@code WorldPlayerReviveRsp}
@@ -383,11 +383,11 @@ public final class WorldPlayerReviveRspOuterClass {
               case 0:
                 done = true;
                 break;
-              case 16: {
+              case 72: {
                 retcode_ = input.readInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 16
+              } // case 72
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -407,7 +407,7 @@ public final class WorldPlayerReviveRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -415,7 +415,7 @@ public final class WorldPlayerReviveRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -427,7 +427,7 @@ public final class WorldPlayerReviveRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -515,7 +515,7 @@ public final class WorldPlayerReviveRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032WorldPlayerReviveRsp.proto\"\'\n\024WorldPla" +
-      "yerReviveRsp\022\017\n\007retcode\030\002 \001(\005B\033\n\031emu.gra" +
+      "yerReviveRsp\022\017\n\007retcode\030\t \001(\005B\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

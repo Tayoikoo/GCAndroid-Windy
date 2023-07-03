@@ -44,7 +44,7 @@ public final class EquipParamOuterClass {
   }
   /**
    * <pre>
-   * Name: KCAIJMFIGIA
+   * Obf: BCIPINJAEOO
    * </pre>
    *
    * Protobuf type {@code EquipParam}
@@ -317,7 +317,7 @@ public final class EquipParamOuterClass {
     }
     /**
      * <pre>
-     * Name: KCAIJMFIGIA
+     * Obf: BCIPINJAEOO
      * </pre>
      *
      * Protobuf type {@code EquipParam}

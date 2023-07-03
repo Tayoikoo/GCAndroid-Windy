@@ -19,26 +19,26 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 12;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>uint32 min_finish_time = 1;</code>
+     * <code>uint32 min_finish_time = 11;</code>
      * @return The minFinishTime.
      */
     int getMinFinishTime();
 
     /**
-     * <code>bool is_open = 4;</code>
+     * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
+
+    /**
+     * <code>uint32 level_id = 1;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
   }
   /**
    * <pre>
-   * Name: POIEKHBPNJL
+   * Obf: PGFAIDKGFLI
    * </pre>
    *
    * Protobuf type {@code SeaLampV3ShadowLevelInfo}
@@ -75,21 +75,10 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
               emu.grasscutter.net.proto.SeaLampV3ShadowLevelInfoOuterClass.SeaLampV3ShadowLevelInfo.class, emu.grasscutter.net.proto.SeaLampV3ShadowLevelInfoOuterClass.SeaLampV3ShadowLevelInfo.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 12;
-    private int levelId_ = 0;
-    /**
-     * <code>uint32 level_id = 12;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int MIN_FINISH_TIME_FIELD_NUMBER = 1;
+    public static final int MIN_FINISH_TIME_FIELD_NUMBER = 11;
     private int minFinishTime_ = 0;
     /**
-     * <code>uint32 min_finish_time = 1;</code>
+     * <code>uint32 min_finish_time = 11;</code>
      * @return The minFinishTime.
      */
     @java.lang.Override
@@ -97,15 +86,26 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
       return minFinishTime_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 4;
+    public static final int IS_OPEN_FIELD_NUMBER = 3;
     private boolean isOpen_ = false;
     /**
-     * <code>bool is_open = 4;</code>
+     * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     @java.lang.Override
     public boolean getIsOpen() {
       return isOpen_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
+    private int levelId_ = 0;
+    /**
+     * <code>uint32 level_id = 1;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -122,14 +122,14 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (minFinishTime_ != 0) {
-        output.writeUInt32(1, minFinishTime_);
+      if (levelId_ != 0) {
+        output.writeUInt32(1, levelId_);
       }
       if (isOpen_ != false) {
-        output.writeBool(4, isOpen_);
+        output.writeBool(3, isOpen_);
       }
-      if (levelId_ != 0) {
-        output.writeUInt32(12, levelId_);
+      if (minFinishTime_ != 0) {
+        output.writeUInt32(11, minFinishTime_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -140,17 +140,17 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (minFinishTime_ != 0) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, minFinishTime_);
+          .computeUInt32Size(1, levelId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isOpen_);
+          .computeBoolSize(3, isOpen_);
       }
-      if (levelId_ != 0) {
+      if (minFinishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, levelId_);
+          .computeUInt32Size(11, minFinishTime_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -167,12 +167,12 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
       }
       emu.grasscutter.net.proto.SeaLampV3ShadowLevelInfoOuterClass.SeaLampV3ShadowLevelInfo other = (emu.grasscutter.net.proto.SeaLampV3ShadowLevelInfoOuterClass.SeaLampV3ShadowLevelInfo) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getMinFinishTime()
           != other.getMinFinishTime()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -184,13 +184,13 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + MIN_FINISH_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getMinFinishTime();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -290,7 +290,7 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: POIEKHBPNJL
+     * Obf: PGFAIDKGFLI
      * </pre>
      *
      * Protobuf type {@code SeaLampV3ShadowLevelInfo}
@@ -326,9 +326,9 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        levelId_ = 0;
         minFinishTime_ = 0;
         isOpen_ = false;
+        levelId_ = 0;
         return this;
       }
 
@@ -363,13 +363,13 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.SeaLampV3ShadowLevelInfoOuterClass.SeaLampV3ShadowLevelInfo result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.levelId_ = levelId_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
           result.minFinishTime_ = minFinishTime_;
         }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
+        if (((from_bitField0_ & 0x00000002) != 0)) {
           result.isOpen_ = isOpen_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.levelId_ = levelId_;
         }
       }
 
@@ -417,14 +417,14 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SeaLampV3ShadowLevelInfoOuterClass.SeaLampV3ShadowLevelInfo other) {
         if (other == emu.grasscutter.net.proto.SeaLampV3ShadowLevelInfoOuterClass.SeaLampV3ShadowLevelInfo.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
         if (other.getMinFinishTime() != 0) {
           setMinFinishTime(other.getMinFinishTime());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -453,20 +453,20 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
                 done = true;
                 break;
               case 8: {
-                minFinishTime_ = input.readUInt32();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 8
-              case 32: {
-                isOpen_ = input.readBool();
+                levelId_ = input.readUInt32();
                 bitField0_ |= 0x00000004;
                 break;
-              } // case 32
-              case 96: {
-                levelId_ = input.readUInt32();
+              } // case 8
+              case 24: {
+                isOpen_ = input.readBool();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 24
+              case 88: {
+                minFinishTime_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 96
+              } // case 88
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -484,41 +484,9 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
       }
       private int bitField0_;
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 12;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 12;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-
-        levelId_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int minFinishTime_ ;
       /**
-       * <code>uint32 min_finish_time = 1;</code>
+       * <code>uint32 min_finish_time = 11;</code>
        * @return The minFinishTime.
        */
       @java.lang.Override
@@ -526,23 +494,23 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
         return minFinishTime_;
       }
       /**
-       * <code>uint32 min_finish_time = 1;</code>
+       * <code>uint32 min_finish_time = 11;</code>
        * @param value The minFinishTime to set.
        * @return This builder for chaining.
        */
       public Builder setMinFinishTime(int value) {
 
         minFinishTime_ = value;
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 min_finish_time = 1;</code>
+       * <code>uint32 min_finish_time = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearMinFinishTime() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         minFinishTime_ = 0;
         onChanged();
         return this;
@@ -550,7 +518,7 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 4;</code>
+       * <code>bool is_open = 3;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -558,24 +526,56 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 4;</code>
+       * <code>bool is_open = 3;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
       public Builder setIsOpen(boolean value) {
 
         isOpen_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_open = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 1;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 1;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+
+        levelId_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_open = 4;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsOpen() {
+      public Builder clearLevelId() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        isOpen_ = false;
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -658,8 +658,8 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036SeaLampV3ShadowLevelInfo.proto\"V\n\030SeaL" +
-      "ampV3ShadowLevelInfo\022\020\n\010level_id\030\014 \001(\r\022\027" +
-      "\n\017min_finish_time\030\001 \001(\r\022\017\n\007is_open\030\004 \001(\010" +
+      "ampV3ShadowLevelInfo\022\027\n\017min_finish_time\030" +
+      "\013 \001(\r\022\017\n\007is_open\030\003 \001(\010\022\020\n\010level_id\030\001 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -671,7 +671,7 @@ public final class SeaLampV3ShadowLevelInfoOuterClass {
     internal_static_SeaLampV3ShadowLevelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SeaLampV3ShadowLevelInfo_descriptor,
-        new java.lang.String[] { "LevelId", "MinFinishTime", "IsOpen", });
+        new java.lang.String[] { "MinFinishTime", "IsOpen", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

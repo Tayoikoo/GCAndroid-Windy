@@ -19,32 +19,32 @@ public final class TowerLevelStarCondDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 KIGONGLABHC = 2;</code>
-     * @return The kIGONGLABHC.
+     * <code>uint32 star_cond_index = 15;</code>
+     * @return The starCondIndex.
      */
-    int getKIGONGLABHC();
+    int getStarCondIndex();
 
     /**
-     * <code>uint32 DLEMDNGLGAP = 4;</code>
-     * @return The dLEMDNGLGAP.
+     * <code>uint32 cond_value = 7;</code>
+     * @return The condValue.
      */
-    int getDLEMDNGLGAP();
+    int getCondValue();
 
     /**
-     * <code>bool FGBFALDMDAB = 3;</code>
-     * @return The fGBFALDMDAB.
+     * <code>bool HHFLBKFMCIH = 4;</code>
+     * @return The hHFLBKFMCIH.
      */
-    boolean getFGBFALDMDAB();
+    boolean getHHFLBKFMCIH();
 
     /**
-     * <code>bool KPLBFMBGPAP = 9;</code>
-     * @return The kPLBFMBGPAP.
+     * <code>bool DJEMLDOFGLI = 11;</code>
+     * @return The dJEMLDOFGLI.
      */
-    boolean getKPLBFMBGPAP();
+    boolean getDJEMLDOFGLI();
   }
   /**
    * <pre>
-   * Name: GFLKMONOFNG
+   * Obf: BGEPDKGLCMN
    * </pre>
    *
    * Protobuf type {@code TowerLevelStarCondData}
@@ -81,48 +81,48 @@ public final class TowerLevelStarCondDataOuterClass {
               emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.class, emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.Builder.class);
     }
 
-    public static final int KIGONGLABHC_FIELD_NUMBER = 2;
-    private int kIGONGLABHC_ = 0;
+    public static final int STAR_COND_INDEX_FIELD_NUMBER = 15;
+    private int starCondIndex_ = 0;
     /**
-     * <code>uint32 KIGONGLABHC = 2;</code>
-     * @return The kIGONGLABHC.
+     * <code>uint32 star_cond_index = 15;</code>
+     * @return The starCondIndex.
      */
     @java.lang.Override
-    public int getKIGONGLABHC() {
-      return kIGONGLABHC_;
+    public int getStarCondIndex() {
+      return starCondIndex_;
     }
 
-    public static final int DLEMDNGLGAP_FIELD_NUMBER = 4;
-    private int dLEMDNGLGAP_ = 0;
+    public static final int COND_VALUE_FIELD_NUMBER = 7;
+    private int condValue_ = 0;
     /**
-     * <code>uint32 DLEMDNGLGAP = 4;</code>
-     * @return The dLEMDNGLGAP.
+     * <code>uint32 cond_value = 7;</code>
+     * @return The condValue.
      */
     @java.lang.Override
-    public int getDLEMDNGLGAP() {
-      return dLEMDNGLGAP_;
+    public int getCondValue() {
+      return condValue_;
     }
 
-    public static final int FGBFALDMDAB_FIELD_NUMBER = 3;
-    private boolean fGBFALDMDAB_ = false;
+    public static final int HHFLBKFMCIH_FIELD_NUMBER = 4;
+    private boolean hHFLBKFMCIH_ = false;
     /**
-     * <code>bool FGBFALDMDAB = 3;</code>
-     * @return The fGBFALDMDAB.
+     * <code>bool HHFLBKFMCIH = 4;</code>
+     * @return The hHFLBKFMCIH.
      */
     @java.lang.Override
-    public boolean getFGBFALDMDAB() {
-      return fGBFALDMDAB_;
+    public boolean getHHFLBKFMCIH() {
+      return hHFLBKFMCIH_;
     }
 
-    public static final int KPLBFMBGPAP_FIELD_NUMBER = 9;
-    private boolean kPLBFMBGPAP_ = false;
+    public static final int DJEMLDOFGLI_FIELD_NUMBER = 11;
+    private boolean dJEMLDOFGLI_ = false;
     /**
-     * <code>bool KPLBFMBGPAP = 9;</code>
-     * @return The kPLBFMBGPAP.
+     * <code>bool DJEMLDOFGLI = 11;</code>
+     * @return The dJEMLDOFGLI.
      */
     @java.lang.Override
-    public boolean getKPLBFMBGPAP() {
-      return kPLBFMBGPAP_;
+    public boolean getDJEMLDOFGLI() {
+      return dJEMLDOFGLI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -139,17 +139,17 @@ public final class TowerLevelStarCondDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (kIGONGLABHC_ != 0) {
-        output.writeUInt32(2, kIGONGLABHC_);
+      if (hHFLBKFMCIH_ != false) {
+        output.writeBool(4, hHFLBKFMCIH_);
       }
-      if (fGBFALDMDAB_ != false) {
-        output.writeBool(3, fGBFALDMDAB_);
+      if (condValue_ != 0) {
+        output.writeUInt32(7, condValue_);
       }
-      if (dLEMDNGLGAP_ != 0) {
-        output.writeUInt32(4, dLEMDNGLGAP_);
+      if (dJEMLDOFGLI_ != false) {
+        output.writeBool(11, dJEMLDOFGLI_);
       }
-      if (kPLBFMBGPAP_ != false) {
-        output.writeBool(9, kPLBFMBGPAP_);
+      if (starCondIndex_ != 0) {
+        output.writeUInt32(15, starCondIndex_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -160,21 +160,21 @@ public final class TowerLevelStarCondDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (kIGONGLABHC_ != 0) {
+      if (hHFLBKFMCIH_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, kIGONGLABHC_);
+          .computeBoolSize(4, hHFLBKFMCIH_);
       }
-      if (fGBFALDMDAB_ != false) {
+      if (condValue_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, fGBFALDMDAB_);
+          .computeUInt32Size(7, condValue_);
       }
-      if (dLEMDNGLGAP_ != 0) {
+      if (dJEMLDOFGLI_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, dLEMDNGLGAP_);
+          .computeBoolSize(11, dJEMLDOFGLI_);
       }
-      if (kPLBFMBGPAP_ != false) {
+      if (starCondIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, kPLBFMBGPAP_);
+          .computeUInt32Size(15, starCondIndex_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -191,14 +191,14 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData other = (emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData) obj;
 
-      if (getKIGONGLABHC()
-          != other.getKIGONGLABHC()) return false;
-      if (getDLEMDNGLGAP()
-          != other.getDLEMDNGLGAP()) return false;
-      if (getFGBFALDMDAB()
-          != other.getFGBFALDMDAB()) return false;
-      if (getKPLBFMBGPAP()
-          != other.getKPLBFMBGPAP()) return false;
+      if (getStarCondIndex()
+          != other.getStarCondIndex()) return false;
+      if (getCondValue()
+          != other.getCondValue()) return false;
+      if (getHHFLBKFMCIH()
+          != other.getHHFLBKFMCIH()) return false;
+      if (getDJEMLDOFGLI()
+          != other.getDJEMLDOFGLI()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -210,16 +210,16 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + KIGONGLABHC_FIELD_NUMBER;
-      hash = (53 * hash) + getKIGONGLABHC();
-      hash = (37 * hash) + DLEMDNGLGAP_FIELD_NUMBER;
-      hash = (53 * hash) + getDLEMDNGLGAP();
-      hash = (37 * hash) + FGBFALDMDAB_FIELD_NUMBER;
+      hash = (37 * hash) + STAR_COND_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getStarCondIndex();
+      hash = (37 * hash) + COND_VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + getCondValue();
+      hash = (37 * hash) + HHFLBKFMCIH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getFGBFALDMDAB());
-      hash = (37 * hash) + KPLBFMBGPAP_FIELD_NUMBER;
+          getHHFLBKFMCIH());
+      hash = (37 * hash) + DJEMLDOFGLI_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getKPLBFMBGPAP());
+          getDJEMLDOFGLI());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -319,7 +319,7 @@ public final class TowerLevelStarCondDataOuterClass {
     }
     /**
      * <pre>
-     * Name: GFLKMONOFNG
+     * Obf: BGEPDKGLCMN
      * </pre>
      *
      * Protobuf type {@code TowerLevelStarCondData}
@@ -355,10 +355,10 @@ public final class TowerLevelStarCondDataOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        kIGONGLABHC_ = 0;
-        dLEMDNGLGAP_ = 0;
-        fGBFALDMDAB_ = false;
-        kPLBFMBGPAP_ = false;
+        starCondIndex_ = 0;
+        condValue_ = 0;
+        hHFLBKFMCIH_ = false;
+        dJEMLDOFGLI_ = false;
         return this;
       }
 
@@ -393,16 +393,16 @@ public final class TowerLevelStarCondDataOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.kIGONGLABHC_ = kIGONGLABHC_;
+          result.starCondIndex_ = starCondIndex_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.dLEMDNGLGAP_ = dLEMDNGLGAP_;
+          result.condValue_ = condValue_;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.fGBFALDMDAB_ = fGBFALDMDAB_;
+          result.hHFLBKFMCIH_ = hHFLBKFMCIH_;
         }
         if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.kPLBFMBGPAP_ = kPLBFMBGPAP_;
+          result.dJEMLDOFGLI_ = dJEMLDOFGLI_;
         }
       }
 
@@ -450,17 +450,17 @@ public final class TowerLevelStarCondDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData other) {
         if (other == emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.getDefaultInstance()) return this;
-        if (other.getKIGONGLABHC() != 0) {
-          setKIGONGLABHC(other.getKIGONGLABHC());
+        if (other.getStarCondIndex() != 0) {
+          setStarCondIndex(other.getStarCondIndex());
         }
-        if (other.getDLEMDNGLGAP() != 0) {
-          setDLEMDNGLGAP(other.getDLEMDNGLGAP());
+        if (other.getCondValue() != 0) {
+          setCondValue(other.getCondValue());
         }
-        if (other.getFGBFALDMDAB() != false) {
-          setFGBFALDMDAB(other.getFGBFALDMDAB());
+        if (other.getHHFLBKFMCIH() != false) {
+          setHHFLBKFMCIH(other.getHHFLBKFMCIH());
         }
-        if (other.getKPLBFMBGPAP() != false) {
-          setKPLBFMBGPAP(other.getKPLBFMBGPAP());
+        if (other.getDJEMLDOFGLI() != false) {
+          setDJEMLDOFGLI(other.getDJEMLDOFGLI());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -488,26 +488,26 @@ public final class TowerLevelStarCondDataOuterClass {
               case 0:
                 done = true;
                 break;
-              case 16: {
-                kIGONGLABHC_ = input.readUInt32();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 16
-              case 24: {
-                fGBFALDMDAB_ = input.readBool();
+              case 32: {
+                hHFLBKFMCIH_ = input.readBool();
                 bitField0_ |= 0x00000004;
                 break;
-              } // case 24
-              case 32: {
-                dLEMDNGLGAP_ = input.readUInt32();
+              } // case 32
+              case 56: {
+                condValue_ = input.readUInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 32
-              case 72: {
-                kPLBFMBGPAP_ = input.readBool();
+              } // case 56
+              case 88: {
+                dJEMLDOFGLI_ = input.readBool();
                 bitField0_ |= 0x00000008;
                 break;
-              } // case 72
+              } // case 88
+              case 120: {
+                starCondIndex_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 120
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -525,130 +525,130 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       private int bitField0_;
 
-      private int kIGONGLABHC_ ;
+      private int starCondIndex_ ;
       /**
-       * <code>uint32 KIGONGLABHC = 2;</code>
-       * @return The kIGONGLABHC.
+       * <code>uint32 star_cond_index = 15;</code>
+       * @return The starCondIndex.
        */
       @java.lang.Override
-      public int getKIGONGLABHC() {
-        return kIGONGLABHC_;
+      public int getStarCondIndex() {
+        return starCondIndex_;
       }
       /**
-       * <code>uint32 KIGONGLABHC = 2;</code>
-       * @param value The kIGONGLABHC to set.
+       * <code>uint32 star_cond_index = 15;</code>
+       * @param value The starCondIndex to set.
        * @return This builder for chaining.
        */
-      public Builder setKIGONGLABHC(int value) {
+      public Builder setStarCondIndex(int value) {
 
-        kIGONGLABHC_ = value;
+        starCondIndex_ = value;
         bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 KIGONGLABHC = 2;</code>
+       * <code>uint32 star_cond_index = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKIGONGLABHC() {
+      public Builder clearStarCondIndex() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        kIGONGLABHC_ = 0;
+        starCondIndex_ = 0;
         onChanged();
         return this;
       }
 
-      private int dLEMDNGLGAP_ ;
+      private int condValue_ ;
       /**
-       * <code>uint32 DLEMDNGLGAP = 4;</code>
-       * @return The dLEMDNGLGAP.
+       * <code>uint32 cond_value = 7;</code>
+       * @return The condValue.
        */
       @java.lang.Override
-      public int getDLEMDNGLGAP() {
-        return dLEMDNGLGAP_;
+      public int getCondValue() {
+        return condValue_;
       }
       /**
-       * <code>uint32 DLEMDNGLGAP = 4;</code>
-       * @param value The dLEMDNGLGAP to set.
+       * <code>uint32 cond_value = 7;</code>
+       * @param value The condValue to set.
        * @return This builder for chaining.
        */
-      public Builder setDLEMDNGLGAP(int value) {
+      public Builder setCondValue(int value) {
 
-        dLEMDNGLGAP_ = value;
+        condValue_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DLEMDNGLGAP = 4;</code>
+       * <code>uint32 cond_value = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDLEMDNGLGAP() {
+      public Builder clearCondValue() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        dLEMDNGLGAP_ = 0;
+        condValue_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean fGBFALDMDAB_ ;
+      private boolean hHFLBKFMCIH_ ;
       /**
-       * <code>bool FGBFALDMDAB = 3;</code>
-       * @return The fGBFALDMDAB.
+       * <code>bool HHFLBKFMCIH = 4;</code>
+       * @return The hHFLBKFMCIH.
        */
       @java.lang.Override
-      public boolean getFGBFALDMDAB() {
-        return fGBFALDMDAB_;
+      public boolean getHHFLBKFMCIH() {
+        return hHFLBKFMCIH_;
       }
       /**
-       * <code>bool FGBFALDMDAB = 3;</code>
-       * @param value The fGBFALDMDAB to set.
+       * <code>bool HHFLBKFMCIH = 4;</code>
+       * @param value The hHFLBKFMCIH to set.
        * @return This builder for chaining.
        */
-      public Builder setFGBFALDMDAB(boolean value) {
+      public Builder setHHFLBKFMCIH(boolean value) {
 
-        fGBFALDMDAB_ = value;
+        hHFLBKFMCIH_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>bool FGBFALDMDAB = 3;</code>
+       * <code>bool HHFLBKFMCIH = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFGBFALDMDAB() {
+      public Builder clearHHFLBKFMCIH() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        fGBFALDMDAB_ = false;
+        hHFLBKFMCIH_ = false;
         onChanged();
         return this;
       }
 
-      private boolean kPLBFMBGPAP_ ;
+      private boolean dJEMLDOFGLI_ ;
       /**
-       * <code>bool KPLBFMBGPAP = 9;</code>
-       * @return The kPLBFMBGPAP.
+       * <code>bool DJEMLDOFGLI = 11;</code>
+       * @return The dJEMLDOFGLI.
        */
       @java.lang.Override
-      public boolean getKPLBFMBGPAP() {
-        return kPLBFMBGPAP_;
+      public boolean getDJEMLDOFGLI() {
+        return dJEMLDOFGLI_;
       }
       /**
-       * <code>bool KPLBFMBGPAP = 9;</code>
-       * @param value The kPLBFMBGPAP to set.
+       * <code>bool DJEMLDOFGLI = 11;</code>
+       * @param value The dJEMLDOFGLI to set.
        * @return This builder for chaining.
        */
-      public Builder setKPLBFMBGPAP(boolean value) {
+      public Builder setDJEMLDOFGLI(boolean value) {
 
-        kPLBFMBGPAP_ = value;
+        dJEMLDOFGLI_ = value;
         bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>bool KPLBFMBGPAP = 9;</code>
+       * <code>bool DJEMLDOFGLI = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKPLBFMBGPAP() {
+      public Builder clearDJEMLDOFGLI() {
         bitField0_ = (bitField0_ & ~0x00000008);
-        kPLBFMBGPAP_ = false;
+        dJEMLDOFGLI_ = false;
         onChanged();
         return this;
       }
@@ -730,11 +730,11 @@ public final class TowerLevelStarCondDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034TowerLevelStarCondData.proto\"l\n\026TowerL" +
-      "evelStarCondData\022\023\n\013KIGONGLABHC\030\002 \001(\r\022\023\n" +
-      "\013DLEMDNGLGAP\030\004 \001(\r\022\023\n\013FGBFALDMDAB\030\003 \001(\010\022" +
-      "\023\n\013KPLBFMBGPAP\030\t \001(\010B\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\034TowerLevelStarCondData.proto\"o\n\026TowerL" +
+      "evelStarCondData\022\027\n\017star_cond_index\030\017 \001(" +
+      "\r\022\022\n\ncond_value\030\007 \001(\r\022\023\n\013HHFLBKFMCIH\030\004 \001" +
+      "(\010\022\023\n\013DJEMLDOFGLI\030\013 \001(\010B\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -745,7 +745,7 @@ public final class TowerLevelStarCondDataOuterClass {
     internal_static_TowerLevelStarCondData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerLevelStarCondData_descriptor,
-        new java.lang.String[] { "KIGONGLABHC", "DLEMDNGLGAP", "FGBFALDMDAB", "KPLBFMBGPAP", });
+        new java.lang.String[] { "StarCondIndex", "CondValue", "HHFLBKFMCIH", "DJEMLDOFGLI", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

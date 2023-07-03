@@ -32,7 +32,7 @@ public final class Uint32PairOuterClass {
   }
   /**
    * <pre>
-   * Name: ONINAMINFAL
+   * Obf: MKMEPCLAACG
    * </pre>
    *
    * Protobuf type {@code Uint32Pair}
@@ -261,7 +261,7 @@ public final class Uint32PairOuterClass {
     }
     /**
      * <pre>
-     * Name: ONINAMINFAL
+     * Obf: MKMEPCLAACG
      * </pre>
      *
      * Protobuf type {@code Uint32Pair}

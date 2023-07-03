@@ -19,21 +19,21 @@ public final class UnlockTransPointReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 scene_id = 1;</code>
+     * @return The sceneId.
+     */
+    int getSceneId();
+
+    /**
      * <code>uint32 point_id = 9;</code>
      * @return The pointId.
      */
     int getPointId();
-
-    /**
-     * <code>uint32 scene_id = 15;</code>
-     * @return The sceneId.
-     */
-    int getSceneId();
   }
   /**
    * <pre>
-   * CmdId: 3285
-   * Name: NFEMBPCMDLK
+   * CmdId: 3230
+   * Obf: PDOBCLEDKAB
    * </pre>
    *
    * Protobuf type {@code UnlockTransPointReq}
@@ -70,6 +70,17 @@ public final class UnlockTransPointReqOuterClass {
               emu.grasscutter.net.proto.UnlockTransPointReqOuterClass.UnlockTransPointReq.class, emu.grasscutter.net.proto.UnlockTransPointReqOuterClass.UnlockTransPointReq.Builder.class);
     }
 
+    public static final int SCENE_ID_FIELD_NUMBER = 1;
+    private int sceneId_ = 0;
+    /**
+     * <code>uint32 scene_id = 1;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
+    }
+
     public static final int POINT_ID_FIELD_NUMBER = 9;
     private int pointId_ = 0;
     /**
@@ -79,17 +90,6 @@ public final class UnlockTransPointReqOuterClass {
     @java.lang.Override
     public int getPointId() {
       return pointId_;
-    }
-
-    public static final int SCENE_ID_FIELD_NUMBER = 15;
-    private int sceneId_ = 0;
-    /**
-     * <code>uint32 scene_id = 15;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -106,11 +106,11 @@ public final class UnlockTransPointReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (sceneId_ != 0) {
+        output.writeUInt32(1, sceneId_);
+      }
       if (pointId_ != 0) {
         output.writeUInt32(9, pointId_);
-      }
-      if (sceneId_ != 0) {
-        output.writeUInt32(15, sceneId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -121,13 +121,13 @@ public final class UnlockTransPointReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, sceneId_);
+      }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, pointId_);
-      }
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, sceneId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -144,10 +144,10 @@ public final class UnlockTransPointReqOuterClass {
       }
       emu.grasscutter.net.proto.UnlockTransPointReqOuterClass.UnlockTransPointReq other = (emu.grasscutter.net.proto.UnlockTransPointReqOuterClass.UnlockTransPointReq) obj;
 
-      if (getPointId()
-          != other.getPointId()) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
+      if (getPointId()
+          != other.getPointId()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -159,10 +159,10 @@ public final class UnlockTransPointReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPointId();
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
+      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPointId();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -262,8 +262,8 @@ public final class UnlockTransPointReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3285
-     * Name: NFEMBPCMDLK
+     * CmdId: 3230
+     * Obf: PDOBCLEDKAB
      * </pre>
      *
      * Protobuf type {@code UnlockTransPointReq}
@@ -299,8 +299,8 @@ public final class UnlockTransPointReqOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        pointId_ = 0;
         sceneId_ = 0;
+        pointId_ = 0;
         return this;
       }
 
@@ -335,10 +335,10 @@ public final class UnlockTransPointReqOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.UnlockTransPointReqOuterClass.UnlockTransPointReq result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.pointId_ = pointId_;
+          result.sceneId_ = sceneId_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.sceneId_ = sceneId_;
+          result.pointId_ = pointId_;
         }
       }
 
@@ -386,11 +386,11 @@ public final class UnlockTransPointReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UnlockTransPointReqOuterClass.UnlockTransPointReq other) {
         if (other == emu.grasscutter.net.proto.UnlockTransPointReqOuterClass.UnlockTransPointReq.getDefaultInstance()) return this;
-        if (other.getPointId() != 0) {
-          setPointId(other.getPointId());
-        }
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
+        }
+        if (other.getPointId() != 0) {
+          setPointId(other.getPointId());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -418,16 +418,16 @@ public final class UnlockTransPointReqOuterClass {
               case 0:
                 done = true;
                 break;
-              case 72: {
-                pointId_ = input.readUInt32();
+              case 8: {
+                sceneId_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 72
-              case 120: {
-                sceneId_ = input.readUInt32();
+              } // case 8
+              case 72: {
+                pointId_ = input.readUInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 120
+              } // case 72
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -444,6 +444,38 @@ public final class UnlockTransPointReqOuterClass {
         return this;
       }
       private int bitField0_;
+
+      private int sceneId_ ;
+      /**
+       * <code>uint32 scene_id = 1;</code>
+       * @return The sceneId.
+       */
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>uint32 scene_id = 1;</code>
+       * @param value The sceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneId(int value) {
+
+        sceneId_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scene_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        sceneId_ = 0;
+        onChanged();
+        return this;
+      }
 
       private int pointId_ ;
       /**
@@ -462,7 +494,7 @@ public final class UnlockTransPointReqOuterClass {
       public Builder setPointId(int value) {
 
         pointId_ = value;
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -471,40 +503,8 @@ public final class UnlockTransPointReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        pointId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int sceneId_ ;
-      /**
-       * <code>uint32 scene_id = 15;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>uint32 scene_id = 15;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-
-        sceneId_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        sceneId_ = 0;
+        pointId_ = 0;
         onChanged();
         return this;
       }
@@ -587,8 +587,8 @@ public final class UnlockTransPointReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031UnlockTransPointReq.proto\"9\n\023UnlockTra" +
-      "nsPointReq\022\020\n\010point_id\030\t \001(\r\022\020\n\010scene_id" +
-      "\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "nsPointReq\022\020\n\010scene_id\030\001 \001(\r\022\020\n\010point_id" +
+      "\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -600,7 +600,7 @@ public final class UnlockTransPointReqOuterClass {
     internal_static_UnlockTransPointReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UnlockTransPointReq_descriptor,
-        new java.lang.String[] { "PointId", "SceneId", });
+        new java.lang.String[] { "SceneId", "PointId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

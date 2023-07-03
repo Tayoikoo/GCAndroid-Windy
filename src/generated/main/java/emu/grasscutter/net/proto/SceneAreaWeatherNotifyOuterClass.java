@@ -19,17 +19,23 @@ public final class SceneAreaWeatherNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float trans_duration = 3;</code>
+     * <code>uint32 climate_type = 10;</code>
+     * @return The climateType.
+     */
+    int getClimateType();
+
+    /**
+     * <code>float trans_duration = 9;</code>
      * @return The transDuration.
      */
     float getTransDuration();
 
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
      */
     int getWeatherValueMapCount();
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
      */
     boolean containsWeatherValueMap(
         int key);
@@ -40,12 +46,12 @@ public final class SceneAreaWeatherNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.String>
     getWeatherValueMap();
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.String>
     getWeatherValueMapMap();
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
      */
     /* nullable */
 java.lang.String getWeatherValueMapOrDefault(
@@ -53,33 +59,27 @@ java.lang.String getWeatherValueMapOrDefault(
         /* nullable */
 java.lang.String defaultValue);
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
      */
     java.lang.String getWeatherValueMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 weather_area_id = 5;</code>
+     * <code>uint32 weather_area_id = 2;</code>
      * @return The weatherAreaId.
      */
     int getWeatherAreaId();
 
     /**
-     * <code>uint32 climate_type = 2;</code>
-     * @return The climateType.
-     */
-    int getClimateType();
-
-    /**
-     * <code>uint32 weather_gadget_id = 6;</code>
+     * <code>uint32 weather_gadget_id = 4;</code>
      * @return The weatherGadgetId.
      */
     int getWeatherGadgetId();
   }
   /**
    * <pre>
-   * CmdId: 249
-   * Name: BGJJBDDEOHG
+   * CmdId: 241
+   * Obf: KMAJKMENKJC
    * </pre>
    *
    * Protobuf type {@code SceneAreaWeatherNotify}
@@ -113,7 +113,7 @@ java.lang.String defaultValue);
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 13:
+        case 6:
           return internalGetWeatherValueMap();
         default:
           throw new RuntimeException(
@@ -128,10 +128,21 @@ java.lang.String defaultValue);
               emu.grasscutter.net.proto.SceneAreaWeatherNotifyOuterClass.SceneAreaWeatherNotify.class, emu.grasscutter.net.proto.SceneAreaWeatherNotifyOuterClass.SceneAreaWeatherNotify.Builder.class);
     }
 
-    public static final int TRANS_DURATION_FIELD_NUMBER = 3;
+    public static final int CLIMATE_TYPE_FIELD_NUMBER = 10;
+    private int climateType_ = 0;
+    /**
+     * <code>uint32 climate_type = 10;</code>
+     * @return The climateType.
+     */
+    @java.lang.Override
+    public int getClimateType() {
+      return climateType_;
+    }
+
+    public static final int TRANS_DURATION_FIELD_NUMBER = 9;
     private float transDuration_ = 0F;
     /**
-     * <code>float trans_duration = 3;</code>
+     * <code>float trans_duration = 9;</code>
      * @return The transDuration.
      */
     @java.lang.Override
@@ -139,7 +150,7 @@ java.lang.String defaultValue);
       return transDuration_;
     }
 
-    public static final int WEATHER_VALUE_MAP_FIELD_NUMBER = 13;
+    public static final int WEATHER_VALUE_MAP_FIELD_NUMBER = 6;
     private static final class WeatherValueMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.String> defaultEntry =
@@ -166,7 +177,7 @@ java.lang.String defaultValue);
       return internalGetWeatherValueMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
      */
     @java.lang.Override
     public boolean containsWeatherValueMap(
@@ -183,14 +194,14 @@ java.lang.String defaultValue);
       return getWeatherValueMapMap();
     }
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
      */
     @java.lang.Override
     public java.util.Map<java.lang.Integer, java.lang.String> getWeatherValueMapMap() {
       return internalGetWeatherValueMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
      */
     @java.lang.Override
     public /* nullable */
@@ -204,7 +215,7 @@ java.lang.String defaultValue) {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+     * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
      */
     @java.lang.Override
     public java.lang.String getWeatherValueMapOrThrow(
@@ -218,10 +229,10 @@ java.lang.String defaultValue) {
       return map.get(key);
     }
 
-    public static final int WEATHER_AREA_ID_FIELD_NUMBER = 5;
+    public static final int WEATHER_AREA_ID_FIELD_NUMBER = 2;
     private int weatherAreaId_ = 0;
     /**
-     * <code>uint32 weather_area_id = 5;</code>
+     * <code>uint32 weather_area_id = 2;</code>
      * @return The weatherAreaId.
      */
     @java.lang.Override
@@ -229,21 +240,10 @@ java.lang.String defaultValue) {
       return weatherAreaId_;
     }
 
-    public static final int CLIMATE_TYPE_FIELD_NUMBER = 2;
-    private int climateType_ = 0;
-    /**
-     * <code>uint32 climate_type = 2;</code>
-     * @return The climateType.
-     */
-    @java.lang.Override
-    public int getClimateType() {
-      return climateType_;
-    }
-
-    public static final int WEATHER_GADGET_ID_FIELD_NUMBER = 6;
+    public static final int WEATHER_GADGET_ID_FIELD_NUMBER = 4;
     private int weatherGadgetId_ = 0;
     /**
-     * <code>uint32 weather_gadget_id = 6;</code>
+     * <code>uint32 weather_gadget_id = 4;</code>
      * @return The weatherGadgetId.
      */
     @java.lang.Override
@@ -265,24 +265,24 @@ java.lang.String defaultValue) {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (climateType_ != 0) {
-        output.writeUInt32(2, climateType_);
-      }
-      if (java.lang.Float.floatToRawIntBits(transDuration_) != 0) {
-        output.writeFloat(3, transDuration_);
-      }
       if (weatherAreaId_ != 0) {
-        output.writeUInt32(5, weatherAreaId_);
+        output.writeUInt32(2, weatherAreaId_);
       }
       if (weatherGadgetId_ != 0) {
-        output.writeUInt32(6, weatherGadgetId_);
+        output.writeUInt32(4, weatherGadgetId_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetWeatherValueMap(),
           WeatherValueMapDefaultEntryHolder.defaultEntry,
-          13);
+          6);
+      if (java.lang.Float.floatToRawIntBits(transDuration_) != 0) {
+        output.writeFloat(9, transDuration_);
+      }
+      if (climateType_ != 0) {
+        output.writeUInt32(10, climateType_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -292,21 +292,13 @@ java.lang.String defaultValue) {
       if (size != -1) return size;
 
       size = 0;
-      if (climateType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, climateType_);
-      }
-      if (java.lang.Float.floatToRawIntBits(transDuration_) != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, transDuration_);
-      }
       if (weatherAreaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, weatherAreaId_);
+          .computeUInt32Size(2, weatherAreaId_);
       }
       if (weatherGadgetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, weatherGadgetId_);
+          .computeUInt32Size(4, weatherGadgetId_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.String> entry
            : internalGetWeatherValueMap().getMap().entrySet()) {
@@ -316,7 +308,15 @@ java.lang.String defaultValue) {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(13, weatherValueMap__);
+            .computeMessageSize(6, weatherValueMap__);
+      }
+      if (java.lang.Float.floatToRawIntBits(transDuration_) != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(9, transDuration_);
+      }
+      if (climateType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, climateType_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -333,6 +333,8 @@ java.lang.String defaultValue) {
       }
       emu.grasscutter.net.proto.SceneAreaWeatherNotifyOuterClass.SceneAreaWeatherNotify other = (emu.grasscutter.net.proto.SceneAreaWeatherNotifyOuterClass.SceneAreaWeatherNotify) obj;
 
+      if (getClimateType()
+          != other.getClimateType()) return false;
       if (java.lang.Float.floatToIntBits(getTransDuration())
           != java.lang.Float.floatToIntBits(
               other.getTransDuration())) return false;
@@ -340,8 +342,6 @@ java.lang.String defaultValue) {
           other.internalGetWeatherValueMap())) return false;
       if (getWeatherAreaId()
           != other.getWeatherAreaId()) return false;
-      if (getClimateType()
-          != other.getClimateType()) return false;
       if (getWeatherGadgetId()
           != other.getWeatherGadgetId()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
@@ -355,6 +355,8 @@ java.lang.String defaultValue) {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CLIMATE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getClimateType();
       hash = (37 * hash) + TRANS_DURATION_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getTransDuration());
@@ -364,8 +366,6 @@ java.lang.String defaultValue) {
       }
       hash = (37 * hash) + WEATHER_AREA_ID_FIELD_NUMBER;
       hash = (53 * hash) + getWeatherAreaId();
-      hash = (37 * hash) + CLIMATE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getClimateType();
       hash = (37 * hash) + WEATHER_GADGET_ID_FIELD_NUMBER;
       hash = (53 * hash) + getWeatherGadgetId();
       hash = (29 * hash) + getUnknownFields().hashCode();
@@ -467,8 +467,8 @@ java.lang.String defaultValue) {
     }
     /**
      * <pre>
-     * CmdId: 249
-     * Name: BGJJBDDEOHG
+     * CmdId: 241
+     * Obf: KMAJKMENKJC
      * </pre>
      *
      * Protobuf type {@code SceneAreaWeatherNotify}
@@ -486,7 +486,7 @@ java.lang.String defaultValue) {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 13:
+          case 6:
             return internalGetWeatherValueMap();
           default:
             throw new RuntimeException(
@@ -497,7 +497,7 @@ java.lang.String defaultValue) {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 13:
+          case 6:
             return internalGetMutableWeatherValueMap();
           default:
             throw new RuntimeException(
@@ -526,10 +526,10 @@ java.lang.String defaultValue) {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
+        climateType_ = 0;
         transDuration_ = 0F;
         internalGetMutableWeatherValueMap().clear();
         weatherAreaId_ = 0;
-        climateType_ = 0;
         weatherGadgetId_ = 0;
         return this;
       }
@@ -565,17 +565,17 @@ java.lang.String defaultValue) {
       private void buildPartial0(emu.grasscutter.net.proto.SceneAreaWeatherNotifyOuterClass.SceneAreaWeatherNotify result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.transDuration_ = transDuration_;
+          result.climateType_ = climateType_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.transDuration_ = transDuration_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
           result.weatherValueMap_ = internalGetWeatherValueMap();
           result.weatherValueMap_.makeImmutable();
         }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.weatherAreaId_ = weatherAreaId_;
-        }
         if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.climateType_ = climateType_;
+          result.weatherAreaId_ = weatherAreaId_;
         }
         if (((from_bitField0_ & 0x00000010) != 0)) {
           result.weatherGadgetId_ = weatherGadgetId_;
@@ -626,17 +626,17 @@ java.lang.String defaultValue) {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneAreaWeatherNotifyOuterClass.SceneAreaWeatherNotify other) {
         if (other == emu.grasscutter.net.proto.SceneAreaWeatherNotifyOuterClass.SceneAreaWeatherNotify.getDefaultInstance()) return this;
+        if (other.getClimateType() != 0) {
+          setClimateType(other.getClimateType());
+        }
         if (other.getTransDuration() != 0F) {
           setTransDuration(other.getTransDuration());
         }
         internalGetMutableWeatherValueMap().mergeFrom(
             other.internalGetWeatherValueMap());
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000004;
         if (other.getWeatherAreaId() != 0) {
           setWeatherAreaId(other.getWeatherAreaId());
-        }
-        if (other.getClimateType() != 0) {
-          setClimateType(other.getClimateType());
         }
         if (other.getWeatherGadgetId() != 0) {
           setWeatherGadgetId(other.getWeatherGadgetId());
@@ -668,34 +668,34 @@ java.lang.String defaultValue) {
                 done = true;
                 break;
               case 16: {
-                climateType_ = input.readUInt32();
+                weatherAreaId_ = input.readUInt32();
                 bitField0_ |= 0x00000008;
                 break;
               } // case 16
-              case 29: {
-                transDuration_ = input.readFloat();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 29
-              case 40: {
-                weatherAreaId_ = input.readUInt32();
-                bitField0_ |= 0x00000004;
-                break;
-              } // case 40
-              case 48: {
+              case 32: {
                 weatherGadgetId_ = input.readUInt32();
                 bitField0_ |= 0x00000010;
                 break;
-              } // case 48
-              case 106: {
+              } // case 32
+              case 50: {
                 com.google.protobuf.MapEntry<java.lang.Integer, java.lang.String>
                 weatherValueMap__ = input.readMessage(
                     WeatherValueMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
                 internalGetMutableWeatherValueMap().getMutableMap().put(
                     weatherValueMap__.getKey(), weatherValueMap__.getValue());
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 50
+              case 77: {
+                transDuration_ = input.readFloat();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 106
+              } // case 77
+              case 80: {
+                climateType_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 80
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -713,9 +713,41 @@ java.lang.String defaultValue) {
       }
       private int bitField0_;
 
+      private int climateType_ ;
+      /**
+       * <code>uint32 climate_type = 10;</code>
+       * @return The climateType.
+       */
+      @java.lang.Override
+      public int getClimateType() {
+        return climateType_;
+      }
+      /**
+       * <code>uint32 climate_type = 10;</code>
+       * @param value The climateType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClimateType(int value) {
+
+        climateType_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 climate_type = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearClimateType() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        climateType_ = 0;
+        onChanged();
+        return this;
+      }
+
       private float transDuration_ ;
       /**
-       * <code>float trans_duration = 3;</code>
+       * <code>float trans_duration = 9;</code>
        * @return The transDuration.
        */
       @java.lang.Override
@@ -723,23 +755,23 @@ java.lang.String defaultValue) {
         return transDuration_;
       }
       /**
-       * <code>float trans_duration = 3;</code>
+       * <code>float trans_duration = 9;</code>
        * @param value The transDuration to set.
        * @return This builder for chaining.
        */
       public Builder setTransDuration(float value) {
 
         transDuration_ = value;
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>float trans_duration = 3;</code>
+       * <code>float trans_duration = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearTransDuration() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         transDuration_ = 0F;
         onChanged();
         return this;
@@ -764,7 +796,7 @@ java.lang.String defaultValue) {
         if (!weatherValueMap_.isMutable()) {
           weatherValueMap_ = weatherValueMap_.copy();
         }
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000004;
         onChanged();
         return weatherValueMap_;
       }
@@ -772,7 +804,7 @@ java.lang.String defaultValue) {
         return internalGetWeatherValueMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
        */
       @java.lang.Override
       public boolean containsWeatherValueMap(
@@ -789,14 +821,14 @@ java.lang.String defaultValue) {
         return getWeatherValueMapMap();
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
        */
       @java.lang.Override
       public java.util.Map<java.lang.Integer, java.lang.String> getWeatherValueMapMap() {
         return internalGetWeatherValueMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
        */
       @java.lang.Override
       public /* nullable */
@@ -810,7 +842,7 @@ java.lang.String defaultValue) {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
        */
       @java.lang.Override
       public java.lang.String getWeatherValueMapOrThrow(
@@ -824,13 +856,13 @@ java.lang.String defaultValue) {
         return map.get(key);
       }
       public Builder clearWeatherValueMap() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000004);
         internalGetMutableWeatherValueMap().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
        */
       public Builder removeWeatherValueMap(
           int key) {
@@ -845,11 +877,11 @@ java.lang.String defaultValue) {
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.String>
           getMutableWeatherValueMap() {
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000004;
         return internalGetMutableWeatherValueMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
        */
       public Builder putWeatherValueMap(
           int key,
@@ -858,23 +890,23 @@ java.lang.String defaultValue) {
         if (value == null) { throw new NullPointerException("map value"); }
         internalGetMutableWeatherValueMap().getMutableMap()
             .put(key, value);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000004;
         return this;
       }
       /**
-       * <code>map&lt;uint32, string&gt; weather_value_map = 13;</code>
+       * <code>map&lt;uint32, string&gt; weather_value_map = 6;</code>
        */
       public Builder putAllWeatherValueMap(
           java.util.Map<java.lang.Integer, java.lang.String> values) {
         internalGetMutableWeatherValueMap().getMutableMap()
             .putAll(values);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000004;
         return this;
       }
 
       private int weatherAreaId_ ;
       /**
-       * <code>uint32 weather_area_id = 5;</code>
+       * <code>uint32 weather_area_id = 2;</code>
        * @return The weatherAreaId.
        */
       @java.lang.Override
@@ -882,63 +914,31 @@ java.lang.String defaultValue) {
         return weatherAreaId_;
       }
       /**
-       * <code>uint32 weather_area_id = 5;</code>
+       * <code>uint32 weather_area_id = 2;</code>
        * @param value The weatherAreaId to set.
        * @return This builder for chaining.
        */
       public Builder setWeatherAreaId(int value) {
 
         weatherAreaId_ = value;
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 weather_area_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWeatherAreaId() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        weatherAreaId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int climateType_ ;
-      /**
-       * <code>uint32 climate_type = 2;</code>
-       * @return The climateType.
-       */
-      @java.lang.Override
-      public int getClimateType() {
-        return climateType_;
-      }
-      /**
-       * <code>uint32 climate_type = 2;</code>
-       * @param value The climateType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClimateType(int value) {
-
-        climateType_ = value;
         bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 climate_type = 2;</code>
+       * <code>uint32 weather_area_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearClimateType() {
+      public Builder clearWeatherAreaId() {
         bitField0_ = (bitField0_ & ~0x00000008);
-        climateType_ = 0;
+        weatherAreaId_ = 0;
         onChanged();
         return this;
       }
 
       private int weatherGadgetId_ ;
       /**
-       * <code>uint32 weather_gadget_id = 6;</code>
+       * <code>uint32 weather_gadget_id = 4;</code>
        * @return The weatherGadgetId.
        */
       @java.lang.Override
@@ -946,7 +946,7 @@ java.lang.String defaultValue) {
         return weatherGadgetId_;
       }
       /**
-       * <code>uint32 weather_gadget_id = 6;</code>
+       * <code>uint32 weather_gadget_id = 4;</code>
        * @param value The weatherGadgetId to set.
        * @return This builder for chaining.
        */
@@ -958,7 +958,7 @@ java.lang.String defaultValue) {
         return this;
       }
       /**
-       * <code>uint32 weather_gadget_id = 6;</code>
+       * <code>uint32 weather_gadget_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearWeatherGadgetId() {
@@ -1051,11 +1051,11 @@ java.lang.String defaultValue) {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SceneAreaWeatherNotify.proto\"\373\001\n\026Scene" +
-      "AreaWeatherNotify\022\026\n\016trans_duration\030\003 \001(" +
-      "\002\022G\n\021weather_value_map\030\r \003(\0132,.SceneArea" +
-      "WeatherNotify.WeatherValueMapEntry\022\027\n\017we" +
-      "ather_area_id\030\005 \001(\r\022\024\n\014climate_type\030\002 \001(" +
-      "\r\022\031\n\021weather_gadget_id\030\006 \001(\r\0326\n\024WeatherV" +
+      "AreaWeatherNotify\022\024\n\014climate_type\030\n \001(\r\022" +
+      "\026\n\016trans_duration\030\t \001(\002\022G\n\021weather_value" +
+      "_map\030\006 \003(\0132,.SceneAreaWeatherNotify.Weat" +
+      "herValueMapEntry\022\027\n\017weather_area_id\030\002 \001(" +
+      "\r\022\031\n\021weather_gadget_id\030\004 \001(\r\0326\n\024WeatherV" +
       "alueMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\t" +
       ":\0028\001B\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
@@ -1069,7 +1069,7 @@ java.lang.String defaultValue) {
     internal_static_SceneAreaWeatherNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneAreaWeatherNotify_descriptor,
-        new java.lang.String[] { "TransDuration", "WeatherValueMap", "WeatherAreaId", "ClimateType", "WeatherGadgetId", });
+        new java.lang.String[] { "ClimateType", "TransDuration", "WeatherValueMap", "WeatherAreaId", "WeatherGadgetId", });
     internal_static_SceneAreaWeatherNotify_WeatherValueMapEntry_descriptor =
       internal_static_SceneAreaWeatherNotify_descriptor.getNestedTypes().get(0);
     internal_static_SceneAreaWeatherNotify_WeatherValueMapEntry_fieldAccessorTable = new

@@ -68,7 +68,7 @@ public final class QueryRegionListHttpRspOuterClass {
   }
   /**
    * <pre>
-   * Name: BHOFPAFHBIE
+   * Obf: IGDHIBNDKBO
    * </pre>
    *
    * Protobuf type {@code QueryRegionListHttpRsp}
@@ -399,7 +399,7 @@ public final class QueryRegionListHttpRspOuterClass {
     }
     /**
      * <pre>
-     * Name: BHOFPAFHBIE
+     * Obf: IGDHIBNDKBO
      * </pre>
      *
      * Protobuf type {@code QueryRegionListHttpRsp}

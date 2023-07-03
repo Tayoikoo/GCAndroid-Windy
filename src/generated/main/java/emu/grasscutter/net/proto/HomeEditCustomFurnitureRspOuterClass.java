@@ -19,30 +19,30 @@ public final class HomeEditCustomFurnitureRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+     * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
      * @return Whether the customFurnitureInfo field is set.
      */
     boolean hasCustomFurnitureInfo();
     /**
-     * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+     * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
      * @return The customFurnitureInfo.
      */
     emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo getCustomFurnitureInfo();
     /**
-     * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+     * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
      */
     emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder getCustomFurnitureInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4755
-   * Name: ECKDBAFOHGM
+   * CmdId: 4551
+   * Obf: HAPOEAEAONB
    * </pre>
    *
    * Protobuf type {@code HomeEditCustomFurnitureRsp}
@@ -79,10 +79,10 @@ public final class HomeEditCustomFurnitureRspOuterClass {
               emu.grasscutter.net.proto.HomeEditCustomFurnitureRspOuterClass.HomeEditCustomFurnitureRsp.class, emu.grasscutter.net.proto.HomeEditCustomFurnitureRspOuterClass.HomeEditCustomFurnitureRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -90,10 +90,10 @@ public final class HomeEditCustomFurnitureRspOuterClass {
       return retcode_;
     }
 
-    public static final int CUSTOM_FURNITURE_INFO_FIELD_NUMBER = 9;
+    public static final int CUSTOM_FURNITURE_INFO_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo customFurnitureInfo_;
     /**
-     * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+     * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
      * @return Whether the customFurnitureInfo field is set.
      */
     @java.lang.Override
@@ -101,7 +101,7 @@ public final class HomeEditCustomFurnitureRspOuterClass {
       return customFurnitureInfo_ != null;
     }
     /**
-     * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+     * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
      * @return The customFurnitureInfo.
      */
     @java.lang.Override
@@ -109,7 +109,7 @@ public final class HomeEditCustomFurnitureRspOuterClass {
       return customFurnitureInfo_ == null ? emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.getDefaultInstance() : customFurnitureInfo_;
     }
     /**
-     * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+     * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder getCustomFurnitureInfoOrBuilder() {
@@ -131,10 +131,10 @@ public final class HomeEditCustomFurnitureRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(10, retcode_);
       }
       if (customFurnitureInfo_ != null) {
-        output.writeMessage(9, getCustomFurnitureInfo());
+        output.writeMessage(14, getCustomFurnitureInfo());
       }
       getUnknownFields().writeTo(output);
     }
@@ -147,11 +147,11 @@ public final class HomeEditCustomFurnitureRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       if (customFurnitureInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getCustomFurnitureInfo());
+          .computeMessageSize(14, getCustomFurnitureInfo());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -291,8 +291,8 @@ public final class HomeEditCustomFurnitureRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4755
-     * Name: ECKDBAFOHGM
+     * CmdId: 4551
+     * Obf: HAPOEAEAONB
      * </pre>
      *
      * Protobuf type {@code HomeEditCustomFurnitureRsp}
@@ -453,18 +453,18 @@ public final class HomeEditCustomFurnitureRspOuterClass {
               case 0:
                 done = true;
                 break;
-              case 56: {
+              case 80: {
                 retcode_ = input.readInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 56
-              case 74: {
+              } // case 80
+              case 114: {
                 input.readMessage(
                     getCustomFurnitureInfoFieldBuilder().getBuilder(),
                     extensionRegistry);
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 74
+              } // case 114
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -484,7 +484,7 @@ public final class HomeEditCustomFurnitureRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -492,7 +492,7 @@ public final class HomeEditCustomFurnitureRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -504,7 +504,7 @@ public final class HomeEditCustomFurnitureRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -518,14 +518,14 @@ public final class HomeEditCustomFurnitureRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder> customFurnitureInfoBuilder_;
       /**
-       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
        * @return Whether the customFurnitureInfo field is set.
        */
       public boolean hasCustomFurnitureInfo() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
-       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
        * @return The customFurnitureInfo.
        */
       public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo getCustomFurnitureInfo() {
@@ -536,7 +536,7 @@ public final class HomeEditCustomFurnitureRspOuterClass {
         }
       }
       /**
-       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
        */
       public Builder setCustomFurnitureInfo(emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo value) {
         if (customFurnitureInfoBuilder_ == null) {
@@ -552,7 +552,7 @@ public final class HomeEditCustomFurnitureRspOuterClass {
         return this;
       }
       /**
-       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
        */
       public Builder setCustomFurnitureInfo(
           emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder builderForValue) {
@@ -566,7 +566,7 @@ public final class HomeEditCustomFurnitureRspOuterClass {
         return this;
       }
       /**
-       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
        */
       public Builder mergeCustomFurnitureInfo(emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo value) {
         if (customFurnitureInfoBuilder_ == null) {
@@ -585,7 +585,7 @@ public final class HomeEditCustomFurnitureRspOuterClass {
         return this;
       }
       /**
-       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
        */
       public Builder clearCustomFurnitureInfo() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -598,7 +598,7 @@ public final class HomeEditCustomFurnitureRspOuterClass {
         return this;
       }
       /**
-       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
        */
       public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder getCustomFurnitureInfoBuilder() {
         bitField0_ |= 0x00000002;
@@ -606,7 +606,7 @@ public final class HomeEditCustomFurnitureRspOuterClass {
         return getCustomFurnitureInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
        */
       public emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder getCustomFurnitureInfoOrBuilder() {
         if (customFurnitureInfoBuilder_ != null) {
@@ -617,7 +617,7 @@ public final class HomeEditCustomFurnitureRspOuterClass {
         }
       }
       /**
-       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 9;</code>
+       * <code>.HomeCustomFurnitureInfo custom_furniture_info = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfo.Builder, emu.grasscutter.net.proto.HomeCustomFurnitureInfoOuterClass.HomeCustomFurnitureInfoOrBuilder> 
@@ -712,8 +712,8 @@ public final class HomeEditCustomFurnitureRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n HomeEditCustomFurnitureRsp.proto\032\035Home" +
       "CustomFurnitureInfo.proto\"f\n\032HomeEditCus" +
-      "tomFurnitureRsp\022\017\n\007retcode\030\007 \001(\005\0227\n\025cust" +
-      "om_furniture_info\030\t \001(\0132\030.HomeCustomFurn" +
+      "tomFurnitureRsp\022\017\n\007retcode\030\n \001(\005\0227\n\025cust" +
+      "om_furniture_info\030\016 \001(\0132\030.HomeCustomFurn" +
       "itureInfoB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };

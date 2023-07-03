@@ -19,11 +19,11 @@ public final class AvatarExpeditionDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
      */
     int getExpeditionInfoMapCount();
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
      */
     boolean containsExpeditionInfoMap(
         long key);
@@ -34,12 +34,12 @@ public final class AvatarExpeditionDataNotifyOuterClass {
     java.util.Map<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo>
     getExpeditionInfoMap();
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
      */
     java.util.Map<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo>
     getExpeditionInfoMapMap();
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
      */
     /* nullable */
 emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo getExpeditionInfoMapOrDefault(
@@ -47,15 +47,15 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo ge
         /* nullable */
 emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo defaultValue);
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
      */
     emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo getExpeditionInfoMapOrThrow(
         long key);
   }
   /**
    * <pre>
-   * CmdId: 1775
-   * Name: DFPOHBMCMAG
+   * CmdId: 1660
+   * Obf: PIBEOOOINOF
    * </pre>
    *
    * Protobuf type {@code AvatarExpeditionDataNotify}
@@ -89,7 +89,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 8:
+        case 6:
           return internalGetExpeditionInfoMap();
         default:
           throw new RuntimeException(
@@ -104,7 +104,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
               emu.grasscutter.net.proto.AvatarExpeditionDataNotifyOuterClass.AvatarExpeditionDataNotify.class, emu.grasscutter.net.proto.AvatarExpeditionDataNotifyOuterClass.AvatarExpeditionDataNotify.Builder.class);
     }
 
-    public static final int EXPEDITION_INFO_MAP_FIELD_NUMBER = 8;
+    public static final int EXPEDITION_INFO_MAP_FIELD_NUMBER = 6;
     private static final class ExpeditionInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo> defaultEntry =
@@ -131,7 +131,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
       return internalGetExpeditionInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
      */
     @java.lang.Override
     public boolean containsExpeditionInfoMap(
@@ -148,14 +148,14 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
       return getExpeditionInfoMapMap();
     }
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
      */
     @java.lang.Override
     public java.util.Map<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo> getExpeditionInfoMapMap() {
       return internalGetExpeditionInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
      */
     @java.lang.Override
     public /* nullable */
@@ -169,7 +169,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+     * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo getExpeditionInfoMapOrThrow(
@@ -202,7 +202,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
           output,
           internalGetExpeditionInfoMap(),
           ExpeditionInfoMapDefaultEntryHolder.defaultEntry,
-          8);
+          6);
       getUnknownFields().writeTo(output);
     }
 
@@ -220,7 +220,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(8, expeditionInfoMap__);
+            .computeMessageSize(6, expeditionInfoMap__);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -353,8 +353,8 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
     }
     /**
      * <pre>
-     * CmdId: 1775
-     * Name: DFPOHBMCMAG
+     * CmdId: 1660
+     * Obf: PIBEOOOINOF
      * </pre>
      *
      * Protobuf type {@code AvatarExpeditionDataNotify}
@@ -372,7 +372,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 8:
+          case 6:
             return internalGetExpeditionInfoMap();
           default:
             throw new RuntimeException(
@@ -383,7 +383,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 8:
+          case 6:
             return internalGetMutableExpeditionInfoMap();
           default:
             throw new RuntimeException(
@@ -525,7 +525,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
               case 0:
                 done = true;
                 break;
-              case 66: {
+              case 50: {
                 com.google.protobuf.MapEntry<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo>
                 expeditionInfoMap__ = input.readMessage(
                     ExpeditionInfoMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
@@ -533,7 +533,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
                     expeditionInfoMap__.getKey(), expeditionInfoMap__.getValue());
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 66
+              } // case 50
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -578,7 +578,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
         return internalGetExpeditionInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
        */
       @java.lang.Override
       public boolean containsExpeditionInfoMap(
@@ -595,14 +595,14 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
         return getExpeditionInfoMapMap();
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
        */
       @java.lang.Override
       public java.util.Map<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo> getExpeditionInfoMapMap() {
         return internalGetExpeditionInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
        */
       @java.lang.Override
       public /* nullable */
@@ -616,7 +616,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo getExpeditionInfoMapOrThrow(
@@ -636,7 +636,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
         return this;
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
        */
       public Builder removeExpeditionInfoMap(
           long key) {
@@ -655,7 +655,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
         return internalGetMutableExpeditionInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
        */
       public Builder putExpeditionInfoMap(
           long key,
@@ -668,7 +668,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
         return this;
       }
       /**
-       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 8;</code>
+       * <code>map&lt;uint64, .AvatarExpeditionInfo&gt; expedition_info_map = 6;</code>
        */
       public Builder putAllExpeditionInfoMap(
           java.util.Map<java.lang.Long, emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo> values) {
@@ -762,7 +762,7 @@ emu.grasscutter.net.proto.AvatarExpeditionInfoOuterClass.AvatarExpeditionInfo de
     java.lang.String[] descriptorData = {
       "\n AvatarExpeditionDataNotify.proto\032\032Avat" +
       "arExpeditionInfo.proto\"\276\001\n\032AvatarExpedit" +
-      "ionDataNotify\022O\n\023expedition_info_map\030\010 \003" +
+      "ionDataNotify\022O\n\023expedition_info_map\030\006 \003" +
       "(\01322.AvatarExpeditionDataNotify.Expediti" +
       "onInfoMapEntry\032O\n\026ExpeditionInfoMapEntry" +
       "\022\013\n\003key\030\001 \001(\004\022$\n\005value\030\002 \001(\0132\025.AvatarExp" +

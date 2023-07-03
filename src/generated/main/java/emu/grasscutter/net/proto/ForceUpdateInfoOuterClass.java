@@ -32,7 +32,7 @@ public final class ForceUpdateInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: FKIGODAGGJA
+   * Obf: BFFAMAJFAIO
    * </pre>
    *
    * Protobuf type {@code ForceUpdateInfo}
@@ -267,7 +267,7 @@ public final class ForceUpdateInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: FKIGODAGGJA
+     * Obf: BFFAMAJFAIO
      * </pre>
      *
      * Protobuf type {@code ForceUpdateInfo}

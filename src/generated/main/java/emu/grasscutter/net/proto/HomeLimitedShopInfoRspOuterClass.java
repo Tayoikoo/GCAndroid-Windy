@@ -34,15 +34,15 @@ public final class HomeLimitedShopInfoRspOuterClass {
     emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfoOrBuilder getShopInfoOrBuilder();
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 4731
-   * Name: DOFAGDOJLAN
+   * CmdId: 4800
+   * Obf: HFGOGKHLBEI
    * </pre>
    *
    * Protobuf type {@code HomeLimitedShopInfoRsp}
@@ -105,10 +105,10 @@ public final class HomeLimitedShopInfoRspOuterClass {
       return shopInfo_ == null ? emu.grasscutter.net.proto.HomeLimitedShopInfoOuterClass.HomeLimitedShopInfo.getDefaultInstance() : shopInfo_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -131,7 +131,7 @@ public final class HomeLimitedShopInfoRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(5, retcode_);
       }
       if (shopInfo_ != null) {
         output.writeMessage(9, getShopInfo());
@@ -147,7 +147,7 @@ public final class HomeLimitedShopInfoRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(5, retcode_);
       }
       if (shopInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -291,8 +291,8 @@ public final class HomeLimitedShopInfoRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4731
-     * Name: DOFAGDOJLAN
+     * CmdId: 4800
+     * Obf: HFGOGKHLBEI
      * </pre>
      *
      * Protobuf type {@code HomeLimitedShopInfoRsp}
@@ -453,11 +453,11 @@ public final class HomeLimitedShopInfoRspOuterClass {
               case 0:
                 done = true;
                 break;
-              case 8: {
+              case 40: {
                 retcode_ = input.readInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 8
+              } // case 40
               case 74: {
                 input.readMessage(
                     getShopInfoFieldBuilder().getBuilder(),
@@ -603,7 +603,7 @@ public final class HomeLimitedShopInfoRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -611,7 +611,7 @@ public final class HomeLimitedShopInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -623,7 +623,7 @@ public final class HomeLimitedShopInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -713,7 +713,7 @@ public final class HomeLimitedShopInfoRspOuterClass {
       "\n\034HomeLimitedShopInfoRsp.proto\032\031HomeLimi" +
       "tedShopInfo.proto\"R\n\026HomeLimitedShopInfo" +
       "Rsp\022\'\n\tshop_info\030\t \001(\0132\024.HomeLimitedShop" +
-      "Info\022\017\n\007retcode\030\001 \001(\005B\033\n\031emu.grasscutter" +
+      "Info\022\017\n\007retcode\030\005 \001(\005B\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

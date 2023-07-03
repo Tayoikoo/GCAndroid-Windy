@@ -20,8 +20,8 @@ public final class InvestigationReadQuestDailyNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1904
-   * Name: MJMBGMCPANO
+   * CmdId: 1913
+   * Obf: LGMLNOBFNDN
    * </pre>
    *
    * Protobuf type {@code InvestigationReadQuestDailyNotify}
@@ -206,8 +206,8 @@ public final class InvestigationReadQuestDailyNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1904
-     * Name: MJMBGMCPANO
+     * CmdId: 1913
+     * Obf: LGMLNOBFNDN
      * </pre>
      *
      * Protobuf type {@code InvestigationReadQuestDailyNotify}

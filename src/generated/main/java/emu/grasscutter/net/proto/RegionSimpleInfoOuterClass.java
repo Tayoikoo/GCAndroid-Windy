@@ -68,7 +68,7 @@ public final class RegionSimpleInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: PNCGEFDNHHF
+   * Obf: BODMEBNADPL
    * </pre>
    *
    * Protobuf type {@code RegionSimpleInfo}
@@ -453,7 +453,7 @@ public final class RegionSimpleInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: PNCGEFDNHHF
+     * Obf: BODMEBNADPL
      * </pre>
      *
      * Protobuf type {@code RegionSimpleInfo}

@@ -19,38 +19,38 @@ public final class SummerTimeDungeonInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 NGLCGINHGBJ = 5;</code>
-     * @return The nGLCGINHGBJ.
+     * <code>uint32 ONINCEHHENA = 2;</code>
+     * @return The oNINCEHHENA.
      */
-    int getNGLCGINHGBJ();
+    int getONINCEHHENA();
 
     /**
-     * <code>uint32 dungeon_id = 8;</code>
+     * <code>uint32 PADCPPNAKOL = 4;</code>
+     * @return The pADCPPNAKOL.
+     */
+    int getPADCPPNAKOL();
+
+    /**
+     * <code>uint32 dungeon_id = 7;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <code>uint32 IPLPGGHGEDH = 1;</code>
-     * @return The iPLPGGHGEDH.
+     * <code>uint32 OLEAMLOOABN = 3;</code>
+     * @return The oLEAMLOOABN.
      */
-    int getIPLPGGHGEDH();
+    int getOLEAMLOOABN();
 
     /**
-     * <code>uint32 AIHBMHNAANC = 2;</code>
-     * @return The aIHBMHNAANC.
+     * <code>uint32 BOCOGLPBAHG = 13;</code>
+     * @return The bOCOGLPBAHG.
      */
-    int getAIHBMHNAANC();
-
-    /**
-     * <code>uint32 HFPIEECODCM = 6;</code>
-     * @return The hFPIEECODCM.
-     */
-    int getHFPIEECODCM();
+    int getBOCOGLPBAHG();
   }
   /**
    * <pre>
-   * Name: JLPBPJCDOHC
+   * Obf: DOGHNGGDOPO
    * </pre>
    *
    * Protobuf type {@code SummerTimeDungeonInfo}
@@ -87,21 +87,32 @@ public final class SummerTimeDungeonInfoOuterClass {
               emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.class, emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.Builder.class);
     }
 
-    public static final int NGLCGINHGBJ_FIELD_NUMBER = 5;
-    private int nGLCGINHGBJ_ = 0;
+    public static final int ONINCEHHENA_FIELD_NUMBER = 2;
+    private int oNINCEHHENA_ = 0;
     /**
-     * <code>uint32 NGLCGINHGBJ = 5;</code>
-     * @return The nGLCGINHGBJ.
+     * <code>uint32 ONINCEHHENA = 2;</code>
+     * @return The oNINCEHHENA.
      */
     @java.lang.Override
-    public int getNGLCGINHGBJ() {
-      return nGLCGINHGBJ_;
+    public int getONINCEHHENA() {
+      return oNINCEHHENA_;
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 8;
+    public static final int PADCPPNAKOL_FIELD_NUMBER = 4;
+    private int pADCPPNAKOL_ = 0;
+    /**
+     * <code>uint32 PADCPPNAKOL = 4;</code>
+     * @return The pADCPPNAKOL.
+     */
+    @java.lang.Override
+    public int getPADCPPNAKOL() {
+      return pADCPPNAKOL_;
+    }
+
+    public static final int DUNGEON_ID_FIELD_NUMBER = 7;
     private int dungeonId_ = 0;
     /**
-     * <code>uint32 dungeon_id = 8;</code>
+     * <code>uint32 dungeon_id = 7;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -109,37 +120,26 @@ public final class SummerTimeDungeonInfoOuterClass {
       return dungeonId_;
     }
 
-    public static final int IPLPGGHGEDH_FIELD_NUMBER = 1;
-    private int iPLPGGHGEDH_ = 0;
+    public static final int OLEAMLOOABN_FIELD_NUMBER = 3;
+    private int oLEAMLOOABN_ = 0;
     /**
-     * <code>uint32 IPLPGGHGEDH = 1;</code>
-     * @return The iPLPGGHGEDH.
+     * <code>uint32 OLEAMLOOABN = 3;</code>
+     * @return The oLEAMLOOABN.
      */
     @java.lang.Override
-    public int getIPLPGGHGEDH() {
-      return iPLPGGHGEDH_;
+    public int getOLEAMLOOABN() {
+      return oLEAMLOOABN_;
     }
 
-    public static final int AIHBMHNAANC_FIELD_NUMBER = 2;
-    private int aIHBMHNAANC_ = 0;
+    public static final int BOCOGLPBAHG_FIELD_NUMBER = 13;
+    private int bOCOGLPBAHG_ = 0;
     /**
-     * <code>uint32 AIHBMHNAANC = 2;</code>
-     * @return The aIHBMHNAANC.
+     * <code>uint32 BOCOGLPBAHG = 13;</code>
+     * @return The bOCOGLPBAHG.
      */
     @java.lang.Override
-    public int getAIHBMHNAANC() {
-      return aIHBMHNAANC_;
-    }
-
-    public static final int HFPIEECODCM_FIELD_NUMBER = 6;
-    private int hFPIEECODCM_ = 0;
-    /**
-     * <code>uint32 HFPIEECODCM = 6;</code>
-     * @return The hFPIEECODCM.
-     */
-    @java.lang.Override
-    public int getHFPIEECODCM() {
-      return hFPIEECODCM_;
+    public int getBOCOGLPBAHG() {
+      return bOCOGLPBAHG_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -156,20 +156,20 @@ public final class SummerTimeDungeonInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iPLPGGHGEDH_ != 0) {
-        output.writeUInt32(1, iPLPGGHGEDH_);
+      if (oNINCEHHENA_ != 0) {
+        output.writeUInt32(2, oNINCEHHENA_);
       }
-      if (aIHBMHNAANC_ != 0) {
-        output.writeUInt32(2, aIHBMHNAANC_);
+      if (oLEAMLOOABN_ != 0) {
+        output.writeUInt32(3, oLEAMLOOABN_);
       }
-      if (nGLCGINHGBJ_ != 0) {
-        output.writeUInt32(5, nGLCGINHGBJ_);
-      }
-      if (hFPIEECODCM_ != 0) {
-        output.writeUInt32(6, hFPIEECODCM_);
+      if (pADCPPNAKOL_ != 0) {
+        output.writeUInt32(4, pADCPPNAKOL_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(8, dungeonId_);
+        output.writeUInt32(7, dungeonId_);
+      }
+      if (bOCOGLPBAHG_ != 0) {
+        output.writeUInt32(13, bOCOGLPBAHG_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -180,25 +180,25 @@ public final class SummerTimeDungeonInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iPLPGGHGEDH_ != 0) {
+      if (oNINCEHHENA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, iPLPGGHGEDH_);
+          .computeUInt32Size(2, oNINCEHHENA_);
       }
-      if (aIHBMHNAANC_ != 0) {
+      if (oLEAMLOOABN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, aIHBMHNAANC_);
+          .computeUInt32Size(3, oLEAMLOOABN_);
       }
-      if (nGLCGINHGBJ_ != 0) {
+      if (pADCPPNAKOL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, nGLCGINHGBJ_);
-      }
-      if (hFPIEECODCM_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, hFPIEECODCM_);
+          .computeUInt32Size(4, pADCPPNAKOL_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, dungeonId_);
+          .computeUInt32Size(7, dungeonId_);
+      }
+      if (bOCOGLPBAHG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, bOCOGLPBAHG_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -215,16 +215,16 @@ public final class SummerTimeDungeonInfoOuterClass {
       }
       emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo other = (emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo) obj;
 
-      if (getNGLCGINHGBJ()
-          != other.getNGLCGINHGBJ()) return false;
+      if (getONINCEHHENA()
+          != other.getONINCEHHENA()) return false;
+      if (getPADCPPNAKOL()
+          != other.getPADCPPNAKOL()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
-      if (getIPLPGGHGEDH()
-          != other.getIPLPGGHGEDH()) return false;
-      if (getAIHBMHNAANC()
-          != other.getAIHBMHNAANC()) return false;
-      if (getHFPIEECODCM()
-          != other.getHFPIEECODCM()) return false;
+      if (getOLEAMLOOABN()
+          != other.getOLEAMLOOABN()) return false;
+      if (getBOCOGLPBAHG()
+          != other.getBOCOGLPBAHG()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -236,16 +236,16 @@ public final class SummerTimeDungeonInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NGLCGINHGBJ_FIELD_NUMBER;
-      hash = (53 * hash) + getNGLCGINHGBJ();
+      hash = (37 * hash) + ONINCEHHENA_FIELD_NUMBER;
+      hash = (53 * hash) + getONINCEHHENA();
+      hash = (37 * hash) + PADCPPNAKOL_FIELD_NUMBER;
+      hash = (53 * hash) + getPADCPPNAKOL();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
-      hash = (37 * hash) + IPLPGGHGEDH_FIELD_NUMBER;
-      hash = (53 * hash) + getIPLPGGHGEDH();
-      hash = (37 * hash) + AIHBMHNAANC_FIELD_NUMBER;
-      hash = (53 * hash) + getAIHBMHNAANC();
-      hash = (37 * hash) + HFPIEECODCM_FIELD_NUMBER;
-      hash = (53 * hash) + getHFPIEECODCM();
+      hash = (37 * hash) + OLEAMLOOABN_FIELD_NUMBER;
+      hash = (53 * hash) + getOLEAMLOOABN();
+      hash = (37 * hash) + BOCOGLPBAHG_FIELD_NUMBER;
+      hash = (53 * hash) + getBOCOGLPBAHG();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,7 +345,7 @@ public final class SummerTimeDungeonInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: JLPBPJCDOHC
+     * Obf: DOGHNGGDOPO
      * </pre>
      *
      * Protobuf type {@code SummerTimeDungeonInfo}
@@ -381,11 +381,11 @@ public final class SummerTimeDungeonInfoOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        nGLCGINHGBJ_ = 0;
+        oNINCEHHENA_ = 0;
+        pADCPPNAKOL_ = 0;
         dungeonId_ = 0;
-        iPLPGGHGEDH_ = 0;
-        aIHBMHNAANC_ = 0;
-        hFPIEECODCM_ = 0;
+        oLEAMLOOABN_ = 0;
+        bOCOGLPBAHG_ = 0;
         return this;
       }
 
@@ -420,19 +420,19 @@ public final class SummerTimeDungeonInfoOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.nGLCGINHGBJ_ = nGLCGINHGBJ_;
+          result.oNINCEHHENA_ = oNINCEHHENA_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.dungeonId_ = dungeonId_;
+          result.pADCPPNAKOL_ = pADCPPNAKOL_;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.iPLPGGHGEDH_ = iPLPGGHGEDH_;
+          result.dungeonId_ = dungeonId_;
         }
         if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.aIHBMHNAANC_ = aIHBMHNAANC_;
+          result.oLEAMLOOABN_ = oLEAMLOOABN_;
         }
         if (((from_bitField0_ & 0x00000010) != 0)) {
-          result.hFPIEECODCM_ = hFPIEECODCM_;
+          result.bOCOGLPBAHG_ = bOCOGLPBAHG_;
         }
       }
 
@@ -480,20 +480,20 @@ public final class SummerTimeDungeonInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo other) {
         if (other == emu.grasscutter.net.proto.SummerTimeDungeonInfoOuterClass.SummerTimeDungeonInfo.getDefaultInstance()) return this;
-        if (other.getNGLCGINHGBJ() != 0) {
-          setNGLCGINHGBJ(other.getNGLCGINHGBJ());
+        if (other.getONINCEHHENA() != 0) {
+          setONINCEHHENA(other.getONINCEHHENA());
+        }
+        if (other.getPADCPPNAKOL() != 0) {
+          setPADCPPNAKOL(other.getPADCPPNAKOL());
         }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
         }
-        if (other.getIPLPGGHGEDH() != 0) {
-          setIPLPGGHGEDH(other.getIPLPGGHGEDH());
+        if (other.getOLEAMLOOABN() != 0) {
+          setOLEAMLOOABN(other.getOLEAMLOOABN());
         }
-        if (other.getAIHBMHNAANC() != 0) {
-          setAIHBMHNAANC(other.getAIHBMHNAANC());
-        }
-        if (other.getHFPIEECODCM() != 0) {
-          setHFPIEECODCM(other.getHFPIEECODCM());
+        if (other.getBOCOGLPBAHG() != 0) {
+          setBOCOGLPBAHG(other.getBOCOGLPBAHG());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -521,31 +521,31 @@ public final class SummerTimeDungeonInfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 8: {
-                iPLPGGHGEDH_ = input.readUInt32();
-                bitField0_ |= 0x00000004;
-                break;
-              } // case 8
               case 16: {
-                aIHBMHNAANC_ = input.readUInt32();
-                bitField0_ |= 0x00000008;
-                break;
-              } // case 16
-              case 40: {
-                nGLCGINHGBJ_ = input.readUInt32();
+                oNINCEHHENA_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 40
-              case 48: {
-                hFPIEECODCM_ = input.readUInt32();
-                bitField0_ |= 0x00000010;
+              } // case 16
+              case 24: {
+                oLEAMLOOABN_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
                 break;
-              } // case 48
-              case 64: {
-                dungeonId_ = input.readUInt32();
+              } // case 24
+              case 32: {
+                pADCPPNAKOL_ = input.readUInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 64
+              } // case 32
+              case 56: {
+                dungeonId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 56
+              case 104: {
+                bOCOGLPBAHG_ = input.readUInt32();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 104
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -563,41 +563,73 @@ public final class SummerTimeDungeonInfoOuterClass {
       }
       private int bitField0_;
 
-      private int nGLCGINHGBJ_ ;
+      private int oNINCEHHENA_ ;
       /**
-       * <code>uint32 NGLCGINHGBJ = 5;</code>
-       * @return The nGLCGINHGBJ.
+       * <code>uint32 ONINCEHHENA = 2;</code>
+       * @return The oNINCEHHENA.
        */
       @java.lang.Override
-      public int getNGLCGINHGBJ() {
-        return nGLCGINHGBJ_;
+      public int getONINCEHHENA() {
+        return oNINCEHHENA_;
       }
       /**
-       * <code>uint32 NGLCGINHGBJ = 5;</code>
-       * @param value The nGLCGINHGBJ to set.
+       * <code>uint32 ONINCEHHENA = 2;</code>
+       * @param value The oNINCEHHENA to set.
        * @return This builder for chaining.
        */
-      public Builder setNGLCGINHGBJ(int value) {
+      public Builder setONINCEHHENA(int value) {
 
-        nGLCGINHGBJ_ = value;
+        oNINCEHHENA_ = value;
         bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NGLCGINHGBJ = 5;</code>
+       * <code>uint32 ONINCEHHENA = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNGLCGINHGBJ() {
+      public Builder clearONINCEHHENA() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        nGLCGINHGBJ_ = 0;
+        oNINCEHHENA_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pADCPPNAKOL_ ;
+      /**
+       * <code>uint32 PADCPPNAKOL = 4;</code>
+       * @return The pADCPPNAKOL.
+       */
+      @java.lang.Override
+      public int getPADCPPNAKOL() {
+        return pADCPPNAKOL_;
+      }
+      /**
+       * <code>uint32 PADCPPNAKOL = 4;</code>
+       * @param value The pADCPPNAKOL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPADCPPNAKOL(int value) {
+
+        pADCPPNAKOL_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 PADCPPNAKOL = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPADCPPNAKOL() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        pADCPPNAKOL_ = 0;
         onChanged();
         return this;
       }
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 8;</code>
+       * <code>uint32 dungeon_id = 7;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -605,120 +637,88 @@ public final class SummerTimeDungeonInfoOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 8;</code>
+       * <code>uint32 dungeon_id = 7;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
       public Builder setDungeonId(int value) {
 
         dungeonId_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int iPLPGGHGEDH_ ;
-      /**
-       * <code>uint32 IPLPGGHGEDH = 1;</code>
-       * @return The iPLPGGHGEDH.
-       */
-      @java.lang.Override
-      public int getIPLPGGHGEDH() {
-        return iPLPGGHGEDH_;
-      }
-      /**
-       * <code>uint32 IPLPGGHGEDH = 1;</code>
-       * @param value The iPLPGGHGEDH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIPLPGGHGEDH(int value) {
-
-        iPLPGGHGEDH_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IPLPGGHGEDH = 1;</code>
+       * <code>uint32 dungeon_id = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIPLPGGHGEDH() {
+      public Builder clearDungeonId() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        iPLPGGHGEDH_ = 0;
+        dungeonId_ = 0;
         onChanged();
         return this;
       }
 
-      private int aIHBMHNAANC_ ;
+      private int oLEAMLOOABN_ ;
       /**
-       * <code>uint32 AIHBMHNAANC = 2;</code>
-       * @return The aIHBMHNAANC.
+       * <code>uint32 OLEAMLOOABN = 3;</code>
+       * @return The oLEAMLOOABN.
        */
       @java.lang.Override
-      public int getAIHBMHNAANC() {
-        return aIHBMHNAANC_;
+      public int getOLEAMLOOABN() {
+        return oLEAMLOOABN_;
       }
       /**
-       * <code>uint32 AIHBMHNAANC = 2;</code>
-       * @param value The aIHBMHNAANC to set.
+       * <code>uint32 OLEAMLOOABN = 3;</code>
+       * @param value The oLEAMLOOABN to set.
        * @return This builder for chaining.
        */
-      public Builder setAIHBMHNAANC(int value) {
+      public Builder setOLEAMLOOABN(int value) {
 
-        aIHBMHNAANC_ = value;
+        oLEAMLOOABN_ = value;
         bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 AIHBMHNAANC = 2;</code>
+       * <code>uint32 OLEAMLOOABN = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAIHBMHNAANC() {
+      public Builder clearOLEAMLOOABN() {
         bitField0_ = (bitField0_ & ~0x00000008);
-        aIHBMHNAANC_ = 0;
+        oLEAMLOOABN_ = 0;
         onChanged();
         return this;
       }
 
-      private int hFPIEECODCM_ ;
+      private int bOCOGLPBAHG_ ;
       /**
-       * <code>uint32 HFPIEECODCM = 6;</code>
-       * @return The hFPIEECODCM.
+       * <code>uint32 BOCOGLPBAHG = 13;</code>
+       * @return The bOCOGLPBAHG.
        */
       @java.lang.Override
-      public int getHFPIEECODCM() {
-        return hFPIEECODCM_;
+      public int getBOCOGLPBAHG() {
+        return bOCOGLPBAHG_;
       }
       /**
-       * <code>uint32 HFPIEECODCM = 6;</code>
-       * @param value The hFPIEECODCM to set.
+       * <code>uint32 BOCOGLPBAHG = 13;</code>
+       * @param value The bOCOGLPBAHG to set.
        * @return This builder for chaining.
        */
-      public Builder setHFPIEECODCM(int value) {
+      public Builder setBOCOGLPBAHG(int value) {
 
-        hFPIEECODCM_ = value;
+        bOCOGLPBAHG_ = value;
         bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 HFPIEECODCM = 6;</code>
+       * <code>uint32 BOCOGLPBAHG = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHFPIEECODCM() {
+      public Builder clearBOCOGLPBAHG() {
         bitField0_ = (bitField0_ & ~0x00000010);
-        hFPIEECODCM_ = 0;
+        bOCOGLPBAHG_ = 0;
         onChanged();
         return this;
       }
@@ -801,9 +801,9 @@ public final class SummerTimeDungeonInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033SummerTimeDungeonInfo.proto\"\177\n\025SummerT" +
-      "imeDungeonInfo\022\023\n\013NGLCGINHGBJ\030\005 \001(\r\022\022\n\nd" +
-      "ungeon_id\030\010 \001(\r\022\023\n\013IPLPGGHGEDH\030\001 \001(\r\022\023\n\013" +
-      "AIHBMHNAANC\030\002 \001(\r\022\023\n\013HFPIEECODCM\030\006 \001(\rB\033" +
+      "imeDungeonInfo\022\023\n\013ONINCEHHENA\030\002 \001(\r\022\023\n\013P" +
+      "ADCPPNAKOL\030\004 \001(\r\022\022\n\ndungeon_id\030\007 \001(\r\022\023\n\013" +
+      "OLEAMLOOABN\030\003 \001(\r\022\023\n\013BOCOGLPBAHG\030\r \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -815,7 +815,7 @@ public final class SummerTimeDungeonInfoOuterClass {
     internal_static_SummerTimeDungeonInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SummerTimeDungeonInfo_descriptor,
-        new java.lang.String[] { "NGLCGINHGBJ", "DungeonId", "IPLPGGHGEDH", "AIHBMHNAANC", "HFPIEECODCM", });
+        new java.lang.String[] { "ONINCEHHENA", "PADCPPNAKOL", "DungeonId", "OLEAMLOOABN", "BOCOGLPBAHG", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

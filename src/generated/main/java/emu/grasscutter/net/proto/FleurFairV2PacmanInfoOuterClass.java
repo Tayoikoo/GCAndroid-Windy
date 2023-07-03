@@ -19,38 +19,38 @@ public final class FleurFairV2PacmanInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+     * <code>uint32 HPKAAFECFHF = 12;</code>
+     * @return The hPKAAFECFHF.
+     */
+    int getHPKAAFECFHF();
+
+    /**
+     * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData> 
         getStageDataListList();
     /**
-     * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+     * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
      */
     emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData getStageDataList(int index);
     /**
-     * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+     * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
      */
     int getStageDataListCount();
     /**
-     * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+     * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageDataOrBuilder> 
         getStageDataListOrBuilderList();
     /**
-     * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+     * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
      */
     emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageDataOrBuilder getStageDataListOrBuilder(
         int index);
-
-    /**
-     * <code>uint32 LPIFNMHCPEF = 9;</code>
-     * @return The lPIFNMHCPEF.
-     */
-    int getLPIFNMHCPEF();
   }
   /**
    * <pre>
-   * Name: CPEBANBOLHC
+   * Obf: MNBNPPENDJF
    * </pre>
    *
    * Protobuf type {@code FleurFairV2PacmanInfo}
@@ -88,18 +88,29 @@ public final class FleurFairV2PacmanInfoOuterClass {
               emu.grasscutter.net.proto.FleurFairV2PacmanInfoOuterClass.FleurFairV2PacmanInfo.class, emu.grasscutter.net.proto.FleurFairV2PacmanInfoOuterClass.FleurFairV2PacmanInfo.Builder.class);
     }
 
-    public static final int STAGE_DATA_LIST_FIELD_NUMBER = 12;
+    public static final int HPKAAFECFHF_FIELD_NUMBER = 12;
+    private int hPKAAFECFHF_ = 0;
+    /**
+     * <code>uint32 HPKAAFECFHF = 12;</code>
+     * @return The hPKAAFECFHF.
+     */
+    @java.lang.Override
+    public int getHPKAAFECFHF() {
+      return hPKAAFECFHF_;
+    }
+
+    public static final int STAGE_DATA_LIST_FIELD_NUMBER = 13;
     @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData> stageDataList_;
     /**
-     * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+     * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData> getStageDataListList() {
       return stageDataList_;
     }
     /**
-     * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+     * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageDataOrBuilder> 
@@ -107,37 +118,26 @@ public final class FleurFairV2PacmanInfoOuterClass {
       return stageDataList_;
     }
     /**
-     * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+     * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
      */
     @java.lang.Override
     public int getStageDataListCount() {
       return stageDataList_.size();
     }
     /**
-     * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+     * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData getStageDataList(int index) {
       return stageDataList_.get(index);
     }
     /**
-     * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+     * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageDataOrBuilder getStageDataListOrBuilder(
         int index) {
       return stageDataList_.get(index);
-    }
-
-    public static final int LPIFNMHCPEF_FIELD_NUMBER = 9;
-    private int lPIFNMHCPEF_ = 0;
-    /**
-     * <code>uint32 LPIFNMHCPEF = 9;</code>
-     * @return The lPIFNMHCPEF.
-     */
-    @java.lang.Override
-    public int getLPIFNMHCPEF() {
-      return lPIFNMHCPEF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -154,11 +154,11 @@ public final class FleurFairV2PacmanInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lPIFNMHCPEF_ != 0) {
-        output.writeUInt32(9, lPIFNMHCPEF_);
+      if (hPKAAFECFHF_ != 0) {
+        output.writeUInt32(12, hPKAAFECFHF_);
       }
       for (int i = 0; i < stageDataList_.size(); i++) {
-        output.writeMessage(12, stageDataList_.get(i));
+        output.writeMessage(13, stageDataList_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -169,13 +169,13 @@ public final class FleurFairV2PacmanInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lPIFNMHCPEF_ != 0) {
+      if (hPKAAFECFHF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, lPIFNMHCPEF_);
+          .computeUInt32Size(12, hPKAAFECFHF_);
       }
       for (int i = 0; i < stageDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, stageDataList_.get(i));
+          .computeMessageSize(13, stageDataList_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -192,10 +192,10 @@ public final class FleurFairV2PacmanInfoOuterClass {
       }
       emu.grasscutter.net.proto.FleurFairV2PacmanInfoOuterClass.FleurFairV2PacmanInfo other = (emu.grasscutter.net.proto.FleurFairV2PacmanInfoOuterClass.FleurFairV2PacmanInfo) obj;
 
+      if (getHPKAAFECFHF()
+          != other.getHPKAAFECFHF()) return false;
       if (!getStageDataListList()
           .equals(other.getStageDataListList())) return false;
-      if (getLPIFNMHCPEF()
-          != other.getLPIFNMHCPEF()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -207,12 +207,12 @@ public final class FleurFairV2PacmanInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + HPKAAFECFHF_FIELD_NUMBER;
+      hash = (53 * hash) + getHPKAAFECFHF();
       if (getStageDataListCount() > 0) {
         hash = (37 * hash) + STAGE_DATA_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getStageDataListList().hashCode();
       }
-      hash = (37 * hash) + LPIFNMHCPEF_FIELD_NUMBER;
-      hash = (53 * hash) + getLPIFNMHCPEF();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,7 +312,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: CPEBANBOLHC
+     * Obf: MNBNPPENDJF
      * </pre>
      *
      * Protobuf type {@code FleurFairV2PacmanInfo}
@@ -348,14 +348,14 @@ public final class FleurFairV2PacmanInfoOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
+        hPKAAFECFHF_ = 0;
         if (stageDataListBuilder_ == null) {
           stageDataList_ = java.util.Collections.emptyList();
         } else {
           stageDataList_ = null;
           stageDataListBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        lPIFNMHCPEF_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -390,9 +390,9 @@ public final class FleurFairV2PacmanInfoOuterClass {
 
       private void buildPartialRepeatedFields(emu.grasscutter.net.proto.FleurFairV2PacmanInfoOuterClass.FleurFairV2PacmanInfo result) {
         if (stageDataListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             stageDataList_ = java.util.Collections.unmodifiableList(stageDataList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.stageDataList_ = stageDataList_;
         } else {
@@ -402,8 +402,8 @@ public final class FleurFairV2PacmanInfoOuterClass {
 
       private void buildPartial0(emu.grasscutter.net.proto.FleurFairV2PacmanInfoOuterClass.FleurFairV2PacmanInfo result) {
         int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.lPIFNMHCPEF_ = lPIFNMHCPEF_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.hPKAAFECFHF_ = hPKAAFECFHF_;
         }
       }
 
@@ -451,11 +451,14 @@ public final class FleurFairV2PacmanInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FleurFairV2PacmanInfoOuterClass.FleurFairV2PacmanInfo other) {
         if (other == emu.grasscutter.net.proto.FleurFairV2PacmanInfoOuterClass.FleurFairV2PacmanInfo.getDefaultInstance()) return this;
+        if (other.getHPKAAFECFHF() != 0) {
+          setHPKAAFECFHF(other.getHPKAAFECFHF());
+        }
         if (stageDataListBuilder_ == null) {
           if (!other.stageDataList_.isEmpty()) {
             if (stageDataList_.isEmpty()) {
               stageDataList_ = other.stageDataList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureStageDataListIsMutable();
               stageDataList_.addAll(other.stageDataList_);
@@ -468,7 +471,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
               stageDataListBuilder_.dispose();
               stageDataListBuilder_ = null;
               stageDataList_ = other.stageDataList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               stageDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getStageDataListFieldBuilder() : null;
@@ -476,9 +479,6 @@ public final class FleurFairV2PacmanInfoOuterClass {
               stageDataListBuilder_.addAllMessages(other.stageDataList_);
             }
           }
-        }
-        if (other.getLPIFNMHCPEF() != 0) {
-          setLPIFNMHCPEF(other.getLPIFNMHCPEF());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -506,12 +506,12 @@ public final class FleurFairV2PacmanInfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 72: {
-                lPIFNMHCPEF_ = input.readUInt32();
-                bitField0_ |= 0x00000002;
+              case 96: {
+                hPKAAFECFHF_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
                 break;
-              } // case 72
-              case 98: {
+              } // case 96
+              case 106: {
                 emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData m =
                     input.readMessage(
                         emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.parser(),
@@ -523,7 +523,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
                   stageDataListBuilder_.addMessage(m);
                 }
                 break;
-              } // case 98
+              } // case 106
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -541,12 +541,44 @@ public final class FleurFairV2PacmanInfoOuterClass {
       }
       private int bitField0_;
 
+      private int hPKAAFECFHF_ ;
+      /**
+       * <code>uint32 HPKAAFECFHF = 12;</code>
+       * @return The hPKAAFECFHF.
+       */
+      @java.lang.Override
+      public int getHPKAAFECFHF() {
+        return hPKAAFECFHF_;
+      }
+      /**
+       * <code>uint32 HPKAAFECFHF = 12;</code>
+       * @param value The hPKAAFECFHF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHPKAAFECFHF(int value) {
+
+        hPKAAFECFHF_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 HPKAAFECFHF = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHPKAAFECFHF() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        hPKAAFECFHF_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData> stageDataList_ =
         java.util.Collections.emptyList();
       private void ensureStageDataListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           stageDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData>(stageDataList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -554,7 +586,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
           emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData, emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.Builder, emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageDataOrBuilder> stageDataListBuilder_;
 
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData> getStageDataListList() {
         if (stageDataListBuilder_ == null) {
@@ -564,7 +596,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public int getStageDataListCount() {
         if (stageDataListBuilder_ == null) {
@@ -574,7 +606,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData getStageDataList(int index) {
         if (stageDataListBuilder_ == null) {
@@ -584,7 +616,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public Builder setStageDataList(
           int index, emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData value) {
@@ -601,7 +633,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public Builder setStageDataList(
           int index, emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.Builder builderForValue) {
@@ -615,7 +647,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public Builder addStageDataList(emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData value) {
         if (stageDataListBuilder_ == null) {
@@ -631,7 +663,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public Builder addStageDataList(
           int index, emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData value) {
@@ -648,7 +680,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public Builder addStageDataList(
           emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.Builder builderForValue) {
@@ -662,7 +694,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public Builder addStageDataList(
           int index, emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.Builder builderForValue) {
@@ -676,7 +708,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public Builder addAllStageDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData> values) {
@@ -691,12 +723,12 @@ public final class FleurFairV2PacmanInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public Builder clearStageDataList() {
         if (stageDataListBuilder_ == null) {
           stageDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           stageDataListBuilder_.clear();
@@ -704,7 +736,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public Builder removeStageDataList(int index) {
         if (stageDataListBuilder_ == null) {
@@ -717,14 +749,14 @@ public final class FleurFairV2PacmanInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.Builder getStageDataListBuilder(
           int index) {
         return getStageDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageDataOrBuilder getStageDataListOrBuilder(
           int index) {
@@ -734,7 +766,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageDataOrBuilder> 
            getStageDataListOrBuilderList() {
@@ -745,14 +777,14 @@ public final class FleurFairV2PacmanInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.Builder addStageDataListBuilder() {
         return getStageDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.getDefaultInstance());
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.Builder addStageDataListBuilder(
           int index) {
@@ -760,7 +792,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
             index, emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.getDefaultInstance());
       }
       /**
-       * <code>repeated .FleurFairV2StageData stage_data_list = 12;</code>
+       * <code>repeated .FleurFairV2StageData stage_data_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.Builder> 
            getStageDataListBuilderList() {
@@ -773,44 +805,12 @@ public final class FleurFairV2PacmanInfoOuterClass {
           stageDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData, emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageData.Builder, emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.FleurFairV2StageDataOrBuilder>(
                   stageDataList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           stageDataList_ = null;
         }
         return stageDataListBuilder_;
-      }
-
-      private int lPIFNMHCPEF_ ;
-      /**
-       * <code>uint32 LPIFNMHCPEF = 9;</code>
-       * @return The lPIFNMHCPEF.
-       */
-      @java.lang.Override
-      public int getLPIFNMHCPEF() {
-        return lPIFNMHCPEF_;
-      }
-      /**
-       * <code>uint32 LPIFNMHCPEF = 9;</code>
-       * @param value The lPIFNMHCPEF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLPIFNMHCPEF(int value) {
-
-        lPIFNMHCPEF_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 LPIFNMHCPEF = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLPIFNMHCPEF() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        lPIFNMHCPEF_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -892,8 +892,8 @@ public final class FleurFairV2PacmanInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033FleurFairV2PacmanInfo.proto\032\032FleurFair" +
       "V2StageData.proto\"\\\n\025FleurFairV2PacmanIn" +
-      "fo\022.\n\017stage_data_list\030\014 \003(\0132\025.FleurFairV" +
-      "2StageData\022\023\n\013LPIFNMHCPEF\030\t \001(\rB\033\n\031emu.g" +
+      "fo\022\023\n\013HPKAAFECFHF\030\014 \001(\r\022.\n\017stage_data_li" +
+      "st\030\r \003(\0132\025.FleurFairV2StageDataB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -906,7 +906,7 @@ public final class FleurFairV2PacmanInfoOuterClass {
     internal_static_FleurFairV2PacmanInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FleurFairV2PacmanInfo_descriptor,
-        new java.lang.String[] { "StageDataList", "LPIFNMHCPEF", });
+        new java.lang.String[] { "HPKAAFECFHF", "StageDataList", });
     emu.grasscutter.net.proto.FleurFairV2StageDataOuterClass.getDescriptor();
   }
 

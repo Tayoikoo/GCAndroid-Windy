@@ -44,8 +44,8 @@ public final class HomeMarkPointNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 4551
-   * Name: ILKGKNKEFIP
+   * CmdId: 4465
+   * Obf: LFOMAGPNMGE
    * </pre>
    *
    * Protobuf type {@code HomeMarkPointNotify}
@@ -285,8 +285,8 @@ public final class HomeMarkPointNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4551
-     * Name: ILKGKNKEFIP
+     * CmdId: 4465
+     * Obf: LFOMAGPNMGE
      * </pre>
      *
      * Protobuf type {@code HomeMarkPointNotify}

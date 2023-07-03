@@ -19,30 +19,30 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.BattlePassSchedule cur_schedule = 7;</code>
+     * <code>bool have_cur_schedule = 10;</code>
+     * @return The haveCurSchedule.
+     */
+    boolean getHaveCurSchedule();
+
+    /**
+     * <code>.BattlePassSchedule cur_schedule = 14;</code>
      * @return Whether the curSchedule field is set.
      */
     boolean hasCurSchedule();
     /**
-     * <code>.BattlePassSchedule cur_schedule = 7;</code>
+     * <code>.BattlePassSchedule cur_schedule = 14;</code>
      * @return The curSchedule.
      */
     emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule getCurSchedule();
     /**
-     * <code>.BattlePassSchedule cur_schedule = 7;</code>
+     * <code>.BattlePassSchedule cur_schedule = 14;</code>
      */
     emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassScheduleOrBuilder getCurScheduleOrBuilder();
-
-    /**
-     * <code>bool have_cur_schedule = 6;</code>
-     * @return The haveCurSchedule.
-     */
-    boolean getHaveCurSchedule();
   }
   /**
    * <pre>
-   * CmdId: 2649
-   * Name: NEBFLGBEDBM
+   * CmdId: 2621
+   * Obf: JNGCODHNGLG
    * </pre>
    *
    * Protobuf type {@code BattlePassCurScheduleUpdateNotify}
@@ -79,10 +79,21 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify.class, emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify.Builder.class);
     }
 
-    public static final int CUR_SCHEDULE_FIELD_NUMBER = 7;
+    public static final int HAVE_CUR_SCHEDULE_FIELD_NUMBER = 10;
+    private boolean haveCurSchedule_ = false;
+    /**
+     * <code>bool have_cur_schedule = 10;</code>
+     * @return The haveCurSchedule.
+     */
+    @java.lang.Override
+    public boolean getHaveCurSchedule() {
+      return haveCurSchedule_;
+    }
+
+    public static final int CUR_SCHEDULE_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule curSchedule_;
     /**
-     * <code>.BattlePassSchedule cur_schedule = 7;</code>
+     * <code>.BattlePassSchedule cur_schedule = 14;</code>
      * @return Whether the curSchedule field is set.
      */
     @java.lang.Override
@@ -90,7 +101,7 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       return curSchedule_ != null;
     }
     /**
-     * <code>.BattlePassSchedule cur_schedule = 7;</code>
+     * <code>.BattlePassSchedule cur_schedule = 14;</code>
      * @return The curSchedule.
      */
     @java.lang.Override
@@ -98,22 +109,11 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       return curSchedule_ == null ? emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule.getDefaultInstance() : curSchedule_;
     }
     /**
-     * <code>.BattlePassSchedule cur_schedule = 7;</code>
+     * <code>.BattlePassSchedule cur_schedule = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassScheduleOrBuilder getCurScheduleOrBuilder() {
       return curSchedule_ == null ? emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule.getDefaultInstance() : curSchedule_;
-    }
-
-    public static final int HAVE_CUR_SCHEDULE_FIELD_NUMBER = 6;
-    private boolean haveCurSchedule_ = false;
-    /**
-     * <code>bool have_cur_schedule = 6;</code>
-     * @return The haveCurSchedule.
-     */
-    @java.lang.Override
-    public boolean getHaveCurSchedule() {
-      return haveCurSchedule_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -131,10 +131,10 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (haveCurSchedule_ != false) {
-        output.writeBool(6, haveCurSchedule_);
+        output.writeBool(10, haveCurSchedule_);
       }
       if (curSchedule_ != null) {
-        output.writeMessage(7, getCurSchedule());
+        output.writeMessage(14, getCurSchedule());
       }
       getUnknownFields().writeTo(output);
     }
@@ -147,11 +147,11 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       size = 0;
       if (haveCurSchedule_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, haveCurSchedule_);
+          .computeBoolSize(10, haveCurSchedule_);
       }
       if (curSchedule_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getCurSchedule());
+          .computeMessageSize(14, getCurSchedule());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -168,13 +168,13 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       }
       emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify other = (emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify) obj;
 
+      if (getHaveCurSchedule()
+          != other.getHaveCurSchedule()) return false;
       if (hasCurSchedule() != other.hasCurSchedule()) return false;
       if (hasCurSchedule()) {
         if (!getCurSchedule()
             .equals(other.getCurSchedule())) return false;
       }
-      if (getHaveCurSchedule()
-          != other.getHaveCurSchedule()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -186,13 +186,13 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + HAVE_CUR_SCHEDULE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getHaveCurSchedule());
       if (hasCurSchedule()) {
         hash = (37 * hash) + CUR_SCHEDULE_FIELD_NUMBER;
         hash = (53 * hash) + getCurSchedule().hashCode();
       }
-      hash = (37 * hash) + HAVE_CUR_SCHEDULE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHaveCurSchedule());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -292,8 +292,8 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2649
-     * Name: NEBFLGBEDBM
+     * CmdId: 2621
+     * Obf: JNGCODHNGLG
      * </pre>
      *
      * Protobuf type {@code BattlePassCurScheduleUpdateNotify}
@@ -329,12 +329,12 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
+        haveCurSchedule_ = false;
         curSchedule_ = null;
         if (curScheduleBuilder_ != null) {
           curScheduleBuilder_.dispose();
           curScheduleBuilder_ = null;
         }
-        haveCurSchedule_ = false;
         return this;
       }
 
@@ -369,12 +369,12 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.haveCurSchedule_ = haveCurSchedule_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
           result.curSchedule_ = curScheduleBuilder_ == null
               ? curSchedule_
               : curScheduleBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.haveCurSchedule_ = haveCurSchedule_;
         }
       }
 
@@ -422,11 +422,11 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify other) {
         if (other == emu.grasscutter.net.proto.BattlePassCurScheduleUpdateNotifyOuterClass.BattlePassCurScheduleUpdateNotify.getDefaultInstance()) return this;
-        if (other.hasCurSchedule()) {
-          mergeCurSchedule(other.getCurSchedule());
-        }
         if (other.getHaveCurSchedule() != false) {
           setHaveCurSchedule(other.getHaveCurSchedule());
+        }
+        if (other.hasCurSchedule()) {
+          mergeCurSchedule(other.getCurSchedule());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -454,18 +454,18 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
               case 0:
                 done = true;
                 break;
-              case 48: {
+              case 80: {
                 haveCurSchedule_ = input.readBool();
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000001;
                 break;
-              } // case 48
-              case 58: {
+              } // case 80
+              case 114: {
                 input.readMessage(
                     getCurScheduleFieldBuilder().getBuilder(),
                     extensionRegistry);
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
                 break;
-              } // case 58
+              } // case 114
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -483,18 +483,50 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
       }
       private int bitField0_;
 
+      private boolean haveCurSchedule_ ;
+      /**
+       * <code>bool have_cur_schedule = 10;</code>
+       * @return The haveCurSchedule.
+       */
+      @java.lang.Override
+      public boolean getHaveCurSchedule() {
+        return haveCurSchedule_;
+      }
+      /**
+       * <code>bool have_cur_schedule = 10;</code>
+       * @param value The haveCurSchedule to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHaveCurSchedule(boolean value) {
+
+        haveCurSchedule_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool have_cur_schedule = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHaveCurSchedule() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        haveCurSchedule_ = false;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule curSchedule_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule, emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule.Builder, emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassScheduleOrBuilder> curScheduleBuilder_;
       /**
-       * <code>.BattlePassSchedule cur_schedule = 7;</code>
+       * <code>.BattlePassSchedule cur_schedule = 14;</code>
        * @return Whether the curSchedule field is set.
        */
       public boolean hasCurSchedule() {
-        return ((bitField0_ & 0x00000001) != 0);
+        return ((bitField0_ & 0x00000002) != 0);
       }
       /**
-       * <code>.BattlePassSchedule cur_schedule = 7;</code>
+       * <code>.BattlePassSchedule cur_schedule = 14;</code>
        * @return The curSchedule.
        */
       public emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule getCurSchedule() {
@@ -505,7 +537,7 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.BattlePassSchedule cur_schedule = 7;</code>
+       * <code>.BattlePassSchedule cur_schedule = 14;</code>
        */
       public Builder setCurSchedule(emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule value) {
         if (curScheduleBuilder_ == null) {
@@ -516,12 +548,12 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
         } else {
           curScheduleBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>.BattlePassSchedule cur_schedule = 7;</code>
+       * <code>.BattlePassSchedule cur_schedule = 14;</code>
        */
       public Builder setCurSchedule(
           emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule.Builder builderForValue) {
@@ -530,16 +562,16 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
         } else {
           curScheduleBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>.BattlePassSchedule cur_schedule = 7;</code>
+       * <code>.BattlePassSchedule cur_schedule = 14;</code>
        */
       public Builder mergeCurSchedule(emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule value) {
         if (curScheduleBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0) &&
+          if (((bitField0_ & 0x00000002) != 0) &&
             curSchedule_ != null &&
             curSchedule_ != emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule.getDefaultInstance()) {
             getCurScheduleBuilder().mergeFrom(value);
@@ -549,15 +581,15 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
         } else {
           curScheduleBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>.BattlePassSchedule cur_schedule = 7;</code>
+       * <code>.BattlePassSchedule cur_schedule = 14;</code>
        */
       public Builder clearCurSchedule() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         curSchedule_ = null;
         if (curScheduleBuilder_ != null) {
           curScheduleBuilder_.dispose();
@@ -567,15 +599,15 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.BattlePassSchedule cur_schedule = 7;</code>
+       * <code>.BattlePassSchedule cur_schedule = 14;</code>
        */
       public emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule.Builder getCurScheduleBuilder() {
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         onChanged();
         return getCurScheduleFieldBuilder().getBuilder();
       }
       /**
-       * <code>.BattlePassSchedule cur_schedule = 7;</code>
+       * <code>.BattlePassSchedule cur_schedule = 14;</code>
        */
       public emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassScheduleOrBuilder getCurScheduleOrBuilder() {
         if (curScheduleBuilder_ != null) {
@@ -586,7 +618,7 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.BattlePassSchedule cur_schedule = 7;</code>
+       * <code>.BattlePassSchedule cur_schedule = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule, emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule.Builder, emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassScheduleOrBuilder> 
@@ -600,38 +632,6 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
           curSchedule_ = null;
         }
         return curScheduleBuilder_;
-      }
-
-      private boolean haveCurSchedule_ ;
-      /**
-       * <code>bool have_cur_schedule = 6;</code>
-       * @return The haveCurSchedule.
-       */
-      @java.lang.Override
-      public boolean getHaveCurSchedule() {
-        return haveCurSchedule_;
-      }
-      /**
-       * <code>bool have_cur_schedule = 6;</code>
-       * @param value The haveCurSchedule to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHaveCurSchedule(boolean value) {
-
-        haveCurSchedule_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool have_cur_schedule = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHaveCurSchedule() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        haveCurSchedule_ = false;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -713,9 +713,9 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'BattlePassCurScheduleUpdateNotify.prot" +
       "o\032\030BattlePassSchedule.proto\"i\n!BattlePas" +
-      "sCurScheduleUpdateNotify\022)\n\014cur_schedule" +
-      "\030\007 \001(\0132\023.BattlePassSchedule\022\031\n\021have_cur_" +
-      "schedule\030\006 \001(\010B\033\n\031emu.grasscutter.net.pr" +
+      "sCurScheduleUpdateNotify\022\031\n\021have_cur_sch" +
+      "edule\030\n \001(\010\022)\n\014cur_schedule\030\016 \001(\0132\023.Batt" +
+      "lePassScheduleB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -728,7 +728,7 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
     internal_static_BattlePassCurScheduleUpdateNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BattlePassCurScheduleUpdateNotify_descriptor,
-        new java.lang.String[] { "CurSchedule", "HaveCurSchedule", });
+        new java.lang.String[] { "HaveCurSchedule", "CurSchedule", });
     emu.grasscutter.net.proto.BattlePassScheduleOuterClass.getDescriptor();
   }
 

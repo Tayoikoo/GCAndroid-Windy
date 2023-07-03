@@ -19,24 +19,24 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.TreasureMapRegionInfo region_info = 1;</code>
+     * <code>.TreasureMapRegionInfo region_info = 10;</code>
      * @return Whether the regionInfo field is set.
      */
     boolean hasRegionInfo();
     /**
-     * <code>.TreasureMapRegionInfo region_info = 1;</code>
+     * <code>.TreasureMapRegionInfo region_info = 10;</code>
      * @return The regionInfo.
      */
     emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo getRegionInfo();
     /**
-     * <code>.TreasureMapRegionInfo region_info = 1;</code>
+     * <code>.TreasureMapRegionInfo region_info = 10;</code>
      */
     emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfoOrBuilder getRegionInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 2117
-   * Name: IBCJOBLIEGP
+   * CmdId: 2034
+   * Obf: DEKOGKDOANP
    * </pre>
    *
    * Protobuf type {@code TreasureMapRegionInfoNotify}
@@ -73,10 +73,10 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
               emu.grasscutter.net.proto.TreasureMapRegionInfoNotifyOuterClass.TreasureMapRegionInfoNotify.class, emu.grasscutter.net.proto.TreasureMapRegionInfoNotifyOuterClass.TreasureMapRegionInfoNotify.Builder.class);
     }
 
-    public static final int REGION_INFO_FIELD_NUMBER = 1;
+    public static final int REGION_INFO_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo regionInfo_;
     /**
-     * <code>.TreasureMapRegionInfo region_info = 1;</code>
+     * <code>.TreasureMapRegionInfo region_info = 10;</code>
      * @return Whether the regionInfo field is set.
      */
     @java.lang.Override
@@ -84,7 +84,7 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
       return regionInfo_ != null;
     }
     /**
-     * <code>.TreasureMapRegionInfo region_info = 1;</code>
+     * <code>.TreasureMapRegionInfo region_info = 10;</code>
      * @return The regionInfo.
      */
     @java.lang.Override
@@ -92,7 +92,7 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
       return regionInfo_ == null ? emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.getDefaultInstance() : regionInfo_;
     }
     /**
-     * <code>.TreasureMapRegionInfo region_info = 1;</code>
+     * <code>.TreasureMapRegionInfo region_info = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfoOrBuilder getRegionInfoOrBuilder() {
@@ -114,7 +114,7 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (regionInfo_ != null) {
-        output.writeMessage(1, getRegionInfo());
+        output.writeMessage(10, getRegionInfo());
       }
       getUnknownFields().writeTo(output);
     }
@@ -127,7 +127,7 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
       size = 0;
       if (regionInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getRegionInfo());
+          .computeMessageSize(10, getRegionInfo());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -263,8 +263,8 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2117
-     * Name: IBCJOBLIEGP
+     * CmdId: 2034
+     * Obf: DEKOGKDOANP
      * </pre>
      *
      * Protobuf type {@code TreasureMapRegionInfoNotify}
@@ -418,13 +418,13 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
               case 0:
                 done = true;
                 break;
-              case 10: {
+              case 82: {
                 input.readMessage(
                     getRegionInfoFieldBuilder().getBuilder(),
                     extensionRegistry);
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 10
+              } // case 82
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -446,14 +446,14 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo, emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.Builder, emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfoOrBuilder> regionInfoBuilder_;
       /**
-       * <code>.TreasureMapRegionInfo region_info = 1;</code>
+       * <code>.TreasureMapRegionInfo region_info = 10;</code>
        * @return Whether the regionInfo field is set.
        */
       public boolean hasRegionInfo() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.TreasureMapRegionInfo region_info = 1;</code>
+       * <code>.TreasureMapRegionInfo region_info = 10;</code>
        * @return The regionInfo.
        */
       public emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo getRegionInfo() {
@@ -464,7 +464,7 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.TreasureMapRegionInfo region_info = 1;</code>
+       * <code>.TreasureMapRegionInfo region_info = 10;</code>
        */
       public Builder setRegionInfo(emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo value) {
         if (regionInfoBuilder_ == null) {
@@ -480,7 +480,7 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureMapRegionInfo region_info = 1;</code>
+       * <code>.TreasureMapRegionInfo region_info = 10;</code>
        */
       public Builder setRegionInfo(
           emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.Builder builderForValue) {
@@ -494,7 +494,7 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureMapRegionInfo region_info = 1;</code>
+       * <code>.TreasureMapRegionInfo region_info = 10;</code>
        */
       public Builder mergeRegionInfo(emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo value) {
         if (regionInfoBuilder_ == null) {
@@ -513,7 +513,7 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureMapRegionInfo region_info = 1;</code>
+       * <code>.TreasureMapRegionInfo region_info = 10;</code>
        */
       public Builder clearRegionInfo() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -526,7 +526,7 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.TreasureMapRegionInfo region_info = 1;</code>
+       * <code>.TreasureMapRegionInfo region_info = 10;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.Builder getRegionInfoBuilder() {
         bitField0_ |= 0x00000001;
@@ -534,7 +534,7 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
         return getRegionInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TreasureMapRegionInfo region_info = 1;</code>
+       * <code>.TreasureMapRegionInfo region_info = 10;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfoOrBuilder getRegionInfoOrBuilder() {
         if (regionInfoBuilder_ != null) {
@@ -545,7 +545,7 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.TreasureMapRegionInfo region_info = 1;</code>
+       * <code>.TreasureMapRegionInfo region_info = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo, emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.Builder, emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfoOrBuilder> 
@@ -640,7 +640,7 @@ public final class TreasureMapRegionInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n!TreasureMapRegionInfoNotify.proto\032\033Tre" +
       "asureMapRegionInfo.proto\"J\n\033TreasureMapR" +
-      "egionInfoNotify\022+\n\013region_info\030\001 \001(\0132\026.T" +
+      "egionInfoNotify\022+\n\013region_info\030\n \001(\0132\026.T" +
       "reasureMapRegionInfoB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };

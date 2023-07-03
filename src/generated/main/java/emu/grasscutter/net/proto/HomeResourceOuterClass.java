@@ -19,7 +19,13 @@ public final class HomeResourceOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>fixed32 next_refresh_time = 9;</code>
+     * <code>uint32 store_value = 4;</code>
+     * @return The storeValue.
+     */
+    int getStoreValue();
+
+    /**
+     * <code>fixed32 next_refresh_time = 5;</code>
      * @return The nextRefreshTime.
      */
     int getNextRefreshTime();
@@ -29,16 +35,10 @@ public final class HomeResourceOuterClass {
      * @return The storeLimit.
      */
     int getStoreLimit();
-
-    /**
-     * <code>uint32 store_value = 10;</code>
-     * @return The storeValue.
-     */
-    int getStoreValue();
   }
   /**
    * <pre>
-   * Name: LDMGBIGBOLN
+   * Obf: KEJFFCAKLNH
    * </pre>
    *
    * Protobuf type {@code HomeResource}
@@ -75,10 +75,21 @@ public final class HomeResourceOuterClass {
               emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.class, emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.Builder.class);
     }
 
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 9;
+    public static final int STORE_VALUE_FIELD_NUMBER = 4;
+    private int storeValue_ = 0;
+    /**
+     * <code>uint32 store_value = 4;</code>
+     * @return The storeValue.
+     */
+    @java.lang.Override
+    public int getStoreValue() {
+      return storeValue_;
+    }
+
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 5;
     private int nextRefreshTime_ = 0;
     /**
-     * <code>fixed32 next_refresh_time = 9;</code>
+     * <code>fixed32 next_refresh_time = 5;</code>
      * @return The nextRefreshTime.
      */
     @java.lang.Override
@@ -97,17 +108,6 @@ public final class HomeResourceOuterClass {
       return storeLimit_;
     }
 
-    public static final int STORE_VALUE_FIELD_NUMBER = 10;
-    private int storeValue_ = 0;
-    /**
-     * <code>uint32 store_value = 10;</code>
-     * @return The storeValue.
-     */
-    @java.lang.Override
-    public int getStoreValue() {
-      return storeValue_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -122,11 +122,11 @@ public final class HomeResourceOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (nextRefreshTime_ != 0) {
-        output.writeFixed32(9, nextRefreshTime_);
-      }
       if (storeValue_ != 0) {
-        output.writeUInt32(10, storeValue_);
+        output.writeUInt32(4, storeValue_);
+      }
+      if (nextRefreshTime_ != 0) {
+        output.writeFixed32(5, nextRefreshTime_);
       }
       if (storeLimit_ != 0) {
         output.writeUInt32(13, storeLimit_);
@@ -140,13 +140,13 @@ public final class HomeResourceOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (nextRefreshTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(9, nextRefreshTime_);
-      }
       if (storeValue_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, storeValue_);
+          .computeUInt32Size(4, storeValue_);
+      }
+      if (nextRefreshTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed32Size(5, nextRefreshTime_);
       }
       if (storeLimit_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -167,12 +167,12 @@ public final class HomeResourceOuterClass {
       }
       emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource other = (emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource) obj;
 
+      if (getStoreValue()
+          != other.getStoreValue()) return false;
       if (getNextRefreshTime()
           != other.getNextRefreshTime()) return false;
       if (getStoreLimit()
           != other.getStoreLimit()) return false;
-      if (getStoreValue()
-          != other.getStoreValue()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -184,12 +184,12 @@ public final class HomeResourceOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + STORE_VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + getStoreValue();
       hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getNextRefreshTime();
       hash = (37 * hash) + STORE_LIMIT_FIELD_NUMBER;
       hash = (53 * hash) + getStoreLimit();
-      hash = (37 * hash) + STORE_VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getStoreValue();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -289,7 +289,7 @@ public final class HomeResourceOuterClass {
     }
     /**
      * <pre>
-     * Name: LDMGBIGBOLN
+     * Obf: KEJFFCAKLNH
      * </pre>
      *
      * Protobuf type {@code HomeResource}
@@ -325,9 +325,9 @@ public final class HomeResourceOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
+        storeValue_ = 0;
         nextRefreshTime_ = 0;
         storeLimit_ = 0;
-        storeValue_ = 0;
         return this;
       }
 
@@ -362,13 +362,13 @@ public final class HomeResourceOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.nextRefreshTime_ = nextRefreshTime_;
+          result.storeValue_ = storeValue_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.storeLimit_ = storeLimit_;
+          result.nextRefreshTime_ = nextRefreshTime_;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.storeValue_ = storeValue_;
+          result.storeLimit_ = storeLimit_;
         }
       }
 
@@ -416,14 +416,14 @@ public final class HomeResourceOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource other) {
         if (other == emu.grasscutter.net.proto.HomeResourceOuterClass.HomeResource.getDefaultInstance()) return this;
+        if (other.getStoreValue() != 0) {
+          setStoreValue(other.getStoreValue());
+        }
         if (other.getNextRefreshTime() != 0) {
           setNextRefreshTime(other.getNextRefreshTime());
         }
         if (other.getStoreLimit() != 0) {
           setStoreLimit(other.getStoreLimit());
-        }
-        if (other.getStoreValue() != 0) {
-          setStoreValue(other.getStoreValue());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -451,19 +451,19 @@ public final class HomeResourceOuterClass {
               case 0:
                 done = true;
                 break;
-              case 77: {
-                nextRefreshTime_ = input.readFixed32();
+              case 32: {
+                storeValue_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 77
-              case 80: {
-                storeValue_ = input.readUInt32();
-                bitField0_ |= 0x00000004;
+              } // case 32
+              case 45: {
+                nextRefreshTime_ = input.readFixed32();
+                bitField0_ |= 0x00000002;
                 break;
-              } // case 80
+              } // case 45
               case 104: {
                 storeLimit_ = input.readUInt32();
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000004;
                 break;
               } // case 104
               default: {
@@ -483,9 +483,41 @@ public final class HomeResourceOuterClass {
       }
       private int bitField0_;
 
+      private int storeValue_ ;
+      /**
+       * <code>uint32 store_value = 4;</code>
+       * @return The storeValue.
+       */
+      @java.lang.Override
+      public int getStoreValue() {
+        return storeValue_;
+      }
+      /**
+       * <code>uint32 store_value = 4;</code>
+       * @param value The storeValue to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStoreValue(int value) {
+
+        storeValue_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 store_value = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStoreValue() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        storeValue_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int nextRefreshTime_ ;
       /**
-       * <code>fixed32 next_refresh_time = 9;</code>
+       * <code>fixed32 next_refresh_time = 5;</code>
        * @return The nextRefreshTime.
        */
       @java.lang.Override
@@ -493,23 +525,23 @@ public final class HomeResourceOuterClass {
         return nextRefreshTime_;
       }
       /**
-       * <code>fixed32 next_refresh_time = 9;</code>
+       * <code>fixed32 next_refresh_time = 5;</code>
        * @param value The nextRefreshTime to set.
        * @return This builder for chaining.
        */
       public Builder setNextRefreshTime(int value) {
 
         nextRefreshTime_ = value;
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>fixed32 next_refresh_time = 9;</code>
+       * <code>fixed32 next_refresh_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearNextRefreshTime() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         nextRefreshTime_ = 0;
         onChanged();
         return this;
@@ -532,7 +564,7 @@ public final class HomeResourceOuterClass {
       public Builder setStoreLimit(int value) {
 
         storeLimit_ = value;
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -541,40 +573,8 @@ public final class HomeResourceOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearStoreLimit() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        storeLimit_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int storeValue_ ;
-      /**
-       * <code>uint32 store_value = 10;</code>
-       * @return The storeValue.
-       */
-      @java.lang.Override
-      public int getStoreValue() {
-        return storeValue_;
-      }
-      /**
-       * <code>uint32 store_value = 10;</code>
-       * @param value The storeValue to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStoreValue(int value) {
-
-        storeValue_ = value;
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 store_value = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStoreValue() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        storeValue_ = 0;
+        storeLimit_ = 0;
         onChanged();
         return this;
       }
@@ -656,9 +656,9 @@ public final class HomeResourceOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022HomeResource.proto\"S\n\014HomeResource\022\031\n\021" +
-      "next_refresh_time\030\t \001(\007\022\023\n\013store_limit\030\r" +
-      " \001(\r\022\023\n\013store_value\030\n \001(\rB\033\n\031emu.grasscu" +
+      "\n\022HomeResource.proto\"S\n\014HomeResource\022\023\n\013" +
+      "store_value\030\004 \001(\r\022\031\n\021next_refresh_time\030\005" +
+      " \001(\007\022\023\n\013store_limit\030\r \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -670,7 +670,7 @@ public final class HomeResourceOuterClass {
     internal_static_HomeResource_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeResource_descriptor,
-        new java.lang.String[] { "NextRefreshTime", "StoreLimit", "StoreValue", });
+        new java.lang.String[] { "StoreValue", "NextRefreshTime", "StoreLimit", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

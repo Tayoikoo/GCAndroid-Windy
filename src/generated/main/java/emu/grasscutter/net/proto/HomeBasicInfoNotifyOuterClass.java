@@ -19,24 +19,24 @@ public final class HomeBasicInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HomeBasicInfo basic_info = 14;</code>
+     * <code>.HomeBasicInfo basic_info = 7;</code>
      * @return Whether the basicInfo field is set.
      */
     boolean hasBasicInfo();
     /**
-     * <code>.HomeBasicInfo basic_info = 14;</code>
+     * <code>.HomeBasicInfo basic_info = 7;</code>
      * @return The basicInfo.
      */
     emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfo getBasicInfo();
     /**
-     * <code>.HomeBasicInfo basic_info = 14;</code>
+     * <code>.HomeBasicInfo basic_info = 7;</code>
      */
     emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfoOrBuilder getBasicInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4727
-   * Name: IIHAAPIDLAD
+   * CmdId: 4683
+   * Obf: DHOEJMLMNMB
    * </pre>
    *
    * Protobuf type {@code HomeBasicInfoNotify}
@@ -73,10 +73,10 @@ public final class HomeBasicInfoNotifyOuterClass {
               emu.grasscutter.net.proto.HomeBasicInfoNotifyOuterClass.HomeBasicInfoNotify.class, emu.grasscutter.net.proto.HomeBasicInfoNotifyOuterClass.HomeBasicInfoNotify.Builder.class);
     }
 
-    public static final int BASIC_INFO_FIELD_NUMBER = 14;
+    public static final int BASIC_INFO_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfo basicInfo_;
     /**
-     * <code>.HomeBasicInfo basic_info = 14;</code>
+     * <code>.HomeBasicInfo basic_info = 7;</code>
      * @return Whether the basicInfo field is set.
      */
     @java.lang.Override
@@ -84,7 +84,7 @@ public final class HomeBasicInfoNotifyOuterClass {
       return basicInfo_ != null;
     }
     /**
-     * <code>.HomeBasicInfo basic_info = 14;</code>
+     * <code>.HomeBasicInfo basic_info = 7;</code>
      * @return The basicInfo.
      */
     @java.lang.Override
@@ -92,7 +92,7 @@ public final class HomeBasicInfoNotifyOuterClass {
       return basicInfo_ == null ? emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfo.getDefaultInstance() : basicInfo_;
     }
     /**
-     * <code>.HomeBasicInfo basic_info = 14;</code>
+     * <code>.HomeBasicInfo basic_info = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfoOrBuilder getBasicInfoOrBuilder() {
@@ -114,7 +114,7 @@ public final class HomeBasicInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (basicInfo_ != null) {
-        output.writeMessage(14, getBasicInfo());
+        output.writeMessage(7, getBasicInfo());
       }
       getUnknownFields().writeTo(output);
     }
@@ -127,7 +127,7 @@ public final class HomeBasicInfoNotifyOuterClass {
       size = 0;
       if (basicInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getBasicInfo());
+          .computeMessageSize(7, getBasicInfo());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -263,8 +263,8 @@ public final class HomeBasicInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4727
-     * Name: IIHAAPIDLAD
+     * CmdId: 4683
+     * Obf: DHOEJMLMNMB
      * </pre>
      *
      * Protobuf type {@code HomeBasicInfoNotify}
@@ -418,13 +418,13 @@ public final class HomeBasicInfoNotifyOuterClass {
               case 0:
                 done = true;
                 break;
-              case 114: {
+              case 58: {
                 input.readMessage(
                     getBasicInfoFieldBuilder().getBuilder(),
                     extensionRegistry);
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 114
+              } // case 58
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -446,14 +446,14 @@ public final class HomeBasicInfoNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfo, emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfo.Builder, emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfoOrBuilder> basicInfoBuilder_;
       /**
-       * <code>.HomeBasicInfo basic_info = 14;</code>
+       * <code>.HomeBasicInfo basic_info = 7;</code>
        * @return Whether the basicInfo field is set.
        */
       public boolean hasBasicInfo() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.HomeBasicInfo basic_info = 14;</code>
+       * <code>.HomeBasicInfo basic_info = 7;</code>
        * @return The basicInfo.
        */
       public emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfo getBasicInfo() {
@@ -464,7 +464,7 @@ public final class HomeBasicInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.HomeBasicInfo basic_info = 14;</code>
+       * <code>.HomeBasicInfo basic_info = 7;</code>
        */
       public Builder setBasicInfo(emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfo value) {
         if (basicInfoBuilder_ == null) {
@@ -480,7 +480,7 @@ public final class HomeBasicInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HomeBasicInfo basic_info = 14;</code>
+       * <code>.HomeBasicInfo basic_info = 7;</code>
        */
       public Builder setBasicInfo(
           emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfo.Builder builderForValue) {
@@ -494,7 +494,7 @@ public final class HomeBasicInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HomeBasicInfo basic_info = 14;</code>
+       * <code>.HomeBasicInfo basic_info = 7;</code>
        */
       public Builder mergeBasicInfo(emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfo value) {
         if (basicInfoBuilder_ == null) {
@@ -513,7 +513,7 @@ public final class HomeBasicInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HomeBasicInfo basic_info = 14;</code>
+       * <code>.HomeBasicInfo basic_info = 7;</code>
        */
       public Builder clearBasicInfo() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -526,7 +526,7 @@ public final class HomeBasicInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HomeBasicInfo basic_info = 14;</code>
+       * <code>.HomeBasicInfo basic_info = 7;</code>
        */
       public emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfo.Builder getBasicInfoBuilder() {
         bitField0_ |= 0x00000001;
@@ -534,7 +534,7 @@ public final class HomeBasicInfoNotifyOuterClass {
         return getBasicInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeBasicInfo basic_info = 14;</code>
+       * <code>.HomeBasicInfo basic_info = 7;</code>
        */
       public emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfoOrBuilder getBasicInfoOrBuilder() {
         if (basicInfoBuilder_ != null) {
@@ -545,7 +545,7 @@ public final class HomeBasicInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.HomeBasicInfo basic_info = 14;</code>
+       * <code>.HomeBasicInfo basic_info = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfo, emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfo.Builder, emu.grasscutter.net.proto.HomeBasicInfoOuterClass.HomeBasicInfoOrBuilder> 
@@ -640,7 +640,7 @@ public final class HomeBasicInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031HomeBasicInfoNotify.proto\032\023HomeBasicIn" +
       "fo.proto\"9\n\023HomeBasicInfoNotify\022\"\n\nbasic" +
-      "_info\030\016 \001(\0132\016.HomeBasicInfoB\033\n\031emu.grass" +
+      "_info\030\007 \001(\0132\016.HomeBasicInfoB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

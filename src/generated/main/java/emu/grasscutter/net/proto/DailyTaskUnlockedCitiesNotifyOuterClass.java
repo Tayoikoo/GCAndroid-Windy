@@ -19,17 +19,17 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 unlocked_city_list = 6;</code>
+     * <code>repeated uint32 unlocked_city_list = 5;</code>
      * @return A list containing the unlockedCityList.
      */
     java.util.List<java.lang.Integer> getUnlockedCityListList();
     /**
-     * <code>repeated uint32 unlocked_city_list = 6;</code>
+     * <code>repeated uint32 unlocked_city_list = 5;</code>
      * @return The count of unlockedCityList.
      */
     int getUnlockedCityListCount();
     /**
-     * <code>repeated uint32 unlocked_city_list = 6;</code>
+     * <code>repeated uint32 unlocked_city_list = 5;</code>
      * @param index The index of the element to return.
      * @return The unlockedCityList at the given index.
      */
@@ -37,8 +37,8 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 105
-   * Name: KAPPPLGDHBL
+   * CmdId: 127
+   * Obf: MAFKBKGEIBB
    * </pre>
    *
    * Protobuf type {@code DailyTaskUnlockedCitiesNotify}
@@ -76,11 +76,11 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
               emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify.class, emu.grasscutter.net.proto.DailyTaskUnlockedCitiesNotifyOuterClass.DailyTaskUnlockedCitiesNotify.Builder.class);
     }
 
-    public static final int UNLOCKED_CITY_LIST_FIELD_NUMBER = 6;
+    public static final int UNLOCKED_CITY_LIST_FIELD_NUMBER = 5;
     @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList unlockedCityList_;
     /**
-     * <code>repeated uint32 unlocked_city_list = 6;</code>
+     * <code>repeated uint32 unlocked_city_list = 5;</code>
      * @return A list containing the unlockedCityList.
      */
     @java.lang.Override
@@ -89,14 +89,14 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
       return unlockedCityList_;
     }
     /**
-     * <code>repeated uint32 unlocked_city_list = 6;</code>
+     * <code>repeated uint32 unlocked_city_list = 5;</code>
      * @return The count of unlockedCityList.
      */
     public int getUnlockedCityListCount() {
       return unlockedCityList_.size();
     }
     /**
-     * <code>repeated uint32 unlocked_city_list = 6;</code>
+     * <code>repeated uint32 unlocked_city_list = 5;</code>
      * @param index The index of the element to return.
      * @return The unlockedCityList at the given index.
      */
@@ -121,7 +121,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getUnlockedCityListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(unlockedCityListMemoizedSerializedSize);
       }
       for (int i = 0; i < unlockedCityList_.size(); i++) {
@@ -281,8 +281,8 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 105
-     * Name: KAPPPLGDHBL
+     * CmdId: 127
+     * Obf: MAFKBKGEIBB
      * </pre>
      *
      * Protobuf type {@code DailyTaskUnlockedCitiesNotify}
@@ -443,13 +443,13 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
               case 0:
                 done = true;
                 break;
-              case 48: {
+              case 40: {
                 int v = input.readUInt32();
                 ensureUnlockedCityListIsMutable();
                 unlockedCityList_.addInt(v);
                 break;
-              } // case 48
-              case 50: {
+              } // case 40
+              case 42: {
                 int length = input.readRawVarint32();
                 int limit = input.pushLimit(length);
                 ensureUnlockedCityListIsMutable();
@@ -458,7 +458,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
                 }
                 input.popLimit(limit);
                 break;
-              } // case 50
+              } // case 42
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -484,7 +484,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 6;</code>
+       * <code>repeated uint32 unlocked_city_list = 5;</code>
        * @return A list containing the unlockedCityList.
        */
       public java.util.List<java.lang.Integer>
@@ -493,14 +493,14 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
                  java.util.Collections.unmodifiableList(unlockedCityList_) : unlockedCityList_;
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 6;</code>
+       * <code>repeated uint32 unlocked_city_list = 5;</code>
        * @return The count of unlockedCityList.
        */
       public int getUnlockedCityListCount() {
         return unlockedCityList_.size();
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 6;</code>
+       * <code>repeated uint32 unlocked_city_list = 5;</code>
        * @param index The index of the element to return.
        * @return The unlockedCityList at the given index.
        */
@@ -508,7 +508,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
         return unlockedCityList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 6;</code>
+       * <code>repeated uint32 unlocked_city_list = 5;</code>
        * @param index The index to set the value at.
        * @param value The unlockedCityList to set.
        * @return This builder for chaining.
@@ -522,7 +522,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 6;</code>
+       * <code>repeated uint32 unlocked_city_list = 5;</code>
        * @param value The unlockedCityList to add.
        * @return This builder for chaining.
        */
@@ -534,7 +534,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 6;</code>
+       * <code>repeated uint32 unlocked_city_list = 5;</code>
        * @param values The unlockedCityList to add.
        * @return This builder for chaining.
        */
@@ -547,7 +547,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlocked_city_list = 6;</code>
+       * <code>repeated uint32 unlocked_city_list = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearUnlockedCityList() {
@@ -636,7 +636,7 @@ public final class DailyTaskUnlockedCitiesNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#DailyTaskUnlockedCitiesNotify.proto\";\n" +
       "\035DailyTaskUnlockedCitiesNotify\022\032\n\022unlock" +
-      "ed_city_list\030\006 \003(\rB\033\n\031emu.grasscutter.ne" +
+      "ed_city_list\030\005 \003(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

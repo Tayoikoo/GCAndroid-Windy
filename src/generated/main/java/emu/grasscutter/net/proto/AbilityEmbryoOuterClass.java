@@ -38,7 +38,7 @@ public final class AbilityEmbryoOuterClass {
   }
   /**
    * <pre>
-   * Name: ENCLMIKCGEE
+   * Obf: JAODNDBPGJA
    * </pre>
    *
    * Protobuf type {@code AbilityEmbryo}
@@ -289,7 +289,7 @@ public final class AbilityEmbryoOuterClass {
     }
     /**
      * <pre>
-     * Name: ENCLMIKCGEE
+     * Obf: JAODNDBPGJA
      * </pre>
      *
      * Protobuf type {@code AbilityEmbryo}

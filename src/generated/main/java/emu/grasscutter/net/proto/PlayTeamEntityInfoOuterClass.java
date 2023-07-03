@@ -59,7 +59,7 @@ public final class PlayTeamEntityInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: NEKLBLMLJNC
+   * Obf: BCJDGLPGIFK
    * </pre>
    *
    * Protobuf type {@code PlayTeamEntityInfo}
@@ -374,7 +374,7 @@ public final class PlayTeamEntityInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: NEKLBLMLJNC
+     * Obf: BCJDGLPGIFK
      * </pre>
      *
      * Protobuf type {@code PlayTeamEntityInfo}

@@ -19,15 +19,15 @@ public final class DungeonPlayerDieRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 975
-   * Name: IEIGFGMPFHG
+   * CmdId: 916
+   * Obf: OKPKMHFNBIM
    * </pre>
    *
    * Protobuf type {@code DungeonPlayerDieRsp}
@@ -64,10 +64,10 @@ public final class DungeonPlayerDieRspOuterClass {
               emu.grasscutter.net.proto.DungeonPlayerDieRspOuterClass.DungeonPlayerDieRsp.class, emu.grasscutter.net.proto.DungeonPlayerDieRspOuterClass.DungeonPlayerDieRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -90,7 +90,7 @@ public final class DungeonPlayerDieRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(9, retcode_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -103,7 +103,7 @@ public final class DungeonPlayerDieRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(9, retcode_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -234,8 +234,8 @@ public final class DungeonPlayerDieRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 975
-     * Name: IEIGFGMPFHG
+     * CmdId: 916
+     * Obf: OKPKMHFNBIM
      * </pre>
      *
      * Protobuf type {@code DungeonPlayerDieRsp}
@@ -383,11 +383,11 @@ public final class DungeonPlayerDieRspOuterClass {
               case 0:
                 done = true;
                 break;
-              case 48: {
+              case 72: {
                 retcode_ = input.readInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 48
+              } // case 72
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -407,7 +407,7 @@ public final class DungeonPlayerDieRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -415,7 +415,7 @@ public final class DungeonPlayerDieRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -427,7 +427,7 @@ public final class DungeonPlayerDieRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -515,7 +515,7 @@ public final class DungeonPlayerDieRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031DungeonPlayerDieRsp.proto\"&\n\023DungeonPl" +
-      "ayerDieRsp\022\017\n\007retcode\030\006 \001(\005B\033\n\031emu.grass" +
+      "ayerDieRsp\022\017\n\007retcode\030\t \001(\005B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

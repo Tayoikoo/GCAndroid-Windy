@@ -19,38 +19,38 @@ public final class TeamChainDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+     * <code>bool is_token_costume_reward = 11;</code>
+     * @return The isTokenCostumeReward.
+     */
+    boolean getIsTokenCostumeReward();
+
+    /**
+     * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData> 
         getStageDataListList();
     /**
-     * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+     * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
      */
     emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData getStageDataList(int index);
     /**
-     * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+     * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
      */
     int getStageDataListCount();
     /**
-     * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+     * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageDataOrBuilder> 
         getStageDataListOrBuilderList();
     /**
-     * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+     * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
      */
     emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageDataOrBuilder getStageDataListOrBuilder(
         int index);
-
-    /**
-     * <code>bool is_token_costume_reward = 3;</code>
-     * @return The isTokenCostumeReward.
-     */
-    boolean getIsTokenCostumeReward();
   }
   /**
    * <pre>
-   * Name: NCNALPMIDEE
+   * Obf: OFKBBPFDJKG
    * </pre>
    *
    * Protobuf type {@code TeamChainDetailInfo}
@@ -88,18 +88,29 @@ public final class TeamChainDetailInfoOuterClass {
               emu.grasscutter.net.proto.TeamChainDetailInfoOuterClass.TeamChainDetailInfo.class, emu.grasscutter.net.proto.TeamChainDetailInfoOuterClass.TeamChainDetailInfo.Builder.class);
     }
 
-    public static final int STAGE_DATA_LIST_FIELD_NUMBER = 14;
+    public static final int IS_TOKEN_COSTUME_REWARD_FIELD_NUMBER = 11;
+    private boolean isTokenCostumeReward_ = false;
+    /**
+     * <code>bool is_token_costume_reward = 11;</code>
+     * @return The isTokenCostumeReward.
+     */
+    @java.lang.Override
+    public boolean getIsTokenCostumeReward() {
+      return isTokenCostumeReward_;
+    }
+
+    public static final int STAGE_DATA_LIST_FIELD_NUMBER = 5;
     @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData> stageDataList_;
     /**
-     * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+     * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData> getStageDataListList() {
       return stageDataList_;
     }
     /**
-     * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+     * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageDataOrBuilder> 
@@ -107,37 +118,26 @@ public final class TeamChainDetailInfoOuterClass {
       return stageDataList_;
     }
     /**
-     * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+     * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
      */
     @java.lang.Override
     public int getStageDataListCount() {
       return stageDataList_.size();
     }
     /**
-     * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+     * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData getStageDataList(int index) {
       return stageDataList_.get(index);
     }
     /**
-     * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+     * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageDataOrBuilder getStageDataListOrBuilder(
         int index) {
       return stageDataList_.get(index);
-    }
-
-    public static final int IS_TOKEN_COSTUME_REWARD_FIELD_NUMBER = 3;
-    private boolean isTokenCostumeReward_ = false;
-    /**
-     * <code>bool is_token_costume_reward = 3;</code>
-     * @return The isTokenCostumeReward.
-     */
-    @java.lang.Override
-    public boolean getIsTokenCostumeReward() {
-      return isTokenCostumeReward_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -154,11 +154,11 @@ public final class TeamChainDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isTokenCostumeReward_ != false) {
-        output.writeBool(3, isTokenCostumeReward_);
-      }
       for (int i = 0; i < stageDataList_.size(); i++) {
-        output.writeMessage(14, stageDataList_.get(i));
+        output.writeMessage(5, stageDataList_.get(i));
+      }
+      if (isTokenCostumeReward_ != false) {
+        output.writeBool(11, isTokenCostumeReward_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -169,13 +169,13 @@ public final class TeamChainDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isTokenCostumeReward_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isTokenCostumeReward_);
-      }
       for (int i = 0; i < stageDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, stageDataList_.get(i));
+          .computeMessageSize(5, stageDataList_.get(i));
+      }
+      if (isTokenCostumeReward_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, isTokenCostumeReward_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -192,10 +192,10 @@ public final class TeamChainDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.TeamChainDetailInfoOuterClass.TeamChainDetailInfo other = (emu.grasscutter.net.proto.TeamChainDetailInfoOuterClass.TeamChainDetailInfo) obj;
 
-      if (!getStageDataListList()
-          .equals(other.getStageDataListList())) return false;
       if (getIsTokenCostumeReward()
           != other.getIsTokenCostumeReward()) return false;
+      if (!getStageDataListList()
+          .equals(other.getStageDataListList())) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -207,13 +207,13 @@ public final class TeamChainDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_TOKEN_COSTUME_REWARD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsTokenCostumeReward());
       if (getStageDataListCount() > 0) {
         hash = (37 * hash) + STAGE_DATA_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getStageDataListList().hashCode();
       }
-      hash = (37 * hash) + IS_TOKEN_COSTUME_REWARD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsTokenCostumeReward());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,7 +313,7 @@ public final class TeamChainDetailInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: NCNALPMIDEE
+     * Obf: OFKBBPFDJKG
      * </pre>
      *
      * Protobuf type {@code TeamChainDetailInfo}
@@ -349,14 +349,14 @@ public final class TeamChainDetailInfoOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
+        isTokenCostumeReward_ = false;
         if (stageDataListBuilder_ == null) {
           stageDataList_ = java.util.Collections.emptyList();
         } else {
           stageDataList_ = null;
           stageDataListBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        isTokenCostumeReward_ = false;
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -391,9 +391,9 @@ public final class TeamChainDetailInfoOuterClass {
 
       private void buildPartialRepeatedFields(emu.grasscutter.net.proto.TeamChainDetailInfoOuterClass.TeamChainDetailInfo result) {
         if (stageDataListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             stageDataList_ = java.util.Collections.unmodifiableList(stageDataList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.stageDataList_ = stageDataList_;
         } else {
@@ -403,7 +403,7 @@ public final class TeamChainDetailInfoOuterClass {
 
       private void buildPartial0(emu.grasscutter.net.proto.TeamChainDetailInfoOuterClass.TeamChainDetailInfo result) {
         int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000002) != 0)) {
+        if (((from_bitField0_ & 0x00000001) != 0)) {
           result.isTokenCostumeReward_ = isTokenCostumeReward_;
         }
       }
@@ -452,11 +452,14 @@ public final class TeamChainDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TeamChainDetailInfoOuterClass.TeamChainDetailInfo other) {
         if (other == emu.grasscutter.net.proto.TeamChainDetailInfoOuterClass.TeamChainDetailInfo.getDefaultInstance()) return this;
+        if (other.getIsTokenCostumeReward() != false) {
+          setIsTokenCostumeReward(other.getIsTokenCostumeReward());
+        }
         if (stageDataListBuilder_ == null) {
           if (!other.stageDataList_.isEmpty()) {
             if (stageDataList_.isEmpty()) {
               stageDataList_ = other.stageDataList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureStageDataListIsMutable();
               stageDataList_.addAll(other.stageDataList_);
@@ -469,7 +472,7 @@ public final class TeamChainDetailInfoOuterClass {
               stageDataListBuilder_.dispose();
               stageDataListBuilder_ = null;
               stageDataList_ = other.stageDataList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               stageDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getStageDataListFieldBuilder() : null;
@@ -477,9 +480,6 @@ public final class TeamChainDetailInfoOuterClass {
               stageDataListBuilder_.addAllMessages(other.stageDataList_);
             }
           }
-        }
-        if (other.getIsTokenCostumeReward() != false) {
-          setIsTokenCostumeReward(other.getIsTokenCostumeReward());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -507,12 +507,7 @@ public final class TeamChainDetailInfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 24: {
-                isTokenCostumeReward_ = input.readBool();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 24
-              case 114: {
+              case 42: {
                 emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData m =
                     input.readMessage(
                         emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData.parser(),
@@ -524,7 +519,12 @@ public final class TeamChainDetailInfoOuterClass {
                   stageDataListBuilder_.addMessage(m);
                 }
                 break;
-              } // case 114
+              } // case 42
+              case 88: {
+                isTokenCostumeReward_ = input.readBool();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 88
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -542,12 +542,44 @@ public final class TeamChainDetailInfoOuterClass {
       }
       private int bitField0_;
 
+      private boolean isTokenCostumeReward_ ;
+      /**
+       * <code>bool is_token_costume_reward = 11;</code>
+       * @return The isTokenCostumeReward.
+       */
+      @java.lang.Override
+      public boolean getIsTokenCostumeReward() {
+        return isTokenCostumeReward_;
+      }
+      /**
+       * <code>bool is_token_costume_reward = 11;</code>
+       * @param value The isTokenCostumeReward to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsTokenCostumeReward(boolean value) {
+
+        isTokenCostumeReward_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_token_costume_reward = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsTokenCostumeReward() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        isTokenCostumeReward_ = false;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData> stageDataList_ =
         java.util.Collections.emptyList();
       private void ensureStageDataListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           stageDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData>(stageDataList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -555,7 +587,7 @@ public final class TeamChainDetailInfoOuterClass {
           emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData, emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData.Builder, emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageDataOrBuilder> stageDataListBuilder_;
 
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData> getStageDataListList() {
         if (stageDataListBuilder_ == null) {
@@ -565,7 +597,7 @@ public final class TeamChainDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public int getStageDataListCount() {
         if (stageDataListBuilder_ == null) {
@@ -575,7 +607,7 @@ public final class TeamChainDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData getStageDataList(int index) {
         if (stageDataListBuilder_ == null) {
@@ -585,7 +617,7 @@ public final class TeamChainDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public Builder setStageDataList(
           int index, emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData value) {
@@ -602,7 +634,7 @@ public final class TeamChainDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public Builder setStageDataList(
           int index, emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData.Builder builderForValue) {
@@ -616,7 +648,7 @@ public final class TeamChainDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public Builder addStageDataList(emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData value) {
         if (stageDataListBuilder_ == null) {
@@ -632,7 +664,7 @@ public final class TeamChainDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public Builder addStageDataList(
           int index, emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData value) {
@@ -649,7 +681,7 @@ public final class TeamChainDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public Builder addStageDataList(
           emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData.Builder builderForValue) {
@@ -663,7 +695,7 @@ public final class TeamChainDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public Builder addStageDataList(
           int index, emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData.Builder builderForValue) {
@@ -677,7 +709,7 @@ public final class TeamChainDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public Builder addAllStageDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData> values) {
@@ -692,12 +724,12 @@ public final class TeamChainDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public Builder clearStageDataList() {
         if (stageDataListBuilder_ == null) {
           stageDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           stageDataListBuilder_.clear();
@@ -705,7 +737,7 @@ public final class TeamChainDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public Builder removeStageDataList(int index) {
         if (stageDataListBuilder_ == null) {
@@ -718,14 +750,14 @@ public final class TeamChainDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData.Builder getStageDataListBuilder(
           int index) {
         return getStageDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageDataOrBuilder getStageDataListOrBuilder(
           int index) {
@@ -735,7 +767,7 @@ public final class TeamChainDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageDataOrBuilder> 
            getStageDataListOrBuilderList() {
@@ -746,14 +778,14 @@ public final class TeamChainDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData.Builder addStageDataListBuilder() {
         return getStageDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData.getDefaultInstance());
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData.Builder addStageDataListBuilder(
           int index) {
@@ -761,7 +793,7 @@ public final class TeamChainDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData.getDefaultInstance());
       }
       /**
-       * <code>repeated .TeamChainStageData stage_data_list = 14;</code>
+       * <code>repeated .TeamChainStageData stage_data_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData.Builder> 
            getStageDataListBuilderList() {
@@ -774,44 +806,12 @@ public final class TeamChainDetailInfoOuterClass {
           stageDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData, emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageData.Builder, emu.grasscutter.net.proto.TeamChainStageDataOuterClass.TeamChainStageDataOrBuilder>(
                   stageDataList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           stageDataList_ = null;
         }
         return stageDataListBuilder_;
-      }
-
-      private boolean isTokenCostumeReward_ ;
-      /**
-       * <code>bool is_token_costume_reward = 3;</code>
-       * @return The isTokenCostumeReward.
-       */
-      @java.lang.Override
-      public boolean getIsTokenCostumeReward() {
-        return isTokenCostumeReward_;
-      }
-      /**
-       * <code>bool is_token_costume_reward = 3;</code>
-       * @param value The isTokenCostumeReward to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsTokenCostumeReward(boolean value) {
-
-        isTokenCostumeReward_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_token_costume_reward = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsTokenCostumeReward() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        isTokenCostumeReward_ = false;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -892,9 +892,9 @@ public final class TeamChainDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031TeamChainDetailInfo.proto\032\030TeamChainSt" +
-      "ageData.proto\"d\n\023TeamChainDetailInfo\022,\n\017" +
-      "stage_data_list\030\016 \003(\0132\023.TeamChainStageDa" +
-      "ta\022\037\n\027is_token_costume_reward\030\003 \001(\010B\033\n\031e" +
+      "ageData.proto\"d\n\023TeamChainDetailInfo\022\037\n\027" +
+      "is_token_costume_reward\030\013 \001(\010\022,\n\017stage_d" +
+      "ata_list\030\005 \003(\0132\023.TeamChainStageDataB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -907,7 +907,7 @@ public final class TeamChainDetailInfoOuterClass {
     internal_static_TeamChainDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TeamChainDetailInfo_descriptor,
-        new java.lang.String[] { "StageDataList", "IsTokenCostumeReward", });
+        new java.lang.String[] { "IsTokenCostumeReward", "StageDataList", });
     emu.grasscutter.net.proto.TeamChainStageDataOuterClass.getDescriptor();
   }
 

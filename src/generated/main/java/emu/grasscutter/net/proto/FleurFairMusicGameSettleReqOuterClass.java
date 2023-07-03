@@ -19,33 +19,33 @@ public final class FleurFairMusicGameSettleReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 music_basic_id = 8;</code>
-     * @return The musicBasicId.
-     */
-    int getMusicBasicId();
-
-    /**
-     * <code>uint32 correct_hit = 1;</code>
+     * <code>uint32 correct_hit = 7;</code>
      * @return The correctHit.
      */
     int getCorrectHit();
 
     /**
-     * <code>uint32 combo = 6;</code>
+     * <code>uint32 combo = 3;</code>
      * @return The combo.
      */
     int getCombo();
 
     /**
-     * <code>uint32 score = 2;</code>
+     * <code>uint32 music_basic_id = 5;</code>
+     * @return The musicBasicId.
+     */
+    int getMusicBasicId();
+
+    /**
+     * <code>uint32 score = 10;</code>
      * @return The score.
      */
     int getScore();
   }
   /**
    * <pre>
-   * CmdId: 2055
-   * Name: FLKCCEBGKDA
+   * CmdId: 2180
+   * Obf: GKEIMINCNJL
    * </pre>
    *
    * Protobuf type {@code FleurFairMusicGameSettleReq}
@@ -82,21 +82,10 @@ public final class FleurFairMusicGameSettleReqOuterClass {
               emu.grasscutter.net.proto.FleurFairMusicGameSettleReqOuterClass.FleurFairMusicGameSettleReq.class, emu.grasscutter.net.proto.FleurFairMusicGameSettleReqOuterClass.FleurFairMusicGameSettleReq.Builder.class);
     }
 
-    public static final int MUSIC_BASIC_ID_FIELD_NUMBER = 8;
-    private int musicBasicId_ = 0;
-    /**
-     * <code>uint32 music_basic_id = 8;</code>
-     * @return The musicBasicId.
-     */
-    @java.lang.Override
-    public int getMusicBasicId() {
-      return musicBasicId_;
-    }
-
-    public static final int CORRECT_HIT_FIELD_NUMBER = 1;
+    public static final int CORRECT_HIT_FIELD_NUMBER = 7;
     private int correctHit_ = 0;
     /**
-     * <code>uint32 correct_hit = 1;</code>
+     * <code>uint32 correct_hit = 7;</code>
      * @return The correctHit.
      */
     @java.lang.Override
@@ -104,10 +93,10 @@ public final class FleurFairMusicGameSettleReqOuterClass {
       return correctHit_;
     }
 
-    public static final int COMBO_FIELD_NUMBER = 6;
+    public static final int COMBO_FIELD_NUMBER = 3;
     private int combo_ = 0;
     /**
-     * <code>uint32 combo = 6;</code>
+     * <code>uint32 combo = 3;</code>
      * @return The combo.
      */
     @java.lang.Override
@@ -115,10 +104,21 @@ public final class FleurFairMusicGameSettleReqOuterClass {
       return combo_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 2;
+    public static final int MUSIC_BASIC_ID_FIELD_NUMBER = 5;
+    private int musicBasicId_ = 0;
+    /**
+     * <code>uint32 music_basic_id = 5;</code>
+     * @return The musicBasicId.
+     */
+    @java.lang.Override
+    public int getMusicBasicId() {
+      return musicBasicId_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 10;
     private int score_ = 0;
     /**
-     * <code>uint32 score = 2;</code>
+     * <code>uint32 score = 10;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -140,17 +140,17 @@ public final class FleurFairMusicGameSettleReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (correctHit_ != 0) {
-        output.writeUInt32(1, correctHit_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(2, score_);
-      }
       if (combo_ != 0) {
-        output.writeUInt32(6, combo_);
+        output.writeUInt32(3, combo_);
       }
       if (musicBasicId_ != 0) {
-        output.writeUInt32(8, musicBasicId_);
+        output.writeUInt32(5, musicBasicId_);
+      }
+      if (correctHit_ != 0) {
+        output.writeUInt32(7, correctHit_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(10, score_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -161,21 +161,21 @@ public final class FleurFairMusicGameSettleReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (correctHit_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, correctHit_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, score_);
-      }
       if (combo_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, combo_);
+          .computeUInt32Size(3, combo_);
       }
       if (musicBasicId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, musicBasicId_);
+          .computeUInt32Size(5, musicBasicId_);
+      }
+      if (correctHit_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, correctHit_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, score_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -192,12 +192,12 @@ public final class FleurFairMusicGameSettleReqOuterClass {
       }
       emu.grasscutter.net.proto.FleurFairMusicGameSettleReqOuterClass.FleurFairMusicGameSettleReq other = (emu.grasscutter.net.proto.FleurFairMusicGameSettleReqOuterClass.FleurFairMusicGameSettleReq) obj;
 
-      if (getMusicBasicId()
-          != other.getMusicBasicId()) return false;
       if (getCorrectHit()
           != other.getCorrectHit()) return false;
       if (getCombo()
           != other.getCombo()) return false;
+      if (getMusicBasicId()
+          != other.getMusicBasicId()) return false;
       if (getScore()
           != other.getScore()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
@@ -211,12 +211,12 @@ public final class FleurFairMusicGameSettleReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MUSIC_BASIC_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMusicBasicId();
       hash = (37 * hash) + CORRECT_HIT_FIELD_NUMBER;
       hash = (53 * hash) + getCorrectHit();
       hash = (37 * hash) + COMBO_FIELD_NUMBER;
       hash = (53 * hash) + getCombo();
+      hash = (37 * hash) + MUSIC_BASIC_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMusicBasicId();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
       hash = (29 * hash) + getUnknownFields().hashCode();
@@ -318,8 +318,8 @@ public final class FleurFairMusicGameSettleReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2055
-     * Name: FLKCCEBGKDA
+     * CmdId: 2180
+     * Obf: GKEIMINCNJL
      * </pre>
      *
      * Protobuf type {@code FleurFairMusicGameSettleReq}
@@ -355,9 +355,9 @@ public final class FleurFairMusicGameSettleReqOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        musicBasicId_ = 0;
         correctHit_ = 0;
         combo_ = 0;
+        musicBasicId_ = 0;
         score_ = 0;
         return this;
       }
@@ -393,13 +393,13 @@ public final class FleurFairMusicGameSettleReqOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.FleurFairMusicGameSettleReqOuterClass.FleurFairMusicGameSettleReq result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.musicBasicId_ = musicBasicId_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
           result.correctHit_ = correctHit_;
         }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
+        if (((from_bitField0_ & 0x00000002) != 0)) {
           result.combo_ = combo_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.musicBasicId_ = musicBasicId_;
         }
         if (((from_bitField0_ & 0x00000008) != 0)) {
           result.score_ = score_;
@@ -450,14 +450,14 @@ public final class FleurFairMusicGameSettleReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FleurFairMusicGameSettleReqOuterClass.FleurFairMusicGameSettleReq other) {
         if (other == emu.grasscutter.net.proto.FleurFairMusicGameSettleReqOuterClass.FleurFairMusicGameSettleReq.getDefaultInstance()) return this;
-        if (other.getMusicBasicId() != 0) {
-          setMusicBasicId(other.getMusicBasicId());
-        }
         if (other.getCorrectHit() != 0) {
           setCorrectHit(other.getCorrectHit());
         }
         if (other.getCombo() != 0) {
           setCombo(other.getCombo());
+        }
+        if (other.getMusicBasicId() != 0) {
+          setMusicBasicId(other.getMusicBasicId());
         }
         if (other.getScore() != 0) {
           setScore(other.getScore());
@@ -488,26 +488,26 @@ public final class FleurFairMusicGameSettleReqOuterClass {
               case 0:
                 done = true;
                 break;
-              case 8: {
-                correctHit_ = input.readUInt32();
+              case 24: {
+                combo_ = input.readUInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 8
-              case 16: {
+              } // case 24
+              case 40: {
+                musicBasicId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 40
+              case 56: {
+                correctHit_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 56
+              case 80: {
                 score_ = input.readUInt32();
                 bitField0_ |= 0x00000008;
                 break;
-              } // case 16
-              case 48: {
-                combo_ = input.readUInt32();
-                bitField0_ |= 0x00000004;
-                break;
-              } // case 48
-              case 64: {
-                musicBasicId_ = input.readUInt32();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 64
+              } // case 80
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -525,41 +525,9 @@ public final class FleurFairMusicGameSettleReqOuterClass {
       }
       private int bitField0_;
 
-      private int musicBasicId_ ;
-      /**
-       * <code>uint32 music_basic_id = 8;</code>
-       * @return The musicBasicId.
-       */
-      @java.lang.Override
-      public int getMusicBasicId() {
-        return musicBasicId_;
-      }
-      /**
-       * <code>uint32 music_basic_id = 8;</code>
-       * @param value The musicBasicId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMusicBasicId(int value) {
-
-        musicBasicId_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 music_basic_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMusicBasicId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        musicBasicId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int correctHit_ ;
       /**
-       * <code>uint32 correct_hit = 1;</code>
+       * <code>uint32 correct_hit = 7;</code>
        * @return The correctHit.
        */
       @java.lang.Override
@@ -567,23 +535,23 @@ public final class FleurFairMusicGameSettleReqOuterClass {
         return correctHit_;
       }
       /**
-       * <code>uint32 correct_hit = 1;</code>
+       * <code>uint32 correct_hit = 7;</code>
        * @param value The correctHit to set.
        * @return This builder for chaining.
        */
       public Builder setCorrectHit(int value) {
 
         correctHit_ = value;
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 correct_hit = 1;</code>
+       * <code>uint32 correct_hit = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCorrectHit() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         correctHit_ = 0;
         onChanged();
         return this;
@@ -591,7 +559,7 @@ public final class FleurFairMusicGameSettleReqOuterClass {
 
       private int combo_ ;
       /**
-       * <code>uint32 combo = 6;</code>
+       * <code>uint32 combo = 3;</code>
        * @return The combo.
        */
       @java.lang.Override
@@ -599,31 +567,63 @@ public final class FleurFairMusicGameSettleReqOuterClass {
         return combo_;
       }
       /**
-       * <code>uint32 combo = 6;</code>
+       * <code>uint32 combo = 3;</code>
        * @param value The combo to set.
        * @return This builder for chaining.
        */
       public Builder setCombo(int value) {
 
         combo_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 combo = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCombo() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        combo_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int musicBasicId_ ;
+      /**
+       * <code>uint32 music_basic_id = 5;</code>
+       * @return The musicBasicId.
+       */
+      @java.lang.Override
+      public int getMusicBasicId() {
+        return musicBasicId_;
+      }
+      /**
+       * <code>uint32 music_basic_id = 5;</code>
+       * @param value The musicBasicId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMusicBasicId(int value) {
+
+        musicBasicId_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 combo = 6;</code>
+       * <code>uint32 music_basic_id = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCombo() {
+      public Builder clearMusicBasicId() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        combo_ = 0;
+        musicBasicId_ = 0;
         onChanged();
         return this;
       }
 
       private int score_ ;
       /**
-       * <code>uint32 score = 2;</code>
+       * <code>uint32 score = 10;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -631,7 +631,7 @@ public final class FleurFairMusicGameSettleReqOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 2;</code>
+       * <code>uint32 score = 10;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -643,7 +643,7 @@ public final class FleurFairMusicGameSettleReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 2;</code>
+       * <code>uint32 score = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -731,9 +731,9 @@ public final class FleurFairMusicGameSettleReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!FleurFairMusicGameSettleReq.proto\"h\n\033F" +
-      "leurFairMusicGameSettleReq\022\026\n\016music_basi" +
-      "c_id\030\010 \001(\r\022\023\n\013correct_hit\030\001 \001(\r\022\r\n\005combo" +
-      "\030\006 \001(\r\022\r\n\005score\030\002 \001(\rB\033\n\031emu.grasscutter" +
+      "leurFairMusicGameSettleReq\022\023\n\013correct_hi" +
+      "t\030\007 \001(\r\022\r\n\005combo\030\003 \001(\r\022\026\n\016music_basic_id" +
+      "\030\005 \001(\r\022\r\n\005score\030\n \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -745,7 +745,7 @@ public final class FleurFairMusicGameSettleReqOuterClass {
     internal_static_FleurFairMusicGameSettleReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FleurFairMusicGameSettleReq_descriptor,
-        new java.lang.String[] { "MusicBasicId", "CorrectHit", "Combo", "Score", });
+        new java.lang.String[] { "CorrectHit", "Combo", "MusicBasicId", "Score", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

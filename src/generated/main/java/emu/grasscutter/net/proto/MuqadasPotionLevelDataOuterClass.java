@@ -19,10 +19,10 @@ public final class MuqadasPotionLevelDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 6;</code>
-     * @return The levelId.
+     * <code>uint32 max_score = 13;</code>
+     * @return The maxScore.
      */
-    int getLevelId();
+    int getMaxScore();
 
     /**
      * <code>bool is_open = 2;</code>
@@ -31,14 +31,14 @@ public final class MuqadasPotionLevelDataOuterClass {
     boolean getIsOpen();
 
     /**
-     * <code>uint32 max_score = 7;</code>
-     * @return The maxScore.
+     * <code>uint32 level_id = 11;</code>
+     * @return The levelId.
      */
-    int getMaxScore();
+    int getLevelId();
   }
   /**
    * <pre>
-   * Name: BNMGOAGIHMM
+   * Obf: KMDHKAFACEP
    * </pre>
    *
    * Protobuf type {@code MuqadasPotionLevelData}
@@ -75,15 +75,15 @@ public final class MuqadasPotionLevelDataOuterClass {
               emu.grasscutter.net.proto.MuqadasPotionLevelDataOuterClass.MuqadasPotionLevelData.class, emu.grasscutter.net.proto.MuqadasPotionLevelDataOuterClass.MuqadasPotionLevelData.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 6;
-    private int levelId_ = 0;
+    public static final int MAX_SCORE_FIELD_NUMBER = 13;
+    private int maxScore_ = 0;
     /**
-     * <code>uint32 level_id = 6;</code>
-     * @return The levelId.
+     * <code>uint32 max_score = 13;</code>
+     * @return The maxScore.
      */
     @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
+    public int getMaxScore() {
+      return maxScore_;
     }
 
     public static final int IS_OPEN_FIELD_NUMBER = 2;
@@ -97,15 +97,15 @@ public final class MuqadasPotionLevelDataOuterClass {
       return isOpen_;
     }
 
-    public static final int MAX_SCORE_FIELD_NUMBER = 7;
-    private int maxScore_ = 0;
+    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    private int levelId_ = 0;
     /**
-     * <code>uint32 max_score = 7;</code>
-     * @return The maxScore.
+     * <code>uint32 level_id = 11;</code>
+     * @return The levelId.
      */
     @java.lang.Override
-    public int getMaxScore() {
-      return maxScore_;
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -126,10 +126,10 @@ public final class MuqadasPotionLevelDataOuterClass {
         output.writeBool(2, isOpen_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(6, levelId_);
+        output.writeUInt32(11, levelId_);
       }
       if (maxScore_ != 0) {
-        output.writeUInt32(7, maxScore_);
+        output.writeUInt32(13, maxScore_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -146,11 +146,11 @@ public final class MuqadasPotionLevelDataOuterClass {
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, levelId_);
+          .computeUInt32Size(11, levelId_);
       }
       if (maxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, maxScore_);
+          .computeUInt32Size(13, maxScore_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -167,12 +167,12 @@ public final class MuqadasPotionLevelDataOuterClass {
       }
       emu.grasscutter.net.proto.MuqadasPotionLevelDataOuterClass.MuqadasPotionLevelData other = (emu.grasscutter.net.proto.MuqadasPotionLevelDataOuterClass.MuqadasPotionLevelData) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getIsOpen()
-          != other.getIsOpen()) return false;
       if (getMaxScore()
           != other.getMaxScore()) return false;
+      if (getIsOpen()
+          != other.getIsOpen()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -184,13 +184,13 @@ public final class MuqadasPotionLevelDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxScore();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxScore();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -290,7 +290,7 @@ public final class MuqadasPotionLevelDataOuterClass {
     }
     /**
      * <pre>
-     * Name: BNMGOAGIHMM
+     * Obf: KMDHKAFACEP
      * </pre>
      *
      * Protobuf type {@code MuqadasPotionLevelData}
@@ -326,9 +326,9 @@ public final class MuqadasPotionLevelDataOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        levelId_ = 0;
-        isOpen_ = false;
         maxScore_ = 0;
+        isOpen_ = false;
+        levelId_ = 0;
         return this;
       }
 
@@ -363,13 +363,13 @@ public final class MuqadasPotionLevelDataOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.MuqadasPotionLevelDataOuterClass.MuqadasPotionLevelData result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.levelId_ = levelId_;
+          result.maxScore_ = maxScore_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
           result.isOpen_ = isOpen_;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.maxScore_ = maxScore_;
+          result.levelId_ = levelId_;
         }
       }
 
@@ -417,14 +417,14 @@ public final class MuqadasPotionLevelDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MuqadasPotionLevelDataOuterClass.MuqadasPotionLevelData other) {
         if (other == emu.grasscutter.net.proto.MuqadasPotionLevelDataOuterClass.MuqadasPotionLevelData.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
+        if (other.getMaxScore() != 0) {
+          setMaxScore(other.getMaxScore());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        if (other.getMaxScore() != 0) {
-          setMaxScore(other.getMaxScore());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -457,16 +457,16 @@ public final class MuqadasPotionLevelDataOuterClass {
                 bitField0_ |= 0x00000002;
                 break;
               } // case 16
-              case 48: {
+              case 88: {
                 levelId_ = input.readUInt32();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 48
-              case 56: {
-                maxScore_ = input.readUInt32();
                 bitField0_ |= 0x00000004;
                 break;
-              } // case 56
+              } // case 88
+              case 104: {
+                maxScore_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 104
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -484,34 +484,34 @@ public final class MuqadasPotionLevelDataOuterClass {
       }
       private int bitField0_;
 
-      private int levelId_ ;
+      private int maxScore_ ;
       /**
-       * <code>uint32 level_id = 6;</code>
-       * @return The levelId.
+       * <code>uint32 max_score = 13;</code>
+       * @return The maxScore.
        */
       @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
+      public int getMaxScore() {
+        return maxScore_;
       }
       /**
-       * <code>uint32 level_id = 6;</code>
-       * @param value The levelId to set.
+       * <code>uint32 max_score = 13;</code>
+       * @param value The maxScore to set.
        * @return This builder for chaining.
        */
-      public Builder setLevelId(int value) {
+      public Builder setMaxScore(int value) {
 
-        levelId_ = value;
+        maxScore_ = value;
         bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 level_id = 6;</code>
+       * <code>uint32 max_score = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLevelId() {
+      public Builder clearMaxScore() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        levelId_ = 0;
+        maxScore_ = 0;
         onChanged();
         return this;
       }
@@ -548,34 +548,34 @@ public final class MuqadasPotionLevelDataOuterClass {
         return this;
       }
 
-      private int maxScore_ ;
+      private int levelId_ ;
       /**
-       * <code>uint32 max_score = 7;</code>
-       * @return The maxScore.
+       * <code>uint32 level_id = 11;</code>
+       * @return The levelId.
        */
       @java.lang.Override
-      public int getMaxScore() {
-        return maxScore_;
+      public int getLevelId() {
+        return levelId_;
       }
       /**
-       * <code>uint32 max_score = 7;</code>
-       * @param value The maxScore to set.
+       * <code>uint32 level_id = 11;</code>
+       * @param value The levelId to set.
        * @return This builder for chaining.
        */
-      public Builder setMaxScore(int value) {
+      public Builder setLevelId(int value) {
 
-        maxScore_ = value;
+        levelId_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 max_score = 7;</code>
+       * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMaxScore() {
+      public Builder clearLevelId() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        maxScore_ = 0;
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -658,8 +658,8 @@ public final class MuqadasPotionLevelDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034MuqadasPotionLevelData.proto\"N\n\026Muqada" +
-      "sPotionLevelData\022\020\n\010level_id\030\006 \001(\r\022\017\n\007is" +
-      "_open\030\002 \001(\010\022\021\n\tmax_score\030\007 \001(\rB\033\n\031emu.gr" +
+      "sPotionLevelData\022\021\n\tmax_score\030\r \001(\r\022\017\n\007i" +
+      "s_open\030\002 \001(\010\022\020\n\010level_id\030\013 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -671,7 +671,7 @@ public final class MuqadasPotionLevelDataOuterClass {
     internal_static_MuqadasPotionLevelData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MuqadasPotionLevelData_descriptor,
-        new java.lang.String[] { "LevelId", "IsOpen", "MaxScore", });
+        new java.lang.String[] { "MaxScore", "IsOpen", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

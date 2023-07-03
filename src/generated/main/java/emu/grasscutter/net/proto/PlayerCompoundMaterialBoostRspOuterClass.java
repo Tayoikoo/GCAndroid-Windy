@@ -19,74 +19,74 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>.CompoundBoostTakeStatusType take_status = 9;</code>
-     * @return The enum numeric value on the wire for takeStatus.
-     */
-    int getTakeStatusValue();
-    /**
-     * <code>.CompoundBoostTakeStatusType take_status = 9;</code>
-     * @return The takeStatus.
-     */
-    emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType getTakeStatus();
-
-    /**
-     * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+     * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData> 
         getCompoundQueueDataListList();
     /**
-     * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+     * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
      */
     emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData getCompoundQueueDataList(int index);
     /**
-     * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+     * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
      */
     int getCompoundQueueDataListCount();
     /**
-     * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+     * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueDataOrBuilder> 
         getCompoundQueueDataListOrBuilderList();
     /**
-     * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+     * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
      */
     emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueDataOrBuilder getCompoundQueueDataListOrBuilder(
         int index);
 
     /**
-     * <code>repeated .ItemParam take_item_list = 14;</code>
+     * <code>.CompoundBoostTakeStatusType take_status = 3;</code>
+     * @return The enum numeric value on the wire for takeStatus.
+     */
+    int getTakeStatusValue();
+    /**
+     * <code>.CompoundBoostTakeStatusType take_status = 3;</code>
+     * @return The takeStatus.
+     */
+    emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType getTakeStatus();
+
+    /**
+     * <code>int32 retcode = 14;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>repeated .ItemParam take_item_list = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getTakeItemListList();
     /**
-     * <code>repeated .ItemParam take_item_list = 14;</code>
+     * <code>repeated .ItemParam take_item_list = 13;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getTakeItemList(int index);
     /**
-     * <code>repeated .ItemParam take_item_list = 14;</code>
+     * <code>repeated .ItemParam take_item_list = 13;</code>
      */
     int getTakeItemListCount();
     /**
-     * <code>repeated .ItemParam take_item_list = 14;</code>
+     * <code>repeated .ItemParam take_item_list = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getTakeItemListOrBuilderList();
     /**
-     * <code>repeated .ItemParam take_item_list = 14;</code>
+     * <code>repeated .ItemParam take_item_list = 13;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getTakeItemListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 113
-   * Name: DNCELLIFEHB
+   * CmdId: 173
+   * Obf: OECDPFKACOM
    * </pre>
    *
    * Protobuf type {@code PlayerCompoundMaterialBoostRsp}
@@ -101,8 +101,8 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
       super(builder);
     }
     private PlayerCompoundMaterialBoostRsp() {
-      takeStatus_ = 0;
       compoundQueueDataList_ = java.util.Collections.emptyList();
+      takeStatus_ = 0;
       takeItemList_ = java.util.Collections.emptyList();
     }
 
@@ -126,47 +126,18 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
               emu.grasscutter.net.proto.PlayerCompoundMaterialBoostRspOuterClass.PlayerCompoundMaterialBoostRsp.class, emu.grasscutter.net.proto.PlayerCompoundMaterialBoostRspOuterClass.PlayerCompoundMaterialBoostRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_ = 0;
-    /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int TAKE_STATUS_FIELD_NUMBER = 9;
-    private int takeStatus_ = 0;
-    /**
-     * <code>.CompoundBoostTakeStatusType take_status = 9;</code>
-     * @return The enum numeric value on the wire for takeStatus.
-     */
-    @java.lang.Override public int getTakeStatusValue() {
-      return takeStatus_;
-    }
-    /**
-     * <code>.CompoundBoostTakeStatusType take_status = 9;</code>
-     * @return The takeStatus.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType getTakeStatus() {
-      emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType result = emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType.forNumber(takeStatus_);
-      return result == null ? emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType.UNRECOGNIZED : result;
-    }
-
-    public static final int COMPOUNDQUEUEDATALIST_FIELD_NUMBER = 15;
+    public static final int COMPOUNDQUEUEDATALIST_FIELD_NUMBER = 2;
     @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData> compoundQueueDataList_;
     /**
-     * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+     * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData> getCompoundQueueDataListList() {
       return compoundQueueDataList_;
     }
     /**
-     * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+     * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueDataOrBuilder> 
@@ -174,21 +145,21 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
       return compoundQueueDataList_;
     }
     /**
-     * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+     * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
      */
     @java.lang.Override
     public int getCompoundQueueDataListCount() {
       return compoundQueueDataList_.size();
     }
     /**
-     * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+     * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData getCompoundQueueDataList(int index) {
       return compoundQueueDataList_.get(index);
     }
     /**
-     * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+     * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueDataOrBuilder getCompoundQueueDataListOrBuilder(
@@ -196,18 +167,47 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
       return compoundQueueDataList_.get(index);
     }
 
-    public static final int TAKE_ITEM_LIST_FIELD_NUMBER = 14;
+    public static final int TAKE_STATUS_FIELD_NUMBER = 3;
+    private int takeStatus_ = 0;
+    /**
+     * <code>.CompoundBoostTakeStatusType take_status = 3;</code>
+     * @return The enum numeric value on the wire for takeStatus.
+     */
+    @java.lang.Override public int getTakeStatusValue() {
+      return takeStatus_;
+    }
+    /**
+     * <code>.CompoundBoostTakeStatusType take_status = 3;</code>
+     * @return The takeStatus.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType getTakeStatus() {
+      emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType result = emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType.forNumber(takeStatus_);
+      return result == null ? emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType.UNRECOGNIZED : result;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 14;
+    private int retcode_ = 0;
+    /**
+     * <code>int32 retcode = 14;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int TAKE_ITEM_LIST_FIELD_NUMBER = 13;
     @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> takeItemList_;
     /**
-     * <code>repeated .ItemParam take_item_list = 14;</code>
+     * <code>repeated .ItemParam take_item_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getTakeItemListList() {
       return takeItemList_;
     }
     /**
-     * <code>repeated .ItemParam take_item_list = 14;</code>
+     * <code>repeated .ItemParam take_item_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -215,21 +215,21 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
       return takeItemList_;
     }
     /**
-     * <code>repeated .ItemParam take_item_list = 14;</code>
+     * <code>repeated .ItemParam take_item_list = 13;</code>
      */
     @java.lang.Override
     public int getTakeItemListCount() {
       return takeItemList_.size();
     }
     /**
-     * <code>repeated .ItemParam take_item_list = 14;</code>
+     * <code>repeated .ItemParam take_item_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getTakeItemList(int index) {
       return takeItemList_.get(index);
     }
     /**
-     * <code>repeated .ItemParam take_item_list = 14;</code>
+     * <code>repeated .ItemParam take_item_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getTakeItemListOrBuilder(
@@ -251,17 +251,17 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+      for (int i = 0; i < compoundQueueDataList_.size(); i++) {
+        output.writeMessage(2, compoundQueueDataList_.get(i));
       }
       if (takeStatus_ != emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType.COMPOUND_BOOST_TAKE_STATUS_NONE.getNumber()) {
-        output.writeEnum(9, takeStatus_);
+        output.writeEnum(3, takeStatus_);
       }
       for (int i = 0; i < takeItemList_.size(); i++) {
-        output.writeMessage(14, takeItemList_.get(i));
+        output.writeMessage(13, takeItemList_.get(i));
       }
-      for (int i = 0; i < compoundQueueDataList_.size(); i++) {
-        output.writeMessage(15, compoundQueueDataList_.get(i));
+      if (retcode_ != 0) {
+        output.writeInt32(14, retcode_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -272,21 +272,21 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
+      for (int i = 0; i < compoundQueueDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeMessageSize(2, compoundQueueDataList_.get(i));
       }
       if (takeStatus_ != emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType.COMPOUND_BOOST_TAKE_STATUS_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(9, takeStatus_);
+          .computeEnumSize(3, takeStatus_);
       }
       for (int i = 0; i < takeItemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, takeItemList_.get(i));
+          .computeMessageSize(13, takeItemList_.get(i));
       }
-      for (int i = 0; i < compoundQueueDataList_.size(); i++) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, compoundQueueDataList_.get(i));
+          .computeInt32Size(14, retcode_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -303,11 +303,11 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
       }
       emu.grasscutter.net.proto.PlayerCompoundMaterialBoostRspOuterClass.PlayerCompoundMaterialBoostRsp other = (emu.grasscutter.net.proto.PlayerCompoundMaterialBoostRspOuterClass.PlayerCompoundMaterialBoostRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
-      if (takeStatus_ != other.takeStatus_) return false;
       if (!getCompoundQueueDataListList()
           .equals(other.getCompoundQueueDataListList())) return false;
+      if (takeStatus_ != other.takeStatus_) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!getTakeItemListList()
           .equals(other.getTakeItemListList())) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
@@ -321,14 +321,14 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + TAKE_STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + takeStatus_;
       if (getCompoundQueueDataListCount() > 0) {
         hash = (37 * hash) + COMPOUNDQUEUEDATALIST_FIELD_NUMBER;
         hash = (53 * hash) + getCompoundQueueDataListList().hashCode();
       }
+      hash = (37 * hash) + TAKE_STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + takeStatus_;
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getTakeItemListCount() > 0) {
         hash = (37 * hash) + TAKE_ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTakeItemListList().hashCode();
@@ -432,8 +432,8 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 113
-     * Name: DNCELLIFEHB
+     * CmdId: 173
+     * Obf: OECDPFKACOM
      * </pre>
      *
      * Protobuf type {@code PlayerCompoundMaterialBoostRsp}
@@ -469,15 +469,15 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        retcode_ = 0;
-        takeStatus_ = 0;
         if (compoundQueueDataListBuilder_ == null) {
           compoundQueueDataList_ = java.util.Collections.emptyList();
         } else {
           compoundQueueDataList_ = null;
           compoundQueueDataListBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000001);
+        takeStatus_ = 0;
+        retcode_ = 0;
         if (takeItemListBuilder_ == null) {
           takeItemList_ = java.util.Collections.emptyList();
         } else {
@@ -519,9 +519,9 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
 
       private void buildPartialRepeatedFields(emu.grasscutter.net.proto.PlayerCompoundMaterialBoostRspOuterClass.PlayerCompoundMaterialBoostRsp result) {
         if (compoundQueueDataListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000001) != 0)) {
             compoundQueueDataList_ = java.util.Collections.unmodifiableList(compoundQueueDataList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.compoundQueueDataList_ = compoundQueueDataList_;
         } else {
@@ -540,11 +540,11 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
 
       private void buildPartial0(emu.grasscutter.net.proto.PlayerCompoundMaterialBoostRspOuterClass.PlayerCompoundMaterialBoostRsp result) {
         int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.retcode_ = retcode_;
-        }
         if (((from_bitField0_ & 0x00000002) != 0)) {
           result.takeStatus_ = takeStatus_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.retcode_ = retcode_;
         }
       }
 
@@ -592,17 +592,11 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerCompoundMaterialBoostRspOuterClass.PlayerCompoundMaterialBoostRsp other) {
         if (other == emu.grasscutter.net.proto.PlayerCompoundMaterialBoostRspOuterClass.PlayerCompoundMaterialBoostRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (other.takeStatus_ != 0) {
-          setTakeStatusValue(other.getTakeStatusValue());
-        }
         if (compoundQueueDataListBuilder_ == null) {
           if (!other.compoundQueueDataList_.isEmpty()) {
             if (compoundQueueDataList_.isEmpty()) {
               compoundQueueDataList_ = other.compoundQueueDataList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureCompoundQueueDataListIsMutable();
               compoundQueueDataList_.addAll(other.compoundQueueDataList_);
@@ -615,7 +609,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
               compoundQueueDataListBuilder_.dispose();
               compoundQueueDataListBuilder_ = null;
               compoundQueueDataList_ = other.compoundQueueDataList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000001);
               compoundQueueDataListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getCompoundQueueDataListFieldBuilder() : null;
@@ -623,6 +617,12 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
               compoundQueueDataListBuilder_.addAllMessages(other.compoundQueueDataList_);
             }
           }
+        }
+        if (other.takeStatus_ != 0) {
+          setTakeStatusValue(other.getTakeStatusValue());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (takeItemListBuilder_ == null) {
           if (!other.takeItemList_.isEmpty()) {
@@ -676,30 +676,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
               case 0:
                 done = true;
                 break;
-              case 64: {
-                retcode_ = input.readInt32();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 64
-              case 72: {
-                takeStatus_ = input.readEnum();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 72
-              case 114: {
-                emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam m =
-                    input.readMessage(
-                        emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(),
-                        extensionRegistry);
-                if (takeItemListBuilder_ == null) {
-                  ensureTakeItemListIsMutable();
-                  takeItemList_.add(m);
-                } else {
-                  takeItemListBuilder_.addMessage(m);
-                }
-                break;
-              } // case 114
-              case 122: {
+              case 18: {
                 emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData m =
                     input.readMessage(
                         emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.parser(),
@@ -711,7 +688,30 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
                   compoundQueueDataListBuilder_.addMessage(m);
                 }
                 break;
-              } // case 122
+              } // case 18
+              case 24: {
+                takeStatus_ = input.readEnum();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 24
+              case 106: {
+                emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(),
+                        extensionRegistry);
+                if (takeItemListBuilder_ == null) {
+                  ensureTakeItemListIsMutable();
+                  takeItemList_.add(m);
+                } else {
+                  takeItemListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 106
+              case 112: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 112
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -729,97 +729,12 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
       }
       private int bitField0_;
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-
-        retcode_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int takeStatus_ = 0;
-      /**
-       * <code>.CompoundBoostTakeStatusType take_status = 9;</code>
-       * @return The enum numeric value on the wire for takeStatus.
-       */
-      @java.lang.Override public int getTakeStatusValue() {
-        return takeStatus_;
-      }
-      /**
-       * <code>.CompoundBoostTakeStatusType take_status = 9;</code>
-       * @param value The enum numeric value on the wire for takeStatus to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTakeStatusValue(int value) {
-        takeStatus_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.CompoundBoostTakeStatusType take_status = 9;</code>
-       * @return The takeStatus.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType getTakeStatus() {
-        emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType result = emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType.forNumber(takeStatus_);
-        return result == null ? emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.CompoundBoostTakeStatusType take_status = 9;</code>
-       * @param value The takeStatus to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTakeStatus(emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        bitField0_ |= 0x00000002;
-        takeStatus_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.CompoundBoostTakeStatusType take_status = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTakeStatus() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        takeStatus_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData> compoundQueueDataList_ =
         java.util.Collections.emptyList();
       private void ensureCompoundQueueDataListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           compoundQueueDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData>(compoundQueueDataList_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000001;
          }
       }
 
@@ -827,7 +742,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
           emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData, emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.Builder, emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueDataOrBuilder> compoundQueueDataListBuilder_;
 
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData> getCompoundQueueDataListList() {
         if (compoundQueueDataListBuilder_ == null) {
@@ -837,7 +752,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public int getCompoundQueueDataListCount() {
         if (compoundQueueDataListBuilder_ == null) {
@@ -847,7 +762,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData getCompoundQueueDataList(int index) {
         if (compoundQueueDataListBuilder_ == null) {
@@ -857,7 +772,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public Builder setCompoundQueueDataList(
           int index, emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData value) {
@@ -874,7 +789,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public Builder setCompoundQueueDataList(
           int index, emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.Builder builderForValue) {
@@ -888,7 +803,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public Builder addCompoundQueueDataList(emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData value) {
         if (compoundQueueDataListBuilder_ == null) {
@@ -904,7 +819,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public Builder addCompoundQueueDataList(
           int index, emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData value) {
@@ -921,7 +836,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public Builder addCompoundQueueDataList(
           emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.Builder builderForValue) {
@@ -935,7 +850,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public Builder addCompoundQueueDataList(
           int index, emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.Builder builderForValue) {
@@ -949,7 +864,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public Builder addAllCompoundQueueDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData> values) {
@@ -964,12 +879,12 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public Builder clearCompoundQueueDataList() {
         if (compoundQueueDataListBuilder_ == null) {
           compoundQueueDataList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
           compoundQueueDataListBuilder_.clear();
@@ -977,7 +892,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public Builder removeCompoundQueueDataList(int index) {
         if (compoundQueueDataListBuilder_ == null) {
@@ -990,14 +905,14 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.Builder getCompoundQueueDataListBuilder(
           int index) {
         return getCompoundQueueDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueDataOrBuilder getCompoundQueueDataListOrBuilder(
           int index) {
@@ -1007,7 +922,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueDataOrBuilder> 
            getCompoundQueueDataListOrBuilderList() {
@@ -1018,14 +933,14 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.Builder addCompoundQueueDataListBuilder() {
         return getCompoundQueueDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.getDefaultInstance());
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.Builder addCompoundQueueDataListBuilder(
           int index) {
@@ -1033,7 +948,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
             index, emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.getDefaultInstance());
       }
       /**
-       * <code>repeated .CompoundQueueData compoundQueueDataList = 15;</code>
+       * <code>repeated .CompoundQueueData compoundQueueDataList = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.Builder> 
            getCompoundQueueDataListBuilderList() {
@@ -1046,12 +961,97 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
           compoundQueueDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData, emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueData.Builder, emu.grasscutter.net.proto.CompoundQueueDataOuterClass.CompoundQueueDataOrBuilder>(
                   compoundQueueDataList_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
           compoundQueueDataList_ = null;
         }
         return compoundQueueDataListBuilder_;
+      }
+
+      private int takeStatus_ = 0;
+      /**
+       * <code>.CompoundBoostTakeStatusType take_status = 3;</code>
+       * @return The enum numeric value on the wire for takeStatus.
+       */
+      @java.lang.Override public int getTakeStatusValue() {
+        return takeStatus_;
+      }
+      /**
+       * <code>.CompoundBoostTakeStatusType take_status = 3;</code>
+       * @param value The enum numeric value on the wire for takeStatus to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTakeStatusValue(int value) {
+        takeStatus_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.CompoundBoostTakeStatusType take_status = 3;</code>
+       * @return The takeStatus.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType getTakeStatus() {
+        emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType result = emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType.forNumber(takeStatus_);
+        return result == null ? emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.CompoundBoostTakeStatusType take_status = 3;</code>
+       * @param value The takeStatus to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTakeStatus(emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.CompoundBoostTakeStatusType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000002;
+        takeStatus_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.CompoundBoostTakeStatusType take_status = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTakeStatus() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        takeStatus_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+
+        retcode_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        retcode_ = 0;
+        onChanged();
+        return this;
       }
 
       private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> takeItemList_ =
@@ -1067,7 +1067,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> takeItemListBuilder_;
 
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getTakeItemListList() {
         if (takeItemListBuilder_ == null) {
@@ -1077,7 +1077,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public int getTakeItemListCount() {
         if (takeItemListBuilder_ == null) {
@@ -1087,7 +1087,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getTakeItemList(int index) {
         if (takeItemListBuilder_ == null) {
@@ -1097,7 +1097,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public Builder setTakeItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1114,7 +1114,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public Builder setTakeItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1128,7 +1128,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public Builder addTakeItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (takeItemListBuilder_ == null) {
@@ -1144,7 +1144,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public Builder addTakeItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1161,7 +1161,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public Builder addTakeItemList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1175,7 +1175,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public Builder addTakeItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1189,7 +1189,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public Builder addAllTakeItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -1204,7 +1204,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public Builder clearTakeItemList() {
         if (takeItemListBuilder_ == null) {
@@ -1217,7 +1217,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public Builder removeTakeItemList(int index) {
         if (takeItemListBuilder_ == null) {
@@ -1230,14 +1230,14 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getTakeItemListBuilder(
           int index) {
         return getTakeItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getTakeItemListOrBuilder(
           int index) {
@@ -1247,7 +1247,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getTakeItemListOrBuilderList() {
@@ -1258,14 +1258,14 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addTakeItemListBuilder() {
         return getTakeItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addTakeItemListBuilder(
           int index) {
@@ -1273,7 +1273,7 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam take_item_list = 14;</code>
+       * <code>repeated .ItemParam take_item_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getTakeItemListBuilderList() {
@@ -1371,21 +1371,21 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$PlayerCompoundMaterialBoostRsp.proto\032!" +
-      "CompoundBoostTakeStatusType.proto\032\027Compo" +
-      "undQueueData.proto\032\017ItemParam.proto\"\273\001\n\036" +
-      "PlayerCompoundMaterialBoostRsp\022\017\n\007retcod" +
-      "e\030\010 \001(\005\0221\n\013take_status\030\t \001(\0162\034.CompoundB" +
-      "oostTakeStatusType\0221\n\025compoundQueueDataL" +
-      "ist\030\017 \003(\0132\022.CompoundQueueData\022\"\n\016take_it" +
-      "em_list\030\016 \003(\0132\n.ItemParamB\033\n\031emu.grasscu" +
+      "\n$PlayerCompoundMaterialBoostRsp.proto\032\027" +
+      "CompoundQueueData.proto\032!CompoundBoostTa" +
+      "keStatusType.proto\032\017ItemParam.proto\"\273\001\n\036" +
+      "PlayerCompoundMaterialBoostRsp\0221\n\025compou" +
+      "ndQueueDataList\030\002 \003(\0132\022.CompoundQueueDat" +
+      "a\0221\n\013take_status\030\003 \001(\0162\034.CompoundBoostTa" +
+      "keStatusType\022\017\n\007retcode\030\016 \001(\005\022\"\n\016take_it" +
+      "em_list\030\r \003(\0132\n.ItemParamB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.CompoundQueueDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor(),
         });
     internal_static_PlayerCompoundMaterialBoostRsp_descriptor =
@@ -1393,9 +1393,9 @@ public final class PlayerCompoundMaterialBoostRspOuterClass {
     internal_static_PlayerCompoundMaterialBoostRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerCompoundMaterialBoostRsp_descriptor,
-        new java.lang.String[] { "Retcode", "TakeStatus", "CompoundQueueDataList", "TakeItemList", });
-    emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.getDescriptor();
+        new java.lang.String[] { "CompoundQueueDataList", "TakeStatus", "Retcode", "TakeItemList", });
     emu.grasscutter.net.proto.CompoundQueueDataOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.CompoundBoostTakeStatusTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
   }
 

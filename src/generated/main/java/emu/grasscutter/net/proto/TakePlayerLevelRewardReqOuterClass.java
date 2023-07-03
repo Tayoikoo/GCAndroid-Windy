@@ -26,8 +26,8 @@ public final class TakePlayerLevelRewardReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 164
-   * Name: HIIDJCLGOLA
+   * CmdId: 177
+   * Obf: BDKEEBHCGLM
    * </pre>
    *
    * Protobuf type {@code TakePlayerLevelRewardReq}
@@ -234,8 +234,8 @@ public final class TakePlayerLevelRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 164
-     * Name: HIIDJCLGOLA
+     * CmdId: 177
+     * Obf: BDKEEBHCGLM
      * </pre>
      *
      * Protobuf type {@code TakePlayerLevelRewardReq}

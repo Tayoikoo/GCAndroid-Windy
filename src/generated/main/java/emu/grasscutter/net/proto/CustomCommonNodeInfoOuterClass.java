@@ -44,7 +44,7 @@ public final class CustomCommonNodeInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: OPFOGLAHFNE
+   * Obf: COEBLBLIGHJ
    * </pre>
    *
    * Protobuf type {@code CustomCommonNodeInfo}
@@ -323,7 +323,7 @@ public final class CustomCommonNodeInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: OPFOGLAHFNE
+     * Obf: COEBLBLIGHJ
      * </pre>
      *
      * Protobuf type {@code CustomCommonNodeInfo}

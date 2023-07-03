@@ -88,72 +88,6 @@ public final class SceneEntityUpdateNotifyOuterClass {
       return new SceneEntityUpdateNotify();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private SceneEntityUpdateNotify(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 16: {
-
-              param_ = input.readUInt32();
-              break;
-            }
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                entityList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              entityList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 112: {
-              int rawValue = input.readEnum();
-
-              appearType_ = rawValue;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          entityList_ = java.util.Collections.unmodifiableList(entityList_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.SceneEntityUpdateNotifyOuterClass.internal_static_SceneEntityUpdateNotify_descriptor;
@@ -168,6 +102,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
     }
 
     public static final int ENTITY_LIST_FIELD_NUMBER = 12;
+    @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo> entityList_;
     /**
      * <code>repeated .SceneEntityInfo entity_list = 12;</code>
@@ -208,7 +143,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
     }
 
     public static final int PARAM_FIELD_NUMBER = 2;
-    private int param_;
+    private int param_ = 0;
     /**
      * <code>uint32 param = 2;</code>
      * @return The param.
@@ -219,7 +154,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
     }
 
     public static final int APPEAR_TYPE_FIELD_NUMBER = 14;
-    private int appearType_;
+    private int appearType_ = 0;
     /**
      * <code>.VisionType appear_type = 14;</code>
      * @return The enum numeric value on the wire for appearType.
@@ -232,8 +167,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
      * @return The appearType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType getAppearType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType result = emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType.valueOf(appearType_);
+      emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType result = emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType.forNumber(appearType_);
       return result == null ? emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType.UNRECOGNIZED : result;
     }
 
@@ -260,7 +194,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
       if (appearType_ != emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType.VISION_TYPE_NONE.getNumber()) {
         output.writeEnum(14, appearType_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -281,7 +215,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(14, appearType_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -301,7 +235,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
       if (getParam()
           != other.getParam()) return false;
       if (appearType_ != other.appearType_) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -320,7 +254,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
       hash = (53 * hash) + getParam();
       hash = (37 * hash) + APPEAR_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + appearType_;
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -369,11 +303,13 @@ public final class SceneEntityUpdateNotifyOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.SceneEntityUpdateNotifyOuterClass.SceneEntityUpdateNotify parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.SceneEntityUpdateNotifyOuterClass.SceneEntityUpdateNotify parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -442,33 +378,27 @@ public final class SceneEntityUpdateNotifyOuterClass {
 
       // Construct using emu.grasscutter.net.proto.SceneEntityUpdateNotifyOuterClass.SceneEntityUpdateNotify.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getEntityListFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bitField0_ = 0;
         if (entityListBuilder_ == null) {
           entityList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          entityList_ = null;
           entityListBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000001);
         param_ = 0;
-
         appearType_ = 0;
-
         return this;
       }
 
@@ -495,7 +425,13 @@ public final class SceneEntityUpdateNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneEntityUpdateNotifyOuterClass.SceneEntityUpdateNotify buildPartial() {
         emu.grasscutter.net.proto.SceneEntityUpdateNotifyOuterClass.SceneEntityUpdateNotify result = new emu.grasscutter.net.proto.SceneEntityUpdateNotifyOuterClass.SceneEntityUpdateNotify(this);
-        int from_bitField0_ = bitField0_;
+        buildPartialRepeatedFields(result);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartialRepeatedFields(emu.grasscutter.net.proto.SceneEntityUpdateNotifyOuterClass.SceneEntityUpdateNotify result) {
         if (entityListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             entityList_ = java.util.Collections.unmodifiableList(entityList_);
@@ -505,10 +441,16 @@ public final class SceneEntityUpdateNotifyOuterClass {
         } else {
           result.entityList_ = entityListBuilder_.build();
         }
-        result.param_ = param_;
-        result.appearType_ = appearType_;
-        onBuilt();
-        return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.SceneEntityUpdateNotifyOuterClass.SceneEntityUpdateNotify result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.param_ = param_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.appearType_ = appearType_;
+        }
       }
 
       @java.lang.Override
@@ -587,7 +529,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
         if (other.appearType_ != 0) {
           setAppearTypeValue(other.getAppearTypeValue());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -602,17 +544,53 @@ public final class SceneEntityUpdateNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.SceneEntityUpdateNotifyOuterClass.SceneEntityUpdateNotify parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 16: {
+                param_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 98: {
+                emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo m =
+                    input.readMessage(
+                        emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo.parser(),
+                        extensionRegistry);
+                if (entityListBuilder_ == null) {
+                  ensureEntityListIsMutable();
+                  entityList_.add(m);
+                } else {
+                  entityListBuilder_.addMessage(m);
+                }
+                break;
+              } // case 98
+              case 112: {
+                appearType_ = input.readEnum();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 112
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.SceneEntityUpdateNotifyOuterClass.SceneEntityUpdateNotify) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -872,8 +850,9 @@ public final class SceneEntityUpdateNotifyOuterClass {
        * @return This builder for chaining.
        */
       public Builder setParam(int value) {
-        
+
         param_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -882,7 +861,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearParam() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         param_ = 0;
         onChanged();
         return this;
@@ -902,8 +881,8 @@ public final class SceneEntityUpdateNotifyOuterClass {
        * @return This builder for chaining.
        */
       public Builder setAppearTypeValue(int value) {
-        
         appearType_ = value;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -913,8 +892,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType getAppearType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType result = emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType.valueOf(appearType_);
+        emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType result = emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType.forNumber(appearType_);
         return result == null ? emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType.UNRECOGNIZED : result;
       }
       /**
@@ -926,7 +904,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+        bitField0_ |= 0x00000004;
         appearType_ = value.getNumber();
         onChanged();
         return this;
@@ -936,7 +914,7 @@ public final class SceneEntityUpdateNotifyOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearAppearType() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         appearType_ = 0;
         onChanged();
         return this;
@@ -974,7 +952,18 @@ public final class SceneEntityUpdateNotifyOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SceneEntityUpdateNotify(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

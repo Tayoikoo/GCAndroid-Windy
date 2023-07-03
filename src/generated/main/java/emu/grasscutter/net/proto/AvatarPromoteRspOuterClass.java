@@ -19,21 +19,21 @@ public final class AvatarPromoteRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 guid = 6;</code>
+     * <code>uint64 guid = 13;</code>
      * @return The guid.
      */
     long getGuid();
 
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 1640
-   * Name: FNOLNFIPFMH
+   * CmdId: 1726
+   * Obf: HADHOJAJMCO
    * </pre>
    *
    * Protobuf type {@code AvatarPromoteRsp}
@@ -70,10 +70,10 @@ public final class AvatarPromoteRspOuterClass {
               emu.grasscutter.net.proto.AvatarPromoteRspOuterClass.AvatarPromoteRsp.class, emu.grasscutter.net.proto.AvatarPromoteRspOuterClass.AvatarPromoteRsp.Builder.class);
     }
 
-    public static final int GUID_FIELD_NUMBER = 6;
+    public static final int GUID_FIELD_NUMBER = 13;
     private long guid_ = 0L;
     /**
-     * <code>uint64 guid = 6;</code>
+     * <code>uint64 guid = 13;</code>
      * @return The guid.
      */
     @java.lang.Override
@@ -81,10 +81,10 @@ public final class AvatarPromoteRspOuterClass {
       return guid_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -106,11 +106,11 @@ public final class AvatarPromoteRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
-      }
       if (guid_ != 0L) {
-        output.writeUInt64(6, guid_);
+        output.writeUInt64(13, guid_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(15, retcode_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -121,13 +121,13 @@ public final class AvatarPromoteRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
-      }
       if (guid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, guid_);
+          .computeUInt64Size(13, guid_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, retcode_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -263,8 +263,8 @@ public final class AvatarPromoteRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1640
-     * Name: FNOLNFIPFMH
+     * CmdId: 1726
+     * Obf: HADHOJAJMCO
      * </pre>
      *
      * Protobuf type {@code AvatarPromoteRsp}
@@ -419,16 +419,16 @@ public final class AvatarPromoteRspOuterClass {
               case 0:
                 done = true;
                 break;
-              case 16: {
-                retcode_ = input.readInt32();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 16
-              case 48: {
+              case 104: {
                 guid_ = input.readUInt64();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 48
+              } // case 104
+              case 120: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 120
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -448,7 +448,7 @@ public final class AvatarPromoteRspOuterClass {
 
       private long guid_ ;
       /**
-       * <code>uint64 guid = 6;</code>
+       * <code>uint64 guid = 13;</code>
        * @return The guid.
        */
       @java.lang.Override
@@ -456,7 +456,7 @@ public final class AvatarPromoteRspOuterClass {
         return guid_;
       }
       /**
-       * <code>uint64 guid = 6;</code>
+       * <code>uint64 guid = 13;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
        */
@@ -468,7 +468,7 @@ public final class AvatarPromoteRspOuterClass {
         return this;
       }
       /**
-       * <code>uint64 guid = 6;</code>
+       * <code>uint64 guid = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
@@ -480,7 +480,7 @@ public final class AvatarPromoteRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -488,7 +488,7 @@ public final class AvatarPromoteRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -500,7 +500,7 @@ public final class AvatarPromoteRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -588,7 +588,7 @@ public final class AvatarPromoteRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026AvatarPromoteRsp.proto\"1\n\020AvatarPromot" +
-      "eRsp\022\014\n\004guid\030\006 \001(\004\022\017\n\007retcode\030\002 \001(\005B\033\n\031e" +
+      "eRsp\022\014\n\004guid\030\r \001(\004\022\017\n\007retcode\030\017 \001(\005B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

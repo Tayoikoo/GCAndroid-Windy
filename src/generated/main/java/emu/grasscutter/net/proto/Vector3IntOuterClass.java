@@ -38,7 +38,7 @@ public final class Vector3IntOuterClass {
   }
   /**
    * <pre>
-   * Name: FIEOBJIFPCA
+   * Obf: HIFDGGNOKNC
    * </pre>
    *
    * Protobuf type {@code Vector3Int}
@@ -289,7 +289,7 @@ public final class Vector3IntOuterClass {
     }
     /**
      * <pre>
-     * Name: FIEOBJIFPCA
+     * Obf: HIFDGGNOKNC
      * </pre>
      *
      * Protobuf type {@code Vector3Int}

@@ -1,6 +1,5 @@
 package emu.grasscutter.server.http;
 
-import emu.grasscutter.GameConstants;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.Grasscutter.ServerDebugMode;
 import emu.grasscutter.utils.FileUtils;
@@ -191,7 +190,7 @@ public final class HttpServer {
                         <!-- Custom CSS -->
                         <style>
                             body {
-                                background-image: url('https://media.tenor.com/NQfq1liFH-8AAAAM/byuntear-sad.gif');
+                                background-image: url('https://media.tenor.com/3pLld4L_Ws8AAAAC/cat-wet.gif');
                                 background-size: cover;
                                 background-repeat: no-repeat;
                                 background-position: center center;
@@ -223,11 +222,10 @@ public final class HttpServer {
                             <h1>Welcome To Windy!</h1>
                             <p>Windy is great software that executes packet to send lua and get winded.</p>
                             <br>
-                            <span>%s</span>
+                            <span>Game Version: 3.7.0 - Public</span>
                             <br>
-                            <span>Server Version: 1.5.1-dev</span>
+                            <span>Server Version: 1.6.1-dev</span>
                             <br>
-                            <p>OS: Android</p>
                         </div>
                         <!-- Bootstrap JS -->
                         <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
@@ -235,7 +233,7 @@ public final class HttpServer {
                         <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous'></script>
                     </body>
                     </html>
-                    """.formatted(translate("messages.status.game_version_html", GameConstants.VERSION)));
+                    """);
                 } else {
                     var filePath = file.getPath();
                     ContentType fromExtension = ContentType.getContentTypeByExtension(filePath.substring(filePath.lastIndexOf(".") + 1));
@@ -268,7 +266,7 @@ public final class HttpServer {
                             </head>
 
                             <body>
-                                <img src='https://http.cat/404' />
+                                <img src="https://http.cat/404" />
                             </body>
                         </html>
                         """);

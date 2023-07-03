@@ -38,7 +38,7 @@ public final class SocialShowAvatarInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: PKPGAPABGIN
+   * Obf: HFJBPBGJGNP
    * </pre>
    *
    * Protobuf type {@code SocialShowAvatarInfo}
@@ -289,7 +289,7 @@ public final class SocialShowAvatarInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: PKPGAPABGIN
+     * Obf: HFJBPBGJGNP
      * </pre>
      *
      * Protobuf type {@code SocialShowAvatarInfo}

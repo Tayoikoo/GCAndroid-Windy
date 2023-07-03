@@ -25,15 +25,15 @@ public final class TakeCompoundOutputReqOuterClass {
     int getCompoundGroupId();
 
     /**
-     * <code>uint32 compound_id = 13;</code>
+     * <code>uint32 compound_id = 7;</code>
      * @return The compoundId.
      */
     int getCompoundId();
   }
   /**
    * <pre>
-   * CmdId: 106
-   * Name: KILNDKJNGBJ
+   * CmdId: 198
+   * Obf: ALOHABDLIMK
    * </pre>
    *
    * Protobuf type {@code TakeCompoundOutputReq}
@@ -81,10 +81,10 @@ public final class TakeCompoundOutputReqOuterClass {
       return compoundGroupId_;
     }
 
-    public static final int COMPOUND_ID_FIELD_NUMBER = 13;
+    public static final int COMPOUND_ID_FIELD_NUMBER = 7;
     private int compoundId_ = 0;
     /**
-     * <code>uint32 compound_id = 13;</code>
+     * <code>uint32 compound_id = 7;</code>
      * @return The compoundId.
      */
     @java.lang.Override
@@ -110,7 +110,7 @@ public final class TakeCompoundOutputReqOuterClass {
         output.writeUInt32(1, compoundGroupId_);
       }
       if (compoundId_ != 0) {
-        output.writeUInt32(13, compoundId_);
+        output.writeUInt32(7, compoundId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -127,7 +127,7 @@ public final class TakeCompoundOutputReqOuterClass {
       }
       if (compoundId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, compoundId_);
+          .computeUInt32Size(7, compoundId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -262,8 +262,8 @@ public final class TakeCompoundOutputReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 106
-     * Name: KILNDKJNGBJ
+     * CmdId: 198
+     * Obf: ALOHABDLIMK
      * </pre>
      *
      * Protobuf type {@code TakeCompoundOutputReq}
@@ -423,11 +423,11 @@ public final class TakeCompoundOutputReqOuterClass {
                 bitField0_ |= 0x00000001;
                 break;
               } // case 8
-              case 104: {
+              case 56: {
                 compoundId_ = input.readUInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 104
+              } // case 56
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -479,7 +479,7 @@ public final class TakeCompoundOutputReqOuterClass {
 
       private int compoundId_ ;
       /**
-       * <code>uint32 compound_id = 13;</code>
+       * <code>uint32 compound_id = 7;</code>
        * @return The compoundId.
        */
       @java.lang.Override
@@ -487,7 +487,7 @@ public final class TakeCompoundOutputReqOuterClass {
         return compoundId_;
       }
       /**
-       * <code>uint32 compound_id = 13;</code>
+       * <code>uint32 compound_id = 7;</code>
        * @param value The compoundId to set.
        * @return This builder for chaining.
        */
@@ -499,7 +499,7 @@ public final class TakeCompoundOutputReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 compound_id = 13;</code>
+       * <code>uint32 compound_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCompoundId() {
@@ -588,7 +588,7 @@ public final class TakeCompoundOutputReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033TakeCompoundOutputReq.proto\"G\n\025TakeCom" +
       "poundOutputReq\022\031\n\021compound_group_id\030\001 \001(" +
-      "\r\022\023\n\013compound_id\030\r \001(\rB\033\n\031emu.grasscutte" +
+      "\r\022\023\n\013compound_id\030\007 \001(\rB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

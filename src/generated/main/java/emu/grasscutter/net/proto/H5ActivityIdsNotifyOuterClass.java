@@ -51,15 +51,15 @@ public final class H5ActivityIdsNotifyOuterClass {
         int key);
 
     /**
-     * <code>uint32 client_red_dot_timestamp = 14;</code>
+     * <code>uint32 client_red_dot_timestamp = 3;</code>
      * @return The clientRedDotTimestamp.
      */
     int getClientRedDotTimestamp();
   }
   /**
    * <pre>
-   * CmdId: 5667
-   * Name: NKAFABCJHNC
+   * CmdId: 5687
+   * Obf: GGHFPMEMPIE
    * </pre>
    *
    * Protobuf type {@code H5ActivityIdsNotify}
@@ -185,10 +185,10 @@ public final class H5ActivityIdsNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int CLIENT_RED_DOT_TIMESTAMP_FIELD_NUMBER = 14;
+    public static final int CLIENT_RED_DOT_TIMESTAMP_FIELD_NUMBER = 3;
     private int clientRedDotTimestamp_ = 0;
     /**
-     * <code>uint32 client_red_dot_timestamp = 14;</code>
+     * <code>uint32 client_red_dot_timestamp = 3;</code>
      * @return The clientRedDotTimestamp.
      */
     @java.lang.Override
@@ -211,7 +211,7 @@ public final class H5ActivityIdsNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (clientRedDotTimestamp_ != 0) {
-        output.writeUInt32(14, clientRedDotTimestamp_);
+        output.writeUInt32(3, clientRedDotTimestamp_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
@@ -230,7 +230,7 @@ public final class H5ActivityIdsNotifyOuterClass {
       size = 0;
       if (clientRedDotTimestamp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, clientRedDotTimestamp_);
+          .computeUInt32Size(3, clientRedDotTimestamp_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetH5ActivityMap().getMap().entrySet()) {
@@ -377,8 +377,8 @@ public final class H5ActivityIdsNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5667
-     * Name: NKAFABCJHNC
+     * CmdId: 5687
+     * Obf: GGHFPMEMPIE
      * </pre>
      *
      * Protobuf type {@code H5ActivityIdsNotify}
@@ -556,11 +556,11 @@ public final class H5ActivityIdsNotifyOuterClass {
               case 0:
                 done = true;
                 break;
-              case 112: {
+              case 24: {
                 clientRedDotTimestamp_ = input.readUInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 112
+              } // case 24
               case 122: {
                 com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
                 h5ActivityMap__ = input.readMessage(
@@ -714,7 +714,7 @@ public final class H5ActivityIdsNotifyOuterClass {
 
       private int clientRedDotTimestamp_ ;
       /**
-       * <code>uint32 client_red_dot_timestamp = 14;</code>
+       * <code>uint32 client_red_dot_timestamp = 3;</code>
        * @return The clientRedDotTimestamp.
        */
       @java.lang.Override
@@ -722,7 +722,7 @@ public final class H5ActivityIdsNotifyOuterClass {
         return clientRedDotTimestamp_;
       }
       /**
-       * <code>uint32 client_red_dot_timestamp = 14;</code>
+       * <code>uint32 client_red_dot_timestamp = 3;</code>
        * @param value The clientRedDotTimestamp to set.
        * @return This builder for chaining.
        */
@@ -734,7 +734,7 @@ public final class H5ActivityIdsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 client_red_dot_timestamp = 14;</code>
+       * <code>uint32 client_red_dot_timestamp = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientRedDotTimestamp() {
@@ -829,7 +829,7 @@ public final class H5ActivityIdsNotifyOuterClass {
       "\n\031H5ActivityIdsNotify.proto\"\257\001\n\023H5Activi" +
       "tyIdsNotify\022@\n\017h5_activity_map\030\017 \003(\0132\'.H" +
       "5ActivityIdsNotify.H5ActivityMapEntry\022 \n" +
-      "\030client_red_dot_timestamp\030\016 \001(\r\0324\n\022H5Act" +
+      "\030client_red_dot_timestamp\030\003 \001(\r\0324\n\022H5Act" +
       "ivityMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(" +
       "\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"

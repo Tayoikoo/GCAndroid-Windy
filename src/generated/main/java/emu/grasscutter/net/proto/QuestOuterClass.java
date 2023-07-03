@@ -200,7 +200,7 @@ public final class QuestOuterClass {
   }
   /**
    * <pre>
-   * Name: HPOLMCEHFAC
+   * Obf: LGKNABFOEKJ
    * </pre>
    *
    * Protobuf type {@code Quest}
@@ -1003,7 +1003,7 @@ public final class QuestOuterClass {
     }
     /**
      * <pre>
-     * Name: HPOLMCEHFAC
+     * Obf: LGKNABFOEKJ
      * </pre>
      *
      * Protobuf type {@code Quest}

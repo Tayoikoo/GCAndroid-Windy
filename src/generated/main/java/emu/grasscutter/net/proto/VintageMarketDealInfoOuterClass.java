@@ -19,11 +19,11 @@ public final class VintageMarketDealInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
      */
     int getTraderItemInfoMapCount();
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
      */
     boolean containsTraderItemInfoMap(
         int key);
@@ -34,12 +34,12 @@ public final class VintageMarketDealInfoOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo>
     getTraderItemInfoMap();
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo>
     getTraderItemInfoMapMap();
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
      */
     /* nullable */
 emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo getTraderItemInfoMapOrDefault(
@@ -47,14 +47,14 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
         /* nullable */
 emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo defaultValue);
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
      */
     emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo getTraderItemInfoMapOrThrow(
         int key);
   }
   /**
    * <pre>
-   * Name: PNBMCBELDNA
+   * Obf: CKOJLAKBAGH
    * </pre>
    *
    * Protobuf type {@code VintageMarketDealInfo}
@@ -88,7 +88,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 9:
+        case 10:
           return internalGetTraderItemInfoMap();
         default:
           throw new RuntimeException(
@@ -103,7 +103,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
               emu.grasscutter.net.proto.VintageMarketDealInfoOuterClass.VintageMarketDealInfo.class, emu.grasscutter.net.proto.VintageMarketDealInfoOuterClass.VintageMarketDealInfo.Builder.class);
     }
 
-    public static final int TRADER_ITEM_INFO_MAP_FIELD_NUMBER = 9;
+    public static final int TRADER_ITEM_INFO_MAP_FIELD_NUMBER = 10;
     private static final class TraderItemInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo> defaultEntry =
@@ -130,7 +130,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
       return internalGetTraderItemInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
      */
     @java.lang.Override
     public boolean containsTraderItemInfoMap(
@@ -147,14 +147,14 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
       return getTraderItemInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
      */
     @java.lang.Override
     public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo> getTraderItemInfoMapMap() {
       return internalGetTraderItemInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
      */
     @java.lang.Override
     public /* nullable */
@@ -168,7 +168,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo getTraderItemInfoMapOrThrow(
@@ -201,7 +201,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
           output,
           internalGetTraderItemInfoMap(),
           TraderItemInfoMapDefaultEntryHolder.defaultEntry,
-          9);
+          10);
       getUnknownFields().writeTo(output);
     }
 
@@ -219,7 +219,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(9, traderItemInfoMap__);
+            .computeMessageSize(10, traderItemInfoMap__);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -352,7 +352,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
     }
     /**
      * <pre>
-     * Name: PNBMCBELDNA
+     * Obf: CKOJLAKBAGH
      * </pre>
      *
      * Protobuf type {@code VintageMarketDealInfo}
@@ -370,7 +370,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 9:
+          case 10:
             return internalGetTraderItemInfoMap();
           default:
             throw new RuntimeException(
@@ -381,7 +381,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 9:
+          case 10:
             return internalGetMutableTraderItemInfoMap();
           default:
             throw new RuntimeException(
@@ -523,7 +523,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
               case 0:
                 done = true;
                 break;
-              case 74: {
+              case 82: {
                 com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo>
                 traderItemInfoMap__ = input.readMessage(
                     TraderItemInfoMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
@@ -531,7 +531,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
                     traderItemInfoMap__.getKey(), traderItemInfoMap__.getValue());
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 74
+              } // case 82
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -576,7 +576,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
         return internalGetTraderItemInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
        */
       @java.lang.Override
       public boolean containsTraderItemInfoMap(
@@ -593,14 +593,14 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
         return getTraderItemInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
        */
       @java.lang.Override
       public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo> getTraderItemInfoMapMap() {
         return internalGetTraderItemInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
        */
       @java.lang.Override
       public /* nullable */
@@ -614,7 +614,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo getTraderItemInfoMapOrThrow(
@@ -634,7 +634,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
         return this;
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
        */
       public Builder removeTraderItemInfoMap(
           int key) {
@@ -653,7 +653,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
         return internalGetMutableTraderItemInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
        */
       public Builder putTraderItemInfoMap(
           int key,
@@ -666,7 +666,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
         return this;
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 9;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 10;</code>
        */
       public Builder putAllTraderItemInfoMap(
           java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo> values) {
@@ -760,7 +760,7 @@ emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderI
     java.lang.String[] descriptorData = {
       "\n\033VintageMarketDealInfo.proto\032\035VintageMa" +
       "rketTraderInfo.proto\"\270\001\n\025VintageMarketDe" +
-      "alInfo\022K\n\024trader_item_info_map\030\t \003(\0132-.V" +
+      "alInfo\022K\n\024trader_item_info_map\030\n \003(\0132-.V" +
       "intageMarketDealInfo.TraderItemInfoMapEn" +
       "try\032R\n\026TraderItemInfoMapEntry\022\013\n\003key\030\001 \001" +
       "(\r\022\'\n\005value\030\002 \001(\0132\030.VintageMarketTraderI" +

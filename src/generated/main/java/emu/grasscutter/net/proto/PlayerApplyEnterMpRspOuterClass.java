@@ -19,27 +19,27 @@ public final class PlayerApplyEnterMpRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 param = 4;</code>
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 param = 5;</code>
      * @return The param.
      */
     int getParam();
 
     /**
-     * <code>uint32 target_uid = 2;</code>
+     * <code>uint32 target_uid = 7;</code>
      * @return The targetUid.
      */
     int getTargetUid();
-
-    /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 1817
-   * Name: DCGHCNJEHBH
+   * CmdId: 1837
+   * Obf: BIGOGCCBLJB
    * </pre>
    *
    * Protobuf type {@code PlayerApplyEnterMpRsp}
@@ -76,10 +76,21 @@ public final class PlayerApplyEnterMpRspOuterClass {
               emu.grasscutter.net.proto.PlayerApplyEnterMpRspOuterClass.PlayerApplyEnterMpRsp.class, emu.grasscutter.net.proto.PlayerApplyEnterMpRspOuterClass.PlayerApplyEnterMpRsp.Builder.class);
     }
 
-    public static final int PARAM_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_ = 0;
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int PARAM_FIELD_NUMBER = 5;
     private int param_ = 0;
     /**
-     * <code>uint32 param = 4;</code>
+     * <code>uint32 param = 5;</code>
      * @return The param.
      */
     @java.lang.Override
@@ -87,26 +98,15 @@ public final class PlayerApplyEnterMpRspOuterClass {
       return param_;
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 2;
+    public static final int TARGET_UID_FIELD_NUMBER = 7;
     private int targetUid_ = 0;
     /**
-     * <code>uint32 target_uid = 2;</code>
+     * <code>uint32 target_uid = 7;</code>
      * @return The targetUid.
      */
     @java.lang.Override
     public int getTargetUid() {
       return targetUid_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 12;
-    private int retcode_ = 0;
-    /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -123,14 +123,14 @@ public final class PlayerApplyEnterMpRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (targetUid_ != 0) {
-        output.writeUInt32(2, targetUid_);
-      }
       if (param_ != 0) {
-        output.writeUInt32(4, param_);
+        output.writeUInt32(5, param_);
+      }
+      if (targetUid_ != 0) {
+        output.writeUInt32(7, targetUid_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(13, retcode_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -141,17 +141,17 @@ public final class PlayerApplyEnterMpRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetUid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, targetUid_);
-      }
       if (param_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, param_);
+          .computeUInt32Size(5, param_);
+      }
+      if (targetUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, targetUid_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(13, retcode_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -168,12 +168,12 @@ public final class PlayerApplyEnterMpRspOuterClass {
       }
       emu.grasscutter.net.proto.PlayerApplyEnterMpRspOuterClass.PlayerApplyEnterMpRsp other = (emu.grasscutter.net.proto.PlayerApplyEnterMpRspOuterClass.PlayerApplyEnterMpRsp) obj;
 
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (getParam()
           != other.getParam()) return false;
       if (getTargetUid()
           != other.getTargetUid()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -185,12 +185,12 @@ public final class PlayerApplyEnterMpRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + PARAM_FIELD_NUMBER;
       hash = (53 * hash) + getParam();
       hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetUid();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -290,8 +290,8 @@ public final class PlayerApplyEnterMpRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1817
-     * Name: DCGHCNJEHBH
+     * CmdId: 1837
+     * Obf: BIGOGCCBLJB
      * </pre>
      *
      * Protobuf type {@code PlayerApplyEnterMpRsp}
@@ -327,9 +327,9 @@ public final class PlayerApplyEnterMpRspOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
+        retcode_ = 0;
         param_ = 0;
         targetUid_ = 0;
-        retcode_ = 0;
         return this;
       }
 
@@ -364,13 +364,13 @@ public final class PlayerApplyEnterMpRspOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.PlayerApplyEnterMpRspOuterClass.PlayerApplyEnterMpRsp result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.param_ = param_;
+          result.retcode_ = retcode_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.targetUid_ = targetUid_;
+          result.param_ = param_;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.retcode_ = retcode_;
+          result.targetUid_ = targetUid_;
         }
       }
 
@@ -418,14 +418,14 @@ public final class PlayerApplyEnterMpRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerApplyEnterMpRspOuterClass.PlayerApplyEnterMpRsp other) {
         if (other == emu.grasscutter.net.proto.PlayerApplyEnterMpRspOuterClass.PlayerApplyEnterMpRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (other.getParam() != 0) {
           setParam(other.getParam());
         }
         if (other.getTargetUid() != 0) {
           setTargetUid(other.getTargetUid());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -453,21 +453,21 @@ public final class PlayerApplyEnterMpRspOuterClass {
               case 0:
                 done = true;
                 break;
-              case 16: {
-                targetUid_ = input.readUInt32();
+              case 40: {
+                param_ = input.readUInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 16
-              case 32: {
-                param_ = input.readUInt32();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 32
-              case 96: {
-                retcode_ = input.readInt32();
+              } // case 40
+              case 56: {
+                targetUid_ = input.readUInt32();
                 bitField0_ |= 0x00000004;
                 break;
-              } // case 96
+              } // case 56
+              case 104: {
+                retcode_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 104
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -485,73 +485,9 @@ public final class PlayerApplyEnterMpRspOuterClass {
       }
       private int bitField0_;
 
-      private int param_ ;
-      /**
-       * <code>uint32 param = 4;</code>
-       * @return The param.
-       */
-      @java.lang.Override
-      public int getParam() {
-        return param_;
-      }
-      /**
-       * <code>uint32 param = 4;</code>
-       * @param value The param to set.
-       * @return This builder for chaining.
-       */
-      public Builder setParam(int value) {
-
-        param_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 param = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearParam() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        param_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int targetUid_ ;
-      /**
-       * <code>uint32 target_uid = 2;</code>
-       * @return The targetUid.
-       */
-      @java.lang.Override
-      public int getTargetUid() {
-        return targetUid_;
-      }
-      /**
-       * <code>uint32 target_uid = 2;</code>
-       * @param value The targetUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetUid(int value) {
-
-        targetUid_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 target_uid = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetUid() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        targetUid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -559,24 +495,88 @@ public final class PlayerApplyEnterMpRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
       public Builder setRetcode(int value) {
 
         retcode_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int param_ ;
+      /**
+       * <code>uint32 param = 5;</code>
+       * @return The param.
+       */
+      @java.lang.Override
+      public int getParam() {
+        return param_;
+      }
+      /**
+       * <code>uint32 param = 5;</code>
+       * @param value The param to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParam(int value) {
+
+        param_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 param = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParam() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        param_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int targetUid_ ;
+      /**
+       * <code>uint32 target_uid = 7;</code>
+       * @return The targetUid.
+       */
+      @java.lang.Override
+      public int getTargetUid() {
+        return targetUid_;
+      }
+      /**
+       * <code>uint32 target_uid = 7;</code>
+       * @param value The targetUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetUid(int value) {
+
+        targetUid_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>uint32 target_uid = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRetcode() {
+      public Builder clearTargetUid() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        retcode_ = 0;
+        targetUid_ = 0;
         onChanged();
         return this;
       }
@@ -659,8 +659,8 @@ public final class PlayerApplyEnterMpRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033PlayerApplyEnterMpRsp.proto\"K\n\025PlayerA" +
-      "pplyEnterMpRsp\022\r\n\005param\030\004 \001(\r\022\022\n\ntarget_" +
-      "uid\030\002 \001(\r\022\017\n\007retcode\030\014 \001(\005B\033\n\031emu.grassc" +
+      "pplyEnterMpRsp\022\017\n\007retcode\030\r \001(\005\022\r\n\005param" +
+      "\030\005 \001(\r\022\022\n\ntarget_uid\030\007 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -672,7 +672,7 @@ public final class PlayerApplyEnterMpRspOuterClass {
     internal_static_PlayerApplyEnterMpRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerApplyEnterMpRsp_descriptor,
-        new java.lang.String[] { "Param", "TargetUid", "Retcode", });
+        new java.lang.String[] { "Retcode", "Param", "TargetUid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

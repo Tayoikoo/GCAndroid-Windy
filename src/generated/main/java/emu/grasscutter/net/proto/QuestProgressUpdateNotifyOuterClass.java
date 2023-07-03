@@ -19,7 +19,7 @@ public final class QuestProgressUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 quest_id = 3;</code>
+     * <code>uint32 quest_id = 11;</code>
      * @return The questId.
      */
     int getQuestId();
@@ -42,17 +42,17 @@ public final class QuestProgressUpdateNotifyOuterClass {
     int getFinishProgressList(int index);
 
     /**
-     * <code>repeated uint32 fail_progress_list = 7;</code>
+     * <code>repeated uint32 fail_progress_list = 5;</code>
      * @return A list containing the failProgressList.
      */
     java.util.List<java.lang.Integer> getFailProgressListList();
     /**
-     * <code>repeated uint32 fail_progress_list = 7;</code>
+     * <code>repeated uint32 fail_progress_list = 5;</code>
      * @return The count of failProgressList.
      */
     int getFailProgressListCount();
     /**
-     * <code>repeated uint32 fail_progress_list = 7;</code>
+     * <code>repeated uint32 fail_progress_list = 5;</code>
      * @param index The index of the element to return.
      * @return The failProgressList at the given index.
      */
@@ -60,8 +60,8 @@ public final class QuestProgressUpdateNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 446
-   * Name: CBPKBCFKCKJ
+   * CmdId: 428
+   * Obf: DFKPLKPAEJP
    * </pre>
    *
    * Protobuf type {@code QuestProgressUpdateNotify}
@@ -100,10 +100,10 @@ public final class QuestProgressUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.QuestProgressUpdateNotifyOuterClass.QuestProgressUpdateNotify.class, emu.grasscutter.net.proto.QuestProgressUpdateNotifyOuterClass.QuestProgressUpdateNotify.Builder.class);
     }
 
-    public static final int QUEST_ID_FIELD_NUMBER = 3;
+    public static final int QUEST_ID_FIELD_NUMBER = 11;
     private int questId_ = 0;
     /**
-     * <code>uint32 quest_id = 3;</code>
+     * <code>uint32 quest_id = 11;</code>
      * @return The questId.
      */
     @java.lang.Override
@@ -140,11 +140,11 @@ public final class QuestProgressUpdateNotifyOuterClass {
     }
     private int finishProgressListMemoizedSerializedSize = -1;
 
-    public static final int FAIL_PROGRESS_LIST_FIELD_NUMBER = 7;
+    public static final int FAIL_PROGRESS_LIST_FIELD_NUMBER = 5;
     @SuppressWarnings("serial")
     private com.google.protobuf.Internal.IntList failProgressList_;
     /**
-     * <code>repeated uint32 fail_progress_list = 7;</code>
+     * <code>repeated uint32 fail_progress_list = 5;</code>
      * @return A list containing the failProgressList.
      */
     @java.lang.Override
@@ -153,14 +153,14 @@ public final class QuestProgressUpdateNotifyOuterClass {
       return failProgressList_;
     }
     /**
-     * <code>repeated uint32 fail_progress_list = 7;</code>
+     * <code>repeated uint32 fail_progress_list = 5;</code>
      * @return The count of failProgressList.
      */
     public int getFailProgressListCount() {
       return failProgressList_.size();
     }
     /**
-     * <code>repeated uint32 fail_progress_list = 7;</code>
+     * <code>repeated uint32 fail_progress_list = 5;</code>
      * @param index The index of the element to return.
      * @return The failProgressList at the given index.
      */
@@ -191,15 +191,15 @@ public final class QuestProgressUpdateNotifyOuterClass {
       for (int i = 0; i < finishProgressList_.size(); i++) {
         output.writeUInt32NoTag(finishProgressList_.getInt(i));
       }
-      if (questId_ != 0) {
-        output.writeUInt32(3, questId_);
-      }
       if (getFailProgressListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(failProgressListMemoizedSerializedSize);
       }
       for (int i = 0; i < failProgressList_.size(); i++) {
         output.writeUInt32NoTag(failProgressList_.getInt(i));
+      }
+      if (questId_ != 0) {
+        output.writeUInt32(11, questId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -224,10 +224,6 @@ public final class QuestProgressUpdateNotifyOuterClass {
         }
         finishProgressListMemoizedSerializedSize = dataSize;
       }
-      if (questId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, questId_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < failProgressList_.size(); i++) {
@@ -241,6 +237,10 @@ public final class QuestProgressUpdateNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         failProgressListMemoizedSerializedSize = dataSize;
+      }
+      if (questId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, questId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -383,8 +383,8 @@ public final class QuestProgressUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 446
-     * Name: CBPKBCFKCKJ
+     * CmdId: 428
+     * Obf: DFKPLKPAEJP
      * </pre>
      *
      * Protobuf type {@code QuestProgressUpdateNotify}
@@ -584,18 +584,13 @@ public final class QuestProgressUpdateNotifyOuterClass {
                 input.popLimit(limit);
                 break;
               } // case 10
-              case 24: {
-                questId_ = input.readUInt32();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 24
-              case 56: {
+              case 40: {
                 int v = input.readUInt32();
                 ensureFailProgressListIsMutable();
                 failProgressList_.addInt(v);
                 break;
-              } // case 56
-              case 58: {
+              } // case 40
+              case 42: {
                 int length = input.readRawVarint32();
                 int limit = input.pushLimit(length);
                 ensureFailProgressListIsMutable();
@@ -604,7 +599,12 @@ public final class QuestProgressUpdateNotifyOuterClass {
                 }
                 input.popLimit(limit);
                 break;
-              } // case 58
+              } // case 42
+              case 88: {
+                questId_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 88
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -624,7 +624,7 @@ public final class QuestProgressUpdateNotifyOuterClass {
 
       private int questId_ ;
       /**
-       * <code>uint32 quest_id = 3;</code>
+       * <code>uint32 quest_id = 11;</code>
        * @return The questId.
        */
       @java.lang.Override
@@ -632,7 +632,7 @@ public final class QuestProgressUpdateNotifyOuterClass {
         return questId_;
       }
       /**
-       * <code>uint32 quest_id = 3;</code>
+       * <code>uint32 quest_id = 11;</code>
        * @param value The questId to set.
        * @return This builder for chaining.
        */
@@ -644,7 +644,7 @@ public final class QuestProgressUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 quest_id = 3;</code>
+       * <code>uint32 quest_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearQuestId() {
@@ -743,7 +743,7 @@ public final class QuestProgressUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated uint32 fail_progress_list = 7;</code>
+       * <code>repeated uint32 fail_progress_list = 5;</code>
        * @return A list containing the failProgressList.
        */
       public java.util.List<java.lang.Integer>
@@ -752,14 +752,14 @@ public final class QuestProgressUpdateNotifyOuterClass {
                  java.util.Collections.unmodifiableList(failProgressList_) : failProgressList_;
       }
       /**
-       * <code>repeated uint32 fail_progress_list = 7;</code>
+       * <code>repeated uint32 fail_progress_list = 5;</code>
        * @return The count of failProgressList.
        */
       public int getFailProgressListCount() {
         return failProgressList_.size();
       }
       /**
-       * <code>repeated uint32 fail_progress_list = 7;</code>
+       * <code>repeated uint32 fail_progress_list = 5;</code>
        * @param index The index of the element to return.
        * @return The failProgressList at the given index.
        */
@@ -767,7 +767,7 @@ public final class QuestProgressUpdateNotifyOuterClass {
         return failProgressList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 fail_progress_list = 7;</code>
+       * <code>repeated uint32 fail_progress_list = 5;</code>
        * @param index The index to set the value at.
        * @param value The failProgressList to set.
        * @return This builder for chaining.
@@ -781,7 +781,7 @@ public final class QuestProgressUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fail_progress_list = 7;</code>
+       * <code>repeated uint32 fail_progress_list = 5;</code>
        * @param value The failProgressList to add.
        * @return This builder for chaining.
        */
@@ -793,7 +793,7 @@ public final class QuestProgressUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fail_progress_list = 7;</code>
+       * <code>repeated uint32 fail_progress_list = 5;</code>
        * @param values The failProgressList to add.
        * @return This builder for chaining.
        */
@@ -806,7 +806,7 @@ public final class QuestProgressUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fail_progress_list = 7;</code>
+       * <code>repeated uint32 fail_progress_list = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearFailProgressList() {
@@ -894,9 +894,9 @@ public final class QuestProgressUpdateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037QuestProgressUpdateNotify.proto\"g\n\031Que" +
-      "stProgressUpdateNotify\022\020\n\010quest_id\030\003 \001(\r" +
+      "stProgressUpdateNotify\022\020\n\010quest_id\030\013 \001(\r" +
       "\022\034\n\024finish_progress_list\030\001 \003(\r\022\032\n\022fail_p" +
-      "rogress_list\030\007 \003(\rB\033\n\031emu.grasscutter.ne" +
+      "rogress_list\030\005 \003(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

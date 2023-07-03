@@ -32,7 +32,7 @@ public final class GatherGadgetInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: BAANIDIMAEB
+   * Obf: MOKCLGJBLDD
    * </pre>
    *
    * Protobuf type {@code GatherGadgetInfo}
@@ -262,7 +262,7 @@ public final class GatherGadgetInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: BAANIDIMAEB
+     * Obf: MOKCLGJBLDD
      * </pre>
      *
      * Protobuf type {@code GatherGadgetInfo}

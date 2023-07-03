@@ -25,14 +25,14 @@ public final class UnionCmdOuterClass {
     int getMessageId();
 
     /**
-     * <code>bytes body = 3;</code>
+     * <code>bytes body = 13;</code>
      * @return The body.
      */
     com.google.protobuf.ByteString getBody();
   }
   /**
    * <pre>
-   * Name: IDFBBDEFKOJ
+   * Obf: AIPCAGJJPKM
    * </pre>
    *
    * Protobuf type {@code UnionCmd}
@@ -81,10 +81,10 @@ public final class UnionCmdOuterClass {
       return messageId_;
     }
 
-    public static final int BODY_FIELD_NUMBER = 3;
+    public static final int BODY_FIELD_NUMBER = 13;
     private com.google.protobuf.ByteString body_ = com.google.protobuf.ByteString.EMPTY;
     /**
-     * <code>bytes body = 3;</code>
+     * <code>bytes body = 13;</code>
      * @return The body.
      */
     @java.lang.Override
@@ -110,7 +110,7 @@ public final class UnionCmdOuterClass {
         output.writeUInt32(1, messageId_);
       }
       if (!body_.isEmpty()) {
-        output.writeBytes(3, body_);
+        output.writeBytes(13, body_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -127,7 +127,7 @@ public final class UnionCmdOuterClass {
       }
       if (!body_.isEmpty()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, body_);
+          .computeBytesSize(13, body_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -262,7 +262,7 @@ public final class UnionCmdOuterClass {
     }
     /**
      * <pre>
-     * Name: IDFBBDEFKOJ
+     * Obf: AIPCAGJJPKM
      * </pre>
      *
      * Protobuf type {@code UnionCmd}
@@ -422,11 +422,11 @@ public final class UnionCmdOuterClass {
                 bitField0_ |= 0x00000001;
                 break;
               } // case 8
-              case 26: {
+              case 106: {
                 body_ = input.readBytes();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 26
+              } // case 106
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -478,7 +478,7 @@ public final class UnionCmdOuterClass {
 
       private com.google.protobuf.ByteString body_ = com.google.protobuf.ByteString.EMPTY;
       /**
-       * <code>bytes body = 3;</code>
+       * <code>bytes body = 13;</code>
        * @return The body.
        */
       @java.lang.Override
@@ -486,7 +486,7 @@ public final class UnionCmdOuterClass {
         return body_;
       }
       /**
-       * <code>bytes body = 3;</code>
+       * <code>bytes body = 13;</code>
        * @param value The body to set.
        * @return This builder for chaining.
        */
@@ -498,7 +498,7 @@ public final class UnionCmdOuterClass {
         return this;
       }
       /**
-       * <code>bytes body = 3;</code>
+       * <code>bytes body = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearBody() {
@@ -586,7 +586,7 @@ public final class UnionCmdOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\016UnionCmd.proto\",\n\010UnionCmd\022\022\n\nmessage_" +
-      "id\030\001 \001(\r\022\014\n\004body\030\003 \001(\014B\033\n\031emu.grasscutte" +
+      "id\030\001 \001(\r\022\014\n\004body\030\r \001(\014B\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

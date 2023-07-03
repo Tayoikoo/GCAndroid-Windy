@@ -135,7 +135,7 @@ public class ConfigContainer {
 
     public static class HTTP {
         public String bindAddress = "0.0.0.0";
-        public int bindPort = 54321;
+        public int bindPort = 443;
 
         /* This is the address used in URLs. */
         public String accessAddress = "127.0.0.1";
@@ -342,11 +342,11 @@ public class ConfigContainer {
 
     public static class JoinOptions {
         public int[] welcomeEmotes = {2007, 1002, 4010};
-        public String welcomeMessage = "Welcome to <color=#00FFFF>P</color><color=#10F5FF>a</color><color=#20ECFF>i</color><color=#30E2FF>m</color><color=#40D9FF>o</color><color=#50CFFF>n</color><color=#60C6FF>B</color><color=#70BDFF>o</color><color=#80B3FF>s</color><color=#90AAFF>s</color>'s Private Windy server. \r May Windy Protect You from Virus.";
+        public String welcomeMessage = "<color=#d6c400>Welcome to WindyPS, Make Windy Great again!</color>\n Type /help for help.";
         public JoinOptions.Mail welcomeMail = new JoinOptions.Mail();
 
         public static class Mail {
-            public String title = "Welcome to Grasscutter!";
+            public String title = "Hello!";
             public String content = """
                     Hi there!\r
                     First of all, welcome to Grasscutter. If you have any issues, please let us know so that Lawnmower can help you! \r
@@ -363,13 +363,13 @@ public class ConfigContainer {
     }
 
     public static class ConsoleAccount {
-        public int avatarId = 10000078;
+        public int avatarId = 10000075;
         public int nameCardId = 210001;
-        public int adventureRank = 60;
-        public int worldLevel = 0;
+        public int adventureRank = 69;
+        public int worldLevel = 8;
 
-        public String nickName = "Hoyoverse";
-        public String signature = "Welcome to Private Server!";
+        public String nickName = "Wanderer";
+        public String signature = "Windy Winnies!";
     }
 
     public static class Files {

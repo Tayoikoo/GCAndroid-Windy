@@ -19,20 +19,20 @@ public final class ModifierDurabilityOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float HGJMHAFDFOC = 1;</code>
-     * @return The hGJMHAFDFOC.
+     * <code>float reduce_ratio = 1;</code>
+     * @return The reduceRatio.
      */
-    float getHGJMHAFDFOC();
+    float getReduceRatio();
 
     /**
-     * <code>float AFFIDFJHCFM = 2;</code>
-     * @return The aFFIDFJHCFM.
+     * <code>float remaining_durability = 2;</code>
+     * @return The remainingDurability.
      */
-    float getAFFIDFJHCFM();
+    float getRemainingDurability();
   }
   /**
    * <pre>
-   * Name: DKJFENEJIFH
+   * Obf: NHMMAJIGHNF
    * </pre>
    *
    * Protobuf type {@code ModifierDurability}
@@ -69,26 +69,26 @@ public final class ModifierDurabilityOuterClass {
               emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.class, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.Builder.class);
     }
 
-    public static final int HGJMHAFDFOC_FIELD_NUMBER = 1;
-    private float hGJMHAFDFOC_ = 0F;
+    public static final int REDUCE_RATIO_FIELD_NUMBER = 1;
+    private float reduceRatio_ = 0F;
     /**
-     * <code>float HGJMHAFDFOC = 1;</code>
-     * @return The hGJMHAFDFOC.
+     * <code>float reduce_ratio = 1;</code>
+     * @return The reduceRatio.
      */
     @java.lang.Override
-    public float getHGJMHAFDFOC() {
-      return hGJMHAFDFOC_;
+    public float getReduceRatio() {
+      return reduceRatio_;
     }
 
-    public static final int AFFIDFJHCFM_FIELD_NUMBER = 2;
-    private float aFFIDFJHCFM_ = 0F;
+    public static final int REMAINING_DURABILITY_FIELD_NUMBER = 2;
+    private float remainingDurability_ = 0F;
     /**
-     * <code>float AFFIDFJHCFM = 2;</code>
-     * @return The aFFIDFJHCFM.
+     * <code>float remaining_durability = 2;</code>
+     * @return The remainingDurability.
      */
     @java.lang.Override
-    public float getAFFIDFJHCFM() {
-      return aFFIDFJHCFM_;
+    public float getRemainingDurability() {
+      return remainingDurability_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -105,11 +105,11 @@ public final class ModifierDurabilityOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (java.lang.Float.floatToRawIntBits(hGJMHAFDFOC_) != 0) {
-        output.writeFloat(1, hGJMHAFDFOC_);
+      if (java.lang.Float.floatToRawIntBits(reduceRatio_) != 0) {
+        output.writeFloat(1, reduceRatio_);
       }
-      if (java.lang.Float.floatToRawIntBits(aFFIDFJHCFM_) != 0) {
-        output.writeFloat(2, aFFIDFJHCFM_);
+      if (java.lang.Float.floatToRawIntBits(remainingDurability_) != 0) {
+        output.writeFloat(2, remainingDurability_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -120,13 +120,13 @@ public final class ModifierDurabilityOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (java.lang.Float.floatToRawIntBits(hGJMHAFDFOC_) != 0) {
+      if (java.lang.Float.floatToRawIntBits(reduceRatio_) != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(1, hGJMHAFDFOC_);
+          .computeFloatSize(1, reduceRatio_);
       }
-      if (java.lang.Float.floatToRawIntBits(aFFIDFJHCFM_) != 0) {
+      if (java.lang.Float.floatToRawIntBits(remainingDurability_) != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(2, aFFIDFJHCFM_);
+          .computeFloatSize(2, remainingDurability_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -143,12 +143,12 @@ public final class ModifierDurabilityOuterClass {
       }
       emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability other = (emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability) obj;
 
-      if (java.lang.Float.floatToIntBits(getHGJMHAFDFOC())
+      if (java.lang.Float.floatToIntBits(getReduceRatio())
           != java.lang.Float.floatToIntBits(
-              other.getHGJMHAFDFOC())) return false;
-      if (java.lang.Float.floatToIntBits(getAFFIDFJHCFM())
+              other.getReduceRatio())) return false;
+      if (java.lang.Float.floatToIntBits(getRemainingDurability())
           != java.lang.Float.floatToIntBits(
-              other.getAFFIDFJHCFM())) return false;
+              other.getRemainingDurability())) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -160,12 +160,12 @@ public final class ModifierDurabilityOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HGJMHAFDFOC_FIELD_NUMBER;
+      hash = (37 * hash) + REDUCE_RATIO_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getHGJMHAFDFOC());
-      hash = (37 * hash) + AFFIDFJHCFM_FIELD_NUMBER;
+          getReduceRatio());
+      hash = (37 * hash) + REMAINING_DURABILITY_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getAFFIDFJHCFM());
+          getRemainingDurability());
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -265,7 +265,7 @@ public final class ModifierDurabilityOuterClass {
     }
     /**
      * <pre>
-     * Name: DKJFENEJIFH
+     * Obf: NHMMAJIGHNF
      * </pre>
      *
      * Protobuf type {@code ModifierDurability}
@@ -301,8 +301,8 @@ public final class ModifierDurabilityOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        hGJMHAFDFOC_ = 0F;
-        aFFIDFJHCFM_ = 0F;
+        reduceRatio_ = 0F;
+        remainingDurability_ = 0F;
         return this;
       }
 
@@ -337,10 +337,10 @@ public final class ModifierDurabilityOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.hGJMHAFDFOC_ = hGJMHAFDFOC_;
+          result.reduceRatio_ = reduceRatio_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.aFFIDFJHCFM_ = aFFIDFJHCFM_;
+          result.remainingDurability_ = remainingDurability_;
         }
       }
 
@@ -388,11 +388,11 @@ public final class ModifierDurabilityOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability other) {
         if (other == emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.getDefaultInstance()) return this;
-        if (other.getHGJMHAFDFOC() != 0F) {
-          setHGJMHAFDFOC(other.getHGJMHAFDFOC());
+        if (other.getReduceRatio() != 0F) {
+          setReduceRatio(other.getReduceRatio());
         }
-        if (other.getAFFIDFJHCFM() != 0F) {
-          setAFFIDFJHCFM(other.getAFFIDFJHCFM());
+        if (other.getRemainingDurability() != 0F) {
+          setRemainingDurability(other.getRemainingDurability());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -421,12 +421,12 @@ public final class ModifierDurabilityOuterClass {
                 done = true;
                 break;
               case 13: {
-                hGJMHAFDFOC_ = input.readFloat();
+                reduceRatio_ = input.readFloat();
                 bitField0_ |= 0x00000001;
                 break;
               } // case 13
               case 21: {
-                aFFIDFJHCFM_ = input.readFloat();
+                remainingDurability_ = input.readFloat();
                 bitField0_ |= 0x00000002;
                 break;
               } // case 21
@@ -447,66 +447,66 @@ public final class ModifierDurabilityOuterClass {
       }
       private int bitField0_;
 
-      private float hGJMHAFDFOC_ ;
+      private float reduceRatio_ ;
       /**
-       * <code>float HGJMHAFDFOC = 1;</code>
-       * @return The hGJMHAFDFOC.
+       * <code>float reduce_ratio = 1;</code>
+       * @return The reduceRatio.
        */
       @java.lang.Override
-      public float getHGJMHAFDFOC() {
-        return hGJMHAFDFOC_;
+      public float getReduceRatio() {
+        return reduceRatio_;
       }
       /**
-       * <code>float HGJMHAFDFOC = 1;</code>
-       * @param value The hGJMHAFDFOC to set.
+       * <code>float reduce_ratio = 1;</code>
+       * @param value The reduceRatio to set.
        * @return This builder for chaining.
        */
-      public Builder setHGJMHAFDFOC(float value) {
+      public Builder setReduceRatio(float value) {
 
-        hGJMHAFDFOC_ = value;
+        reduceRatio_ = value;
         bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>float HGJMHAFDFOC = 1;</code>
+       * <code>float reduce_ratio = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHGJMHAFDFOC() {
+      public Builder clearReduceRatio() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        hGJMHAFDFOC_ = 0F;
+        reduceRatio_ = 0F;
         onChanged();
         return this;
       }
 
-      private float aFFIDFJHCFM_ ;
+      private float remainingDurability_ ;
       /**
-       * <code>float AFFIDFJHCFM = 2;</code>
-       * @return The aFFIDFJHCFM.
+       * <code>float remaining_durability = 2;</code>
+       * @return The remainingDurability.
        */
       @java.lang.Override
-      public float getAFFIDFJHCFM() {
-        return aFFIDFJHCFM_;
+      public float getRemainingDurability() {
+        return remainingDurability_;
       }
       /**
-       * <code>float AFFIDFJHCFM = 2;</code>
-       * @param value The aFFIDFJHCFM to set.
+       * <code>float remaining_durability = 2;</code>
+       * @param value The remainingDurability to set.
        * @return This builder for chaining.
        */
-      public Builder setAFFIDFJHCFM(float value) {
+      public Builder setRemainingDurability(float value) {
 
-        aFFIDFJHCFM_ = value;
+        remainingDurability_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>float AFFIDFJHCFM = 2;</code>
+       * <code>float remaining_durability = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAFFIDFJHCFM() {
+      public Builder clearRemainingDurability() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        aFFIDFJHCFM_ = 0F;
+        remainingDurability_ = 0F;
         onChanged();
         return this;
       }
@@ -588,10 +588,10 @@ public final class ModifierDurabilityOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030ModifierDurability.proto\">\n\022ModifierDu" +
-      "rability\022\023\n\013HGJMHAFDFOC\030\001 \001(\002\022\023\n\013AFFIDFJ" +
-      "HCFM\030\002 \001(\002B\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\030ModifierDurability.proto\"H\n\022ModifierDu" +
+      "rability\022\024\n\014reduce_ratio\030\001 \001(\002\022\034\n\024remain" +
+      "ing_durability\030\002 \001(\002B\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -602,7 +602,7 @@ public final class ModifierDurabilityOuterClass {
     internal_static_ModifierDurability_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ModifierDurability_descriptor,
-        new java.lang.String[] { "HGJMHAFDFOC", "AFFIDFJHCFM", });
+        new java.lang.String[] { "ReduceRatio", "RemainingDurability", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

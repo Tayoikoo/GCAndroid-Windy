@@ -19,32 +19,32 @@ public final class SeaLampV3CampStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 11;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>uint32 level_id = 3;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>bool is_finished = 14;</code>
+     * <code>bool is_finished = 10;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>uint32 stage_id = 2;</code>
+     * @return The stageId.
+     */
+    int getStageId();
+
+    /**
+     * <code>uint32 level_id = 15;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
   }
   /**
    * <pre>
-   * Name: HHHABMICCBP
+   * Obf: CMCFPKPHHLE
    * </pre>
    *
    * Protobuf type {@code SeaLampV3CampStageInfo}
@@ -81,32 +81,10 @@ public final class SeaLampV3CampStageInfoOuterClass {
               emu.grasscutter.net.proto.SeaLampV3CampStageInfoOuterClass.SeaLampV3CampStageInfo.class, emu.grasscutter.net.proto.SeaLampV3CampStageInfoOuterClass.SeaLampV3CampStageInfo.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 11;
-    private int stageId_ = 0;
-    /**
-     * <code>uint32 stage_id = 11;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 3;
-    private int levelId_ = 0;
-    /**
-     * <code>uint32 level_id = 3;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int IS_FINISHED_FIELD_NUMBER = 14;
+    public static final int IS_FINISHED_FIELD_NUMBER = 10;
     private boolean isFinished_ = false;
     /**
-     * <code>bool is_finished = 14;</code>
+     * <code>bool is_finished = 10;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -114,10 +92,32 @@ public final class SeaLampV3CampStageInfoOuterClass {
       return isFinished_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 9;
+    public static final int STAGE_ID_FIELD_NUMBER = 2;
+    private int stageId_ = 0;
+    /**
+     * <code>uint32 stage_id = 2;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 15;
+    private int levelId_ = 0;
+    /**
+     * <code>uint32 level_id = 15;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_ = false;
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -139,17 +139,17 @@ public final class SeaLampV3CampStageInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(3, levelId_);
+      if (stageId_ != 0) {
+        output.writeUInt32(2, stageId_);
       }
       if (isOpen_ != false) {
-        output.writeBool(9, isOpen_);
-      }
-      if (stageId_ != 0) {
-        output.writeUInt32(11, stageId_);
+        output.writeBool(6, isOpen_);
       }
       if (isFinished_ != false) {
-        output.writeBool(14, isFinished_);
+        output.writeBool(10, isFinished_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(15, levelId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -160,21 +160,21 @@ public final class SeaLampV3CampStageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, levelId_);
+          .computeUInt32Size(2, stageId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isOpen_);
-      }
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, stageId_);
+          .computeBoolSize(6, isOpen_);
       }
       if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isFinished_);
+          .computeBoolSize(10, isFinished_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, levelId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -191,12 +191,12 @@ public final class SeaLampV3CampStageInfoOuterClass {
       }
       emu.grasscutter.net.proto.SeaLampV3CampStageInfoOuterClass.SeaLampV3CampStageInfo other = (emu.grasscutter.net.proto.SeaLampV3CampStageInfoOuterClass.SeaLampV3CampStageInfo) obj;
 
+      if (getIsFinished()
+          != other.getIsFinished()) return false;
       if (getStageId()
           != other.getStageId()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getIsFinished()
-          != other.getIsFinished()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
@@ -210,13 +210,13 @@ public final class SeaLampV3CampStageInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFinished());
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinished());
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -319,7 +319,7 @@ public final class SeaLampV3CampStageInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: HHHABMICCBP
+     * Obf: CMCFPKPHHLE
      * </pre>
      *
      * Protobuf type {@code SeaLampV3CampStageInfo}
@@ -355,9 +355,9 @@ public final class SeaLampV3CampStageInfoOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
+        isFinished_ = false;
         stageId_ = 0;
         levelId_ = 0;
-        isFinished_ = false;
         isOpen_ = false;
         return this;
       }
@@ -393,13 +393,13 @@ public final class SeaLampV3CampStageInfoOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.SeaLampV3CampStageInfoOuterClass.SeaLampV3CampStageInfo result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.stageId_ = stageId_;
+          result.isFinished_ = isFinished_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.levelId_ = levelId_;
+          result.stageId_ = stageId_;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.isFinished_ = isFinished_;
+          result.levelId_ = levelId_;
         }
         if (((from_bitField0_ & 0x00000008) != 0)) {
           result.isOpen_ = isOpen_;
@@ -450,14 +450,14 @@ public final class SeaLampV3CampStageInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SeaLampV3CampStageInfoOuterClass.SeaLampV3CampStageInfo other) {
         if (other == emu.grasscutter.net.proto.SeaLampV3CampStageInfoOuterClass.SeaLampV3CampStageInfo.getDefaultInstance()) return this;
+        if (other.getIsFinished() != false) {
+          setIsFinished(other.getIsFinished());
+        }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
-        }
-        if (other.getIsFinished() != false) {
-          setIsFinished(other.getIsFinished());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -488,26 +488,26 @@ public final class SeaLampV3CampStageInfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 24: {
-                levelId_ = input.readUInt32();
+              case 16: {
+                stageId_ = input.readUInt32();
                 bitField0_ |= 0x00000002;
                 break;
-              } // case 24
-              case 72: {
+              } // case 16
+              case 48: {
                 isOpen_ = input.readBool();
                 bitField0_ |= 0x00000008;
                 break;
-              } // case 72
-              case 88: {
-                stageId_ = input.readUInt32();
+              } // case 48
+              case 80: {
+                isFinished_ = input.readBool();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 88
-              case 112: {
-                isFinished_ = input.readBool();
+              } // case 80
+              case 120: {
+                levelId_ = input.readUInt32();
                 bitField0_ |= 0x00000004;
                 break;
-              } // case 112
+              } // case 120
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -525,73 +525,9 @@ public final class SeaLampV3CampStageInfoOuterClass {
       }
       private int bitField0_;
 
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 11;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 11;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-
-        stageId_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-
-        levelId_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 14;</code>
+       * <code>bool is_finished = 10;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -599,31 +535,95 @@ public final class SeaLampV3CampStageInfoOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 14;</code>
+       * <code>bool is_finished = 10;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
       public Builder setIsFinished(boolean value) {
 
         isFinished_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_finished = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinished() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        isFinished_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 2;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 2;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+
+        stageId_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 15;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 15;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+
+        levelId_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_finished = 14;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsFinished() {
+      public Builder clearLevelId() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        isFinished_ = false;
+        levelId_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -631,7 +631,7 @@ public final class SeaLampV3CampStageInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -643,7 +643,7 @@ public final class SeaLampV3CampStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -731,9 +731,9 @@ public final class SeaLampV3CampStageInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SeaLampV3CampStageInfo.proto\"b\n\026SeaLam" +
-      "pV3CampStageInfo\022\020\n\010stage_id\030\013 \001(\r\022\020\n\010le" +
-      "vel_id\030\003 \001(\r\022\023\n\013is_finished\030\016 \001(\010\022\017\n\007is_" +
-      "open\030\t \001(\010B\033\n\031emu.grasscutter.net.protob" +
+      "pV3CampStageInfo\022\023\n\013is_finished\030\n \001(\010\022\020\n" +
+      "\010stage_id\030\002 \001(\r\022\020\n\010level_id\030\017 \001(\r\022\017\n\007is_" +
+      "open\030\006 \001(\010B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -745,7 +745,7 @@ public final class SeaLampV3CampStageInfoOuterClass {
     internal_static_SeaLampV3CampStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SeaLampV3CampStageInfo_descriptor,
-        new java.lang.String[] { "StageId", "LevelId", "IsFinished", "IsOpen", });
+        new java.lang.String[] { "IsFinished", "StageId", "LevelId", "IsOpen", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

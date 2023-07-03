@@ -19,24 +19,24 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+     * <code>.PlayerHomeCompInfo comp_info = 14;</code>
      * @return Whether the compInfo field is set.
      */
     boolean hasCompInfo();
     /**
-     * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+     * <code>.PlayerHomeCompInfo comp_info = 14;</code>
      * @return The compInfo.
      */
     emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfo getCompInfo();
     /**
-     * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+     * <code>.PlayerHomeCompInfo comp_info = 14;</code>
      */
     emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfoOrBuilder getCompInfoOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4617
-   * Name: BFAIAEEOADP
+   * CmdId: 4769
+   * Obf: CBGMFLDFHFN
    * </pre>
    *
    * Protobuf type {@code PlayerHomeCompInfoNotify}
@@ -73,10 +73,10 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerHomeCompInfoNotifyOuterClass.PlayerHomeCompInfoNotify.class, emu.grasscutter.net.proto.PlayerHomeCompInfoNotifyOuterClass.PlayerHomeCompInfoNotify.Builder.class);
     }
 
-    public static final int COMP_INFO_FIELD_NUMBER = 2;
+    public static final int COMP_INFO_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfo compInfo_;
     /**
-     * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+     * <code>.PlayerHomeCompInfo comp_info = 14;</code>
      * @return Whether the compInfo field is set.
      */
     @java.lang.Override
@@ -84,7 +84,7 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
       return compInfo_ != null;
     }
     /**
-     * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+     * <code>.PlayerHomeCompInfo comp_info = 14;</code>
      * @return The compInfo.
      */
     @java.lang.Override
@@ -92,7 +92,7 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
       return compInfo_ == null ? emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfo.getDefaultInstance() : compInfo_;
     }
     /**
-     * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+     * <code>.PlayerHomeCompInfo comp_info = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfoOrBuilder getCompInfoOrBuilder() {
@@ -114,7 +114,7 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (compInfo_ != null) {
-        output.writeMessage(2, getCompInfo());
+        output.writeMessage(14, getCompInfo());
       }
       getUnknownFields().writeTo(output);
     }
@@ -127,7 +127,7 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
       size = 0;
       if (compInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getCompInfo());
+          .computeMessageSize(14, getCompInfo());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -263,8 +263,8 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4617
-     * Name: BFAIAEEOADP
+     * CmdId: 4769
+     * Obf: CBGMFLDFHFN
      * </pre>
      *
      * Protobuf type {@code PlayerHomeCompInfoNotify}
@@ -418,13 +418,13 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
               case 0:
                 done = true;
                 break;
-              case 18: {
+              case 114: {
                 input.readMessage(
                     getCompInfoFieldBuilder().getBuilder(),
                     extensionRegistry);
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 18
+              } // case 114
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -446,14 +446,14 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfo, emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfo.Builder, emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfoOrBuilder> compInfoBuilder_;
       /**
-       * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+       * <code>.PlayerHomeCompInfo comp_info = 14;</code>
        * @return Whether the compInfo field is set.
        */
       public boolean hasCompInfo() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+       * <code>.PlayerHomeCompInfo comp_info = 14;</code>
        * @return The compInfo.
        */
       public emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfo getCompInfo() {
@@ -464,7 +464,7 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+       * <code>.PlayerHomeCompInfo comp_info = 14;</code>
        */
       public Builder setCompInfo(emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfo value) {
         if (compInfoBuilder_ == null) {
@@ -480,7 +480,7 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+       * <code>.PlayerHomeCompInfo comp_info = 14;</code>
        */
       public Builder setCompInfo(
           emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfo.Builder builderForValue) {
@@ -494,7 +494,7 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+       * <code>.PlayerHomeCompInfo comp_info = 14;</code>
        */
       public Builder mergeCompInfo(emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfo value) {
         if (compInfoBuilder_ == null) {
@@ -513,7 +513,7 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+       * <code>.PlayerHomeCompInfo comp_info = 14;</code>
        */
       public Builder clearCompInfo() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -526,7 +526,7 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+       * <code>.PlayerHomeCompInfo comp_info = 14;</code>
        */
       public emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfo.Builder getCompInfoBuilder() {
         bitField0_ |= 0x00000001;
@@ -534,7 +534,7 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
         return getCompInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+       * <code>.PlayerHomeCompInfo comp_info = 14;</code>
        */
       public emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfoOrBuilder getCompInfoOrBuilder() {
         if (compInfoBuilder_ != null) {
@@ -545,7 +545,7 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.PlayerHomeCompInfo comp_info = 2;</code>
+       * <code>.PlayerHomeCompInfo comp_info = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfo, emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfo.Builder, emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfoOrBuilder> 
@@ -640,7 +640,7 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036PlayerHomeCompInfoNotify.proto\032\030Player" +
       "HomeCompInfo.proto\"B\n\030PlayerHomeCompInfo" +
-      "Notify\022&\n\tcomp_info\030\002 \001(\0132\023.PlayerHomeCo" +
+      "Notify\022&\n\tcomp_info\030\016 \001(\0132\023.PlayerHomeCo" +
       "mpInfoB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };

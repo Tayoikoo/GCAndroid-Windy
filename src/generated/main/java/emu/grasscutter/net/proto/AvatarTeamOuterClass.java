@@ -19,17 +19,17 @@ public final class AvatarTeamOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint64 avatar_guid_list = 15;</code>
+     * <code>repeated uint64 avatar_guid_list = 11;</code>
      * @return A list containing the avatarGuidList.
      */
     java.util.List<java.lang.Long> getAvatarGuidListList();
     /**
-     * <code>repeated uint64 avatar_guid_list = 15;</code>
+     * <code>repeated uint64 avatar_guid_list = 11;</code>
      * @return The count of avatarGuidList.
      */
     int getAvatarGuidListCount();
     /**
-     * <code>repeated uint64 avatar_guid_list = 15;</code>
+     * <code>repeated uint64 avatar_guid_list = 11;</code>
      * @param index The index of the element to return.
      * @return The avatarGuidList at the given index.
      */
@@ -49,7 +49,7 @@ public final class AvatarTeamOuterClass {
   }
   /**
    * <pre>
-   * Name: MFJBPEPMJOH
+   * Obf: MPFLGNHCAGM
    * </pre>
    *
    * Protobuf type {@code AvatarTeam}
@@ -88,11 +88,11 @@ public final class AvatarTeamOuterClass {
               emu.grasscutter.net.proto.AvatarTeamOuterClass.AvatarTeam.class, emu.grasscutter.net.proto.AvatarTeamOuterClass.AvatarTeam.Builder.class);
     }
 
-    public static final int AVATAR_GUID_LIST_FIELD_NUMBER = 15;
+    public static final int AVATAR_GUID_LIST_FIELD_NUMBER = 11;
     @SuppressWarnings("serial")
     private com.google.protobuf.Internal.LongList avatarGuidList_;
     /**
-     * <code>repeated uint64 avatar_guid_list = 15;</code>
+     * <code>repeated uint64 avatar_guid_list = 11;</code>
      * @return A list containing the avatarGuidList.
      */
     @java.lang.Override
@@ -101,14 +101,14 @@ public final class AvatarTeamOuterClass {
       return avatarGuidList_;
     }
     /**
-     * <code>repeated uint64 avatar_guid_list = 15;</code>
+     * <code>repeated uint64 avatar_guid_list = 11;</code>
      * @return The count of avatarGuidList.
      */
     public int getAvatarGuidListCount() {
       return avatarGuidList_.size();
     }
     /**
-     * <code>repeated uint64 avatar_guid_list = 15;</code>
+     * <code>repeated uint64 avatar_guid_list = 11;</code>
      * @param index The index of the element to return.
      * @return The avatarGuidList at the given index.
      */
@@ -175,7 +175,7 @@ public final class AvatarTeamOuterClass {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, teamName_);
       }
       if (getAvatarGuidListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(90);
         output.writeUInt32NoTag(avatarGuidListMemoizedSerializedSize);
       }
       for (int i = 0; i < avatarGuidList_.size(); i++) {
@@ -342,7 +342,7 @@ public final class AvatarTeamOuterClass {
     }
     /**
      * <pre>
-     * Name: MFJBPEPMJOH
+     * Obf: MPFLGNHCAGM
      * </pre>
      *
      * Protobuf type {@code AvatarTeam}
@@ -517,13 +517,13 @@ public final class AvatarTeamOuterClass {
                 bitField0_ |= 0x00000002;
                 break;
               } // case 18
-              case 120: {
+              case 88: {
                 long v = input.readUInt64();
                 ensureAvatarGuidListIsMutable();
                 avatarGuidList_.addLong(v);
                 break;
-              } // case 120
-              case 122: {
+              } // case 88
+              case 90: {
                 int length = input.readRawVarint32();
                 int limit = input.pushLimit(length);
                 ensureAvatarGuidListIsMutable();
@@ -532,7 +532,7 @@ public final class AvatarTeamOuterClass {
                 }
                 input.popLimit(limit);
                 break;
-              } // case 122
+              } // case 90
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -558,7 +558,7 @@ public final class AvatarTeamOuterClass {
         }
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 15;</code>
+       * <code>repeated uint64 avatar_guid_list = 11;</code>
        * @return A list containing the avatarGuidList.
        */
       public java.util.List<java.lang.Long>
@@ -567,14 +567,14 @@ public final class AvatarTeamOuterClass {
                  java.util.Collections.unmodifiableList(avatarGuidList_) : avatarGuidList_;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 15;</code>
+       * <code>repeated uint64 avatar_guid_list = 11;</code>
        * @return The count of avatarGuidList.
        */
       public int getAvatarGuidListCount() {
         return avatarGuidList_.size();
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 15;</code>
+       * <code>repeated uint64 avatar_guid_list = 11;</code>
        * @param index The index of the element to return.
        * @return The avatarGuidList at the given index.
        */
@@ -582,7 +582,7 @@ public final class AvatarTeamOuterClass {
         return avatarGuidList_.getLong(index);
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 15;</code>
+       * <code>repeated uint64 avatar_guid_list = 11;</code>
        * @param index The index to set the value at.
        * @param value The avatarGuidList to set.
        * @return This builder for chaining.
@@ -596,7 +596,7 @@ public final class AvatarTeamOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 15;</code>
+       * <code>repeated uint64 avatar_guid_list = 11;</code>
        * @param value The avatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -608,7 +608,7 @@ public final class AvatarTeamOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 15;</code>
+       * <code>repeated uint64 avatar_guid_list = 11;</code>
        * @param values The avatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class AvatarTeamOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 15;</code>
+       * <code>repeated uint64 avatar_guid_list = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuidList() {
@@ -781,7 +781,7 @@ public final class AvatarTeamOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020AvatarTeam.proto\"9\n\nAvatarTeam\022\030\n\020avat" +
-      "ar_guid_list\030\017 \003(\004\022\021\n\tteam_name\030\002 \001(\tB\033\n" +
+      "ar_guid_list\030\013 \003(\004\022\021\n\tteam_name\030\002 \001(\tB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

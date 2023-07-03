@@ -80,79 +80,6 @@ public final class AbilityActionCreateGadgetOuterClass {
       return new AbilityActionCreateGadget();
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private AbilityActionCreateGadget(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 48: {
-
-              roomId_ = input.readUInt32();
-              break;
-            }
-            case 66: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (rot_ != null) {
-                subBuilder = rot_.toBuilder();
-              }
-              rot_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(rot_);
-                rot_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 106: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (pos_ != null) {
-                subBuilder = pos_.toBuilder();
-              }
-              pos_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(pos_);
-                pos_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.internal_static_AbilityActionCreateGadget_descriptor;
@@ -189,11 +116,11 @@ public final class AbilityActionCreateGadgetOuterClass {
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
-      return getRot();
+      return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
     }
 
     public static final int ROOM_ID_FIELD_NUMBER = 6;
-    private int roomId_;
+    private int roomId_ = 0;
     /**
      * <code>uint32 room_id = 6;</code>
      * @return The roomId.
@@ -226,7 +153,7 @@ public final class AbilityActionCreateGadgetOuterClass {
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-      return getPos();
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -252,7 +179,7 @@ public final class AbilityActionCreateGadgetOuterClass {
       if (pos_ != null) {
         output.writeMessage(13, getPos());
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -273,7 +200,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(13, getPos());
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -300,7 +227,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -321,7 +248,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -370,11 +297,13 @@ public final class AbilityActionCreateGadgetOuterClass {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
     public static emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
+
     public static emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -442,34 +371,27 @@ public final class AbilityActionCreateGadgetOuterClass {
 
       // Construct using emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (rotBuilder_ == null) {
-          rot_ = null;
-        } else {
-          rot_ = null;
+        bitField0_ = 0;
+        rot_ = null;
+        if (rotBuilder_ != null) {
+          rotBuilder_.dispose();
           rotBuilder_ = null;
         }
         roomId_ = 0;
-
-        if (posBuilder_ == null) {
-          pos_ = null;
-        } else {
-          pos_ = null;
+        pos_ = null;
+        if (posBuilder_ != null) {
+          posBuilder_.dispose();
           posBuilder_ = null;
         }
         return this;
@@ -498,19 +420,26 @@ public final class AbilityActionCreateGadgetOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget buildPartial() {
         emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget result = new emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget(this);
-        if (rotBuilder_ == null) {
-          result.rot_ = rot_;
-        } else {
-          result.rot_ = rotBuilder_.build();
-        }
-        result.roomId_ = roomId_;
-        if (posBuilder_ == null) {
-          result.pos_ = pos_;
-        } else {
-          result.pos_ = posBuilder_.build();
-        }
+        if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartial0(emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.rot_ = rotBuilder_ == null
+              ? rot_
+              : rotBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.roomId_ = roomId_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.pos_ = posBuilder_ == null
+              ? pos_
+              : posBuilder_.build();
+        }
       }
 
       @java.lang.Override
@@ -566,7 +495,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         if (other.hasPos()) {
           mergePos(other.getPos());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -581,19 +510,52 @@ public final class AbilityActionCreateGadgetOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 48: {
+                roomId_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 48
+              case 66: {
+                input.readMessage(
+                    getRotFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 66
+              case 106: {
+                input.readMessage(
+                    getPosFieldBuilder().getBuilder(),
+                    extensionRegistry);
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 106
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
+      private int bitField0_;
 
       private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -603,7 +565,7 @@ public final class AbilityActionCreateGadgetOuterClass {
        * @return Whether the rot field is set.
        */
       public boolean hasRot() {
-        return rotBuilder_ != null || rot_ != null;
+        return ((bitField0_ & 0x00000001) != 0);
       }
       /**
        * <code>.Vector rot = 8;</code>
@@ -625,11 +587,11 @@ public final class AbilityActionCreateGadgetOuterClass {
             throw new NullPointerException();
           }
           rot_ = value;
-          onChanged();
         } else {
           rotBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
@@ -639,11 +601,11 @@ public final class AbilityActionCreateGadgetOuterClass {
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
         if (rotBuilder_ == null) {
           rot_ = builderForValue.build();
-          onChanged();
         } else {
           rotBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
@@ -651,38 +613,38 @@ public final class AbilityActionCreateGadgetOuterClass {
        */
       public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
-          if (rot_ != null) {
-            rot_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(rot_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000001) != 0) &&
+            rot_ != null &&
+            rot_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
+            getRotBuilder().mergeFrom(value);
           } else {
             rot_ = value;
           }
-          onChanged();
         } else {
           rotBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
        * <code>.Vector rot = 8;</code>
        */
       public Builder clearRot() {
-        if (rotBuilder_ == null) {
-          rot_ = null;
-          onChanged();
-        } else {
-          rot_ = null;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        rot_ = null;
+        if (rotBuilder_ != null) {
+          rotBuilder_.dispose();
           rotBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
        * <code>.Vector rot = 8;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
-        
+        bitField0_ |= 0x00000001;
         onChanged();
         return getRotFieldBuilder().getBuilder();
       }
@@ -729,8 +691,9 @@ public final class AbilityActionCreateGadgetOuterClass {
        * @return This builder for chaining.
        */
       public Builder setRoomId(int value) {
-        
+
         roomId_ = value;
+        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -739,7 +702,7 @@ public final class AbilityActionCreateGadgetOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearRoomId() {
-        
+        bitField0_ = (bitField0_ & ~0x00000002);
         roomId_ = 0;
         onChanged();
         return this;
@@ -753,7 +716,7 @@ public final class AbilityActionCreateGadgetOuterClass {
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
-        return posBuilder_ != null || pos_ != null;
+        return ((bitField0_ & 0x00000004) != 0);
       }
       /**
        * <code>.Vector pos = 13;</code>
@@ -775,11 +738,11 @@ public final class AbilityActionCreateGadgetOuterClass {
             throw new NullPointerException();
           }
           pos_ = value;
-          onChanged();
         } else {
           posBuilder_.setMessage(value);
         }
-
+        bitField0_ |= 0x00000004;
+        onChanged();
         return this;
       }
       /**
@@ -789,11 +752,11 @@ public final class AbilityActionCreateGadgetOuterClass {
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
         if (posBuilder_ == null) {
           pos_ = builderForValue.build();
-          onChanged();
         } else {
           posBuilder_.setMessage(builderForValue.build());
         }
-
+        bitField0_ |= 0x00000004;
+        onChanged();
         return this;
       }
       /**
@@ -801,38 +764,38 @@ public final class AbilityActionCreateGadgetOuterClass {
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
-          if (pos_ != null) {
-            pos_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(pos_).mergeFrom(value).buildPartial();
+          if (((bitField0_ & 0x00000004) != 0) &&
+            pos_ != null &&
+            pos_ != emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance()) {
+            getPosBuilder().mergeFrom(value);
           } else {
             pos_ = value;
           }
-          onChanged();
         } else {
           posBuilder_.mergeFrom(value);
         }
-
+        bitField0_ |= 0x00000004;
+        onChanged();
         return this;
       }
       /**
        * <code>.Vector pos = 13;</code>
        */
       public Builder clearPos() {
-        if (posBuilder_ == null) {
-          pos_ = null;
-          onChanged();
-        } else {
-          pos_ = null;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        pos_ = null;
+        if (posBuilder_ != null) {
+          posBuilder_.dispose();
           posBuilder_ = null;
         }
-
+        onChanged();
         return this;
       }
       /**
        * <code>.Vector pos = 13;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
-        
+        bitField0_ |= 0x00000004;
         onChanged();
         return getPosFieldBuilder().getBuilder();
       }
@@ -896,7 +859,18 @@ public final class AbilityActionCreateGadgetOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AbilityActionCreateGadget(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

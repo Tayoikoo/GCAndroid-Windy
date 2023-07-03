@@ -2,12 +2,10 @@ package emu.grasscutter.server.packet.send;
 
 import com.google.protobuf.ByteString;
 import emu.grasscutter.net.packet.BasePacket;
+import emu.grasscutter.net.packet.PacketOpcodes;
 import emu.grasscutter.net.proto.WindSeedType1NotifyOuterClass.WindSeedType1Notify;
 import emu.grasscutter.utils.FileUtils;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.Path;
-import emu.grasscutter.net.packet.PacketOpcodes;
+import java.nio.file.*;
 import java.util.Base64;
 
 public class PacketWindSeedClientNotify extends BasePacket {

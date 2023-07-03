@@ -19,38 +19,38 @@ public final class HomeFurnitureGroupDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData> 
-        getVirtualFurniureListList();
-    /**
-     * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData getVirtualFurniureList(int index);
-    /**
-     * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-     */
-    int getVirtualFurniureListCount();
-    /**
-     * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder> 
-        getVirtualFurniureListOrBuilderList();
-    /**
-     * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder getVirtualFurniureListOrBuilder(
-        int index);
-
-    /**
      * <code>uint32 group_furniture_index = 12;</code>
      * @return The groupFurnitureIndex.
      */
     int getGroupFurnitureIndex();
+
+    /**
+     * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData> 
+        getVirtualFurniureListList();
+    /**
+     * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+     */
+    emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData getVirtualFurniureList(int index);
+    /**
+     * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+     */
+    int getVirtualFurniureListCount();
+    /**
+     * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder> 
+        getVirtualFurniureListOrBuilderList();
+    /**
+     * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+     */
+    emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder getVirtualFurniureListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * Name: LONHLJHJKOJ
+   * Obf: OKOMHBCDEIH
    * </pre>
    *
    * Protobuf type {@code HomeFurnitureGroupData}
@@ -88,47 +88,6 @@ public final class HomeFurnitureGroupDataOuterClass {
               emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.class, emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.Builder.class);
     }
 
-    public static final int VIRTUAL_FURNIURE_LIST_FIELD_NUMBER = 15;
-    @SuppressWarnings("serial")
-    private java.util.List<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData> virtualFurniureList_;
-    /**
-     * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData> getVirtualFurniureListList() {
-      return virtualFurniureList_;
-    }
-    /**
-     * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder> 
-        getVirtualFurniureListOrBuilderList() {
-      return virtualFurniureList_;
-    }
-    /**
-     * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-     */
-    @java.lang.Override
-    public int getVirtualFurniureListCount() {
-      return virtualFurniureList_.size();
-    }
-    /**
-     * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData getVirtualFurniureList(int index) {
-      return virtualFurniureList_.get(index);
-    }
-    /**
-     * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder getVirtualFurniureListOrBuilder(
-        int index) {
-      return virtualFurniureList_.get(index);
-    }
-
     public static final int GROUP_FURNITURE_INDEX_FIELD_NUMBER = 12;
     private int groupFurnitureIndex_ = 0;
     /**
@@ -138,6 +97,47 @@ public final class HomeFurnitureGroupDataOuterClass {
     @java.lang.Override
     public int getGroupFurnitureIndex() {
       return groupFurnitureIndex_;
+    }
+
+    public static final int VIRTUAL_FURNIURE_LIST_FIELD_NUMBER = 5;
+    @SuppressWarnings("serial")
+    private java.util.List<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData> virtualFurniureList_;
+    /**
+     * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData> getVirtualFurniureListList() {
+      return virtualFurniureList_;
+    }
+    /**
+     * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder> 
+        getVirtualFurniureListOrBuilderList() {
+      return virtualFurniureList_;
+    }
+    /**
+     * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+     */
+    @java.lang.Override
+    public int getVirtualFurniureListCount() {
+      return virtualFurniureList_.size();
+    }
+    /**
+     * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData getVirtualFurniureList(int index) {
+      return virtualFurniureList_.get(index);
+    }
+    /**
+     * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder getVirtualFurniureListOrBuilder(
+        int index) {
+      return virtualFurniureList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -154,11 +154,11 @@ public final class HomeFurnitureGroupDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      for (int i = 0; i < virtualFurniureList_.size(); i++) {
+        output.writeMessage(5, virtualFurniureList_.get(i));
+      }
       if (groupFurnitureIndex_ != 0) {
         output.writeUInt32(12, groupFurnitureIndex_);
-      }
-      for (int i = 0; i < virtualFurniureList_.size(); i++) {
-        output.writeMessage(15, virtualFurniureList_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -169,13 +169,13 @@ public final class HomeFurnitureGroupDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (int i = 0; i < virtualFurniureList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, virtualFurniureList_.get(i));
+      }
       if (groupFurnitureIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, groupFurnitureIndex_);
-      }
-      for (int i = 0; i < virtualFurniureList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, virtualFurniureList_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -192,10 +192,10 @@ public final class HomeFurnitureGroupDataOuterClass {
       }
       emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData other = (emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData) obj;
 
-      if (!getVirtualFurniureListList()
-          .equals(other.getVirtualFurniureListList())) return false;
       if (getGroupFurnitureIndex()
           != other.getGroupFurnitureIndex()) return false;
+      if (!getVirtualFurniureListList()
+          .equals(other.getVirtualFurniureListList())) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -207,12 +207,12 @@ public final class HomeFurnitureGroupDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + GROUP_FURNITURE_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupFurnitureIndex();
       if (getVirtualFurniureListCount() > 0) {
         hash = (37 * hash) + VIRTUAL_FURNIURE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getVirtualFurniureListList().hashCode();
       }
-      hash = (37 * hash) + GROUP_FURNITURE_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupFurnitureIndex();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,7 +312,7 @@ public final class HomeFurnitureGroupDataOuterClass {
     }
     /**
      * <pre>
-     * Name: LONHLJHJKOJ
+     * Obf: OKOMHBCDEIH
      * </pre>
      *
      * Protobuf type {@code HomeFurnitureGroupData}
@@ -348,14 +348,14 @@ public final class HomeFurnitureGroupDataOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
+        groupFurnitureIndex_ = 0;
         if (virtualFurniureListBuilder_ == null) {
           virtualFurniureList_ = java.util.Collections.emptyList();
         } else {
           virtualFurniureList_ = null;
           virtualFurniureListBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        groupFurnitureIndex_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -390,9 +390,9 @@ public final class HomeFurnitureGroupDataOuterClass {
 
       private void buildPartialRepeatedFields(emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData result) {
         if (virtualFurniureListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             virtualFurniureList_ = java.util.Collections.unmodifiableList(virtualFurniureList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.virtualFurniureList_ = virtualFurniureList_;
         } else {
@@ -402,7 +402,7 @@ public final class HomeFurnitureGroupDataOuterClass {
 
       private void buildPartial0(emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData result) {
         int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000002) != 0)) {
+        if (((from_bitField0_ & 0x00000001) != 0)) {
           result.groupFurnitureIndex_ = groupFurnitureIndex_;
         }
       }
@@ -451,11 +451,14 @@ public final class HomeFurnitureGroupDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData other) {
         if (other == emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.getDefaultInstance()) return this;
+        if (other.getGroupFurnitureIndex() != 0) {
+          setGroupFurnitureIndex(other.getGroupFurnitureIndex());
+        }
         if (virtualFurniureListBuilder_ == null) {
           if (!other.virtualFurniureList_.isEmpty()) {
             if (virtualFurniureList_.isEmpty()) {
               virtualFurniureList_ = other.virtualFurniureList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureVirtualFurniureListIsMutable();
               virtualFurniureList_.addAll(other.virtualFurniureList_);
@@ -468,7 +471,7 @@ public final class HomeFurnitureGroupDataOuterClass {
               virtualFurniureListBuilder_.dispose();
               virtualFurniureListBuilder_ = null;
               virtualFurniureList_ = other.virtualFurniureList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               virtualFurniureListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getVirtualFurniureListFieldBuilder() : null;
@@ -476,9 +479,6 @@ public final class HomeFurnitureGroupDataOuterClass {
               virtualFurniureListBuilder_.addAllMessages(other.virtualFurniureList_);
             }
           }
-        }
-        if (other.getGroupFurnitureIndex() != 0) {
-          setGroupFurnitureIndex(other.getGroupFurnitureIndex());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -506,12 +506,7 @@ public final class HomeFurnitureGroupDataOuterClass {
               case 0:
                 done = true;
                 break;
-              case 96: {
-                groupFurnitureIndex_ = input.readUInt32();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 96
-              case 122: {
+              case 42: {
                 emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData m =
                     input.readMessage(
                         emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.parser(),
@@ -523,7 +518,12 @@ public final class HomeFurnitureGroupDataOuterClass {
                   virtualFurniureListBuilder_.addMessage(m);
                 }
                 break;
-              } // case 122
+              } // case 42
+              case 96: {
+                groupFurnitureIndex_ = input.readUInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 96
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -540,246 +540,6 @@ public final class HomeFurnitureGroupDataOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private java.util.List<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData> virtualFurniureList_ =
-        java.util.Collections.emptyList();
-      private void ensureVirtualFurniureListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          virtualFurniureList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData>(virtualFurniureList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder> virtualFurniureListBuilder_;
-
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData> getVirtualFurniureListList() {
-        if (virtualFurniureListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(virtualFurniureList_);
-        } else {
-          return virtualFurniureListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public int getVirtualFurniureListCount() {
-        if (virtualFurniureListBuilder_ == null) {
-          return virtualFurniureList_.size();
-        } else {
-          return virtualFurniureListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData getVirtualFurniureList(int index) {
-        if (virtualFurniureListBuilder_ == null) {
-          return virtualFurniureList_.get(index);
-        } else {
-          return virtualFurniureListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public Builder setVirtualFurniureList(
-          int index, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData value) {
-        if (virtualFurniureListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureVirtualFurniureListIsMutable();
-          virtualFurniureList_.set(index, value);
-          onChanged();
-        } else {
-          virtualFurniureListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public Builder setVirtualFurniureList(
-          int index, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder builderForValue) {
-        if (virtualFurniureListBuilder_ == null) {
-          ensureVirtualFurniureListIsMutable();
-          virtualFurniureList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          virtualFurniureListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public Builder addVirtualFurniureList(emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData value) {
-        if (virtualFurniureListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureVirtualFurniureListIsMutable();
-          virtualFurniureList_.add(value);
-          onChanged();
-        } else {
-          virtualFurniureListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public Builder addVirtualFurniureList(
-          int index, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData value) {
-        if (virtualFurniureListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureVirtualFurniureListIsMutable();
-          virtualFurniureList_.add(index, value);
-          onChanged();
-        } else {
-          virtualFurniureListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public Builder addVirtualFurniureList(
-          emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder builderForValue) {
-        if (virtualFurniureListBuilder_ == null) {
-          ensureVirtualFurniureListIsMutable();
-          virtualFurniureList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          virtualFurniureListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public Builder addVirtualFurniureList(
-          int index, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder builderForValue) {
-        if (virtualFurniureListBuilder_ == null) {
-          ensureVirtualFurniureListIsMutable();
-          virtualFurniureList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          virtualFurniureListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public Builder addAllVirtualFurniureList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData> values) {
-        if (virtualFurniureListBuilder_ == null) {
-          ensureVirtualFurniureListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, virtualFurniureList_);
-          onChanged();
-        } else {
-          virtualFurniureListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public Builder clearVirtualFurniureList() {
-        if (virtualFurniureListBuilder_ == null) {
-          virtualFurniureList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          virtualFurniureListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public Builder removeVirtualFurniureList(int index) {
-        if (virtualFurniureListBuilder_ == null) {
-          ensureVirtualFurniureListIsMutable();
-          virtualFurniureList_.remove(index);
-          onChanged();
-        } else {
-          virtualFurniureListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder getVirtualFurniureListBuilder(
-          int index) {
-        return getVirtualFurniureListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder getVirtualFurniureListOrBuilder(
-          int index) {
-        if (virtualFurniureListBuilder_ == null) {
-          return virtualFurniureList_.get(index);  } else {
-          return virtualFurniureListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder> 
-           getVirtualFurniureListOrBuilderList() {
-        if (virtualFurniureListBuilder_ != null) {
-          return virtualFurniureListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(virtualFurniureList_);
-        }
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder addVirtualFurniureListBuilder() {
-        return getVirtualFurniureListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder addVirtualFurniureListBuilder(
-          int index) {
-        return getVirtualFurniureListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .HomeFurnitureData virtual_furniure_list = 15;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder> 
-           getVirtualFurniureListBuilderList() {
-        return getVirtualFurniureListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder> 
-          getVirtualFurniureListFieldBuilder() {
-        if (virtualFurniureListBuilder_ == null) {
-          virtualFurniureListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder>(
-                  virtualFurniureList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          virtualFurniureList_ = null;
-        }
-        return virtualFurniureListBuilder_;
-      }
 
       private int groupFurnitureIndex_ ;
       /**
@@ -798,7 +558,7 @@ public final class HomeFurnitureGroupDataOuterClass {
       public Builder setGroupFurnitureIndex(int value) {
 
         groupFurnitureIndex_ = value;
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -807,10 +567,250 @@ public final class HomeFurnitureGroupDataOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearGroupFurnitureIndex() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         groupFurnitureIndex_ = 0;
         onChanged();
         return this;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData> virtualFurniureList_ =
+        java.util.Collections.emptyList();
+      private void ensureVirtualFurniureListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          virtualFurniureList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData>(virtualFurniureList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder> virtualFurniureListBuilder_;
+
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData> getVirtualFurniureListList() {
+        if (virtualFurniureListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(virtualFurniureList_);
+        } else {
+          return virtualFurniureListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public int getVirtualFurniureListCount() {
+        if (virtualFurniureListBuilder_ == null) {
+          return virtualFurniureList_.size();
+        } else {
+          return virtualFurniureListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData getVirtualFurniureList(int index) {
+        if (virtualFurniureListBuilder_ == null) {
+          return virtualFurniureList_.get(index);
+        } else {
+          return virtualFurniureListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public Builder setVirtualFurniureList(
+          int index, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData value) {
+        if (virtualFurniureListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureVirtualFurniureListIsMutable();
+          virtualFurniureList_.set(index, value);
+          onChanged();
+        } else {
+          virtualFurniureListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public Builder setVirtualFurniureList(
+          int index, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder builderForValue) {
+        if (virtualFurniureListBuilder_ == null) {
+          ensureVirtualFurniureListIsMutable();
+          virtualFurniureList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          virtualFurniureListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public Builder addVirtualFurniureList(emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData value) {
+        if (virtualFurniureListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureVirtualFurniureListIsMutable();
+          virtualFurniureList_.add(value);
+          onChanged();
+        } else {
+          virtualFurniureListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public Builder addVirtualFurniureList(
+          int index, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData value) {
+        if (virtualFurniureListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureVirtualFurniureListIsMutable();
+          virtualFurniureList_.add(index, value);
+          onChanged();
+        } else {
+          virtualFurniureListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public Builder addVirtualFurniureList(
+          emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder builderForValue) {
+        if (virtualFurniureListBuilder_ == null) {
+          ensureVirtualFurniureListIsMutable();
+          virtualFurniureList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          virtualFurniureListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public Builder addVirtualFurniureList(
+          int index, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder builderForValue) {
+        if (virtualFurniureListBuilder_ == null) {
+          ensureVirtualFurniureListIsMutable();
+          virtualFurniureList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          virtualFurniureListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public Builder addAllVirtualFurniureList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData> values) {
+        if (virtualFurniureListBuilder_ == null) {
+          ensureVirtualFurniureListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, virtualFurniureList_);
+          onChanged();
+        } else {
+          virtualFurniureListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public Builder clearVirtualFurniureList() {
+        if (virtualFurniureListBuilder_ == null) {
+          virtualFurniureList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          virtualFurniureListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public Builder removeVirtualFurniureList(int index) {
+        if (virtualFurniureListBuilder_ == null) {
+          ensureVirtualFurniureListIsMutable();
+          virtualFurniureList_.remove(index);
+          onChanged();
+        } else {
+          virtualFurniureListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder getVirtualFurniureListBuilder(
+          int index) {
+        return getVirtualFurniureListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder getVirtualFurniureListOrBuilder(
+          int index) {
+        if (virtualFurniureListBuilder_ == null) {
+          return virtualFurniureList_.get(index);  } else {
+          return virtualFurniureListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder> 
+           getVirtualFurniureListOrBuilderList() {
+        if (virtualFurniureListBuilder_ != null) {
+          return virtualFurniureListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(virtualFurniureList_);
+        }
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder addVirtualFurniureListBuilder() {
+        return getVirtualFurniureListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder addVirtualFurniureListBuilder(
+          int index) {
+        return getVirtualFurniureListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .HomeFurnitureData virtual_furniure_list = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder> 
+           getVirtualFurniureListBuilderList() {
+        return getVirtualFurniureListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder> 
+          getVirtualFurniureListFieldBuilder() {
+        if (virtualFurniureListBuilder_ == null) {
+          virtualFurniureListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureData.Builder, emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.HomeFurnitureDataOrBuilder>(
+                  virtualFurniureList_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          virtualFurniureList_ = null;
+        }
+        return virtualFurniureListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -892,9 +892,9 @@ public final class HomeFurnitureGroupDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034HomeFurnitureGroupData.proto\032\027HomeFurn" +
       "itureData.proto\"j\n\026HomeFurnitureGroupDat" +
-      "a\0221\n\025virtual_furniure_list\030\017 \003(\0132\022.HomeF" +
-      "urnitureData\022\035\n\025group_furniture_index\030\014 " +
-      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "a\022\035\n\025group_furniture_index\030\014 \001(\r\0221\n\025virt" +
+      "ual_furniure_list\030\005 \003(\0132\022.HomeFurnitureD" +
+      "ataB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -906,7 +906,7 @@ public final class HomeFurnitureGroupDataOuterClass {
     internal_static_HomeFurnitureGroupData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeFurnitureGroupData_descriptor,
-        new java.lang.String[] { "VirtualFurniureList", "GroupFurnitureIndex", });
+        new java.lang.String[] { "GroupFurnitureIndex", "VirtualFurniureList", });
     emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.getDescriptor();
   }
 

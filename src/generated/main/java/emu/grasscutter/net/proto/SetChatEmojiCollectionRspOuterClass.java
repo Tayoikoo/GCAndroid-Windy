@@ -19,15 +19,15 @@ public final class SetChatEmojiCollectionRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 4093
-   * Name: LOPIDIHJEBH
+   * CmdId: 4089
+   * Obf: MMBMFFADHEM
    * </pre>
    *
    * Protobuf type {@code SetChatEmojiCollectionRsp}
@@ -64,10 +64,10 @@ public final class SetChatEmojiCollectionRspOuterClass {
               emu.grasscutter.net.proto.SetChatEmojiCollectionRspOuterClass.SetChatEmojiCollectionRsp.class, emu.grasscutter.net.proto.SetChatEmojiCollectionRspOuterClass.SetChatEmojiCollectionRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_ = 0;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -90,7 +90,7 @@ public final class SetChatEmojiCollectionRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(11, retcode_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -103,7 +103,7 @@ public final class SetChatEmojiCollectionRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(11, retcode_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -234,8 +234,8 @@ public final class SetChatEmojiCollectionRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4093
-     * Name: LOPIDIHJEBH
+     * CmdId: 4089
+     * Obf: MMBMFFADHEM
      * </pre>
      *
      * Protobuf type {@code SetChatEmojiCollectionRsp}
@@ -383,11 +383,11 @@ public final class SetChatEmojiCollectionRspOuterClass {
               case 0:
                 done = true;
                 break;
-              case 64: {
+              case 88: {
                 retcode_ = input.readInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 64
+              } // case 88
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -407,7 +407,7 @@ public final class SetChatEmojiCollectionRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -415,7 +415,7 @@ public final class SetChatEmojiCollectionRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -427,7 +427,7 @@ public final class SetChatEmojiCollectionRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -515,7 +515,7 @@ public final class SetChatEmojiCollectionRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037SetChatEmojiCollectionRsp.proto\",\n\031Set" +
-      "ChatEmojiCollectionRsp\022\017\n\007retcode\030\010 \001(\005B" +
+      "ChatEmojiCollectionRsp\022\017\n\007retcode\030\013 \001(\005B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

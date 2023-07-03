@@ -41,7 +41,7 @@ public final class MaterialOuterClass {
   }
   /**
    * <pre>
-   * Name: GPJLHPAJOKK
+   * Obf: KOKDLGLHBDK
    * </pre>
    *
    * Protobuf type {@code Material}
@@ -290,7 +290,7 @@ public final class MaterialOuterClass {
     }
     /**
      * <pre>
-     * Name: GPJLHPAJOKK
+     * Obf: KOKDLGLHBDK
      * </pre>
      *
      * Protobuf type {@code Material}

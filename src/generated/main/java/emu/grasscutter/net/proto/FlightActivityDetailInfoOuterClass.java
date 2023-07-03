@@ -19,44 +19,44 @@ public final class FlightActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 MEHOKJOPMBN = 8;</code>
-     * @return The mEHOKJOPMBN.
+     * <code>uint32 AHKMMEEKNKE = 4;</code>
+     * @return The aHKMMEEKNKE.
      */
-    int getMEHOKJOPMBN();
+    int getAHKMMEEKNKE();
 
     /**
-     * <code>uint32 KKLLPPPLKMM = 7;</code>
-     * @return The kKLLPPPLKMM.
-     */
-    int getKKLLPPPLKMM();
-
-    /**
-     * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+     * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord> 
         getDailyRecordListList();
     /**
-     * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+     * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
      */
     emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord getDailyRecordList(int index);
     /**
-     * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+     * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
      */
     int getDailyRecordListCount();
     /**
-     * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+     * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecordOrBuilder> 
         getDailyRecordListOrBuilderList();
     /**
-     * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+     * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
      */
     emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecordOrBuilder getDailyRecordListOrBuilder(
         int index);
+
+    /**
+     * <code>uint32 BPGGGEFPDBM = 5;</code>
+     * @return The bPGGGEFPDBM.
+     */
+    int getBPGGGEFPDBM();
   }
   /**
    * <pre>
-   * Name: DLECLBJNCBK
+   * Obf: MKEIOCFNDGJ
    * </pre>
    *
    * Protobuf type {@code FlightActivityDetailInfo}
@@ -94,40 +94,29 @@ public final class FlightActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.FlightActivityDetailInfoOuterClass.FlightActivityDetailInfo.class, emu.grasscutter.net.proto.FlightActivityDetailInfoOuterClass.FlightActivityDetailInfo.Builder.class);
     }
 
-    public static final int MEHOKJOPMBN_FIELD_NUMBER = 8;
-    private int mEHOKJOPMBN_ = 0;
+    public static final int AHKMMEEKNKE_FIELD_NUMBER = 4;
+    private int aHKMMEEKNKE_ = 0;
     /**
-     * <code>uint32 MEHOKJOPMBN = 8;</code>
-     * @return The mEHOKJOPMBN.
+     * <code>uint32 AHKMMEEKNKE = 4;</code>
+     * @return The aHKMMEEKNKE.
      */
     @java.lang.Override
-    public int getMEHOKJOPMBN() {
-      return mEHOKJOPMBN_;
+    public int getAHKMMEEKNKE() {
+      return aHKMMEEKNKE_;
     }
 
-    public static final int KKLLPPPLKMM_FIELD_NUMBER = 7;
-    private int kKLLPPPLKMM_ = 0;
-    /**
-     * <code>uint32 KKLLPPPLKMM = 7;</code>
-     * @return The kKLLPPPLKMM.
-     */
-    @java.lang.Override
-    public int getKKLLPPPLKMM() {
-      return kKLLPPPLKMM_;
-    }
-
-    public static final int DAILY_RECORD_LIST_FIELD_NUMBER = 14;
+    public static final int DAILY_RECORD_LIST_FIELD_NUMBER = 12;
     @SuppressWarnings("serial")
     private java.util.List<emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord> dailyRecordList_;
     /**
-     * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+     * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord> getDailyRecordListList() {
       return dailyRecordList_;
     }
     /**
-     * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+     * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecordOrBuilder> 
@@ -135,26 +124,37 @@ public final class FlightActivityDetailInfoOuterClass {
       return dailyRecordList_;
     }
     /**
-     * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+     * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
      */
     @java.lang.Override
     public int getDailyRecordListCount() {
       return dailyRecordList_.size();
     }
     /**
-     * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+     * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord getDailyRecordList(int index) {
       return dailyRecordList_.get(index);
     }
     /**
-     * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+     * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecordOrBuilder getDailyRecordListOrBuilder(
         int index) {
       return dailyRecordList_.get(index);
+    }
+
+    public static final int BPGGGEFPDBM_FIELD_NUMBER = 5;
+    private int bPGGGEFPDBM_ = 0;
+    /**
+     * <code>uint32 BPGGGEFPDBM = 5;</code>
+     * @return The bPGGGEFPDBM.
+     */
+    @java.lang.Override
+    public int getBPGGGEFPDBM() {
+      return bPGGGEFPDBM_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -171,14 +171,14 @@ public final class FlightActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (kKLLPPPLKMM_ != 0) {
-        output.writeUInt32(7, kKLLPPPLKMM_);
+      if (aHKMMEEKNKE_ != 0) {
+        output.writeUInt32(4, aHKMMEEKNKE_);
       }
-      if (mEHOKJOPMBN_ != 0) {
-        output.writeUInt32(8, mEHOKJOPMBN_);
+      if (bPGGGEFPDBM_ != 0) {
+        output.writeUInt32(5, bPGGGEFPDBM_);
       }
       for (int i = 0; i < dailyRecordList_.size(); i++) {
-        output.writeMessage(14, dailyRecordList_.get(i));
+        output.writeMessage(12, dailyRecordList_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -189,17 +189,17 @@ public final class FlightActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (kKLLPPPLKMM_ != 0) {
+      if (aHKMMEEKNKE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, kKLLPPPLKMM_);
+          .computeUInt32Size(4, aHKMMEEKNKE_);
       }
-      if (mEHOKJOPMBN_ != 0) {
+      if (bPGGGEFPDBM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, mEHOKJOPMBN_);
+          .computeUInt32Size(5, bPGGGEFPDBM_);
       }
       for (int i = 0; i < dailyRecordList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, dailyRecordList_.get(i));
+          .computeMessageSize(12, dailyRecordList_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -216,12 +216,12 @@ public final class FlightActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.FlightActivityDetailInfoOuterClass.FlightActivityDetailInfo other = (emu.grasscutter.net.proto.FlightActivityDetailInfoOuterClass.FlightActivityDetailInfo) obj;
 
-      if (getMEHOKJOPMBN()
-          != other.getMEHOKJOPMBN()) return false;
-      if (getKKLLPPPLKMM()
-          != other.getKKLLPPPLKMM()) return false;
+      if (getAHKMMEEKNKE()
+          != other.getAHKMMEEKNKE()) return false;
       if (!getDailyRecordListList()
           .equals(other.getDailyRecordListList())) return false;
+      if (getBPGGGEFPDBM()
+          != other.getBPGGGEFPDBM()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -233,14 +233,14 @@ public final class FlightActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MEHOKJOPMBN_FIELD_NUMBER;
-      hash = (53 * hash) + getMEHOKJOPMBN();
-      hash = (37 * hash) + KKLLPPPLKMM_FIELD_NUMBER;
-      hash = (53 * hash) + getKKLLPPPLKMM();
+      hash = (37 * hash) + AHKMMEEKNKE_FIELD_NUMBER;
+      hash = (53 * hash) + getAHKMMEEKNKE();
       if (getDailyRecordListCount() > 0) {
         hash = (37 * hash) + DAILY_RECORD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDailyRecordListList().hashCode();
       }
+      hash = (37 * hash) + BPGGGEFPDBM_FIELD_NUMBER;
+      hash = (53 * hash) + getBPGGGEFPDBM();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -340,7 +340,7 @@ public final class FlightActivityDetailInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: DLECLBJNCBK
+     * Obf: MKEIOCFNDGJ
      * </pre>
      *
      * Protobuf type {@code FlightActivityDetailInfo}
@@ -376,15 +376,15 @@ public final class FlightActivityDetailInfoOuterClass {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        mEHOKJOPMBN_ = 0;
-        kKLLPPPLKMM_ = 0;
+        aHKMMEEKNKE_ = 0;
         if (dailyRecordListBuilder_ == null) {
           dailyRecordList_ = java.util.Collections.emptyList();
         } else {
           dailyRecordList_ = null;
           dailyRecordListBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000002);
+        bPGGGEFPDBM_ = 0;
         return this;
       }
 
@@ -419,9 +419,9 @@ public final class FlightActivityDetailInfoOuterClass {
 
       private void buildPartialRepeatedFields(emu.grasscutter.net.proto.FlightActivityDetailInfoOuterClass.FlightActivityDetailInfo result) {
         if (dailyRecordListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             dailyRecordList_ = java.util.Collections.unmodifiableList(dailyRecordList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.dailyRecordList_ = dailyRecordList_;
         } else {
@@ -432,10 +432,10 @@ public final class FlightActivityDetailInfoOuterClass {
       private void buildPartial0(emu.grasscutter.net.proto.FlightActivityDetailInfoOuterClass.FlightActivityDetailInfo result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.mEHOKJOPMBN_ = mEHOKJOPMBN_;
+          result.aHKMMEEKNKE_ = aHKMMEEKNKE_;
         }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.kKLLPPPLKMM_ = kKLLPPPLKMM_;
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.bPGGGEFPDBM_ = bPGGGEFPDBM_;
         }
       }
 
@@ -483,17 +483,14 @@ public final class FlightActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FlightActivityDetailInfoOuterClass.FlightActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.FlightActivityDetailInfoOuterClass.FlightActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getMEHOKJOPMBN() != 0) {
-          setMEHOKJOPMBN(other.getMEHOKJOPMBN());
-        }
-        if (other.getKKLLPPPLKMM() != 0) {
-          setKKLLPPPLKMM(other.getKKLLPPPLKMM());
+        if (other.getAHKMMEEKNKE() != 0) {
+          setAHKMMEEKNKE(other.getAHKMMEEKNKE());
         }
         if (dailyRecordListBuilder_ == null) {
           if (!other.dailyRecordList_.isEmpty()) {
             if (dailyRecordList_.isEmpty()) {
               dailyRecordList_ = other.dailyRecordList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureDailyRecordListIsMutable();
               dailyRecordList_.addAll(other.dailyRecordList_);
@@ -506,7 +503,7 @@ public final class FlightActivityDetailInfoOuterClass {
               dailyRecordListBuilder_.dispose();
               dailyRecordListBuilder_ = null;
               dailyRecordList_ = other.dailyRecordList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000002);
               dailyRecordListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getDailyRecordListFieldBuilder() : null;
@@ -514,6 +511,9 @@ public final class FlightActivityDetailInfoOuterClass {
               dailyRecordListBuilder_.addAllMessages(other.dailyRecordList_);
             }
           }
+        }
+        if (other.getBPGGGEFPDBM() != 0) {
+          setBPGGGEFPDBM(other.getBPGGGEFPDBM());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -541,17 +541,17 @@ public final class FlightActivityDetailInfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 56: {
-                kKLLPPPLKMM_ = input.readUInt32();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 56
-              case 64: {
-                mEHOKJOPMBN_ = input.readUInt32();
+              case 32: {
+                aHKMMEEKNKE_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 64
-              case 114: {
+              } // case 32
+              case 40: {
+                bPGGGEFPDBM_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 40
+              case 98: {
                 emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord m =
                     input.readMessage(
                         emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.parser(),
@@ -563,7 +563,7 @@ public final class FlightActivityDetailInfoOuterClass {
                   dailyRecordListBuilder_.addMessage(m);
                 }
                 break;
-              } // case 114
+              } // case 98
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -581,66 +581,34 @@ public final class FlightActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private int mEHOKJOPMBN_ ;
+      private int aHKMMEEKNKE_ ;
       /**
-       * <code>uint32 MEHOKJOPMBN = 8;</code>
-       * @return The mEHOKJOPMBN.
+       * <code>uint32 AHKMMEEKNKE = 4;</code>
+       * @return The aHKMMEEKNKE.
        */
       @java.lang.Override
-      public int getMEHOKJOPMBN() {
-        return mEHOKJOPMBN_;
+      public int getAHKMMEEKNKE() {
+        return aHKMMEEKNKE_;
       }
       /**
-       * <code>uint32 MEHOKJOPMBN = 8;</code>
-       * @param value The mEHOKJOPMBN to set.
+       * <code>uint32 AHKMMEEKNKE = 4;</code>
+       * @param value The aHKMMEEKNKE to set.
        * @return This builder for chaining.
        */
-      public Builder setMEHOKJOPMBN(int value) {
+      public Builder setAHKMMEEKNKE(int value) {
 
-        mEHOKJOPMBN_ = value;
+        aHKMMEEKNKE_ = value;
         bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 MEHOKJOPMBN = 8;</code>
+       * <code>uint32 AHKMMEEKNKE = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMEHOKJOPMBN() {
+      public Builder clearAHKMMEEKNKE() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        mEHOKJOPMBN_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int kKLLPPPLKMM_ ;
-      /**
-       * <code>uint32 KKLLPPPLKMM = 7;</code>
-       * @return The kKLLPPPLKMM.
-       */
-      @java.lang.Override
-      public int getKKLLPPPLKMM() {
-        return kKLLPPPLKMM_;
-      }
-      /**
-       * <code>uint32 KKLLPPPLKMM = 7;</code>
-       * @param value The kKLLPPPLKMM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKKLLPPPLKMM(int value) {
-
-        kKLLPPPLKMM_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 KKLLPPPLKMM = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKKLLPPPLKMM() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        kKLLPPPLKMM_ = 0;
+        aHKMMEEKNKE_ = 0;
         onChanged();
         return this;
       }
@@ -648,9 +616,9 @@ public final class FlightActivityDetailInfoOuterClass {
       private java.util.List<emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord> dailyRecordList_ =
         java.util.Collections.emptyList();
       private void ensureDailyRecordListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           dailyRecordList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord>(dailyRecordList_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -658,7 +626,7 @@ public final class FlightActivityDetailInfoOuterClass {
           emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord, emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.Builder, emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecordOrBuilder> dailyRecordListBuilder_;
 
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord> getDailyRecordListList() {
         if (dailyRecordListBuilder_ == null) {
@@ -668,7 +636,7 @@ public final class FlightActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public int getDailyRecordListCount() {
         if (dailyRecordListBuilder_ == null) {
@@ -678,7 +646,7 @@ public final class FlightActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord getDailyRecordList(int index) {
         if (dailyRecordListBuilder_ == null) {
@@ -688,7 +656,7 @@ public final class FlightActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public Builder setDailyRecordList(
           int index, emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord value) {
@@ -705,7 +673,7 @@ public final class FlightActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public Builder setDailyRecordList(
           int index, emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.Builder builderForValue) {
@@ -719,7 +687,7 @@ public final class FlightActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public Builder addDailyRecordList(emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord value) {
         if (dailyRecordListBuilder_ == null) {
@@ -735,7 +703,7 @@ public final class FlightActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public Builder addDailyRecordList(
           int index, emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord value) {
@@ -752,7 +720,7 @@ public final class FlightActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public Builder addDailyRecordList(
           emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.Builder builderForValue) {
@@ -766,7 +734,7 @@ public final class FlightActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public Builder addDailyRecordList(
           int index, emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.Builder builderForValue) {
@@ -780,7 +748,7 @@ public final class FlightActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public Builder addAllDailyRecordList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord> values) {
@@ -795,12 +763,12 @@ public final class FlightActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public Builder clearDailyRecordList() {
         if (dailyRecordListBuilder_ == null) {
           dailyRecordList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           dailyRecordListBuilder_.clear();
@@ -808,7 +776,7 @@ public final class FlightActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public Builder removeDailyRecordList(int index) {
         if (dailyRecordListBuilder_ == null) {
@@ -821,14 +789,14 @@ public final class FlightActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.Builder getDailyRecordListBuilder(
           int index) {
         return getDailyRecordListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecordOrBuilder getDailyRecordListOrBuilder(
           int index) {
@@ -838,7 +806,7 @@ public final class FlightActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecordOrBuilder> 
            getDailyRecordListOrBuilderList() {
@@ -849,14 +817,14 @@ public final class FlightActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.Builder addDailyRecordListBuilder() {
         return getDailyRecordListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.Builder addDailyRecordListBuilder(
           int index) {
@@ -864,7 +832,7 @@ public final class FlightActivityDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated .FlightDailyRecord daily_record_list = 14;</code>
+       * <code>repeated .FlightDailyRecord daily_record_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.Builder> 
            getDailyRecordListBuilderList() {
@@ -877,12 +845,44 @@ public final class FlightActivityDetailInfoOuterClass {
           dailyRecordListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord, emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecord.Builder, emu.grasscutter.net.proto.FlightDailyRecordOuterClass.FlightDailyRecordOrBuilder>(
                   dailyRecordList_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           dailyRecordList_ = null;
         }
         return dailyRecordListBuilder_;
+      }
+
+      private int bPGGGEFPDBM_ ;
+      /**
+       * <code>uint32 BPGGGEFPDBM = 5;</code>
+       * @return The bPGGGEFPDBM.
+       */
+      @java.lang.Override
+      public int getBPGGGEFPDBM() {
+        return bPGGGEFPDBM_;
+      }
+      /**
+       * <code>uint32 BPGGGEFPDBM = 5;</code>
+       * @param value The bPGGGEFPDBM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBPGGGEFPDBM(int value) {
+
+        bPGGGEFPDBM_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BPGGGEFPDBM = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBPGGGEFPDBM() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        bPGGGEFPDBM_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -964,9 +964,9 @@ public final class FlightActivityDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036FlightActivityDetailInfo.proto\032\027Flight" +
       "DailyRecord.proto\"s\n\030FlightActivityDetai" +
-      "lInfo\022\023\n\013MEHOKJOPMBN\030\010 \001(\r\022\023\n\013KKLLPPPLKM" +
-      "M\030\007 \001(\r\022-\n\021daily_record_list\030\016 \003(\0132\022.Fli" +
-      "ghtDailyRecordB\033\n\031emu.grasscutter.net.pr" +
+      "lInfo\022\023\n\013AHKMMEEKNKE\030\004 \001(\r\022-\n\021daily_reco" +
+      "rd_list\030\014 \003(\0132\022.FlightDailyRecord\022\023\n\013BPG" +
+      "GGEFPDBM\030\005 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -979,7 +979,7 @@ public final class FlightActivityDetailInfoOuterClass {
     internal_static_FlightActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FlightActivityDetailInfo_descriptor,
-        new java.lang.String[] { "MEHOKJOPMBN", "KKLLPPPLKMM", "DailyRecordList", });
+        new java.lang.String[] { "AHKMMEEKNKE", "DailyRecordList", "BPGGGEFPDBM", });
     emu.grasscutter.net.proto.FlightDailyRecordOuterClass.getDescriptor();
   }
 

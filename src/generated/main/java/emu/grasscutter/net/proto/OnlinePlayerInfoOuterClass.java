@@ -147,7 +147,7 @@ public final class OnlinePlayerInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: GEKCCHCJMPC
+   * Obf: KFAGEFMEFCD
    * </pre>
    *
    * Protobuf type {@code OnlinePlayerInfo}
@@ -793,7 +793,7 @@ public final class OnlinePlayerInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: GEKCCHCJMPC
+     * Obf: KFAGEFMEFCD
      * </pre>
      *
      * Protobuf type {@code OnlinePlayerInfo}

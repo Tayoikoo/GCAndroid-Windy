@@ -19,43 +19,43 @@ public final class PacmanSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 final_score = 1;</code>
+     * <code>uint32 final_score = 12;</code>
      * @return The finalScore.
      */
     int getFinalScore();
 
     /**
-     * <code>uint32 FJBKBMHJMMM = 9;</code>
-     * @return The fJBKBMHJMMM.
+     * <code>uint32 CGLDHPKMAGO = 4;</code>
+     * @return The cGLDHPKMAGO.
      */
-    int getFJBKBMHJMMM();
+    int getCGLDHPKMAGO();
 
     /**
-     * <code>.FEEHAOJCNCG reason = 13;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    int getReasonValue();
-    /**
-     * <code>.FEEHAOJCNCG reason = 13;</code>
-     * @return The reason.
-     */
-    emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.FEEHAOJCNCG getReason();
-
-    /**
-     * <code>bool is_new_record = 3;</code>
+     * <code>bool is_new_record = 9;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 BKECHEIMCGP = 5;</code>
-     * @return The bKECHEIMCGP.
+     * <code>uint32 AFJNAIOEMJG = 1;</code>
+     * @return The aFJNAIOEMJG.
      */
-    int getBKECHEIMCGP();
+    int getAFJNAIOEMJG();
+
+    /**
+     * <code>.AEIMLNONEAP reason = 14;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    int getReasonValue();
+    /**
+     * <code>.AEIMLNONEAP reason = 14;</code>
+     * @return The reason.
+     */
+    emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.AEIMLNONEAP getReason();
   }
   /**
    * <pre>
-   * Name: EMLPIPHPEBM
+   * Obf: CIOHOKKNJLI
    * </pre>
    *
    * Protobuf type {@code PacmanSettleInfo}
@@ -93,10 +93,10 @@ public final class PacmanSettleInfoOuterClass {
               emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.class, emu.grasscutter.net.proto.PacmanSettleInfoOuterClass.PacmanSettleInfo.Builder.class);
     }
 
-    public static final int FINAL_SCORE_FIELD_NUMBER = 1;
+    public static final int FINAL_SCORE_FIELD_NUMBER = 12;
     private int finalScore_ = 0;
     /**
-     * <code>uint32 final_score = 1;</code>
+     * <code>uint32 final_score = 12;</code>
      * @return The finalScore.
      */
     @java.lang.Override
@@ -104,39 +104,21 @@ public final class PacmanSettleInfoOuterClass {
       return finalScore_;
     }
 
-    public static final int FJBKBMHJMMM_FIELD_NUMBER = 9;
-    private int fJBKBMHJMMM_ = 0;
+    public static final int CGLDHPKMAGO_FIELD_NUMBER = 4;
+    private int cGLDHPKMAGO_ = 0;
     /**
-     * <code>uint32 FJBKBMHJMMM = 9;</code>
-     * @return The fJBKBMHJMMM.
+     * <code>uint32 CGLDHPKMAGO = 4;</code>
+     * @return The cGLDHPKMAGO.
      */
     @java.lang.Override
-    public int getFJBKBMHJMMM() {
-      return fJBKBMHJMMM_;
+    public int getCGLDHPKMAGO() {
+      return cGLDHPKMAGO_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 13;
-    private int reason_ = 0;
-    /**
-     * <code>.FEEHAOJCNCG reason = 13;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    @java.lang.Override public int getReasonValue() {
-      return reason_;
-    }
-    /**
-     * <code>.FEEHAOJCNCG reason = 13;</code>
-     * @return The reason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.FEEHAOJCNCG getReason() {
-      emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.FEEHAOJCNCG result = emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.FEEHAOJCNCG.forNumber(reason_);
-      return result == null ? emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.FEEHAOJCNCG.UNRECOGNIZED : result;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 9;
     private boolean isNewRecord_ = false;
     /**
-     * <code>bool is_new_record = 3;</code>
+     * <code>bool is_new_record = 9;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -144,15 +126,33 @@ public final class PacmanSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int BKECHEIMCGP_FIELD_NUMBER = 5;
-    private int bKECHEIMCGP_ = 0;
+    public static final int AFJNAIOEMJG_FIELD_NUMBER = 1;
+    private int aFJNAIOEMJG_ = 0;
     /**
-     * <code>uint32 BKECHEIMCGP = 5;</code>
-     * @return The bKECHEIMCGP.
+     * <code>uint32 AFJNAIOEMJG = 1;</code>
+     * @return The aFJNAIOEMJG.
      */
     @java.lang.Override
-    public int getBKECHEIMCGP() {
-      return bKECHEIMCGP_;
+    public int getAFJNAIOEMJG() {
+      return aFJNAIOEMJG_;
+    }
+
+    public static final int REASON_FIELD_NUMBER = 14;
+    private int reason_ = 0;
+    /**
+     * <code>.AEIMLNONEAP reason = 14;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    @java.lang.Override public int getReasonValue() {
+      return reason_;
+    }
+    /**
+     * <code>.AEIMLNONEAP reason = 14;</code>
+     * @return The reason.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.AEIMLNONEAP getReason() {
+      emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.AEIMLNONEAP result = emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.AEIMLNONEAP.forNumber(reason_);
+      return result == null ? emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.AEIMLNONEAP.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -169,20 +169,20 @@ public final class PacmanSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (finalScore_ != 0) {
-        output.writeUInt32(1, finalScore_);
+      if (aFJNAIOEMJG_ != 0) {
+        output.writeUInt32(1, aFJNAIOEMJG_);
+      }
+      if (cGLDHPKMAGO_ != 0) {
+        output.writeUInt32(4, cGLDHPKMAGO_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(3, isNewRecord_);
+        output.writeBool(9, isNewRecord_);
       }
-      if (bKECHEIMCGP_ != 0) {
-        output.writeUInt32(5, bKECHEIMCGP_);
+      if (finalScore_ != 0) {
+        output.writeUInt32(12, finalScore_);
       }
-      if (fJBKBMHJMMM_ != 0) {
-        output.writeUInt32(9, fJBKBMHJMMM_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.FEEHAOJCNCG.FEEHAOJCNCG_PACMAN_DUNGEON_STOP_NONE.getNumber()) {
-        output.writeEnum(13, reason_);
+      if (reason_ != emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.AEIMLNONEAP.AEIMLNONEAP_PacmanDungeonStopNone.getNumber()) {
+        output.writeEnum(14, reason_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -193,25 +193,25 @@ public final class PacmanSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (finalScore_ != 0) {
+      if (aFJNAIOEMJG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, finalScore_);
+          .computeUInt32Size(1, aFJNAIOEMJG_);
+      }
+      if (cGLDHPKMAGO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, cGLDHPKMAGO_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isNewRecord_);
+          .computeBoolSize(9, isNewRecord_);
       }
-      if (bKECHEIMCGP_ != 0) {
+      if (finalScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, bKECHEIMCGP_);
+          .computeUInt32Size(12, finalScore_);
       }
-      if (fJBKBMHJMMM_ != 0) {
+      if (reason_ != emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.AEIMLNONEAP.AEIMLNONEAP_PacmanDungeonStopNone.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, fJBKBMHJMMM_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.FEEHAOJCNCG.FEEHAOJCNCG_PACMAN_DUNGEON_STOP_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, reason_);
+          .computeEnumSize(14, reason_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -230,13 +230,13 @@ public final class PacmanSettleInfoOuterClass {
 
       if (getFinalScore()
           != other.getFinalScore()) return false;
-      if (getFJBKBMHJMMM()
-          != other.getFJBKBMHJMMM()) return false;
-      if (reason_ != other.reason_) return false;
+      if (getCGLDHPKMAGO()
+          != other.getCGLDHPKMAGO()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
-      if (getBKECHEIMCGP()
-          != other.getBKECHEIMCGP()) return false;
+      if (getAFJNAIOEMJG()
+          != other.getAFJNAIOEMJG()) return false;
+      if (reason_ != other.reason_) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -250,15 +250,15 @@ public final class PacmanSettleInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getFinalScore();
-      hash = (37 * hash) + FJBKBMHJMMM_FIELD_NUMBER;
-      hash = (53 * hash) + getFJBKBMHJMMM();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
+      hash = (37 * hash) + CGLDHPKMAGO_FIELD_NUMBER;
+      hash = (53 * hash) + getCGLDHPKMAGO();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + BKECHEIMCGP_FIELD_NUMBER;
-      hash = (53 * hash) + getBKECHEIMCGP();
+      hash = (37 * hash) + AFJNAIOEMJG_FIELD_NUMBER;
+      hash = (53 * hash) + getAFJNAIOEMJG();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -358,7 +358,7 @@ public final class PacmanSettleInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: EMLPIPHPEBM
+     * Obf: CIOHOKKNJLI
      * </pre>
      *
      * Protobuf type {@code PacmanSettleInfo}
@@ -395,10 +395,10 @@ public final class PacmanSettleInfoOuterClass {
         super.clear();
         bitField0_ = 0;
         finalScore_ = 0;
-        fJBKBMHJMMM_ = 0;
-        reason_ = 0;
+        cGLDHPKMAGO_ = 0;
         isNewRecord_ = false;
-        bKECHEIMCGP_ = 0;
+        aFJNAIOEMJG_ = 0;
+        reason_ = 0;
         return this;
       }
 
@@ -436,16 +436,16 @@ public final class PacmanSettleInfoOuterClass {
           result.finalScore_ = finalScore_;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.fJBKBMHJMMM_ = fJBKBMHJMMM_;
+          result.cGLDHPKMAGO_ = cGLDHPKMAGO_;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.reason_ = reason_;
-        }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
           result.isNewRecord_ = isNewRecord_;
         }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.aFJNAIOEMJG_ = aFJNAIOEMJG_;
+        }
         if (((from_bitField0_ & 0x00000010) != 0)) {
-          result.bKECHEIMCGP_ = bKECHEIMCGP_;
+          result.reason_ = reason_;
         }
       }
 
@@ -496,17 +496,17 @@ public final class PacmanSettleInfoOuterClass {
         if (other.getFinalScore() != 0) {
           setFinalScore(other.getFinalScore());
         }
-        if (other.getFJBKBMHJMMM() != 0) {
-          setFJBKBMHJMMM(other.getFJBKBMHJMMM());
-        }
-        if (other.reason_ != 0) {
-          setReasonValue(other.getReasonValue());
+        if (other.getCGLDHPKMAGO() != 0) {
+          setCGLDHPKMAGO(other.getCGLDHPKMAGO());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
         }
-        if (other.getBKECHEIMCGP() != 0) {
-          setBKECHEIMCGP(other.getBKECHEIMCGP());
+        if (other.getAFJNAIOEMJG() != 0) {
+          setAFJNAIOEMJG(other.getAFJNAIOEMJG());
+        }
+        if (other.reason_ != 0) {
+          setReasonValue(other.getReasonValue());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -535,30 +535,30 @@ public final class PacmanSettleInfoOuterClass {
                 done = true;
                 break;
               case 8: {
+                aFJNAIOEMJG_ = input.readUInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 8
+              case 32: {
+                cGLDHPKMAGO_ = input.readUInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 32
+              case 72: {
+                isNewRecord_ = input.readBool();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 72
+              case 96: {
                 finalScore_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 8
-              case 24: {
-                isNewRecord_ = input.readBool();
-                bitField0_ |= 0x00000008;
-                break;
-              } // case 24
-              case 40: {
-                bKECHEIMCGP_ = input.readUInt32();
+              } // case 96
+              case 112: {
+                reason_ = input.readEnum();
                 bitField0_ |= 0x00000010;
                 break;
-              } // case 40
-              case 72: {
-                fJBKBMHJMMM_ = input.readUInt32();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 72
-              case 104: {
-                reason_ = input.readEnum();
-                bitField0_ |= 0x00000004;
-                break;
-              } // case 104
+              } // case 112
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -578,7 +578,7 @@ public final class PacmanSettleInfoOuterClass {
 
       private int finalScore_ ;
       /**
-       * <code>uint32 final_score = 1;</code>
+       * <code>uint32 final_score = 12;</code>
        * @return The finalScore.
        */
       @java.lang.Override
@@ -586,7 +586,7 @@ public final class PacmanSettleInfoOuterClass {
         return finalScore_;
       }
       /**
-       * <code>uint32 final_score = 1;</code>
+       * <code>uint32 final_score = 12;</code>
        * @param value The finalScore to set.
        * @return This builder for chaining.
        */
@@ -598,7 +598,7 @@ public final class PacmanSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 final_score = 1;</code>
+       * <code>uint32 final_score = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinalScore() {
@@ -608,94 +608,41 @@ public final class PacmanSettleInfoOuterClass {
         return this;
       }
 
-      private int fJBKBMHJMMM_ ;
+      private int cGLDHPKMAGO_ ;
       /**
-       * <code>uint32 FJBKBMHJMMM = 9;</code>
-       * @return The fJBKBMHJMMM.
+       * <code>uint32 CGLDHPKMAGO = 4;</code>
+       * @return The cGLDHPKMAGO.
        */
       @java.lang.Override
-      public int getFJBKBMHJMMM() {
-        return fJBKBMHJMMM_;
+      public int getCGLDHPKMAGO() {
+        return cGLDHPKMAGO_;
       }
       /**
-       * <code>uint32 FJBKBMHJMMM = 9;</code>
-       * @param value The fJBKBMHJMMM to set.
+       * <code>uint32 CGLDHPKMAGO = 4;</code>
+       * @param value The cGLDHPKMAGO to set.
        * @return This builder for chaining.
        */
-      public Builder setFJBKBMHJMMM(int value) {
+      public Builder setCGLDHPKMAGO(int value) {
 
-        fJBKBMHJMMM_ = value;
+        cGLDHPKMAGO_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FJBKBMHJMMM = 9;</code>
+       * <code>uint32 CGLDHPKMAGO = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFJBKBMHJMMM() {
+      public Builder clearCGLDHPKMAGO() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        fJBKBMHJMMM_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int reason_ = 0;
-      /**
-       * <code>.FEEHAOJCNCG reason = 13;</code>
-       * @return The enum numeric value on the wire for reason.
-       */
-      @java.lang.Override public int getReasonValue() {
-        return reason_;
-      }
-      /**
-       * <code>.FEEHAOJCNCG reason = 13;</code>
-       * @param value The enum numeric value on the wire for reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReasonValue(int value) {
-        reason_ = value;
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.FEEHAOJCNCG reason = 13;</code>
-       * @return The reason.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.FEEHAOJCNCG getReason() {
-        emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.FEEHAOJCNCG result = emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.FEEHAOJCNCG.forNumber(reason_);
-        return result == null ? emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.FEEHAOJCNCG.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.FEEHAOJCNCG reason = 13;</code>
-       * @param value The reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReason(emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.FEEHAOJCNCG value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        bitField0_ |= 0x00000004;
-        reason_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.FEEHAOJCNCG reason = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearReason() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        reason_ = 0;
+        cGLDHPKMAGO_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 3;</code>
+       * <code>bool is_new_record = 9;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -703,56 +650,109 @@ public final class PacmanSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 3;</code>
+       * <code>bool is_new_record = 9;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
       public Builder setIsNewRecord(boolean value) {
 
         isNewRecord_ = value;
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_new_record = 3;</code>
+       * <code>bool is_new_record = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000004);
         isNewRecord_ = false;
         onChanged();
         return this;
       }
 
-      private int bKECHEIMCGP_ ;
+      private int aFJNAIOEMJG_ ;
       /**
-       * <code>uint32 BKECHEIMCGP = 5;</code>
-       * @return The bKECHEIMCGP.
+       * <code>uint32 AFJNAIOEMJG = 1;</code>
+       * @return The aFJNAIOEMJG.
        */
       @java.lang.Override
-      public int getBKECHEIMCGP() {
-        return bKECHEIMCGP_;
+      public int getAFJNAIOEMJG() {
+        return aFJNAIOEMJG_;
       }
       /**
-       * <code>uint32 BKECHEIMCGP = 5;</code>
-       * @param value The bKECHEIMCGP to set.
+       * <code>uint32 AFJNAIOEMJG = 1;</code>
+       * @param value The aFJNAIOEMJG to set.
        * @return This builder for chaining.
        */
-      public Builder setBKECHEIMCGP(int value) {
+      public Builder setAFJNAIOEMJG(int value) {
 
-        bKECHEIMCGP_ = value;
+        aFJNAIOEMJG_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 AFJNAIOEMJG = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAFJNAIOEMJG() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        aFJNAIOEMJG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int reason_ = 0;
+      /**
+       * <code>.AEIMLNONEAP reason = 14;</code>
+       * @return The enum numeric value on the wire for reason.
+       */
+      @java.lang.Override public int getReasonValue() {
+        return reason_;
+      }
+      /**
+       * <code>.AEIMLNONEAP reason = 14;</code>
+       * @param value The enum numeric value on the wire for reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReasonValue(int value) {
+        reason_ = value;
         bitField0_ |= 0x00000010;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 BKECHEIMCGP = 5;</code>
+       * <code>.AEIMLNONEAP reason = 14;</code>
+       * @return The reason.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.AEIMLNONEAP getReason() {
+        emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.AEIMLNONEAP result = emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.AEIMLNONEAP.forNumber(reason_);
+        return result == null ? emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.AEIMLNONEAP.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.AEIMLNONEAP reason = 14;</code>
+       * @param value The reason to set.
        * @return This builder for chaining.
        */
-      public Builder clearBKECHEIMCGP() {
+      public Builder setReason(emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.AEIMLNONEAP value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000010;
+        reason_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AEIMLNONEAP reason = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearReason() {
         bitField0_ = (bitField0_ & ~0x00000010);
-        bKECHEIMCGP_ = 0;
+        reason_ = 0;
         onChanged();
         return this;
       }
@@ -834,25 +834,25 @@ public final class PacmanSettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026PacmanSettleInfo.proto\032\021FEEHAOJCNCG.pr" +
+      "\n\026PacmanSettleInfo.proto\032\021AEIMLNONEAP.pr" +
       "oto\"\206\001\n\020PacmanSettleInfo\022\023\n\013final_score\030" +
-      "\001 \001(\r\022\023\n\013FJBKBMHJMMM\030\t \001(\r\022\034\n\006reason\030\r \001" +
-      "(\0162\014.FEEHAOJCNCG\022\025\n\ris_new_record\030\003 \001(\010\022" +
-      "\023\n\013BKECHEIMCGP\030\005 \001(\rB\033\n\031emu.grasscutter." +
+      "\014 \001(\r\022\023\n\013CGLDHPKMAGO\030\004 \001(\r\022\025\n\ris_new_rec" +
+      "ord\030\t \001(\010\022\023\n\013AFJNAIOEMJG\030\001 \001(\r\022\034\n\006reason" +
+      "\030\016 \001(\0162\014.AEIMLNONEAPB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.getDescriptor(),
         });
     internal_static_PacmanSettleInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PacmanSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PacmanSettleInfo_descriptor,
-        new java.lang.String[] { "FinalScore", "FJBKBMHJMMM", "Reason", "IsNewRecord", "BKECHEIMCGP", });
-    emu.grasscutter.net.proto.FEEHAOJCNCGOuterClass.getDescriptor();
+        new java.lang.String[] { "FinalScore", "CGLDHPKMAGO", "IsNewRecord", "AFJNAIOEMJG", "Reason", });
+    emu.grasscutter.net.proto.AEIMLNONEAPOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

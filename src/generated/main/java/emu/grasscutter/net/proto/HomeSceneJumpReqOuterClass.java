@@ -19,15 +19,15 @@ public final class HomeSceneJumpReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_enter_room_scene = 14;</code>
+     * <code>bool is_enter_room_scene = 6;</code>
      * @return The isEnterRoomScene.
      */
     boolean getIsEnterRoomScene();
   }
   /**
    * <pre>
-   * CmdId: 4844
-   * Name: EHCFNNNFKNA
+   * CmdId: 4669
+   * Obf: MJOEBIHECAD
    * </pre>
    *
    * Protobuf type {@code HomeSceneJumpReq}
@@ -64,10 +64,10 @@ public final class HomeSceneJumpReqOuterClass {
               emu.grasscutter.net.proto.HomeSceneJumpReqOuterClass.HomeSceneJumpReq.class, emu.grasscutter.net.proto.HomeSceneJumpReqOuterClass.HomeSceneJumpReq.Builder.class);
     }
 
-    public static final int IS_ENTER_ROOM_SCENE_FIELD_NUMBER = 14;
+    public static final int IS_ENTER_ROOM_SCENE_FIELD_NUMBER = 6;
     private boolean isEnterRoomScene_ = false;
     /**
-     * <code>bool is_enter_room_scene = 14;</code>
+     * <code>bool is_enter_room_scene = 6;</code>
      * @return The isEnterRoomScene.
      */
     @java.lang.Override
@@ -90,7 +90,7 @@ public final class HomeSceneJumpReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isEnterRoomScene_ != false) {
-        output.writeBool(14, isEnterRoomScene_);
+        output.writeBool(6, isEnterRoomScene_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -103,7 +103,7 @@ public final class HomeSceneJumpReqOuterClass {
       size = 0;
       if (isEnterRoomScene_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isEnterRoomScene_);
+          .computeBoolSize(6, isEnterRoomScene_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -235,8 +235,8 @@ public final class HomeSceneJumpReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4844
-     * Name: EHCFNNNFKNA
+     * CmdId: 4669
+     * Obf: MJOEBIHECAD
      * </pre>
      *
      * Protobuf type {@code HomeSceneJumpReq}
@@ -384,11 +384,11 @@ public final class HomeSceneJumpReqOuterClass {
               case 0:
                 done = true;
                 break;
-              case 112: {
+              case 48: {
                 isEnterRoomScene_ = input.readBool();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 112
+              } // case 48
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -408,7 +408,7 @@ public final class HomeSceneJumpReqOuterClass {
 
       private boolean isEnterRoomScene_ ;
       /**
-       * <code>bool is_enter_room_scene = 14;</code>
+       * <code>bool is_enter_room_scene = 6;</code>
        * @return The isEnterRoomScene.
        */
       @java.lang.Override
@@ -416,7 +416,7 @@ public final class HomeSceneJumpReqOuterClass {
         return isEnterRoomScene_;
       }
       /**
-       * <code>bool is_enter_room_scene = 14;</code>
+       * <code>bool is_enter_room_scene = 6;</code>
        * @param value The isEnterRoomScene to set.
        * @return This builder for chaining.
        */
@@ -428,7 +428,7 @@ public final class HomeSceneJumpReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_enter_room_scene = 14;</code>
+       * <code>bool is_enter_room_scene = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsEnterRoomScene() {
@@ -516,7 +516,7 @@ public final class HomeSceneJumpReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026HomeSceneJumpReq.proto\"/\n\020HomeSceneJum" +
-      "pReq\022\033\n\023is_enter_room_scene\030\016 \001(\010B\033\n\031emu" +
+      "pReq\022\033\n\023is_enter_room_scene\030\006 \001(\010B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -32,7 +32,7 @@ public final class ProfilePictureOuterClass {
   }
   /**
    * <pre>
-   * Name: CAOGLKMLEOG
+   * Obf: ECNCPJCKFAE
    * </pre>
    *
    * Protobuf type {@code ProfilePicture}
@@ -261,7 +261,7 @@ public final class ProfilePictureOuterClass {
     }
     /**
      * <pre>
-     * Name: CAOGLKMLEOG
+     * Obf: ECNCPJCKFAE
      * </pre>
      *
      * Protobuf type {@code ProfilePicture}

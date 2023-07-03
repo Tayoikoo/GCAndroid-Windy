@@ -19,16 +19,10 @@ public final class ElectroherculesBattleStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_stage_open = 11;</code>
+     * <code>bool is_stage_open = 8;</code>
      * @return The isStageOpen.
      */
     boolean getIsStageOpen();
-
-    /**
-     * <code>uint32 stage_id = 15;</code>
-     * @return The stageId.
-     */
-    int getStageId();
 
     /**
      * <code>repeated .ElectroherculesBattleLevelInfo level_info_list = 6;</code>
@@ -53,10 +47,16 @@ public final class ElectroherculesBattleStageInfoOuterClass {
      */
     emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfoOrBuilder getLevelInfoListOrBuilder(
         int index);
+
+    /**
+     * <code>uint32 stage_id = 4;</code>
+     * @return The stageId.
+     */
+    int getStageId();
   }
   /**
    * <pre>
-   * Name: OJPECCKGNLO
+   * Obf: EBCDNHPAAKJ
    * </pre>
    *
    * Protobuf type {@code ElectroherculesBattleStageInfo}
@@ -94,26 +94,15 @@ public final class ElectroherculesBattleStageInfoOuterClass {
               emu.grasscutter.net.proto.ElectroherculesBattleStageInfoOuterClass.ElectroherculesBattleStageInfo.class, emu.grasscutter.net.proto.ElectroherculesBattleStageInfoOuterClass.ElectroherculesBattleStageInfo.Builder.class);
     }
 
-    public static final int IS_STAGE_OPEN_FIELD_NUMBER = 11;
+    public static final int IS_STAGE_OPEN_FIELD_NUMBER = 8;
     private boolean isStageOpen_ = false;
     /**
-     * <code>bool is_stage_open = 11;</code>
+     * <code>bool is_stage_open = 8;</code>
      * @return The isStageOpen.
      */
     @java.lang.Override
     public boolean getIsStageOpen() {
       return isStageOpen_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 15;
-    private int stageId_ = 0;
-    /**
-     * <code>uint32 stage_id = 15;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
     }
 
     public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 6;
@@ -157,6 +146,17 @@ public final class ElectroherculesBattleStageInfoOuterClass {
       return levelInfoList_.get(index);
     }
 
+    public static final int STAGE_ID_FIELD_NUMBER = 4;
+    private int stageId_ = 0;
+    /**
+     * <code>uint32 stage_id = 4;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -171,14 +171,14 @@ public final class ElectroherculesBattleStageInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (stageId_ != 0) {
+        output.writeUInt32(4, stageId_);
+      }
       for (int i = 0; i < levelInfoList_.size(); i++) {
         output.writeMessage(6, levelInfoList_.get(i));
       }
       if (isStageOpen_ != false) {
-        output.writeBool(11, isStageOpen_);
-      }
-      if (stageId_ != 0) {
-        output.writeUInt32(15, stageId_);
+        output.writeBool(8, isStageOpen_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -189,17 +189,17 @@ public final class ElectroherculesBattleStageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, stageId_);
+      }
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, levelInfoList_.get(i));
       }
       if (isStageOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isStageOpen_);
-      }
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, stageId_);
+          .computeBoolSize(8, isStageOpen_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -218,10 +218,10 @@ public final class ElectroherculesBattleStageInfoOuterClass {
 
       if (getIsStageOpen()
           != other.getIsStageOpen()) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
       if (!getLevelInfoListList()
           .equals(other.getLevelInfoListList())) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -236,12 +236,12 @@ public final class ElectroherculesBattleStageInfoOuterClass {
       hash = (37 * hash) + IS_STAGE_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsStageOpen());
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
       if (getLevelInfoListCount() > 0) {
         hash = (37 * hash) + LEVEL_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getLevelInfoListList().hashCode();
       }
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -341,7 +341,7 @@ public final class ElectroherculesBattleStageInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: OJPECCKGNLO
+     * Obf: EBCDNHPAAKJ
      * </pre>
      *
      * Protobuf type {@code ElectroherculesBattleStageInfo}
@@ -378,14 +378,14 @@ public final class ElectroherculesBattleStageInfoOuterClass {
         super.clear();
         bitField0_ = 0;
         isStageOpen_ = false;
-        stageId_ = 0;
         if (levelInfoListBuilder_ == null) {
           levelInfoList_ = java.util.Collections.emptyList();
         } else {
           levelInfoList_ = null;
           levelInfoListBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000002);
+        stageId_ = 0;
         return this;
       }
 
@@ -420,9 +420,9 @@ public final class ElectroherculesBattleStageInfoOuterClass {
 
       private void buildPartialRepeatedFields(emu.grasscutter.net.proto.ElectroherculesBattleStageInfoOuterClass.ElectroherculesBattleStageInfo result) {
         if (levelInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             levelInfoList_ = java.util.Collections.unmodifiableList(levelInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.levelInfoList_ = levelInfoList_;
         } else {
@@ -435,7 +435,7 @@ public final class ElectroherculesBattleStageInfoOuterClass {
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.isStageOpen_ = isStageOpen_;
         }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
+        if (((from_bitField0_ & 0x00000004) != 0)) {
           result.stageId_ = stageId_;
         }
       }
@@ -487,14 +487,11 @@ public final class ElectroherculesBattleStageInfoOuterClass {
         if (other.getIsStageOpen() != false) {
           setIsStageOpen(other.getIsStageOpen());
         }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
-        }
         if (levelInfoListBuilder_ == null) {
           if (!other.levelInfoList_.isEmpty()) {
             if (levelInfoList_.isEmpty()) {
               levelInfoList_ = other.levelInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureLevelInfoListIsMutable();
               levelInfoList_.addAll(other.levelInfoList_);
@@ -507,7 +504,7 @@ public final class ElectroherculesBattleStageInfoOuterClass {
               levelInfoListBuilder_.dispose();
               levelInfoListBuilder_ = null;
               levelInfoList_ = other.levelInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000002);
               levelInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getLevelInfoListFieldBuilder() : null;
@@ -515,6 +512,9 @@ public final class ElectroherculesBattleStageInfoOuterClass {
               levelInfoListBuilder_.addAllMessages(other.levelInfoList_);
             }
           }
+        }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
@@ -542,6 +542,11 @@ public final class ElectroherculesBattleStageInfoOuterClass {
               case 0:
                 done = true;
                 break;
+              case 32: {
+                stageId_ = input.readUInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 32
               case 50: {
                 emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo m =
                     input.readMessage(
@@ -555,16 +560,11 @@ public final class ElectroherculesBattleStageInfoOuterClass {
                 }
                 break;
               } // case 50
-              case 88: {
+              case 64: {
                 isStageOpen_ = input.readBool();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 88
-              case 120: {
-                stageId_ = input.readUInt32();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 120
+              } // case 64
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -584,7 +584,7 @@ public final class ElectroherculesBattleStageInfoOuterClass {
 
       private boolean isStageOpen_ ;
       /**
-       * <code>bool is_stage_open = 11;</code>
+       * <code>bool is_stage_open = 8;</code>
        * @return The isStageOpen.
        */
       @java.lang.Override
@@ -592,7 +592,7 @@ public final class ElectroherculesBattleStageInfoOuterClass {
         return isStageOpen_;
       }
       /**
-       * <code>bool is_stage_open = 11;</code>
+       * <code>bool is_stage_open = 8;</code>
        * @param value The isStageOpen to set.
        * @return This builder for chaining.
        */
@@ -604,7 +604,7 @@ public final class ElectroherculesBattleStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_stage_open = 11;</code>
+       * <code>bool is_stage_open = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsStageOpen() {
@@ -614,44 +614,12 @@ public final class ElectroherculesBattleStageInfoOuterClass {
         return this;
       }
 
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 15;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 15;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-
-        stageId_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo> levelInfoList_ =
         java.util.Collections.emptyList();
       private void ensureLevelInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo>(levelInfoList_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -801,7 +769,7 @@ public final class ElectroherculesBattleStageInfoOuterClass {
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
           levelInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           levelInfoListBuilder_.clear();
@@ -878,12 +846,44 @@ public final class ElectroherculesBattleStageInfoOuterClass {
           levelInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo, emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfo.Builder, emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.ElectroherculesBattleLevelInfoOrBuilder>(
                   levelInfoList_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           levelInfoList_ = null;
         }
         return levelInfoListBuilder_;
+      }
+
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 4;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 4;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+
+        stageId_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        stageId_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -966,9 +966,9 @@ public final class ElectroherculesBattleStageInfoOuterClass {
       "\n$ElectroherculesBattleStageInfo.proto\032$" +
       "ElectroherculesBattleLevelInfo.proto\"\203\001\n" +
       "\036ElectroherculesBattleStageInfo\022\025\n\ris_st" +
-      "age_open\030\013 \001(\010\022\020\n\010stage_id\030\017 \001(\r\0228\n\017leve" +
-      "l_info_list\030\006 \003(\0132\037.ElectroherculesBattl" +
-      "eLevelInfoB\033\n\031emu.grasscutter.net.protob" +
+      "age_open\030\010 \001(\010\0228\n\017level_info_list\030\006 \003(\0132" +
+      "\037.ElectroherculesBattleLevelInfo\022\020\n\010stag" +
+      "e_id\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -981,7 +981,7 @@ public final class ElectroherculesBattleStageInfoOuterClass {
     internal_static_ElectroherculesBattleStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ElectroherculesBattleStageInfo_descriptor,
-        new java.lang.String[] { "IsStageOpen", "StageId", "LevelInfoList", });
+        new java.lang.String[] { "IsStageOpen", "LevelInfoList", "StageId", });
     emu.grasscutter.net.proto.ElectroherculesBattleLevelInfoOuterClass.getDescriptor();
   }
 

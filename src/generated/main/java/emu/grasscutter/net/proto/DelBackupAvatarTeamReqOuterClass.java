@@ -19,15 +19,15 @@ public final class DelBackupAvatarTeamReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 backup_avatar_team_id = 10;</code>
+     * <code>uint32 backup_avatar_team_id = 12;</code>
      * @return The backupAvatarTeamId.
      */
     int getBackupAvatarTeamId();
   }
   /**
    * <pre>
-   * CmdId: 1680
-   * Name: BHDFBGFEGPC
+   * CmdId: 1609
+   * Obf: FNOGALIBLFO
    * </pre>
    *
    * Protobuf type {@code DelBackupAvatarTeamReq}
@@ -64,10 +64,10 @@ public final class DelBackupAvatarTeamReqOuterClass {
               emu.grasscutter.net.proto.DelBackupAvatarTeamReqOuterClass.DelBackupAvatarTeamReq.class, emu.grasscutter.net.proto.DelBackupAvatarTeamReqOuterClass.DelBackupAvatarTeamReq.Builder.class);
     }
 
-    public static final int BACKUP_AVATAR_TEAM_ID_FIELD_NUMBER = 10;
+    public static final int BACKUP_AVATAR_TEAM_ID_FIELD_NUMBER = 12;
     private int backupAvatarTeamId_ = 0;
     /**
-     * <code>uint32 backup_avatar_team_id = 10;</code>
+     * <code>uint32 backup_avatar_team_id = 12;</code>
      * @return The backupAvatarTeamId.
      */
     @java.lang.Override
@@ -90,7 +90,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (backupAvatarTeamId_ != 0) {
-        output.writeUInt32(10, backupAvatarTeamId_);
+        output.writeUInt32(12, backupAvatarTeamId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -103,7 +103,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
       size = 0;
       if (backupAvatarTeamId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, backupAvatarTeamId_);
+          .computeUInt32Size(12, backupAvatarTeamId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -234,8 +234,8 @@ public final class DelBackupAvatarTeamReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1680
-     * Name: BHDFBGFEGPC
+     * CmdId: 1609
+     * Obf: FNOGALIBLFO
      * </pre>
      *
      * Protobuf type {@code DelBackupAvatarTeamReq}
@@ -383,11 +383,11 @@ public final class DelBackupAvatarTeamReqOuterClass {
               case 0:
                 done = true;
                 break;
-              case 80: {
+              case 96: {
                 backupAvatarTeamId_ = input.readUInt32();
                 bitField0_ |= 0x00000001;
                 break;
-              } // case 80
+              } // case 96
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -407,7 +407,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
 
       private int backupAvatarTeamId_ ;
       /**
-       * <code>uint32 backup_avatar_team_id = 10;</code>
+       * <code>uint32 backup_avatar_team_id = 12;</code>
        * @return The backupAvatarTeamId.
        */
       @java.lang.Override
@@ -415,7 +415,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
         return backupAvatarTeamId_;
       }
       /**
-       * <code>uint32 backup_avatar_team_id = 10;</code>
+       * <code>uint32 backup_avatar_team_id = 12;</code>
        * @param value The backupAvatarTeamId to set.
        * @return This builder for chaining.
        */
@@ -427,7 +427,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 backup_avatar_team_id = 10;</code>
+       * <code>uint32 backup_avatar_team_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearBackupAvatarTeamId() {
@@ -516,7 +516,7 @@ public final class DelBackupAvatarTeamReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034DelBackupAvatarTeamReq.proto\"7\n\026DelBac" +
       "kupAvatarTeamReq\022\035\n\025backup_avatar_team_i" +
-      "d\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "d\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

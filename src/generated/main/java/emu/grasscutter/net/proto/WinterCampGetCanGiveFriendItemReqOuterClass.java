@@ -20,8 +20,8 @@ public final class WinterCampGetCanGiveFriendItemReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8446
-   * Name: GLAIMPCKKHB
+   * CmdId: 8598
+   * Obf: BBPPOBIMPIC
    * </pre>
    *
    * Protobuf type {@code WinterCampGetCanGiveFriendItemReq}
@@ -206,8 +206,8 @@ public final class WinterCampGetCanGiveFriendItemReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8446
-     * Name: GLAIMPCKKHB
+     * CmdId: 8598
+     * Obf: BBPPOBIMPIC
      * </pre>
      *
      * Protobuf type {@code WinterCampGetCanGiveFriendItemReq}
