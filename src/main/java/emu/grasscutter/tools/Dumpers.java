@@ -101,7 +101,7 @@ public interface Dumpers {
 
         try {
             // Create a file for the dump.
-            var file = new File("commands.json");
+            var file = new File("./src/handbook/data/commands.json");
             if (file.exists() && !file.delete()) throw new RuntimeException("Failed to delete file.");
             if (!file.exists() && !file.createNewFile())
                 throw new RuntimeException("Failed to create file.");
@@ -142,7 +142,7 @@ public interface Dumpers {
 
         try {
             // Create a file for the dump.
-            var file = new File("avatars.csv");
+            var file = new File("./src/handbook/data/avatars.csv");
             if (file.exists() && !file.delete()) throw new RuntimeException("Failed to delete file.");
             if (!file.exists() && !file.createNewFile())
                 throw new RuntimeException("Failed to create file.");
@@ -193,7 +193,7 @@ public interface Dumpers {
 
         try {
             // Create a file for the dump.
-            var file = new File("items.csv");
+            var file = new File("./src/handbook/data/items.csv");
             if (file.exists() && !file.delete()) throw new RuntimeException("Failed to delete file.");
             if (!file.exists() && !file.createNewFile())
                 throw new RuntimeException("Failed to create file.");
@@ -220,7 +220,7 @@ public interface Dumpers {
 
         try {
             // Create a file for the dump.
-            var file = new File("scenes.csv");
+            var file = new File("./src/handbook/data/scenes.csv");
             if (file.exists() && !file.delete()) throw new RuntimeException("Failed to delete file.");
             if (!file.exists() && !file.createNewFile())
                 throw new RuntimeException("Failed to create file.");
@@ -259,7 +259,7 @@ public interface Dumpers {
 
         try {
             // Create a file for the dump.
-            var file = new File("entities.csv");
+            var file = new File("./src/handbook/data/entities.csv");
             if (file.exists() && !file.delete()) throw new RuntimeException("Failed to delete file.");
             if (!file.exists() && !file.createNewFile())
                 throw new RuntimeException("Failed to create file.");
@@ -312,7 +312,7 @@ public interface Dumpers {
 
         try {
             // Create a file for the dump.
-            var file = new File("quests.csv");
+            var file = new File("./src/handbook/data/quests.csv");
             if (file.exists() && !file.delete()) throw new RuntimeException("Failed to delete file.");
             if (!file.exists() && !file.createNewFile())
                 throw new RuntimeException("Failed to create file.");
@@ -325,7 +325,7 @@ public interface Dumpers {
 
         try {
             // Create a file for the dump.
-            var file = new File("mainquests.csv");
+            var file = new File("./src/handbook/data/mainquests.csv");
             if (file.exists() && !file.delete()) throw new RuntimeException("Failed to delete file.");
             if (!file.exists() && !file.createNewFile())
                 throw new RuntimeException("Failed to create file.");
@@ -362,7 +362,7 @@ public interface Dumpers {
 
         try {
             // Create a file for the dump.
-            var file = new File("areas.csv");
+            var file = new File("./src/handbook/data/areas.csv");
             if (file.exists() && !file.delete()) throw new RuntimeException("Failed to delete file.");
             if (!file.exists() && !file.createNewFile())
                 throw new RuntimeException("Failed to create file.");
