@@ -150,6 +150,9 @@
       "not_found": "Could not found announcement %s.",
       "description": "Send announcement to all online players, or manage server's announcement"
     },
+    "adb": {
+      "description": "some adb stuff for mobile devices"
+    },    
     "clear": {
       "weapons": "Cleared weapons for %s.",
       "artifacts": "Cleared artifacts for %s.",

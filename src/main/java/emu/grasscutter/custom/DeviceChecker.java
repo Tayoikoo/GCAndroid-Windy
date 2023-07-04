@@ -8,8 +8,12 @@ public class DeviceChecker {
             return "Android";
         } else if (os.contains("windows")) {
             return "Windows";
-        } else {
-            return "Unknown Device";
+        } else if (os.contains("linux") || os.contains("ubuntu")) {
+            return "Linux";
+        } else if (os.contains("windows")) || os.contains("os x") || os.contains("darwin") {
+            return "macOS";
         }
+
+        return "Unknown Device";
     }
 }
