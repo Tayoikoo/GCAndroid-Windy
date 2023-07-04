@@ -10,7 +10,7 @@ public class DeviceChecker {
             return "Windows";
         } else if (os.contains("linux") || os.contains("ubuntu")) {
             return "Linux";
-        } else if (os.contains("windows")) || os.contains("os x") || os.contains("darwin") {
+        } else if (os.contains("windows") || os.contains("os x") || os.contains("darwin")) {
             return "macOS";
         }
 
