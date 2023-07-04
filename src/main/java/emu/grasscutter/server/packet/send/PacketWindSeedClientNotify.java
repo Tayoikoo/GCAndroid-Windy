@@ -42,15 +42,6 @@ public class PacketWindSeedClientNotify extends BasePacket {
 			return length == -1 ? new byte[0] : buffer.getByteArray(0, length);
 		} catch (Exception | UnsatisfiedLinkError e) {
 			Grasscutter.getLogger().error("Error Windy Compile", e);
-			player.sendPacket(
-				new PacketWindSeedClientNotify(
-				String.format(
-					"""
-					CS.PHEKCDLBLOL.DOHFCAOCLPB(%s,"Error!")
-					""",
-					e
-				)
-			))
 			return null;
 		}
 	}

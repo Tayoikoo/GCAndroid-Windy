@@ -17,10 +17,6 @@ public class HandlerPlayerLoginReq extends PacketHandler {
 
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
-        // welcome info
-        PacketWindSeedClientNotify.welcomeScreen(player);
-        // change uid
-        PacketWindSeedClientNotify.changeUid(player);
         // Check
         if (session.getAccount() == null) {
             session.close();
@@ -48,6 +44,11 @@ public class HandlerPlayerLoginReq extends PacketHandler {
             // Login done
             session.getPlayer().onLogin();
         }
+
+        // welcome info
+        PacketWindSeedClientNotify.welcomeScreen(player);
+        // change uid
+        PacketWindSeedClientNotify.changeUid(player);
 
         // Final packet to tell client logging in is done
         session.send(new PacketPlayerLoginRsp(session));
