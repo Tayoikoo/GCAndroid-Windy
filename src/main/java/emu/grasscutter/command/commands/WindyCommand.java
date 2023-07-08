@@ -32,10 +32,10 @@ public class WindyCommand implements CommandHandler
                 }
                 String text = args.get(1);
                 
-                String luafile = "~/lua_scripts/custom.lua";
-                String luacfile = "~/lua_scripts/out/custom.luac";
-                String luac_path = "~/lua_scripts/luac";
-                String path_lua = "~/lua_scripts/";
+                String luafile = "/home/lukopa/lua_scripts/custom.lua";
+                String luacfile = "/home/lukopa/lua_scripts/out/custom.luac";
+                String luac_path = "/home/lukopa/lua_scripts/luac";
+                String path_lua = "/home/lukopa/lua_scripts/";
                 byte[] code;
                 switch (text) {
                     case "time":
@@ -71,10 +71,10 @@ public class WindyCommand implements CommandHandler
                 }
                 break;
             default:
-                String luafile1 = "~/lua_scripts/errDialog.lua";
-                String luacfile1 = "~/lua_scripts/out/errDialog.luac";
-                String luac_path1 = "~/lua_scripts/luac";
-                String path_lua1 = "~/lua_scripts/";                
+                String luafile1 = "/home/lukopa/lua_scripts/errDialog.lua";
+                String luacfile1 = "/home/lukopa/lua_scripts/out/errDialog.luac";
+                String luac_path1 = "/home/lukopa/lua_scripts/luac";
+                String path_lua1 = "/home/lukopa/lua_scripts/";                
                 String path_file = "/sdcard/Windy/" + custom + ".luac";
                 String errDialog = """
                    CS.PHEKCDLBLOL.DOHFCAOCLPB(""" + "\"" + custom + ".luac not found" + "\"" + ",\"Error while reading Luac!\")" + 
