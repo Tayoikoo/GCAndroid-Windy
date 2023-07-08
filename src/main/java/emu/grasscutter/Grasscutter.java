@@ -82,8 +82,6 @@ public final class Grasscutter {
         ConfigContainer.updateConfig();
 
         Grasscutter.getLogger().info("Loading Grasscutter...");
-
-        Grasscutter.getLogger().info("Running on: " + DeviceChecker.getDevice());
         // Load translation files.
         Grasscutter.loadLanguage();
 
@@ -107,6 +105,7 @@ public final class Grasscutter {
 
         // Initialize server.
         logger.info(translate("messages.status.starting"));
+        logger.info("Running on: " + "\u001B[1m\u001B[33m" + DeviceChecker.getDevice() + "\u001B[0m");    
         logger.info(translate("messages.status.game_version", GameConstants.VERSION));
         logger.info(translate("messages.status.version", BuildConfig.VERSION, BuildConfig.GIT_HASH));
 

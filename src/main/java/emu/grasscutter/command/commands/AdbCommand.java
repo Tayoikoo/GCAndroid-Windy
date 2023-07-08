@@ -18,14 +18,14 @@ import java.util.List;
 @Command(
     label = "adb",
     aliases = {"adb"},
-    usage = {"adb <args>"},
+    usage = {"<args>"},
     permission = "server.adb", 
     targetRequirement = Command.TargetRequirement.NONE
     )
 public final class AdbCommand implements CommandHandler {
     @Override
     public void execute(Player sender, Player targetPlayer, List<String> args) {
-        if(args.isEmpty()) {
+        if(args.size() < 1) {
             this.sendUsageMessage(sender);
             return;
         }
